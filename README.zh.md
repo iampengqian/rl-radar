@@ -1,4 +1,4 @@
-# agents-radar
+# rl-radar
 
 [English](./README.md) | 中文
 
@@ -6,21 +6,21 @@
 
 ## Web UI
 
-**[https://duanyytop.github.io/agents-radar](https://duanyytop.github.io/agents-radar)**
+**[https://duanyytop.github.io/rl-radar](https://duanyytop.github.io/rl-radar)**
 
 在线浏览所有历史简报，深色主题，无需登录。报告直接由本仓库的 Markdown 文件通过 GitHub Pages 渲染。每份报告支持中文 / 英文切换。
 
 ## RSS 订阅
 
-**[https://duanyytop.github.io/agents-radar/feed.xml](https://duanyytop.github.io/agents-radar/feed.xml)**
+**[https://duanyytop.github.io/rl-radar/feed.xml](https://duanyytop.github.io/rl-radar/feed.xml)**
 
 在任意 RSS 阅读器（Feedly、Reeder、NewsBlur 等）中订阅，每日自动推送新简报。Feed 包含最新 30 条报告（覆盖所有报告类型），与 `manifest.json` 同步更新。
 
 ## MCP Server
 
-**`https://agents-radar-mcp.duanyytop.workers.dev`**
+**`https://rl-radar-mcp.duanyytop.workers.dev`**
 
-基于 [Model Context Protocol](https://modelcontextprotocol.io) 的托管服务，将 agents-radar 数据暴露为工具接口。任何支持 MCP 的客户端（Claude Desktop、OpenClaw 等）均可直接查询最新 AI 生态报告。
+基于 [Model Context Protocol](https://modelcontextprotocol.io) 的托管服务，将 rl-radar 数据暴露为工具接口。任何支持 MCP 的客户端（Claude Desktop、OpenClaw 等）均可直接查询最新 AI 生态报告。
 
 **可用工具：**
 
@@ -36,8 +36,8 @@
 ```json
 {
   "mcpServers": {
-    "agents-radar": {
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+    "rl-radar": {
+      "url": "https://rl-radar-mcp.duanyytop.workers.dev"
     }
   }
 }
@@ -51,7 +51,7 @@
 **OpenClaw 接入** — 执行以下命令：
 
 ```bash
-openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyytop.workers.dev
+openclaw mcp add --transport http rl-radar https://rl-radar-mcp.duanyytop.workers.dev
 ```
 
 或手动编辑 `~/.openclaw/openclaw.json`：
@@ -59,9 +59,9 @@ openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyyto
 ```json
 {
   "mcpServers": {
-    "agents-radar": {
+    "rl-radar": {
       "type": "http",
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+      "url": "https://rl-radar-mcp.duanyytop.workers.dev"
     }
   }
 }
@@ -254,7 +254,7 @@ export ANTHROPIC_API_KEY=sk-ant-xxxxxxxx
 # export LLM_PROVIDER=openrouter
 # export OPENROUTER_API_KEY=sk-or-xxxxxxxx
 
-export DIGEST_REPO=your-username/agents-radar  # 可选，留空则仅写入本地文件
+export DIGEST_REPO=your-username/rl-radar  # 可选，留空则仅写入本地文件
 
 pnpm start
 ```
@@ -374,4 +374,4 @@ OpenAI 内容精选            (research / release / company / safety / ...)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=duanyytop/agents-radar&type=Date)](https://star-history.com/#duanyytop/agents-radar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=duanyytop/rl-radar&type=Date)](https://star-history.com/#duanyytop/rl-radar&Date)
