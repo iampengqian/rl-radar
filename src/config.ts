@@ -24,6 +24,7 @@ interface RawConfig {
   skills_repo?: string;
   openclaw?: RawRepoEntry;
   openclaw_peers?: RawRepoEntry[];
+  rl_repos?: RawRepoEntry[];
 }
 
 export interface RadarConfig {
@@ -31,6 +32,7 @@ export interface RadarConfig {
   skillsRepo: string;
   openclaw: RepoConfig;
   openclawPeers: RepoConfig[];
+  rlRepos: RepoConfig[];
 }
 
 // ---------------------------------------------------------------------------
@@ -69,6 +71,19 @@ const DEFAULT_OPENCLAW_PEERS: RepoConfig[] = [
   { id: "easyclaw", repo: "gaoyangz77/easyclaw", name: "EasyClaw" },
 ];
 
+const DEFAULT_RL_REPOS: RepoConfig[] = [
+  { id: "trl", repo: "huggingface/trl", name: "TRL", paginated: true },
+  { id: "openrlhf", repo: "OpenRLHF/OpenRLHF", name: "OpenRLHF", paginated: true },
+  { id: "verl", repo: "volcengine/verl", name: "verl", paginated: true },
+  { id: "torchtune", repo: "pytorch/torchtune", name: "torchtune", paginated: true },
+  { id: "open-instruct", repo: "allenai/open-instruct", name: "Open Instruct", paginated: true },
+  { id: "cleanrl", repo: "vwxyzjn/cleanrl", name: "CleanRL", paginated: true },
+  { id: "rl-games", repo: "Denys88/rl_games", name: "rl_games", paginated: true },
+  { id: "gymnasium", repo: "Farama-Foundation/Gymnasium", name: "Gymnasium", paginated: true },
+  { id: "pettingzoo", repo: "Farama-Foundation/PettingZoo", name: "PettingZoo", paginated: true },
+  { id: "stable-baselines3", repo: "DLR-RM/stable-baselines3", name: "Stable Baselines3", paginated: true },
+];
+
 // ---------------------------------------------------------------------------
 // Loader
 // ---------------------------------------------------------------------------
@@ -87,6 +102,7 @@ export function loadConfig(configPath = "config.yml"): RadarConfig {
       skillsRepo: DEFAULT_SKILLS_REPO,
       openclaw: DEFAULT_OPENCLAW,
       openclawPeers: DEFAULT_OPENCLAW_PEERS,
+      rlRepos: DEFAULT_RL_REPOS,
     };
   }
 
@@ -109,10 +125,15 @@ export function loadConfig(configPath = "config.yml"): RadarConfig {
       ? raw.openclaw_peers.map(toRepoConfig)
       : DEFAULT_OPENCLAW_PEERS;
 
+  const rlRepos =
+    Array.isArray(raw?.rl_repos) && raw.rl_repos.length > 0
+      ? raw.rl_repos.map(toRepoConfig)
+      : DEFAULT_RL_REPOS;
+
   console.log(
     `[config] Loaded from ${configPath}: ` +
-      `${cliRepos.length} CLI repos, ${openclawPeers.length} OpenClaw peers`,
+      `${cliRepos.length} CLI repos, ${openclawPeers.length} OpenClaw peers, ${rlRepos.length} RL repos`,
   );
 
-  return { cliRepos, skillsRepo, openclaw, openclawPeers };
+  return { cliRepos, skillsRepo, openclaw, openclawPeers, rlRepos };
 }
