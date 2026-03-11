@@ -1,4 +1,4 @@
-# agents-radar configuration
+# rl-radar / agents-radar configuration
 # Edit this file to customize which repositories are tracked.
 # Changes take effect on the next workflow run.
 
@@ -83,3 +83,49 @@ openclaw_peers:
   - id: easyclaw
     repo: gaoyangz77/easyclaw
     name: EasyClaw
+
+# ── RL open-source ecosystem (new category) ─────────────────────────────────
+# First-phase RL-radar seed projects. Focus on RLHF / post-training first,
+# with general RL frameworks and environments as supporting signals.
+
+rl_repos:
+  - id: trl
+    repo: huggingface/trl
+    name: TRL
+    paginated: true
+  - id: openrlhf
+    repo: OpenRLHF/OpenRLHF
+    name: OpenRLHF
+    paginated: true
+  - id: verl
+    repo: volcel/verl
+    name: verl
+    paginated: true
+  - id: torchtune
+    repo: pytorch/torchtune
+    name: torchtune
+    paginated: true
+  - id: open-instruct
+    repo: allenai/open-instruct
+    name: Open Instruct
+    paginated: true
+  - id: cleanrl
+    repo: vwxyzjn/cleanrl
+    name: CleanRL
+    paginated: true
+  - id: rl-games
+    repo: Denys88/rl_games
+    name: rl_games
+    paginated: true
+  - id: gymnasium
+    repo: Farama-Foundation/Gymnasium
+    name: Gymnasium
+    paginated: true
+  - id: pettingzoo
+    repo: Farama-Foundation/PettingZoo
+    name: PettingZoo
+    paginated: true
+  - id: stable-baselines3
+    repo: DLR-RM/stable-baselines3
+    name: Stable Baselines3
+    paginated: true

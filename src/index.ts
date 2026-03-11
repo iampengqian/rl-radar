@@ -35,6 +35,7 @@ import { fetchTrendingData, type TrendingData } from "./trending.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
+import { generateRlDigests, saveRlDailyReport } from "./rl-daily.ts";
 
 // ---------------------------------------------------------------------------
 // Repo config — loaded from config.yml, falls back to built-in defaults
@@ -45,6 +46,7 @@ const {
   skillsRepo: CLAUDE_SKILLS_REPO,
   openclaw: OPENCLAW,
   openclawPeers: OPENCLAW_PEERS,
+  rlRepos: RL_REPOS,
 } = loadConfig();
 
 // ---------------------------------------------------------------------------
@@ -71,7 +73,7 @@ async function fetchAllData(
   trendingData: TrendingData;
   hnData: HnData;
 }> {
-  const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS];
+  const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS, ...RL_REPOS];
   console.log(`  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn`);
 
   const [fetched, skillsData, webResults, trendingData, hnData] = await Promise.all([
@@ -400,15 +402,20 @@ async function main(): Promise<void> {
   const { fetched, skillsData, webResults, trendingData, hnData } = await fetchAllData(since, webState);
 
   const peerIds = new Set(OPENCLAW_PEERS.map((p) => p.id));
-  const fetchedCli = fetched.filter((f) => f.cfg.id !== OPENCLAW.id && !peerIds.has(f.cfg.id));
+  const rlIds = new Set(RL_REPOS.map((r) => r.id));
+  const fetchedCli = fetched.filter(
+    (f) => f.cfg.id !== OPENCLAW.id && !peerIds.has(f.cfg.id) && !rlIds.has(f.cfg.id),
+  );
   const fetchedOpenclaw = fetched.find((f) => f.cfg.id === OPENCLAW.id)!;
   const fetchedPeers = fetched.filter((f) => peerIds.has(f.cfg.id));
+  const fetchedRl = fetched.filter((f) => rlIds.has(f.cfg.id));
 
   // 2. Generate per-repo LLM summaries in parallel (zh + en simultaneously)
   console.log("  Generating summaries in ZH and EN in parallel...");
-  const [zhSummaries, enSummaries] = await Promise.all([
+  const [zhSummaries, enSummaries, rlDigests] = await Promise.all([
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "zh"),
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "en"),
+    generateRlDigests(fetchedRl, dateStr, "zh"),
   ]);
 
   // 3. Generate cross-repo comparisons in parallel (zh + en)
@@ -485,6 +492,7 @@ async function main(): Promise<void> {
 
   console.log(`  Saved ${saveFile(digestContent, dateStr, "ai-cli.md")}`);
   console.log(`  Saved ${saveFile(openclawContent, dateStr, "ai-agents.md")}`);
+  console.log(`  Saved ${saveRlDailyReport(rlDigests, utcStr, dateStr, footer, "zh")}`);
   console.log(`  Saved ${saveFile(enDigestContent, dateStr, "ai-cli-en.md")}`);
   console.log(`  Saved ${saveFile(enOpenclawContent, dateStr, "ai-agents-en.md")}`);
 

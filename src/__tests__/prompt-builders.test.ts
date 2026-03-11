@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   buildCliPrompt,
   buildPeerPrompt,
+  buildRlPrompt,
   buildComparisonPrompt,
   buildPeersComparisonPrompt,
   buildSkillsPrompt,
@@ -102,6 +103,21 @@ describe("buildPeerPrompt", () => {
     const result = buildPeerPrompt(cfg, [], [], [], "2026-03-09", 30, 20, "en");
     expect(result).toContain("Data Overview");
     expect(result).toContain("None");
+  });
+});
+
+describe("buildRlPrompt", () => {
+  it("generates Chinese RL prompt", () => {
+    const result = buildRlPrompt(cfg, [makeItem()], [makeItem()], [release], "2026-03-09");
+    expect(result).toContain("强化学习（RL）开源生态");
+    expect(result).toContain("今日速览");
+    expect(result).toContain("关键 PR 进展");
+  });
+
+  it("generates English RL prompt", () => {
+    const result = buildRlPrompt(cfg, [], [], [], "2026-03-09", "en");
+    expect(result).toContain("reinforcement learning open-source ecosystem");
+    expect(result).toContain("Key PR Progress");
   });
 });
 

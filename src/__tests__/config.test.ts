@@ -39,6 +39,7 @@ describe("loadConfig", () => {
     expect(config.skillsRepo).toBe("anthropics/skills");
     expect(config.openclaw.id).toBe("openclaw");
     expect(config.openclawPeers.length).toBeGreaterThan(0);
+    expect(config.rlRepos.length).toBeGreaterThan(0);
   });
 
   it("loads cli_repos from valid YAML", () => {
@@ -49,11 +50,17 @@ cli_repos:
     repo: org/custom
     name: Custom Tool
 skills_repo: custom/skills
+rl_repos:
+  - id: trl
+    repo: huggingface/trl
+    name: TRL
 `);
     const config = loadConfig("test.yml");
     expect(config.cliRepos).toHaveLength(1);
     expect(config.cliRepos[0]!.id).toBe("custom");
     expect(config.skillsRepo).toBe("custom/skills");
+    expect(config.rlRepos).toHaveLength(1);
+    expect(config.rlRepos[0]!.id).toBe("trl");
   });
 
   it("falls back to defaults for empty cli_repos", () => {

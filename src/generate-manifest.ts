@@ -4,13 +4,14 @@ import path from "path";
 const DIGESTS_DIR = "digests";
 const MANIFEST_PATH = "manifest.json";
 const FEED_PATH = "feed.xml";
-const SITE_URL = "https://duanyytop.github.io/agents-radar";
+export const SITE_URL = "https://iampengqian.github.io/rl-radar";
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
-const REPORT_FILES = [
+export const REPORT_FILES = [
   "ai-cli",
   "ai-cli-en",
   "ai-agents",
   "ai-agents-en",
+  "rl-daily",
   "ai-web",
   "ai-web-en",
   "ai-trending",
@@ -24,11 +25,12 @@ const REPORT_FILES = [
 ] as const;
 const MAX_FEED_ITEMS = 30;
 
-const REPORT_LABELS: Record<string, string> = {
+export const REPORT_LABELS: Record<string, string> = {
   "ai-cli": "AI CLI 工具社区动态日报",
   "ai-cli-en": "AI CLI Tools Digest",
   "ai-agents": "AI Agents 生态日报",
   "ai-agents-en": "AI Agents Ecosystem Digest",
+  "rl-daily": "RL 开源生态日报",
   "ai-web": "AI 官方内容追踪报告",
   "ai-web-en": "Official AI Content Report",
   "ai-trending": "AI 开源趋势日报",
@@ -121,9 +123,9 @@ function main(): void {
     `<?xml version="1.0" encoding="UTF-8"?>\n` +
     `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n` +
     `  <channel>\n` +
-    `    <title>agents-radar</title>\n` +
+    `    <title>rl-radar</title>\n` +
     `    <link>${SITE_URL}</link>\n` +
-    `    <description>AI 开源生态每日简报 · Daily AI ecosystem digest</description>\n` +
+    `    <description>RL 开源生态每日简报 · Daily RL ecosystem digest</description>\n` +
     `    <language>zh-CN</language>\n` +
     `    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>\n` +
     `    <lastBuildDate>${buildDate}</lastBuildDate>\n` +

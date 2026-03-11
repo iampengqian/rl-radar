@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { toRfc822, escapeXml } from "../generate-manifest.ts";
+import { SITE_URL, REPORT_FILES, REPORT_LABELS, toRfc822, escapeXml } from "../generate-manifest.ts";
 
 // ---------------------------------------------------------------------------
 // toRfc822
@@ -60,5 +60,23 @@ describe("escapeXml", () => {
 
   it("handles empty string", () => {
     expect(escapeXml("")).toBe("");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Site metadata
+// ---------------------------------------------------------------------------
+
+describe("manifest metadata", () => {
+  it("uses the rl-radar Pages URL", () => {
+    expect(SITE_URL).toBe("https://iampengqian.github.io/rl-radar");
+  });
+
+  it("includes rl-daily in the published report files", () => {
+    expect(REPORT_FILES).toContain("rl-daily");
+  });
+
+  it("exposes a human-readable label for rl-daily", () => {
+    expect(REPORT_LABELS["rl-daily"]).toBe("RL 开源生态日报");
   });
 });

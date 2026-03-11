@@ -143,3 +143,42 @@ export function buildOpenclawReportContent(
     footer
   );
 }
+
+export function buildRlReportContent(
+  rlDigests: RepoDigest[],
+  utcStr: string,
+  dateStr: string,
+  footer: string,
+  lang: "zh" | "en" = "zh",
+): string {
+  const repoLinks = rlDigests
+    .map((d) => `- [${d.config.name}](https://github.com/${d.config.repo})`)
+    .join("\n");
+  const sections = rlDigests
+    .map((d) => {
+      return [
+        `<details>`,
+        `<summary><strong>${d.config.name}</strong> — <a href="https://github.com/${d.config.repo}">${d.config.repo}</a></summary>`,
+        ``,
+        d.summary,
+        ``,
+        `</details>`,
+      ].join("\n");
+    })
+    .join("\n\n");
+
+  const t =
+    lang === "en"
+      ? {
+          title: `# RL Open Source Daily Digest ${dateStr}\n\n`,
+          meta: `> Generated: ${utcStr} UTC | Projects covered: ${rlDigests.length}\n\n`,
+          detail: `## RL Project Reports\n\n`,
+        }
+      : {
+          title: `# RL 开源生态日报 ${dateStr}\n\n`,
+          meta: `> 生成时间: ${utcStr} UTC | 覆盖项目: ${rlDigests.length} 个\n\n`,
+          detail: `## RL 项目详细报告\n\n`,
+        };
+
+  return t.title + t.meta + `${repoLinks}\n\n---\n\n` + t.detail + sections + footer;
+}
