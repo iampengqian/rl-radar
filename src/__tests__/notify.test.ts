@@ -16,7 +16,7 @@ describe("buildMessage", () => {
 
   it("builds a daily message with zh + en reports", () => {
     const msg = buildMessage("2026-03-09", ["ai-cli", "ai-cli-en", "ai-agents", "ai-agents-en"], BASE_URL);
-    expect(msg).toContain("agents-radar");
+    expect(msg).toContain("rl-radar");
     expect(msg).toContain("2026-03-09");
     expect(msg).toContain("📡");
     // zh links
@@ -62,5 +62,11 @@ describe("buildMessage", () => {
     const msg = buildMessage("2026-03-09", ["ai-cli"], BASE_URL + "/");
     expect(msg).not.toContain("//feed.xml");
     expect(msg).toContain(`${BASE_URL}/feed.xml`);
+  });
+
+  it("renders rl-daily with an RL-specific label", () => {
+    const msg = buildMessage("2026-03-09", ["rl-daily"], BASE_URL);
+    expect(msg).toContain("RL 开源生态日报");
+    expect(msg).toContain(`${BASE_URL}/#2026-03-09/rl-daily`);
   });
 });

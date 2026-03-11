@@ -11,11 +11,12 @@
 
 import fs from "node:fs";
 
-const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
+const PAGES_URL_DEFAULT = "https://iampengqian.github.io/rl-radar";
 
 const ZH_LABELS: Record<string, string> = {
   "ai-cli": "AI CLI 工具",
   "ai-agents": "AI Agents 生态",
+  "rl-daily": "RL 开源生态日报",
   "ai-web": "官网动态",
   "ai-trending": "GitHub 趋势",
   "ai-hn": "HN 社区动态",
@@ -26,6 +27,7 @@ const ZH_LABELS: Record<string, string> = {
 const EN_LABELS: Record<string, string> = {
   "ai-cli": "AI CLI Tools",
   "ai-agents": "AI Agents Ecosystem",
+  "rl-daily": "RL Daily Digest",
   "ai-web": "Official Updates",
   "ai-trending": "GitHub Trends",
   "ai-hn": "HN Community",
@@ -61,7 +63,7 @@ export function buildMessage(date: string, reports: string[], pagesUrl?: string)
 
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
   const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
-  const lines: string[] = [`${icon} <b>agents-radar${suffix} · ${date}</b>\n`];
+  const lines: string[] = [`${icon} <b>rl-radar${suffix} · ${date}</b>\n`];
 
   // Daily reports first, then rollups
   const ordered = [
