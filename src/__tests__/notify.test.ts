@@ -69,4 +69,10 @@ describe("buildMessage", () => {
     expect(msg).toContain("RL 开源生态日报");
     expect(msg).toContain(`${BASE_URL}/#2026-03-09/rl-daily`);
   });
+
+  it("renders rl-daily-en with an RL-specific English label", () => {
+    const msg = buildMessage("2026-03-09", ["rl-daily-en"], BASE_URL);
+    expect(msg).toContain("RL Open Source Ecosystem Digest");
+    expect(msg).toContain(`${BASE_URL}/#2026-03-09/rl-daily-en`);
+  });
 });

@@ -393,10 +393,11 @@ async function main(): Promise<void> {
 
   // 2. Generate per-repo LLM summaries in parallel (zh + en simultaneously)
   console.log("  Generating summaries in ZH and EN in parallel...");
-  const [zhSummaries, enSummaries, rlDigests] = await Promise.all([
+  const [zhSummaries, enSummaries, rlDigests, enRlDigests] = await Promise.all([
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "zh"),
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "en"),
     generateRlDigests(fetchedRl, dateStr, "zh"),
+    generateRlDigests(fetchedRl, dateStr, "en"),
   ]);
 
   // 3. Generate cross-repo comparisons in parallel (zh + en)
@@ -476,6 +477,7 @@ async function main(): Promise<void> {
   console.log(`  Saved ${saveRlDailyReport(rlDigests, utcStr, dateStr, footer, "zh")}`);
   console.log(`  Saved ${saveFile(enDigestContent, dateStr, "ai-cli-en.md")}`);
   console.log(`  Saved ${saveFile(enOpenclawContent, dateStr, "ai-agents-en.md")}`);
+  console.log(`  Saved ${saveRlDailyReport(enRlDigests, utcStr, dateStr, enFooter, "en")}`);
 
   // Web report: zh saves state, en skips state save
   await saveWebReport(webResults, webState, utcStr, dateStr, digestRepo, footer, "zh");

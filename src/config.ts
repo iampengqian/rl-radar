@@ -72,7 +72,12 @@ const DEFAULT_OPENCLAW_PEERS: RepoConfig[] = [
 ];
 
 const DEFAULT_RL_REPOS: RepoConfig[] = [
+  { id: "roll", repo: "alibaba/ROLL", name: "ROLL", paginated: true },
+  { id: "rock", repo: "alibaba/ROCK", name: "ROCK", paginated: true },
+  { id: "slime", repo: "THUDM/slime", name: "slime", paginated: true },
+  { id: "areal", repo: "inclusionAI/AReaL", name: "AReaL", paginated: true },
   { id: "trl", repo: "huggingface/trl", name: "TRL", paginated: true },
+  { id: "tianshou", repo: "thu-ml/tianshou", name: "Tianshou", paginated: true },
   { id: "openrlhf", repo: "OpenRLHF/OpenRLHF", name: "OpenRLHF", paginated: true },
   { id: "verl", repo: "volcengine/verl", name: "verl", paginated: true },
   { id: "torchtune", repo: "pytorch/torchtune", name: "torchtune", paginated: true },

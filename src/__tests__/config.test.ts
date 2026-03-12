@@ -42,6 +42,14 @@ describe("loadConfig", () => {
     expect(config.rlRepos.length).toBeGreaterThan(0);
   });
 
+  it("ships the expanded default RL seed list", () => {
+    vi.spyOn(fs, "existsSync").mockReturnValue(false);
+    const config = loadConfig("/nonexistent/config.yml");
+    expect(config.rlRepos.map((repo) => repo.id)).toEqual(
+      expect.arrayContaining(["roll", "rock", "slime", "areal", "trl", "tianshou"]),
+    );
+  });
+
   it("loads cli_repos from valid YAML", () => {
     vi.spyOn(fs, "existsSync").mockReturnValue(true);
     vi.spyOn(fs, "readFileSync").mockReturnValue(`
