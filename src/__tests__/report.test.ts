@@ -18,7 +18,14 @@ vi.mock("../providers/index.ts", async (importOriginal) => {
   };
 });
 
-import { is429, callLlm, saveFile, autoGenFooter, resetLlmStateForTest } from "../report.ts";
+import {
+  is429,
+  callLlm,
+  saveFile,
+  autoGenFooter,
+  readLlmRuntimeConfig,
+  resetLlmStateForTest,
+} from "../report.ts";
 
 // ---------------------------------------------------------------------------
 // is429
@@ -133,6 +140,39 @@ describe("autoGenFooter", () => {
     const result = autoGenFooter("en");
     expect(result).toContain("auto-generated");
     expect(result).toContain("agents-radar");
+  });
+});
+
+describe("readLlmRuntimeConfig", () => {
+  it("uses defaults when env vars are missing", () => {
+    expect(readLlmRuntimeConfig({})).toEqual({
+      concurrency: 1,
+      minIntervalMs: 15_000,
+    });
+  });
+
+  it("reads concurrency and interval overrides from env", () => {
+    expect(
+      readLlmRuntimeConfig({
+        LLM_CONCURRENCY: "3",
+        LLM_MIN_INTERVAL_MS: "2500",
+      }),
+    ).toEqual({
+      concurrency: 3,
+      minIntervalMs: 2_500,
+    });
+  });
+
+  it("falls back to defaults for invalid env values", () => {
+    expect(
+      readLlmRuntimeConfig({
+        LLM_CONCURRENCY: "0",
+        LLM_MIN_INTERVAL_MS: "-1",
+      }),
+    ).toEqual({
+      concurrency: 1,
+      minIntervalMs: 15_000,
+    });
   });
 });
 
