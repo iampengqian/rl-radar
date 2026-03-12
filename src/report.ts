@@ -23,8 +23,8 @@ const provider: LlmProvider = createProvider();
 // any given time; the rest queue and run as slots free up.
 // ---------------------------------------------------------------------------
 
-const LLM_CONCURRENCY = 5;
-const LLM_MIN_INTERVAL_MS = 1_000;
+const LLM_CONCURRENCY = 1;
+const LLM_MIN_INTERVAL_MS = 5_000;
 let llmSlots = LLM_CONCURRENCY;
 const llmQueue: Array<() => void> = [];
 let llmNextAllowedAt = 0;

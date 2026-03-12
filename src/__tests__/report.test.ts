@@ -224,7 +224,7 @@ describe("callLlm", () => {
     await vi.advanceTimersByTimeAsync(0);
     expect(mockCall).toHaveBeenCalledTimes(1);
 
-    await vi.advanceTimersByTimeAsync(999);
+    await vi.advanceTimersByTimeAsync(4_999);
     expect(mockCall).toHaveBeenCalledTimes(1);
 
     await vi.advanceTimersByTimeAsync(1);
@@ -242,13 +242,25 @@ describe("callLlm", () => {
     await vi.advanceTimersByTimeAsync(5_000);
     await promise;
 
-    // If slots leaked, subsequent calls would hang. Fire LLM_CONCURRENCY (5)
-    // calls to prove all slots are available. With pacing enabled, allow the
-    // 4 additional start intervals to elapse.
+    // If slots leaked, the second call would hang even after the first
+    // finishes retrying. With single-flight pacing, only one request should
+    // start immediately and the next one should wait for the 5 s interval.
     mockCall.mockResolvedValue("ok");
-    const batch = Array.from({ length: 5 }, (_, i) => callLlm(`p${i}`));
-    await vi.advanceTimersByTimeAsync(4_000);
+    const batch = [callLlm("p1"), callLlm("p2")];
+    const priorCalls = mockCall.mock.calls.length;
+
+    await vi.advanceTimersByTimeAsync(0);
+    expect(mockCall).toHaveBeenCalledTimes(priorCalls);
+
+    await vi.advanceTimersByTimeAsync(4_999);
+    expect(mockCall).toHaveBeenCalledTimes(priorCalls);
+
+    await vi.advanceTimersByTimeAsync(1);
+    expect(mockCall).toHaveBeenCalledTimes(priorCalls + 1);
+
+    await vi.advanceTimersByTimeAsync(5_000);
     const results = await Promise.all(batch);
-    expect(results).toEqual(["ok", "ok", "ok", "ok", "ok"]);
+    expect(results).toEqual(["ok", "ok"]);
+    expect(mockCall).toHaveBeenCalledTimes(priorCalls + 2);
   });
 });
