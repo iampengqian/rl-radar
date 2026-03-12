@@ -14,7 +14,7 @@ const DIGESTS_DIR = "digests";
 const MAX_CHARS_PER_REPORT = 2500;
 
 // Source report types to read for rollups (in priority order)
-const ROLLUP_SOURCES = ["ai-cli", "ai-agents", "ai-trending", "ai-hn", "ai-web"];
+const ROLLUP_SOURCES = ["ai-cli", "ai-agents", "ai-trending", "ai-hn", "ai-web", "rl-daily"];
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -29,17 +29,19 @@ function getDateDirs(): string[] {
     .reverse();
 }
 
-/** Read and truncate a daily digest file. Returns null if not found. */
-function readDailyDigest(date: string): string | null {
+/** Read and truncate all available daily digest files for a date. Returns null if none found. */
+export function readDailyDigest(date: string): string | null {
+  const sections: string[] = [];
   for (const type of ROLLUP_SOURCES) {
     const p = path.join(DIGESTS_DIR, date, `${type}.md`);
     if (fs.existsSync(p)) {
       const content = fs.readFileSync(p, "utf-8");
       const truncated = content.slice(0, MAX_CHARS_PER_REPORT);
-      return truncated.length < content.length ? truncated + "\n...[摘要截断]" : truncated;
+      const body = truncated.length < content.length ? truncated + "\n...[摘要截断]" : truncated;
+      sections.push(`## ${type}\n\n${body}`);
     }
   }
-  return null;
+  return sections.length > 0 ? sections.join("\n\n") : null;
 }
 
 /** Read a weekly report file. Returns null if not found. */
