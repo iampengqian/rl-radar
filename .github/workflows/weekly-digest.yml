@@ -13,7 +13,7 @@ permissions:
 jobs:
   weekly:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: ${{ fromJson(vars.WEEKLY_DIGEST_TIMEOUT_MINUTES || '15') }}
 
     steps:
       - name: Checkout
@@ -37,6 +37,8 @@ jobs:
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || secrets.ANTHROPIC_MODEL }}
+          LLM_CONCURRENCY: ${{ vars.LLM_CONCURRENCY || '2' }}
+          LLM_MIN_INTERVAL_MS: ${{ vars.LLM_MIN_INTERVAL_MS || '5000' }}
         run: pnpm weekly
 
       - name: Commit weekly report

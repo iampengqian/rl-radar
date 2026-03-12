@@ -13,6 +13,8 @@ export const LLM_TOKENS_DEFAULT = 4096;
 export const LLM_TOKENS_TRENDING = 6144;
 export const LLM_TOKENS_WEB = 8192;
 export const LLM_TOKENS_ROLLUP = 8192;
+const DEFAULT_LLM_CONCURRENCY = 2;
+const DEFAULT_LLM_MIN_INTERVAL_MS = 5_000;
 import { type LlmProvider, createProvider } from "./providers/index.ts";
 
 const provider: LlmProvider = createProvider();
@@ -23,11 +25,29 @@ const provider: LlmProvider = createProvider();
 // any given time; the rest queue and run as slots free up.
 // ---------------------------------------------------------------------------
 
-const LLM_CONCURRENCY = 5;
-const LLM_MIN_INTERVAL_MS = 1_000;
+function readPositiveInt(value: string | undefined, fallback: number): number {
+  if (!value) return fallback;
+  const parsed = Number.parseInt(value, 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+export function readLlmRuntimeConfig(env: NodeJS.ProcessEnv): {
+  concurrency: number;
+  minIntervalMs: number;
+} {
+  return {
+    concurrency: readPositiveInt(env["LLM_CONCURRENCY"], DEFAULT_LLM_CONCURRENCY),
+    minIntervalMs: readPositiveInt(env["LLM_MIN_INTERVAL_MS"], DEFAULT_LLM_MIN_INTERVAL_MS),
+  };
+}
+
+const { concurrency: LLM_CONCURRENCY, minIntervalMs: LLM_MIN_INTERVAL_MS } = readLlmRuntimeConfig(
+  process.env,
+);
 let llmSlots = LLM_CONCURRENCY;
 const llmQueue: Array<() => void> = [];
 let llmNextAllowedAt = 0;
+let llmPacingTail = Promise.resolve();
 
 function acquireSlot(): Promise<void> {
   if (llmSlots > 0) {
@@ -50,6 +70,7 @@ export function resetLlmStateForTest(): void {
   llmSlots = LLM_CONCURRENCY;
   llmQueue.length = 0;
   llmNextAllowedAt = 0;
+  llmPacingTail = Promise.resolve();
 }
 
 // ---------------------------------------------------------------------------
@@ -68,10 +89,21 @@ function sleep(ms: number): Promise<void> {
 }
 
 async function waitForLlmPacing(): Promise<void> {
-  const now = Date.now();
-  const wait = Math.max(0, llmNextAllowedAt - now);
-  if (wait > 0) await sleep(wait);
-  llmNextAllowedAt = Date.now() + LLM_MIN_INTERVAL_MS;
+  const prior = llmPacingTail;
+  let release!: () => void;
+  llmPacingTail = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+
+  await prior;
+  try {
+    const now = Date.now();
+    const wait = Math.max(0, llmNextAllowedAt - now);
+    if (wait > 0) await sleep(wait);
+    llmNextAllowedAt = Date.now() + LLM_MIN_INTERVAL_MS;
+  } finally {
+    release();
+  }
 }
 
 export async function callLlm(prompt: string, maxTokens = LLM_TOKENS_DEFAULT): Promise<string> {
