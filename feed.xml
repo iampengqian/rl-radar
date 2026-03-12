@@ -6,7 +6,7 @@
     <description>RL 开源生态每日简报 · Daily RL ecosystem digest</description>
     <language>zh-CN</language>
     <atom:link href="https://iampengqian.github.io/rl-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 12 Mar 2026 03:17:57 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 03:34:42 +0000</lastBuildDate>
     <item>
       <title>AI CLI 工具社区动态日报 2026-03-12</title>
       <link>https://iampengqian.github.io/rl-radar/#2026-03-12/ai-cli</link>
@@ -41,6 +41,13 @@
       <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-12/rl-daily</guid>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <description>RL 开源生态日报 2026-03-12</description>
+    </item>
+    <item>
+      <title>RL Open Source Ecosystem Digest 2026-03-12</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-12/rl-daily-en</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-12/rl-daily-en</guid>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <description>RL Open Source Ecosystem Digest 2026-03-12</description>
     </item>
     <item>
       <title>AI 官方内容追踪报告 2026-03-12</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-10/ai-trending-en</guid>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
       <description>AI Open Source Trends 2026-03-10</description>
-    </item>
-    <item>
-      <title>Hacker News AI 社区动态日报 2026-03-10</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-10/ai-hn</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-10/ai-hn</guid>
-      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI 社区动态日报 2026-03-10</description>
     </item>
   </channel>
 </rss>
