@@ -16,6 +16,7 @@ import {
   buildPeerPrompt,
   buildComparisonPrompt,
   buildPeersComparisonPrompt,
+  buildRlComparisonPrompt,
   buildSkillsPrompt,
   buildWebReportPrompt,
   buildTrendingPrompt,
@@ -416,12 +417,23 @@ async function main(): Promise<void> {
     releases: fetchedOpenclaw.releases,
     summary: enSummaries.openclawSummary,
   };
-  const [comparison, peersComparison, enComparison, enPeersComparison] = await Promise.all([
-    callLlm(buildComparisonPrompt(zhSummaries.cliDigests, dateStr, "zh")),
-    callLlm(buildPeersComparisonPrompt(openclawDigest, zhSummaries.peerDigests, dateStr, "zh")),
-    callLlm(buildComparisonPrompt(enSummaries.cliDigests, dateStr, "en")),
-    callLlm(buildPeersComparisonPrompt(enOpenclawDigest, enSummaries.peerDigests, dateStr, "en")),
-  ]);
+  const [comparison, peersComparison, enComparison, enPeersComparison, rlComparison, enRlComparison] =
+    await Promise.all([
+      callLlm(buildComparisonPrompt(zhSummaries.cliDigests, dateStr, "zh")),
+      callLlm(buildPeersComparisonPrompt(openclawDigest, zhSummaries.peerDigests, dateStr, "zh")),
+      callLlm(buildComparisonPrompt(enSummaries.cliDigests, dateStr, "en")),
+      callLlm(buildPeersComparisonPrompt(enOpenclawDigest, enSummaries.peerDigests, dateStr, "en")),
+      summarize(
+        "rl-comparison",
+        buildRlComparisonPrompt(rlDigests, dateStr, "zh"),
+        "⚠️ RL 横向对比分析生成失败。",
+      ),
+      summarize(
+        "rl-comparison-en",
+        buildRlComparisonPrompt(enRlDigests, dateStr, "en"),
+        "⚠️ RL comparison generation failed.",
+      ),
+    ]);
 
   const footer = autoGenFooter("zh");
   const enFooter = autoGenFooter("en");
@@ -474,10 +486,10 @@ async function main(): Promise<void> {
 
   console.log(`  Saved ${saveFile(digestContent, dateStr, "ai-cli.md")}`);
   console.log(`  Saved ${saveFile(openclawContent, dateStr, "ai-agents.md")}`);
-  console.log(`  Saved ${saveRlDailyReport(rlDigests, utcStr, dateStr, footer, "zh")}`);
+  console.log(`  Saved ${saveRlDailyReport(rlDigests, rlComparison, utcStr, dateStr, footer, "zh")}`);
   console.log(`  Saved ${saveFile(enDigestContent, dateStr, "ai-cli-en.md")}`);
   console.log(`  Saved ${saveFile(enOpenclawContent, dateStr, "ai-agents-en.md")}`);
-  console.log(`  Saved ${saveRlDailyReport(enRlDigests, utcStr, dateStr, enFooter, "en")}`);
+  console.log(`  Saved ${saveRlDailyReport(enRlDigests, enRlComparison, utcStr, dateStr, enFooter, "en")}`);
 
   // Web report: zh saves state, en skips state save
   await saveWebReport(webResults, webState, utcStr, dateStr, digestRepo, footer, "zh");

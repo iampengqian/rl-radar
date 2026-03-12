@@ -5,6 +5,7 @@ import {
   buildRlPrompt,
   buildComparisonPrompt,
   buildPeersComparisonPrompt,
+  buildRlComparisonPrompt,
   buildSkillsPrompt,
   buildTrendingPrompt,
   buildWebReportPrompt,
@@ -162,6 +163,31 @@ describe("buildPeersComparisonPrompt", () => {
     expect(result).toContain("OpenClaw（核心参照");
     expect(result).toContain("OC summary");
     expect(result).toContain("Peer summary");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildRlComparisonPrompt
+// ---------------------------------------------------------------------------
+
+describe("buildRlComparisonPrompt", () => {
+  it("includes all RL digest summaries when they have data", () => {
+    const digests = [
+      makeDigest({ config: { ...cfg, name: "TRL" }, summary: "TRL summary", issues: [makeItem()] }),
+      makeDigest({ config: { ...cfg, name: "AReaL" }, summary: "AReaL summary", prs: [makeItem()] }),
+    ];
+    const result = buildRlComparisonPrompt(digests, "2026-03-09");
+    expect(result).toContain("TRL");
+    expect(result).toContain("TRL summary");
+    expect(result).toContain("AReaL");
+    expect(result).toContain("AReaL summary");
+    expect(result).toContain("横向对比分析报告");
+  });
+
+  it("shows no-activity for empty RL digests", () => {
+    const digests = [makeDigest({ config: { ...cfg, name: "TRL" }, summary: "Summary" })];
+    const result = buildRlComparisonPrompt(digests, "2026-03-09");
+    expect(result).toContain("过去24小时无活动");
   });
 });
 
