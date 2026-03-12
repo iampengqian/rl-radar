@@ -76,7 +76,15 @@ describe("manifest metadata", () => {
     expect(REPORT_FILES).toContain("rl-daily");
   });
 
+  it("includes rl-daily-en in the published report files", () => {
+    expect(REPORT_FILES).toContain("rl-daily-en");
+  });
+
   it("exposes a human-readable label for rl-daily", () => {
     expect(REPORT_LABELS["rl-daily"]).toBe("RL 开源生态日报");
+  });
+
+  it("exposes a human-readable label for rl-daily-en", () => {
+    expect(REPORT_LABELS["rl-daily-en"]).toBe("RL Open Source Ecosystem Digest");
   });
 });

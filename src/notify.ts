@@ -27,7 +27,7 @@ const ZH_LABELS: Record<string, string> = {
 const EN_LABELS: Record<string, string> = {
   "ai-cli": "AI CLI Tools",
   "ai-agents": "AI Agents Ecosystem",
-  "rl-daily": "RL Daily Digest",
+  "rl-daily": "RL Open Source Ecosystem Digest",
   "ai-web": "Official Updates",
   "ai-trending": "GitHub Trends",
   "ai-hn": "HN Community",
@@ -57,7 +57,7 @@ async function sendTelegram(text: string): Promise<void> {
 
 export function buildMessage(date: string, reports: string[], pagesUrl?: string): string {
   const PAGES_URL = (pagesUrl ?? process.env["PAGES_URL"] ?? PAGES_URL_DEFAULT).replace(/\/$/, "");
-  const baseReports = reports.filter((r) => !r.endsWith("-en"));
+  const baseReports = [...new Set(reports.map((r) => r.replace(/-en$/, "")))];
   const isWeekly = baseReports.includes("ai-weekly");
   const isMonthly = baseReports.includes("ai-monthly");
 
