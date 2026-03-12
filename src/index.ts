@@ -9,14 +9,7 @@
  * Provider-specific env vars — see src/providers/ for full list.
  */
 
-import {
-  type GitHubItem,
-  type RepoFetch,
-  fetchRecentItems,
-  fetchRecentReleases,
-  fetchSkillsData,
-  createGitHubIssue,
-} from "./github.ts";
+import { type GitHubItem, type RepoFetch, fetchSkillsData, createGitHubIssue } from "./github.ts";
 import {
   type RepoDigest,
   buildCliPrompt,
@@ -36,6 +29,7 @@ import { fetchHnData, type HnData } from "./hn.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
 import { generateRlDigests, saveRlDailyReport } from "./rl-daily.ts";
+import { fetchRepoActivity } from "./repo-activity.ts";
 
 // ---------------------------------------------------------------------------
 // Repo config — loaded from config.yml, falls back to built-in defaults
@@ -77,20 +71,7 @@ async function fetchAllData(
   console.log(`  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn`);
 
   const [fetched, skillsData, webResults, trendingData, hnData] = await Promise.all([
-    Promise.all(
-      allConfigs.map(async (cfg) => {
-        const [issuesRaw, prs, releases] = await Promise.all([
-          fetchRecentItems(cfg, "issues", since),
-          fetchRecentItems(cfg, "pulls", since),
-          fetchRecentReleases(cfg.repo, since),
-        ]);
-        const issues = issuesRaw.filter((i) => !i.pull_request);
-        console.log(
-          `  [${cfg.id}] issues: ${issues.length}, prs: ${prs.length}, releases: ${releases.length}`,
-        );
-        return { cfg, issues, prs, releases };
-      }),
-    ),
+    Promise.all(allConfigs.map((cfg) => fetchRepoActivity(cfg, since))),
     fetchSkillsData(CLAUDE_SKILLS_REPO).then((d) => {
       console.log(`  [claude-code-skills] prs: ${d.prs.length}, issues: ${d.issues.length}`);
       return d;
