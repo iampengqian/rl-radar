@@ -327,6 +327,60 @@ ${peerSections}
 `;
 }
 
+export function buildRlComparisonPrompt(
+  digests: RepoDigest[],
+  dateStr: string,
+  lang: "zh" | "en" = "zh",
+): string {
+  const noActivityStr = lang === "en" ? "No activity in the last 24 hours." : "过去24小时无活动。";
+
+  const sections = digests
+    .map((d) => {
+      const hasData = d.issues.length || d.prs.length || d.releases.length;
+      if (!hasData) return `## ${d.config.name} (github.com/${d.config.repo})\n${noActivityStr}`;
+      return `## ${d.config.name} (github.com/${d.config.repo})\n${d.summary}`;
+    })
+    .join("\n\n---\n\n");
+
+  if (lang === "en") {
+    return `You are a senior technical analyst of the reinforcement learning open-source ecosystem. The following are ${dateStr} daily digest summaries for each major RL project:
+
+${sections}
+
+---
+
+Generate a cross-project comparison report in English with these sections:
+
+1. **Ecosystem Overview** - 3-5 sentences on the overall RL open-source landscape today
+2. **Activity Comparison** - Table comparing Issues count, PR count, and Release status for each project
+3. **Shared Research & Engineering Directions** - Themes repeatedly appearing across multiple RL communities
+4. **Differentiation Analysis** - Differences in focus such as RLHF / post-training / infrastructure / environments / algorithms
+5. **Community Momentum & Maturity** - Which projects are moving fastest, which are stabilizing, which show stronger maintainer engagement
+6. **Trend Signals** - Important RL ecosystem signals that are useful for researchers and engineers
+
+Style: concise and professional, data-backed, suited for technical decision-makers and open-source contributors.
+`;
+  }
+
+  return `你是一位专注于强化学习（RL）开源生态的资深技术分析师。以下是 ${dateStr} 各主要 RL 项目的日报摘要：
+
+${sections}
+
+---
+
+请基于上述各项目动态，生成一份横向对比分析报告，包含以下部分：
+
+1. **生态全景** - 用 3-5 句话概括今日 RL 开源生态整体态势
+2. **各项目活跃度对比** - 以表格形式汇总各项目今日的 Issues 数、PR 数、Release 情况
+3. **共同关注的研究与工程方向** - 多个 RL 社区反复出现的主题与需求
+4. **差异化定位分析** - 各项目在 RLHF / post-training / 基础设施 / 环境 / 算法侧重点上的差异
+5. **社区热度与成熟度** - 哪些项目迭代更快，哪些项目更稳定，哪些项目维护者参与度更高
+6. **值得关注的趋势信号** - 对 RL 研究者和工程师有参考价值的生态趋势
+
+语言要求：简洁专业，有数据支撑，适合技术决策者和开源贡献者阅读。
+`;
+}
+
 export function buildSkillsPrompt(
   prs: GitHubItem[],
   issues: GitHubItem[],

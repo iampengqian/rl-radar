@@ -33,12 +33,13 @@ export async function generateRlDigests(
 
 export function saveRlDailyReport(
   rlDigests: RepoDigest[],
+  comparison: string,
   utcStr: string,
   dateStr: string,
   footer: string,
   lang: "zh" | "en" = "zh",
 ): string {
   const fileName = lang === "en" ? "rl-daily-en.md" : "rl-daily.md";
-  const content = buildRlReportContent(rlDigests, utcStr, dateStr, footer, lang);
+  const content = buildRlReportContent(rlDigests, comparison, utcStr, dateStr, footer, lang);
   return saveFile(content, dateStr, fileName);
 }

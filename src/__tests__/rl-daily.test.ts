@@ -88,6 +88,7 @@ describe("saveRlDailyReport", () => {
           summary: "x",
         },
       ],
+      "RL comparison",
       "2026-03-11 00:00",
       "2026-03-11",
       "\nfooter",
@@ -98,5 +99,6 @@ describe("saveRlDailyReport", () => {
     expect(mockSaveFile.mock.calls[0]![1]).toBe("2026-03-11");
     expect(mockSaveFile.mock.calls[0]![2]).toBe("rl-daily.md");
     expect(mockSaveFile.mock.calls[0]![0]).toContain("# RL 开源生态日报 2026-03-11");
+    expect(mockSaveFile.mock.calls[0]![0]).toContain("横向对比分析");
   });
 });

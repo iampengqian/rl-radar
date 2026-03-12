@@ -157,18 +157,28 @@ describe("buildOpenclawReportContent", () => {
 describe("buildRlReportContent", () => {
   it("renders Chinese RL report", () => {
     const digests = [makeDigest({ config: { id: "trl", repo: "huggingface/trl", name: "TRL" } })];
-    const result = buildRlReportContent(digests, "2026-03-09 00:00", "2026-03-09", "\nfooter", "zh");
+    const result = buildRlReportContent(
+      digests,
+      "RL comparison",
+      "2026-03-09 00:00",
+      "2026-03-09",
+      "\nfooter",
+      "zh",
+    );
     expect(result).toContain("# RL 开源生态日报 2026-03-09");
     expect(result).toContain("覆盖项目: 1 个");
     expect(result).toContain("[TRL](https://github.com/huggingface/trl)");
+    expect(result).toContain("横向对比分析");
+    expect(result).toContain("RL comparison");
     expect(result).toContain("RL 项目详细报告");
     expect(result).toContain("footer");
   });
 
   it("renders English RL report", () => {
     const digests = [makeDigest({ config: { id: "trl", repo: "huggingface/trl", name: "TRL" } })];
-    const result = buildRlReportContent(digests, "2026-03-09 00:00", "2026-03-09", "", "en");
+    const result = buildRlReportContent(digests, "RL comparison", "2026-03-09 00:00", "2026-03-09", "", "en");
     expect(result).toContain("# RL Open Source Daily Digest 2026-03-09");
     expect(result).toContain("Projects covered: 1");
+    expect(result).toContain("Cross-Project Comparison");
   });
 });

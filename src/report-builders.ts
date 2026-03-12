@@ -146,6 +146,7 @@ export function buildOpenclawReportContent(
 
 export function buildRlReportContent(
   rlDigests: RepoDigest[],
+  comparison: string,
   utcStr: string,
   dateStr: string,
   footer: string,
@@ -172,13 +173,26 @@ export function buildRlReportContent(
       ? {
           title: `# RL Open Source Daily Digest ${dateStr}\n\n`,
           meta: `> Generated: ${utcStr} UTC | Projects covered: ${rlDigests.length}\n\n`,
+          comparison: `## Cross-Project Comparison\n\n`,
           detail: `## RL Project Reports\n\n`,
         }
       : {
           title: `# RL 开源生态日报 ${dateStr}\n\n`,
           meta: `> 生成时间: ${utcStr} UTC | 覆盖项目: ${rlDigests.length} 个\n\n`,
+          comparison: `## 横向对比分析\n\n`,
           detail: `## RL 项目详细报告\n\n`,
         };
 
-  return t.title + t.meta + `${repoLinks}\n\n---\n\n` + t.detail + sections + footer;
+  return (
+    t.title +
+    t.meta +
+    `${repoLinks}\n\n` +
+    `---\n\n` +
+    t.comparison +
+    comparison +
+    `\n\n---\n\n` +
+    t.detail +
+    sections +
+    footer
+  );
 }
