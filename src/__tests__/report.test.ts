@@ -146,8 +146,8 @@ describe("autoGenFooter", () => {
 describe("readLlmRuntimeConfig", () => {
   it("uses defaults when env vars are missing", () => {
     expect(readLlmRuntimeConfig({})).toEqual({
-      concurrency: 1,
-      minIntervalMs: 15_000,
+      concurrency: 2,
+      minIntervalMs: 5_000,
     });
   });
 
@@ -170,8 +170,8 @@ describe("readLlmRuntimeConfig", () => {
         LLM_MIN_INTERVAL_MS: "-1",
       }),
     ).toEqual({
-      concurrency: 1,
-      minIntervalMs: 15_000,
+      concurrency: 2,
+      minIntervalMs: 5_000,
     });
   });
 });
@@ -217,9 +217,9 @@ describe("callLlm", () => {
 
     const promise = callLlm("prompt", 1024);
 
-    // First call rejects with 429 — retry is gated by both the 5 s backoff
-    // and the 15 s pacing window.
-    await vi.advanceTimersByTimeAsync(15_000);
+    // First call rejects with 429 — retry is gated by the 5 s backoff,
+    // which also matches the default pacing window.
+    await vi.advanceTimersByTimeAsync(5_000);
 
     const result = await promise;
     expect(result).toBe("success after retry");
@@ -239,10 +239,10 @@ describe("callLlm", () => {
     // before the expect() below gets a chance to inspect the rejection.
     promise.catch(() => {});
 
-    // Retry schedule under 15 s pacing:
-    // initial at t=0, retries at t=15, t=30, t=50.
-    await vi.advanceTimersByTimeAsync(15_000);
-    await vi.advanceTimersByTimeAsync(15_000);
+    // Retry schedule under 5 s pacing:
+    // initial at t=0, retries at t=5, t=15, t=35.
+    await vi.advanceTimersByTimeAsync(5_000);
+    await vi.advanceTimersByTimeAsync(10_000);
     await vi.advanceTimersByTimeAsync(20_000);
 
     await expect(promise).rejects.toThrow("rate limited");
@@ -266,7 +266,7 @@ describe("callLlm", () => {
     await vi.advanceTimersByTimeAsync(0);
     expect(mockCall).toHaveBeenCalledTimes(1);
 
-    await vi.advanceTimersByTimeAsync(14_999);
+    await vi.advanceTimersByTimeAsync(4_999);
     expect(mockCall).toHaveBeenCalledTimes(1);
 
     await vi.advanceTimersByTimeAsync(1);
@@ -281,12 +281,12 @@ describe("callLlm", () => {
     mockCall.mockResolvedValueOnce("ok");
 
     const promise = callLlm("prompt");
-    await vi.advanceTimersByTimeAsync(15_000);
+    await vi.advanceTimersByTimeAsync(5_000);
     await promise;
 
     // If slots leaked, the second call would hang even after the first
-    // finishes retrying. With single-flight pacing, only one request should
-    // start immediately and the next one should wait for the 15 s interval.
+    // finishes retrying. With the default pacing, only one new request should
+    // start immediately and the next one should wait for the 5 s interval.
     mockCall.mockResolvedValue("ok");
     const batch = [callLlm("p1"), callLlm("p2")];
     const priorCalls = mockCall.mock.calls.length;
@@ -294,13 +294,13 @@ describe("callLlm", () => {
     await vi.advanceTimersByTimeAsync(0);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls);
 
-    await vi.advanceTimersByTimeAsync(14_999);
+    await vi.advanceTimersByTimeAsync(4_999);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls);
 
     await vi.advanceTimersByTimeAsync(1);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls + 1);
 
-    await vi.advanceTimersByTimeAsync(15_000);
+    await vi.advanceTimersByTimeAsync(5_000);
     const results = await Promise.all(batch);
     expect(results).toEqual(["ok", "ok"]);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls + 2);
