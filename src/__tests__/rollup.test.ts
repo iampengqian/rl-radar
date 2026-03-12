@@ -1,5 +1,10 @@
-import { describe, it, expect } from "vitest";
-import { toWeekStr } from "../rollup.ts";
+import fs from "node:fs";
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { readDailyDigest, toWeekStr } from "../rollup.ts";
+
+afterEach(() => {
+  vi.restoreAllMocks();
+});
 
 describe("toWeekStr", () => {
   it("returns correct ISO week for a known date", () => {
@@ -27,5 +32,33 @@ describe("toWeekStr", () => {
     // 2026-01-12 is a Monday in week 3
     const result = toWeekStr(new Date("2026-01-12"));
     expect(result).toBe("2026-W03");
+  });
+});
+
+describe("readDailyDigest", () => {
+  it("combines multiple report types from the same day, including rl-daily", () => {
+    vi.spyOn(fs, "existsSync").mockImplementation((filepath) => {
+      const path = String(filepath);
+      return path.endsWith("/ai-cli.md") || path.endsWith("/rl-daily.md");
+    });
+    vi.spyOn(fs, "readFileSync").mockImplementation((filepath) => {
+      const path = String(filepath);
+      if (path.endsWith("/ai-cli.md")) return "# CLI";
+      if (path.endsWith("/rl-daily.md")) return "# RL";
+      throw new Error(`unexpected path: ${path}`);
+    });
+
+    expect(readDailyDigest("2026-03-12")).toContain("# CLI");
+    expect(readDailyDigest("2026-03-12")).toContain("# RL");
+  });
+
+  it("returns rl-daily when it is the only available source", () => {
+    vi.spyOn(fs, "existsSync").mockImplementation((filepath) => String(filepath).endsWith("/rl-daily.md"));
+    vi.spyOn(fs, "readFileSync").mockImplementation((filepath) => {
+      if (String(filepath).endsWith("/rl-daily.md")) return "# RL only";
+      throw new Error(`unexpected path: ${filepath}`);
+    });
+
+    expect(readDailyDigest("2026-03-12")).toContain("# RL only");
   });
 });
