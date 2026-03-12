@@ -18,7 +18,7 @@ vi.mock("../providers/index.ts", async (importOriginal) => {
   };
 });
 
-import { is429, callLlm, saveFile, autoGenFooter } from "../report.ts";
+import { is429, callLlm, saveFile, autoGenFooter, resetLlmStateForTest } from "../report.ts";
 
 // ---------------------------------------------------------------------------
 // is429
@@ -143,7 +143,9 @@ describe("autoGenFooter", () => {
 describe("callLlm", () => {
   beforeEach(() => {
     vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-03-12T00:00:00Z"));
     mockCall.mockReset();
+    resetLlmStateForTest();
   });
 
   afterEach(() => {
@@ -213,6 +215,24 @@ describe("callLlm", () => {
     expect(mockCall).toHaveBeenCalledOnce();
   });
 
+  it("paces consecutive calls with a minimum interval", async () => {
+    mockCall.mockResolvedValue("ok");
+
+    const first = callLlm("p1");
+    const second = callLlm("p2");
+
+    await vi.advanceTimersByTimeAsync(0);
+    expect(mockCall).toHaveBeenCalledTimes(1);
+
+    await vi.advanceTimersByTimeAsync(999);
+    expect(mockCall).toHaveBeenCalledTimes(1);
+
+    await vi.advanceTimersByTimeAsync(1);
+    expect(mockCall).toHaveBeenCalledTimes(2);
+
+    await expect(Promise.all([first, second])).resolves.toEqual(["ok", "ok"]);
+  });
+
   it("does not leak concurrency slots on 429 retries", async () => {
     const err429 = Object.assign(new Error("429"), { status: 429 });
     mockCall.mockRejectedValueOnce(err429);
@@ -223,9 +243,11 @@ describe("callLlm", () => {
     await promise;
 
     // If slots leaked, subsequent calls would hang. Fire LLM_CONCURRENCY (5)
-    // calls to prove all slots are available.
+    // calls to prove all slots are available. With pacing enabled, allow the
+    // 4 additional start intervals to elapse.
     mockCall.mockResolvedValue("ok");
     const batch = Array.from({ length: 5 }, (_, i) => callLlm(`p${i}`));
+    await vi.advanceTimersByTimeAsync(4_000);
     const results = await Promise.all(batch);
     expect(results).toEqual(["ok", "ok", "ok", "ok", "ok"]);
   });

@@ -24,8 +24,10 @@ const provider: LlmProvider = createProvider();
 // ---------------------------------------------------------------------------
 
 const LLM_CONCURRENCY = 5;
+const LLM_MIN_INTERVAL_MS = 1_000;
 let llmSlots = LLM_CONCURRENCY;
 const llmQueue: Array<() => void> = [];
+let llmNextAllowedAt = 0;
 
 function acquireSlot(): Promise<void> {
   if (llmSlots > 0) {
@@ -44,6 +46,12 @@ function releaseSlot(): void {
   }
 }
 
+export function resetLlmStateForTest(): void {
+  llmSlots = LLM_CONCURRENCY;
+  llmQueue.length = 0;
+  llmNextAllowedAt = 0;
+}
+
 // ---------------------------------------------------------------------------
 // LLM
 // ---------------------------------------------------------------------------
@@ -59,11 +67,19 @@ function sleep(ms: number): Promise<void> {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+async function waitForLlmPacing(): Promise<void> {
+  const now = Date.now();
+  const wait = Math.max(0, llmNextAllowedAt - now);
+  if (wait > 0) await sleep(wait);
+  llmNextAllowedAt = Date.now() + LLM_MIN_INTERVAL_MS;
+}
+
 export async function callLlm(prompt: string, maxTokens = LLM_TOKENS_DEFAULT): Promise<string> {
   for (let attempt = 0; ; attempt++) {
     await acquireSlot();
     let released = false;
     try {
+      await waitForLlmPacing();
       return await provider.call(prompt, maxTokens);
     } catch (err) {
       if (attempt < MAX_RETRIES && is429(err)) {
