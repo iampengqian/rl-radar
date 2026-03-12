@@ -24,7 +24,7 @@ const provider: LlmProvider = createProvider();
 // ---------------------------------------------------------------------------
 
 const LLM_CONCURRENCY = 1;
-const LLM_MIN_INTERVAL_MS = 5_000;
+const LLM_MIN_INTERVAL_MS = 15_000;
 let llmSlots = LLM_CONCURRENCY;
 const llmQueue: Array<() => void> = [];
 let llmNextAllowedAt = 0;

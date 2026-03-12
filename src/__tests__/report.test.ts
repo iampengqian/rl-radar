@@ -177,13 +177,14 @@ describe("callLlm", () => {
 
     const promise = callLlm("prompt", 1024);
 
-    // First call rejects with 429 — advance past the 5 s backoff
-    await vi.advanceTimersByTimeAsync(5_000);
+    // First call rejects with 429 — retry is gated by both the 5 s backoff
+    // and the 15 s pacing window.
+    await vi.advanceTimersByTimeAsync(15_000);
 
     const result = await promise;
     expect(result).toBe("success after retry");
     expect(mockCall).toHaveBeenCalledTimes(2);
-  });
+  }, 20_000);
 
   it("retries up to MAX_RETRIES times then throws", async () => {
     const err429 = Object.assign(new Error("rate limited"), { status: 429 });
@@ -198,15 +199,16 @@ describe("callLlm", () => {
     // before the expect() below gets a chance to inspect the rejection.
     promise.catch(() => {});
 
-    // Advance through all 3 retry backoffs: 5s, 10s, 20s
-    await vi.advanceTimersByTimeAsync(5_000);
-    await vi.advanceTimersByTimeAsync(10_000);
+    // Retry schedule under 15 s pacing:
+    // initial at t=0, retries at t=15, t=30, t=50.
+    await vi.advanceTimersByTimeAsync(15_000);
+    await vi.advanceTimersByTimeAsync(15_000);
     await vi.advanceTimersByTimeAsync(20_000);
 
     await expect(promise).rejects.toThrow("rate limited");
     // 1 initial + 3 retries = 4 total calls
     expect(mockCall).toHaveBeenCalledTimes(4);
-  });
+  }, 20_000);
 
   it("throws immediately on non-429 errors", async () => {
     mockCall.mockRejectedValueOnce(new Error("server error"));
@@ -224,7 +226,7 @@ describe("callLlm", () => {
     await vi.advanceTimersByTimeAsync(0);
     expect(mockCall).toHaveBeenCalledTimes(1);
 
-    await vi.advanceTimersByTimeAsync(4_999);
+    await vi.advanceTimersByTimeAsync(14_999);
     expect(mockCall).toHaveBeenCalledTimes(1);
 
     await vi.advanceTimersByTimeAsync(1);
@@ -239,12 +241,12 @@ describe("callLlm", () => {
     mockCall.mockResolvedValueOnce("ok");
 
     const promise = callLlm("prompt");
-    await vi.advanceTimersByTimeAsync(5_000);
+    await vi.advanceTimersByTimeAsync(15_000);
     await promise;
 
     // If slots leaked, the second call would hang even after the first
     // finishes retrying. With single-flight pacing, only one request should
-    // start immediately and the next one should wait for the 5 s interval.
+    // start immediately and the next one should wait for the 15 s interval.
     mockCall.mockResolvedValue("ok");
     const batch = [callLlm("p1"), callLlm("p2")];
     const priorCalls = mockCall.mock.calls.length;
@@ -252,15 +254,15 @@ describe("callLlm", () => {
     await vi.advanceTimersByTimeAsync(0);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls);
 
-    await vi.advanceTimersByTimeAsync(4_999);
+    await vi.advanceTimersByTimeAsync(14_999);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls);
 
     await vi.advanceTimersByTimeAsync(1);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls + 1);
 
-    await vi.advanceTimersByTimeAsync(5_000);
+    await vi.advanceTimersByTimeAsync(15_000);
     const results = await Promise.all(batch);
     expect(results).toEqual(["ok", "ok"]);
     expect(mockCall).toHaveBeenCalledTimes(priorCalls + 2);
-  });
+  }, 20_000);
 });
