@@ -184,6 +184,26 @@ describe("buildRlComparisonPrompt", () => {
     expect(result).toContain("横向对比分析报告");
   });
 
+  it("requires fixed headings and forbids repeating the report title", () => {
+    const digests = [
+      makeDigest({ config: { ...cfg, name: "TRL" }, summary: "TRL summary", issues: [makeItem()] }),
+    ];
+    const result = buildRlComparisonPrompt(digests, "2026-03-09");
+    expect(result).toContain("不要重复输出报告标题");
+    expect(result).toContain("## 生态全景");
+    expect(result).toContain("## 各项目活跃度对比");
+    expect(result).toContain("## 共同关注的研究与工程方向");
+  });
+
+  it("places active projects before inactive ones in the prompt context", () => {
+    const digests = [
+      makeDigest({ config: { ...cfg, name: "DormantRL" }, summary: "Dormant summary" }),
+      makeDigest({ config: { ...cfg, name: "ActiveRL" }, summary: "Active summary", issues: [makeItem()] }),
+    ];
+    const result = buildRlComparisonPrompt(digests, "2026-03-09");
+    expect(result.indexOf("## ActiveRL")).toBeLessThan(result.indexOf("## DormantRL"));
+  });
+
   it("shows no-activity for empty RL digests", () => {
     const digests = [makeDigest({ config: { ...cfg, name: "TRL" }, summary: "Summary" })];
     const result = buildRlComparisonPrompt(digests, "2026-03-09");
