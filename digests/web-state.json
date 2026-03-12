@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-03-12T02:24:49.192Z",
+    "lastChecked": "2026-03-12T03:19:12.102Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -323,7 +323,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-03-12T02:24:39.839Z",
+    "lastChecked": "2026-03-12T03:19:14.829Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-03-11T20:05:48.619Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-03-11T08:55:18.382Z",
@@ -939,7 +939,7 @@
       "https://openai.com/index/continuing-microsoft-partnership/": "2026-03-11T20:04:58.699Z",
       "https://openai.com/index/amazon-partnership/": "2026-03-11T20:05:55.129Z",
       "https://openai.com/index/scaling-ai-for-everyone/": "2026-03-11T20:06:14.871Z",
-      "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/": "2026-03-11T20:05:49.590Z",
+      "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/": "2026-03-12T03:02:54.538Z",
       "https://openai.com/index/our-agreement-with-the-department-of-war/": "2026-03-11T20:02:47.050Z",
       "https://openai.com/index/gpt-5-3-instant/": "2026-03-05T18:10:59.079Z",
       "https://openai.com/index/gpt-5-3-instant-system-card/": "2026-03-03T17:55:51.461Z",
@@ -952,7 +952,7 @@
       "https://openai.com/index/openai-to-acquire-promptfoo/": "2026-03-11T23:41:05.738Z",
       "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/": "2026-03-11T15:36:45.033Z",
       "https://openai.com/index/instruction-hierarchy-challenge/": "2026-03-12T01:36:11.127Z",
-      "https://openai.com/index/equip-responses-api-computer-environment/": "2026-03-11T18:05:47.564Z"
+      "https://openai.com/index/equip-responses-api-computer-environment/": "2026-03-12T02:37:06.747Z"
     }
   }
 }

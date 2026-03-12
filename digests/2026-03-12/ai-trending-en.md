@@ -1,84 +1,93 @@
 # AI Open Source Trends 2026-03-12
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-12 02:24 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-12 03:19 UTC
 
 ---
 
 # AI Open Source Ecosystem Trends Report (2026-03-12)
 
 ## 1. Today's Highlights
-The GitHub trending landscape today is dominated by the rise of **Vertical-Specific Agent Teams** and **Swarm Intelligence** frameworks. While general-purpose agents remain popular, developers are shifting toward specialized "agency" models, evidenced by the explosive growth of `agency-agents` (an AI agency in a box) and `ai-hedge-fund` (a financial trading team). Simultaneously, we are seeing the maturation of the **Browser/GUI Agent** stack, with Alibaba's `page-agent` and `browser-use` enabling natural language control of web interfaces. This suggests a transition from "chatting with AI" to "employing AI workforces" to execute complex, multi-step real-world tasks.
+The GitHub trending landscape today is overwhelmingly dominated by the "Agentic Agency" paradigm. The top spot belongs to **agency-agents**, a shell-based framework promising a complete AI agency with specialized, personality-driven experts, signaling a shift from single-task bots to complex role-playing agent teams. Closely following is **MiroFish**, a "Swarm Intelligence Engine" for universal prediction, and **NousResearch/hermes-agent**, emphasizing agents that "grow" with the user. This trend suggests the community is moving rapidly from static LLM interactions toward dynamic, self-organizing multi-agent systems. Additionally, **Alibaba's Page-Agent** highlights a specific focus on natural language control for web GUIs, bridging the gap between agents and browser automation.
 
 ---
 
 ## 2. Top Projects by Category
 
 ### 🤖 AI Agents / Workflows
-*The fastest-moving category today, focusing on autonomous systems, multi-agent collaboration, and task automation.*
+*Primary Focus: Multi-agent orchestration, autonomous workflows, and browser control.*
 
-- **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** [Shell] ⭐+6,167 today
-  - A complete "AI Agency" framework offering specialized experts (from frontend wizards to community managers), reflecting the trend toward modular, role-based agent teams.
-- **[666ghj/MiroFish](https://github.com/666ghj/MiroFish)** [Python] ⭐+2,907 today
-  - A "Universal Swarm Intelligence Engine" claiming to predict anything, highlighting a surge of interest in decentralized agent coordination and predictive multi-agent systems.
-- **[alibaba/page-agent](https://github.com/alibaba/page-agent)** [TypeScript] ⭐+1,215 today
-  - A JavaScript in-page GUI agent from Alibaba that allows developers to control web interfaces using natural language, bypassing traditional DOM selectors.
-- **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** [Python] ⭐+1,234 today
-  - An "agent that grows with you" from NousResearch, likely focusing on iterative learning and memory accumulation for personal assistants.
-- **[virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund)** [Python] ⭐+636 today
-  - A proof-of-concept for an autonomous hedge fund run by AI agents, signaling high interest in applying agentic workflows to financial speculation.
+- **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** [Shell] ⭐6,167 (+6,167 today)
+  - **Why:** Today’s #1 project. It introduces a "complete AI agency" concept with specialized personas (e.g., "frontend wizards," "reality checkers"), reflecting the massive demand for production-ready multi-agent team structures.
+
+- **[666ghj/MiroFish](https://github.com/666ghj/MiroFish)** [Python] ⭐2,907 (+2,907 today)
+  - **Why:** A trending "Universal Swarm Intelligence Engine." It applies swarm theory to general prediction tasks, offering an alternative architecture to standard transformer-based reasoning.
+
+- **[alibaba/page-agent](https://github.com/alibaba/page-agent)** [TypeScript] ⭐1,215 (+1,215 today)
+  - **Why:** A major release from Alibaba. It acts as an in-page GUI agent, allowing developers to control web interfaces via natural language rather than brittle selectors.
+
+- **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** [Python] ⭐1,234 (+1,234 today)
+  - **Why:** From the creators of the Hermes model series. This project focuses on "agentic growth," implying mechanisms for long-term memory and adaptive skill acquisition.
+
+- **[obra/superpowers](https://github.com/obra/superpowers)** [Shell] ⭐1,483 (+1,483 today)
+  - **Why:** Described as an "agentic skills framework," it likely provides the methodology and scripts required to give LLMs actionable capabilities in a dev environment.
+
+- **[virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund)** [Python] ⭐636 (+636 today)
+  - **Why:** A perennial favorite that continues to trend. It demonstrates a multi-agent collaboration setup specifically tailored for financial analysis and trading logic.
 
 ### 🔧 AI Infrastructure
-*Foundational tools, evals, and frameworks enabling the agent ecosystem.*
+*Primary Focus: Evaluation, observability, and deployment tooling.*
 
-- **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** [TypeScript] ⭐+718 today
-  - A CLI and library for red-teaming, pentesting, and evaluating AI agents/RAGs, essential for ensuring reliability in autonomous systems.
-- **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** [JavaScript] ⭐72,164 total
-  - An optimization harness for Claude Code and other coding agents, focusing on memory, security, and "research-first" development methodologies.
-- **[open-compass/opencompass](https://github.com/open-compass/opencompass)** [Python] ⭐6,746 total
-  - A leading LLM evaluation platform supporting 100+ datasets, critical for validating the performance of new open-source models.
-- **[0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)** [Rust] ⭐6,444 total
-  - A modular framework for building LLM applications in Rust, catering to the demand for high-performance, memory-safe AI infrastructure.
+- **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** [TypeScript] ⭐718 (+718 today)
+  - **Why:** An essential tool for the "Agent Era." It provides pentesting and vulnerability scanning specifically for AI agents and RAGs, addressing the growing security concerns around autonomous systems.
 
-### 🔍 RAG / Knowledge
-*Memory layers, vector databases, and retrieval systems.*
+- **[ollama/ollama](https://github.com/ollama/ollama)** [Go] ⭐164,889 (Topic Search)
+  - **Why:** The standard for local LLM inference. It remains a backbone technology, recently expanding support to newer models like Kimi-K2.5 and GLM-5.
 
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** [TypeScript] ⭐34,186 total
-  - A plugin that injects compressed, relevant context from past sessions into Claude Code, solving the "goldfish memory" problem of coding agents.
-- **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** [Python] ⭐74,793 total
-  - A deep-document understanding RAG engine that fuses retrieval with agent capabilities for superior context handling.
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** [Python] ⭐49,466 total
-  - A universal memory layer for AI agents, standardizing how applications store and recall user preferences and history.
-- **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** [Python] ⭐10,295 total
-  - A RAG system focused on extreme compression (97% savings) and local execution, addressing privacy and efficiency constraints.
+- **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐72,883 (Topic Search)
+  - **Why:** High-throughput inference engine. It is the go-to solution for production deployments of high-volume agent workloads.
 
 ### 📦 AI Applications
-*End-user products and vertical integrations.*
+*Primary Focus: End-user tools, chat interfaces, and vertical implementations.*
 
-- **[fishaudio/fish-speech](https://github.com/fishaudio/fish-speech)** [Python] ⭐+313 today
-  - State-of-the-art open-source Text-to-Speech (TTS) solution, bridging the gap between text-based LLMs and voice interfaces.
-- **[AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot)** [Python] ⭐+342 today
-  - Agnostic IM (Instant Messaging) chatbot infrastructure that integrates multiple platforms (Discord, WeChat, etc.) and LLMs.
-- **[saturndec/waoowaoo](https://github.com/saturndec/waoowaoo)** [TypeScript] ⭐9,176 total
-  - An industrial-grade AI platform for controllable film & video production, showcasing the move of GenAI into professional media workflows.
+- **[fishaudio/fish-speech](https://github.com/fishaudio/fish-speech)** [Python] ⭐313 (+313 today)
+  - **Why:** State-of-the-art (SOTA) open-source Text-to-Speech. As voice interfaces for agents become critical, low-latency, high-quality TTS engines like Fish Speech are seeing renewed interest.
+
+- **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** [TypeScript] ⭐41,277 (Topic Search)
+  - **Why:** A robust desktop client that unifies access to various LLMs and agents, serving as a "command center" for power users.
+
+### 🔍 RAG / Knowledge
+*Primary Focus: Memory, context management, and retrieval.*
+
+- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** [Python] ⭐13,161 (Topic Search)
+  - **Why:** Billed as an "Engine for AI Agent Memory." It addresses the critical bottleneck in current agents: retaining and retrieving context efficiently over long sessions.
+
+- **[run-llama/llama_index](https://github.com/run-llama/llama_index)** [Python] ⭐47,603 (Topic Search)
+  - **Why:** The leading framework for connecting custom data to LLMs, now heavily pivoting towards "Document Agents" that can parse and reason over complex files.
+
+- **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** [Python] ⭐10,295 (Topic Search)
+  - **Why:** A research gem (MLsys2026) focused on "RAG on Everything" with 97% storage savings, crucial for running efficient local agents.
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**1. The Rise of "Agencies" over "Agents"**
-The most significant signal today is the shift from single agents to **Specialized Workforces**. The top trending repo (`agency-agents`) isn't just a tool; it's a collection of distinct personas (Frontend Wizard, Reddit Ninja). This mirrors the enterprise shift where companies don't want one "smart chatbot" but rather a team of digital workers that can hand off tasks to one another. We expect to see more "Manager-Worker" architectures in open-source repos.
+**1. The Rise of the "Agency" Framework**
+The most significant signal today is the explosive growth of **msitarzewski/agency-agents** and **NousResearch/hermes-agent**. We are witnessing a transition from "Chatbots" (single turn) to "Agentic Workflows" (tool use) and now to **"Agencies"** (multi-agent teams with distinct personalities and specializations). The fact that a Shell-script based framework (`agency-agents`) is outpacing Python/TypeScript projects suggests that developers are prioritizing *process orchestration* and *system integration* over raw model logic.
 
-**2. Browser/GUI Agents hitting Prime Time**
-With `page-agent` (Alibaba) and `browser-use` gaining traction, it is clear that **Web Interaction** is the new frontier. LLMs have largely solved text generation; the next challenge is action. The emergence of "in-page" JavaScript agents suggests a move away from Selenium/Puppeteer-based browser automation toward DOM-aware agents that can see and interact with websites semantically.
+**2. Swarm Intelligence as a Counter-Current**
+While transformers dominate, **MiroFish** (Swarm Intelligence) trending at #2 indicates a growing interest in non-transformer architectures for problem-solving. Swarms offer robustness and distributed computing benefits that centralized LLMs struggle with. This aligns with the "Agentic" trend but approaches it from a bio-inspired computing angle.
 
-**3. Swarm Intelligence & Prediction**
-The sudden spike in `MiroFish` (Swarm Intelligence) suggests developers are looking beyond sequential chain-of-thought. **Swarm-based reasoning**—where multiple minor models or agents collaborate to predict outcomes—offers a cheaper, potentially more robust alternative to relying on one massive model.
+**3. GUI Agents are Maturing**
+The presence of **Alibaba/page-agent** in the trending list marks a strategic pivot towards "Computer Use" (a la Claude 3.5 Sonnet's computer use). Developers are building agents that don't just browse the web (like **browser-use**) but specifically manipulate DOM elements within a page to execute software workflows.
+
+**4. Security & Ops for Agents**
+**promptfoo**'s re-emergence in trending highlights a maturing market. As agents get more autonomy, the need for "Red teaming," "pentesting," and deterministic evaluation of non-deterministic systems becomes the primary concern for enterprise adoption.
 
 ---
 
 ## 4. Community Hot Spots
 
-*   **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)**: A must-watch for the "Role-Playing" architecture pattern. It defines how to effectively prompt-engineer distinct personalities to solve complex workflows.
-*   **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)**: As agents become autonomous, safety is paramount. This tool is becoming the de-facto standard for CI/CD integration of AI evaluation.
-*   **[alibaba/page-agent](https://github.com/alibaba/page-agent)**: Represents the "Client-Side Agent" trend. Developers building browser extensions or web automation tools should study this approach to DOM manipulation via LLMs.
-*   **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)**: Solving context window limits via compression and RAG is the hottest topic in coding assistants. This project offers a production-ready implementation.
+*   **Role-Based Agent Systems:** With **agency-agents** trending, developers should look into "Persona Prompting" and frameworks that allow distinct agent roles (e.g., a "Project Manager" agent supervising a "Coder" agent).
+*   **Swarm Engine Architecture:** Keep an eye on **MiroFish**. If it delivers on "predicting anything" via swarm logic, it could become a staple for forecasting and complex decision-making agents alongside traditional LLMs.
+*   **Browser/DOM Manipulation:** **Page-Agent** and **browser-use** indicate that "Natural Language to GUI" is the next major interface disruption. Building wrappers for existing web apps is a high-value area right now.
+*   **Agent Memory Engines:** **Cognee** and **claude-mem** are solving the "amnesia" problem of LLMs. Implementing a robust memory layer (Vector DB + Knowledge Graph) is becoming the differentiator between a toy agent and a useful one.
