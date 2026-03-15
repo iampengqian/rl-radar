@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-03-14T22:01:48.673Z",
+    "lastChecked": "2026-03-15T22:03:01.654Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -324,7 +324,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-03-14T22:01:51.153Z",
+    "lastChecked": "2026-03-15T22:03:04.523Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-03-14T04:18:44.785Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-03-14T04:28:27.477Z",
@@ -953,7 +953,7 @@
       "https://openai.com/index/openai-to-acquire-promptfoo/": "2026-03-11T23:41:05.738Z",
       "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/": "2026-03-14T12:25:33.332Z",
       "https://openai.com/index/instruction-hierarchy-challenge/": "2026-03-14T12:26:01.038Z",
-      "https://openai.com/index/equip-responses-api-computer-environment/": "2026-03-14T20:53:09.024Z"
+      "https://openai.com/index/equip-responses-api-computer-environment/": "2026-03-15T21:26:11.280Z"
     }
   }
 }
