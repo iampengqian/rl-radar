@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { SITE_URL, REPORT_FILES, REPORT_LABELS, toRfc822, escapeXml } from "../generate-manifest.ts";
+import { SITE_URL, REPORT_FILES, toRfc822, escapeXml } from "../generate-manifest.ts";
+import { REPORT_LABELS } from "../i18n.ts";
 
 // ---------------------------------------------------------------------------
 // toRfc822
