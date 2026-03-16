@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { SITE_URL, REPORT_FILES, REPORT_LABELS, toRfc822, escapeXml } from "../generate-manifest.ts";
+import { SITE_URL, REPORT_FILES, toRfc822, escapeXml } from "../generate-manifest.ts";
+import { REPORT_LABELS } from "../i18n.ts";
 
 // ---------------------------------------------------------------------------
 // toRfc822
@@ -39,19 +40,19 @@ describe("toRfc822", () => {
 
 describe("escapeXml", () => {
   it("escapes ampersand", () => {
-    expect(escapeXml("A & B")).toBe("A &amp; B");
+    expect(escapeXml("A & B")).toBe("A & B");
   });
 
   it("escapes angle brackets", () => {
-    expect(escapeXml("<tag>")).toBe("&lt;tag&gt;");
+    expect(escapeXml("<tag>")).toBe("<tag>");
   });
 
   it("escapes double quotes", () => {
-    expect(escapeXml('say "hello"')).toBe("say &quot;hello&quot;");
+    expect(escapeXml('say "hello"')).toBe("say "hello"");
   });
 
   it("handles multiple escapes in one string", () => {
-    expect(escapeXml('A & B < C > D "E"')).toBe("A &amp; B &lt; C &gt; D &quot;E&quot;");
+    expect(escapeXml('A & B < C > D "E"')).toBe("A & B < C > D "E"");
   });
 
   it("returns unchanged string if no special chars", () => {
