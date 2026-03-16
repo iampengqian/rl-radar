@@ -786,10 +786,11 @@ Generate an AI Tools Ecosystem Weekly Report with these sections:
 1. **Week's Top Stories** - 5-8 most important events, releases, and community developments this week, each with date
 2. **CLI Tools Progress** - Overall activity and key changes for each AI CLI tool (Claude Code, Codex, Gemini CLI, etc.)
 3. **AI Agent Ecosystem** - Key developments from OpenClaw and peer projects this week
-4. **Open Source Trends** - Most notable technical directions from GitHub Trending and AI community this week
-5. **HN Community Highlights** - Core AI discussion topics and community sentiment on Hacker News this week
-6. **Official Announcements** - Important content published by Anthropic and OpenAI this week (if any)
-7. **Next Week's Signals** - Based on this week's data, predict trends and upcoming events worth watching
+4. **RL Open Source Ecosystem** - Weekly progress in reinforcement learning frameworks (OpenRLHF, verl, TRL, slime, AReaL, etc.), focusing on algorithm innovations, training infrastructure, and model compatibility
+5. **Open Source Trends** - Most notable technical directions from GitHub Trending and AI community this week
+6. **HN Community Highlights** - Core AI discussion topics and community sentiment on Hacker News this week
+7. **Official Announcements** - Important content published by Anthropic and OpenAI this week (if any)
+8. **Next Week's Signals** - Based on this week's data, predict trends and upcoming events worth watching
 
 Style: English, concise and professional, helping technical developers quickly grasp the week's developments.
 `;
@@ -806,10 +807,11 @@ ${digestEntries}
 1. **本周要闻** - 5-8 条本周最重要的事件、版本发布、社区动向，每条附日期
 2. **CLI 工具进展** - 各 AI CLI 工具（Claude Code、Codex、Gemini CLI 等）本周整体动态与关键变化
 3. **AI Agent 生态** - OpenClaw 及同赛道项目的本周重要进展
-4. **开源趋势** - 本周 GitHub Trending 和 AI 社区最关注的技术方向
-5. **HN 社区热议** - 本周 Hacker News AI 讨论的核心话题与社区情绪
-6. **官方动态** - Anthropic 和 OpenAI 本周发布的重要内容（若有）
-7. **下周信号** - 基于本周数据，预判值得关注的趋势或即将到来的事件
+4. **RL 开源生态** - 强化学习框架（OpenRLHF、verl、TRL、slime、AReaL 等）本周进展，聚焦算法创新、训练基础设施、模型适配
+5. **开源趋势** - 本周 GitHub Trending 和 AI 社区最关注的技术方向
+6. **HN 社区热议** - 本周 Hacker News AI 讨论的核心话题与社区情绪
+7. **官方动态** - Anthropic 和 OpenAI 本周发布的重要内容（若有）
+8. **下周信号** - 基于本周数据，预判值得关注的趋势或即将到来的事件
 
 语言要求：中文，简洁专业，适合技术开发者快速掌握一周动态。
 `;
@@ -836,10 +838,11 @@ Generate an AI Tools Ecosystem Monthly Report with these sections:
 1. **Month's Top Stories** - 5-10 most important events and milestones this month, in chronological order
 2. **CLI Tools Monthly Progress** - Overall development trajectory, major releases, and community growth for each key AI CLI tool
 3. **AI Agent Ecosystem Monthly Review** - Ecosystem landscape shifts, emerging projects, notable signals this month
-4. **Technical Trend Summary** - Most significant technical directions and paradigm shifts in AI open-source this month
-5. **Community Health Assessment** - Monthly activity comparison across major projects, developer engagement evaluation
-6. **Official Announcements Review** - Strategic analysis of Anthropic and OpenAI content published this month
-7. **Next Month's Outlook** - Based on this month's trends, predict key directions and potential events to watch
+4. **RL Open Source Ecosystem Monthly Review** - Monthly progress in reinforcement learning frameworks (OpenRLHF, verl, TRL, slime, AReaL, etc.), focusing on algorithm innovations, training infrastructure, and model compatibility
+5. **Technical Trend Summary** - Most significant technical directions and paradigm shifts in AI open-source this month
+6. **Community Health Assessment** - Monthly activity comparison across major projects, developer engagement evaluation
+7. **Official Announcements Review** - Strategic analysis of Anthropic and OpenAI content published this month
+8. **Next Month's Outlook** - Based on this month's trends, predict key directions and potential events to watch
 
 Style: English, in-depth analysis, data-driven, suited for monthly retrospectives and strategic decision-making.
 `;
@@ -856,10 +859,11 @@ ${digestEntries}
 1. **月度要闻** - 本月最重要的 5-10 条事件和里程碑，按时间排列
 2. **CLI 工具月度进展** - 各主要 AI CLI 工具本月整体发展轨迹、重要版本、社区规模变化
 3. **AI Agent 生态月报** - 本月生态格局变化、新兴项目、值得关注的信号
-4. **技术趋势总结** - 本月 AI 开源领域最显著的技术方向与范式变化
-5. **社区生态健康度** - 各主要项目月度活跃度对比、开发者参与度评估
-6. **官方动态回顾** - Anthropic 和 OpenAI 本月发布内容的战略意义分析
-7. **下月展望** - 基于本月趋势，预判值得重点关注的方向和潜在事件
+4. **RL 开源生态月报** - 强化学习框架（OpenRLHF、verl、TRL、slime、AReaL 等）本月进展，聚焦算法创新、训练基础设施、模型适配
+5. **技术趋势总结** - 本月 AI 开源领域最显著的技术方向与范式变化
+6. **社区生态健康度** - 各主要项目月度活跃度对比、开发者参与度评估
+7. **官方动态回顾** - Anthropic 和 OpenAI 本月发布内容的战略意义分析
+8. **下月展望** - 基于本月趋势，预判值得重点关注的方向和潜在事件
 
 语言要求：中文，深度分析，数据驱动，适合月度复盘和战略决策参考。
 `;
