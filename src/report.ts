@@ -84,6 +84,18 @@ export function is429(err: unknown): boolean {
   return (err as { status?: number })?.status === 429 || String(err).includes("429");
 }
 
+/** Check if error is retryable (429 rate limit or 5xx server error) */
+export function isRetryable(err: unknown): boolean {
+  const status = (err as { status?: number })?.status;
+  const errStr = String(err);
+  // 429 rate limit
+  if (status === 429 || errStr.includes("429")) return true;
+  // 5xx server errors (500, 502, 503, 504)
+  if (status && status >= 500 && status < 600) return true;
+  if (/Error:\s*5\d\d/.test(errStr)) return true;
+  return false;
+}
+
 function sleep(ms: number): Promise<void> {
   return new Promise((r) => setTimeout(r, ms));
 }
@@ -114,11 +126,12 @@ export async function callLlm(prompt: string, maxTokens = LLM_TOKENS_DEFAULT): P
       await waitForLlmPacing();
       return await provider.call(prompt, maxTokens);
     } catch (err) {
-      if (attempt < MAX_RETRIES && is429(err)) {
+      if (attempt < MAX_RETRIES && isRetryable(err)) {
         releaseSlot();
         released = true;
         const wait = RETRY_BASE_MS * 2 ** attempt;
-        console.error(`[llm] 429 — retry ${attempt + 1}/${MAX_RETRIES} in ${wait / 1000}s...`);
+        const status = (err as { status?: number })?.status ?? "unknown";
+        console.error(`[llm] ${status} — retry ${attempt + 1}/${MAX_RETRIES} in ${wait / 1000}s...`);
         await sleep(wait);
         continue;
       }
