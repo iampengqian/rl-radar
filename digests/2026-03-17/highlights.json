@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 发布 v0.115.0，架构大重构支持视觉能力",
+      "Claude Code 爆火：Phone 验证单条 Issue 激辩 212 评论",
+      "Gemini CLI 新版重点攻关 Plan 模式与子代理编排",
+      "社区共识：Agent 需从单一对话进化为自主多代理系统",
+      "开发者关注点转移：从模型智商转向成本控制与稳定性",
+      "GitHub Copilot CLI 陷内存泄漏风波，TUI 稳定性遭吐槽"
+    ],
+    "ai-agents": [
+      "OpenClaw 活跃度爆表：单日 500 Issues 与 500 PRs 更新",
+      "WhatsApp 群组功能关键修复，解决 Mention 检测失效",
+      "插件系统重构：隔离运行时边界，提升系统安全性",
+      "积压 398 条 PR 待合并，项目处于重构关键期",
+      "长对话痛点：上下文压缩曾导致工具结果被错误修剪",
+      "社区呼声：聚焦多渠道接入与本地部署稳定性"
+    ],
+    "ai-trending": [
+      "claude-mem 爆火：解决 Agent 编码'转头就忘'的痛点",
+      "project-nomad 登榜：'离线生存主义' AI 知识库需求激增",
+      "lightpanda：专为 AI 数据抓取设计的轻量级浏览器",
+      "heretic 项目引争议：全自动移除 LLM 安全限制",
+      "LangChain 推 deepagents 框架，主打子代理生成",
+      "superpowers 框架：定义 AI 辅助开发的激进新方法论"
+    ],
+    "ai-web": [
+      "Anthropic：提出'代码即编排'，拒绝万级 Token 消耗",
+      "OpenAI：Codex 架构升级，从代码补全迈向自主编程",
+      "Claude 新范式：动态发现工具，按需加载节省成本",
+      "OpenAI 新 API：为模型响应提供完整计算机沙盒环境",
+      "Codex 安全弃用 SAST，OpenAI 密集发布技术解析",
+      "AI 转型深水区：基础设施竞争聚焦自主执行能力"
+    ],
+    "ai-hn": [
+      "神级项目：用 Claude Code 构建完整的 Godot 3D 游戏",
+      "版权风暴：百科全书巨头 Britannica 正式起诉 OpenAI",
+      "Mistral 双发：Leanstral 与 Small 4 完善模型矩阵",
+      "安全警报：Claude Code MCP 配置致 Docker 容器孤儿",
+      "Amazon 案例引热议：AI 编程效率遭受现实性质疑",
+      "FSF 向 Anthropic 发难，AI 训练数据伦理争议升级"
+    ],
+    "rl-daily": [
+      "verl 发布 v0.7.1 大版本，确立 MTP 与 R3 Router 架构",
+      "TRL 核心转向 Async GRPO，强化 VLM 多模态支持",
+      "OpenRLHF 激进移除 DeepSpeed，全面拥抱 FSDP2",
+      "Open Instruct 引入 SWERL 代码沙箱，攻坚代码推理",
+      "AReaL 深度重构 RTensor，攻克异构资源调度难题",
+      "RL 生态分层：第一梯队冲刺异步与分布式架构"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Codex v0.115.0 released amid token crisis",
+      "Gemini CLI v0.34.0-preview focuses on Plan Mode",
+      "Enterprise air-gapped deployment becomes top priority",
+      "All major tools adopt agentic subagent architectures",
+      "Claude Code users report high auth friction",
+      "Ecosystem consolidates around MCP integrations"
+    ],
+    "ai-agents": [
+      "OpenClaw hits extreme activity: 500 issues, 500 PRs",
+      "High regression volume in OpenClaw 2026.3.x releases",
+      "398 open PRs suggest review capacity backlog",
+      "Plugin architecture major refactoring merged",
+      "Team prioritizing stability over new releases",
+      "NanoBot and Zeroclaw among 12 tracked projects"
+    ],
+    "ai-trending": [
+      "claude-mem gains 1,017 stars for agentic memory",
+      "langchain-ai/deepagents: new agent harness launched",
+      "obra/superpowers: +3,142 stars for skills framework",
+      "Browser-First Intelligence trend surges locally",
+      "WASM engines enable private knowledge retrieval",
+      "Context compression tools bridge autonomy gap"
+    ],
+    "ai-web": [
+      "Anthropic introduces dynamic tool discovery beta",
+      "Claude tackles 50k+ token context stuffing problem",
+      "OpenAI Codex Agent Loop detailed in new docs",
+      "Responses API signals enterprise security push",
+      "Both labs pivot to advanced agentic architectures",
+      "Code-based orchestration replaces simple chat"
+    ],
+    "ai-hn": [
+      "Claude Code builds complete Godot games solo",
+      "Mistral unveils Leanstral for formal math proofs",
+      "Mistral Small 4 released for efficient inference",
+      "Encyclopedia Britannica challenges AI training",
+      "YC startups tackle GPU management for agents",
+      "Deepfakes spark political alarm discussions"
+    ],
+    "rl-daily": [
+      "verl v0.7.1 dominates multimodal RLHF scene",
+      "AReaL pushes FSDP2 and colocation architecture",
+      "OpenRLHF proposes critical DeepSpeed to FSDP2 shift",
+      "Open Instruct adds PPO+GAE and code sandboxes",
+      "Qwen3.5 and GLM-4.7 support lags across frameworks",
+      "Classic RL frameworks quiet vs LLM alignment surge"
+    ]
+  }
+}
