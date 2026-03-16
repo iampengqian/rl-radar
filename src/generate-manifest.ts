@@ -95,7 +95,7 @@ function main(): void {
         "    <item>",
         `      <title>${escapeXml(title)}</title>`,
         `      <link>${escapeXml(link)}</link>`,
-        `      <guid isPermaLink=\"true\">${escapeXml(link)}</guid>`,
+        `      <guid isPermaLink="true">${escapeXml(link)}</guid>`,
         `      <pubDate>${pubDate}</pubDate>`,
         `      <description>${escapeXml(title)}</description>`,
         "    </item>",
@@ -104,14 +104,14 @@ function main(): void {
     .join("\n");
 
   const feedXml =
-    `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n` +
-    `<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n` +
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n` +
     `  <channel>\n` +
     `    <title>rl-radar</title>\n` +
     `    <link>${SITE_URL}</link>\n` +
     `    <description>RL 开源生态每日简报 · Daily RL ecosystem digest</description>\n` +
     `    <language>zh-CN</language>\n` +
-    `    <atom:link href=\"${SITE_URL}/feed.xml\" rel=\"self\" type=\"application/rss+xml\"/>\n` +
+    `    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>\n` +
     `    <lastBuildDate>${buildDate}</lastBuildDate>\n` +
     itemsXml +
     `\n  </channel>\n` +
