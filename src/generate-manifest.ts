@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { REPORT_LABELS } from "./i18n.ts";
 
 const DIGESTS_DIR = "digests";
 const MANIFEST_PATH = "manifest.json";
@@ -25,25 +26,6 @@ export const REPORT_FILES = [
   "ai-monthly-en",
 ] as const;
 const MAX_FEED_ITEMS = 30;
-
-export const REPORT_LABELS: Record<string, string> = {
-  "ai-cli": "AI CLI 工具社区动态日报",
-  "ai-cli-en": "AI CLI Tools Digest",
-  "ai-agents": "AI Agents 生态日报",
-  "ai-agents-en": "AI Agents Ecosystem Digest",
-  "rl-daily": "RL 开源生态日报",
-  "rl-daily-en": "RL Open Source Ecosystem Digest",
-  "ai-web": "AI 官方内容追踪报告",
-  "ai-web-en": "Official AI Content Report",
-  "ai-trending": "AI 开源趋势日报",
-  "ai-trending-en": "AI Open Source Trends",
-  "ai-hn": "Hacker News AI 社区动态日报",
-  "ai-hn-en": "Hacker News AI Community Digest",
-  "ai-weekly": "AI 工具生态周报",
-  "ai-weekly-en": "AI Tools Weekly Digest",
-  "ai-monthly": "AI 工具生态月报",
-  "ai-monthly-en": "AI Tools Monthly Digest",
-};
 
 interface DateEntry {
   date: string;

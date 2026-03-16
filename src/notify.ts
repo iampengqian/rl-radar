@@ -10,34 +10,20 @@
  */
 
 import fs from "node:fs";
+import path from "node:path";
+import { NOTIFY_LABELS } from "./i18n.ts";
+import type { ReportHighlights } from "./prompts-data.ts";
+
+export interface Highlights {
+  zh: ReportHighlights;
+  en: ReportHighlights;
+}
 
 const PAGES_URL_DEFAULT = "https://iampengqian.github.io/rl-radar";
 
-const ZH_LABELS: Record<string, string> = {
-  "ai-cli": "AI CLI 工具",
-  "ai-agents": "AI Agents 生态",
-  "rl-daily": "RL 开源生态日报",
-  "ai-web": "官网动态",
-  "ai-trending": "GitHub 趋势",
-  "ai-hn": "HN 社区动态",
-  "ai-weekly": "AI 工具生态周报",
-  "ai-monthly": "AI 工具生态月报",
-};
-
-const EN_LABELS: Record<string, string> = {
-  "ai-cli": "AI CLI Tools",
-  "ai-agents": "AI Agents Ecosystem",
-  "rl-daily": "RL Open Source Ecosystem Digest",
-  "ai-web": "Official Updates",
-  "ai-trending": "GitHub Trends",
-  "ai-hn": "HN Community",
-  "ai-weekly": "AI Tools Weekly",
-  "ai-monthly": "AI Tools Monthly",
-};
-
 async function sendTelegram(text: string): Promise<void> {
   const BOT_TOKEN = process.env["TELEGRAM_BOT_TOKEN"] ?? "";
-  const CHAT_ID = process.env["TELEGRAM_CHAT_ID"] || "@agents_radar";
+  const CHAT_ID = process.env["TELEGRAM_CHAT_ID"] || "@rl_radar";
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
   const res = await fetch(url, {
     method: "POST",
@@ -55,7 +41,12 @@ async function sendTelegram(text: string): Promise<void> {
   }
 }
 
-export function buildMessage(date: string, reports: string[], pagesUrl?: string): string {
+export function buildMessage(
+  date: string,
+  reports: string[],
+  pagesUrl?: string,
+  highlights?: Highlights | null,
+): string {
   const PAGES_URL = (pagesUrl ?? process.env["PAGES_URL"] ?? PAGES_URL_DEFAULT).replace(/\/$/, "");
   const baseReports = [...new Set(reports.map((r) => r.replace(/-en$/, "")))];
   const isWeekly = baseReports.includes("ai-weekly");
@@ -71,16 +62,28 @@ export function buildMessage(date: string, reports: string[], pagesUrl?: string)
     ...baseReports.filter((r) => r.includes("weekly") || r.includes("monthly")),
   ];
 
+  const zhHighlights = highlights?.zh ?? {};
+
   for (const r of ordered) {
-    const zhLabel = ZH_LABELS[r] ?? r;
+    const zhLabel = NOTIFY_LABELS[r]?.zh ?? r;
     const zhUrl = `${PAGES_URL}/#${date}/${r}`;
     const enKey = `${r}-en`;
+
+    lines.push(""); // blank line before each report section
     if (reports.includes(enKey)) {
-      const enLabel = EN_LABELS[r] ?? "EN";
+      const enLabel = NOTIFY_LABELS[r]?.en ?? "EN";
       const enUrl = `${PAGES_URL}/#${date}/${enKey}`;
       lines.push(`• <a href="${zhUrl}">${zhLabel}</a>  ·  <a href="${enUrl}">${enLabel}</a>`);
     } else {
       lines.push(`• <a href="${zhUrl}">${zhLabel}</a>`);
+    }
+
+    // Add highlights as indented sub-items
+    const items = zhHighlights[r];
+    if (items?.length) {
+      for (const h of items) {
+        lines.push(`  ◦ ${h}`);
+      }
     }
   }
 
@@ -110,7 +113,19 @@ async function main(): Promise<void> {
     return;
   }
   const { date, reports } = latest;
-  const text = buildMessage(date, reports);
+
+  // Load highlights if available
+  let highlights: Highlights | null = null;
+  const highlightsPath = path.join("digests", date, "highlights.json");
+  if (fs.existsSync(highlightsPath)) {
+    try {
+      highlights = JSON.parse(fs.readFileSync(highlightsPath, "utf-8")) as Highlights;
+    } catch {
+      console.log("[notify] Failed to parse highlights.json — sending without highlights.");
+    }
+  }
+
+  const text = buildMessage(date, reports, undefined, highlights);
 
   console.log(`[notify] Sending Telegram message for ${date} (${reports.length} reports)…`);
   await sendTelegram(text);
