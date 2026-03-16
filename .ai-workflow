@@ -1,0 +1,40 @@
+# AI Workflow Rules
+
+此文件定义多个 AI 工具协作时的分支规则。
+
+## 分支命名约定
+
+```
+<ai>/<type>/<description>
+```
+
+- `ai`: claude | gemini | copilot
+- `type`: feat | fix | refactor | docs | chore
+- `description`: 简短描述（kebab-case）
+
+## 示例
+
+- `claude/feat/telegram-highlights`
+- `gemini/fix/type-errors`
+- `copilot/chore/update-deps`
+
+## 规则
+
+1. **开始任务前**，检查 `git branch -r` 确认没有其他 AI 在同一分支工作
+2. **创建分支时**，使用自己的 AI 前缀
+3. **完成后**，创建 PR 并在标题中标注 `[claude]` 或 `[gemini]`
+4. **合并后**，删除远程分支
+
+## 当前活跃分支
+
+（AI 开始工作时自动更新此区域）
+
+<!-- 以下由 AI 维护 -->
+<!-- ACTIVE_BRANCHES_START -->
+<!-- ACTIVE_BRANCHES_END -->
+
+## 历史记录
+
+| 日期 | AI | 分支 | PR | 状态 |
+|------|-----|------|-----|------|
+| 2026-03-16 | claude | feat/merge-highlights-v2 | #17 | merged |
