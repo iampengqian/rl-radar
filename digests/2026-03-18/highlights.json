@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.77 发布：Opus 4.6 输出上限提升至 64k",
+      "GitHub Copilot CLI 集成 GPT-5.4-mini，强化无障碍体验",
+      "Gemini CLI v0.35.0 重构 Memory Agent，支持自定义快捷键",
+      "全行业痛点：1M 上下文引发成本激增与记忆丢失难题",
+      "Kimi Code CLI 支持后台任务执行，修复代理连接问题",
+      "Qwen Code 修复 max_tokens 逻辑，VS Code 插件连接存忧"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日狂收 500+ Issues，社区活跃度爆表",
+      "WebSocket 握手超时增至 10s，彻底解决 CLI 频繁断连",
+      "Ollama 集成重大升级：增量流式传输与工具调用回退",
+      "修复 Cron 任务跨会话可见漏洞，提升多用户隔离性",
+      "Matrix 协议重构：官方 SDK 替换旧版，支持能力大增",
+      "飞书插件修复重复警告，WebChat 图片持久化问题解决"
+    ],
+    "ai-trending": [
+      "LangChain 官方 Agent Harness 登顶，首日斩获 1,418 Star",
+      "Claude Code 生态爆发：everything-claude-code 突破 8 万星",
+      "Ollama 本地推理基石地位稳固，总星标超 16.5 万",
+      "Browser-Use 爆火：让 AI 像人类一样操控浏览器",
+      "Activepieces 集成 400+ MCP 服务器，成 Agent 交互枢纽",
+      "Computer-Use Agents 崛起：AI 操控完整桌面操作系统"
+    ],
+    "ai-web": [
+      "OpenAI 史诗级更新：GPT-5.2 科学数学特化版现身",
+      "GPT-5.4 Mini/Nano 发布，边缘计算与低延迟新选择",
+      "OpenAI 与迪士尼合作 Sora，娱乐产业面临 AI 变革",
+      "OpenAI 被曝“战争部门协议”，国防领域扩张引争议",
+      "Anthropic 新指标：AI 实际覆盖率远低于理论值",
+      "研究警示：高暴露职业招聘放缓，年长女性受冲击最大"
+    ],
+    "ai-hn": [
+      "GPT-5.4 Mini/Nano 发布，开发者热议边缘计算性能",
+      "Claude Opus 4.6 严重宕机，AI 服务稳定性遭质疑",
+      "开源 Viktor 逆向工程火爆，社区渴望数据主权",
+      "Mistral AI 发布新品 Forge，挑战 OpenAI 霸主地位",
+      "FC-Eval 工具发布，精准评估大模型工具调用能力",
+      "Antfly 登场：Go 语言打造的分布式多模态记忆图谱"
+    ],
+    "rl-daily": [
+      "veRL 架构重构：Model Engine 与 Agent RL 成核心",
+      "AReaL 发布 v1.0.2 重大版本，全面支持 Qwen3.5",
+      "ROLL 强力适配华为昇腾 NPU，异构计算成趋势",
+      "Slime 攻坚 30B+ 大模型长序列训练 OOM 难题",
+      "OpenRLHF 经历架构迁移：从 DeepSpeed 转向 FSDP2",
+      "ROCK v1.4.2 发布，强化 Serverless 云原生能力"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.77 released with weekly cadence",
+      "OpenAI Codex rust-v0.116.0-alpha.3 ships daily builds",
+      "Gemini CLI v0.35.0-preview.1 drops today",
+      "Ecosystem shifts from code gen to autonomous agents",
+      "1M token contexts create cost-control challenges",
+      "Windows support remains a consistent weak point"
+    ],
+    "ai-agents": [
+      "OpenClaw swats 500 bugs in 24-hour crunch",
+      "Google Vertex and Mistral auth fixes in progress",
+      "Gateway WebSocket timeout bumped to 10 seconds",
+      "Patch release prepped to fix 2026.3.12 regressions",
+      "122 open PRs signal massive stabilization effort",
+      "Stability focus follows significant recent release"
+    ],
+    "ai-trending": [
+      "superpowers framework defines agentic dev methodology",
+      "claude-hud and claude-mem add observability tools",
+      "GitNexus challenges vector DBs with knowledge graphs",
+      "langchain-ai/deepagents spawns subagent workflows",
+      "everything-claude-code hits 82,916 stars",
+      "Agentification of dev tools dominates trending"
+    ],
+    "ai-web": [
+      "OpenAI references GPT-5.2 and GPT-5.4 variants",
+      "GPT-5.4 Mini and Nano target edge deployments",
+      "Anthropic introduces observed exposure job metric",
+      "OpenAI re-indexes entire research library",
+      "New Amazon Bedrock enterprise partnership revealed",
+      "Department of War partnership surfaces in docs"
+    ],
+    "ai-hn": [
+      "GPT-5.4 Mini and Nano top Hacker News discussion",
+      "Claude API suffers daily outages and 500 errors",
+      "OpenAI cuts side projects to refocus on core",
+      "Encyclopedia Britannica sues OpenAI for copyright",
+      "Node.js policy blocks AI-generated pull requests",
+      "Garry Tan shares viral Claude Code setup guide"
+    ],
+    "rl-daily": [
+      "GRPO replaces PPO as default post-training algorithm",
+      "verl leads Agentic RL and GRPO stability work",
+      "AReaL v1.0.2 released with multimodal support",
+      "Agentic RL shifts to multi-turn tool use",
+      "Huawei Ascend NPU support expands across tools",
+      "Classical Deep RL libraries remain dormant"
+    ]
+  }
+}
