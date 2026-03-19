@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 爆验证故障，Hook 生态成热点",
+      "OpenAI Codex 沙箱权限回归，引发成本焦虑",
+      "Gemini CLI 预览版发布，主打 AST 智能重构",
+      "GitHub Copilot CLI 修复 WSL 漏洞，强化 MCP",
+      "Qwen Code 现严重 Bug，编辑工具损坏引担忧",
+      "OpenCode 遭 Anthropic 合规审查，陷隐私争议"
+    ],
+    "ai-agents": [
+      "OpenClaw 社区炸锅，500+ Issue 讨论刷新纪录",
+      "Linux 原生客户端落地，GTK4 架构实现进程隔离",
+      "修复 WhatsApp 连接性 Bug，解决通讯严重回归",
+      "集成 GigaChat 流式传输，扩展模型供应商",
+      "修 Vitest 内存溢出，引入检测工具提升 CI 稳定",
+      "修正 Token 统计偏差，修复高达 85% 计算错误"
+    ],
+    "ai-trending": [
+      "Claude HUD 插件爆火，Agent 可视化成刚需",
+      "OpenDataLoader PDF 解析器 Star 激增，解 RAG 痛点",
+      "LangChain 推 Open-SWE，开源全自动化编程 Agent",
+      "Get-Shit-Done 系统：元提示工程驱动开发提效",
+      "Newton 物理引擎开源，GPU 加速具身智能模拟",
+      "Ollama 持续领跑，成本地大模型运行事实标准"
+    ],
+    "ai-web": [
+      "OpenAI 拟收购 Astral，意图打通物理世界数据",
+      "OpenAI 披露内部 Coding Agents 监控防失控",
+      "Anthropic 官网静默，疑似酝酿新模型发布",
+      "收购 Astral 标志 OpenAI 向 Agentic AI 转型",
+      "监控框架曝光：用弱模型约束强模型代码生成",
+      "OpenAI 加速自主执行技术，Anthropic 战略观望"
+    ],
+    "ai-hn": [
+      "OpenAI 收购 Astral 引爆 HN，开源工具商业化引战",
+      "Anthropic 起诉 OpenCode，封闭生态策略遭抨击",
+      "81,000 人访谈报告发布，揭秘 AI 真实用户需求",
+      "LiteParse 发布，解决 Agent 本地文档解析痛点",
+      "EsoLang-Bench：用深奥语言评测 LLM 真实推理力",
+      "开发者热议：优秀开源工具是否终将被巨头吞噬"
+    ],
+    "rl-daily": [
+      "OpenRLHF v0.9.6 架构重构，全面拥抱 FSDP2",
+      "veRL 适配 GB200，扩散模型 RL 工程迭代极快",
+      "AReaL 转向异步架构，构建 Agent Service 基石",
+      "Open Instruct 攻克 32k+ 长上下文权重同步瓶颈",
+      "Slime 优化 64K 长序列，解决 30B+ 大模型 OOM",
+      "SB3 严控 API 变更，抵制低质量 LLM 生成代码"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.79 stable hit by critical auth verification crisis",
+      "OpenAI Codex rust-v0.116.0 praised for UX but slammed for token costs",
+      "Gemini CLI v0.35.0-preview.2 earns positive sentiment for architecture",
+      "Industry shifts from code completion wrappers to fully agent frameworks",
+      "Providers struggle with agent reliability and context window management",
+      "Concurrent plugin infrastructure rollouts across OpenAI, Kimi, and Qwen"
+    ],
+    "ai-agents": [
+      "OpenClaw shows extreme velocity with 500 issues and 500 PRs in 24h",
+      "Native Linux GTK4 companion app introduced in major PR #50532",
+      "No new releases as project focuses on stabilizing 2026.3.x series",
+      "Regressions plague WhatsApp channel integration with listener errors",
+      "Community pins security alerts after recent phishing attempts",
+      "High merge rate indicates aggressive platform iteration by maintainers"
+    ],
+    "ai-trending": [
+      "Claude Code ecosystem tools dominate trending with 1,458 new stars",
+      "GPU-accelerated physics engine 'newton' signals rise of Physical AI",
+      "PDF parsers surge as developers prioritize 'AI-ready' data preparation",
+      "Developers flock to build custom coding agent harnesses from scratch",
+      "Ollama maintains dominance as standard for local LLM inference",
+      "Trending repos focus heavily on monitoring dashboards and memory systems"
+    ],
+    "ai-web": [
+      "OpenAI acquires Astral to dominate developer experience and tooling",
+      "New report details how OpenAI monitors internal coding agent misalignment",
+      "OpenAI releases 3 new articles while Anthropic stays notably silent",
+      "Transparency report addresses risks of autonomous coding agents",
+      "Strategic move combines safety enforcement with ecosystem consolidation",
+      "Astral acquisition brings popular Python tools uv and Ruff under OpenAI"
+    ],
+    "ai-hn": [
+      "OpenAI acquires Astral, makers of beloved Python tools uv and Ruff",
+      "Anthropic sues OpenCode, forcing removal of Claude Pro/Max support",
+      "Anthropic's massive study of 81,000 users sparks alignment debates",
+      "EsoLang-Bench proposes testing reasoning via esoteric programming languages",
+      "Community debates if OpenAI is dominating DevEx beyond model capabilities",
+      "Qualitative study reveals disconnect between corporate goals and user needs"
+    ],
+    "rl-daily": [
+      "OpenRLHF v0.9.6 pivots strategically to FSDP2 and PyTorch native stack",
+      "verl reports critical memory bugs amid major multimodal expansion",
+      "Ecosystem bifurcates clearly between LLM post-training and general RL",
+      "LLM-RL projects drive innovation in async training and hardware support",
+      "General RL libraries shift focus to API alignment and maintenance",
+      "Open Instruct pushes deep integration with vLLM and long-context RL"
+    ]
+  }
+}
