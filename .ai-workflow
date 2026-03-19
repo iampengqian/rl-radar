@@ -89,3 +89,4 @@ git pull origin master
 | 2026-03-19 | claude | claude/feat/add-roll-to-rl-analysis | #19 | merged |
 | 2026-03-19 | claude | (同步上游时直接推送 master - 违规) | - | ⚠️ 流程违规 |
 | 2026-03-19 | claude | claude/chore/record-workflow-violation | #20 | merged |
+| 2026-03-19 | claude | claude/feat/rollup-highlights | #21 | merged |
