@@ -427,7 +427,7 @@ ${digestContent}
 Generate an **RL Ecosystem Deep Analysis Report** with these sections:
 
 ### 1. Technical Depth Analysis
-- Analyze architectural differences between major frameworks (OpenRLHF, verl, TRL, slime, AReaL)
+- Analyze architectural differences between major frameworks (OpenRLHF, verl, TRL, slime, AReaL, ROLL)
 - Compare algorithm implementations (PPO, GRPO, DAPO, VESPO, etc.)
 - Evaluate training infrastructure approaches (FSDP2 vs DeepSpeed, distributed training patterns)
 - Identify technical innovations and breakthroughs this week
@@ -445,7 +445,7 @@ Based on this week's activity, pick 1-2 hot topics and provide deep analysis:
 
 ### 4. Framework Comparison Matrix
 Generate a comparison table with these columns:
-| Feature | OpenRLHF | verl | TRL | slime | AReaL |
+| Feature | OpenRLHF | verl | TRL | slime | AReaL | ROLL |
 |---------|----------|------|-----|-------|-------|
 Then include rows for: Algorithm Support, Distributed Training, Multi-modal, LoRA/PEFT, Hardware Support, Maturity Level
 
@@ -467,7 +467,7 @@ ${digestContent}
 请生成 **RL 生态深度分析报告**，包含以下部分：
 
 ### 1. 技术深度分析
-- 分析主流框架（OpenRLHF、verl、TRL、slime、AReaL）的架构差异
+- 分析主流框架（OpenRLHF、verl、TRL、slime、AReaL、ROLL）的架构差异
 - 对比算法实现（PPO、GRPO、DAPO、VESPO 等）
 - 评估训练基础设施方案（FSDP2 vs DeepSpeed，分布式训练模式）
 - 识别本周的技术创新和突破
@@ -485,7 +485,7 @@ ${digestContent}
 
 ### 4. 框架对比矩阵
 生成一个对比表格，包含以下列：
-| 特性 | OpenRLHF | verl | TRL | slime | AReaL |
+| 特性 | OpenRLHF | verl | TRL | slime | AReaL | ROLL |
 |------|----------|------|-----|-------|-------|
 然后包含以下行：算法支持、分布式训练、多模态、LoRA/PEFT、硬件支持、成熟度
 
