@@ -1,6 +1,14 @@
 # AI Workflow Rules
 
-此文件定义多个 AI 工具协作时的分支规则。
+此文件定义多个 AI 工具协作时的分支规则和开发流程。
+
+## ⚠️ 强制流程（每次必须遵守）
+
+```
+1. 创建特性分支 → 2. 开发 + 提交 → 3. 推送分支 → 4. 创建 PR → 5. 等待 Review → 6. 合并
+```
+
+**禁止直接在 master 分支上开发和推送！**
 
 ## 分支命名约定
 
@@ -18,12 +26,50 @@
 - `gemini/fix/type-errors`
 - `copilot/chore/update-deps`
 
+## 详细开发流程
+
+### Step 1: 开始任务前
+```bash
+git checkout master
+git pull origin master
+git checkout -b claude/feat/xxx   # 使用自己的 AI 前缀
+```
+
+### Step 2: 开发完成后
+```bash
+git add <files>
+git commit -m "feat: xxx"
+```
+
+### Step 3: 推送分支
+```bash
+git push origin claude/feat/xxx
+```
+
+### Step 4: 创建 PR
+```bash
+gh pr create --title "[claude] feat: xxx" --body "描述"
+```
+或在 PR 标题中标注 `[claude]` / `[gemini]`
+
+### Step 5: 等待 Review
+- 通知其他 AI 或人工 review
+- 根据反馈修改代码
+
+### Step 6: 合并
+```bash
+gh pr merge --squake
+git checkout master
+git pull origin master
+```
+
 ## 规则
 
-1. **开始任务前**，检查 `git branch -r` 确认没有其他 AI 在同一分支工作
-2. **创建分支时**，使用自己的 AI 前缀
-3. **完成后**，创建 PR 并在标题中标注 `[claude]` 或 `[gemini]`
-4. **合并后**，删除远程分支
+1. **禁止直接推送到 master** - 必须通过 PR 合并
+2. **开始任务前**，检查 `git branch -r` 确认没有其他 AI 在同一分支工作
+3. **创建分支时**，使用自己的 AI 前缀
+4. **完成后**，创建 PR 并在标题中标注 `[claude]` 或 `[gemini]`
+5. **合并后**，删除远程分支
 
 ## 当前活跃分支
 
@@ -38,3 +84,4 @@
 | 日期 | AI | 分支 | PR | 状态 |
 |------|-----|------|-----|------|
 | 2026-03-16 | claude | feat/merge-highlights-v2 | #17 | merged |
+| 2026-03-19 | claude | (直接推送 master - 违规) | - | ⚠️ 流程违规 |
