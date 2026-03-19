@@ -449,6 +449,11 @@ Generate a comparison table with these columns:
 |---------|----------|------|-----|-------|-------|
 Then include rows for: Algorithm Support, Distributed Training, Multi-modal, LoRA/PEFT, Hardware Support, Maturity Level
 
+**IMPORTANT - Anti-Hallucination Rule:**
+- For any framework with NO actual activity in this week's digest, write "No updates this week" in the corresponding cells
+- Do NOT fabricate or guess information about inactive frameworks
+- Only analyze frameworks that have real commits, issues, PRs, or releases mentioned in the data above
+
 Style: Professional technical analysis, data-driven, suitable for ML engineers and technical leads making framework decisions.
 `;
   }
@@ -483,6 +488,11 @@ ${digestContent}
 | 特性 | OpenRLHF | verl | TRL | slime | AReaL |
 |------|----------|------|-----|-------|-------|
 然后包含以下行：算法支持、分布式训练、多模态、LoRA/PEFT、硬件支持、成熟度
+
+**重要 - 防幻觉规则：**
+- 如果某个框架在本周数据中无实际活动，请在对应格子填写"本周无更新"
+- 禁止编造或猜测无活动框架的信息
+- 仅分析上述数据中有实际提交、Issue、PR 或发布的框架
 
 语言要求：专业技术分析，数据驱动，适合 ML 工程师和技术负责人做框架选型决策。
 `;
