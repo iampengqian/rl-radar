@@ -112,6 +112,10 @@ export const OPENCLAW_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
 export const RL_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
   lang === "en" ? `🧠 RL Open Source Ecosystem Digest ${dateStr}` : `🧠 RL 开源生态日报 ${dateStr}`;
 
+// RL Analysis issue title (weekly deep dive)
+export const RL_ANALYSIS_ISSUE_TITLE = (weekStr: string, lang: Lang) =>
+  lang === "en" ? `🔬 RL Ecosystem Deep Analysis ${weekStr}` : `🔬 RL 开源生态深度分析 ${weekStr}`;
+
 // ---------------------------------------------------------------------------
 // Footer (used in report.ts)
 // ---------------------------------------------------------------------------

@@ -9,6 +9,7 @@ import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_ROLLUP } from "./report.ts
 import { buildWeeklyPrompt, buildMonthlyPrompt, buildRlAnalysisPrompt } from "./prompts.ts";
 import { createGitHubIssue } from "./github.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
+import { RL_ANALYSIS_ISSUE_TITLE } from "./i18n.ts";
 
 const DIGESTS_DIR = "digests";
 const MAX_CHARS_PER_REPORT = 2500;
@@ -266,11 +267,20 @@ export async function runRlAnalysisRollup(): Promise<void> {
     .map(([date, content]) => `## ${date}\n\n${content}`)
     .join("\n\n---\n\n");
 
-  // Generate ZH and EN in parallel
+  // Generate ZH and EN in parallel with error handling
   console.log("[rl-analysis] Calling LLM for ZH and EN RL analysis reports in parallel...");
+  const failZh = "⚠️ RL 生态深度分析生成失败。";
+  const failEn = "⚠️ RL ecosystem deep analysis generation failed.";
+
   const [zhSummary, enSummary] = await Promise.all([
-    callLlm(buildRlAnalysisPrompt(digestEntries, weekStr, "zh"), LLM_TOKENS_ROLLUP),
-    callLlm(buildRlAnalysisPrompt(digestEntries, weekStr, "en"), LLM_TOKENS_ROLLUP),
+    callLlm(buildRlAnalysisPrompt(digestEntries, weekStr, "zh"), LLM_TOKENS_ROLLUP).catch((err): string => {
+      console.error(`  [rl-analysis/zh] LLM call failed: ${err}`);
+      return failZh;
+    }),
+    callLlm(buildRlAnalysisPrompt(digestEntries, weekStr, "en"), LLM_TOKENS_ROLLUP).catch((err): string => {
+      console.error(`  [rl-analysis/en] LLM call failed: ${err}`);
+      return failEn;
+    }),
   ]);
 
   const footer = autoGenFooter("zh");
@@ -294,8 +304,19 @@ export async function runRlAnalysisRollup(): Promise<void> {
   console.log(`  Saved ${saveFile(enContent, dateStr, "rl-analysis-en.md")}`);
 
   if (digestRepo) {
-    const url = await createGitHubIssue(`🔬 RL 开源生态深度分析 ${weekStr}`, zhContent, "rl-analysis");
-    console.log(`  Created RL analysis issue: ${url}`);
+    try {
+      const zhUrl = await createGitHubIssue(RL_ANALYSIS_ISSUE_TITLE(weekStr, "zh"), zhContent, "rl-analysis");
+      console.log(`  Created RL analysis issue (zh): ${zhUrl}`);
+
+      const enUrl = await createGitHubIssue(
+        RL_ANALYSIS_ISSUE_TITLE(weekStr, "en"),
+        enContent,
+        "rl-analysis-en",
+      );
+      console.log(`  Created RL analysis issue (en): ${enUrl}`);
+    } catch (err) {
+      console.error(`  [rl-analysis] GitHub issue creation failed: ${err}`);
+    }
   }
 
   console.log("[rl-analysis] Done!");
