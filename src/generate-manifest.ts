@@ -14,6 +14,8 @@ export const REPORT_FILES = [
   "ai-agents-en",
   "rl-daily",
   "rl-daily-en",
+  "rl-analysis",
+  "rl-analysis-en",
   "ai-web",
   "ai-web-en",
   "ai-trending",

@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_ROLLUP } from "./report.ts";
-import { buildWeeklyPrompt, buildMonthlyPrompt } from "./prompts.ts";
+import { buildWeeklyPrompt, buildMonthlyPrompt, buildRlAnalysisPrompt } from "./prompts.ts";
 import { createGitHubIssue } from "./github.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
 
@@ -219,4 +219,84 @@ export async function runMonthlyRollup(): Promise<void> {
   }
 
   console.log("[monthly] Done!");
+}
+
+// ---------------------------------------------------------------------------
+// RL Analysis Rollup (weekly deep dive)
+// ---------------------------------------------------------------------------
+
+/** Read RL daily digest for a date. Returns null if not found. */
+function readRlDailyDigest(date: string): string | null {
+  const p = path.join(DIGESTS_DIR, date, "rl-daily.md");
+  if (!fs.existsSync(p)) return null;
+  const content = fs.readFileSync(p, "utf-8");
+  return content.slice(0, MAX_CHARS_PER_REPORT);
+}
+
+export async function runRlAnalysisRollup(): Promise<void> {
+  const now = new Date();
+  const dateStr = toCstDateStr(now);
+  const utcStr = toUtcStr(now);
+  const weekStr = toWeekStr(new Date(now.getTime() + 8 * 60 * 60 * 1000));
+  const digestRepo = process.env["DIGEST_REPO"] ?? "";
+
+  console.log(`[rl-analysis] Generating RL deep analysis for ${weekStr} (date: ${dateStr})`);
+
+  // Collect last 7 days of RL daily digests
+  const allDates = getDateDirs();
+  const last7 = allDates.slice(0, 7);
+
+  const rlDigests: Record<string, string> = {};
+  for (const date of last7) {
+    const content = readRlDailyDigest(date);
+    if (content) rlDigests[date] = content;
+  }
+
+  if (Object.keys(rlDigests).length === 0) {
+    console.log("[rl-analysis] No RL daily digests found, skipping.");
+    return;
+  }
+
+  console.log(
+    `[rl-analysis] Found ${Object.keys(rlDigests).length} RL digests: ${Object.keys(rlDigests).join(", ")}`,
+  );
+
+  // Build a combined context from all RL digests
+  const digestEntries = Object.entries(rlDigests)
+    .map(([date, content]) => `## ${date}\n\n${content}`)
+    .join("\n\n---\n\n");
+
+  // Generate ZH and EN in parallel
+  console.log("[rl-analysis] Calling LLM for ZH and EN RL analysis reports in parallel...");
+  const [zhSummary, enSummary] = await Promise.all([
+    callLlm(buildRlAnalysisPrompt(digestEntries, weekStr, "zh"), LLM_TOKENS_ROLLUP),
+    callLlm(buildRlAnalysisPrompt(digestEntries, weekStr, "en"), LLM_TOKENS_ROLLUP),
+  ]);
+
+  const footer = autoGenFooter("zh");
+  const enFooter = autoGenFooter("en");
+
+  const zhContent =
+    `# RL 开源生态深度分析 ${weekStr}\n\n` +
+    `> 覆盖日期: ${last7[last7.length - 1]} ~ ${last7[0]} | 生成时间: ${utcStr} UTC\n\n` +
+    `---\n\n` +
+    zhSummary +
+    footer;
+
+  const enContent =
+    `# RL Ecosystem Deep Analysis ${weekStr}\n\n` +
+    `> Coverage: ${last7[last7.length - 1]} ~ ${last7[0]} | Generated: ${utcStr} UTC\n\n` +
+    `---\n\n` +
+    enSummary +
+    enFooter;
+
+  console.log(`  Saved ${saveFile(zhContent, dateStr, "rl-analysis.md")}`);
+  console.log(`  Saved ${saveFile(enContent, dateStr, "rl-analysis-en.md")}`);
+
+  if (digestRepo) {
+    const url = await createGitHubIssue(`🔬 RL 开源生态深度分析 ${weekStr}`, zhContent, "rl-analysis");
+    console.log(`  Created RL analysis issue: ${url}`);
+  }
+
+  console.log("[rl-analysis] Done!");
 }

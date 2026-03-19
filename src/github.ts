@@ -212,6 +212,8 @@ export async function createGitHubIssue(title: string, body: string, label: stri
     hn: "ff6600",
     weekly: "7c3aed",
     monthly: "0d9488",
+    "rl-analysis": "8b5cf6",
+    "rl-analysis-en": "a78bfa",
     "digest-en": "1d76db",
     "openclaw-en": "f472b6",
     "web-en": "6366f1",

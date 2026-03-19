@@ -405,6 +405,89 @@ ${sections}
 `;
 }
 
+/**
+ * Build prompt for deep RL ecosystem analysis report.
+ * Covers 4 dimensions: technical depth, ecosystem trends, special topics, competitor matrix.
+ * @param digestContent - Pre-formatted string of RL daily digest content
+ * @param weekStr - Week string like "2026-W11"
+ * @param lang - Language for output
+ */
+export function buildRlAnalysisPrompt(
+  digestContent: string,
+  weekStr: string,
+  lang: "zh" | "en" = "zh",
+): string {
+  if (lang === "en") {
+    return `You are a senior technical analyst specializing in reinforcement learning (RL) open-source ecosystem. Based on the following weekly digest data from major RL projects (${weekStr}), generate a comprehensive deep analysis report.
+
+${digestContent}
+
+---
+
+Generate an **RL Ecosystem Deep Analysis Report** with these sections:
+
+### 1. Technical Depth Analysis
+- Analyze architectural differences between major frameworks (OpenRLHF, verl, TRL, slime, AReaL)
+- Compare algorithm implementations (PPO, GRPO, DAPO, VESPO, etc.)
+- Evaluate training infrastructure approaches (FSDP2 vs DeepSpeed, distributed training patterns)
+- Identify technical innovations and breakthroughs this week
+
+### 2. Ecosystem Trend Analysis
+- Activity comparison across frameworks (which are most active?)
+- Community growth signals (new contributors, issue velocity)
+- Release cadence and maturity assessment
+- Emerging vs consolidating projects
+
+### 3. Special Topic Deep Dive
+Based on this week's activity, pick 1-2 hot topics and provide deep analysis:
+- Current hot topics: GRPO/DAPO algorithms, FSDP2 migration, multimodal RL (VLM), LoRA + RLHF, distillation methods
+- For each topic: explain the technical challenge, how different frameworks approach it, pros/cons
+
+### 4. Framework Comparison Matrix
+Generate a comparison table with these columns:
+| Feature | OpenRLHF | verl | TRL | slime | AReaL |
+|---------|----------|------|-----|-------|-------|
+Then include rows for: Algorithm Support, Distributed Training, Multi-modal, LoRA/PEFT, Hardware Support, Maturity Level
+
+Style: Professional technical analysis, data-driven, suitable for ML engineers and technical leads making framework decisions.
+`;
+  }
+
+  return `你是一位专注于强化学习（RL）开源生态的资深技术分析师。基于本周（${weekStr}）各主要 RL 项目的数据，生成一份深度分析报告。
+
+${digestContent}
+
+---
+
+请生成 **RL 生态深度分析报告**，包含以下部分：
+
+### 1. 技术深度分析
+- 分析主流框架（OpenRLHF、verl、TRL、slime、AReaL）的架构差异
+- 对比算法实现（PPO、GRPO、DAPO、VESPO 等）
+- 评估训练基础设施方案（FSDP2 vs DeepSpeed，分布式训练模式）
+- 识别本周的技术创新和突破
+
+### 2. 生态趋势分析
+- 各框架活跃度对比（哪些最活跃？）
+- 社区增长信号（新贡献者、Issue 增长速度）
+- 发布节奏与成熟度评估
+- 新兴项目 vs 稳定项目
+
+### 3. 热门主题深度解读
+根据本周动态，选取 1-2 个热门主题进行深度分析：
+- 当前热门主题：GRPO/DAPO 算法、FSDP2 迁移、多模态 RL（VLM）、LoRA + RLHF、蒸馏方法
+- 每个主题：解释技术挑战、各框架的解决方案、优缺点对比
+
+### 4. 框架对比矩阵
+生成一个对比表格，包含以下列：
+| 特性 | OpenRLHF | verl | TRL | slime | AReaL |
+|------|----------|------|-----|-------|-------|
+然后包含以下行：算法支持、分布式训练、多模态、LoRA/PEFT、硬件支持、成熟度
+
+语言要求：专业技术分析，数据驱动，适合 ML 工程师和技术负责人做框架选型决策。
+`;
+}
+
 export function buildSkillsPrompt(
   prs: GitHubItem[],
   issues: GitHubItem[],
