@@ -45,7 +45,7 @@ export function formatItem(item: GitHubItem, lang: "zh" | "en" = "zh"): string {
   const refStr = `${repoSlug} ${itemKind} #${item.number}`;
   return [
     `#${item.number} [${item.state.toUpperCase()}]${labelStr} ${item.title}`,
-    `  ${t.author}: @${item.user.login} | ${t.created}: ${item.created_at.slice(0, 10)} | ${t.updated}: ${item.updated_at.slice(0, 10)} | ${t.comments}: ${item.comments} | 👍: ${item.reactions?.["+1"] ?? 0}`,
+    `  ${t.author}: ${item.user.login} | ${t.created}: ${item.created_at.slice(0, 10)} | ${t.updated}: ${item.updated_at.slice(0, 10)} | ${t.comments}: ${item.comments} | 👍: ${item.reactions?.["+1"] ?? 0}`,
     `  ${t.url}: ${refStr}`,
     `  ${t.summary}: ${body}${ellipsis}`,
   ].join("\n");
@@ -1047,11 +1047,11 @@ export function buildHnPrompt(data: HnData, dateStr: string, lang: "zh" | "en" =
         ? `${i + 1}. **${s.title}**\n` +
           `   Link: ${s.url}\n` +
           `   Discussion: ${s.hnUrl}\n` +
-          `   Score: ${s.points} | Comments: ${s.comments} | Author: @${s.author} | 时间: ${s.createdAt.slice(0, 16)}`
+          `   Score: ${s.points} | Comments: ${s.comments} | Author: ${s.author} | 时间: ${s.createdAt.slice(0, 16)}`
         : `${i + 1}. **${s.title}**\n` +
           `   链接: ${s.url}\n` +
           `   讨论: ${s.hnUrl}\n` +
-          `   分数: ${s.points} | 评论: ${s.comments} | 作者: @${s.author} | 时间: ${s.createdAt.slice(0, 16)}`,
+          `   分数: ${s.points} | 评论: ${s.comments} | 作者: ${s.author} | 时间: ${s.createdAt.slice(0, 16)}`,
     )
     .join("\n\n");
 
