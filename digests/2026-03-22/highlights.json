@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex v0.117.0-alpha 架构升级，Rust 重构",
+      "Qwen Code v0.13.0 实现并发执行，15+ PRs 爆发",
+      "Claude Code v2.1.81 发布，优化 CI/CD 流程",
+      "OpenAI Codex 遭曝误删硬盘灾难，急需权限熔断",
+      "Gemini CLI v0.36.0 支持 AST 感知与 SDD 工作流",
+      "Copilot CLI 陷死循环耗额危机，社区静默无更新"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日 500+ Issue，社区热度极高",
+      "国际化缺失引众怒，112 条评论登顶热帖",
+      "钉钉集成体验割裂，安装向导缺失配置入口",
+      "CI/CD 优化合并 PR #51884，提升测试资源效率",
+      "Telegram 修复 Cron 任务会话传递丢失 Bug",
+      "低级代码错误爆发，引发社区信任危机"
+    ],
+    "ai-trending": [
+      "Claude HUD 插件爆火，透视 AI 思考过程",
+      "vllm-omni 发布，高性能推理进军全模态",
+      "opendataloader-pdf 狂揽 954 Star，PDF 转 AI 数据",
+      "Claude Code 教程 35k Star，教你造 AI 框架",
+      "Everything-Claude-Code 94k Star，全能性能优化",
+      "阿里 OpenSandbox 推出通用沙箱，保代码安全"
+    ],
+    "ai-web": [
+      "Anthropic 确认 Claude Opus 4.6 顶级模型存在",
+      "Claude API 原生支持 PDF，Files API 上线",
+      "Prompt Caching 功能详解，降本增效利器",
+      "Admin API 发布，企业级权限管理有了标准",
+      "SDK 全面覆盖 Python/TS/Java/Go/Ruby",
+      "OpenAI 今日全线静默，或酝酿大型发布"
+    ],
+    "ai-hn": [
+      "Tinybox 本地运行 120B 参数，开发者狂赞",
+      "AI Team OS 开源，让 Claude Code 自我管理",
+      "极客在 PS2 上成功运行 LLM，挑战极限",
+      "Vessel 浏览器发布：专为 AI Agent 设计",
+      "GPT-5.4 前端设计指南泄露，针对性优化",
+      "社区热议 Claude Code 引发生产力恐慌焦虑"
+    ],
+    "rl-daily": [
+      "TRL 里程碑 v1.0.0rc1 发布，引入 VESPO 算法",
+      "verl 极速适配 Qwen3.5/MoE 与国产 NPU",
+      "slime 深耕 VLM，解决 GLM4V 训练稳定性",
+      "AReaL 修 VLM RPC 瓶颈，支持 IPv6",
+      "ROLL 探索 Multi-LoRA 并发与 GPU 分时复用",
+      "OpenRLHF/CleanRL/SB3 全线静默，资源向 LLM 聚拢"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.81 released with very high activity",
+      "OpenAI Codex ships 3 alpha releases for Rust SDK",
+      "Industry-wide alarm over CLI permission system failures",
+      "Gemini CLI hits v0.36.0-nightly amid rapid iteration",
+      "Architectural convergence on Spec-Driven Development",
+      "Safety guardrails now top concern after file deletions"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours",
+      "Multiple regression bugs in build 2026.3.13",
+      "Community debates agent identity verification systems",
+      "Stability issues reported on Raspberry Pi and WSL2",
+      "Maintainers aggressively merge security patches",
+      "Error sanitization and resilience focus in development"
+    ],
+    "ai-trending": [
+      "vllm-omni extends inference to native audio/video",
+      "OpenDataLoader tackles PDF parsing for RAG pipelines",
+      "Claude-Hud brings observability to autonomous coding",
+      "Omni-modal evolution dominates inference landscape",
+      "Code Agent ecosystem maturing rapidly",
+      "Data for AI emerges as critical bottleneck theme"
+    ],
+    "ai-web": [
+      "Anthropic launches official Academy training portals",
+      "Claude 4.5 family confirmed as production standard",
+      "Opus 4.6 and Haiku 4.5 referenced in new docs",
+      "Polyglot SDKs added for Java, Go, and Ruby",
+      "Prompt Caching and Generation APIs now documented",
+      "OpenAI shows zero content activity today"
+    ],
+    "ai-hn": [
+      "Tinybox offline device runs 120B parameters locally",
+      "PS2 runs language model in novelty engineering feat",
+      "Great Productivity Panic of 2026 debated",
+      "Agentic workflows enter mainstream consciousness",
+      "Show HN posts focus on managing autonomous AI teams",
+      "Desire for decentralized computing grows vs cloud APIs"
+    ],
+    "rl-daily": [
+      "GRPO optimization race across major RLHF frameworks",
+      "verl leads in scaling with FP8 and Ascend support",
+      "Traditional RL libraries like CleanRL go dormant",
+      "Multimodal VLM support expansion underway",
+      "Distributed weight synchronization fixes prioritized",
+      "Clear bifurcation: LLM post-training vs classic RL"
+    ]
+  }
+}
