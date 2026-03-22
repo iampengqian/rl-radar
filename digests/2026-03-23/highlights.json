@@ -1,0 +1,86 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 惊现 Fork Bomb 与数据丢失，社区热议安全红线",
+      "Qwen Code 独发 v0.13.0，动态截断技术直击长上下文痛点",
+      "Codex 社区高票请求 LSP 支持，拒绝简单的文本匹配补全",
+      "Gemini CLI 提案引入 AST 感知，旨在根除 Agent 修改幻觉",
+      "Kimi Code 强推 YOLO 模式，自动化与控制权的极限拉扯",
+      "OpenAI Codex 重构权限系统，打通 ChatGPT 生态壁垒"
+    ],
+    "ai-agents": [
+      "OpenClaw 日更 500 条 Issue，企业级功能回归引关注",
+      "官方连修 128 个 PR，重点解决 Web UI 连接与内存泄漏",
+      "钉钉集成呼声高涨，OpenClaw 成为企业办公新宠",
+      "v2026.3.8 版本被曝 Gateway 心跳停止，用户请谨慎升级",
+      "WhatsApp 通道稳定性大修，ACP 模式下子任务结果终可回传",
+      "支持 Ollama 思考模式，本地模型工具调用兼容性大增"
+    ],
+    "ai-trending": [
+      "字节跳动开源 deer-flow，定义 Super Agent 编排新范式",
+      "everything-claude-code 单日暴涨 3735 Star，成最火生产力工具",
+      "MoneyPrinterV2 登顶热榜，AI 自动化赚钱不再是梦",
+      "Pentagi 展示 AI 渗透测试能力，网络安全成 Agent 落地前沿",
+      "TradingAgents 开源，多智能体协作重塑金融量化交易",
+      "browser-use 突破 82k Star，Web Agent 基础设施地位稳固"
+    ],
+    "ai-hn": [
+      "GPT-5.2 与 Claude Opus 4.6 出现诡异“确定性静默”现象",
+      "Anthropic 新功能被指 OpenClaw Killer，生态战白热化",
+      "HBR 炮轰 LLM 战略建议为“流行词垃圾”，高层决策价值存疑",
+      "OpenAI 引入广告引发社区反弹，商业化与质量如何平衡",
+      "一份 Markdown 文件即可将 AI Agent 变为自主研究员",
+      "Sebastian Raschka 深度解析现代 LLM 注意力机制变体"
+    ],
+    "rl-daily": [
+      "verl 与 TRL 展开高频厮杀，分布式训练内存墙成主战场",
+      "Open Instruct 引入 Value Model，GRPO 算法迎来深度进化",
+      "slime 快速跟进 Qwen3.5 与 GLM-4.7，修复分布式 SP/CP Bug",
+      "AReaL 深挖 RPC 通信稳定性，RL 训练迈向软硬结合深水区",
+      "rl_games 修复 SAC 关键 Bug，拓展 MyoSuite 生态边界",
+      "ROLL 暴露大规模异步训练瓶颈，加速国产硬件适配进程"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift from chat to persistent agentic workflows",
+      "Claude Code sees 50 issues on session and Windows stability",
+      "Industry converges on LSP, ACP, MCP standard protocols",
+      "OpenAI Codex focuses on permission infrastructure and LSP",
+      "Enterprise adoption friction: session resumption gaps",
+      "Gemini CLI advances AST and Spec-Driven Development"
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours",
+      "Stabilization phase for v2026.3.x series after regressions",
+      "Fix merged for ACP inline delivery in run-mode",
+      "Community spans Slack, WhatsApp, Telegram, Discord",
+      "No new release as backlog of fixes accumulates",
+      "Active across Ollama, Anthropic, OpenRouter providers"
+    ],
+    "ai-trending": [
+      "everything-claude-code adds 3,735 stars as top agent harness",
+      "ByteDance deer-flow gains 1,508 stars for SuperAgent tasks",
+      "TradingAgents framework automates complex financial markets",
+      "Project N.O.M.A.D leads local-first offline AI resilience",
+      "memvid introduces new memory layers challenging RAG",
+      "Shift from using agents to orchestrating them efficiently"
+    ],
+    "ai-hn": [
+      "GPT-5.2 and Claude Opus 4.6 show Cross-Model Void Convergence",
+      "Walmart publicly fires OpenAI amid pricing sustainability doubts",
+      "OpenAI pivots aggressively to advertising in ChatGPT",
+      "Sebastian Raschka visual guide covers modern attention variants",
+      "Show HN shifts to tools augmenting agents with skills",
+      "Developers debate if models hit shared training data voids"
+    ],
+    "rl-daily": [
+      "80% of RL activity focused on LLM post-training frameworks",
+      "verl critical: CPU OOM, FP8, Ascend NPU infrastructure",
+      "TRL drives stability with 9+ fixes by single contributor",
+      "slime expands to GLM-4.7 and DeepseekV3 backends",
+      "Foundational libraries Gymnasium and rl_games in maintenance",
+      "30B+ parameter models drive distributed checkpointing work"
+    ]
+  }
+}
