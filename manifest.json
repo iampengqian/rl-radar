@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-22T22:12:17.040Z",
+  "generated": "2026-03-22T23:06:15.256Z",
   "dates": [
     {
       "date": "2026-03-23",
@@ -10,10 +10,14 @@
         "ai-agents-en",
         "rl-daily",
         "rl-daily-en",
+        "rl-analysis",
+        "rl-analysis-en",
         "ai-trending",
         "ai-trending-en",
         "ai-hn",
-        "ai-hn-en"
+        "ai-hn-en",
+        "ai-weekly",
+        "ai-weekly-en"
       ]
     },
     {
