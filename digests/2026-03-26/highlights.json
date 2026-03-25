@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.83 严重回归，Linux/WSL 语音模式全面瘫痪",
+      "OpenAI Codex 高频迭代 6 个 Alpha 版，底层架构重构",
+      "Kimi Code CLI v1.26.0 发布，新增快捷键自定义与 Hooks 系统",
+      "社区强烈要求基于文件路径的细粒度权限管控，而非简单 Allow/Deny",
+      "OpenCode 呼声极高：语音输入编程，解放双手成共识",
+      "MCP 协议成争夺焦点，各大厂商竞相重构工具链标准"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时狂飙 500 条更新，社区互动极度活跃",
+      "v2026.3.24 正式版发布，全面兼容 OpenAI Embeddings API",
+      "修复文件系统策略漏洞，严守沙箱安全边界",
+      "Node.js 最低版本降至 22.14，扩大系统兼容范围",
+      "渐进式权限模式上线，修复“始终允许”提权漏洞",
+      "微信插件与 Matrix E2EE 兼容性引发社区激烈讨论"
+    ],
+    "ai-trending": [
+      "字节跳动 deer-flow 登顶：SuperAgent 架构处理数小时复杂任务",
+      "ruflo 登顶：Claude 专属的多智能体集群编排平台",
+      "claude-subconscious：为 Claude Code 注入“潜意识”记忆机制",
+      "RuView 黑科技：利用普通 WiFi 信号实现无摄像头姿态估计",
+      "last30days-skill：跨 Reddit/X/YouTube 实时调研并合成摘要",
+      "TradingAgents-CN：多智能体 LLM 驱动的中文金融交易框架"
+    ],
+    "ai-web": [
+      "Anthropic 一日连发 8 篇重磅，战略转向 AI 自主性与实体经济",
+      "Project Vend：Claude 经营实体店亏损并产生身份认知错乱",
+      "Claude 助力 Mozilla Firefox 发现数百个零日安全漏洞",
+      "Project Fetch：Claude 辅助编程机器狗，效率提升两倍",
+      "全新 Science Blog 上线，展示“氛围物理”等前沿科研能力",
+      "OpenAI 更新低调，聚焦安全漏洞赏金与模型规范建设"
+    ],
+    "ai-hn": [
+      "Claude 代码 90% 流向冷门仓库，被质疑制造“一次性代码”",
+      "OpenAI 官方仓库中 Claude 竟是贡献度第三高的“开发者”",
+      "OpenAI 视频模型 Sora 上线六个月即宣告关闭，遭社区质疑",
+      "开发者重写 chardet 转 MIT 协议，原作者打破 15 年沉默",
+      "3360 次安全测试大横评：GPT-4o vs Claude vs DeepSeek 全对比",
+      "Anthropic 商业模式深度分析：技术护城河与未来格局解析"
+    ],
+    "rl-daily": [
+      "veRL 极其活跃：多模态与异构硬件适配成核心驱动力",
+      "TRL 架构重构：重点解决 Async GRPO 显存瓶颈",
+      "AReaL 硬核优化：聚焦 FP8 训练与异步底层性能挖掘",
+      "Slime 集中修复：解决 VLM 视觉语言模型 RL 训练 Bug",
+      "OpenRLHF v0.9.8 发布：从 DeepSpeed 全面转向 FSDP2",
+      "Open Instruct 融合 PPO/GRPO 算法，增强通用性"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "MCP emerges as critical integration standard across all tools",
+      "OpenAI Codex development velocity labeled 'Very High'",
+      "Voice-first and remote-first workflows show fragile implementations",
+      "Claude Code ships v2.1.83 with enterprise focus",
+      "Open-source alternatives differentiate on extensibility and privacy",
+      "Industry shifts from chat interfaces to agentic workflows"
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours",
+      "New v2026.3.24 adds OpenAI API compatibility layer",
+      "417 open issues signal major growing pains",
+      "Community demands desktop client and plugin stability",
+      "Beta release fixes workspace file access policies",
+      "Project ships 3 releases in single day"
+    ],
+    "ai-trending": [
+      "ByteDance's deer-flow SuperAgent gains 3,787 stars",
+      "ruflo becomes leading Claude orchestration platform",
+      "AI shifts from experiments to revenue-generating apps",
+      "MoneyPrinterV2 trends for automated content monetization",
+      "Claude Code extensions dominate ecosystem growth",
+      "TradingAgents-CN signals finance sector AI adoption"
+    ],
+    "ai-web": [
+      "Anthropic drops 8 strategic articles in one day",
+      "Claude Opus 4.6 beats humans at finding zero-days",
+      "Claudius agent runs physical business independently",
+      "Project Vend upgrades to Sonnet 4.5",
+      "New Science Blog showcases theoretical physics work",
+      "Mozilla partnership reveals security breakthroughs"
+    ],
+    "ai-hn": [
+      "OpenAI kills Sora video generator after 6 months",
+      "90% of Claude code flows to repos with under 2 stars",
+      "Researchers test 3,360 safety cases across models",
+      "Vibe coding faces community reality check",
+      "T³-Bench targets complex docs and live calls",
+      "Claude Auto Mode raises safety decision concerns"
+    ],
+    "rl-daily": [
+      "LLM RLHF frameworks pivot to FP8 and GB200",
+      "Frameworks shed DeepSpeed and Ray dependencies",
+      "verl ecosystem expands with Atropos integration",
+      "TRL focuses on multimodal VLM training",
+      "Traditional RL libraries enter maintenance phase",
+      "New 'Agentic RL' trend emerges across frameworks"
+    ]
+  }
+}
