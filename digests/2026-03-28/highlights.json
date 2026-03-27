@@ -1,0 +1,86 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 架构级重构至 Rust v0.117.0，TUI 性能大跃进",
+      "Claude Code 活跃度爆表，Top Issue 讨论超 77 条",
+      "MCP 成生态标配，无缝连接 Figma、Playwright 等外部系统",
+      "OpenCode 底层向 Effect 架构迁移，社区热议安全默认值",
+      "Kimi Code CLI v1.27.0 发布，重点增强 Web 端与安全审计",
+      "企业级痛点转移：权限安全、沙箱隔离与 Token 成本成瓶颈"
+    ],
+    "ai-agents": [
+      "OpenClaw 活跃度爆表，24小时内 Issues/PRs 更新量达500条上限",
+      "新增 Agent 中止 API，防止运行时无限挂起",
+      "xAI (Grok) 提供商重构，支持 x_search 工具",
+      "修复 Android 配对与 Discord 传输等关键回归 Bug",
+      "社区正等待新版本修复 2026.3.x 系列大量回归问题",
+      "核心团队致力解决 Kimi/Qwen 等国产模型兼容性"
+    ],
+    "ai-trending": [
+      "Agentic Workflow 爆发：last30days-skill 单日暴涨 2800+ Star",
+      "微软开源前沿语音模型 VibeVoice，补齐语音交互拼图",
+      "多智能体编排工具 oh-my-claudecode 爆火，解决复杂编程",
+      "Deep-Live-Cam 实时换脸技术重回视野，多模态工业化加速",
+      "AI-Scientist-v2 进展预示 AI 自主冲击科学研究高地",
+      "Chandra 高精度 OCR 解决表格、表单等复杂文档痛点"
+    ],
+    "ai-hn": [
+      "泄露：Anthropic 测试强力新模型 Claude Mythos，能力阶跃",
+      "五角大楼将 Anthropic 列入供应链风险名单引司法争议",
+      "Claude 服务 Q1 宕机与高峰限流激起用户强烈不满",
+      "全网最热：深度解析 .claude/ 文件夹配置与上下文管理",
+      "Google TurboQuant 算法：LLM 内存占用降低 6 倍不损质量",
+      "创意项目：开源动物森友会风格 Claude Code Agent UI"
+    ],
+    "rl-daily": [
+      "verl 架构大改适配 Qwen3.5，拓展图像/视频生成 RL",
+      "TRL 核心转向 Agentic RL，增强 Tool Calling 能力",
+      "ROCK 连发 5 个版本，强化 Agent Serverless 运行时",
+      "AReaL 发力 VLM 训练稳定性与 FP8 底层引擎优化",
+      "Open Instruct 引入 Sandbox 沙箱环境与离线蒸馏",
+      "rl_games 引入 NVIDIA Warp 支持，探索 GPU 加速物理仿真"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code leads with v2.1.86 and active patch releases",
+      "OpenAI Codex v0.117.0 ships with regression reports",
+      "MCP support becomes standard across all major tools",
+      "Token efficiency emerges as critical battleground",
+      "Enterprise security models now key differentiator",
+      "Gemini CLI hits v0.36.0-preview.5 with stability focus"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours",
+      "90% of OpenClaw issues remain open amid high churn",
+      "No stabilization release despite regression spike",
+      "SambaNova, Oracle OCI, xAI providers added",
+      "2026.3.x builds flagged with release blockers",
+      "189 PRs merged mixing expansion and hardening"
+    ],
+    "ai-trending": [
+      "Deep Research agents dominate trending repositories",
+      "last30days-skill gains 2,824 stars in one day",
+      "oh-my-claudecode hits 1,402 stars for multi-agent",
+      "superpowers framework rises with 2,797 stars",
+      "TurboQuant addresses LLM memory crisis",
+      "Multimodal productivity tools surge in popularity"
+    ],
+    "ai-hn": [
+      "Anthropic wins injunction vs Pentagon risk label",
+      "Claude Mythos leak hints at step-change in power",
+      "Users report 529 errors and peak-hour throttling",
+      "TurboQuant algorithm gains traction for memory",
+      "Debate erupts over AI safety and First Amendment",
+      "Infrastructure reliability concerns spike discussions"
+    ],
+    "rl-daily": [
+      "LLM post-training frameworks outpace general RL",
+      "ROCK ships 5 rapid patches reaching v1.4.7",
+      "TRL standardizes agentic tool-calling with GRPO",
+      "verl drives multi-modal generation RL support",
+      "AReaL stabilizes VLM training with FP8",
+      "General RL libraries shift to maintenance mode"
+    ]
+  }
+}
