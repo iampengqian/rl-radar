@@ -6,7 +6,77 @@
     <description>RL 开源生态每日简报 · Daily RL ecosystem digest</description>
     <language>zh-CN</language>
     <atom:link href="https://iampengqian.github.io/rl-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 26 Mar 2026 22:15:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 22:14:31 +0000</lastBuildDate>
+    <item>
+      <title>AI CLI 工具社区动态日报 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-cli</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-cli</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>AI CLI 工具社区动态日报 2026-03-28</description>
+    </item>
+    <item>
+      <title>AI CLI Tools Digest 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-cli-en</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-cli-en</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>AI CLI Tools Digest 2026-03-28</description>
+    </item>
+    <item>
+      <title>AI Agents 生态日报 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-agents</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-agents</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>AI Agents 生态日报 2026-03-28</description>
+    </item>
+    <item>
+      <title>AI Agents Ecosystem Digest 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-agents-en</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-agents-en</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>AI Agents Ecosystem Digest 2026-03-28</description>
+    </item>
+    <item>
+      <title>RL 开源生态日报 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/rl-daily</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/rl-daily</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>RL 开源生态日报 2026-03-28</description>
+    </item>
+    <item>
+      <title>RL Open Source Ecosystem Digest 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/rl-daily-en</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/rl-daily-en</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>RL Open Source Ecosystem Digest 2026-03-28</description>
+    </item>
+    <item>
+      <title>AI 开源趋势日报 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-trending</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-trending</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>AI 开源趋势日报 2026-03-28</description>
+    </item>
+    <item>
+      <title>AI Open Source Trends 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-trending-en</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-trending-en</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>AI Open Source Trends 2026-03-28</description>
+    </item>
+    <item>
+      <title>Hacker News AI 社区动态日报 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-hn</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-hn</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Hacker News AI 社区动态日报 2026-03-28</description>
+    </item>
+    <item>
+      <title>Hacker News AI Community Digest 2026-03-28</title>
+      <link>https://iampengqian.github.io/rl-radar/#2026-03-28/ai-hn-en</link>
+      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-28/ai-hn-en</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Hacker News AI Community Digest 2026-03-28</description>
+    </item>
     <item>
       <title>AI CLI 工具社区动态日报 2026-03-27</title>
       <link>https://iampengqian.github.io/rl-radar/#2026-03-27/ai-cli</link>
@@ -146,76 +216,6 @@
       <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-26/ai-web-en</guid>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
       <description>Official AI Content Report 2026-03-26</description>
-    </item>
-    <item>
-      <title>AI 开源趋势日报 2026-03-26</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-26/ai-trending</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-26/ai-trending</guid>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <description>AI 开源趋势日报 2026-03-26</description>
-    </item>
-    <item>
-      <title>AI Open Source Trends 2026-03-26</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-26/ai-trending-en</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-26/ai-trending-en</guid>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <description>AI Open Source Trends 2026-03-26</description>
-    </item>
-    <item>
-      <title>Hacker News AI 社区动态日报 2026-03-26</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-26/ai-hn</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-26/ai-hn</guid>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI 社区动态日报 2026-03-26</description>
-    </item>
-    <item>
-      <title>Hacker News AI Community Digest 2026-03-26</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-26/ai-hn-en</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-26/ai-hn-en</guid>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <description>Hacker News AI Community Digest 2026-03-26</description>
-    </item>
-    <item>
-      <title>AI CLI 工具社区动态日报 2026-03-25</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-25/ai-cli</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-25/ai-cli</guid>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <description>AI CLI 工具社区动态日报 2026-03-25</description>
-    </item>
-    <item>
-      <title>AI CLI Tools Digest 2026-03-25</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-25/ai-cli-en</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-25/ai-cli-en</guid>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <description>AI CLI Tools Digest 2026-03-25</description>
-    </item>
-    <item>
-      <title>AI Agents 生态日报 2026-03-25</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-25/ai-agents</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-25/ai-agents</guid>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <description>AI Agents 生态日报 2026-03-25</description>
-    </item>
-    <item>
-      <title>AI Agents Ecosystem Digest 2026-03-25</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-25/ai-agents-en</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-25/ai-agents-en</guid>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <description>AI Agents Ecosystem Digest 2026-03-25</description>
-    </item>
-    <item>
-      <title>RL 开源生态日报 2026-03-25</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-25/rl-daily</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-25/rl-daily</guid>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <description>RL 开源生态日报 2026-03-25</description>
-    </item>
-    <item>
-      <title>RL Open Source Ecosystem Digest 2026-03-25</title>
-      <link>https://iampengqian.github.io/rl-radar/#2026-03-25/rl-daily-en</link>
-      <guid isPermaLink="true">https://iampengqian.github.io/rl-radar/#2026-03-25/rl-daily-en</guid>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <description>RL Open Source Ecosystem Digest 2026-03-25</description>
     </item>
   </channel>
 </rss>
