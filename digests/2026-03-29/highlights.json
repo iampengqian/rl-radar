@@ -1,0 +1,86 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 爆 Token 消耗过快，Issue 热度高达 104",
+      "Claude Code 用户吐槽 Max 配额异常，计费透明度成焦点",
+      "OpenCode 登顶热议榜首，Issue #7410 揭示上游依赖不稳",
+      "AI CLI 向自主代理演进，会话持久化与成本控制成瓶颈",
+      "Windows/WSL 成重灾区：Shell 执行失败与剪贴板失效频发",
+      "社区呼唤 Token 透明度，实时显示 Context 占用成刚需"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日狂收 500 个 PR，351 个待合并引爆期待",
+      "xAI Grok 全面升级：原生支持 x_search 与代码执行工具",
+      "修复 Matrix E2EE 加密失败，解决 ESM 模块加载难题",
+      "Telegram 修复空白消息崩溃，消息发送健壮性大幅提升",
+      "安全审计升级：强制引导配置 workspaceOnly 防止越权",
+      "149 个 PR 已合并，Linux/Windows 原生客户端呼声高涨"
+    ],
+    "ai-trending": [
+      "AI-Scientist-v2 横空出世，AI 从辅助工具变身自主科学家",
+      "Dexter 爆火：专注于深度金融研究的自主智能体崛起",
+      "Chandra 登顶：专为复杂表格与手写内容设计的 OCR 模型",
+      "Superpowers 一日暴涨 2293 Star，定义 AI 辅助编程新范式",
+      "Deep-Live-Cam 持续高增长，AIGC 实时视频需求强劲",
+      "AgentScope 受追捧：致力于解决多智能体协作的黑盒难题"
+    ],
+    "ai-hn": [
+      "Anthropic 泄密模型引恐慌，'Claude Mythos' 导致网络安全股下跌",
+      "人机协作新突破：AI 助力攻克高德纳 'Claude Cycles' 猜想",
+      "Claude CLI + Obsidian 组合拳，打造个人税务处理神器",
+      "AI 编程账单来了：社区反思工具背后的 Token 经济成本",
+      "五角大楼介入？泄露模型被指具有'前所未有的网络风险'",
+      "生产力本质大讨论：从盲目拥抱 AI 转向理性计算 ROI"
+    ],
+    "rl-daily": [
+      "verl 领跑 RLHF：快速适配 Qwen3.5 并向 NPU 异构计算扩张",
+      "Open Instruct 深度重构：引入 torch.compile 提升鲁棒性",
+      "rl_games 引入 NVIDIA Warp，激进推进 GPU 并行物理环境",
+      "slime 聚焦 FSDP 深层优化，解决长上下文 CP 并行难题",
+      "TRL 引入 PSPO 算法，细粒度工具过滤提升训练效率",
+      "RL 生态分化：LLM 训练框架爆发，经典库进入维护模式"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Rate limiting opacity & session data loss plague Claude Code",
+      "OpenAI Codex battles token burning & platform parity issues",
+      "Gemini CLI patches address rate limits & SDD workflow bugs",
+      "Copilot CLI stuck in Autopilot loops with scrolling glitches",
+      "Windows/WSL bugs dominate Qwen Code & Kimi Code issues",
+      "Security vulnerabilities emerge in permission systems"
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500+ issues/PRs in 24-hour burst",
+      "xAI/Grok integration adds x_search tool support",
+      "Auth regressions & channel instability plague recent builds",
+      "Agent Identity features signal multi-agent evolution",
+      "Linux/Windows app expansion in active development",
+      "No new releases as team stabilizes gateway"
+    ],
+    "ai-trending": [
+      "Deep-Live-Cam gains 1,789 stars for real-time face swaps",
+      "AI-Scientist-v2 automates workshop-level research",
+      "Dexter agent targets deep financial research niche",
+      "Agentic Tree Search enables autonomous discovery",
+      "Ecosystem shifts from models to actionable agency",
+      "CopilotKit highlights frontend UI agent integration"
+    ],
+    "ai-hn": [
+      "Claude Mythos leak sparks cybersecurity stock panic",
+      "Knuth's Claude Cycles solved via AI proof assistants",
+      "Developers build AI-free zones to manage LLM infiltration",
+      "Debate rages over AI creating lazy productivity culture",
+      "Economic sustainability of coding tools questioned",
+      "First 40 months of AI era reflected upon"
+    ],
+    "rl-daily": [
+      "verl leads with agentic abstractions & NPU support",
+      "Qwen3.5 integration drives post-training alignment",
+      "RL frameworks bifurcate into LLM agents vs classic Deep RL",
+      "TRL refines GRPO for tool use capabilities",
+      "ROCK focuses on RL as a Service infrastructure",
+      "rl_games community debugs SAC convergence issues"
+    ]
+  }
+}
