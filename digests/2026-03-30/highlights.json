@@ -1,0 +1,86 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.87 发布，订阅配额与 Token 消耗引热议",
+      "OpenAI Codex 被指 Token \"静默燃尽\"，开发者陷焦虑",
+      "Gemini CLI 爆出命令注入安全漏洞，429 限流惹众怒",
+      "GitHub Copilot CLI 遭遇严重内存崩溃，Windows 兼容性堪忧",
+      "Qwen Code 发布 nightly 版，重点修复 Windows Shell 失效",
+      "OpenCode v1.3.6 更新，修复 Token 统计并引入 MCP OAuth"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.3.28 发布，彻底移除旧版 Qwen OAuth",
+      "单日 500+ PR/Issue，OpenClaw 社区活跃度爆表",
+      "修复网关重启会话卡死，系统健壮性显著提升",
+      "Slack/Telegram 渠道大修，解决消息串序与媒体误判",
+      "社区强烈呼吁 Linux/Windows 桌面端支持",
+      "引入跨会话记忆与强化学习，向更智能 Agent 迈进"
+    ],
+    "ai-trending": [
+      "Claude Code 生态大爆发，GitHub Trending 榜首霸榜",
+      "shareAI-lab 拆解教程 Star 破 4.2 万，手把手教你写 Agent",
+      "Google 官方 CLI 上线，AI 可直接操控 Gmail/Drive",
+      "Nous Research 推出 \"成长型\" Agent，交互即进化",
+      "Shell 版 Agentic 框架横空出世，今日黑马涨粉 2 千",
+      "开源语音数字人技术突围，体验逼近闭源产品"
+    ],
+    "ai-hn": [
+      "Anthropic \"Mythos\" 泄露，3k 文件曝光内部运作",
+      "CLI 代理神器开源，声称可减少 60-90% Token 消耗",
+      "LiteLLM 爆出供应链零日漏洞，AI 工具链安全堪忧",
+      "深度解析：为何 Claude Code 暂时赢得了终端之战？",
+      "论文警示：LLM 评分逻辑与人类存在本质差异",
+      "AI 是否在压低薪酬？社区激辩技术对就业的冲击"
+    ],
+    "rl-daily": [
+      "Slime v0.2.4 发布：重仓 VLM 与可观测性基建",
+      "OpenRLHF 融合 GRPO 与 PPO，快速跟进 Qwen3.5",
+      "verl 高强度适配国产 NPU，向全栈设施演进",
+      "AReaL 提案弹性权重更新，试图打破 I/O 瓶颈",
+      "Agentic RL 成新热点，基础设施转向长轨迹优化",
+      "rl_games 工程现代化，构建系统迁移至 UV"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Major AI CLIs hit critical bugs in token and data handling",
+      "Industry shifts to 'agentic' multi-agent workflows",
+      "Context windows top 1M tokens but trigger IQ drops",
+      "Claude Code v2.1.87 fixes multi-agent team coworking",
+      "Gemini CLI adds new command injection defenses",
+      "Copilot CLI grapples with cross-platform crash bugs"
+    ],
+    "ai-agents": [
+      "OpenClaw drops Qwen OAuth for API key auth",
+      "v2026.3.28 marks Qwen portal integration as breaking",
+      "Open issues (418) vastly outpace bug resolution (82)",
+      "Project velocity peaks with 500 PRs in 24 hours",
+      "Config auto-migration dropped for setups > 2 months",
+      "344 open PRs signal massive pending functionality"
+    ],
+    "ai-trending": [
+      "Anthropic 'Claude Code' ecosystem dominates trends",
+      "Microsoft's VibeVoice leads surge in Voice AI",
+      "'Agentic Memory' emerges as new infra layer",
+      "'Superpowers' repo tops charts with 2,229 stars",
+      "Hermes-agent gains 997 stars as 'growing' agent",
+      "ShareAI's CLI harness hits 42.6k stars"
+    ],
+    "ai-hn": [
+      "Developers pivot to 'local-first' AI to cut costs",
+      "Anthropic 'Mythos' leak exposes 3k internal files",
+      "Apple M5 chips face AI performance controversy",
+      "Community questions if AI unbundles or intensifies work",
+      "Zero-day flaws found in popular LiteLLM library",
+      "LLM essay grading fails to match human standards"
+    ],
+    "rl-daily": [
+      "LLM alignment frameworks split RL ecosystem",
+      "Slime v0.2.4 adds FP8 and W&B observability",
+      "Distributed training takes center stage for top tier",
+      "Traditional RL libraries show minimal activity",
+      "Qwen3.5 adaptation drives rapid infra updates",
+      "Projects tackle multi-node weight synchronization"
+    ]
+  }
+}
