@@ -25,6 +25,7 @@ import {
   autoGenFooter,
   readLlmRuntimeConfig,
   resetLlmStateForTest,
+  escapeLiquid,
 } from "../report.ts";
 
 // ---------------------------------------------------------------------------
@@ -99,6 +100,40 @@ describe("saveFile", () => {
   it("writes content as utf-8", () => {
     saveFile("hello world", "2026-03-09", "test.md");
     expect(fs.writeFileSync).toHaveBeenCalledWith("digests/2026-03-09/test.md", "hello world", "utf-8");
+  });
+
+  it("escapes Liquid tags in content", () => {
+    saveFile('Use `{% include "file.md" %}` to include files', "2026-03-09", "test.md");
+    expect(fs.writeFileSync).toHaveBeenCalledWith(
+      "digests/2026-03-09/test.md",
+      'Use `&#123;&#37; include "file.md" &#37;&#125;` to include files',
+      "utf-8",
+    );
+  });
+});
+
+// ---------------------------------------------------------------------------
+// escapeLiquid
+// ---------------------------------------------------------------------------
+
+describe("escapeLiquid", () => {
+  it("escapes {% and %} tags", () => {
+    expect(escapeLiquid('{% include "file.md" %}')).toBe('&#123;&#37; include "file.md" &#37;&#125;');
+  });
+
+  it("escapes {{ and }} tags", () => {
+    expect(escapeLiquid("{{ variable }}")).toBe("&#123;&#123; variable &#125;&#125;");
+  });
+
+  it("returns unchanged content without Liquid tags", () => {
+    expect(escapeLiquid("plain text")).toBe("plain text");
+  });
+
+  it("handles multiple Liquid tags", () => {
+    const input = "{% if true %}{{ var }}{% endif %}";
+    const expected =
+      "&#123;&#37; if true &#37;&#125;&#123;&#123; var &#125;&#125;&#123;&#37; endif &#37;&#125;";
+    expect(escapeLiquid(input)).toBe(expected);
   });
 });
 
