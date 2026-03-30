@@ -17,6 +17,11 @@
 | 2026-03-19 | e551332, a9744c2 | @mentions 中和化 + 74dfa10 |
 | 2026-03-19 | f4922ce | OpenAI web 报告误报修复 | 74dfa10 |
 | 2026-03-19 | b01853a | 周报/月报 Highlights 生成 | 2c472b7 (#21) |
+| 2026-03-30 | a7854e3 | 移除 zeroclaw + repo fetch 错误处理 | 8063aa1 (#23) |
+| 2026-03-30 | ba2d9ef | Telegram highlights HTML 转义 | 8063aa1 (#23) |
+| 2026-03-30 | 7e4579d, e32f4a2, a76ad93 | RSS feed 完整 HTML + CDATA + content:encoded | 8063aa1 (#23) |
+| 2026-03-30 | 6b31f5d, 802e1c8 | 小红书/微信内容生成器 (social.ts) | 0ca1b0b (#23) |
+| 2026-03-30 | a49b786 | 飞书 webhook 通知 (feishu.ts) | 0ca1b0b (#23) |
 
 ## RL 特有代码（不可覆盖）
 
