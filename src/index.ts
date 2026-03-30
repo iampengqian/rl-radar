@@ -76,10 +76,15 @@ async function fetchAllData(
 
   const [fetched, skillsData, webResults, trendingData, hnData] = await Promise.all([
     Promise.all(allConfigs.map((cfg) => fetchRepoActivity(cfg, since))),
-    fetchSkillsData(CLAUDE_SKILLS_REPO).then((d) => {
-      console.log(`  [claude-code-skills] prs: ${d.prs.length}, issues: ${d.issues.length}`);
-      return d;
-    }),
+    fetchSkillsData(CLAUDE_SKILLS_REPO)
+      .then((d) => {
+        console.log(`  [claude-code-skills] prs: ${d.prs.length}, issues: ${d.issues.length}`);
+        return d;
+      })
+      .catch((err) => {
+        console.error(`  [claude-code-skills] fetch failed: ${err}`);
+        return { prs: [] as GitHubItem[], issues: [] as GitHubItem[] };
+      }),
     Promise.all([
       fetchSiteContent("anthropic", webState).catch((err): WebFetchResult => {
         console.error(`  [web/anthropic] fetch failed: ${err}`);
