@@ -146,10 +146,22 @@ export async function callLlm(prompt: string, maxTokens = LLM_TOKENS_DEFAULT): P
 // File output
 // ---------------------------------------------------------------------------
 
+/**
+ * Escape Jekyll/Liquid special characters in markdown content.
+ * Prevents Jekyll from interpreting `{% ... %}` and `{{ ... }}` as Liquid tags.
+ */
+export function escapeLiquid(content: string): string {
+  return content
+    .replace(/{%/g, "&#123;&#37;")
+    .replace(/%}/g, "&#37;&#125;")
+    .replace(/{{/g, "&#123;&#123;")
+    .replace(/}}/g, "&#125;&#125;");
+}
+
 export function saveFile(content: string, ...segments: string[]): string {
   const filepath = path.join("digests", ...segments);
   fs.mkdirSync(path.dirname(filepath), { recursive: true });
-  fs.writeFileSync(filepath, content, "utf-8");
+  fs.writeFileSync(filepath, escapeLiquid(content), "utf-8");
   return filepath;
 }
 
