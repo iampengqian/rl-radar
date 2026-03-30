@@ -75,3 +75,9 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@agents_radar' }}
           PAGES_URL: https://iampengqian.github.io/rl-radar
         run: pnpm notify
+
+      - name: Send Feishu notification
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          PAGES_URL: https://iampengqian.github.io/rl-radar
+        run: pnpm notify:feishu

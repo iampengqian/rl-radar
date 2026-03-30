@@ -1,10 +1,9 @@
 /**
- * Telegram notification — reads manifest.json and sends a message
+ * Feishu (Lark) notification — reads manifest.json and sends a card message
  * with links to the latest reports. Skips silently if secrets are not set.
  *
  * Required env vars:
- *   TELEGRAM_BOT_TOKEN  — bot token from @BotFather
- *   TELEGRAM_CHAT_ID    — channel/group/user chat ID
+ *   FEISHU_WEBHOOK_URL  — custom bot webhook URL
  * Optional:
  *   PAGES_URL           — GitHub Pages base URL (defaults to the public deployment)
  */
@@ -12,55 +11,47 @@
 import fs from "node:fs";
 import path from "node:path";
 import { NOTIFY_LABELS } from "./i18n.ts";
-import type { ReportHighlights } from "./prompts-data.ts";
+import type { Highlights } from "./notify.ts";
 
-export interface Highlights {
-  zh: ReportHighlights;
-  en: ReportHighlights;
-}
+const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
 
-const PAGES_URL_DEFAULT = "https://iampengqian.github.io/rl-radar";
-
-function escapeHtml(s: string): string {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-async function sendTelegram(text: string): Promise<void> {
-  const BOT_TOKEN = process.env["TELEGRAM_BOT_TOKEN"] ?? "";
-  const CHAT_ID = process.env["TELEGRAM_CHAT_ID"] || "@rl_radar";
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-  const res = await fetch(url, {
+async function sendFeishu(title: string, content: string): Promise<void> {
+  const webhookUrl = process.env["FEISHU_WEBHOOK_URL"] ?? "";
+  const res = await fetch(webhookUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      chat_id: CHAT_ID,
-      text,
-      parse_mode: "HTML",
-      disable_web_page_preview: true,
+      msg_type: "interactive",
+      card: {
+        header: {
+          title: { tag: "plain_text", content: title },
+          template: "blue",
+        },
+        elements: [{ tag: "markdown", content }],
+      },
     }),
   });
   if (!res.ok) {
     const body = await res.text();
-    throw new Error(`Telegram API ${res.status}: ${body}`);
+    throw new Error(`Feishu API ${res.status}: ${body}`);
   }
 }
 
-export function buildMessage(
+export function buildFeishuMessage(
   date: string,
   reports: string[],
   pagesUrl?: string,
   highlights?: Highlights | null,
 ): string {
   const PAGES_URL = (pagesUrl ?? process.env["PAGES_URL"] ?? PAGES_URL_DEFAULT).replace(/\/$/, "");
-  const baseReports = [...new Set(reports.map((r) => r.replace(/-en$/, "")))];
+  const baseReports = reports.filter((r) => !r.endsWith("-en"));
   const isWeekly = baseReports.includes("ai-weekly");
   const isMonthly = baseReports.includes("ai-monthly");
 
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
   const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
-  const lines: string[] = [`${icon} <b>rl-radar${suffix} · ${date}</b>\n`];
+  const lines: string[] = [`${icon} **agents-radar${suffix} · ${date}**`];
 
-  // Daily reports first, then rollups
   const ordered = [
     ...baseReports.filter((r) => !r.includes("weekly") && !r.includes("monthly")),
     ...baseReports.filter((r) => r.includes("weekly") || r.includes("monthly")),
@@ -73,37 +64,36 @@ export function buildMessage(
     const zhUrl = `${PAGES_URL}/#${date}/${r}`;
     const enKey = `${r}-en`;
 
-    lines.push(""); // blank line before each report section
+    lines.push("");
     if (reports.includes(enKey)) {
       const enLabel = NOTIFY_LABELS[r]?.en ?? "EN";
       const enUrl = `${PAGES_URL}/#${date}/${enKey}`;
-      lines.push(`• <a href="${zhUrl}">${zhLabel}</a>  ·  <a href="${enUrl}">${enLabel}</a>`);
+      lines.push(`• [${zhLabel}](${zhUrl})  ·  [${enLabel}](${enUrl})`);
     } else {
-      lines.push(`• <a href="${zhUrl}">${zhLabel}</a>`);
+      lines.push(`• [${zhLabel}](${zhUrl})`);
     }
 
-    // Add highlights as indented sub-items
     const items = zhHighlights[r];
     if (items?.length) {
       for (const h of items) {
-        lines.push(`  ◦ ${escapeHtml(h)}`);
+        lines.push(`  ◦ ${h}`);
       }
     }
   }
 
-  lines.push(`\n<a href="${PAGES_URL}">🌐 Web UI</a>  ·  <a href="${PAGES_URL}/feed.xml">⊕ RSS</a>`);
+  lines.push(`\n[🌐 Web UI](${PAGES_URL})  ·  [⊕ RSS](${PAGES_URL}/feed.xml)`);
   return lines.join("\n");
 }
 
 async function main(): Promise<void> {
-  const BOT_TOKEN = process.env["TELEGRAM_BOT_TOKEN"] ?? "";
-  if (!BOT_TOKEN) {
-    console.log("[notify] TELEGRAM_BOT_TOKEN not set — skipping.");
+  const webhookUrl = process.env["FEISHU_WEBHOOK_URL"] ?? "";
+  if (!webhookUrl) {
+    console.log("[feishu] FEISHU_WEBHOOK_URL not set — skipping.");
     return;
   }
 
   if (!fs.existsSync("manifest.json")) {
-    console.log("[notify] manifest.json not found — skipping.");
+    console.log("[feishu] manifest.json not found — skipping.");
     return;
   }
 
@@ -113,30 +103,35 @@ async function main(): Promise<void> {
 
   const latest = dates?.[0];
   if (!latest) {
-    console.log("[notify] manifest is empty — skipping.");
+    console.log("[feishu] manifest is empty — skipping.");
     return;
   }
   const { date, reports } = latest;
 
-  // Load highlights if available
   let highlights: Highlights | null = null;
   const highlightsPath = path.join("digests", date, "highlights.json");
   if (fs.existsSync(highlightsPath)) {
     try {
       highlights = JSON.parse(fs.readFileSync(highlightsPath, "utf-8")) as Highlights;
     } catch {
-      console.log("[notify] Failed to parse highlights.json — sending without highlights.");
+      console.log("[feishu] Failed to parse highlights.json — sending without highlights.");
     }
   }
 
-  const text = buildMessage(date, reports, undefined, highlights);
+  const isMonthly = reports.some((r) => r === "ai-monthly");
+  const isWeekly = reports.some((r) => r === "ai-weekly");
+  const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
+  const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
+  const title = `${icon} agents-radar${suffix} · ${date}`;
 
-  console.log(`[notify] Sending Telegram message for ${date} (${reports.length} reports)…`);
-  await sendTelegram(text);
-  console.log("[notify] Done!");
+  const content = buildFeishuMessage(date, reports, undefined, highlights);
+
+  console.log(`[feishu] Sending Feishu message for ${date} (${reports.length} reports)…`);
+  await sendFeishu(title, content);
+  console.log("[feishu] Done!");
 }
 
 main().catch((e: unknown) => {
-  console.error("[notify]", e instanceof Error ? e.message : e);
+  console.error("[feishu]", e instanceof Error ? e.message : e);
   process.exit(1);
 });
