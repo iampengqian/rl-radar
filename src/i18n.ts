@@ -54,6 +54,13 @@ export const RL_REPORT = {
   detail: t("各项目详细报告", "Per-Project Reports"),
 } as const;
 
+// Agent Orchestrator-specific report labels
+export const ORCH_REPORT = {
+  title: t("Agent 编排生态日报", "Agent Orchestrator Ecosystem Digest"),
+  comparison: t("Agent 编排项目横向对比", "Cross-Project Comparison"),
+  detail: t("Agent 编排项目详细报告", "Agent Orchestrator Project Reports"),
+} as const;
+
 export const WEB_REPORT = {
   title: t("AI 官方内容追踪报告", "Official AI Content Report"),
   firstCrawl: t("首次全量", "First full crawl"),
@@ -97,6 +104,7 @@ export const ISSUE_LABELS = {
   cli: t("digest", "digest-en"),
   openclaw: t("openclaw", "openclaw-en"),
   rl: t("rl-daily", "rl-daily-en"),
+  orch: t("agent-orch", "agent-orch-en"),
   web: t("web", "web-en"),
   trending: t("trending", "trending-en"),
   hn: t("hn", "hn-en"),
@@ -116,6 +124,10 @@ export const RL_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
 export const RL_ANALYSIS_ISSUE_TITLE = (weekStr: string, lang: Lang) =>
   lang === "en" ? `🔬 RL Ecosystem Deep Analysis ${weekStr}` : `🔬 RL 开源生态深度分析 ${weekStr}`;
 
+// Agent Orchestrator issue title
+export const ORCH_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
+  lang === "en" ? `🤖 Agent Orchestrator Ecosystem Digest ${dateStr}` : `🤖 Agent 编排生态日报 ${dateStr}`;
+
 // ---------------------------------------------------------------------------
 // Footer (used in report.ts)
 // ---------------------------------------------------------------------------
@@ -133,6 +145,7 @@ export const NOTIFY_LABELS: Record<string, Record<Lang, string>> = {
   "ai-agents": t("AI Agents 生态", "AI Agents Ecosystem"),
   "rl-daily": t("RL 开源生态日报", "RL Open Source Ecosystem Digest"),
   "rl-analysis": t("RL 生态深度分析", "RL Ecosystem Deep Analysis"),
+  "agent-orch": t("Agent 编排生态日报", "Agent Orchestrator Ecosystem Digest"),
   "ai-web": t("官网动态", "Official Updates"),
   "ai-trending": t("GitHub 趋势", "GitHub Trends"),
   "ai-hn": t("HN 社区动态", "HN Community"),

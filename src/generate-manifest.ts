@@ -27,6 +27,8 @@ export const REPORT_FILES = [
   "ai-weekly-en",
   "ai-monthly",
   "ai-monthly-en",
+  "agent-orch",
+  "agent-orch-en",
 ] as const;
 const MAX_FEED_ITEMS = 30;
 

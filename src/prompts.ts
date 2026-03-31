@@ -1040,6 +1040,160 @@ ${prsText}
 语言要求：简洁、技术化、基于事实，不写空话。每个条目附上 GitHub 链接。`;
 }
 
+export function buildOrchPrompt(
+  cfg: RepoConfig,
+  issues: GitHubItem[],
+  prs: GitHubItem[],
+  releases: GitHubRelease[],
+  dateStr: string,
+  lang: "zh" | "en" = "zh",
+): string {
+  const sampledIssues = topN(issues, PEER_ISSUE_LIMIT);
+  const sampledPrs = topN(prs, PEER_PR_LIMIT);
+
+  const noneStr = lang === "en" ? "None" : "无";
+  const issuesText = sampledIssues.map((i) => formatItem(i, lang)).join("\n") || noneStr;
+  const prsText = sampledPrs.map((p) => formatItem(p, lang)).join("\n") || noneStr;
+  const releasesText = releases.length
+    ? releases.map((r) => `- ${r.tag_name}: ${r.name}\n  ${(r.body ?? "").slice(0, 300)}`).join("\n")
+    : noneStr;
+
+  const issueNote = sampleNote(issues.length, sampledIssues.length, lang);
+  const prNote = sampleNote(prs.length, sampledPrs.length, lang);
+
+  if (lang === "en") {
+    return `You are an analyst focused on the AI Agent orchestration open-source ecosystem. Based on the following GitHub data from ${cfg.name} (github.com/${cfg.repo}), generate a concise Agent Orchestrator daily digest for ${dateStr}.
+
+# Data overview
+- Issues updated in the last 24h: ${issues.length}
+- PRs updated in the last 24h: ${prs.length}
+- New releases: ${releases.length}
+
+## Latest Releases
+${releasesText}
+
+## Latest Issues ${issueNote}
+${issuesText}
+
+## Latest Pull Requests ${prNote}
+${prsText}
+
+---
+
+Generate a structured English digest with the following sections:
+1. Today's Highlights
+2. Releases
+3. Important Issues
+4. Key PR Progress
+5. Why This Project Matters in the Agent Orchestration Ecosystem
+
+Style: concise, technical, evidence-based. Include GitHub links.`;
+  }
+
+  return `你是一位专注于 AI Agent 编排开源生态的项目分析师。请根据以下 GitHub 数据，为 ${cfg.name}（github.com/${cfg.repo}）生成 ${dateStr} 的 Agent 编排日报摘要。
+
+# 数据概览
+- 过去24小时 Issues 更新：${issues.length} 条
+- 过去24小时 PR 更新：${prs.length} 条
+- 新版本发布：${releases.length} 个
+
+## 最新 Releases
+${releasesText}
+
+## 最新 Issues ${issueNote}
+${issuesText}
+
+## 最新 Pull Requests ${prNote}
+${prsText}
+
+---
+
+请生成一份结构清晰的中文摘要，包含以下部分：
+1. 今日速览
+2. 版本发布
+3. 重点 Issues
+4. 关键 PR 进展
+5. 为什么这个项目在 Agent 编排生态中值得关注
+
+语言要求：简洁、技术化、基于事实，不写空话。每个条目附上 GitHub 链接。`;
+}
+
+export function buildOrchComparisonPrompt(
+  digests: RepoDigest[],
+  dateStr: string,
+  lang: "zh" | "en" = "zh",
+): string {
+  const noActivityStr = lang === "en" ? "No activity in the last 24 hours." : "过去24小时无活动。";
+  const sortedDigests = [...digests].sort((a, b) => {
+    const aScore = a.issues.length + a.prs.length + a.releases.length;
+    const bScore = b.issues.length + b.prs.length + b.releases.length;
+    if (bScore !== aScore) return bScore - aScore;
+    return a.config.name.localeCompare(b.config.name);
+  });
+
+  const sections = sortedDigests
+    .map((d) => {
+      const hasData = d.issues.length || d.prs.length || d.releases.length;
+      if (!hasData) return `## ${d.config.name} (github.com/${d.config.repo})\n${noActivityStr}`;
+      return `## ${d.config.name} (github.com/${d.config.repo})\n${d.summary}`;
+    })
+    .join("\n\n---\n\n");
+
+  if (lang === "en") {
+    return `You are a senior technical analyst of the AI Agent orchestration open-source ecosystem. The following are ${dateStr} daily digest summaries for each major Agent Orchestrator project:
+
+${sections}
+
+---
+
+Generate a cross-project comparison report in English with these sections:
+
+Use exactly these H2 headings:
+- ## Ecosystem Overview
+- ## Activity Comparison
+- ## Orchestration Patterns & Approaches
+- ## Shared Engineering Directions
+- ## Differentiation Analysis
+- ## Trend Signals
+
+Requirements:
+- Do not repeat the report title or date heading.
+- Start directly from the H2 sections above.
+- In "Activity Comparison", output a markdown table with columns: Project | Issues | PRs | Releases | Signal.
+- Focus first on projects with real activity; group no-activity projects briefly instead of giving them equal narrative weight.
+- In "Orchestration Patterns & Approaches", compare how different projects handle agent coordination, task distribution, and multi-agent communication patterns.
+- Keep each section tight and concrete. Prefer 3-5 bullets or short paragraphs, not long essays.
+
+Style: concise and professional, data-backed, suited for technical decision-makers and open-source contributors.`;
+  }
+
+  return `你是一位专注于 AI Agent 编排开源生态的资深技术分析师。以下是 ${dateStr} 各主要 Agent 编排项目的日报摘要：
+
+${sections}
+
+---
+
+请基于上述各项目动态，生成一份横向对比分析报告，包含以下部分：
+
+请严格按以下 H2 标题输出：
+- ## 生态全景
+- ## 各项目活跃度对比
+- ## 编排模式与架构对比
+- ## 共同关注的工程方向
+- ## 差异化定位分析
+- ## 值得关注的趋势信号
+
+额外要求：
+- 不要重复输出报告标题，不要再写一次日期标题。
+- 直接从上述 H2 小节开始写。
+- "各项目活跃度对比"必须输出 markdown 表格，列名固定为：项目 | Issues | PRs | Releases | 信号。
+- 先重点分析有真实活动的项目；无活动项目可合并描述，不要给同等篇幅。
+- "编排模式与架构对比"部分要求对比不同项目处理 agent 协调的方式，包括任务分发、多 agent 通信模式和调度策略。
+- 每个部分尽量控制在 3-5 个要点或短段落，避免空泛长文。
+
+语言要求：简洁专业，有数据支撑，适合技术决策者和开源贡献者阅读。`;
+}
+
 export function buildHnPrompt(data: HnData, dateStr: string, lang: "zh" | "en" = "zh"): string {
   const storiesText = data.stories
     .map((s, i) =>
