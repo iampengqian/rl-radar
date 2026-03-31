@@ -19,6 +19,7 @@ import {
   buildComparisonPrompt,
   buildPeersComparisonPrompt,
   buildRlComparisonPrompt,
+  buildOrchComparisonPrompt,
   buildSkillsPrompt,
   buildWebReportPrompt,
   buildTrendingPrompt,
@@ -26,13 +27,18 @@ import {
 } from "./prompts.ts";
 import { type ReportHighlights, buildHighlightsPrompt } from "./prompts-data.ts";
 import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_WEB, LLM_TOKENS_TRENDING } from "./report.ts";
-import { buildCliReportContent, buildOpenclawReportContent } from "./report-builders.ts";
+import {
+  buildCliReportContent,
+  buildOpenclawReportContent,
+  buildOrchReportContent,
+} from "./report-builders.ts";
 import { loadWebState, saveWebState, fetchSiteContent, type WebFetchResult, type WebState } from "./web.ts";
 import { fetchTrendingData, type TrendingData } from "./trending.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
 import { generateRlDigests, saveRlDailyReport } from "./rl-daily.ts";
+import { generateOrchDigests, saveOrchDailyReport } from "./agent-orch-daily.ts";
 import { fetchRepoActivity } from "./repo-activity.ts";
 
 // ---------------------------------------------------------------------------
@@ -45,6 +51,7 @@ const {
   openclaw: OPENCLAW,
   openclawPeers: OPENCLAW_PEERS,
   rlRepos: RL_REPOS,
+  agentOrchRepos: ORCH_REPOS,
 } = loadConfig();
 
 // ---------------------------------------------------------------------------
@@ -71,7 +78,7 @@ async function fetchAllData(
   trendingData: TrendingData;
   hnData: HnData;
 }> {
-  const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS, ...RL_REPOS];
+  const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS, ...RL_REPOS, ...ORCH_REPOS];
   console.log(`  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn`);
 
   const [fetched, skillsData, webResults, trendingData, hnData] = await Promise.all([
@@ -393,20 +400,25 @@ async function main(): Promise<void> {
 
   const peerIds = new Set(OPENCLAW_PEERS.map((p) => p.id));
   const rlIds = new Set(RL_REPOS.map((r) => r.id));
+  const orchIds = new Set(ORCH_REPOS.map((r) => r.id));
   const fetchedCli = fetched.filter(
-    (f) => f.cfg.id !== OPENCLAW.id && !peerIds.has(f.cfg.id) && !rlIds.has(f.cfg.id),
+    (f) =>
+      f.cfg.id !== OPENCLAW.id && !peerIds.has(f.cfg.id) && !rlIds.has(f.cfg.id) && !orchIds.has(f.cfg.id),
   );
   const fetchedOpenclaw = fetched.find((f) => f.cfg.id === OPENCLAW.id)!;
   const fetchedPeers = fetched.filter((f) => peerIds.has(f.cfg.id));
   const fetchedRl = fetched.filter((f) => rlIds.has(f.cfg.id));
+  const fetchedOrch = fetched.filter((f) => orchIds.has(f.cfg.id));
 
   // 2. Generate per-repo LLM summaries in parallel (zh + en simultaneously)
   console.log("  Generating summaries in ZH and EN in parallel...");
-  const [zhSummaries, enSummaries, rlDigests, enRlDigests] = await Promise.all([
+  const [zhSummaries, enSummaries, rlDigests, enRlDigests, orchDigests, enOrchDigests] = await Promise.all([
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "zh"),
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "en"),
     generateRlDigests(fetchedRl, dateStr, "zh"),
     generateRlDigests(fetchedRl, dateStr, "en"),
+    generateOrchDigests(fetchedOrch, dateStr, "zh"),
+    generateOrchDigests(fetchedOrch, dateStr, "en"),
   ]);
 
   // 3. Generate cross-repo comparisons in parallel (zh + en)
@@ -425,23 +437,41 @@ async function main(): Promise<void> {
     releases: fetchedOpenclaw.releases,
     summary: enSummaries.openclawSummary,
   };
-  const [comparison, peersComparison, enComparison, enPeersComparison, rlComparison, enRlComparison] =
-    await Promise.all([
-      callLlm(buildComparisonPrompt(zhSummaries.cliDigests, dateStr, "zh")),
-      callLlm(buildPeersComparisonPrompt(openclawDigest, zhSummaries.peerDigests, dateStr, "zh")),
-      callLlm(buildComparisonPrompt(enSummaries.cliDigests, dateStr, "en")),
-      callLlm(buildPeersComparisonPrompt(enOpenclawDigest, enSummaries.peerDigests, dateStr, "en")),
-      summarize(
-        "rl-comparison",
-        buildRlComparisonPrompt(rlDigests, dateStr, "zh"),
-        "⚠️ RL 横向对比分析生成失败。",
-      ),
-      summarize(
-        "rl-comparison-en",
-        buildRlComparisonPrompt(enRlDigests, dateStr, "en"),
-        "⚠️ RL comparison generation failed.",
-      ),
-    ]);
+  const [
+    comparison,
+    peersComparison,
+    enComparison,
+    enPeersComparison,
+    rlComparison,
+    enRlComparison,
+    orchComparison,
+    enOrchComparison,
+  ] = await Promise.all([
+    callLlm(buildComparisonPrompt(zhSummaries.cliDigests, dateStr, "zh")),
+    callLlm(buildPeersComparisonPrompt(openclawDigest, zhSummaries.peerDigests, dateStr, "zh")),
+    callLlm(buildComparisonPrompt(enSummaries.cliDigests, dateStr, "en")),
+    callLlm(buildPeersComparisonPrompt(enOpenclawDigest, enSummaries.peerDigests, dateStr, "en")),
+    summarize(
+      "rl-comparison",
+      buildRlComparisonPrompt(rlDigests, dateStr, "zh"),
+      "⚠️ RL 横向对比分析生成失败。",
+    ),
+    summarize(
+      "rl-comparison-en",
+      buildRlComparisonPrompt(enRlDigests, dateStr, "en"),
+      "⚠️ RL comparison generation failed.",
+    ),
+    summarize(
+      "orch-comparison",
+      buildOrchComparisonPrompt(orchDigests, dateStr, "zh"),
+      "⚠️ Agent 编排横向对比分析生成失败。",
+    ),
+    summarize(
+      "orch-comparison-en",
+      buildOrchComparisonPrompt(enOrchDigests, dateStr, "en"),
+      "⚠️ Agent Orchestrator comparison generation failed.",
+    ),
+  ]);
 
   const footer = autoGenFooter("zh");
   const enFooter = autoGenFooter("en");
@@ -495,9 +525,13 @@ async function main(): Promise<void> {
   console.log(`  Saved ${saveFile(digestContent, dateStr, "ai-cli.md")}`);
   console.log(`  Saved ${saveFile(openclawContent, dateStr, "ai-agents.md")}`);
   console.log(`  Saved ${saveRlDailyReport(rlDigests, rlComparison, utcStr, dateStr, footer, "zh")}`);
+  console.log(`  Saved ${saveOrchDailyReport(orchDigests, orchComparison, utcStr, dateStr, footer, "zh")}`);
   console.log(`  Saved ${saveFile(enDigestContent, dateStr, "ai-cli-en.md")}`);
   console.log(`  Saved ${saveFile(enOpenclawContent, dateStr, "ai-agents-en.md")}`);
   console.log(`  Saved ${saveRlDailyReport(enRlDigests, enRlComparison, utcStr, dateStr, enFooter, "en")}`);
+  console.log(
+    `  Saved ${saveOrchDailyReport(enOrchDigests, enOrchComparison, utcStr, dateStr, enFooter, "en")}`,
+  );
 
   // Web report: zh saves state, en skips state save
   await saveWebReport(webResults, webState, utcStr, dateStr, digestRepo, footer, "zh");
@@ -538,6 +572,7 @@ async function main(): Promise<void> {
     ["ai-web", "ai-web.md", "ai-web-en.md"],
     ["ai-hn", "ai-hn.md", "ai-hn-en.md"],
     ["rl-daily", "rl-daily.md", "rl-daily-en.md"],
+    ["agent-orch", "agent-orch.md", "agent-orch-en.md"],
   ] as const) {
     const zh = readReport(zhFile);
     const en = readReport(enFile);
@@ -571,7 +606,7 @@ async function main(): Promise<void> {
   const highlightsPath = saveFile(JSON.stringify(highlights, null, 2), dateStr, "highlights.json");
   console.log(`  Saved ${highlightsPath}`);
 
-  // 6. Create GitHub issues for CLI + OpenClaw (zh + en)
+  // 6. Create GitHub issues for CLI + OpenClaw + Orch (zh + en)
   if (digestRepo) {
     const cliUrl = await createGitHubIssue(`📊 AI CLI 工具社区动态日报 ${dateStr}`, digestContent, "digest");
     console.log(`  Created CLI issue (zh): ${cliUrl}`);
@@ -596,6 +631,26 @@ async function main(): Promise<void> {
       "openclaw-en",
     );
     console.log(`  Created OpenClaw issue (en): ${openclawEnUrl}`);
+
+    const orchContent = buildOrchReportContent(orchDigests, orchComparison, utcStr, dateStr, footer, "zh");
+    const enOrchContent = buildOrchReportContent(
+      enOrchDigests,
+      enOrchComparison,
+      utcStr,
+      dateStr,
+      enFooter,
+      "en",
+    );
+
+    const orchUrl = await createGitHubIssue(`🤖 Agent 编排生态日报 ${dateStr}`, orchContent, "agent-orch");
+    console.log(`  Created Orch issue (zh): ${orchUrl}`);
+
+    const orchEnUrl = await createGitHubIssue(
+      `🤖 Agent Orchestrator Ecosystem Digest ${dateStr}`,
+      enOrchContent,
+      "agent-orch-en",
+    );
+    console.log(`  Created Orch issue (en): ${orchEnUrl}`);
   }
 
   console.log("Done!");

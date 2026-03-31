@@ -1134,8 +1134,9 @@ export function buildOrchComparisonPrompt(
   const sections = sortedDigests
     .map((d) => {
       const hasData = d.issues.length || d.prs.length || d.releases.length;
-      if (!hasData) return `## ${d.config.name} (github.com/${d.config.repo})\n${noActivityStr}`;
-      return `## ${d.config.name} (github.com/${d.config.repo})\n${d.summary}`;
+      if (!hasData)
+        return `## ${d.config.name} (github.com/${d.config.repo})\nIssues: 0 | PRs: 0 | Releases: 0\n${noActivityStr}`;
+      return `## ${d.config.name} (github.com/${d.config.repo})\nIssues: ${d.issues.length} | PRs: ${d.prs.length} | Releases: ${d.releases.length}\n${d.summary}`;
     })
     .join("\n\n---\n\n");
 

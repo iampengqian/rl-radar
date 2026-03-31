@@ -3,14 +3,15 @@ import type { RepoDigest } from "./prompts.ts";
 import { buildOrchPrompt } from "./prompts.ts";
 import { buildOrchReportContent } from "./report-builders.ts";
 import { callLlm, saveFile } from "./report.ts";
+import { MSG } from "./i18n.ts";
 
 export async function generateOrchDigests(
   fetchedOrch: RepoFetch[],
   dateStr: string,
   lang: "zh" | "en" = "zh",
 ): Promise<RepoDigest[]> {
-  const noActivity = lang === "en" ? "No activity in the last 24 hours." : "过去24小时无活动。";
-  const fail = lang === "en" ? "⚠️ Summary generation failed." : "⚠️ 摘要生成失败。";
+  const noActivity = MSG.noActivity[lang];
+  const fail = MSG.summaryFailed[lang];
 
   return Promise.all(
     fetchedOrch.map(async ({ cfg, issues, prs, releases }) => {
