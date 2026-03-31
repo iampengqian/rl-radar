@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.88 因重大事故撤回，源码泄露引发生态震荡",
+      "OpenAI Codex 新增 Windows 沙箱隔离与任务循环调度功能",
+      "Gemini CLI 构建 AST 感知架构，打造项目级长期记忆路由系统",
+      "OpenCode 引入 Auto-memory 人格系统，实现开发者风格记忆",
+      "Claude Code 遭遇开源反弹，社区自发启动 Rust 重写计划",
+      "AI 编程助手竞争焦点转向成本控制与 Agent 记忆系统"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.3.31 发布，CLI 执行架构迎来重大重构",
+      "Plugin SDK 正式废弃，开发者需迁移至 exec 指令体系",
+      "SQLite 两层会话存储上线，解决 CPU 飙升 140% 性能瓶颈",
+      "集成 You.com 搜索与 ExecuTorch 本地语音识别引擎",
+      "新增 api.runtime.agent.abort 接口，支持强制中止运行 Agent",
+      "国际化与桌面端需求高涨，社区讨论热度持续攀升"
+    ],
+    "ai-trending": [
+      "微软开源 VibeVoice 语音模型，单日狂揽 3862 star",
+      "Claude Code 生态爆发，可视化指南与最佳实践火遍社区",
+      "Agent 技能框架 Superpowers 定义 AI 超级能力标准",
+      "CUA 项目提供沙箱 SDK，让 AI 控制完整操作系统",
+      "NousResearch 发布 hermes-agent，引入新型记忆微调机制",
+      "oh-my-claudecode 多智能体编排框架实现团队协作开发"
+    ],
+    "ai-web": [
+      "OpenAI 发布《Accelerating The Next Phase》战略宣言",
+      "AI 竞争进入后预训练时代，模型向智能体生态转型",
+      "OpenAI 估值飙升至 8520 亿美元，行业霸主地位稳固",
+      "技术重心从训练转向推理与应用，解决智能好用问题",
+      "Anthropic 沉默应对，疑似筹备 Claude 重大版本更新",
+      "多模态融合深化，实时视频交互能力即将落地"
+    ],
+    "ai-hn": [
+      "Claude Code 效率过高致用户用爆 Anthropic 使用限额",
+      "Claude Code 源码泄露，社区热烈解构内部实现机制",
+      "PhAIL 发布真实机器人基准，测试 AI 物理世界表现",
+      "1-Bit LLM 商业化尝试，极限量化降低算力成本",
+      "Cerno 推出针对 LLM 推理的新型验证码系统",
+      "AI 辅助编程依赖度激增，开发者反思成瘾与安全问题"
+    ],
+    "rl-daily": [
+      "TRL 发布 v1.0.0 里程碑，确立异步 GRPO 集成标准",
+      "veRL 激进推进多模态生成与 Diffusion RL 路线图",
+      "Open Instruct 废弃旧架构，全面拥抱 OLMo-core",
+      "AReaL 架构微服务化演进，补齐 vLLM 与 FP8 支持",
+      "传统 RL 库趋于静默，95% 活跃度聚焦 LLM 训练",
+      "从 PPO 走向异构架构，强化学习范式全面转移"
+    ],
+    "agent-orch": [
+      "Jean 高频合并 PR，攻坚 Windows 客户端稳定性",
+      "Claude Flow 引入 Git Hook 强制合规与成本追踪",
+      "Claude Code Bridge 精准修复 Windows 路径兼容性",
+      "编排生态分层演化，环境级管控与轻量代理并存",
+      "Dorothy 推进 Linux 标准化打包，降低桌面部署门槛",
+      "dmux 修复带空格路径启动失效，提升系统鲁棒性"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.88 YANKED after source code leak",
+      "OpenAI Codex stabilizes with security-focused v0.118.0",
+      "Developers demand transparency as rate limiting bugs persist",
+      "Challengers race to build multi-agent swarms and memory",
+      "Community frustration grows over closed-source ecosystems",
+      "Industry shifts toward agentic workflows and autonomy"
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours",
+      "v2026.3.31 introduces breaking changes to node execution",
+      "Plugin SDK deprecated in major architectural shift",
+      "High regression reports suggest quality control challenges",
+      "Node shell execution moves to unified exec host pattern",
+      "Maintainers process 185 PRs amid aggressive development"
+    ],
+    "ai-trending": [
+      "Claude Code mania dominates daily trending charts",
+      "Microsoft's VibeVoice gains 3,862 stars for frontier voice AI",
+      "obra/superpowers provides structured agentic skills framework",
+      "claude-howto becomes overnight sensation with visual guides",
+      "NousResearch hermes-agent hits 20K stars for adaptive agents",
+      "Community shifts from chatbots to agentic IDE workflows"
+    ],
+    "ai-web": [
+      "OpenAI publishes 'Accelerating The Next Phase Ai' strategy",
+      "Anthropic maintains radio silence, possibly pre-release",
+      "OpenAI signals transition to agentic architectures",
+      "Divergent activity levels highlight competitive landscape",
+      "Anthropic may be consolidating on safety and interpretability",
+      "Industry watches for OpenAI's next roadmap consolidation"
+    ],
+    "ai-hn": [
+      "Claude Code users hit usage limits 'way faster than expected'",
+      "OpenAI secures $122B funding at $852B valuation",
+      "Security researchers dissect leaked Claude Code sourcemap",
+      "PhAIL benchmark tests AI models on physical robots",
+      "1-Bit Bonsai claims first commercially viable 1-bit LLM",
+      "Community debates economics of agentic workflows"
+    ],
+    "rl-daily": [
+      "TRL releases landmark v1.0.0 with Async GRPO support",
+      "verl dominates with 49 PRs for Video RL and NPU support",
+      "Post-training wars intensify across major frameworks",
+      "Open Instruct migrates to OLMo-core with Flash Attention 4",
+      "Foundational RL libraries remain dormant as focus shifts",
+      "Ecosystem bifurcates between LLM frameworks and general RL"
+    ],
+    "agent-orch": [
+      "Jean leads with UI/UX stability and enterprise git requests",
+      "Claude Flow merges critical daemon and cost governance fixes",
+      "Claude Code Bridge fixes Windows/WezTerm compatibility",
+      "Eight projects show zero activity in quiet ecosystem day",
+      "Dorothy progresses with Linux packaging improvements",
+      "Focus shifts to platform stability and enterprise readiness"
+    ]
+  }
+}
