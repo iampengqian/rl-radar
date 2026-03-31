@@ -144,6 +144,59 @@ export function buildOpenclawReportContent(
   );
 }
 
+export function buildOrchReportContent(
+  orchDigests: RepoDigest[],
+  comparison: string,
+  utcStr: string,
+  dateStr: string,
+  footer: string,
+  lang: "zh" | "en" = "zh",
+): string {
+  const repoLinks = orchDigests
+    .map((d) => `- [${d.config.name}](https://github.com/${d.config.repo})`)
+    .join("\n");
+  const sections = orchDigests
+    .map((d) => {
+      return [
+        `<details>`,
+        `<summary><strong>${d.config.name}</strong> — <a href="https://github.com/${d.config.repo}">${d.config.repo}</a></summary>`,
+        ``,
+        d.summary,
+        ``,
+        `</details>`,
+      ].join("\n");
+    })
+    .join("\n\n");
+
+  const t =
+    lang === "en"
+      ? {
+          title: `# Agent Orchestrator Ecosystem Digest ${dateStr}\n\n`,
+          meta: `> Generated: ${utcStr} UTC | Projects covered: ${orchDigests.length}\n\n`,
+          comparison: `## Cross-Project Comparison\n\n`,
+          detail: `## Agent Orchestrator Project Reports\n\n`,
+        }
+      : {
+          title: `# Agent 编排生态日报 ${dateStr}\n\n`,
+          meta: `> 生成时间: ${utcStr} UTC | 覆盖项目: ${orchDigests.length} 个\n\n`,
+          comparison: `## 横向对比分析\n\n`,
+          detail: `## Agent 编排项目详细报告\n\n`,
+        };
+
+  return (
+    t.title +
+    t.meta +
+    `${repoLinks}\n\n` +
+    `---\n\n` +
+    t.comparison +
+    comparison +
+    `\n\n---\n\n` +
+    t.detail +
+    sections +
+    footer
+  );
+}
+
 export function buildRlReportContent(
   rlDigests: RepoDigest[],
   comparison: string,

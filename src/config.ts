@@ -25,6 +25,7 @@ interface RawConfig {
   openclaw?: RawRepoEntry;
   openclaw_peers?: RawRepoEntry[];
   rl_repos?: RawRepoEntry[];
+  agent_orch_repos?: RawRepoEntry[];
 }
 
 export interface RadarConfig {
@@ -33,6 +34,7 @@ export interface RadarConfig {
   openclaw: RepoConfig;
   openclawPeers: RepoConfig[];
   rlRepos: RepoConfig[];
+  agentOrchRepos: RepoConfig[];
 }
 
 // ---------------------------------------------------------------------------
@@ -88,6 +90,22 @@ const DEFAULT_RL_REPOS: RepoConfig[] = [
   { id: "stable-baselines3", repo: "DLR-RM/stable-baselines3", name: "Stable Baselines3", paginated: true },
 ];
 
+const DEFAULT_AGENT_ORCH_REPOS: RepoConfig[] = [
+  { id: "claude-squad", repo: "smtg-ai/claude-squad", name: "Claude Squad", paginated: true },
+  { id: "crystal", repo: "stravu/crystal", name: "Crystal", paginated: true },
+  { id: "dmux", repo: "standardagents/dmux", name: "dmux", paginated: true },
+  { id: "symphony", repo: "openai/symphony", name: "Symphony", paginated: true },
+  { id: "claude-code-bridge", repo: "bfly123/claude_code_bridge", name: "Claude Code Bridge" },
+  { id: "dorothy", repo: "Charlie85270/Dorothy", name: "Dorothy" },
+  { id: "jean", repo: "coollabsio/jean", name: "Jean" },
+  { id: "openkanban", repo: "TechDufus/openkanban", name: "OpenKanban" },
+  { id: "claude-flow", repo: "ruvnet/claude-flow", name: "Claude Flow", paginated: true },
+  { id: "kodo", repo: "ikamensh/kodo", name: "Kodo" },
+  { id: "orch", repo: "oxgeneral/ORCH", name: "ORCH" },
+  { id: "gnap", repo: "farol-team/gnap", name: "GNAP" },
+  { id: "swarm-protocol", repo: "phuryn/swarm-protocol", name: "Swarm Protocol" },
+];
+
 // ---------------------------------------------------------------------------
 // Loader
 // ---------------------------------------------------------------------------
@@ -107,6 +125,7 @@ export function loadConfig(configPath = "config.yml"): RadarConfig {
       openclaw: DEFAULT_OPENCLAW,
       openclawPeers: DEFAULT_OPENCLAW_PEERS,
       rlRepos: DEFAULT_RL_REPOS,
+      agentOrchRepos: DEFAULT_AGENT_ORCH_REPOS,
     };
   }
 
@@ -134,10 +153,15 @@ export function loadConfig(configPath = "config.yml"): RadarConfig {
       ? raw.rl_repos.map(toRepoConfig)
       : DEFAULT_RL_REPOS;
 
+  const agentOrchRepos =
+    Array.isArray(raw?.agent_orch_repos) && raw.agent_orch_repos.length > 0
+      ? raw.agent_orch_repos.map(toRepoConfig)
+      : DEFAULT_AGENT_ORCH_REPOS;
+
   console.log(
     `[config] Loaded from ${configPath}: ` +
-      `${cliRepos.length} CLI repos, ${openclawPeers.length} OpenClaw peers, ${rlRepos.length} RL repos`,
+      `${cliRepos.length} CLI repos, ${openclawPeers.length} OpenClaw peers, ${rlRepos.length} RL repos, ${agentOrchRepos.length} Agent Orch repos`,
   );
 
-  return { cliRepos, skillsRepo, openclaw, openclawPeers, rlRepos };
+  return { cliRepos, skillsRepo, openclaw, openclawPeers, rlRepos, agentOrchRepos };
 }

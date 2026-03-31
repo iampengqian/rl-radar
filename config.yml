@@ -146,3 +146,53 @@ rl_repos:
     repo: DLR-RM/stable-baselines3
     name: Stable Baselines3
     paginated: true
+
+# ── Agent Orchestrators ─────────────────────────────────────────────────────
+# Tools and frameworks for orchestrating AI coding agents.
+# Includes parallel runners and multi-agent swarm systems.
+
+agent_orch_repos:
+  - id: claude-squad
+    repo: smtg-ai/claude-squad
+    name: Claude Squad
+    paginated: true
+  - id: crystal
+    repo: stravu/crystal
+    name: Crystal
+    paginated: true
+  - id: dmux
+    repo: standardagents/dmux
+    name: dmux
+    paginated: true
+  - id: symphony
+    repo: openai/symphony
+    name: Symphony
+    paginated: true
+  - id: claude-code-bridge
+    repo: bfly123/claude_code_bridge
+    name: Claude Code Bridge
+  - id: dorothy
+    repo: Charlie85270/Dorothy
+    name: Dorothy
+  - id: jean
+    repo: coollabsio/jean
+    name: Jean
+  - id: openkanban
+    repo: TechDufus/openkanban
+    name: OpenKanban
+  - id: claude-flow
+    repo: ruvnet/claude-flow
+    name: Claude Flow
+    paginated: true
+  - id: kodo
+    repo: ikamensh/kodo
+    name: Kodo
+  - id: orch
+    repo: oxgeneral/ORCH
+    name: ORCH
+  - id: gnap
+    repo: farol-team/gnap
+    name: GNAP
+  - id: swarm-protocol
+    repo: phuryn/swarm-protocol
+    name: Swarm Protocol
