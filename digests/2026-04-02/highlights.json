@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.89 计费 Bug 引发热议，社区尝试 Rust 重写",
+      "OpenAI Codex v0.119 重构核心模块，CPU/内存飙升成痛点",
+      "AI CLI 工具正从单一辅助向 Agent 运行时演进",
+      "MCP 成为工具链标准，各厂商竞相支持",
+      "终端渲染破坏和 Token 消耗过快阻碍进入企业生产",
+      "上下文管理精细化：滑动窗口和增量记忆降低成本"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.4.1 发布，集成 SearXNG 搜索引擎",
+      "新增 /tasks 命令打造原生后台任务板",
+      "500 条 Issue 高频处理，修复 Exec 审批失控回归",
+      "Telegram 错误策略合并，防止群组刷屏",
+      "社区强烈呼吁 Linux/Windows 跨平台客户端",
+      "修复 Bedrock 跨区域推理配置文件缓存检测"
+    ],
+    "ai-trending": [
+      "Claude Code 单日 Star 增长破万，引领终端 Agentic 编程",
+      "OpenAI 重启 Codex 品牌开源 Rust 终端 Agent",
+      "无向量 RAG 架构崭露头角，挑战传统向量数据库",
+      "Voice AI 和时序大模型开源项目迎来新明星",
+      "everything-claude-code 项目提供 Agent 性能优化系统",
+      "vllm 推理引擎持续高活跃，部署高吞吐量模型基石"
+    ],
+    "ai-web": [
+      "Anthropic 与澳大利亚政府签署 MOU 达成战略合作",
+      "投入 300 万澳元利用 Claude 改善医疗和教育",
+      "首次向非美政府共享 Anthropic Economic Index 数据",
+      "澳大利亚人均使用率是全球平均水平的 4 倍",
+      "将安全研究与经济影响打包为政府服务标准组件",
+      "OpenAI 今日静默，可能酝酿重大技术发布"
+    ],
+    "ai-hn": [
+      "Claude Code 源代码泄露引发隐私收集争议",
+      "实时仪表盘监控 Agent 团队成热门工程需求",
+      "OpenAI 需求在二级市场遇冷，Anthropic 势头强劲",
+      "盘点 OpenAI 那些未能兑现的合作与产品",
+      "硬核逆向 Claude Code 请求签名机制",
+      "Diffusion LLM Mercury 2 在特定任务上挑战主流模型"
+    ],
+    "rl-daily": [
+      "veRL 大规模架构重构，支持 Agent 和 Diffusion 模型",
+      "TRL 密集修复多模态 Bug，引入蒸馏与 Agent 控制",
+      "Stable Baselines3 v2.8.0 淘汰 Python 3.9",
+      "OpenRLHF 扩展预训练支持与数据加载性能",
+      "LLM 训练基建竞争白热化，从 PPO 向 Agent 原生演进",
+      "经典控制环境处于成熟维护期，确保生态地基稳定"
+    ],
+    "agent-orch": [
+      "Claude Flow 攻克持久化记忆与成本治理",
+      "Jean v0.1.33 引入线程时光回滚机制",
+      "Claude Code Bridge 打通异构模型 CLI 壁垒",
+      "Claude Flow 采用预设配置集驱动大规模分发",
+      "Jean 强调人机协同，计划需经人工确认执行",
+      "编排生态向企业级深水区迈进"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "MCP emerges as universal standard for tool extensibility",
+      "Fragmentation crisis: all tools battle terminal UI stability",
+      "Projects migrate to Rust/TypeScript escaping Python limits",
+      "Claude Code v2.1.89 fixes terminal rendering regressions",
+      "OpenAI Codex v0.119.0-alpha.2 ships Rust architecture",
+      "Developer trust erodes from opaque token billing"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.4.1 adds native chat task board",
+      "Bundled SearXNG enables decentralized web search",
+      "500 issues/PRs updated in 24-hour release frenzy",
+      "Critical plugin regressions in v2026.3.31 cycle",
+      "141 PRs merged in aggressive stabilization sprint",
+      "PicoClaw and NanoClaw expand lightweight options"
+    ],
+    "ai-trending": [
+      "Claude Code gains 10,000+ stars in single day",
+      "OpenAI Codex Rust re-emerges with 2,345 stars",
+      "Microsoft VibeVoice launches frontier voice AI",
+      "PageIndex debuts vectorless RAG approach",
+      "MCP and agent memory layers rapidly maturing",
+      "vLLM hits 74,937 stars as inference standard"
+    ],
+    "ai-web": [
+      "Anthropic signs MOU with Australian government",
+      "AUD$3 million research partnerships announced",
+      "Sydney office opens as Asia-Pacific expansion hub",
+      "Aussie AI adoption 4x global average for complex tasks",
+      "Anthropic Economic Index reveals sophisticated users",
+      "Australia joins US, UK, Japan safety network"
+    ],
+    "ai-hn": [
+      "Claude Code leak sparks privacy debate",
+      "Forbes exposes OpenAI graveyard of canceled projects",
+      "OpenAI demand sinks as Anthropic runs hot",
+      "Bloomberg: secondary markets reflect technical reality",
+      "Engineering shifts from consumption to orchestration",
+      "Software engineering morphs into civil engineering"
+    ],
+    "rl-daily": [
+      "veRL leads LLM alignment with MXFP8 training",
+      "Ecosystem bifurcates: LLM vs traditional deep RL",
+      "Gymnasium and Stable Baselines3 add Python 3.13",
+      "ROCK and ROLL target Kubernetes orchestration",
+      "slime pursues asynchronous distributed training",
+      "TRL and OpenRLHF advance multimodal agents"
+    ],
+    "agent-orch": [
+      "Claude Flow faces critical memory security bugs",
+      "Jean ships resilience-focused release",
+      "Ecosystem split: enterprise vs lightweight tools",
+      "Claude Code Bridge fixes interoperability issues",
+      "Dorothy expands to Linux packaging",
+      "Swarm Protocol targets model agnostic orchestration"
+    ]
+  }
+}
