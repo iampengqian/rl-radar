@@ -91,6 +91,7 @@ const DEFAULT_RL_REPOS: RepoConfig[] = [
 ];
 
 const DEFAULT_AGENT_ORCH_REPOS: RepoConfig[] = [
+  // Original coding agent orchestrators
   { id: "claude-squad", repo: "smtg-ai/claude-squad", name: "Claude Squad", paginated: true },
   { id: "crystal", repo: "stravu/crystal", name: "Crystal", paginated: true },
   { id: "dmux", repo: "standardagents/dmux", name: "dmux", paginated: true },
@@ -104,6 +105,50 @@ const DEFAULT_AGENT_ORCH_REPOS: RepoConfig[] = [
   { id: "orch", repo: "oxgeneral/ORCH", name: "ORCH" },
   { id: "gnap", repo: "farol-team/gnap", name: "GNAP" },
   { id: "swarm-protocol", repo: "phuryn/swarm-protocol", name: "Swarm Protocol" },
+  // Coding Agent Orchestration Tools (from awesome-agent-orchestrators)
+  { id: "vibe-kanban", repo: "BloopAI/vibe-kanban", name: "Vibe Kanban", paginated: true },
+  { id: "openfang", repo: "RightNow-AI/openfang", name: "OpenFang", paginated: true },
+  { id: "aperant", repo: "AndyMik90/Aperant", name: "Aperant", paginated: true },
+  { id: "gastown", repo: "gastownhall/gastown", name: "Gastown", paginated: true },
+  { id: "humanlayer", repo: "humanlayer/humanlayer", name: "HumanLayer", paginated: true },
+  {
+    id: "ralph-claude-code",
+    repo: "frankbria/ralph-claude-code",
+    name: "Ralph Claude Code",
+    paginated: true,
+  },
+  { id: "superset", repo: "superset-sh/superset", name: "Superset", paginated: true },
+  { id: "t3code", repo: "pingdotgg/t3code", name: "T3Code", paginated: true },
+  {
+    id: "agent-orchestrator",
+    repo: "ComposioHQ/agent-orchestrator",
+    name: "Agent Orchestrator",
+    paginated: true,
+  },
+  { id: "1code", repo: "21st-dev/1code", name: "1Code", paginated: true },
+  { id: "clawteam", repo: "HKUDS/ClawTeam", name: "ClawTeam", paginated: true },
+  { id: "emdash", repo: "generalaction/emdash", name: "Emdash", paginated: true },
+  { id: "collaborator", repo: "collaborator-ai/collab-public", name: "Collaborator" },
+  { id: "agent-deck", repo: "asheshgoplani/agent-deck", name: "Agent Deck" },
+  { id: "mux-desktop", repo: "coder/mux", name: "Mux Desktop" },
+  // General Multi-Agent Frameworks (from awesome-agent-orchestration)
+  { id: "autogpt", repo: "Significant-Gravitas/AutoGPT", name: "AutoGPT", paginated: true },
+  { id: "metagpt", repo: "FoundationAgents/MetaGPT", name: "MetaGPT", paginated: true },
+  { id: "autogen", repo: "microsoft/autogen", name: "AutoGen", paginated: true },
+  { id: "gpt-engineer", repo: "AntonOsika/gpt-engineer", name: "GPT-Engineer", paginated: true },
+  { id: "llamaindex", repo: "run-llama/llama_index", name: "LlamaIndex", paginated: true },
+  { id: "crewai", repo: "crewAIInc/crewAI", name: "CrewAI", paginated: true },
+  { id: "agno", repo: "agno-agi/agno", name: "Agno", paginated: true },
+  { id: "ruflo", repo: "ruvnet/ruflo", name: "Ruflo", paginated: true },
+  { id: "langgraph", repo: "langchain-ai/langgraph", name: "LangGraph", paginated: true },
+  { id: "semantic-kernel", repo: "microsoft/semantic-kernel", name: "Semantic Kernel", paginated: true },
+  { id: "smolagents", repo: "huggingface/smolagents", name: "SmolAgents", paginated: true },
+  { id: "haystack", repo: "deepset-ai/haystack", name: "Haystack", paginated: true },
+  { id: "babyagi", repo: "yoheinakajima/babyagi", name: "BabyAGI", paginated: true },
+  { id: "openai-swarm", repo: "openai/swarm", name: "OpenAI Swarm", paginated: true },
+  { id: "openai-agents", repo: "openai/openai-agents-python", name: "OpenAI Agents", paginated: true },
+  { id: "deepagents", repo: "langchain-ai/deepagents", name: "DeepAgents", paginated: true },
+  { id: "pydantic-ai", repo: "pydantic/pydantic-ai", name: "PydanticAI", paginated: true },
 ];
 
 // ---------------------------------------------------------------------------
