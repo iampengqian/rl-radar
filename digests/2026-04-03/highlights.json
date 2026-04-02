@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode 曝出内存泄漏 20GB 严重 Bug，社区讨论热度极高",
+      "Claude Code v2.1.90 陷渲染危机，滚动历史丢失引争议",
+      "Qwen Code 支持 Bun 运行时与最新 3.6 模型，性能飙升",
+      "Gemini CLI 重构 TerminalBuffer，誓要解决跨平台闪烁",
+      "GitHub Copilot CLI 欲引入 Gemini Pro，打破模型垄断",
+      "CLI 工具从代码补全进化为具备自主执行能力的 Agent 平台"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.4.2，xAI 插件配置迁移引轰动",
+      "Linux 原生客户端落地，OpenClaw 补全桌面生态最后拼图",
+      "Databricks 外部插件集成，企业级数据平台场景打通",
+      "社区 24 小时 500 条 Issue，OpenClaw 活跃度爆表",
+      "按 Agent 配置 TTS 语音合成，多模态交互体验增强",
+      "修复浏览器 CDP 竞争导致失步，关键稳定性更新上线"
+    ],
+    "ai-trending": [
+      "oh-my-codex 单日暴涨 2800 星，构建 AI 开发操作系统",
+      "system_prompts_leaks 曝光 GPT-5.4 与 Opus 4.6 系统提示词",
+      "OpenCLI 将任意网站转化为标准化 CLI，Agent 调用无障碍",
+      "Google Workspace CLI 内置 AI Skills，Agent 直接操控邮件",
+      "LEANN 向量检索无损压缩技术，成为 Agent 落地关键支点",
+      "learn-claude-code 揭秘：如何从零构建 Claude Code 风格 Agent"
+    ],
+    "ai-web": [
+      "Anthropic 发现 Claude Sonnet 4.5 内部涌现类人情绪图谱",
+      "OpenAI 宣布收购 Tbpn，意图补全生态短板",
+      "Codex Flexible Pricing 上线，团队计费模式更灵活",
+      "可解释性研究揭示 AI 具备人工心理状态与情绪结构",
+      "Anthropic 转向 AI 心理学研究，OpenAI 专注商业护城河",
+      "OpenAI 定价策略调整加速企业端市场渗透"
+    ],
+    "ai-hn": [
+      "OpenAI 收购科技访谈节目 TBPN，意图进军媒体领域",
+      "Sora 算力成本揭秘：20 美元用户耗费 65 美元算力",
+      "Claude Code 代码泄露，Anthropic 正筹备 Agent 支付功能",
+      "mngr 工具实现数百个 Claude 实例并行管理",
+      "OpenAI 被曝通过第三方组织推动年龄验证立法",
+      "观点：AI 替代人工归咎于利率而非技术进步"
+    ],
+    "rl-daily": [
+      "verl 发布 Q2 路线图，重点布局 NPU 与多模态支持",
+      "AReaL 引入分布式数据服务，向 System 2 推理进发",
+      "Open Instruct 引入 Docker 沙箱，探索 Agent 训练新模式",
+      "OpenRLHF 引入高性能进化策略，突破传统 PPO 路径",
+      "Slime 受困于 GLM 大模型 FP8 与显存管理难题",
+      "Gymnasium 标准化 Action Repeat 接口，支持 Model-based RL"
+    ],
+    "agent-orch": [
+      "Claude Flow 尝试实现 Claude Code 的多 Agent 协作编排",
+      "Symphony 与 OpenCLI 深度集成 MCP 协议",
+      "Agent Deck 聚焦工具标准化，解决 Agent 调用碎片化",
+      "ClawTeam 探索去中心化 Agent 协作与共享经济模式",
+      "Vibe Kanban 展示 AI 驱动的敏捷项目管理新范式",
+      "Ruflo 通过可视化界面简化复杂 Agent 工作流构建"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.90: Severe terminal rendering regression",
+      "Gemini CLI fixes flicker and Windows PowerShell bugs",
+      "Community backlash over scrollback data loss intensifies",
+      "Bifurcation: Stability (Copilot) vs rapid features (Kimi)",
+      "Qwen Code races to integrate powerful new Qwen 3.6 model",
+      "Focus shifts from chat interfaces to complex Plan Mode workflows"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.4.2 introduces xAI plugin migration",
+      "500 issues/PRs in 24h: Velocity outpaces stability assurance",
+      "New Linux GTK app support and enhanced agent TTS capabilities",
+      "Breaking changes: x_search settings moved to plugin config",
+      "Heartbeat batching and architectural refactoring released",
+      "Community activity dominated by regression reports"
+    ],
+    "ai-trending": [
+      "GPT-5.4 and Claude Opus 4.6 system prompts leaked",
+      "oh-my-codex: Turn single agents into multi-agent orchestration",
+      "learn-claude-code: Build Claude-like agent with only Bash",
+      "CopilotKit's AG-UI Protocol standardizes agent-UI interaction",
+      "Massive surge in Code Agent Harnesses with hooks and overlays",
+      "openscreen: AI-native content creation replacing manual editing"
+    ],
+    "ai-web": [
+      "Anthropic maps emotion concepts in Claude Sonnet 4.5",
+      "OpenAI acquires tech talk show TBPN for content strategy",
+      "Anthropic confirms AI develops human-like psychological machinery",
+      "OpenAI rolls out Codex Flexible Pricing for Teams",
+      "Anthropic doubles down on safety science and transparency",
+      "Strategic bifurcation: Research (Anthropic) vs Enterprise (OpenAI)"
+    ],
+    "ai-hn": [
+      "Sora loses $45 per subscription: $65 compute for $20 plan",
+      "OpenAI secretly backs age verification lobby group",
+      "Anthropic scrambles to contain Claude Code payment leak",
+      "TBPN acquisition sparks media consolidation debate",
+      "Run 100s of Claudes in parallel with new mngr tool",
+      "Skepticism grows over economics of AI video generation"
+    ],
+    "rl-daily": [
+      "verl dominates with Ascend NPU and FP8 hardware support",
+      "AReaL shifts strategically toward Multi-Agent RL (MARL)",
+      "Post-training LLM infrastructure outpaces foundational libraries",
+      "ROCK matures toward enterprise-grade cloud reliability",
+      "Intense competition for 100B+ parameter model optimization",
+      "Foundational libraries (Tianshou, Gymnasium) in maintenance phase"
+    ],
+    "agent-orch": [
+      "Claude Squad enables parallel agent orchestration",
+      "Symphony: OpenAI's enterprise agent orchestration framework",
+      "Claude Flow adds workflow automation capabilities",
+      "AutoGPT, MetaGPT, AutoGen orchestration ecosystem expands",
+      "Swarm Protocol standardizes multi-agent communication",
+      "HumanLayer enables human-in-the-loop agent workflows"
+    ]
+  }
+}
