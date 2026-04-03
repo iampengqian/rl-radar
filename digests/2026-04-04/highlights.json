@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.91 发布，引入上下文压缩与时间感知功能",
+      "Qwen Code v0.14.0 上线，支持 Qwen 3.6 与 Jupyter 并行调用",
+      "OpenAI Codex 重构 Subagent 机制，引入 Watchdog 运行时",
+      "AI CLI 工具正从 Python 向 TypeScript/Rust 架构迁移",
+      "社区热议对话过长导致记忆丢失，呼吁查看被压缩的历史",
+      "Kimi Code CLI 进行架构重构，PR 活跃度极高"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日合并 172 个 PR，社区活跃度极高",
+      "Linux 原生应用落地，初步实现 GTK 桌面端支持",
+      "Microsoft Teams 支持增强，修复 Adaptive Cards 交互",
+      "社区热议国际化需求与微信插件兼容性崩溃问题",
+      "Windows 改进诊断工具，降低非 WSL 使用门槛",
+      "修复 Synology Chat 不安全的 TLS 默认设置"
+    ],
+    "ai-trending": [
+      "oh-my-codex 单日暴涨近 3000 星，增速最快",
+      "Google TimesFM 登顶，时序预测基础模型成热宠",
+      "Agentic IDE 与专用大模型深度融合成新趋势",
+      "fff.nvim 发布，为 AI Agent 提供极快文件搜索",
+      "开源 AI 自动化工具 activepieces 被称为 AI 版 Zapier",
+      "learn-claude-code 爆火，手把手构建 Agent 框架"
+    ],
+    "ai-web": [
+      "Anthropic 发布 Model Diffing 理论，重塑模型审计",
+      "AI 安全从静态评测转向动态审计，聚焦神经元激活",
+      "Model Diffing 或为 Claude 新一代模型发布前兆",
+      "Anthropic 构建安全工程化护城河，挑战 OpenAI",
+      "直击企业痛点：降低模型迭代带来的合规风险",
+      "OpenAI 今日无更新，处于相对静默期"
+    ],
+    "ai-hn": [
+      "Claude Code 发现潜伏 23 年的 Linux 漏洞",
+      "Claude 4.6 越狱漏洞披露引发社区安全激辩",
+      "美国数据中心因电力短缺大面积延期",
+      "研究称 AI 用户出现认知投降，放弃逻辑思考",
+      "开发者抱怨 Claude Code 限制过严寻找替代品",
+      "哈佛教授用 AI 氛围编码完成高质量物理论文"
+    ],
+    "rl-daily": [
+      "verl 活跃度极高，确立多模态与 NPU 适配路线",
+      "Open Instruct 攻坚 GRPO 工程化，引入沙箱环境",
+      "TRL 完善多模态工具链，适配 vLLM 0.11",
+      "Slime 修复 397B MoE 权重转换，集成 FIPO 算法",
+      "ROCK v1.4.8 发布，支持 Kata Containers DinD",
+      "Tianshou 深度重构接口，清理历史技术债"
+    ],
+    "agent-orch": [
+      "Claude Squad 等 45 个项目被纳入编排生态监控",
+      "编排生态覆盖从 Claude Flow 到 AutoGPT 等全栈工具",
+      "OpenAI Symphony 与 Microsoft AutoGen 同台竞技",
+      "LlamaIndex 与 CrewAI 成为编排层重要节点",
+      "Superset 与 T3Code 进入编排生态视野",
+      "生态重心从单一 Agent 转向多智能体协作系统"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Ecosystem matures from chatbots to agentic dev environments.",
+      "Claude Code, OpenAI Codex lead with TypeScript architectures.",
+      "Python tools debating rewrites to fix TUI limitations.",
+      "MCP integration now standard but remains fragile.",
+      "Gemini CLI marked as dormant with zero recent activity.",
+      "Qwen Code releases v0.14.0; OpenAI Codex pushes 3 alphas."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours.",
+      "New Linux GTK desktop app fulfills long-standing request.",
+      "Windows support gets tray companion MVP improvements.",
+      "No new releases as community stabilizes v2026.4.x.",
+      "391 open issues strain maintainer capacity.",
+      "Focus splits between platform expansion and bug fixes."
+    ],
+    "ai-trending": [
+      "Shift from general inference to specialized AI utilities.",
+      "Oh My CodeX leads demand for agentic developer tools.",
+      "fff.nvim solves fuzzy search bottleneck for AI agents.",
+      "TimesFM validates smaller foundation models for forecasting.",
+      "Onyx rises as unified bring-your-own-model platform.",
+      "CopilotKit hits 29,966 stars for generative UIs."
+    ],
+    "ai-web": [
+      "Anthropic introduces Model Diffing for behavioral analysis.",
+      "Technique conceptualized as a diff tool for AI.",
+      "Solves unknown unknowns problem in AI safety.",
+      "Shifts focus from static benchmarks to delta analysis.",
+      "Methodology isolates behavioral changes between versions.",
+      "Differential analysis set to become industry standard."
+    ],
+    "ai-hn": [
+      "Claude Code finds 23-year-old Linux vulnerability.",
+      "Claude 4.6 jailbreak vulnerability disclosed publicly.",
+      "Half of US data center builds delayed by power shortages.",
+      "Cognitive surrender debate rises over AI reliance.",
+      "Community questions decline in critical thinking skills.",
+      "AI safety called a cat-and-mouse game by users."
+    ],
+    "rl-daily": [
+      "Bifurcation between LLM alignment and classical RL.",
+      "Major players aggressively pursue multimodal capabilities.",
+      "Multiple projects integrate NPU Ascend support.",
+      "verl dominates with 29 PRs focused on correctness.",
+      "CleanRL and Stable Baselines3 in maintenance mode.",
+      "Open Instruct adds GRPO stability improvements."
+    ],
+    "agent-orch": [
+      "45 projects covered in orchestrator ecosystem digest.",
+      "Claude Squad, Crystal, dmux among notable tools.",
+      "Major frameworks: AutoGPT, MetaGPT, AutoGen, CrewAI.",
+      "LlamaIndex and GPT-Engineer remain key infrastructure.",
+      "Agent Deck and Mux Desktop add workflow capabilities.",
+      "Swarm Protocol and Vibe Kanban enter ecosystem."
+    ]
+  }
+}
