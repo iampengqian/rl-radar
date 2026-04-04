@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Qwen Code 支持多智能体并行协作，填补 CLI 与 IDE 体验鸿沟",
+      "OpenAI Codex 发布 3 个 Alpha 版，全面迁移 WebRTC 实时架构",
+      "社区强烈要求所有工具支持剪贴板直接粘贴图片进行多模态交互",
+      "Claude Code 活跃度极高，Top Issue 热度超 411 条评论",
+      "Kimi Code 进行全栈重写，性能可视化与远程控制成焦点",
+      "Windows 路径权限与 WSL 集成仍是各工具共同的 Bug 重灾区"
+    ],
+    "ai-agents": [
+      "OpenClaw 活跃度爆表，24 小时内 Issues 与 PRs 更新均达 500 条",
+      "社区强烈呼吁增加国际化支持（i18n）与 MCP 客户端原生集成",
+      "修复 Chrome 146+ 截图兼容性问题，解决 Unable to capture 错误",
+      "优化 Control UI 中 Cron 刷新按钮加载样式，提升用户体验",
+      "修复 WhatsApp 频道自我消息无限回复循环的关键 Bug",
+      "v2026.3.x 版本引发回归问题，Discord 与 Exec 工具稳定性堪忧"
+    ],
+    "ai-trending": [
+      "Block 开源 AI 智能体 goose，具备自主安装、执行、测试能力",
+      "微软推出 agent-framework，为企业级 Multi-Agent 系统提供标准范式",
+      "oh-my-codex 单日暴涨 1803 Star，AI 编程工具进入可定制化时代",
+      "Ollama 依然是本地大模型运行的事实标准，已支持 Kimi-K2.5",
+      "Agent 鼻祖 AutoGPT 保持极高活跃度，展示社区对自主 AI 探索热情",
+      "智能体工程走向成熟化，从单纯模型使用转向构建复杂 Agent 工作流"
+    ],
+    "ai-hn": [
+      "Anthropic 封禁第三方工具使用 Claude Code 订阅，引爆千条热议",
+      "Anthropic 新研究探讨 LLM 是否存在类似人类的情感概念",
+      "OpenAI 股权表泄露，揭示微软投资回报高达 18 倍的惊人内幕",
+      "sllm 工具通过共享 GPU 节点降低 LLM 推理成本，备受工程师欢迎",
+      "Tokencap 提供 Token 预算强制执行中间件，解决 Agent 失控痛点",
+      "社区情绪在工具受限的愤怒与技术探索的好奇之间剧烈分化"
+    ],
+    "rl-daily": [
+      "TRL 极速跟进 Gemma 4，向 Agentic RL（智能体强化学习）演进",
+      "Tianshou 与 SB3 深度重构核心架构，拥抱 PyTorch 2.0 新特性",
+      "Slime 硬核攻坚大模型显存优化与新算法集成",
+      "verl 架构向 FSDP 与 Agent 双向扩展，探索智能体交互解耦",
+      "OpenRLHF 发布 v0.9.10 关键容错性修复，进入生产稳定期",
+      "Open Instruct 强化 vLLM 底层集成，引入 Docker 沙箱保障安全"
+    ],
+    "agent-orch": [
+      "Agent 编排生态项目数量激增至 45 个，竞争进入白热化阶段",
+      "Claude Squad、Claude Flow 等多款工具致力于 Claude 智能体编排",
+      "Symphony 与 AutoGen 等项目推动多智能体协作标准化进程",
+      "Swarm Protocol 专注于定义智能体群体通信协议与交互标准",
+      "HumanLayer 强调在全自动智能体流程中引入人工介入机制",
+      "CrewAI 与 MetaGPT 持续领跑，探索复杂任务的多角色协作模式"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to agentic workflows and Rust runtimes",
+      "Claude Code v2.1.92 stable focuses on enterprise policies",
+      "OpenAI Codex v0.119.0-alpha adds aggressive Rust migration",
+      "Gemini CLI refactors architecture, improves SSH stability",
+      "Copilot CLI v1.0.18 introduces new \"Critic\" agent",
+      "Users across platforms demand fixes for token burning"
+    ],
+    "ai-agents": [
+      "OpenClaw sees extreme activity: 500 issues, 500 PRs in 24h",
+      "Plugin architecture hardened with stricter TypeScript",
+      "Growing pains: regression bugs and config complexity rise",
+      "Multi-channel stability focus: Discord, Telegram, WhatsApp",
+      "Maintainers actively shipping fixes with 212 merged PRs",
+      "Bug backlog accumulates faster than fixes (279 open issues)"
+    ],
+    "ai-trending": [
+      "\"Agent Harness\" and \"Agentic IDE\" projects explode in popularity",
+      "Block's \"goose\" Rust agent gains 947 stars in one day",
+      "Microsoft enters open-source agent framework space",
+      "mlx-vlm enables powerful VLMs on Mac locally",
+      "oh-my-codex and onyx lead in workflow orchestration",
+      "vLLM hits 75,256 total stars as industry inference standard"
+    ],
+    "ai-hn": [
+      "Anthropic bans \"OpenClaw\" from Claude Code subscriptions",
+      "OpenAI leak reveals Microsoft's massive 18x ROI",
+      "Controversy: OpenAI allegedly funded child safety coalition",
+      "Anthropic research investigates LLM emotion concepts",
+      "New tool \"sllm\" enables GPU splitting for developers",
+      "Community debates future of the \"MCP\" protocol"
+    ],
+    "rl-daily": [
+      "LLM-focused frameworks dominate RL development activity",
+      "TRL rapidly integrates new Gemma 4 model family",
+      "Slime addresses critical FP8/OOM scaling bugs",
+      "Foundational libraries enter maintenance phase",
+      "FSDP/Megatron drive distributed training scaling",
+      "Gymnasium and Stable Baselines3 focus on hardening"
+    ],
+    "agent-orch": [
+      "Claude Squad leads with 45 ecosystem projects tracked",
+      "Symphony (OpenAI) highlights agentic orchestration tools",
+      "AutoGPT, MetaGPT, CrewAI dominate agent framework space",
+      "LlamaIndex integration key for agent memory management",
+      "New \"Claude Code Bridge\" connects orchestration layers",
+      "Swarm Protocol emerges for multi-agent communication"
+    ]
+  }
+}
