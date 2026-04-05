@@ -1,102 +1,30 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code 计费异常：Token消耗激增，社区发起反编译开源PR",
-      "OpenAI Codex崩溃：macOS内核崩溃(v0.118.0)，CPU飙升",
-      "AI CLI工具集体转型：从辅助工具向自主智能体架构过渡",
-      "OpenCode误扣费：Copilot鉴权错误消耗Premium配额",
-      "Kimi CLI动荡：社区发起Python到TypeScript重写PR",
-      "多模态成新战场：语音/WebRTC交互成头部工具竞逐高地"
+      "Claude Code v2.1.88 陷信任危机，自动清空用户代码库",
+      "OpenAI 重启 Codex 品牌，发布高性能 Rust 版本",
+      "Claude Code 源码泄露，社区惊现 Rust 重写分支",
+      "CLI Agent 成新风口：MCP 确立为工具链事实标准",
+      "OpenAI Codex 转 Token 计费，开发者担忧成本失控",
+      "Gemini CLI 亮剑：AST 感知与分层记忆路由技术"
     ],
     "ai-agents": [
-      "OpenClaw活跃度爆表：单日500条Issue和500条PR更新",
-      "MCP原生支持呼声高涨：RFC获得17个赞同，打破工具孤岛",
-      "OpenAI流式输出修复：防止内部推理内容泄露给用户",
-      "子代理会话修复：心跳任务错误路由问题得到解决",
-      "Discord语音功能恢复：DM语音消息转录功能修复",
-      "Phase-aware文本提取：修复复杂特性引入的回归问题"
-    ],
-    "ai-trending": [
-      "Google LiteRT-LM发布：移动端和边缘设备大模型推理运行时",
-      "Mac生态VLM工具火热：mlx-vlm填补Apple Silicon易用性空白",
-      "最快文件搜索工具：fff.nvim专为AI Agent语义理解设计",
-      "Block开源Goose：Rust编写的高性能自主开发Agent",
-      "Ollama持续领先：快速支持Kimi-K2.5、GLM-5等最新模型",
-      "端侧AI成熟：AI辅助内容创作工具爆发，重塑视频工作流"
-    ],
-    "ai-hn": [
-      "Gemma 4登陆iPhone：Google AI Edge Gallery实现本地运行",
-      "Codex定价改革：从按次计费改为按Token，引发成本激辩",
-      "Nanocode极简实现：纯JAX+TPU的高效Claude Code方案",
-      "边缘AI里程碑：移动端硬件对高性能AI支持趋于成熟",
-      "微软发布3款MAI模型：Azure AI Foundry企业级服务布局",
-      "AI软件成本结构：开发者深度探讨编程工具定价模式"
-    ],
-    "rl-daily": [
-      "OpenRLHF引入进化策略：比参考实现快10-30倍的新优化路径",
-      "Tianshou API重构：核心Bug修复与标准化改进",
-      "Open Instruct动态奖励：集成Evolving Rubric配置",
-      "Slime性能优化：通信压缩与同步机制改进",
-      "AReaL分布式训练：FSDP+PP混合并行支持",
-      "verl跟进Qwen3.5：大模型GRPO训练支持"
-    ],
-    "agent-orch": [
-      "Claude Squad生态扩张：多Agent协作工具持续迭代",
-      "Symphony编排框架：OpenAI推出的Agent协调解决方案",
-      "Swarm Protocol发布：Agent通信协议标准化尝试",
-      "HumanLayer人机协作：在Agent工作流中引入人工审核",
-      "AutoGPT持续进化：自主Agent从实验走向工程化",
-      "LlamaIndex集成深化：Agent编排与检索增强结合"
+      "Anthropic 揭 Claude 拥有类似人类的情绪概念神经元",
+      "Agent 编排工具爆发，开发者构建含 Hooks 复杂工作流",
+      "AI 安全转向白盒干预，Anthropic 提出模型差异化审计",
+      "RL 框架全面拥抱 LLM，TRL v1.0 正式发布",
+      "端侧 AI 专用化爆发：Gemma 4 实现 iPhone 本地运行",
+      "微软发布 VibeVoice 语音模型，AI 下沉端侧高性能任务"
     ]
   },
   "en": {
-    "ai-cli": [
-      "Claude Code hit by 3-5x invisible token drain reports",
-      "OpenAI Codex triggers macOS kernel panics stability crisis",
-      "Kimi CLI debates foundational rewrite from Python to TypeScript",
-      "Ecosystem shifts to multi-agent orchestration and memory systems",
-      "Gemini CLI overhauls architecture with Episodic Memory features",
-      "Copilot CLI explores session forking for extensibility"
-    ],
-    "ai-agents": [
-      "OpenClaw sees 500 issues and PRs in 24-hour sprint",
-      "Phase-aware text handling fixes OpenAI model regressions",
-      "Subagent orchestration layer undergoes hardening push",
-      "Patch release imminent after aggressive stability fixes",
-      "Size S and XS fixes target post-update regressions",
-      "Agent communication layer receives stability improvements"
-    ],
-    "ai-trending": [
-      "Google LiteRT-LM pushes AI Edge for on-device inference",
-      "Block/goose Rust autonomous agent gains 866 stars today",
-      "Gemma 4 runs locally on iPhone via AI Edge Gallery",
-      "On-device AI and agentic tools dominate trending charts",
-      "Ollama remains cornerstone with 167,296 total stars",
-      "VLLM serves as industry-standard inference engine"
-    ],
-    "ai-hn": [
-      "Gemma 4 on iPhone tops Hacker News with 237 points",
-      "OpenAI Codex shifts to token-based pricing model",
-      "Nanocode engineering optimizes agents for pure JAX/TPUs",
-      "Developers calculate new cost-benefit for Codex usage",
-      "Offline-first AI gains community momentum",
-      "Microsoft MAI models launch in Foundry ecosystem"
-    ],
-    "rl-daily": [
-      "LLM-alignment frameworks drive aggressive innovation",
-      "Distributed training focuses on delta compression",
-      "FSDP and Pipeline Parallelism stabilize multi-node setups",
-      "Open Instruct iterates GRPO and dynamic rubrics",
-      "Tianshou focuses on EnvPool and Batch infrastructure",
-      "Evolutionary strategies increase training throughput"
-    ],
-    "agent-orch": [
-      "45 projects covered in orchestration ecosystem digest",
-      "Claude Squad and Crystal lead orchestrator tools",
-      "AutoGPT and MetaGPT drive multi-agent coordination",
-      "Swarm Protocol advances agent communication standards",
-      "HumanLayer enables human-in-the-loop agent workflows",
-      "Vibe Kanban and OpenKanban integrate AI task management"
+    "ai-weekly": [
+      "Claude Code leak sparks massive Agentic Coding ecosystem boom",
+      "Anthropic blocks third-party bridges like OpenClaw for Claude",
+      "Google brings Gemma 4 local inference to iPhone and Android",
+      "OpenAI shifts Codex to token pricing, acquires media firm TBPN",
+      "Microsoft open sources high-fidelity VibeVoice model",
+      "Rise of multi-agent frameworks like oh-my-claudecode"
     ]
   }
 }
