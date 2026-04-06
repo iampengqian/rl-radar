@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 社区炸锅：Max 订阅额度异常消耗，Issue 点赞超 300",
+      "OpenAI Codex 发布 v0.119.0-alpha.12，修复后台 Token 指数级燃烧",
+      "Gemini CLI 新版修复内存溢出，用户吐槽 Thinking 状态空转烧钱",
+      "Qwen Code 构建 TUI 界面闪烁，10+ PR 试图对齐主流 CLI 功能",
+      "GitHub Copilot CLI 更新 v1.0.19，重点修复 MCP 配置故障",
+      "MCP 成事实标准，但 Token 透明度与成本控制成用户核心痛点"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日 500 个 Issue/PR，v2026.4.5 引入破坏性配置变更",
+      "OpenClaw 新版移除旧配置别名，升级可能导致网关启动失败",
+      "PR #62111 修复低信任度输出注入漏洞，防止提权风险",
+      "新增 openclaw capability 命令，统一推理工作流调用入口",
+      "社区强烈呼吁 Linux/Windows 原生桌面客户端支持",
+      "Nostr/QQBot 插件存在媒体 URL 漏洞，已被修复"
+    ],
+    "ai-trending": [
+      "Hermes Agent 单日暴涨 1.7k Star，主打 Agent 自我进化能力",
+      "Google 连发 LiteRT-LM 和 Gallery，强力推动端侧 AI 落地",
+      "Shannon 白盒渗透测试工具爆火，AI 深入安全基建实战",
+      "Block 开源 Rust 编写的自主编程 Agent goose，超越代码补全",
+      "Ollama 依然是本地运行标准，快速支持 Kimi-K2.5 等新模型",
+      "GitNexus 项目探索从单纯检索向知识图谱融合转变"
+    ],
+    "ai-web": [
+      "OpenAI 启动 Safety Fellowship，锁定超级对齐安全人才",
+      "Anthropic 今日零更新，或处于重大版本发布前的静默期",
+      "OpenAI 被指从产品化向生存安全回摆，重视失控风险",
+      "安全人才密度已成比算力更紧缺的战略资源",
+      "Fellowship 计划暗示 OpenAI 正为下一代模型部署扩充团队",
+      "Anthropic 倾向内部解决核心对齐问题，策略偏保守"
+    ],
+    "ai-hn": [
+      "Claude Code 被指无法处理复杂任务，HN 讨论 398 楼引爆社区",
+      "Claude Code 服务随即宕机，加剧开发者对 SaaS 工具焦虑",
+      "Claude CLI 据称屏蔽提及竞争对手 OpenClaw 的调用",
+      "OpenAI Stargate 超算中心受地缘政治威胁，投资者转向 Anthropic",
+      "Wikipedia 抵制 AI 爬虫，引发关于数据围墙的深层讨论",
+      "OpenExp 项目尝试用 Q-learning 解决 LLM 长期记忆缺失"
+    ],
+    "rl-daily": [
+      "Tianshou 大力重构核心数据结构与接口，清理技术债务",
+      "Open Instruct 引入 SWERLSandboxEnv，基于执行反馈训练",
+      "GRPO 训练引入 Evolving Rubric，探索动态奖励机制",
+      "Slime 针对 Qwen3.5 修复特定 GPU 架构算子兼容性",
+      "OpenRLHF 进入稳定维护期，主要进行代码风格更新",
+      "TRL/CleanRL 等知名项目静默，生态整体处于蓄力阶段"
+    ],
+    "agent-orch": [
+      "Claude Squad 等 45 个项目被追踪，编排生态竞争白热化",
+      "AutoGPT/MetaGPT/CrewAI 等明星项目均在关注列表",
+      "LlamaIndex 持续作为核心检索组件被集成",
+      "Mux Desktop 等项目尝试将 Agent 能力带到桌面端",
+      "Symphony (OpenAI) 和 Dorothy 等新编排框架涌现",
+      "HumanLayer 关注人机协作层，强化 Agent 执行安全"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code users report high frustration over quotas",
+      "Industry shifts from code gen to agentic workflows",
+      "OpenAI Codex enters alpha with rust-v0.119.0",
+      "Gemini CLI users stuck in high-latency 'thinking' loops",
+      "MCP integration becomes baseline industry requirement",
+      "Tools tackle tension between capability and limits"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.4.5 breaks configs, causes crash surge",
+      "Project sees 1,000+ updates in 24-hour volatility spike",
+      "Legacy config aliases removed in breaking change",
+      "Users face 'Config invalid' errors after update",
+      "Agent capabilities expand despite stability concerns",
+      "Plugin loading errors plague latest release"
+    ],
+    "ai-trending": [
+      "Autonomous AI Agents and Local-First Intelligence surge",
+      "Google's LiteRT-LM drives edge device inference",
+      "llama.cpp support adds latest Kimi and DeepSeek",
+      "White-box agents like Shannon allow logic control",
+      "Agent Harness ecosystem adds memory and browsing",
+      "Jackwener/opencli unifies apps into standardized CLI"
+    ],
+    "ai-web": [
+      "OpenAI launches 'Safety Fellowship' for AI alignment",
+      "Move signals strategic pivot to safety talent acquisition",
+      "Initiative aims to broaden collaborative researcher network",
+      "Anthropic maintains public silence ahead of releases",
+      "Fellowship may address regulatory scrutiny pressures",
+      "Focus on validating safety for next-gen models"
+    ],
+    "ai-hn": [
+      "Claude Code backlash: unusable for complex engineering",
+      "Developers report severe regressions after Feb updates",
+      "Service outages spark debate on developer trust",
+      "Community debates AI censorship and 'blacklisting'",
+      "OpenAI perceived decline becomes industry narrative",
+      "Top story hits 625 score with 398 comments"
+    ],
+    "rl-daily": [
+      "Ecosystem splits between LLM RL and foundational libs",
+      "Tianshou refactors core Batch and EnvPool logic",
+      "Open Instruct focuses on production-readiness fixes",
+      "Development shifts to solving infrastructure bottlenecks",
+      "CleanRL and Stable Baselines3 remain dormant",
+      "Active projects tackle distributed checkpointing"
+    ],
+    "agent-orch": [
+      "Projects focus on multi-agent orchestration workflows",
+      "Ecosystem matures with 45 active tracked projects",
+      "Claude Squad and Crystal lead orchestration tools",
+      "AutoGPT, MetaGPT, and AutoGen remain key players",
+      "Swarm Protocol addresses agent communication standards",
+      "Vibe Kanban and OpenKanban target task management"
+    ]
+  }
+}
