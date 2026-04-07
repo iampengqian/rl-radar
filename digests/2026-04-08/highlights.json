@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 陷信任危机：模型退化与封号潮引发社区强烈反弹",
+      "GitHub Copilot CLI 引入 copilot mcp 命令，强化生态集成",
+      "OpenAI Codex 高频迭代 Rust 客户端，被指 Token 消耗过快",
+      "Gemini CLI 架构重构：重点修复 Agent 卡死与 OAuth 体验",
+      "Kimi Code CLI 彻底迁移 Bun+TypeScript，底层架构大换血",
+      "Qwen Code 紧急修复 VS Code 插件白屏，优化中文分词能力"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日 500 条 PR 更新，全力修复严重回归问题",
+      "社区热议原生 Agent 身份验证，拟结合 W3C DID 标准",
+      "微信插件兼容性故障引发关注，国内用户关键路径受阻",
+      "PR 加强宿主环境变量过滤，防止敏感凭证泄露给子进程",
+      "OpenClaw 拟引入 Ollama 思维链支持，增强推理透明度",
+      "修复 Base64 解码缺失大小检查，防止恶意媒体数据溢出"
+    ],
+    "ai-trending": [
+      "Google 连发 LiteRT-LM 与 Gallery，强力推动端侧 AI 落地",
+      "GitNexus 单日暴涨 1174 Star，浏览器端本地知识图谱引擎",
+      "Anthropic 营收爆炸：年化收入突破 300 亿美元，两月翻倍",
+      "企业客户激增：年消费超百万美元客户已突破 1000 家",
+      "锁定数吉瓦级 TPU 算力，Anthropic 联手 Google 备战 AGI",
+      "Google Gallery 允许本地直接体验模型，降低移动端 AI 门槛"
+    ],
+    "ai-web": [
+      "Anthropic 营收爆炸：年化收入突破 300 亿美元，两月翻倍",
+      "企业客户激增：年消费超百万美元客户已突破 1000 家",
+      "锁定数吉瓦级 TPU 算力，Anthropic 联手 Google 备战 AGI",
+      "供应链多元化：深化 Google 云+Broadcom 芯片联盟",
+      "践行承诺：新算力大部分部署在美国本土，总额超 500 亿",
+      "OpenAI 暂无更新，处于重大发布前的静默期"
+    ],
+    "ai-hn": [
+      "Anthropic 发力安全：Project Glasswing 登顶 HN 热榜",
+      "Claude Code 严重故障：开发者被锁数小时无法工作",
+      "Claude Mythos 模型曝光，系统卡片透露安全策略边界",
+      "官方红队测评 Mythos 网络安全能力，防恶意攻击引关注",
+      "Simon Willison 力挺 Glasswing，称其解决 AI 代码信任危机",
+      "Gemma 4 多模态微调工具发布，支持 Apple Silicon 本地运行"
+    ],
+    "rl-daily": [
+      "verl 架构大重构，全力适配 Qwen3.5 与 VLM 训练",
+      "TRL 推进工具调用标准化，探索蒸馏与压缩算法",
+      "slime 适配异构硬件 NPU，加速 MoE/VLM 模型训练",
+      "AReaL 优化 IPC 数据流，强化多智能体 MARL 支持",
+      "ROCK 集成 OTLP 可观测性，提升生产环境稳定性",
+      "Open Instruct 引入 Replay Buffer，修复 DeepSpeed 兼容性"
+    ],
+    "agent-orch": [
+      "Claude Code Bridge 发布，打通 Claude 与外部工具链",
+      "Claude Flow 工作流编排工具上线，自动化 Agent 协作",
+      "Symphony 项目推进，OpenAI 探索多智能体编排新架构",
+      "HumanLayer 引入人工干预机制，确保 Agent 决策可控",
+      "Superset 集成 400+ MCP 服务器，强化 Agent 自动化连接",
+      "Ruflo 智能体任务管理工具发布，优化执行流程"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.94 adds Bedrock/Mantle support",
+      "OpenAI Codex users report 464 comments on token burn",
+      "Ecosystem shifts to multi-agent orchestration focus",
+      "Windows stability remains a critical challenge",
+      "MCP protocol drives enterprise extensibility push",
+      "Bifurcation: proprietary vs open tool strategies"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours",
+      "441 open issues vs 59 closed reveals backlog crisis",
+      "New gateway architecture under heavy stress testing",
+      "ESM module system causing regression headaches",
+      "No formal releases as project favors rolling betas",
+      "Gateway Lifecycle PR marks major architecture shift"
+    ],
+    "ai-trending": [
+      "Google LiteRT-LM enables edge LLM deployment",
+      "Google AI Edge Gallery showcases on-device ML",
+      "GitNexus runs Graph RAG entirely in browser",
+      "Local-first privacy-centric AI dominates trends",
+      "Ollama hits 168K stars supporting newest models",
+      "Zero-Server architectures gain major traction"
+    ],
+    "ai-web": [
+      "Anthropic revenue hits $30B run-rate milestone",
+      "Google partnership secures gigawatts of TPU power",
+      "Mega-enterprise customers double to 1,000+",
+      "Broadcom deal diversifies compute supply chain",
+      "Infrastructure pivot from GPUs to TPUs confirmed",
+      "Revenue triples from end of 2025 levels"
+    ],
+    "ai-hn": [
+      "Claude Mythos model preview sparks security buzz",
+      "Project Glasswing targets critical infrastructure",
+      "Claude Code lockouts frustrate users for hours",
+      "Iran threatens OpenAI Stargate data center",
+      "AI falsely validates invented fake disease",
+      "Mythos system card hits 421 HN points"
+    ],
+    "rl-daily": [
+      "RL frameworks pivot hard to LLM post-training",
+      "verl leads with NPU support roadmap alignment",
+      "TRL pushes tool calling and distillation features",
+      "AReaL refactors for IPC backend decoupling",
+      "Classical RL libraries see minimal maintenance",
+      "Qwen3.5 and Llama4 dominate training targets"
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem spans 45 projects",
+      "Claude Squad and Crystal lead orchestrator tools",
+      "Multi-agent workflows drive development focus",
+      "AutoGPT and CrewAI maintain active development",
+      "Bridge tools connect disparate AI platforms",
+      "Swarm Protocol enables agent coordination"
+    ]
+  }
+}
