@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code陷计费与删减风波，社区抗议",
+      "OpenAI Codex发v0.120.0，推实时交互与沙箱",
+      "OpenCode Windows兼容攻坚，会话级模型路由",
+      "Kimi Code爆发11个PR，补齐竞品核心/loop",
+      "Gemini CLI出v0.39.0，架构升级修复多字节解析",
+      "Qwen Code发v0.14.3，Session防OOM策略优化"
+    ],
+    "ai-agents": [
+      "OpenClaw日更500+Issue，测v2026.4.11-beta",
+      "OpenClaw推记忆宫殿功能，可导入ChatGPT对话",
+      "v2026.4.10深度集成Codex，需重配OAuth鉴权",
+      "Telegram通道投递机制大修，合入多个关键PR",
+      "单日148个PR合并，高强度推进架构错误修复",
+      "Codex/GPT-5.4模型集成成社区当前测试重点"
+    ],
+    "ai-trending": [
+      "hermes-agent单日暴涨6400星，颠覆传统编码",
+      "大模型落地标配：数据解析与沙盒执行环境",
+      "VoxCPM语音合成突破：无需分词器实现真实克隆",
+      "Karpathy技能规范爆火，提示工程升级为技能工程",
+      "微软markitdown单日增3k星，文档转MD利器",
+      "Archon：首个开源AI编程Harness构建器"
+    ],
+    "ai-hn": [
+      "Anthropic Mythos模型引发AI网络安全风暴",
+      "小模型同样能找安全漏洞，打破唯大模型论",
+      "GPT-5.4成功复现0-day，AI攻防成前沿标配",
+      "伯克利打假：揭示AI Agent基准跑分存在水分",
+      "Collabmem：解决AI Agent长期记忆缺失痛点",
+      "MCP Spine中间件：削减LLM工具61%Token消耗"
+    ],
+    "rl-daily": [
+      "OpenRLHF将发v0.10，引入异步PPO与VLM支持",
+      "verl居生态活跃度榜首，多引擎与NPU适配猛进",
+      "TRL高频迭代前沿对齐算法，修复VLM工具调用",
+      "Open Instruct重构GRPO奖励，引Docker沙盒",
+      "AReaL死磕底层，重构FSDP显存与权重同步",
+      "rl_games引Triton算子，突破RL的CPU-GPU瓶颈"
+    ],
+    "agent-orch": [
+      "Claude Squad引领多智能体终端协作新范式",
+      "OpenAI Symphony发力企业级智能体工作流编排",
+      "Claude Flow实现复杂任务的自动化多智能体委派",
+      "HumanLayer聚焦：如何在关键节点引入人工审批",
+      "AutoGen与CrewAI加速整合RAG与代码解释能力",
+      "Mux Desktop推本地桌面级AI开发环境无缝接管"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to autonomous agentic environments",
+      "OpenAI Codex leads with 14+ PRs and enterprise sandboxing",
+      "Emerging CLIs focus on sub-agent memory and extensibility",
+      "Developers demand reliable billing and CI/CD integration",
+      "Claude Code reports 10 active issues with no new releases",
+      "Cross-platform execution remains a top ecosystem priority"
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 issues and 500 PRs in 24 hours",
+      "OpenClaw v2026.4.11-beta.1 introduces ChatGPT imports",
+      "New release adds bundled Codex provider with native threads",
+      "Project stabilizes memory-core for GPT-5.4 agentic AI",
+      "148 PRs merged as core contributors expand plugin ecosystem",
+      "Media rendering now supported in Control UI and webchat"
+    ],
+    "ai-trending": [
+      "NousResearch hermes-agent explodes in daily popularity",
+      "Archon gains 1339 stars making LLM generation deterministic",
+      "Microsoft markitdown surges with 3069 new daily stars",
+      "OpenDataLoader-PDF automates accessible AI-ready parsing",
+      "Kronos emerges as a foundational model for global finance",
+      "VoxCPM debuts for ultra-realistic speech generation"
+    ],
+    "ai-hn": [
+      "Anthropic Mythos model revolutionizes zero-day discovery",
+      "Small models found the same vulnerabilities as Mythos",
+      "OpenAI acquires Cirrus Labs amid industry consolidation",
+      "Meta reportedly offers billion-dollar AI talent bonuses",
+      "Top AI agent benchmarks exposed as brittle and flawed",
+      "Developers push to reduce steep token costs in AI coding"
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between active RLHF and quiet bases",
+      "Post-training frameworks aggressively target Huawei NPUs",
+      "NVIDIA Grace-Blackwell architecture drives RLHF scaling",
+      "Basic text-based RLHF shifts to multimodal VLM training",
+      "Foundational libraries CleanRL and Gymnasium go dormant",
+      "verl leads infrastructure scaling with 16 active PRs"
+    ],
+    "agent-orch": [
+      "Agent orchestration explodes across 45 tracked projects",
+      "AutoGPT and MetaGPT drive multi-agent collaboration",
+      "Claude Squad enables parallel autonomous agent workflows",
+      "Symphony and Crystal advance enterprise agent management",
+      "Swarm Protocol introduces decentralized agent messaging",
+      "HumanLayer prioritizes human-in-the-loop oversight"
+    ]
+  }
+}
