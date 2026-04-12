@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-12T22:21:06.031Z",
+  "generated": "2026-04-12T23:09:21.873Z",
   "dates": [
     {
       "date": "2026-04-13",
@@ -10,10 +10,14 @@
         "ai-agents-en",
         "rl-daily",
         "rl-daily-en",
+        "rl-analysis",
+        "rl-analysis-en",
         "ai-trending",
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
+        "ai-weekly",
+        "ai-weekly-en",
         "agent-orch",
         "agent-orch-en"
       ]
