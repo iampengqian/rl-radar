@@ -1,102 +1,22 @@
 {
   "zh": {
-    "ai-cli": [
-      "OpenCode 爆出高达 24.5GB 的 SSE 严重内存泄漏",
-      "GitHub Copilot 陷 HTTP/2 Bug，引发额度双倍扣费危机",
-      "Claude Code 缓存 TTL 静默缩短，Token 膨胀遭痛批",
-      "Qwen Code 发布 v0.14.3，彻底解决 Agent 无限死循环",
-      "Kimi Code 发力 Windows MCP 兼容性与多模态交互",
-      "OpenAI Codex 沙箱安全重构，并引入前缀上下文压缩"
-    ],
-    "ai-agents": [
-      "OpenClaw 发布 v2026.4.11，增强 Dreaming 记忆系统",
-      "OpenClaw 推出 ChatGPT 对话记录一键导入功能",
-      "GPT-5.4 Agentic 对等支持取得核心进展并开始合并",
-      "WebChat 大重构：全面支持图片与音频流式传输",
-      "修复导致 Telegram/Discord 故障的关键运行时模块",
-      "单日处理超 700 条 Issue 与 PR，社区吞吐量惊人"
-    ],
-    "ai-trending": [
-      "hermes-agent 狂揽 7450 Star，主打伴随成长的个性化 Agent",
-      "Archon 开源 AI 编程线束构建器，直击代码生成不稳定痛点",
-      "Ollama 已全面支持 GLM-5、DeepSeek 等最新国产模型",
-      "微软开源 markitdown，成 RAG 和 Agent 的前置数据利器",
-      "Kronos 突起，标志着 AI 在高壁垒金融投研领域深度下沉",
-      "VoxCPM 登榜：打破传统 TTS 的无 Tokenizer 语音克隆模型"
-    ],
-    "ai-hn": [
-      "Claude Opus 4.6 幻觉测试准确率暴跌，从 83% 降至 68%",
-      "Claude Code 高昂配额与隐性降级缓存引发社区强烈不满",
-      "Show HN: Claudraband 强势救场，专为 Claude Code 省额度",
-      "Revdiff 问世：专为高效审查 AI 生成代码打造的 TUI 工具",
-      "深度探讨 MCP 与 A2A 协议定位差异及 AI 协议栈新构想",
-      "欧洲 Mistral 呼吁主导权，全球 AI 竞争格局白热化"
-    ],
-    "rl-daily": [
-      "OpenRLHF v0.10.0 重大架构升级，全面拥抱多模态 RLHF",
-      "TRL 发布 v1.1.0 正式版，引入模型蒸馏与数据模板对齐",
-      "verl 跨界探索 Diffusion 模型与复杂 Agent 场景融合",
-      "AReaL 聚焦超大规模集群异构资源调度与推理引擎优化",
-      "rl_games 引入 OpenAI Triton 重写 GAE 核心计算加速",
-      "Open Instruct 率先探索将动态评估融入 GRPO 训练循环"
-    ],
-    "agent-orch": [
-      "全生态覆盖 45 个项目，多智能体编排进入爆发期",
-      "Claude Squad 等工具致力于解决多 Claude 实例协同难题",
-      "AutoGPT、MetaGPT 等老牌项目向标准化生产流水线演进",
-      "涌现大量 Kanban 类工具，AI Agent 任务管理趋于可视化",
-      "HumanLayer 等项目聚焦 Agent 循环中的人机权限与安全",
-      "CrewAI 与 LlamaIndex 深度整合，降低复杂工作流编排门槛"
+    "ai-weekly": [
+      "Claude Code陷隐性涨价风波，高级额度被指极速耗尽",
+      "Anthropic发Managed Agents架构，年营收破300亿美元",
+      "OpenAI Codex底层重构为Rust，启动按Token计费模式",
+      "Qwen Code发新版，首破Agent死循环致Token耗尽难题",
+      "Google发LiteRT-LM，强势打通大模型端侧本地化部署",
+      "主打个性化记忆的Hermes Agent登顶GitHub Trending"
     ]
   },
   "en": {
-    "ai-cli": [
-      "Qwen Code ships a nightly build today",
-      "Cost and quota observability emerging as key feature",
-      "Community demands better reliability and safety guardrails",
-      "Tools transitioning to core production infrastructure",
-      "Autonomous multi-agent capabilities tension with cost",
-      "Kimi Code CLI shows slightly lower daily activity"
-    ],
-    "ai-agents": [
-      "OpenClaw sees 500 new issues and PRs in one day",
-      "OpenClaw v2026.4.11 released with memory-wiki feature",
-      "New Dreaming UI adds ChatGPT import ingestion support",
-      "GPT-5.4/Codex agentic runtime parity is a major theme",
-      "Users continue requesting Linux/Windows native apps",
-      "Project currently has 376 open issues vs 124 closed"
-    ],
-    "ai-trending": [
-      "Agentic Coding revolution dominates today's trends",
-      "hermes-agent explodes with 7,450 new stars today",
-      "Financial AI and multimodal audio gain strong traction",
-      "ollama hits 168,726 stars as foundational local engine",
-      "blender-mcp enables AI agents to control Blender natively",
-      "markitdown gets 2,513 stars for document-to-markdown"
-    ],
-    "ai-hn": [
-      "Users outraged over rapidly exhausting Pro Max quotas",
-      "Accusations fly of Anthropic silently downgrading cache",
-      "Claude Opus 4.6 hallucination test accuracy drops to 68%",
-      "OpenAI faces backlash for quietly removing Study Mode",
-      "New open-source tools aim to monitor autonomous agents",
-      "Claudraband showcases power user tools for Claude Code"
-    ],
-    "rl-daily": [
-      "Post-training RL for LLMs drives aggressive development",
-      "verl pivots to multi-modal and diffusion RL approaches",
-      "Traditional RL libraries settle into mature maintenance",
-      "Multi-modal RLHF becomes a primary focus for TRL and verl",
-      "Bifurcation emerges between LLM alignment and classic RL",
-      "Distributed orchestration sees daily pushes in OpenRLHF"
-    ],
-    "agent-orch": [
-      "45 agent orchestration projects covered in today's digest",
-      "Major frameworks like AutoGPT and CrewAI remain active",
-      "New tools like Claude Squad and Crystal gain traction",
-      "Ecosystem sees rise in kanban-style agent management",
-      "HumanLayer focuses on human-in-the-loop agent control",
-      "Swarm Protocol highlights multi-agent communication"
+    "ai-weekly": [
+      "Claude Code faces backlash over invisible token burns.",
+      "Anthropic proposes new architecture to decouple LLM brains.",
+      "AI security enters the national security and zero-day stage.",
+      "Anthropic locks in gigawatt-scale compute for 2027.",
+      "OpenAI Codex CLI shifts to token-based billing model.",
+      "Evolving agents like hermes-agent see explosive growth."
     ]
   }
 }
