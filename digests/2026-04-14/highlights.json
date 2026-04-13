@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex底座向Rust全面迁移，重写并发架构",
+      "Claude Code v2.1.105发布，但遭遇3-5倍Token异常消耗危机",
+      "Copilot CLI被曝单次扣除80次配额，计费透明度遭猛烈抨击",
+      "开源工具OpenCode深度重构，统一Effect运行时架构",
+      "AI CLI底层架构加速重构，全面迈向企业级深水区",
+      "Agent编排成核心叙事，多代理协作与子代理计费引热议"
+    ],
+    "ai-agents": [
+      "OpenClaw发布v2026.4.12稳定版与Beta版",
+      "新版重构插件激活机制，实行严格的manifest作用域限制",
+      "引入Convex池化凭证租赁，大幅简化飞书配置流程",
+      "修复OpenAI推理模型只思考不输出的中断问题",
+      "统一根内存处理逻辑，消除幽灵内存库问题",
+      "单日狂飙500个PR，插件隔离与内存稳定性获极大提升"
+    ],
+    "ai-trending": [
+      "hermes-agent日增1.1万星，具备主动学习能力的Agent",
+      "claude-mem爆火，自动压缩编码记忆解决AI失忆痛点",
+      "Archon开源，首个致力于让AI代码生成确定性的构建器",
+      "ralph展现全自动闭环：Agent运行至PRD需求全部完成",
+      "get-shit-done：专为Claude Code设计的元提示词利器",
+      "cua提供计算机使用智能体开源基础架构，实现全桌面控制"
+    ],
+    "ai-web": [
+      "Anthropic发布重磅指南：构建AI智能体应坚持极简",
+      "官方发声反框架：成功案例极少依赖沉重的专用框架",
+      "明确定义界限：严格区分预设工作流与动态自主智能体",
+      "OpenAI官网今日沉寂，或处于重大发布后的技术蓄力期",
+      "Anthropic意在抢占开发者心智，定义AI工程新标准",
+      "强推实用性对抗复杂性包装，引领务实工程潮"
+    ],
+    "ai-hn": [
+      "Claude Mythos网络安全评估出炉，惊人黑客潜能引担忧",
+      "Claude宕机暴露隐患：代码工具或暗中大量消耗Token",
+      "Gemma 4的2B小模型在多轮对话基准测试中击败12B",
+      "N-Day-Bench面世，专门检验大模型寻找真实代码漏洞",
+      "OpenAI内部竞争备忘录流出，引发行业深度探讨",
+      "AMD推出本地AI Agent工具，加速端侧部署落地"
+    ],
+    "rl-daily": [
+      "veRL架构全面演进，向全异步与多模态发起攻坚",
+      "TRL火速集成前沿对齐算法，支持超大规模异步训练",
+      "AReaL推进生产级微服务化，死磕显存通信极限优化",
+      "OpenRLHF突破PPO全异步训练架构，扩展Agent工作流",
+      "Open Instruct速配vLLM原生API，拓展真实软件RL沙箱",
+      "Slime引入Delta压缩打破通信墙，发力VLM训练稳定性"
+    ],
+    "agent-orch": [
+      "Claude Flow等编排器涌现，多Agent协作调度成前沿趋势",
+      "Claude Squad等工具发力，试图将编码Agent转化为数字队友",
+      "Swarm Protocol等项目重塑协议，定义多智能体通信标准",
+      "企业级需求爆发，HumanLayer等项目专注Agent安全与合规",
+      "AutoGPT与MetaGPT等经典项目持续演进，探索全自动闭环",
+      "Agent编排生态全面繁荣，单日覆盖多达45个开源项目"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.105 grapples with cost inflation bugs.",
+      "OpenAI Codex rust-v0.121.0-alpha.6 faces CPU spike issues.",
+      "AI CLI tools shift towards complex, agentic workflows.",
+      "Billing opacity and Windows instability plague ecosystem.",
+      "Gemini CLI v0.37.2 patch focuses on enterprise features.",
+      "Developers demand core reliability over aggressive features."
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.4.12 boosts plugin loading and memory.",
+      "OpenClaw faces technical debt from massive multi-provider growth.",
+      "OpenClaw community heavily stress-tests diverse providers.",
+      "Accumulating regressions challenge OpenClaw's stability.",
+      "Project sees 1,000 issue and PR updates in 24 hours.",
+      "Broad quality update aims for smoother Feishu integration."
+    ],
+    "ai-trending": [
+      "Claude Code ecosystem dominates GitHub trending today.",
+      "NousResearch hermes-agent exploded with 11,297 new stars.",
+      "vllm engine solidifies industry-standard LLM inference role.",
+      "Ollama adds support for Kimi-K2.5 and GLM-5 models.",
+      "microsoft/markitdown is critical infrastructure for LLMs.",
+      "blender-mcp connects AI directly to 3D generation."
+    ],
+    "ai-web": [
+      "Anthropic updates guide on building effective AI agents.",
+      "Guide critiques framework bloat, favoring simple patterns.",
+      "OpenAI official channels remain completely silent today.",
+      "Anthropic draws hard line between Workflows and Agents.",
+      "Post reinforces shift to production-grade agent designs.",
+      "Anthropic continues to own the developer narrative."
+    ],
+    "ai-hn": [
+      "Claude Mythos release coincides with major platform outage.",
+      "UK AISI evaluation sparks debate on AI cyber threats.",
+      "Stanford report highlights AI industry-public disconnect.",
+      "AMD and Intel push new resources for local AI agents.",
+      "Mythos system card prompts safety benchmarking debates.",
+      "Community anxieties rise over rapid AI societal impact."
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates between LLM and classical methods.",
+      "verl shows extreme momentum in next-gen hardware support.",
+      "Post-training frameworks drive rapid LLM alignment innovation.",
+      "verl sees 41 PRs highlighting intense development activity.",
+      "Classical RL libraries enter a mature, stable phase.",
+      "Distributed systems engineering dominates RL open source."
+    ],
+    "agent-orch": [
+      "Agent orchestration tools expand to 45 tracked projects.",
+      "Claude Squad and Claude Flow extend agentic workflows.",
+      "Swarm Protocol and Symphony advance multi-agent systems.",
+      "Projects prioritize human-in-the-loop oversight features.",
+      "Community shifts to orchestrating CLI agent instances.",
+      "AutoGPT and MetaGPT still active in agent orchestration."
+    ]
+  }
+}
