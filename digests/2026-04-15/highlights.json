@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex v0.121.0-alpha 内测现灾难级崩溃",
+      "Claude Code 插件生态爆发但用户抱怨成本失控",
+      "Qwen Code 免费额度锐减引发社区信任危机",
+      "Kimi Code 适配新模型但思考链路隐藏引争议",
+      "Gemini CLI v0.39.0-nightly 引入并查集重构压缩",
+      "各大工具共同攻坚长会话内存管理与OOM崩溃"
+    ],
+    "ai-agents": [
+      "OpenClaw 新版发布引严重兼容性回归，暂缓升级",
+      "OpenClaw 发文修复底层架构，代码质量承压",
+      "OpenClaw UI安全性升级移除marked防漏洞",
+      "OpenClaw合并PR引入结构化错误类型提稳定性",
+      "OpenClaw 500条活跃Issue展现极高社区活跃度",
+      "OpenClaw底层重构致OpenAI Codex大面积报错"
+    ],
+    "ai-trending": [
+      "Hermes-Agent单日暴涨超8000 Star成最耀眼明星",
+      "微软开源markitdown完美解决文档转MD痛点",
+      "提取卡帕西大神的AI编程心得成实战爆款",
+      "Claude-mem插件压缩上下文解决Agent遗忘痛点",
+      "量化金融AI项目登榜，深度渗透对冲基金场景",
+      "obra/superpowers提出全新Agentic开发方法论"
+    ],
+    "ai-web": [
+      "Anthropic研究用AI自动化监督对齐更强大的AI",
+      "诺华制药全球CEO加入Anthropic董事会成多数",
+      "OpenAI推进国家级网络防御可信访问产品化",
+      "Anthropic探索用AI取代人类研究员攻克安全瓶颈",
+      "诺华CEO加入加速AI向医疗等高监管行业渗透",
+      "OpenAI在政企市场深化安全产品化布局"
+    ],
+    "ai-hn": [
+      "Claude Code推Routines功能变身后台工作流引擎",
+      "开发者用数据量化证明Claude Sonnet 4.6质量倒退",
+      "降级Claude Code改全局设置可恢复模型推理能力",
+      "OpenAI与Anthropic在估值公关立法游说火拼升级",
+      "Sam Altman遭遇人身攻击为行业竞争蒙上阴影",
+      "ClawRun开源框架数秒部署管理AI Agent"
+    ],
+    "rl-daily": [
+      "RL生态大分化，大模型对齐层基础设施全面爆发",
+      "VeRL重构底层架构面向超大规模Agent RL训练",
+      "TRL发力生产环境下的分布式推理与显存管理",
+      "AReaL向微服务架构演进攻坚MoE与多智能体",
+      "传统经典RL开源生态进入零活跃的高度稳定期",
+      "OpenRLHF抢先补齐多模态多轮对话RL支持"
+    ],
+    "agent-orch": [
+      "Claude Code编排生态爆发涌现超45个开源项目",
+      "Claude Squad成管理多AI编程智能体爆款工具",
+      "OpenAI官方下场推出Symphony智能体编排框架",
+      "Crystal项目实现多模型智能体高效协同与调度",
+      "社区热议从单智能体向多智能体集群的工程化演进",
+      "Claude Flow爆火实现多智能体任务的自动化流"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift from simple chat to autonomous agents.",
+      "Claude Code pushes double releases amid cost inflation woes.",
+      "OpenAI Codex Alpha struggles with compaction crashes.",
+      "Ecosystem splits between proprietary and open-source tools.",
+      "Demand spikes for production-grade stability and cost control.",
+      "Developers demand offline resilience and transparent pricing."
+    ],
+    "ai-agents": [
+      "OpenClaw hit with 500 issues and 500 PRs in one day.",
+      "OpenClaw v2026.4.14 causes severe workflow regressions.",
+      "Bug reports outpace resolutions 419 to 81 for OpenClaw.",
+      "GPT-5 family gets QoL improvements in OpenClaw stable.",
+      "OpenClaw beta brings enhanced context awareness features.",
+      "Maintainers push rapid infrastructure and security fixes."
+    ],
+    "ai-trending": [
+      "Hermes-agent debuts with massive 8,282 star daily gain.",
+      "Anthropic ecosystem absolutely dominates GitHub trending.",
+      "Superpowers framework structures LLM-driven coding.",
+      "Vibe coding shifts to rigorous agentic engineering.",
+      "Claude-mem plugin compresses cross-session AI context.",
+      "Open-source financial AI and hedge fund sectors mature."
+    ],
+    "ai-web": [
+      "Anthropic tackles superintelligence alignment oversight.",
+      "OpenAI pivots toward high-stakes enterprise security.",
+      "Anthropic appoints pharma exec to Board of Directors.",
+      "Automated Alignment Researchers ensures safe oversight.",
+      "OpenAI scales trusted access for cyber defense tools.",
+      "Frontier labs split on safety vs market dominance."
+    ],
+    "ai-hn": [
+      "Hacker News obsessed with Claude Code Routines launch.",
+      "Anthropic accused of nerfing Sonnet 4.6 performance.",
+      "Sam Altman assassination attempt shocks the community.",
+      "Users face frustrating rate limits and quality drops.",
+      "US government audits Anthropic's Mythos AI model.",
+      "OpenAI faces scrutiny over $852B valuation drama."
+    ],
+    "rl-daily": [
+      "RL ecosystem shifts massively to post-training LLMs.",
+      "verl sees extreme velocity for multi-backend hardware.",
+      "TRL modernizes by dropping legacy weight sync support.",
+      "AReaL optimizes massive MoE memory for microservices.",
+      "Open Instruct stabilizes critical vLLM weight syncs.",
+      "Classic RL environments enter a dormant maintenance phase."
+    ],
+    "agent-orch": [
+      "AI agents transition to complex orchestrator networks.",
+      "Claude Squad leads tooling for multi-agent workflows.",
+      "AutoGPT and MetaGPT drive advanced swarm frameworks.",
+      "Symphony and Crystal redefine agent communication.",
+      "Vibe Kanban organizes autonomous coding workflows.",
+      "New tools focus on asynchronous cluster orchestration."
+    ]
+  }
+}
