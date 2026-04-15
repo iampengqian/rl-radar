@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI工具现成长阵痛：Token消耗通胀、沙箱权限误杀成共同痛点",
+      "Claude Code被指存在严重Token膨胀与数据误删高风险",
+      "GitHub Copilot CLI陷盲盒式限流，最长封禁用户达58小时",
+      "Qwen Code免费额度断崖式清零，System Prompt遵循度差",
+      "Kimi Code因隐藏思考过程引发用户信任危机",
+      "Gemini CLI基础稳定性差，常出现进程挂起致命问题"
+    ],
+    "ai-agents": [
+      "OpenClaw发v2026.4.15-beta.1，新增Model Auth状态卡片",
+      "OpenClaw合并7个P1级安全PR，修复多项核心崩溃Bug",
+      "OpenClaw单日处理500个Issue，处于Beta高速演进阵痛期",
+      "新版本修复Discord附件投递阻断与富文本广播Bug",
+      "心跳隔离会话引发Transcript镜像错乱，现已解决",
+      "记忆模块会话更新时QMD导出失效的Bug已被修复"
+    ],
+    "ai-trending": [
+      "claude-mem爆火：AI压缩对话并注入，解决上下文遗忘",
+      "andrej-karpathy-skills今日暴涨9622星，疯抢AI编程配置",
+      "GenericAgent登榜：靠极小种子代码生长庞大技能树",
+      "Claude-Code-Game-Studios：49个AI智能体协同开发游戏",
+      "ollama全面支持Kimi-K2.5、GLM-5等最新开源模型",
+      "Agent技能树与自主进化概念兴起，挑战系统级控制"
+    ],
+    "ai-web": [
+      "双巨头同步聚焦智能体基础设施，加速战略范式转移",
+      "Anthropic推进Agent Skills开放标准，跨平台可移植",
+      "Anthropic新架构：技能即入职指南，动态发现加载",
+      "OpenAI发布Agents SDK下一阶段重大演进动向",
+      "OpenAI加速从单一模型提供商向智能体编排平台转型",
+      "竞争护城河转变：比拼构建和部署专业智能体的便捷度"
+    ],
+    "ai-hn": [
+      "OpenAI高达8520亿美元估值遭投资者严厉拷问",
+      "开源工具Gas Town被控窃取用户LLM额度自我训练",
+      "Anthropic不再允许用户固定特定模型版本引担忧",
+      "Bouzecode宣称替代Claude Code，Token消耗骤降10倍",
+      "Jeeves：专为浏览和恢复AI Agent会话设计的TUI工具",
+      "Tier自适应路由工具：让小模型准确率提升10个百分点"
+    ],
+    "rl-daily": [
+      "verl高速扩展Agentic RL与异构算力NPU/XPU支持",
+      "TRL深度重构VLM底层，摒弃陈旧推理后端依赖",
+      "OpenRLHF发布关键Patch，解决多模态rollout灾难",
+      "CleanRL被社区审计出底层经验回放树索引致命Bug",
+      "大模型RL框架占据绝对热度，高频迭代底层通信",
+      "AReaL发力多智能体与多节点分布式推理网关建设"
+    ],
+    "agent-orch": [
+      "AI智能体编排生态爆发，单日覆盖45个核心开源项目",
+      "多智能体协作成标配，Claude Squad等工具重塑开发流",
+      "AutoGPT、CrewAI等明星项目持续探索复杂自动化工作流",
+      "编排工具向细粒度进化：精准控制Agent工具调用权限",
+      "Dmux、Symphony等项目致力于解决智能体间通信标准",
+      "HumanLayer强调人在回路，为Agent引入人工审批机制"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.110 hit by cost inflation and data loss bugs.",
+      "OpenAI Codex v0.121.0 launches marketplace plugins.",
+      "Gemini CLI v0.38.1 adds voice mode and local model support.",
+      "AI developer tools shift to autonomous, agentic workflows.",
+      "Token consumption and abrupt rate limits cause friction.",
+      "Platforms heavily invest in remote execution environments."
+    ],
+    "ai-agents": [
+      "OpenClaw faces a massive backlog of 404 open issues.",
+      "OpenClaw v2026.4.15-beta.1 introduces Model Auth status UI.",
+      "New OpenClaw release tracks OAuth token health at a glance.",
+      "OpenClaw patches prominent first-run onboarding bug.",
+      "Maintainers navigate a flurry of recent stability patches.",
+      "High ratio of open PRs indicates active stabilization phase."
+    ],
+    "ai-trending": [
+      "Agentic Coding revolution dominates GitHub trends today.",
+      "andrej-karpathy-skills and claude-mem gain huge traction.",
+      "Developer rush to solve LLM session amnesia with memory.",
+      "Ollama hits 169,107 stars as the top local inference engine.",
+      "Google Magika adds 833 stars for AI file-type detection.",
+      "Rapid maturation hits MCP servers and sandbox environments."
+    ],
+    "ai-web": [
+      "Anthropic and OpenAI both release agent orchestration updates.",
+      "Anthropic launches Agent Skills as an open standard.",
+      "OpenAI announces Agents SDK evolution for multi-agent systems.",
+      "Agent Skills inject procedural knowledge into models.",
+      "Industry shifts from training models to agent infrastructure.",
+      "Agent Skills allow cross-platform portability for agents."
+    ],
+    "ai-hn": [
+      "Hacker News debates sustainability of $852B OpenAI valuation.",
+      "Gas Town is accused of secretly siphoning user LLM credits.",
+      "OpenAI Agents SDK update faces vendor lock-in scrutiny.",
+      "New Mac menu bar app manages Claude Code rate limits.",
+      "CodeCanary explores recursive self-improvement for apps.",
+      "Developers create tools to drastically reduce token usage."
+    ],
+    "rl-daily": [
+      "RL ecosystem focused on LLM post-training scaling challenges.",
+      "verl shows dominant velocity in hardware agnostic training.",
+      "ROCK refactors core SDK for agentic job orchestration.",
+      "Post-training frameworks expand support to AMD and Ascend.",
+      "Classic pure-research algorithm libraries see zero activity.",
+      "Bridging the gap between static models and agentic workflows."
+    ],
+    "agent-orch": [
+      "Ecosystem tracks 45 projects in the agent orchestration space.",
+      "Claude Squad and Claude Flow lead Anthropic tool orchestration.",
+      "OpenAI Symphony and AutoGen push multi-agent system designs.",
+      "CrewAI and MetaGPT remain top frameworks for team AI agents.",
+      "Gastown and dmux provide vital agent debugging utilities.",
+      "Swarm Protocol emerges as a key open standard for agents."
+    ]
+  }
+}
