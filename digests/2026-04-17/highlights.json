@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code双版本齐发，情感化功能被删引抗议",
+      "OpenAI Codex惊现Token消耗失控与Linux严重误杀",
+      "Gemini CLI突发阻断级Bug：全局无法粘贴",
+      "GitHub Copilot四连更，核心推理能力疑遭降级",
+      "Kimi Code移除思考过程展示，用户信任度骤降",
+      "Qwen Code免费额度骤降叠加鉴权失效惹众怒"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时狂飙：处理500+Issue与500+PR",
+      "新版接Claude Opus 4.7并首增Gemini文本转语音",
+      "v2026.4.15引Onboard崩溃等严重回归问题",
+      "关键PR修重导时无条件覆盖网关Token致连接断开",
+      "176个PR被合并，项目处快速迭代与集中修Bug期",
+      "系统处理413条新开或活跃Issue仅关闭87条"
+    ],
+    "ai-trending": [
+      "Karpathy LLM避坑配置单日暴涨近8K星",
+      "Claude-mem自动压缩长记忆补全AI遗忘短板",
+      "GenericAgent极简代码自生长技能树降耗6倍",
+      "Evolver提GEP协议开辟Agent自进化新范式",
+      "OpenAI官方发布轻量多智能体工作流框架",
+      "大模型教育透明化爆发：Karpathy指南登榜"
+    ],
+    "ai-web": [
+      "OpenAI单日连发4文，展现极强产品化野心",
+      "Codex For Almost Everything预示接管全栈任务",
+      "OpenAI推网络防御生态，抢占网络安全新高地",
+      "GPT Rosalind亮相开启底层模型拟人化命名",
+      "Anthropic今日零更新疑似正蓄力打安全护城河",
+      "OpenAI将大模型能力向主动安全防御倾斜"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7刷屏霸榜，实测与机制引轰动",
+      "Qwen3.6端侧实测击败顶级闭源模型Claude",
+      "OpenAI推生命科学专用模型GPT-Rosalind",
+      "Codex全栈化引爆AI辅助编程边界大讨论",
+      "1989年Macintosh上跑Transformer引热议",
+      "社区惊叹AI能力同时深陷算力枯竭与泡沫担忧"
+    ],
+    "rl-daily": [
+      "AReaL发布v1.0.3，向Agent基础设施演进",
+      "AReaL与slime攻克显存与通信墙实现传输百倍降",
+      "AReaL率先打通MoE架构跨节点LoRA训练链路",
+      "传统RL算法库与OpenRLHF等均陷入静默期",
+      "slime引入RDMA与权重重压缩破局异构适配",
+      "AReaL落地DPO算法提供多元对齐新选择"
+    ],
+    "agent-orch": [
+      "Claude Squad与Crystal等45个编排项目活跃中",
+      "Claude Code Bridge与Claude Flow发力多Agent",
+      "OpenAI的Symphony加入编排生态混战",
+      "Swarm Protocol与ORCH探索全新通信协议",
+      "Agent Deck与AutoGPT推高工作流自动化上限",
+      "Mux Desktop与Kodo打通桌面端多智能体协同"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code shipped hotfixes v2.1.111 & v2.1.112.",
+      "OpenAI Codex alpha introduced autonomous 'Goal Mode'.",
+      "Gemini CLI struggled with API capacity and 429 errors.",
+      "GitHub Copilot CLI rushed out four rapid-fire releases.",
+      "CLI maintainers are racing to support Opus 4.7 and GPT-5.4.",
+      "Platforms are struggling to manage autonomous token limits."
+    ],
+    "ai-agents": [
+      "OpenClaw hit 500 issues and 500 PRs in a single day.",
+      "OpenClaw stable release v2026.4.15 is now available.",
+      "Anthropic Opus 4.7 model integration is now bundled.",
+      "Google Gemini TTS capabilities were added to OpenClaw.",
+      "Users report a pervasive onboarding crash in OpenClaw.",
+      "OpenClaw faces routing bugs and technical debt surge."
+    ],
+    "ai-trending": [
+      "Andrej Karpathy skills plugin gained 7,939 stars today.",
+      "Context plugin claude-mem added 1,907 stars (59k total).",
+      "Agentic coding plugins are seeing near-vertical growth.",
+      "Prompt-engineering-as-infrastructure is a massive trend.",
+      "Enterprise multi-agent frameworks are becoming standard.",
+      "Surge in self-evolving agent architectures detected."
+    ],
+    "ai-web": [
+      "OpenAI launched 'GPT Rosalind' for life sciences.",
+      "OpenAI released generalized Codex action agents.",
+      "OpenAI unveiled a dedicated cybersecurity initiative.",
+      "OpenAI executed a massive multi-front product launch.",
+      "OpenAI pushes to embed models in enterprise security.",
+      "Anthropic maintained absolute radio silence today."
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7 absolutely dominated Hacker News.",
+      "HN thread on Opus 4.7 scored 1,276 points today.",
+      "Qwen3.6-35B out-prompted Opus 4.7 in local tests.",
+      "Community rigorously dissected Opus 4.7 system card.",
+      "Growing public anxiety over AI compute scarcity.",
+      "Fears of data center backlash spook open-source devs."
+    ],
+    "rl-daily": [
+      "AReaL released v1.0.3 for rapid LLM scaling.",
+      "Slime pushed distributed limits via RDMA transfers.",
+      "CleanRL, TRL, and OpenRLHF entered a dormant state.",
+      "AReaL is expanding beyond pure RL into new DPO tasks.",
+      "Gymnasium received minimal but targeted maintenance.",
+      "Ecosystem exhibited a sharp bifurcation in activity."
+    ],
+    "agent-orch": [
+      "Claude Squad tools optimize multi-agent coding.",
+      "Claude Code Bridge enables seamless orchestrations.",
+      "Claude Flow orchestrates complex agent workflows.",
+      "Dorothy, Jean, and Ralph enhance Claude Code UX.",
+      "Symphony and AutoGen battle for orchestration devs.",
+      "Trend swings toward Kanban-based agent management."
+    ]
+  }
+}
