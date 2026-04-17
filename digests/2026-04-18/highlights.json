@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code现超热Issue：Max订阅触及用量上限引1450+评论",
+      "Opus 4.7等强推理模型致Token消耗激增，引发社区恐慌",
+      "OpenAI Codex面临诉求：564赞强求支持远程开发环境",
+      "Gemini CLI v0.38.2热修复：解决执行死循环挂起痛点",
+      "Kimi Code CLI发大版本v1.36.0：遭遇K2.6过度思考",
+      "Qwen Code免费OAuth将停用，社区面临大面积401报错"
+    ],
+    "ai-agents": [
+      "OpenClaw单日狂收500条Issue与PR，项目处于高频迭代期",
+      "新增claude-sdk runtime，为重度Claude生态用户提供无缝接入",
+      "重构OAuth生命周期管理，直击近期频发的Token刷新竞态",
+      "奠基Memory v2：引入SQLite与重排管道，赋能智能体长期记忆",
+      "紧急安全加固：堵住含MCP身份欺骗在内的5个关键漏洞",
+      "社区爆发2026.4.x版本回归问题报告，团队正蓄力修BUG"
+    ],
+    "ai-trending": [
+      "obra/superpowers狂揽1600+星，探索AI软件工程标准化工作流",
+      "Claude-Code-Game-Studios：49个AI Agent化身完整游戏工作室",
+      "Chrome DevTools MCP打通任督二脉，赋予AI操控浏览器能力",
+      "GenericAgent主打自进化，极少代码长出完整控制技能树",
+      "OpenAI官方下场，推出轻量级多智能体工作流框架",
+      "《动手学大模型》稳居热榜，系统底层实操教程依然是刚需"
+    ],
+    "ai-web": [
+      "Anthropic双连发：重磅推出Claude Opus 4.7与Claude Design",
+      "Opus 4.7攻克高难编程：能自我验证输出，自动拦截恶意请求",
+      "Claude Design震撼登场：AI读取设计系统，直叫板设计软件市场",
+      "安全折中策略落地：Opus 4.7成为首个应用最新网络防护盾模型",
+      "Anthropic不再只做模型：通过Claude Design重塑企业级设计工作流",
+      "OpenAI今日静默酝酿大招，迎战Anthropic代码与视觉领域猛攻"
+    ],
+    "ai-hn": [
+      "Anthropic全面霸榜！Claude Design与Opus 4.7成社区绝对焦点",
+      "开发者实测Claude 4.7新Tokenizer，引发计费成本激烈辩论",
+      "重磅：研究者用公开模型成功复现Anthropic神秘Mythos核心发现",
+      "Egregore为多人协作而生，解决Claude Code多Agent共享记忆痛点",
+      "工程Tip爆火：无需API即可在本地读取Claude Code剩余配额",
+      "Cloudflare祭出Unweight技术，实现LLM无损失张量压缩22%"
+    ],
+    "rl-daily": [
+      "TRL发v1.2.0：全面拥抱免Reward Model对齐，重构底层架构",
+      "verl试水Diffusion+RL，强攻多硬件异构与全异步通信机制",
+      "AReaL探索Multi-Agent：完善MoE跨节点与结构化奖励机制",
+      "slime攻坚超大规模分布式通信压缩，突破混合精度稳定性瓶颈",
+      "ROCK预热v1.6.0：全面强化TS SDK测试与供应链安全防护",
+      "ROLL适配昇腾NPU异构算力，积极探索外部Reward生态集成"
+    ],
+    "agent-orch": [
+      "多Agent协作成定局：Claude Squad等45个项目重塑编排生态",
+      "Symphony与AutoGen同台竞技，大厂主导的智能体框架加速演进",
+      "AutoGPT与MetaGPT持续迭代，复杂任务拆解与角色扮演趋于成熟",
+      "LlamaIndex与CrewAI稳固基盘，工作流编排与工具集成成焦点",
+      "Claude Flow深度整合：致力于打造多智能体共享记忆与调度机制",
+      "Mux Desktop杀入重围：为多Agent协同开发提供本地化可视化环境"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.113 adds native binary spawn and sandboxing.",
+      "OpenAI Codex is on an aggressive Rust alpha sprint.",
+      "Gemini CLI v0.38.2 issues a targeted patch release.",
+      "Ecosystem shifting to complex, multi-agent autonomous systems.",
+      "Developers struggling with context window and compute costs.",
+      "Enterprise subscription limits emerging as a trust barrier."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs updated in 24 hours.",
+      "Maintainers navigating a significant backlog of open issues.",
+      "Community hardening the gateway's security infrastructure.",
+      "Contributors stabilizing the newly introduced Memory v2.",
+      "Addressing various provider authentication regressions.",
+      "No official software release published for OpenClaw today."
+    ],
+    "ai-trending": [
+      "Agentic Skills & Coding Agent paradigm dominates trending.",
+      "obra/superpowers framework gains 1,645 stars in one day.",
+      "Chrome DevTools MCP bridges AI agents and web debugging.",
+      "z-lab/dflash introduces Flash Speculative Decoding engine.",
+      "google/magika AI file-type identifier gains 949 stars today.",
+      "Massive appetite for open-source AI coding alternatives."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Opus 4.7 for autonomous coding.",
+      "Claude Design signals a push into vertical multimodal apps.",
+      "Opus 4.7 features enhanced self-verification loops.",
+      "New flagship model brings high-fidelity vision capabilities.",
+      "Anthropic executes a major dual-release product strategy.",
+      "OpenAI maintained radio silence with zero new releases."
+    ],
+    "ai-hn": [
+      "Anthropic completely dominates the Hacker News front page.",
+      "Developers fiercely debate Claude 4.7's tokenizer costs.",
+      "Researchers reproduce Mythos findings with public models.",
+      "OpenAI makes a colossal $20B hardware bet on Cerebras.",
+      "Community explores best practices for AI vibe-coding.",
+      "Geopolitical tension looms over frontier AI capabilities."
+    ],
+    "rl-daily": [
+      "TRL v1.2.0 undergoes major architectural consolidation.",
+      "LLM post-training frameworks experiencing hyper-growth.",
+      "verl aggressively iterating on hardware expansion.",
+      "Aggressive push to solve massive compute bottlenecks.",
+      "Traditional RL libraries like Gymnasium enter maintenance.",
+      "Developers focused on aligning large-scale foundation models."
+    ],
+    "agent-orch": [
+      "Ecosystem digest tracks 45 different agent orchestrators.",
+      "AutoGPT, AutoGen, and CrewAI lead agent orchestration.",
+      "Developers shifting toward local system control agents.",
+      "Rise of Kanban-based workflow management for AI agents.",
+      "New tools bridge CLI coding agents with desktop control.",
+      "Frameworks racing to support multi-agent task planning."
+    ]
+  }
+}
