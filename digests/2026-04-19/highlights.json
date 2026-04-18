@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 工具全面迈向接管环境的自主智能体阶段",
+      "OpenAI Codex 连发 2 个 Rust Alpha 版并重构底层架构",
+      "Claude Code 遭遇手机号登录死结与 UI 黑盒化抗议",
+      "Qwen Code 因 OAuth 免费层停用引发大规模 401 报错",
+      "OpenCode 暴露渲染器崩溃与计费异常等稳定性痛点",
+      "行业共同攻坚细粒度权限与跨平台沙盒安全机制"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日更新千条，正密集排查 4.14 版回归问题",
+      "修复切换模型时 cachedCwd 错误导致的网关重启失败",
+      "Codex OAuth 认证所有权集中化，解决状态漂移痛点",
+      "新增 openclaw usage 命令，支持按周期查看 Agent 成本",
+      "SIGKILL 僵尸进程修复，确保网关端口释放可靠性",
+      "多渠道消息泄露与 Onboard CLI 崩溃成当前主要挑战"
+    ],
+    "ai-trending": [
+      "EvoMap 凭借基因组进化协议成今日热榜星标最高项目",
+      "OpenAI 官方开源轻量级多智能体工作流编排框架",
+      "DeepSeek 开源高效 FP8 内核，攻坚底层极致算力优化",
+      "AI 自主编写 Chrome 漏洞利用代码，引安全双刃剑热议",
+      "Ollama 已全面支持 Kimi-K2.5 等最新主流本地大模型",
+      "Claude Code 推出专为 Android 逆向工程打造的自动化包"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7 发布并公布权威性能与性价比分析",
+      "Opus 耗资两千余美元算力成功写出高危 Chrome 漏洞",
+      "Anthropic 被曝在新版发布前暗中削弱旧版 Opus 性能",
+      "社区热议 Claude Code 在审查时过度核查恶意软件",
+      "OpenAI 遭遇高管离职潮，引发行业对 AI 走向担忧",
+      "大学重拾打字机防作弊，凸显 AI 对传统教育的冲击"
+    ],
+    "rl-daily": [
+      "大模型 Post-training 需求彻底重塑 RL 开源演进重心",
+      "TRL 引入 TPO 算法并排查零方差下的伪 KL 梯度问题",
+      "verl 突破算力墙，落地异步 Agent 与多教师模型蒸馏",
+      "AReaL 深度重构分布式推理引擎并扩展 DPO Trainer",
+      "OpenRLHF 引入前沿 Muon 优化器，深耕长上下文并行",
+      "传统 RL 算法库陷入停滞，被大模型对齐基础设施取代"
+    ],
+    "agent-orch": [
+      "智能体编排生态爆发，45 个项目重塑多智能体协作",
+      "Claude Flow 等编排工具推动多智能体向自主进化演进",
+      "OpenAI 发布多智能体工作流框架并将其标准化",
+      "Anthropic 催生繁荣周边，Claude Squad 等重塑开发流",
+      "AutoGPT 等经典框架持续探索智能体自动化落地边界",
+      "编排层正向解决计费异常与跨平台兼容等痛点深入"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code released patch v2.1.114",
+      "OpenAI Codex pushed two alpha releases",
+      "OpenCode v1.4.12 recalled after quick patch",
+      "Qwen Code shipped new v0.14.5-nightly build",
+      "Tools pivot from code gen to autonomous agents",
+      "Shared focus on persistent background daemons"
+    ],
+    "ai-agents": [
+      "OpenClaw hit with 500 new issues and 500 PRs",
+      "Project has no official release for critical bugs",
+      "Massive cross-channel security refactor merged",
+      "Community demand outpaces core team capacity",
+      "Projects face stability and compatibility issues",
+      "Agent queue management remains a top friction"
+    ],
+    "ai-trending": [
+      "DeepSeek released efficient DeepGEMM kernels",
+      "OpenAI enters multi-agent space officially",
+      "'Genome Evolution' for self-evolving AI agents",
+      "Thunderbolt local AI framework gains 458 stars",
+      "AI harnesses for coding assistants are exploding",
+      "Standardized agent orchestration is industry goal"
+    ],
+    "ai-hn": [
+      "Claude Opus wrote a Chrome zero-day exploit",
+      "Opus 4.7 keeps unprompted checking for malware",
+      "OpenAI faces mass executive 'Liberation Day' exit",
+      "Users debate ethics of AI weaponized exploits",
+      "Schools trending toward return to typewriters",
+      "Groups ask to financially support AI resistance"
+    ],
+    "rl-daily": [
+      "LLM alignment frameworks dominate RL activity",
+      "AReaL shows high momentum for scaling backends",
+      "Core RL libraries face zero notable updates",
+      "Industry pivots to RLHF infrastructure at scale",
+      "verl aggressively targets distributed bottlenecks",
+      "Traditional algorithmic libraries see stagnation"
+    ],
+    "agent-orch": [
+      "Ecosystem shifts to complex multi-agent systems",
+      "Claude Squad leads new orchestrator projects",
+      "Frameworks tackle distributed memory bottlenecks",
+      "Tools integrate persistent background daemons",
+      "Swarm Protocol defines agent orchestration standard",
+      "Projects race for enterprise-grade automations"
+    ]
+  }
+}
