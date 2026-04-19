@@ -1,0 +1,94 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 遭遇强压：200k 强制压缩致长会话不可用",
+      "OpenAI Codex 连发架构级 PR，正式进军长时自治 Agent",
+      "GitHub Copilot 陷信任危机：HTTP/2 竞态吃额度引声讨",
+      "Qwen Code OAuth 401 灾难，连夜重构认证系统",
+      "MCP 引发系统级灾难：Codex 报告 37GB 极端内存泄漏",
+      "OpenCode 连发两版修复内存泄漏，却受困版本号跳跃 Bug"
+    ],
+    "ai-agents": [
+      "OpenClaw 连发两 Beta 版：修复子会话账号隔离问题",
+      "Linux 原生桌面客户端迎来重大 PR 提交",
+      "飞书 WebSocket 修复：引入指数退避解决消息丢失",
+      "MCP 僵尸漏洞修复：解决触发子进程的内存泄漏",
+      "OpenAI 兼容后端流式请求 Token 用量显示归零已修复",
+      "单日合并 204 个 PR，OpenClaw 社区参与热情极高"
+    ],
+    "ai-trending": [
+      "OpenAI 官方开源多智能体框架，单日暴涨 751 Star",
+      "开源 49 智能体虚拟游戏工作室，展现惊人协作潜力",
+      "基于基因组进化协议的 AI 智能体自我迭代引擎引关注",
+      "Thunderbolt 框架主打绝对控制，解决企业数据锁定痛点",
+      "AI 赋能科研：多智能体助手全流程自动化分析写报告",
+      "Picovoice 推出端侧推理框架，让大模型在边缘设备跑"
+    ],
+    "ai-hn": [
+      "硬核拆解：Claude Opus 4.7 系统提示词发生重大变更",
+      "Claude API 爆破坏性更新：全面移除采样参数引担忧",
+      "Claude Brain 开源：赋予 AI 持久化记忆能力成焦点",
+      "OpenClawdex 开源编排器：为多 AI 编码提供可视化 UI",
+      "实测硬核复古编程：Claude 挑战编写 Z80 汇编代码",
+      "AI 虚假网站投毒问题成社区今日争议与安全焦点"
+    ],
+    "rl-daily": [
+      "OpenRLHF 发版 v0.10.2：引入前沿 Muon 优化器",
+      "生态全面转向 GRPO：TRL 结合 Tool Use 训练智能体",
+      "AReaL 引擎升级：攻坚 VLM 长时序训练内存泄漏",
+      "verl 适配国产算力：昇腾等异构算力支持获实质进展",
+      "slime 暴露严重缺陷：64x H100 分布式切分出大 Bug",
+      "Stable Baselines3 轻量化：剥离 pandas 优化底层"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Codex ships 2 Rust core alphas (v0.122.0).",
+      "Developers demand reliability over raw model power.",
+      "OpenAI Codex leads with 11 highlighted PRs today.",
+      "Multi-agent orchestration hits CLI tools fast.",
+      "OpenCode releases two rapid patches (v1.14.18).",
+      "GitHub Copilot CLI PR activity completely stalls."
+    ],
+    "ai-agents": [
+      "OpenClaw closes hundreds of issues in 24 hours.",
+      "OpenClaw beta fixes Slack, Discord, Feishu bugs.",
+      "Two new OpenClaw betas released in 2026.4 cycle.",
+      "OpenClaw expands LLM support for xAI and Gemini.",
+      "OpenClaw fixes subagent spawn inheritence bugs.",
+      "OpenClaw patch enforces real context usage stats."
+    ],
+    "ai-trending": [
+      "OpenAI's new Python agent framework tops charts.",
+      "Claude Code used to run 49-agent game dev studio.",
+      "Evolver brings genomic evolution to AI agents.",
+      "omi: privacy-first screen/audio tracking surges.",
+      "RuView enables camera-less pose via WiFi signals.",
+      "rig signals next phase for Rust LLM ecosystems."
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7 prompts dissected for hidden rules.",
+      "Claude Opus 4.7 removes API sampling parameters.",
+      "Uber's massive AI budget struggles face scrutiny.",
+      "Fake Claude malware scam targets unsuspecting devs.",
+      "NSA uses Anthropic's Mythos despite blacklists.",
+      "Study: CEOs admit AI has zero productivity impact."
+    ],
+    "rl-daily": [
+      "RLHF frameworks see hyper-active LLM development.",
+      "TRL rapidly adopts new GRPO-variant algorithms.",
+      "verl advances multi-modal medical AI recipes.",
+      "Classic RL libraries Gymnasium and SB3 stagnate.",
+      "AReaL focuses heavily on distributed scaling.",
+      "Post-training libraries race to integrate Muon."
+    ],
+    "agent-orch": [
+      "Claude Squad leads 45 tracked agent projects.",
+      "Crystal orchestrator gains rapid traction today.",
+      "Symphony challenges rivals in agent management.",
+      "Claude Flow workflow orchestrator shows promise.",
+      "Mux Desktop offers new GUI for agent tracking.",
+      "AutoGPT evolves with new agentic integrations."
+    ]
+  }
+}
