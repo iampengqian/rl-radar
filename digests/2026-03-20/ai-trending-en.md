@@ -1,96 +1,76 @@
 # AI Open Source Trends 2026-03-20
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-20 00:09 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-19 22:02 UTC
 
 ---
 
-# AI Open Source Trends Report — March 20, 2026
-
----
+# AI Open Source Ecosystem Trends Report (2026-03-20)
 
 ## 1. Today's Highlights
-
-Today's GitHub trending reveals explosive momentum around **Claude Code ecosystem tools**, with three projects in the top 11 focused on extending or reimplementing Anthropic's coding agent. The standout is [obra/superpowers](https://github.com/obra/superpowers) (+3,494 stars), which introduces a formal "agentic skills framework" and software development methodology—signal that the community is maturing from raw agent capabilities to structured engineering practices. [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) (+1,491 stars) and [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) (+1,448 stars) further validate this trend toward meta-prompting and educational agent harnesses. Meanwhile, [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) (+1,416 stars) addresses the persistent pain point of PDF parsing for AI pipelines, suggesting enterprise data readiness remains a critical bottleneck.
+The AI open-source landscape today is dominated by the rise of **"Agentic Harnesses" and "Context Engineering"**. We are seeing a rapid standardization of tools surrounding Anthropic's "Claude Code," with multiple high-ranking repositories (like `learn-claude-code`, `claude-hud`, and `gsd-build`) dedicated to building monitoring dashboards, memory systems, and development methodologies specifically for CLI-based coding agents. In parallel, the infrastructure layer is maturing with a strong focus on **"AI-Ready Data"**—parsers that convert unstructured files (PDFs) into optimized formats for LLMs—and **Physical AI**, evidenced by a new GPU-accelerated physics engine for robotics.
 
 ---
 
 ## 2. Top Projects by Category
 
 ### 🔧 AI Infrastructure
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [obra/superpowers](https://github.com/obra/superpowers) | 0 → +3,494 today | An agentic skills framework & software development methodology—formalizing how agents should be structured and deployed. |
-| [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | 0 → +1,851 today | Claude Code plugin for real-time visibility into context usage, active tools, running agents, and todo progress. |
-| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | 0 → +1,491 today | Meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES. |
-| [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 33,585 → +1,448 today | Nano Claude Code-like "agent harness" built from scratch—educational infrastructure for understanding agent internals. |
-| [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | 0 → +1,416 today | PDF parser specifically designed for AI-ready data, automating PDF accessibility for downstream LLM pipelines. |
-| [langchain-ai/open-swe](https://github.com/langchain-ai/open-swe) | 0 → +965 today | Open-source asynchronous coding agent from LangChain, signaling their entry into the autonomous dev agent space. |
+*   **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** [TypeScript] ⭐33,534 (+1,458 today)
+    *   A "nano agent harness" that teaches developers how to build Claude Code-like agents from scratch using Bash, reflecting the massive demand for customizable coding agent architectures.
+*   **[newton-physics/newton](https://github.com/newton-physics/newton)** [Python] ⭐N/A (+345 today)
+    *   An open-source, GPU-accelerated physics simulation engine built on NVIDIA Warp, signaling the convergence of AI simulation and robotics (Physical AI).
+*   **[opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** [Java] ⭐N/A (+1,394 today)
+    *   A specialized PDF parser designed to convert documents into "AI-ready" data, addressing the critical bottleneck of context preparation for LLMs.
+*   **[ollama/ollama](https://github.com/ollama/ollama)** [Go] ⭐165,601 (Active)
+    *   The standard for local LLM inference, now supporting a wide array of frontier models including Kimi-K2.5 and GLM-5.
+*   **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐73,711 (Active)
+    *   The leading high-throughput inference and serving engine for LLMs, essential for production-grade AI deployment.
 
 ### 🤖 AI Agents / Workflows
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,313 | CowAgent: super AI assistant with proactive thinking, task planning, OS access, and multi-platform integration (WeChat, Feishu, DingTalk, etc.). |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 41,835 | AI productivity studio with smart chat, autonomous agents, and 300+ assistants with unified frontier LLM access. |
-| [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | 29,578 | Frontend stack for agents & generative UI; makers of the AG-UI Protocol, standardizing agent-frontend integration. |
-| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,289 | AI agents & MCPs & workflow automation with ~400 MCP servers, positioning as central hub for agent tool ecosystem. |
-| [trycua/cua](https://github.com/trycua/cua) | 13,191 | Open-source infrastructure for Computer-Use Agents: sandboxes, SDKs, and benchmarks for full desktop control agents. |
-| [crestalnetwork/intentkit](https://github.com/crestalnetwork/intentkit) | 6,493 | Self-hosted cloud agent cluster managing collaborative teams of AI agents—enterprise multi-agent orchestration. |
+*   **[langchain-ai/open-swe](https://github.com/langchain-ai/open-swe)** [Python] ⭐N/A (+955 today)
+    *   An open-source asynchronous coding agent, representing the next evolution of autonomous software engineering tools.
+*   **[obra/superpowers](https://github.com/obra/superpowers)** [Shell] ⭐N/A (+3,476 today)
+    *   Today's top trending repo: an agentic skills framework and methodology that defines how human developers interact with and direct AI agents effectively.
+*   **[gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done)** [JavaScript] ⭐N/A (+1,414 today)
+    *   A meta-prompting and spec-driven development system designed to maximize the utility of Claude Code, highlighting the trend of "Context Engineering."
+*   **[jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)** [JavaScript] ⭐N/A (+1,851 today)
+    *   A "Heads-Up Display" plugin for Claude Code that visualizes context usage and tool activity, solving the "black box" problem of agent operations.
+*   **[browser-use/browser-use](https://github.com/browser-use/browser-use)** [Python] ⭐81,323 (Active)
+    *   A foundational tool connecting AI agents to the web, enabling automated browsing and interaction with websites.
 
 ### 🧠 LLMs / Training
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | 56,684 → +1,262 today | Unified web UI for training and running open models (Qwen, DeepSeek, gpt-oss, Gemma) locally—continued dominance in efficient fine-tuning. |
-| [ollama/ollama](https://github.com/ollama/ollama) | 165,611 | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma—expanding model coverage rapidly. |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 73,722 | High-throughput, memory-efficient inference engine; production standard for LLM serving. |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 68,744 | Unified efficient fine-tuning of 100+ LLMs & VLMs—established training infrastructure. |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 69,426 | AI-driven development platform; all-in-one agentic coding environment. |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 81,325 | Makes websites accessible for AI agents—bridging web automation and LLM capabilities. |
+*   **[unslothai/unsloth](https://github.com/unslothai/unsloth)** [Python] ⭐56,641 (+1,259 today)
+    *   A unified web UI for training and running open models (Qwen, DeepSeek, etc.) locally, making fine-tuning accessible to the mass market.
+*   **[huggingface/transformers](https://github.com/huggingface/transformers)** [Python] ⭐158,108 (Active)
+    *   The backbone of the AI ecosystem, providing state-of-the-art machine learning architectures for text, vision, and audio.
+*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐68,743 (Active)
+    *   A unified framework for efficient fine-tuning of 100+ LLMs, remaining a staple for model customization.
 
 ### 🔍 RAG / Knowledge
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [langgenius/dify](https://github.com/langgenius/dify) | 133,589 | Production-ready platform for agentic workflow development—dominant full-stack RAG/agent builder. |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 130,264 | The agent engineering platform—foundational orchestration layer. |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 75,526 | Leading open-source RAG engine fusing cutting-edge retrieval with agent capabilities. |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 50,435 | Universal memory layer for AI agents—solving persistent context across sessions. |
-| [cognee/cognee](https://github.com/topoteretes/cognee) | 14,360 | Knowledge engine for AI agent memory in 6 lines of code—radical simplification of agent memory systems. |
-| [memvid/memvid](https://github.com/memvid/memvid) | 13,504 | Serverless, single-file memory layer replacing complex RAG pipelines—instant retrieval and long-term memory. |
-
-### 📦 AI Applications
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 95,339 | Web Data API for AI—turn entire websites into LLM-ready markdown or structured data. |
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | 72,633 | Turn any PDF/image into structured data—bridging documents and LLMs with 100+ language support. |
-| [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 63,333 | Financial data platform for analysts, quants and AI agents—vertical AI infrastructure. |
-| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 9,797 | Industry-first professional AI agent platform for controllable film & video production—Hollywood-standard AI workflows. |
+*   **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐22,306 (Active)
+    *   A reasoning-based RAG approach that eschews traditional vectors for "Vectorless RAG," indicating a potential paradigm shift in retrieval techniques.
+*   **[memvid/memvid](https://github.com/memvid/memvid)** [Rust] ⭐13,504 (Active)
+    *   A memory layer for AI agents that replaces complex RAG pipelines with a serverless, single-file memory system.
+*   **[run-llama/llama_index](https://github.com/run-llama/llama_index)** [Python] ⭐47,803 (Active)
+    *   The leading framework for building context-aware agents and connecting LLMs to external data.
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**The Claude Code Ecosystem Explosion** is the definitive signal of March 2026. Three trending projects explicitly extend or educationalize Anthropic's coding agent, indicating the community has moved past "will agents work?" to "how do we engineer with them professionally?" This mirrors the historical arc of React/Vue devtools—maturity follows capability.
+**1. The Rise of "Context Engineering" and Agent Harnesses**
+The most explosive trend today is the shift from *Prompt Engineering* to **Context Engineering**. Repositories like `gsd-build/get-shit-done` and `shareAI-lab/learn-claude-code` are not just tools; they are methodologies for managing the "harness" around LLMs. Developers are realizing that the model itself is only as good as the context window management, tool access permissions, and feedback loops provided to it. The "Claude Code" ecosystem specifically is exploding, suggesting that CLI-based coding agents are winning the developer adoption cycle over IDE plugins.
 
-**Meta-Prompting as Discipline** represents a new direction. [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) frames context engineering and spec-driven development as a *system*, not ad-hoc technique. Combined with [obra/superpowers](https://github.com/obra/superpowers)'s "agentic skills framework," we're seeing formal methodologies emerge—suggesting AI-native software engineering is crystallizing into recognizable patterns.
+**2. Data Prep becomes "AI-Ready" Infrastructure**
+The massive spike in `opendataloader-project/opendataloader-pdf` (a Java project) indicates a market correction: while Python dominates AI *logic*, robust *data ingestion* pipelines (often enterprise-grade Java) are crucial. The focus is shifting from "how to RAG" to "how to clean and format data *before* it hits the vector DB."
 
-**PDF/Data Parsing Renaissance** reflects enterprise reality: [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)'s 1,416 stars in one day signals that "AI-ready data" remains the critical path blocker. This aligns with [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)'s sustained relevance and [firecrawl](https://github.com/firecrawl/firecrawl)'s massive star count—data extraction is the new infrastructure.
-
-**Memory Layer Commoditization** accelerates with [memvid](https://github.com/memvid/memvid), [cognee](https://github.com/topoteretes/cognee), and [mem0](https://github.com/mem0ai/mem0) all competing to replace complex RAG with "single-file" or "6-line" solutions. The abstraction level is rising rapidly.
-
-Connection to industry: Anthropic's recent Claude Code releases and the gpt-oss model launch have clearly catalyzed tooling investment. The simultaneous presence of Qwen, DeepSeek, and gpt-oss in [unsloth](https://github.com/unslothai/unsloth)'s description confirms open-weight competition is driving infrastructure innovation.
+**3. Physical AI and Simulation**
+The appearance of `newton-physics/newton` (built on NVIDIA Warp) highlights the "Sim2Real" trend. As LLMs saturate the text market, open-source innovation is pivoting to **Embodied AI**. We are seeing the infrastructure for training robots and physical agents (physics engines) getting the same open-source treatment that deep learning frameworks received five years ago.
 
 ---
 
 ## 4. Community Hot Spots
 
-- **🔥 [obra/superpowers](https://github.com/obra/superpowers)** — Highest velocity today (+3,494) with a *methodology* not just a tool. If agentic SDLC becomes standardized, this is ground zero. Worth studying for architectural patterns.
-
-- **🔥 [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** — Educational reimplementation trend. Building "from 0 to 1" documentation suggests community demand for transparency in how agents actually work, not just black-box usage.
-
-- **🔥 [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** — PDF parsing is unsexy but critical. Enterprise AI adoption depends on this; early momentum here predicts downstream application success.
-
-- **🔥 [memvid/memvid](https://github.com/memvid/memvid)** — "Replace complex RAG pipelines with a serverless, single-file memory layer" is a bold positioning. If execution matches, this could collapse an entire category of infrastructure.
-
-- **🔥 [trycua/cua](https://github.com/trycua/cua)** — Computer-Use Agents with full desktop control (macOS/Linux/Windows) plus training/evaluation infrastructure. The sandbox + benchmark combination suggests serious research-to-production intent.
-
----
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*
+*   **The "Claude Code" Ecosystem**: With three separate trending repos (`learn-claude-code`, `claude-hud`, `gsd-build`), developers should immediately explore this stack. It represents the current state-of-the-art in agentic software development workflows.
+*   **Spec-Driven Development**: `obra/superpowers` and `gsd-build` suggest that "Vibe Coding" is being replaced by structured methodologies where humans write specs and agents execute them.
+*   **Unsloth for Local Training**: `unslothai/unsloth` continues to defy gravity with 1,200+ stars/day. It confirms that running and training models locally (privacy/speed) is a priority over pure cloud API usage.
+*   **Vectorless RAG**: Keep an eye on `VectifyAI/PageIndex`. If "reasoning-based retrieval" proves effective, it could disrupt the current dominance of vector database solutions.

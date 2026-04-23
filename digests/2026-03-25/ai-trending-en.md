@@ -1,110 +1,102 @@
 # AI Open Source Trends 2026-03-25
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-25 00:09 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-24 22:06 UTC
 
 ---
 
-# AI Open Source Trends Report — March 25, 2026
+# AI Open Source Ecosystem Trend Report (2026-03-25)
 
----
+Based on the provided GitHub data, here is the analysis of the AI open-source landscape.
 
 ## 1. Today's Highlights
-
-ByteDance's **[deer-flow](https://github.com/bytedance/deer-flow)** dominates today's trending with **+4,346 stars**, signaling massive interest in production-grade agent orchestration with sandboxed execution and long-horizon task handling. The **[MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)** surge (+3,006) alongside its Turbo counterpart reflects sustained appetite for AI-powered content automation. Notably, **Claude Code ecosystem tools** are proliferating rapidly—three distinct projects ([ruflo](https://github.com/ruvnet/ruflo), [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code), [ralph-claude-code](https://github.com/frankbria/ralph-claude-code)) gained significant traction, indicating Anthropic's CLI has crossed into mainstream developer adoption. Multi-agent financial trading frameworks ([TradingAgents](https://github.com/TauricResearch/TradingAgents), [TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN)) and offline survival AI ([project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)) demonstrate AI's expansion into specialized verticals and edge deployment scenarios.
+The AI ecosystem today is dominated by the rise of **Specialized Super-Agents** and **"Agentic" Money-Making Tools**. ByteDance's `deer-flow` is leading the charge with a sophisticated "SuperAgent" architecture designed for complex, long-horizon tasks like coding and research, signaling a shift from simple chatbots to autonomous systems. Simultaneously, there is a surge in applied AI for wealth generation, exemplified by `MoneyPrinterV2` and `MoneyPrinterTurbo`, which automate content creation for online income. In the infrastructure space, **Claude Code** is establishing itself as a new focal point for developer tooling, with multiple trending repositories dedicated to extending its capabilities via skills and memory.
 
 ---
 
 ## 2. Top Projects by Category
 
-### 🔧 AI Infrastructure
-
-| Project | Stars | Why It Matters |
-|--------|-------|----------------|
-| [deer-flow](https://github.com/bytedance/deer-flow) | 0 ⭐ (+4,346 today) | ByteDance's open-source SuperAgent harness with sandboxes, memory, subagents—enterprise-grade agent infrastructure now public |
-| [ruflo](https://github.com/ruvnet/ruflo) | 0 ⭐ (+1,397 today) | Leading Claude-native orchestration platform with distributed swarm intelligence and RAG integration |
-| [E2B](https://github.com/e2b-dev/E2B) | 11,416 ⭐ | Secure sandboxed environments for enterprise agents; critical infrastructure layer |
-| [rig](https://github.com/0xPlaygrounds/rig) | 6,646 ⭐ | Modular Rust framework for scalable LLM applications—systems language approach gaining traction |
-| [OpenSandbox](https://github.com/alibaba/OpenSandbox) | 9,240 ⭐ | Alibaba's fast, extensible sandbox runtime for AI agents |
-| [intentkit](https://github.com/crestalnetwork/intentkit) | 6,496 ⭐ | Self-hosted cloud agent cluster for collaborative multi-agent teams |
-
 ### 🤖 AI Agents / Workflows
+*Focus: Autonomous systems, multi-agent orchestration, and task automation.*
 
-| Project | Stars | Why It Matters |
-|--------|-------|----------------|
-| [hermes-agent](https://github.com/NousResearch/hermes-agent) | 12,518 ⭐ (+1,278 today) | NousResearch's "agent that grows with you"—adaptive personal agent architecture |
-| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 0 ⭐ (+1,760 today) | Multi-agent LLM financial trading framework—specialized vertical agents heating up |
-| [cua](https://github.com/trycua/cua) | 13,247 ⭐ | Computer-Use Agent infrastructure with full desktop control (macOS/Linux/Windows) |
-| [browser-use](https://github.com/browser-use/browser-use) | 84,209 ⭐ | Makes websites accessible for AI agents—core web automation primitive |
-| [OpenHands](https://github.com/OpenHands/OpenHands) | 69,681 ⭐ | AI-driven development platform—software engineering agents |
-| [CopilotKit](https://github.com/CopilotKit/CopilotKit) | 29,740 ⭐ | Frontend stack for agents with AG-UI protocol—generative UI standard emerging |
-| [activepieces](https://github.com/activepieces/activepieces) | 21,408 ⭐ | ~400 MCP servers for AI agents—workflow automation with Model Context Protocol |
+*   **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** [Python] ⭐4,319 (+today)
+    *   An open-source "SuperAgent" harness featuring sandboxes, memory, and sub-agents to handle complex tasks lasting minutes to hours; **today's most explosive agent framework.**
+*   **[FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)** [Python] ⭐2,937 (+today)
+    *   An agent system specifically designed to automate online income streams; highlights the trend of "Utility Agents" focused on economic value.
+*   **[Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)** [TypeScript] ⭐2,450 (+today)
+    *   A self-contained, offline survival computer with embedded AI tools; represents the "Local-First" resilience trend in agent hardware/software.
+*   **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** [Python] ⭐1,746 (+today)
+    *   A multi-agent framework specifically architected for financial trading, showcasing domain-specific agent specialization.
+*   **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** [TypeScript] ⭐1,397 (+today)
+    *   An orchestration platform specifically for Claude, featuring "swarm intelligence" and enterprise-grade architecture.
+*   **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** [Python] ⭐1,251 (+today)
+    *   "The agent that grows with you"—focuses on persistent learning and adaptation.
+
+### 🔧 AI Infrastructure
+*Focus: Dev tools, memory engines, and environment runtimes.*
+
+*   **[supermemoryai/supermemory](https://github.com/supermemoryai/supermemory)** [TypeScript] ⭐407 (+today)
+    *   A scalable "Memory API" for the AI era; solves the critical context retention problem for LLMs.
+*   **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** [Python] ⭐993 (+today)
+    *   A curated list of skills, hooks, and plugins for Claude Code; indicates a rapidly growing ecosystem around Anthropic's coding agent.
+*   **[ruvnet/RuView](https://github.com/ruvnet/RuView)** [Rust] ⭐1,020 (+today)
+    *   Uses commodity WiFi signals for real-time human pose estimation (WiFi DensePose) without video; a breakthrough in non-intrusive AI sensing.
+*   **[alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox)** [Python] ⭐9,238 (Topic: ai-agent)
+    *   A secure, fast sandbox runtime for AI agents, essential for safe code execution.
+*   **[trycua/cua](https://github.com/trycua/cua)** [Python] ⭐13,247 (Topic: ai-agent)
+    *   Infrastructure for "Computer-Use Agents" to control full desktops (macOS, Windows, Linux).
 
 ### 📦 AI Applications
+*Focus: End-user tools and vertical implementations.*
 
-| Project | Stars | Why It Matters |
-|--------|-------|----------------|
-| [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) | 0 ⭐ (+3,006 today) | Automate online monetization—viral interest in AI-powered income generation |
-| [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 0 ⭐ (+728 today) | One-click HD short video generation using AI LLMs—Chinese market parallel |
-| [project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) | 0 ⭐ (+2,513 today) | Offline survival computer with embedded AI—edge/prepper niche expanding |
-| [waoowaoo](https://github.com/saturndec/waoowaoo) | 10,238 ⭐ | Industrial-grade AI film/video production platform—Hollywood workflow automation |
-| [Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 10,658 ⭐ | Agent with "eyes on entire internet"—zero-API-fee social media intelligence |
-| [supermemory](https://github.com/supermemoryai/supermemory) | 0 ⭐ (+344 today) | Extremely fast, scalable memory engine—Memory API for AI era |
-
-### 🧠 LLMs / Training
-
-| Project | Stars | Why It Matters |
-|--------|-------|----------------|
-| [minimind](https://github.com/jingyaogong/minimind) | 43,277 ⭐ | Train 26M-parameter GPT from scratch in 2 hours—educational LLM minimalism |
-| [ollama](https://github.com/ollama/ollama) | 166,060 ⭐ | Local model runtime now supporting Kimi-K2.5, GLM-5, MiniMax, gpt-oss—ecosystem breadth |
-| [vllm](https://github.com/vllm-project/vllm) | 74,192 ⭐ | High-throughput inference engine—production serving standard |
-| [unsloth](https://github.com/unslothai/unsloth) | 58,023 ⭐ | Web UI for training/running open models locally—fine-tuning democratization |
-| [LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 68,997 ⭐ | Unified fine-tuning for 100+ LLMs/VLMs—efficient adaptation at scale |
-| [tiny-llm](https://github.com/skyzh/tiny-llm) | 4,024 ⭐ | Learn LLM inference serving on Apple Silicon—systems engineering education |
-| [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,164 ⭐ | Build ChatGPT-like LLM step by step—foundational learning resource |
+*   **[harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)** [Python] ⭐695 (+today)
+    *   A user-friendly app to generate high-quality short videos using LLMs; combines scriptwriting and visual generation.
+*   **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)** [Python] ⭐208 (+today)
+    *   An agent skill that synthesizes grounded summaries from Reddit, X, and HN; a specialized tool for trend analysis.
 
 ### 🔍 RAG / Knowledge
+*Focus: Vector databases, retrieval engines, and data processing.*
 
-| Project | Stars | Why It Matters |
-|--------|-------|----------------|
-| [ragflow](https://github.com/infiniflow/ragflow) | 76,025 ⭐ | Leading open-source RAG engine fusing retrieval with Agent capabilities |
-| [cognee](https://github.com/topoteretes/cognee) | 14,584 ⭐ | Knowledge engine for AI agent memory in 6 lines of code—memory abstraction |
-| [mem0](https://github.com/mem0ai/mem0) | 50,949 ⭐ | Universal memory layer for AI agents—persistence infrastructure |
-| [PageIndex](https://github.com/VectifyAI/PageIndex) | 22,828 ⭐ | Vectorless, reasoning-based RAG—document indexing without embeddings |
-| [LEANN](https://github.com/yichuan-w/LEANN) | 10,366 ⭐ | 97% storage savings for private on-device RAG—efficiency breakthrough |
-| [claude-mem](https://github.com/thedotmack/claude-mem) | 40,246 ⭐ | Claude Code plugin with AI-compressed session memory—context continuity |
-| [khoj](https://github.com/khoj-ai/khoj) | 33,610 ⭐ | Self-hostable AI second brain with autonomous research capabilities |
+*   **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐22,826 (Topic: vector-db)
+    *   A "Vectorless, Reasoning-based RAG" index; challenges the standard embedding paradigm by using reasoning for retrieval.
+*   **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** [Python] ⭐10,365 (Topic: vector-db)
+    *   Focuses on extreme efficiency (97% storage savings) for RAG on personal devices.
+*   **[topoteretes/cognee](https://github.com/topoteretes/cognee)** [Python] ⭐14,580 (Topic: vector-db)
+    *   An engine for AI Agent Memory; bridges the gap between graph knowledge and vector storage.
+*   **[PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)** [Python] ⭐72,992 (Topic: rag)
+    *   A powerful OCR tool essential for feeding non-textual data into RAG pipelines.
+
+### 🧠 LLMs / Training
+*Focus: Model training, fine-tuning, and optimization.*
+
+*   **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** [JavaScript] ⭐104,707 (Topic: llm)
+    *   While listed as a resource, it includes performance optimization systems and "instincts" for model behavior.
+*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐68,995 (Topic: llm)
+    *   The standard for unified efficient fine-tuning of 100+ LLMs.
+*   **[Picovoice/picollm](https://github.com/Picovoice/picollm)** [Python] ⭐305 (Topic: llm-model)
+    *   Focuses on on-device LLM inference using X-Bit Quantization; critical for edge AI.
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**Agent Infrastructure Maturation.** Today's data reveals a decisive shift from experimental agents to production-grade infrastructure. ByteDance's deer-flow release represents a major platform vendor open-sourcing its internal agent harness—mirroring how Kubernetes emerged from Google's Borg. The simultaneous rise of sandbox runtimes ([E2B](https://github.com/e2b-dev/E2B), [OpenSandbox](https://github.com/alibaba/OpenSandbox)) and orchestration platforms ([ruflo](https://github.com/ruvnet/ruflo), [intentkit](https://github.com/crestalnetwork/intentkit)) indicates the community is solving security, isolation, and multi-agent coordination at scale.
+**1. The "SuperAgent" Era & Agentic IDEs**
+The most significant signal today is the maturation of the "Agent" category. We are moving away from simple "Chat with PDF" wrappers toward **Deep Work Agents**. `bytedance/deer-flow` (4,300+ stars in one day) exemplifies this with its architecture of sandboxes, sub-agents, and message gateways intended to solve tasks that take hours. Furthermore, the emergence of `awesome-claude-code` and `everything-claude-code` suggests that **Agentic IDEs** (tools that write code *for* you, rather than just autocompleting) are becoming a primary interface for developers, specifically around the Anthropic ecosystem.
 
-**Claude Code Ecosystem Emergence.** Three trending projects explicitly targeting Anthropic's CLI suggests a tipping point: [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) (curated resources), [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) (autonomous loops), and [ruflo](https://github.com/ruvnet/ruflo) (enterprise orchestration). This parallels the 2023-2024 Cursor ecosystem growth but with stronger open-source coordination. The [everything-claude-code](https://github.com/affaan-m/everything-claude-code) project's 104K stars (topic search) confirms sustained investment in "agent harness performance optimization."
+**2. "Utility AI" and the Gig Economy**
+There is a sharp rise in "Utility AI"—tools designed not for research, but for immediate economic gain. The success of `MoneyPrinterV2` and `MoneyPrinterTurbo` indicates that the open-source community is highly focused on **automating content creation** (Shorts/TikTok) to generate revenue. This mirrors the "Gold Rush" phase of AI, where the demand is shifting from "How does it work?" to "How can it make money?".
 
-**Vertical Agent Specialization.** Financial trading ([TradingAgents](https://github.com/TauricResearch/TradingAgents)), video production ([waoowaoo](https://github.com/saturndec/waoowaoo)), and content monetization ([MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)) demonstrate agents moving beyond general assistants into domain-specific workflows with measurable ROI. The Chinese-language [TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN) fork (+557 today) shows rapid geographic localization.
+**3. Beyond Vector Search**
+In the RAG sector, we are seeing a rebellion against standard vector embeddings. Projects like `PageIndex` (Vectorless RAG) and `LEANN` (RAG on Everything) suggest that the industry is looking for lighter, more efficient, and reasoning-based alternatives to heavy vector databases, particularly for local-first or resource-constrained environments.
 
-**MCP Protocol Adoption.** [activepieces](https://github.com/activepieces/activepieces)' ~400 MCP servers and [langchain4j](https://github.com/langchain4j/langchain4j)'s MCP support signal Anthropic's Model Context Protocol is achieving de facto standard status for tool-augmented agents.
-
-**Memory as First-Class Infrastructure.** The [supermemory](https://github.com/supermemoryai/supermemory) trending entry, alongside [mem0](https://github.com/mem0ai/mem0), [cognee](https://github.com/topoteretes/cognee), and [claude-mem](https://github.com/thedotmack/claude-mem), indicates persistent agent memory is graduating from research curiosity to production requirement.
+**4. Alternative Sensory Input**
+`RuView` (WiFi DensePose) trending strongly indicates a growing interest in **Non-Visual Computer Vision**. Using WiFi signals for pose estimation opens massive possibilities for privacy-preserving AI in smart homes and healthcare, moving AI perception beyond cameras and microphones.
 
 ---
 
 ## 4. Community Hot Spots
 
-- **[deer-flow](https://github.com/bytedance/deer-flow)** — ByteDance's entry validates enterprise agent orchestration as a category; expect Alibaba, Tencent, and Baidu equivalents. Watch for integration with ByteDance's model APIs.
-
-- **Claude Code Plugin Economy** — [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) and [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) suggest an emerging marketplace for skills, hooks, and slash-commands. Early mover advantage for developers building Claude-native tools.
-
-- **[PageIndex](https://github.com/VectifyAI/PageIndex) / [LEANN](https://github.com/yichuan-w/LEANN)** — "Vectorless RAG" and 97% storage compression represent potential paradigm shifts. If embedding-free retrieval proves viable, vector database architectures may face disruption.
-
-- **[project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)** — Offline survival AI with "critical tools, knowledge, and AI" indicates LLM edge deployment reaching preparedness/military markets. Privacy-first, air-gapped agents for regulated environments.
-
-- **[TradingAgents](https://github.com/TauricResearch/TradingAgents) + [TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN)** — Multi-agent financial frameworks with 1,760+ stars in one day suggest quantitative finance is adopting LLM agents faster than expected. Regulatory and backtesting infrastructure gaps remain opportunities.
-
----
-
-*Report generated from GitHub trending data: March 25, 2026*
-
----
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*
+*   **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)**: Essential for developers looking to build autonomous agents that can handle complex workflows (coding, researching) rather than just single-turn interactions.
+*   **[FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)**: A must-watch for understanding the intersection of Generative AI and the creator economy; a prime example of "Automated Income" tools.
+*   **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)**: Recommended for RAG engineers interested in "Reasoning-based Retrieval" which may supersede traditional embedding search for complex documents.
+*   **[ruvnet/RuView](https://github.com/ruvnet/RuView)**: A fascinating project for IoT and Hardware AI developers, showing how standard WiFi can replace cameras for presence detection.
+*   **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)**: The best resource currently for extending the Claude Code agent, reflecting the rapid shift toward AI-native developer environments.

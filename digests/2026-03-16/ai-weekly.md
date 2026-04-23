@@ -1,149 +1,186 @@
 # AI 工具生态周报 2026-W12
 
-> 覆盖日期: 2026-03-10 ~ 2026-03-16 | 生成时间: 2026-03-16 01:31 UTC
+> 覆盖日期: 2026-03-10 ~ 2026-03-16 | 生成时间: 2026-03-15 23:04 UTC
 
 ---
 
-# AI 工具生态周报 | 2026-W12
-> 覆盖周期：2026-03-10 至 2026-03-16 | 生成时间：2026-03-16
+# AI 工具生态周报
+**时间范围**: 2026-W12 (03-10 ~ 03-16)
+**生成时间**: 2026-03-16 UTC
 
 ---
 
 ## 1. 本周要闻
 
-| 日期 | 事件 | 影响 |
-|:---|:---|:---|
-| 03-11 | **Kimi Code v1.19.0 发布**：Plan Mode + `kimi vis` 可视化系统上线 | 国产工具首次在 Agent 可视化体验上形成差异化 |
-| 03-12 | **Claude Code v2.1.73**：企业代理增强 + MCP 隔离/懒加载安全插件 | 头部工具 MCP 生态治理进入精细化阶段 |
-| 03-13 | **OpenCode Copilot 计费异常事件**：#8030 达 176 评论，引发信任危机 | 开源工具商业化透明度成社区核心关切 |
-| 03-14 | **OpenAI Codex exec-server 架构重构**：7 个 Rust Alpha 连续发布 | 底层架构向"App Server 中心化"激进迁移 |
-| 03-14 | **Qwen Code v0.12.3**：本地模型支持 + `/review` 开箱即用技能 | 国产工具"离线能力"赛道加速 |
-| 03-15 | **Gemini CLI v0.35.0-nightly**：ADK 架构迁移完成，社区贡献爆发（50 PR/日） | Google 工具链模块化代理设计弯道超车 |
-| 03-16 | **GitHub Copilot CLI v1.0.5 回归灾难**：滚动条消失、后台代理失效 | 微软工具稳定性信任崩塌，用户流失风险 |
-| 03-16 | **Claude Code AGENTS.md 倡议**：3140 👍 创年度热度，跨工具配置标准化呼声高涨 | 行业级协议共识形成中 |
+1. **GPT-5 系列全系发布 (03-15)**：OpenAI 官网大规模更新，正式公开 GPT-5.4、GPT-5.2 (Science/Math)、GPT-5.3 Codex 等完整模型矩阵，并推出 `Responses API` 与 `Computer Environment`，标志 AI 从"对话生成"正式进入"操作系统级执行"阶段。
+
+2. **Claude 100万上下文全面开放 (03-14)**：Anthropic 宣布 Claude Opus 4.6 和 Sonnet 4.6 向所有用户默认开放 100 万 token 上下文窗口，长文本与代码库分析能力形成代际优势。
+
+3. **OpenClaw 爆发式增长 (03-10~11)**：开源 AI 助手项目 OpenClaw 单周涨星超 9,000，但同期遭遇 v2026.3.x 版本严重回归问题（OOM 崩溃、网关故障），社区处于"高热度伴随高波动"状态。
+
+4. **Anthropic 与五角大楼法律冲突 (03-11)**：美国国防部将 Anthropic 列入"供应链风险"名单，Anthropic 提起诉讼。科技巨头集体支持 Anthropic，AI 地缘政治风险浮出水面。
+
+5. **AI Agent 框架爆发 (03-14~15)**：字节跳动 OpenViking、阿里 page-agent、agency-agents 等 Agent 框架连续登顶 GitHub Trending，"数字员工"与"多智能体协作"成为开源主旋律。
+
+6. **Claude Code 成本透明危机 (03-14)**：用户对"Token 燃烧"和计费不透明的投诉集中爆发，社区开发 `claudetop` 等实时监控工具填补空白，成本控制成为 AI 工具核心痛点。
 
 ---
 
 ## 2. CLI 工具进展
 
-### Claude Code
-- **核心动态**：MCP Elicitation 交互能力发布（03-16），Windows 平台危机持续（WebSocket 桥接、进程误杀）
-- **技术债务**：TUI 渲染顽疾、1M 上下文性能衰减争议、复制格式问题 #18170 跨周发酵
-- **社区信号**：AGENTS.md 标准化倡议获压倒性支持，插件生态单日 4 PR 活跃
+### 整体态势
+AI CLI 工具本周完成从"代码助手"向"自主 Agent 平台"的关键跃迁。**MCP (Model Context Protocol)** 已成为连接外部工具的事实标准，但**资源消耗失控**（内存泄漏、Token 燃烧）与**系统稳定性**成为制约用户体验的核心瓶颈。
 
-### OpenAI Codex
-- **架构重构**：TUI → app-server 迁移进入深水区，Intel Mac 支持成历史级痛点
-- **安全迭代**：Guardian 安全机制持续迭代，运行时权限申请 `request_permissions` 上线
-- **信任危机**：Token 计费透明度争议 #13568 达 325 评论，欧洲连接稳定性 #14209 未解
+### 各工具关键动态
 
-### Gemini CLI
-- **爆发式增长**：本周累计 20+ 版本迭代，社区贡献 1:1 Issue-PR 比显示生态活力
-- **架构升级**：ADK 迁移完成，模块化代理设计确立技术路线
-- **功能亮点**：Agent `/plan` 模式可靠性危机中重构任务追踪系统，LSP 语义分析新功能上线
-
-### GitHub Copilot CLI
-- **质量回退**：v1.0.5 引发"回归灾难"，终端闪烁/滚动条消失/后台代理失效三连击
-- **战略转型**：Extensions 生态正式开放，平台化战略落地但执行失稳
-- **长期挑战**：MCP 分层配置呼声高，模型路由架构需求浮现
-
-### 国产工具（Kimi / Qwen / OpenCode）
-| 工具 | 本周焦点 | 关键进展 |
+| 工具 | 核心进展 | 关键问题 |
 |:---|:---|:---|
-| **Kimi CLI** | 跨平台兼容性攻坚 | v1.22.0 修复 Windows 并发写入，IDE ACP 配置文档改进，Plan Mode 对标 Trae/Cursor |
-| **Qwen Code** | Windows 体验修复 + 本地模型 | v0.12.3-nightly 支持 LM Studio/Ollama 动态发现，`/review` 技能开箱即用 |
-| **OpenCode** | 计费信任危机 + 内存泄漏 | #8030 计费异常 179 评论，社区协同修复内存泄漏，Effect 类型安全架构重构 |
+| **Claude Code** | 发布 v2.1.76，强化 MCP Elicitation 机制与企业级 Hooks | 认证故障积压，AGENTS.md 标准化诉求强烈 (3217 👍) |
+| **OpenAI Codex** | 底层 Rust 架构重构，迁移至 TUI/App Server 分离模式 | 连接稳定性危机，Intel Mac 支持缺失 |
+| **Gemini CLI** | 发布 v0.34.0，引入原生沙箱与可视化调试 | Plan Mode 故障频发，配额异常耗尽报告 |
+| **Copilot CLI** | Extensions 平台正式上线 | v1.0.5 引发 UI 闪退，开发团队处于静默期 |
+| **Qwen Code** | 发布 v0.12.3，新增代码审查与多模型支持 | Windows 平台基础功能大面积失效 |
+| **OpenCode** | 社区修复爆发，解决严重内存泄漏 | Copilot 配额耗尽问题悬而未决 |
+
+### 共性趋势
+- **AGENTS.md 标准化**：跨工具配置共享的诉求从 Claude Code 蔓延至全生态
+- **成本透明化**：实时 Token 监控与配额管理成为刚需
+- **本地模型支持**：LM Studio/Ollama 集成成为标配功能
 
 ---
 
 ## 3. AI Agent 生态
 
-> **注**：输入材料中未包含 OpenClaw 及同赛道项目的具体动态，以下为基于 CLI 工具 Agent 能力的推断分析。
+### OpenClaw 周报
+- **版本**：v2026.3.8 → v2026.3.13-1，经历多次紧急修复
+- **核心问题**：WebSocket 劫持漏洞修复、Kimi 模型配置验证失败、Cron 系统崩溃
+- **架构演进**：引入企业级密钥管理（Vault/AWS/Azure/1Password）、A2A 代理通信协议
+- **社区状态**：500+ Issues/PRs 日更，待合并 PR 积压严重 (362+)
 
-### 子代理/多 Agent 架构成为共识方向
-- **Claude Code**：MCP 子代理权限隔离 #24841/26252，调度任务支持 MCP 工具
-- **Gemini CLI**：子代理工具隔离 PR #21935，A2A 安全确认机制
-- **Kimi CLI**：实时干预 PR #1422，多 Agent 并发限流 #1383
-- **OpenCode**：Agent Teams #12661（86👍），委托层级与预算控制 #7756
-- **Qwen Code**：Agent Team #1815，Arena 竞技场 #1912，细粒度权限系统 #2283
-
-### 关键趋势
-- **从对话工具向"可编排的自主智能体平台"跃迁**
-- **权限隔离与预算控制**成为多 Agent 系统的核心基础设施
-- **运行时状态监控**需求觉醒（Gemini 性能监控工具、Codex Guardian）
+### 同赛道项目动态
+| 项目 | 定位 | 本周亮点 |
+|:---|:---|:---|
+| **OpenViking** (字节) | Agent 上下文数据库 | 文件系统范式管理记忆与技能，单日涨星 1877 |
+| **page-agent** (阿里) | Web GUI Agent | JavaScript 页面级控制，自然语言操控 Web |
+| **agency-agents** | 多智能体团队 | "AI 机构"完整方案，单日涨星 5758 |
+| **InsForge** | Agent 后端基础设施 | 提供数据库/API/部署全栈能力 |
 
 ---
 
 ## 4. 开源趋势
 
-### GitHub Trending 技术方向
-| 方向 | 热度指标 | 代表动态 |
-|:---|:---|:---|
-| **MCP 协议生态** | 7/7 工具全覆盖 | 从"能用"到"好用"，token 效率即生产力 |
-| **Rust 重构 CLI 核心** | Codex 6-7 Alpha/日 | 性能与安全性的底层架构升级 |
-| **本地/私有化部署** | Qwen/OpenCode 重点投入 | LM Studio/Ollama 动态发现，离线能力成差异化卖点 |
-| **TUI 架构现代化** | 全行业痛点 | 终端闪烁/滚动/渲染稳定性跨工具爆发 |
-| **配置标准化（AGENTS.md）** | 3140 👍 年度热度 | 跨工具项目级配置共识形成中 |
+### 技术方向
 
-### 社区情绪关键词
-- **焦虑**：Windows 平台体验、计费透明度、长上下文实际可用性
-- **期待**：MCP 生态成熟、远程会话同步、手机审批工作流
-- **疲惫**：TUI 渲染顽疾、版本回退、重复的基础设施问题
+**1. Agent 基础设施全面成熟**
+- `BitNet` (微软)：1-bit LLM 推理框架，端侧高效部署里程碑
+- `lightpanda`：专为 AI 设计的无头浏览器
+- `claude-plugins-official`：Anthropic 官方插件生态标准化
+
+**2. 多智能体协作系统**
+- 从单一 Agent 向"虚拟团队"演进
+- 群体智能 引爆关注
+- 技能插件化成为共识 (`claude-skills` 169 个插件库)
+
+**3. 上下文与记忆层**
+- Agent 记忆管理成为新基建热点
+- 极简 RAG 与 All-in-One 方案并存
+
+### 本周 GitHub Trending 代表项目
+| 项目 | 单日涨星 | 核心价值 |
+|:---|:---:|:---|
+| msitarzewski/agency-agents | +5758 | 完整"AI 机构"方案 |
+| openclaw/openclaw | +9080 | 开源 Claude Code 替代 |
+| microsoft/BitNet | +2223 | 1-bit LLM 推理 |
+| lightpanda-io/browser | +2100 | AI 专用浏览器 |
+| volcengine/OpenViking | +1877 | Agent 上下文数据库 |
 
 ---
 
-## 5. HN 社区热议（推断）
+## 5. HN 社区热议
 
-基于 CLI 工具社区动态映射 HN 典型讨论模式：
+### 核心话题
 
-| 话题 | 情绪倾向 | 核心论点 |
-|:---|:---|:---|
-| **"Claude Code vs OpenAI Codex 企业选哪个"** | 🔥 激烈 | 计费透明度 vs 架构前瞻性，Windows 稳定性成决定性因素 |
-| **"AGENTS.md 会取代 .cursorrules 吗"** | 🤔 审慎乐观 | 标准化收益 vs 厂商锁定担忧，Anthropic 主导权争议 |
-| **"为什么所有 AI CLI 的 Windows 支持都这么烂"** | 😤 愤怒 | 开发者平台歧视、WSL 不是答案、原生 PowerShell 需求 |
-| **"Gemini CLI 的爆发是 Google 认真了还是泡沫"** | 📈 观望 | ADK 架构长期价值 vs 短期迭代噪音，社区贡献可持续性 |
-| **"OpenCode 计费事故：开源工具商业化的信任鸿沟"** | ⚠️ 警示 | 透明审计机制、用户数据主权、替代方案迁移成本 |
+**1. Claude Code 工程实践 (热度最高)**
+- "睡觉时运行的 Agent" 获 185 分高赞
+- 深度分析 1,573 个 Claude Code 会话
+- 情绪分化：效率革命 vs "告别 Claude" 争议
+
+**2. LLM 能力瓶颈辩论**
+- SWE-bench 进步停滞质疑
+- "LLM 是否在变好？"引发激烈技术讨论
+
+**3. AI 安全与地缘政治**
+- Anthropic vs 五角大楼诉讼主导讨论
+- AI 智能体安全框架 (`AgentArmor`) 受关注
+
+**4. 工程化降本**
+- Prompt 缓存自动化 (90% token 节省)
+- Context Gateway 压缩中间件
+- `claudetop` 实时成本监控工具
+
+### 社区情绪
+- **兴奋**：Agent 自动化工作流潜力
+- **焦虑**：AI 对程序员职业的冲击
+- **务实**：从模型崇拜转向工程落地
 
 ---
 
 ## 6. 官方动态
 
 ### Anthropic
-- **Claude Code v2.1.72-2.1.76** 密集迭代：企业代理增强、MCP 隔离/懒加载、Hook 完整性守卫安全插件
-- **AGENTS.md 倡议**：通过社区议题 #3140 推动跨工具配置标准化，未正式官方背书但信号明确
-- **Claude Code Skills 仓库**：插件生态活跃度提升，单日 4 PR 合并
+
+| 内容 | 日期 | 信号解读 |
+|:---|:---|:---|
+| **Claude Opus 4.5 发布** | 03-14 | 全球最强编码/计算机使用模型，定价降至 $5/$25/M tokens |
+| **1M Context 全量开放** | 03-14 | Opus 4.6/Sonnet 4.6 默认 100 万上下文 |
+| **Claude Partner Network** | 03-12 | 投入 1 亿美元构建企业级生态，云中立策略对抗 OpenAI |
+| **悉尼办公室成立** | 03-10 | 亚太第四站，锁定金融/农业/清洁能源领域 |
+| **Firefox 安全合作** | 03-09 | Claude Opus 4.6 两周发现 22 个漏洞，开辟网络安全 B2B |
 
 ### OpenAI
-- **Codex v0.113.0-0.115.0** 连续 Alpha：Rust 架构重构、app-server v2 迁移、Guardian 安全机制
-- **未回应核心诉求**：#13568 计费透明度 325 评论无官方回复，欧洲连接稳定性 #14209 持续
-- **战略信号**：TUI → app-server 架构迁移暗示远程会话/多设备协同长期布局
+
+| 内容 | 日期 | 信号解读 |
+|:---|:---|:---|
+| **GPT-5.4 全系列发布** | 03-15 | 5.4 (通用)、5.2 (Science/Math)、5.3 Codex (Spark/Max) |
+| **Responses API** | 03-16 | 从 `chat.completions` 升级为 `responses`，承载复杂 Agent 循环 |
+| **Computer Environment** | 03-16 | 托管虚拟机环境，API 原生支持 Computer Use |
+| **Codex Agent 生态** | 03-15 | "Unrolling The Codex Agent Loop"，代码生成升级为智能体工作流 |
+| **Promptfoo 收购** | 03-10 | 整合 LLM 红队测试与对抗性评估能力 |
+
+### 战略对比
+
+| 维度 | Anthropic | OpenAI |
+|:---|:---|:---|
+| **定位** | "最好的模型" | "最全的平台" |
+| **策略** | 云中立、生态合作、成本下降 | 平台锁定、垂直整合、API 原生环境 |
+| **护城河** | 安全性、长上下文、企业信任 | 开发者生态、基础设施、工具链深度 |
 
 ---
 
 ## 7. 下周信号
 
-### 🔴 高风险事件
-| 信号 | 依据 | 影响 |
-|:---|:---|:---|
-| **GitHub Copilot CLI 用户流失加速** | v1.0.5 质量灾难 + 无快速修复响应 | 企业用户向 Claude Code/Codex 迁移 |
-| **OpenCode 计费事件升级** | #8030 讨论密度持续，缺乏官方审计承诺 | 开源工具商业化信任危机蔓延 |
+### 技术趋势
+1. **AGENTS.md 标准化**：预计其他 CLI 工具将跟进支持，跨工具配置共享成为行业共识
+2. **Responses API 生态**：OpenAI 的"响应端点"可能引发 API 架构重构潮
+3. **Computer Environment 竞争**：Anthropic 或将推出"Claude Workspace"应对
 
-### 🟡 关键观察
-| 信号 | 观察指标 | 意义 |
-|:---|:---|:---|
-| **AGENTS.md 标准化进程** | Anthropic 是否官方背书、其他厂商响应 | 行业级协议共识能否跨越社区倡议 |
-| **Gemini CLI ADK 迁移稳定性** | v0.35.0 正式版质量、社区贡献持续性 | Google 能否将迭代速度转化为用户信任 |
-| **Qwen/Kimi 本地模型体验** | LM Studio/Ollama 动态发现实际可用性 | 国产工具"离线能力"差异化是否成立 |
+### 值得关注
+1. **OpenClaw v2026.3.x 修复**：384+ 待合并 PR 可能于下周合并，大规模修复版本将至
+2. **Claude Code AGENTS.md 决定**：社区 3217 👍 的诉求已到临界点，官方回应值得关注
+3. **AI Agent 安全框架**：`AgentArmor` 等安全工具将随 Agent 权限扩大而需求激增
 
-### 🟢 技术前瞻
-| 方向 | 触发条件 | 预期时间 |
-|:---|:---|:---|
-| **远程会话/手机审批工作流** | Claude Code 竞品发布后 Codex #14721 紧急需求 | 2-4 周内 |
-| **MCP 协议 2.0 草案** | 子代理权限隔离实践成熟 | 1-2 个月内 |
-| **Windows 原生支持重构** | 全行业痛点积累至临界点 | 待头部厂商战略优先级调整 |
+### 风险信号
+1. **RL 框架稳定性**：Slime 暴露长时训练稳定性问题，生产环境需谨慎
+2. **AI 编程安全**：依赖包注入风险已现，供应链安全需纳入 Agent 设计
 
 ---
 
-> **周报结语**：2026-W12 是 AI CLI 工具从"功能竞赛"转向"信任竞赛"的关键转折。基础设施可靠性（Windows、计费、TUI）取代模型能力成为用户决策首要因素，MCP 生态治理与多 Agent 架构定义下一代竞争主战场，而 AGENTS.md 标准化倡议标志着行业级协议共识的觉醒。下周核心观察：微软能否挽回 Copilot CLI 信任危机，以及 Anthropic 是否将 AGENTS.md 从社区倡议升级为官方战略。
+## 总结
 
----
-*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*
+> **本周 AI 工具生态完成了从"对话生成"到"操作系统级执行"的范式转移。**
+
+OpenAI 的 Responses API + Computer Environment 组合标志着 Agent 开发的"基础设施阶段"正式开启。与此同时，资源消耗失控、成本透明度缺失、安全护栏薄弱等"成长的烦恼"在全行业集中爆发。
+
+**开发者的关注重心正在转移**：从 Prompt Engineering（提示工程）转向 Environment Engineering（环境工程）与 Cost Engineering（成本工程）。
+
+> 下周的竞争焦点将是：**谁能在提供更强执行力的同时，给出更透明、更可控的成本与安全方案。**

@@ -1,85 +1,102 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.84/85 双版本发布，Windows PowerShell 支持落地",
-      "OpenAI Codex v0.117.0 正式版，插件系统成熟架构重构",
-      "Gemini CLI 修复压缩死循环，治理 280MB+ 内存膨胀",
-      "Qwen Code 33 活跃 Issues 领跑，v0.13.1-preview 攻坚 IDE 稳定性",
-      "Kimi CLI ACP 认证重构，遭遇 JSON Schema 兼容性危机",
-      "OpenCode v1.3.3 发布，Windows ARM64 与 TUI 插件系统双突破"
+      "Claude Code 讨论热度爆表，单日 1300+ 评论领跑社区",
+      "Hooks 系统成刚需，CLI 工具正转型为生产基础设施",
+      "OpenAI Codex 疯狂迭代，6 个 Alpha 版本重构 Rust 核心",
+      "Windows 体验一致性成全行业痛点，权限修复是重点",
+      "国产 Kimi/Qwen 快速跟进，面临标准兼容性双重挑战",
+      "Agent 可靠性成竞争焦点：长记忆、沙箱、错误恢复"
     ],
     "ai-agents": [
-      "OpenClaw 24 小时 500 Issues/500 PRs 极高活跃无新版本",
-      "HTTP 500 故障转移修复合并，避免模型完全失效",
-      "Feishu encryptKey 脱敏安全修复，防止密钥泄露",
-      "SRE 强制分支所有权检查，阻断机器人越权写入",
-      "v2026.3.22+ 版本兼容性断裂，微信插件/图片工具集体故障",
-      "Express 5 路由回归与 OAuth Token 竞争条件亟待修复"
+      "OpenClaw 日更 500+ Issue，社区活跃度爆表但 PR 积压严重",
+      "Fleet 迁移功能上线，OpenClaw 迈向企业级集群部署",
+      "Telegram 渠道 Bug 修复，ACP 文本重复发送问题解决",
+      "国际化需求强烈，多语言支持成用户最关注功能",
+      "CLI 启动自动同步 Schema，彻底解决配置维护痛点",
+      "Podman 部署去 sudo 化，大幅降低部署门槛"
     ],
     "ai-trending": [
-      "Deer-Flow 2394 星登顶，字节开源长周期超级智能体",
-      "AgentScope 437 星升温，可观测多智能体框架受追捧",
-      "Oh-My-Claudecode 598 星，Claude Code 多智能体编排方案",
-      "last30days-skill 2685 星爆发，跨平台研究 Agent Skill",
-      "RuView WiFi 感知 AI 意外走红，AI 向物理世界渗透",
-      "insanely-fast-whisper 1370 星今日爆发，极速语音转录"
+      "字节跳动开源 deer-flow，长周期 SuperAgent 空降热榜",
+      "WiFi 信号做姿态估计，RuView 无需摄像头感知环境",
+      "500 美元显卡跑赢 Claude Sonnet，本地算力挑战云端 API",
+      "Claude Opus 4.6 挖洞效率惊人，单月高危漏洞超人类全年",
+      "Turbolite 实现亚秒级冷查询，S3 直连打破 Serverless 瓶颈",
+      "Claude Code 多智能体编排，oh-my-claudecode 助力团队协作"
     ],
     "ai-web": [
-      "Project Fetch 首次验证 Claude 机器人编程效率提升 2 倍",
-      "Project Vend 两阶段实验，模型迭代显著改进经济代理任务",
-      "Claude Opus 4.6 两周发现 22 个 Firefox 漏洞含 14 个高危",
-      "Mozilla 合作占 2025 年 Firefox 高危漏洞修复总量近五分之一",
-      "OpenAI 官网罕见零更新，单方发布窗口期形成"
+      "Claude 指挥机器狗实验成功，任务速度翻倍验证具身智能",
+      "Claude 自主演进：从经营实体店到发现零日漏洞的跨越",
+      "Anthropic 证实：通用大模型无需微调即可控制未知硬件",
+      "Claude Opus 4.6 联手 Mozilla，单月发现高危漏洞超人类全年",
+      "Project Vend 披露细节：AI 经营实体店出现有趣幻觉",
+      "Project Fetch 证明：非专业人员靠 AI 辅助实现全自主机器人"
     ],
     "ai-hn": [
-      "$500 GPU 开源项目 ATLAS 编码基准超越 Claude Sonnet",
-      "Turbolite 100 分 24 评，S3 亚 250ms 冷启动 JOIN 查询",
-      "AI 一日重写 JSONata 省 50 万美元，53 评论社区分裂",
-      "$7/月 VPS 托管 AI Agent，IRC 作传输层创意方案",
-      "Anthropic 与政府监管冲突，ICE 数据采购引隐私激辩",
-      "Claude Code 会话限制收紧，开发者焦虑情绪蔓延"
+      "美国政府批量购买公民数据，监控资本主义引发恐慌",
+      "500 美元显卡基准测试逆袭，本地算力挑战 Claude Sonnet",
+      "Cloudflare 抛弃容器架构，AI Agent 代码运行提速 100 倍",
+      "SQLite 冷启动优化突破，S3 直接 JOIN 查询进入亚秒级",
+      "Claude 限制令争议升级，五角大楼诉讼引发商业策略讨论",
+      "Sup AI 集成策略突破，在“人类最后考试”中取得佳绩"
+    ],
+    "rl-daily": [
+      "verl 发布多模态 Roadmap，异构计算适配领跑全行业",
+      "OpenRLHF 架构重构：移除 DeepSpeed 全面拥抱 FSDP2",
+      "Slime 攻克 Qwen3.5 FP8 训练与 VLM 权重同步难题",
+      "Archon 引擎支持 FP8 训练与纯 IPv6 网络环境",
+      "TRL 强化 VLM 支持，算法修正与工程响应双提速",
+      "Open Instruct 紧跟 CUDA 12.8，强化大规模训练运维"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.84–85 shipped with Agent Teams",
-      "OpenAI Codex rust-v0.117.0 stable with MCP extraction",
-      "Gemini CLI v0.36.0-preview.4 fixes infinite loops",
-      "8 releases across 5 tools in 24 hours",
-      "MCP now universal interoperability standard",
-      "Terminal UI reliability issues dominate feedback"
+      "Agentic autonomy drives shift to memory and context compression",
+      "Windows support emerges as critical battleground with PowerShell",
+      "Plugin ecosystems become key workflow differentiators",
+      "Claude Code v2.1.84 stable with PowerShell preview",
+      "OpenAI Codex ships 6 alpha releases for Rust hardening",
+      "Token consumption issues cause significant user friction"
     ],
     "ai-agents": [
-      "OpenClaw: 500 issues, 500 PRs in 24 hours",
-      "Stability crisis: versions 2026.3.12–24 crash",
-      "Users advised to pin to 2026.3.8 or earlier",
-      "PR merge rate only 25.6% (quality-focused)",
-      "128 PRs merged today amid firefighting",
-      "Linux/Windows apps still unfulfilled promise"
+      "Extreme activity: 500 issues and 500 PRs in 24 hours",
+      "Version 2026.3.24 introduces breaking changes",
+      "Bug backlog growing faster than resolution rate",
+      "125 PRs updated including fleet migration fixes",
+      "High-velocity development with stability challenges",
+      "375 open PRs signal rapid iteration pace"
     ],
     "ai-trending": [
-      "deer-flow +2,394 stars: ByteDance SuperAgent harness",
-      "last30days-skill +2,685 stars: cross-platform research agent",
-      "RuView +1,002 stars: WiFi-based DensePose sensing",
-      "ollama now supports Kimi-K2.5, GLM-5, MiniMax",
-      "unsloth: 2x faster fine-tuning, 70% less memory",
-      "firecrawl: 98,812 stars for web-to-LLM pipelines"
+      "ByteDance deer-flow: SuperAgent for long-horizon tasks",
+      "last30days-skill synthesizes research from Reddit and X",
+      "RuView leads WiFi sensing perception models",
+      "mem0 spikes as memory layer for agents",
+      "oh-my-claudecode: Teams-first multi-agent orchestration",
+      "Ecosystem shifts to complex autonomous workflows"
     ],
     "ai-web": [
-      "Anthropic published 4 substantial research pieces",
-      "Project Vend Phase Two: Claude 4.0/4.5 economic agent",
-      "Mozilla Firefox: Claude Opus 4.6 found 14 high-severity bugs",
-      "Project Fetch: Claude-trained robot dog in half the time",
-      "OpenAI published zero articles today",
-      "Claude enabling autonomous business operation"
+      "Project Vend Phase 2: Claude Sonnet 4.5 runs business",
+      "Project Fetch accelerates robotics programming",
+      "Claude Opus 4.6 finds Firefox zero-day vulnerabilities",
+      "Claude Code introduces Auto Mode for agentic coding",
+      "Five major Anthropic articles released simultaneously",
+      "Anthropic-Mozilla security partnership revealed"
     ],
     "ai-hn": [
-      "$500 GPU outperforms Claude Sonnet on coding",
-      "Federal judge blocks Pentagon Anthropic supply chain ban",
-      "Claude Code users rage over tightened session limits",
-      "$7 VPS-hosted agents trending on Show HN",
-      "Executable oracles prevent bad LLM code",
-      "Strong appetite for self-hosted AI alternatives"
+      "Anthropic in legal battle with Pentagon",
+      "$500 GPU claims to outperform Claude Sonnet on coding",
+      "Rate limits frustrate Claude Code users",
+      "Sup AI ensemble hits 52% on Humanity's Last Exam",
+      "Skepticism rises over massive AI valuations",
+      "Disney/OpenAI partnership collapse discussed"
+    ],
+    "rl-daily": [
+      "Post-training frameworks drive rapid LLM evolution",
+      "verl expands into multi-modal generation with FlowGRPO",
+      "TRL hardens multimodal RL capabilities",
+      "Classic RL frameworks in maintenance phase",
+      "Hardware heterogeneity focus: NPUs and FP8",
+      "ROCK targets Kubernetes-scale orchestration"
     ]
   }
 }

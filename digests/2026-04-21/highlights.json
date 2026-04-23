@@ -1,134 +1,118 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.116发布，Bedrock回归缺陷引企业阻断",
-      "OpenAI Codex v0.122.0稳定版，令牌消耗Issue达551评论",
-      "Kimi CLI v1.37.0修复subagent无限循环，社区活跃度最高",
-      "Gemini CLI记忆架构重构，从子代理转向提示驱动",
-      "Copilot CLI 24小时零PR，微软内部维护社区参与度极低",
-      "OpenCode主题系统故障集群爆发，国内模型接入需求显著"
+      "OpenAI Codex 发布底层重构版 v0.122.0",
+      "Qwen Code 免费额度骤降引发社区信任危机",
+      "Kimi Code v1.37.0 修复多 Agent 死循环痛点",
+      "Claude Code 收 2003 赞高票吐槽计费与网络沙盒",
+      "Gemini CLI 架构演进，向企业级自动化靠拢",
+      "OpenCode 迭代极速，开放多 Provider 与远程空间"
     ],
     "ai-agents": [
-      "OpenClaw 24小时500 Issues/PRs，338个待合并PR",
-      "SIGKILL兜底终止僵死进程，解决网关重启失败",
-      "Telegram轮询stall阈值90s→300s，消除误重启",
-      "Codex审批策略默认改为on-request，阻断静默执行风险",
-      "单会话lane锁释放，解决回复一次后冻结问题",
-      "空输出turn增加3次重试，覆盖非前沿模型"
+      "OpenClaw 日均处理超 500 Issue 与 PR，吞吐惊人",
+      "核心维护者提交重大 PR 修复 Telegram 连接泄漏",
+      "新增 modelIsFromFallback 标志，防止模型被永久覆盖",
+      "修复无标题图片导致 Webchat 通道崩溃的问题",
+      "修复扩展重载后 Pi Compaction 配置丢失问题",
+      "社区集中攻坚网关多媒体处理与模型回退逻辑"
     ],
     "ai-trending": [
-      "openai-agents-python日增905星，官方多智能体框架登榜",
-      "RuView以WiFi信号实现DensePose，突破摄像头隐私瓶颈",
-      "thunderbolt去厂商锁定，Mozilla背景呼应模型主权觉醒",
-      "DeepGEMM DeepSeek FP8推理内核上榜",
-      "FinceptTerminal金融AI决策工具入选",
-      "worldmonitor AI驱动地缘政治监控受关注"
+      "OpenAI 官方 Agent 框架登榜，日增 909 Star",
+      "DeepSeek 开源 FP8 内核，比肩闭源极致性能",
+      "RuView: 无需摄像头，商用 WiFi 实现姿态估计",
+      "Thunderbolt 主打数据主权，消除供应商锁定",
+      "CopilotKit 推出 AG-UI 协议重塑 Agent 交互",
+      "E2B 为 AI Agent 提供安全真实运行沙箱环境"
     ],
     "ai-web": [
-      "Anthropic与Amazon签十年1000亿美元协议，锁定5GW算力",
-      "Claude Opus 4.7发布，软件工程能力显著跃升",
-      "Opus 4.7首次引入网络安全差异化能力降级机制",
-      "Anthropic已使用超100万颗Trainium2芯片",
-      "OpenAI上线三篇企业AI战略指南，加速商业化渗透",
-      "Anthropic将安全治理从统一限制转向分级能力管理"
+      "Anthropic 联手亚马逊，签百亿美元锁定 5GW 算力",
+      "Claude Opus 4.7 发布，专攻复杂软件工程与视觉",
+      "Anthropic 探索“按能力分级释放”的商业安全双轨制",
+      "更强大的 Claude Mythos 遭限流，作为安全测试垫",
+      "OpenAI 同日连发三份重磅企业 AI 报告加速变现",
+      "Bedrock 推理扩容亚欧，直接对标 Azure 全球布局"
     ],
     "ai-hn": [
-      "NSA绕过黑名单使用Anthropic Mythos模型，434分热议",
-      "AI抵制运动获296分关注，社区信任裂痕显现",
-      "OpenAI启动ChatGPT广告变现引商业博弈讨论",
-      " uncensored模型仍存在隐性约束，对齐伦理争议",
-      "Claude Code命令注入漏洞暴露AI代理安全风险",
-      "Anthropic被指控安装间谍软件桥，隐私批评升温"
+      "Anthropic Mythos 模型疑遭 NSA 违规使用引轩然大波",
+      "GPT-6 发布统一 Symphony 多模态架构，热度遇冷",
+      "开发者实测四大 AI 巨头爬虫流量与反爬策略差异",
+      "HN 热议：为什么资深工程师开始拒绝 AI 生成的 PR",
+      "社区呼吁：不要在你的 Commit 中加上 AI 署名",
+      "Claude 封号与隐私监控疑云引发开发者信任危机"
     ],
-    "ai-ph": [
-      "Gemini Mac客户端298票，Option+Space重新定义桌面AI入口",
-      "Perplexity硬件新品Always on本地计算机指向端侧渗透",
-      "Verdent 2.0以AI技术联合创始人定位获238票高争议",
-      "Avina首个GTM自主Agent，从辅助销售推进至自主获客",
-      "Fixa.dev以vibe coding为核心卖点吸引开发者",
-      "Google Vantage技能评估工具跻身前三"
+    "rl-daily": [
+      "verl 底层彻底重构，全面迈向多模态与全异步架构",
+      "ROCK 发布 v1.6.0，强化 RL 容器沙盒隔离机制",
+      "多模态与 Agentic RL 全面取代纯文本 RLHF 成核心",
+      "Self-Distillation Zero 等前沿 Token 级监督算法落地",
+      "AReaL 重构 HTTP 网关，瞄准千卡规模容错机制",
+      "Slime 极速适配 GLM5 模型与 ARM64 异构算力"
     ],
-    "ai-hf": [
-      "Qwen3.6-35B-A3B首发登顶点赞榜，35B参数仅3B激活",
-      "Claude-4.6 Opus推理蒸馏至Qwen3.5，获2741点赞",
-      "Gemma-4系列累计突破900万次下载，生态统治力显著",
-      "MiniMax-M2.7达30万+下载验证商业化能力",
-      "k2-fsa/OmniVoice语音合成百万级下载成爆款",
-      "uncensored社区微调模型形成显著亚文化现象"
-    ],
-    "ai-community": [
-      "MCP协议企业集成关键缺口被一线实践揭露",
-      "AI代理AWS凭证管理反模式引发零信任讨论",
-      "RAG vs Lucene私有化部署架构权衡受关注",
-      "上下文工程成被忽视的智能体设计核心维度",
-      "推理优化被点明为2026年LLM基础设施隐性主线",
-      "Claude Code跨工程团队治理方案引企业关注"
+    "agent-orch": [
+      "OpenAI 推出 Symphony，官方入局 Agent 编排大战",
+      "Claude Squad 探索多 Claude 终端协同任务管理",
+      "CopilotKit 推出 AG-UI 协议重构人机交互界面",
+      "E2B 推出 Doris 框架，支持多沙箱环境并发执行",
+      "AutoGPT 重磅重构底层，全面拥抱 LLM 函数调用",
+      "CrewAI 发布 Flows 框架，实现事件驱动的多智能体编排"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.116 ships with Bedrock regression",
-      "OpenAI Codex rust-v0.122.0 released",
-      "Gemini CLI leads enterprise mindshare",
-      "All major tools face reliability regressions",
-      "Community pressures Claude Code to open source",
-      "ACP protocol standardization gaining traction"
+      "AI CLI tools shifting to complex multi-agent workflows",
+      "Developers frustrated by token opacity and rate limits",
+      "Windows and WSL platforms facing severe instability",
+      "OpenAI Codex and Kimi CLI iterating fastest on architecture",
+      "Claude Code facing intense pressure for unreleased fixes",
+      "Enterprise constraints emerge as primary adoption battleground"
     ],
     "ai-agents": [
-      "OpenClaw hits 500 issues and 500 PRs in 24h",
-      "Project in stabilization phase, no new releases",
-      "SIGKILL stale process fix merged (#43961)",
-      "314 open issues signal backlog accumulation",
-      "Heavy focus on gateway reliability and security",
-      "Transcript persistence is top work stream"
+      "OpenClaw sees 500 issues and 500 PRs in a single day",
+      "Massive bug reports outpacing OpenClaw maintainers' capacity",
+      "Rapid iteration causing regression spike in OpenClaw plugins",
+      "OpenClaw community merges 168 PRs in active cleanup phase",
+      "Telegram transport overhaul merged via PR #69476 today",
+      "OpenClaw development paused between 2026.4.x releases"
     ],
     "ai-trending": [
-      "openai-agents-python gains 905 stars today",
-      "Thunderbird's thunderbolt adds 675 stars",
-      "DeepGEMM brings FP8 inference optimization",
-      "cognee vector DB gains agent memory traction",
-      "LEANN promises 97% storage savings for edge RAG",
-      "RuView uses WiFi signals for pose estimation"
+      "OpenAI open-sources multi-agent standard `openai-agents-python`",
+      "`openai-agents-python` explodes with +909 GitHub stars today",
+      "`RuView` replaces cameras with commodity WiFi for pose tracking",
+      "DeepSeek's `DeepGEMM` delivers clean FP8 GEMM kernels",
+      "Developers push for decentralized AI via `thunderbolt`",
+      "Open-source Computer-Use Agents surge via `cua` (13.5k stars)"
     ],
     "ai-web": [
-      "Anthropic commits $100B to Amazon over 10 years",
-      "Deal secures up to 5 gigawatts of compute capacity",
-      "Over one million Trainium2 chips already deployed",
-      "Claude Opus 4.7 reaches general availability",
-      "Opus 4.7 positioned as cyber-safer Mythos alternative",
-      "Expansion into Asia/Europe inference regions planned"
+      "Anthropic secures 5GW compute in $100B+ Amazon deal",
+      "Anthropic relies on future Amazon Trainium3 and 4 chips",
+      "Anthropic launches Claude Opus 4.7 for software engineering",
+      "OpenAI pivots hard to enterprise with 3 new business guides",
+      "Project Rainier scales Anthropic to 1 million Trainium2 chips",
+      "Claude Opus 4.7 carefully navigates cybersecurity safeguards"
     ],
     "ai-hn": [
-      "Anti-AI sentiment thread hits 296 points, 292 comments",
-      "Anthropic spyware allegations dominate front page",
-      "OpenAI advertising monetization draws criticism",
-      "GPT-6 Symphony release gets surprisingly muted engagement",
-      "OpenAI service outages spark reliability concerns",
-      "NSA contract controversies fuel privacy skepticism"
+      "Anthropic's \"Mythos\" sparks fierce surveillance debate",
+      "GPT-6 launches a unified text/image/audio/video architecture",
+      "Developers analyze AI crawler impact on Nginx logs",
+      "Cultural pushback grows against AI-generated code submissions",
+      "Deep skepticism over strict AI identity verification",
+      "Anthropic explores \"vibe physics\" for academic research"
     ],
-    "ai-ph": [
-      "Gemini Mac app launches with Option+Space hotkey",
-      "Verdent 2.0 positions AI as technical cofounder",
-      "Perplexity launches Personal Computer product",
-      "Fixa.dev targets non-technical founders",
-      "Google Vantage offers AI skills assessment",
-      "Avina automates enterprise GTM workflows"
+    "rl-daily": [
+      "RL ecosystem split between LLM alignment and classic RL",
+      "RLHF frameworks shift from novel algorithms to engineering",
+      "vLLM frameworks solve distributed weight sync bottlenecks",
+      "Gymnasium, Stable Baselines3, and CleanRL see zero activity",
+      "Memory optimization dominates massive LLM alignment training",
+      "Inference-training decoupling surges in industrial RL"
     ],
-    "ai-hf": [
-      "Jackrong's Qwen3.5-27B-Claude-4.6-Opus leads with 2,741 likes",
-      "Gemma 4 family dominates trending models",
-      "Qwen 3.6 series captures major attention",
-      "Uncensored fine-tune movement stays highly active",
-      "Tencent's HY-Embodied-0.5 pushes physical AI",
-      "OmniVoice surpasses 1 million downloads"
-    ],
-    "ai-community": [
-      "MCP production gaps exposed in real builds",
-      "Stop giving AI agents AWS credentials",
-      "Vercel security incident prompts trust boundary talks",
-      "RAG vs Lucene: classical search sometimes wins",
-      "Earth Day AI sustainability projects flood Dev.to",
-      "Querying neural network weights as graph data"
+    "agent-orch": [
+      "AI agents pivot to multi-agent workflows and deep IDEs",
+      "Agent orchestrators tackle managing complex enterprise auth",
+      "New integrations aim to eliminate vendor lock-in platforms",
+      "Distributed agents struggle with proxy and security configs",
+      "Orchestrators focus on automated autonomous file editing",
+      "Sandboxed execution emerges as a key agent infrastructure"
     ]
   }
 }

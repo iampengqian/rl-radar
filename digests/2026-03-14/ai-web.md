@@ -1,6 +1,6 @@
 # AI 官方内容追踪报告 2026-03-14
 
-> 今日更新 | 新增内容: 526 篇 | 生成时间: 2026-03-14 00:19 UTC
+> 今日更新 | 新增内容: 526 篇 | 生成时间: 2026-03-13 22:04 UTC
 
 数据来源:
 - Anthropic: [anthropic.com](https://www.anthropic.com) — 新增 1 篇（sitemap 共 319 条）
@@ -8,184 +8,80 @@
 
 ---
 
-# AI 官方内容追踪报告 | 2026-03-14
-
-**报告周期**：2026-03-13 增量更新  
-**数据来源**：Anthropic (claude.com / anthropic.com) 、OpenAI (openai.com)
-
----
-
-## 1. 今日速览
-
-**核心事件**：Anthropic 发布 **Claude Opus 4.5**，以 **$5/$25 每百万 token 的定价** 将旗舰级能力大幅下沉，明确锁定"编码、Agent、计算机使用"三大场景；OpenAI 同日爆发式更新 **525 篇内容**，涵盖从 **GPT-5.2/5.3 Codex 系列**、**Sora 2**、**Frontier 科学计划** 到 **与迪士尼、亚马逊、美国国防部** 的战略合作，显示其正从模型供应商向 **全栈 AI 基础设施 + 垂直行业渗透** 转型。双方同日密集发声，标志着 2026 年 Q1 成为 **Agent 能力商业化落地** 的关键分水岭——Anthropic 以性价比和开发者体验切入，OpenAI 则以生态扩张和政策绑定构建护城河。
+**AI 官方内容追踪报告**
+**日期：** 2026-03-14
+**分析时段：** 2026-03-13 增量更新
 
 ---
 
-## 2. Anthropic / Claude 内容精选
+### 1. 今日速览
 
-### 📰 News
-
-| 标题 | 发布日期 | 核心要点 | 链接 |
-|:---|:---|:---|:---|
-| **Introducing Claude Opus 4.5** | 2026-03-13 | **旗舰模型重大升级**：定位"世界最佳编码、Agent 和计算机使用模型"，同时强化深度研究、幻灯片和电子表格处理等日常任务。关键突破在于**定价策略**——$5/$25 每百万 token（输入/输出），较此前 Opus 级别模型大幅降价，明确意图**扩大企业开发者覆盖**。同步更新 Claude Developer Platform、Claude Code 及消费者应用，新增长时运行 Agent 工具、Excel/Chrome/桌面端集成，并解除长对话的上下文限制。 | [anthropic.com/news/claude-opus-4-5](https://www.anthropic.com/news/claude-opus-4-5) |
-
-**战略备注**：这是 Anthropic 首次将 "Opus" 品牌与明确的**企业生产力场景**（Excel、Slides、Spreadsheets）深度绑定，而非仅强调通用智能。措辞中 "a preview of larger changes to how work gets done" 暗示后续将有更激进的**工作流自动化**产品。
+今日 AI 领域迎来里程碑式更新，**Anthropic 正式发布了 Claude Opus 4.5**，重点强化了在复杂编码、智能体以及计算机使用方面的能力，并显著降低了 Opus 级别的 token 成本，显示出其争夺企业级高端市场的决心。与此同时，**OpenAI 官网出现了罕见的大规模内容索引（超过 500 条）**，虽部分页面正文抓取受限，但 URL 结构暴露了其近期在**科学发现（GPT-5 蛋白质合成/物理证明）、企业级生态（Amazon Bedrock/Disney 合作）以及新一代模型（GPT-5.2/5.3 Codex）**上的密集布局。从单篇深度发布到数百篇索引的爆发，标志着双方竞争已从单纯的模型性能比拼，转向**深度科研能力与全栈生态构建**的立体化战争。
 
 ---
 
-## 3. OpenAI 内容精选
+### 2. Anthropic / Claude 内容精选
 
-> 注：OpenAI 今日更新 525 篇内容，以下为按主题聚类的关键信号提取。大量内容为历史文章索引更新，但**标题首次出现的命名实体**具有重要战略指示意义。
-
-### 🔬 Research & Frontier Science
-
-| 标题 | 发布日期 | 核心信号 | 链接 |
-|:---|:---|:---|:---|
-| **Introducing OpenAI Frontier** | 2026-03-13 | 全新品牌线首次亮相，推测为**面向科学研究的专用模型/计算平台**，与后续 "Frontierscience" 多篇内容形成矩阵 | [openai.com/index/introducing-openai-frontier](https://openai.com/index/introducing-openai-frontier) |
-| **GPT 5 Lowers Protein Synthesis Cost** | 2026-03-13 | **GPT-5 首次与生物制造场景关联**，暗示模型能力已延伸至湿实验（wet lab）设计优化 | [openai.com/index/gpt-5-lowers-protein-synthesis-cost](https://openai.com/index/gpt-5-lowers-protein-synthesis-cost) |
-| **New Result Theoretical Physics** | 2026-03-13 | AI 辅助理论物理研究产出**原创数学结果**，与 "Extending Single Minus Amplitudes To Gravitons" 共同指向**高能物理/量子引力**领域的深度介入 | [openai.com/index/new-result-theoretical-physics](https://openai.com/index/new-result-theoretical-physics) |
-| **First Proof Submissions** | 2026-03-13 | 形式化数学证明的**自动化提交 pipeline** 首次公开，与 Lean/Mathlib 生态竞争 | [openai.com/index/first-proof-submissions](https://openai.com/index/first-proof-submissions) |
-
-### 💻 Developer & Codex 生态
-
-| 标题 | 发布日期 | 核心信号 | 链接 |
-|:---|:---|:---|:---|
-| **Introducing GPT 5 2 Codex** / **5.3 Codex** / **5.3 Codex Spark** | 2026-03-13 | **Codex 产品线矩阵化**：5.2（科学数学）、5.3（通用）、5.3 Spark（轻量快速），形成**能力-成本梯度覆盖** | [openai.com/index/introducing-gpt-5-2-codex](https://openai.com/index/introducing-gpt-5-2-codex) |
-| **Introducing Upgrades To Codex** / **Codex Now Generally Available** | 2026-03-13 | Codex 从预览版进入**全面可用**，GA 状态意味着 SLA 和企业级支持就绪 | [openai.com/index/codex-now-generally-available](https://openai.com/index/codex-now-generally-available) |
-| **Introducing The Codex App** | 2026-03-13 | **独立原生应用**发布，脱离 ChatGPT 容器，直接对标 Cursor、Windsurf 等 AI IDE | [openai.com/index/introducing-the-codex-app](https://openai.com/index/introducing-the-codex-app) |
-| **GPT 5 1 Codex Max** | 2026-03-13 | "Max" 后缀暗示**无上限上下文/计算预算**的企业级变体 | [openai.com/index/gpt-5-1-codex-max](https://openai.com/index/gpt-5-1-codex-max) |
-
-### 🎬 Sora & 多模态
-
-| 标题 | 发布日期 | 核心信号 | 链接 |
-|:---|:---|:---|:---|
-| **Sora 2** | 2026-03-13 | **第二代视频生成模型**正式发布，与 "Sora Is Here"（初代）、"Sora System Card" 形成完整产品文档 | [openai.com/index/sora-2](https://openai.com/index/sora-2) |
-| **Disney Sora Agreement** | 2026-03-13 | **与迪士尼达成 Sora 合作协议**，标志影视工业级内容生产的**版权/品牌授权模式**跑通 | [openai.com/index/disney-sora-agreement](https://openai.com/index/disney-sora-agreement) |
-| **Shipping Sora For Android With Codex** | 2026-03-13 | **移动端工程化突破**：Sora 与 Codex 技术栈整合，暗示**端侧视频生成 + 代码生成**的协同场景 | [openai.com/index/shipping-sora-for-android-with-codex](https://openai.com/index/shipping-sora-for-android-with-codex) |
-
-### 🏛️ 政策、安全与机构合作
-
-| 标题 | 发布日期 | 核心信号 | 链接 |
-|:---|:---|:---|:---|
-| **Our Agreement With The Department Of War** | 2026-03-13 | **与美国国防部（Department of War 为历史名称，实指 DoD）达成协议**，国家安全合同正式化 | [openai.com/index/our-agreement-with-the-department-of-war](https://openai.com/index/our-agreement-with-the-department-of-war) |
-| **Amazon Partnership** / **Introducing The Stateful Runtime Environment For Agents In Amazon Bedrock** | 2026-03-13 | **与 AWS 深度集成**：Agent 状态化运行时环境入驻 Bedrock，直接竞争 Anthropic 的 Claude on AWS 布局 | [openai.com/index/amazon-partnership](https://openai.com/index/amazon-partnership) |
-| **Continuing Microsoft Partnership** | 2026-03-13 | 重申微软关系的同时，亚马逊合作的宣布显示**多云战略**已成明牌 | [openai.com/index/continuing-microsoft-partnership](https://openai.com/index/continuing-microsoft-partnership) |
-| **Introducing Prism** | 2026-03-13 | 新品牌首次出现，从命名推测为**多模态理解/视觉分析**专用模型或工具 | [openai.com/index/introducing-prism](https://openai.com/index/introducing-prism) |
-
-### 🎓 教育与企业
-
-| 标题 | 发布日期 | 核心信号 | 链接 |
-|:---|:---|:---|:---|
-| **New Ways To Learn Math And Science In Chatgpt** / **Chatgpt Study Mode** | 2026-03-13 | **教育场景产品化**：Study Mode 与数学/科学学习工具形成**K12-高等教育覆盖** | [openai.com/index/chatgpt-study-mode](https://openai.com/index/chatgpt-study-mode) |
-| **Chatgpt For Teachers** | 2026-03-13 | **教师工作流专用功能**，与 Google Classroom、Microsoft Teams 教育版竞争 | [openai.com/index/chatgpt-for-teachers](https://openai.com/index/chatgpt-for-teachers) |
-| **GPT 5 New Era Of Work** | 2026-03-13 | **企业生产力叙事升级**，直接回应 Microsoft 365 Copilot 和 Anthropic 的办公场景布局 | [openai.com/index/gpt-5-new-era-of-work](https://openai.com/index/gpt-5-new-era-of-work) |
-
-### 🛡️ 安全与对齐
-
-| 标题 | 发布日期 | 核心信号 | 链接 |
-|:---|:---|:---|:---|
-| **Detecting And Reducing Scheming In Ai Models** | 2026-03-13 | **"Scheming"（图谋/策画）首次作为技术术语**进入官方安全研究议程，指模型隐蔽追求非目标优化行为 | [openai.com/index/detecting-and-reducing-scheming-in-ai-models](https://openai.com/index/detecting-and-reducing-scheming-in-ai-models) |
-| **Deliberative Alignment** | 2026-03-13 | **新型对齐方法**密集发布（3 篇重复索引），推测为 o-series 推理模型的**价值观内化机制** | [openai.com/index/deliberative-alignment](https://openai.com/index/deliberative-alignment) |
-| **Reasoning Models Chain Of Thought Controllability** | 2026-03-13 | **思维链可控性**成为独立研究主题，回应外界对 o1/o3 "黑箱推理"的批评 | [openai.com/index/reasoning-models-chain-of-thought-controllability](https://openai.com/index/reasoning-models-chain-of-thought-controllability) |
-| **Ai Agent Link Safety** | 2026-03-13 | **Agent 间通信安全**首次独立成题，预示多 Agent 系统的风险管控框架 | [openai.com/index/ai-agent-link-safety](https://openai.com/index/ai-agent-link-safety) |
+#### **[News] Introducing Claude Opus 4.5**
+*   **发布日期：** 2026-03-13 (注：文中提及 Nov 24, 2025 可能为此版本的内部奠基或初始发布，今日为正式广泛推送或重要迭代更新)
+*   **原文链接：** [https://www.anthropic.com/news/claude-opus-4-5](https://www.anthropic.com/news/claude-opus-4-5)
+*   **核心观点：** Claude Opus 4.5 被定位为全球最擅长**编码**和**计算机使用**的模型，标志着 AI 从"对话者"向"执行者"的深度进化。
+*   **技术细节：**
+    *   **性能突破：** 在真实世界软件工程测试中达到 SOTA（State-of-the-Art），能够处理复杂的多系统 Bug 修复和模糊性推理。
+    *   **成本与定价：** 定价大幅调整至 **$5/$25 per million tokens**，旨在让 Opus 级能力普惠至更多企业和团队，这直接挑战了 OpenAI 的高端模型定价策略。
+    *   **工具链集成：** 深度集成 Claude Code、Excel、Chrome 和桌面端，支持更长上下文的 Agent 运行，解决了"对话撞墙"的问题。
+*   **业务意义：** Anthropic 正在通过"降低顶级智力成本"和"接管工具链"来构建护城河，Opus 4.5 不仅仅是聊天机器人，更是企业的数字化劳动力。
 
 ---
 
-## 4. 战略信号解读
+### 3. OpenAI 内容精选
+*注：今日 OpenAI 数据源显示大量索引页更新，虽正文内容未完全提取，但 URL 路径极具战略分析价值。以下按推测的分类进行整理：*
 
-### 4.1 技术优先级对比
+#### **[Research] 科学前沿与硬核推理**
+OpenAI 似乎正在将其模型能力延伸至基础科学领域，这通常是 AGI（通用人工智能）前夜的标志。
+*   **[GPT-5 Lowers Protein Synthesis Cost](https://openai.com/index/gpt-5-lowers-protein-synthesis-cost/)**
+    *   **信号解读：** 暗示 GPT-5 在生物计算领域取得实质性突破，AI 开始涉足合成生物学，这可能带来科研范式的革命。
+*   **[New Result Theoretical Physics / First Proof Submissions](https://openai.com/index/new-result-theoretical-physics/)**
+    *   **信号解读：** 结合"Extending Single Minus Amplitudes To Gravitons"等 URL，表明模型正在辅助或独立完成高能物理层面的数学证明，推理能力超越代码范畴。
 
-| 维度 | Anthropic | OpenAI |
-|:---|:---|:---|
-| **模型能力** | **垂直深耕**：Opus 4.5 聚焦编码+Agent+计算机使用三合一，强调"无需手把手指导"的自主推理 | **水平扩张**：GPT-5.x 系列矩阵覆盖科学（5.2）、通用（5.3）、极速（Spark）、无限（Max）全梯度 |
-| **产品化路径** | **开发者优先**：API 降价 + Claude Code 工具链 + 桌面端集成，保持"模型即服务"的轻量姿态 | **平台化吞噬**：独立 Codex App、ChatGPT 教育/企业版、Sora 移动端，构建**端到端应用层** |
-| **安全叙事** | 隐含于产品体验（"handles ambiguity and reasons about tradeoffs"），延续低调风格 | **主动定义议程**：Deliberative Alignment、Scheming、Agent Link Safety 等**新造概念**密集输出，争夺安全话语主导权 |
-| **生态绑定** | 多云中立（AWS/GCP/Azure），无独家绑定 | **双边博弈**：同时巩固微软、签约亚马逊、渗透国防部，**不把鸡蛋放在一个篮子里** |
+#### **[Product/Release] GPT-5 系列与 Codex 生态**
+URL 结构揭示了详细的版本号，暗示 OpenAI 已进入精细化运营阶段。
+*   **[Introducing GPT-5 2 Codex / Introducing GPT-5 3 Codex](https://openai.com/index/introducing-gpt-5-2-codex/)**
+    *   **信号解读：** Codex 品牌似乎正在作为独立的产品线回归或强化，且细分出了 Spark、Max 等不同定位的版本，专门针对开发者工具链优化。
+*   **[GPT-5 1 Codex Max / Introducing GPT-5 3 Codex Spark](https://openai.com/index/gpt-5-1-codex-max/)**
+    *   **信号解读：** "Spark"可能代表轻量快速版，"Max"代表高并发或长上下文版。OpenAI 正在构建极其细分的模型矩阵。
 
-### 4.2 竞争态势：议题设置权之争
+#### **[Company/Partnership] 战略联盟与商业化**
+*   **[Amazon Partnership / Introducing The Stateful Runtime Environment For Agents In Amazon Bedrock](https://openai.com/index/amazon-partnership/)**
+    *   **信号解读：** 这是一个重磅信号。OpenAI 可能通过 Amazon Bedrock 提供专属的 Agent 运行环境，打破单一云厂商（Microsoft）依赖，实现多云战略。
+*   **[Disney Sora Agreement / Mattels Iconic Brands](https://openai.com/index/disney-sora-agreement/)**
+    *   **信号解读：** Sora 视频生成模型已获得迪士尼、美泰等顶级 IP 方的授权，标志着视频生成技术通过了版权与合规的"成人礼"，正式进入好莱坞主流制作流程。
 
-**Anthropic 的防御性进攻**：
-- 以 **$5/$25 定价** 将 Opus 能力"民主化"，实质是**用价格杠杆抵消 OpenAI 的品牌势能**
-- "Computer use" 作为差异化标签，早于 OpenAI 的 Operator/Agent 产品落地，**抢占"AI 操作计算机"的心智定义权**
-
-**OpenAI 的饱和式覆盖**：
-- 525 篇内容更新中，**历史文章索引占比极高**，但穿插其中的新命名实体（Frontier、Prism、Codex App、Sora 2）形成**信息轰炸效应**
-- 与迪士尼、国防部、亚马逊的三重签约，构建**"娱乐-国家安全-云计算"的三角合法性**，这是 Anthropic 难以复制的**制度性壁垒**
-
-**关键判断**：OpenAI 正在**定义下一代 AI 的词汇表**（Scheming、Deliberative Alignment、Frontier），而 Anthropic 选择**用产品体验说话**。前者适合资本市场和政策游说，后者利于开发者口碑积累。
-
-### 4.3 对开发者和企业用户的影响
-
-| 用户类型 | 短期影响（3-6 个月） | 长期结构性变化 |
-|:---|:---|:---|
-| **独立开发者** | Claude Opus 4.5 的性价比优势显著，API 成本敏感型项目可能迁移 | Codex App 的成熟将重塑 IDE 选择，VS Code + Copilot vs. Cursor vs. Codex App 三强格局形成 |
-| **企业工程团队** | 需评估 Anthropic 的"长时 Agent"与 OpenAI 的"状态化 Runtime"技术路线差异 | **多云 Agent 部署**成为标配，避免锁定单一供应商 |
-| **科研/教育机构** | GPT-5.2 的科学数学特化 + Study Mode 形成组合拳，学生端渗透加速 | "AI 原生科研"（Frontierscience）可能改变基金申请、论文写作、实验设计的全流程 |
-| **内容/媒体行业** | Sora 2 + 迪士尼协议预示**授权生成内容（Licensed Generative Content）**商业模式成熟 | 传统影视制作 pipeline 的"预演-拍摄-后期"边界模糊，**提示词工程师**进入剧组编制 |
+#### **[Safety/Policy] 对齐与合规**
+*   **[Instruction Hierarchy Challenge / Detecting And Reducing Scheming In Ai Models](https://openai.com/index/instruction-hierarchy-challenge/)**
+    *   **信号解读：** 针对 AI 欺骗人类行为的防御性研究已产品化。OpenAI 正在将"防作恶"机制嵌入模型底层。
 
 ---
 
-## 5. 值得关注的细节
+### 4. 战略信号解读
 
-### 5.1 新兴词汇与概念首次出现
+#### **技术优先级：从"写代码"到"造工具"**
+*   **Anthropic** 今天的发布非常聚焦：**Agent（智能体）和 Computer Use（计算机使用）**。Opus 4.5 的核心卖点不再是"我更聪明"，而是"我能用你的电脑干活"。这表明 Anthropic 认为下一阶段的竞争在于**行动力**而非单纯的认知力。
+*   **OpenAI** 的技术触角则更加发散且底层。从 URL 暴露的信息看，OpenAI 正试图证明其模型（GPT-5 系列）具有**发现新科学知识**的能力（物理、生物），这是为了建立技术神格，维持其" AGI 领跑者"的品牌溢价。
 
-| 术语 | 出现场景 | 潜在含义 |
-|:---|:---|:---|
-| **Scheming** | OpenAI 安全研究标题 | 比 "deception" 更隐蔽的模型行为类别，可能指向**目标错位（misalignment）的高级形式** |
-| **Deliberative Alignment** | 3 篇重复索引 | 区别于 RLHF/Constitutional AI 的**第三代对齐范式**，强调推理过程中的价值观反思 |
-| **Frontier** | 独立品牌线 + "Frontierscience" | 对标 DeepMind 的 AlphaFold/Isomorphic，**科学发现专用模型**的品类命名 |
-| **Prism** | 独立产品/模型 | 光学隐喻暗示**多视角分析、光谱分解、视觉理解**能力 |
-| **Stateful Runtime Environment** | AWS Bedrock 集成 | **Agent 状态持久化**成为基础设施级能力，支持跨会话、跨设备的长期任务 |
+#### **竞争态势：生态围剿 vs. 多元突围**
+*   **Anthropic (生态围剿)：** 通过支持 Amazon Bedrock（根据 OpenAI 的反向信息推测）和降低 API 价格，Anthropic 正在试图成为企业 IT 架构中的标准"智力层"。
+*   **OpenAI (多元突围)：** 令人惊讶的是 "Amazon Partnership" 的出现。如果 OpenAI 真的开始与 AWS 深度集成（提供 Bedrock Agent Runtime），这意味着 Sam Altman 正在摆脱对微软的单一依赖，寻求更广泛的商业覆盖。同时，与 Disney/Mattel 的合作显示其在 C 端和创意产业的统治力。
 
-### 5.2 发布时机与措辞的隐含信号
-
-- **"Nov 24, 2025" 的日期异常**：Anthropic 的 Opus 4.5 公告中标注 "Nov 24, 2025"，但实际发布为 2026-03-13。这可能为：
-  - 模型实际训练完成/内部发布日期，**4 个月的延迟**反映安全评估或计算资源调度压力
-  - 或简单的 CMS 错误，但值得后续验证
-
-- **"Department Of War" 的历史修辞**：OpenAI 使用美国 1947 年前的旧称而非 "Department of Defense"，可能是：
-  - 标题长度优化（DoD 更短，但此处用全称）
-  - 或刻意唤起**战时动员**的叙事框架，为国防合同争取公众接受度
-
-- **525 篇的"索引轰炸"**：OpenAI 一次性更新海量历史内容索引，技术动机可能是：
-  - **SEO 策略**：为新产品（Codex App、Sora 2）建立内链权重
-  - **信息遮蔽**：以噪声稀释真正重要的新发布，降低竞争对手的追踪效率
-  - **系统迁移**：内容管理系统（CMS）重构后的批量重索引
-
-### 5.3 政策与合规动向
-
-- **青少年保护密集更新**："Teen Safety Blueprint"、"Updating Model Spec With Teen Protections"、"Building Towards Age Prediction" 等多篇内容显示，**COPPA 合规和年龄验证**已成为产品设计的硬性约束，可能预示欧盟 DSA 或美国州级立法（如加州 AB 331）的应对。
-
-- **"Our Agreement With The Department Of War" 的并列效应**：与同日发布的 "Disney Sora Agreement" 形成**娱乐-国防**的极端张力，OpenAI 似乎在测试**公众对 AI 军事应用的容忍阈值**。
+#### **对开发者的影响**
+*   **成本红利：** Anthropic 将顶级模型价格压低至 $5/$25，将迫使 OpenAI 重新考虑 GPT-5 系列的定价。
+*   **开发范式转移：** 两家都在强调"Agentic Tools"（Agent 工具）和"Computer Environment"（计算机环境），开发者需要从"Prompt Engineering"（提示词工程）转向"Workflow Design"（工作流设计），学会如何给 AI 分配长时间、跨软件的任务。
 
 ---
 
-## 附录：关键链接汇总
+### 5. 值得关注的细节
 
-### Anthropic
-- Claude Opus 4.5: https://www.anthropic.com/news/claude-opus-4-5
-
-### OpenAI（精选）
-| 主题 | 链接 |
-|:---|:---|
-| OpenAI Frontier | https://openai.com/index/introducing-openai-frontier/ |
-| GPT-5.2 Codex | https://openai.com/index/introducing-gpt-5-2-codex/ |
-| GPT-5.3 Codex | https://openai.com/index/introducing-gpt-5-3-codex/ |
-| Codex App | https://openai.com/index/introducing-the-codex-app/ |
-| Sora 2 | https://openai.com/index/sora-2/ |
-| Disney Sora Agreement | https://openai.com/index/disney-sora-agreement/ |
-| Amazon Partnership / Bedrock Agent Runtime | https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/ |
-| Department of War Agreement | https://openai.com/index/our-agreement-with-the-department-of-war/ |
-| Deliberative Alignment | https://openai.com/index/deliberative-alignment/ |
-| Detecting Scheming | https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/ |
-| GPT-5 Protein Synthesis | https://openai.com/index/gpt-5-lowers-protein-synthesis-cost/ |
-| Frontierscience | https://openai.com/index/frontierscience/ |
-| Prism | https://openai.com/index/introducing-prism/ |
-
----
-
-*报告生成时间：2026-03-14*  
-*下次更新建议关注：OpenAI DevDay 2025 具体议程、Anthropic 的模型上下文长度扩展、双方 Agent 产品的用户留存数据*
-
----
-*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*
+1.  **OpenAI 的"数据大爆炸"：** 今日抓取到的 525 篇"无文本"索引页极其反常。这通常意味着网站后台进行了大规模的**内容迁移、CMS 系统更新或历史数据归档公开**。这可能是为即将到来的 GPT-5 正式发布会做内容库铺垫，确保所有历史论文和产品文档可被索引。
+2.  **"Scheming"（图谋/欺骗）一词的官方化：** 在 OpenAI 的 URL 中出现 "Detecting And Reducing Scheming In Ai Models"。这是 AI Safety 领域的一个深水区词汇，意味着业界关注的焦点已从"幻觉"（无意的错误）转向"欺骗"（有意的误导），这将是未来模型安全评测的核心指标。
+3.  **Codex 的回归与细分：** "GPT-5 2 Codex", "GPT-5 3 Codex Spark" 等 URL 预示着 **Codex 可能不再只是一个底层引擎，而将作为独立面向开发者的品牌重出江湖**，且针对不同场景（快速、最大、标准）进行了极其细致的切割。
+4.  **科学硬核化：** "Lowers Protein Synthesis Cost"（降低蛋白质合成成本）如果属实，意味着 AI 模型的输出不再仅仅是文本或代码，而是**实体世界的物理/生物操作指令**。这大大拓展了 AI 的商业价值边界，从数字服务业延伸至制造业和制药业。

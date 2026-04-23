@@ -1,107 +1,99 @@
 # AI Open Source Trends 2026-03-22
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-22 00:08 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-21 22:01 UTC
 
 ---
 
-# AI Open Source Trends Report — March 22, 2026
+# AI Open Source Ecosystem Trends Report (2026-03-22)
+
+Based on the provided GitHub trending data and topic search results, here is the technical analysis of the AI open-source landscape.
 
 ---
 
 ## 1. Today's Highlights
 
-Today's trending data reveals explosive interest in **Claude Code ecosystem tools**, with two plugins ([claude-hud](https://github.com/jarrodwatts/claude-hud) and [claude-mem](https://github.com/thedotmack/claude-mem)) surging to nearly 1,000 stars each. **Offline-first AI hardware** emerges as a new category with [project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) gaining 2,032 stars for its self-contained survival computer. The **omni-modality inference** space heats up with [vllm-omni](https://github.com/vllm-project/vllm-omni), while [opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) signals growing demand for AI-ready document processing infrastructure. Notably, [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) demonstrates continued appetite for AI-powered automation tools despite its controversial positioning.
+Today's ecosystem is defined by the **"Omni-modal" evolution of inference** and the deep **industrialization of AI Agents**. The trending list is dominated by tools that bridge the gap between raw model capability and actionable utility. **[vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni)** leads the technical charge by extending the high-performance vLLM architecture to native multi-modality (audio/video), signaling a shift beyond text-only inference. On the application front, "Data for AI" is a major theme, with **[opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** addressing the critical bottleneck of PDF parsing for RAG systems. Finally, the "Code Agent" ecosystem is maturing rapidly, evidenced by **[jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)**, which focuses on the observability and management of autonomous coding workflows.
 
 ---
 
 ## 2. Top Projects by Category
 
 ### 🔧 AI Infrastructure
+*Core frameworks, inference engines, and developer tools.*
 
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 73,877 ⭐ | High-throughput LLM inference engine; the [vllm-omni](https://github.com/vllm-project/vllm-omni) variant (+71 today) extends this to omni-modality models |
-| [ollama/ollama](https://github.com/ollama/ollama) | 165,801 ⭐ | Local LLM deployment standard; recently added Kimi-K2.5, GLM-5, MiniMax, gpt-oss support |
-| [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | 970 ⭐ today | Real-time Claude Code visibility plugin—context usage, active tools, agent monitoring |
-| [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | 950 ⭐ today | PDF parser optimized for AI-ready data; addresses critical document-to-LLM pipeline gap |
-| [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | 11,216 ⭐ | Enterprise Java LLM integration with MCP support, filling the JVM ecosystem gap |
-| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | 6,605 ⭐ | Modular Rust framework for production LLM applications |
+*   **[vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni)** [Python] ⭐82 (+82 today)
+    *   An extension of the vLLM framework specifically optimized for efficient inference with omni-modality models (text, audio, video), crucial for the next generation of GPT-4o-style models.
+*   **[opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** [Java] ⭐954 (+954 today)
+    *   A high-performance PDF parser designed to convert complex documents into "AI-ready" data, solving a major bottleneck in enterprise RAG pipelines.
+*   **[ollama/ollama](https://github.com/ollama/ollama)** [Go] ⭐165,790 [topic:llm]
+    *   The standard for local LLM inference, now supporting Kimi-K2.5 and DeepSeek, making it the easiest way to run frontier open-source models locally.
+*   **[picovoice/picollm](https://github.com/Picovoice/picollm)** [Python] ⭐305 [topic:llm-model]
+    *   A specialized library for on-device LLM inference powered by X-Bit quantization, targeting edge computing and IoT scenarios.
 
 ### 🤖 AI Agents / Workflows
+*Frameworks for autonomy, tool use, and multi-agent orchestration.*
 
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [langgenius/dify](https://github.com/langgenius/dify) | 133,867 ⭐ | Production agentic workflow platform; enterprise standard for visual agent building |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 81,835 ⭐ | Web accessibility layer for AI agents—critical infrastructure for computer-use agents |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 69,506 ⭐ | AI-driven software development; autonomous coding agent with sandboxed execution |
-| [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 35,265 ⭐ | Educational "agent harness" from scratch—democratizing Claude Code architecture |
-| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,352 ⭐ | ~400 MCP servers for AI agents; workflow automation with native MCP integration |
-| [trycua/cua](https://github.com/trycua/cua) | 13,209 ⭐ | Open-source infrastructure for computer-use agents across macOS/Linux/Windows |
-| [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | 8,066 ⭐ | Autonomous development loop for Claude Code with intelligent exit detection |
+*   **[jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)** [JavaScript] ⭐957 (+957 today)
+    *   A vital "observability layer" plugin for Claude Code that visualizes context usage and active tools, addressing the "black box" problem in agentic coding.
+*   **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** [TypeScript] ⭐35,244 [topic:ai-agent]
+    *   A nano agent harness demonstrating that simple Bash scripts can power complex agent loops, popular for its lightweight, "zero-dependency" approach to agent architecture.
+*   **[trycua/cua](https://github.com/trycua/cua)** [Python] ⭐13,208 [topic:ai-agent]
+    *   Open-source infrastructure for "Computer-Use Agents," providing sandboxes and benchmarks for agents that control entire desktop OS environments.
+*   **[activepieces/activepieces](https://github.com/activepieces/activepieces)** [TypeScript] ⭐21,351 [topic:ai-agent]
+    *   A workflow automation tool integrating MCP (Model Context Protocol) servers, bridging the gap between traditional RPA (Robotic Process Automation) and AI agents.
+*   **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** [JavaScript] ⭐94,001 [topic:llm]
+    *   A comprehensive optimization system for AI coding agents, focusing on memory, instincts, and security for platforms like Claude Code and Cursor.
 
 ### 📦 AI Applications
+*Vertical solutions, creative tools, and end-user products.*
 
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) | 2,032 ⭐ today | Self-contained offline survival computer with embedded AI—novel hardware+AI category |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 41,998 ⭐ | Unified AI productivity studio with 300+ assistants; strong Chinese market presence |
-| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,351 ⭐ | Multi-platform AI assistant (WeChat, DingTalk, Feishu, QQ); "CowAgent" with active planning |
-| [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 33,544 ⭐ | Self-hostable "AI second brain" with deep research and scheduled automations |
-| [FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) | 283 ⭐ today | Automated online monetization—controversial but signals AI automation demand |
-| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 9,937 ⭐ | Industrial-grade AI film/video production platform; Hollywood-standard workflows |
+*   **[Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)** [TypeScript] ⭐2054 (+2054 today)
+    *   A "survival computer" concept combining offline knowledge bases with local AI capabilities, reflecting the growing demand for resilient, offline-first personal intelligence systems.
+*   **[saturndec/waoowaoo](https://github.com/saturndec/waoowaoo)** [TypeScript] ⭐9,931 [topic:ai-agent]
+    *   An industrial-grade AI platform for controllable film and video production, representing the shift from generative "toys" to professional media workflows.
+*   **[FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)** [Python] ⭐379 (+379 today)
+    *   An automation framework for online business generation, reflecting the high demand for AI-driven solopreneurship and e-commerce tools.
 
 ### 🧠 LLMs / Training
+*Model training, fine-tuning, and experimentation.*
 
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,207 ⭐ | Foundational model framework; now covering text, vision, audio, multimodal |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 68,843 ⭐ | Unified fine-tuning for 100+ LLMs/VLMs; ACL 2024, production-standard |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | 57,353 ⭐ | Web UI for local training/running of Qwen, DeepSeek, gpt-oss, Gemma |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 88,921 ⭐ | Educational PyTorch implementation; enduring popularity for understanding fundamentals |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 94,233 ⭐ | Performance optimization system for agent harnesses across Claude, Codex, Cursor, OpenCode |
+*   **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** [Jupyter Notebook] ⭐88,913 [topic:ml]
+    *   The definitive educational resource for building LLMs in PyTorch step-by-step, maintaining relevance as developers seek to understand model internals deeply.
+*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐68,843 [topic:llm]
+    *   A unified framework for efficient fine-tuning of 100+ LLMs, essential for adapting frontier models to specific tasks without retraining from scratch.
+*   **[unslothai/unsloth](https://github.com/unslothai/unsloth)** [Python] ⭐57,337 [topic:llm]
+    *   A high-performance tool for training and running models locally, noted for its speed and memory efficiency on consumer hardware.
 
 ### 🔍 RAG / Knowledge
+*Vector databases, retrieval, and context management.*
 
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 75,725 ⭐ | Leading open-source RAG engine fusing retrieval with agent capabilities |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 47,844 ⭐ | Document agent and OCR platform; evolving beyond pure RAG to agentic documents |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 50,627 ⭐ | Universal memory layer for AI agents—critical for long-horizon agent tasks |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 39,109 ⭐ | Claude Code session memory with AI compression; +970 stars today |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,441 ⭐ | Cloud-native vector database; scalable ANN search for enterprise RAG |
-| [qdrant/qdrant](https://github.com/qdrant/qdrant) | 29,762 ⭐ | High-performance vector search; Rust-based with hybrid search capabilities |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 14,449 ⭐ | Knowledge engine for agent memory in 6 lines—simplifying graph RAG |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 22,508 ⭐ | Vectorless, reasoning-based RAG—challenging embedding-heavy paradigms |
+*   **[memvid/memvid](https://github.com/memvid/memvid)** [Rust] ⭐13,541 [topic:vector-db]
+    *   An innovative approach to agent memory that replaces complex RAG pipelines with a serverless, single-file memory layer for instant retrieval.
+*   **[Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm)** [JavaScript] ⭐56,564 [topic:vector-db]
+    *   An all-in-one, privacy-first desktop application for RAG, allowing users to chat with their documents locally with minimal setup.
+*   **[run-llama/llama_index](https://github.com/run-llama/llama_index)** [Python] ⭐47,842 [topic:vector-db]
+    *   The leading data framework for connecting custom data to LLMs, recently expanding into advanced document agent capabilities and OCR.
+*   **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐22,504 [topic:vector-db]
+    *   A "Vectorless" document index using reasoning-based retrieval, challenging the standard embedding-heavy RAG paradigm.
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**The Claude Code Ecosystem Explosion** is the dominant signal today. Three distinct projects ([claude-hud](https://github.com/jarrodwatts/claude-hud), [claude-mem](https://github.com/thedotmack/claude-mem), [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)) collectively demonstrate that Anthropic's CLI coding tool has spawned a vibrant plugin economy. This mirrors the VS Code extension marketplace emergence—developers are building visibility, memory, and educational layers atop Claude Code's agent harness architecture.
+**1. The Rise of "Observability" for Code Agents**
+As AI coding agents (like Claude Code, Cursor, OpenHands) become autonomous developers, the community is shifting focus from *generation* to *management*. The explosive popularity of **[claude-hud](https://github.com/jarrodwatts/claude-hud)** and **[everything-claude-code](https://github.com/affaan-m/everything-claude-code)** indicates a new market need: "Agent Harnesses." Developers now need dashboards to monitor context window usage, tool calls, and progress in real-time. This signals that AI coding has entered the "production engineering" phase, where reliability and monitoring are as important as the model's coding ability.
 
-**Offline-First AI Hardware** represents a genuine new category. [project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)'s 2,032-star surge for a "self-contained, offline survival computer" suggests post-cloud AI deployment scenarios gaining traction—possibly driven by geopolitical concerns, privacy demands, or disaster preparedness narratives.
+**2. "Omni-Modality" enters the Open Source Stack**
+The debut of **[vllm-omni](https://github.com/vllm-project/vllm-omni)** signifies that inference engines are moving beyond text. With the industry trend led by GPT-4o and Gemini 1.5, the open-source stack is rapidly adapting to serve models that natively process audio and video. This allows developers to build voice-to-voice or video-to-video applications without stitching together separate ASR (Automatic Speech Recognition) and TTS (Text-to-Speech) pipelines.
 
-**MCP (Model Context Protocol) Mainstreaming** is accelerating. Multiple projects ([activepieces/activepieces](https://github.com/activepieces/activepieces), [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j)) now explicitly advertise MCP support, indicating Anthropic's protocol is becoming the de facto standard for agent-tool integration—surpassing OpenAI's function calling in ecosystem momentum.
-
-**Omni-Modality Inference** emerges as infrastructure priority. [vllm-omni](https://github.com/vllm-project/vllm-omni) follows Google's Gemini 2.0 and OpenAI's GPT-4o releases, with the community racing to build efficient serving for native audio/video/image/text models.
-
-**Vectorless RAG** challenges established paradigms. [PageIndex](https://github.com/VectifyAI/PageIndex)'s "reasoning-based" approach and [LEANN](https://github.com/yichuan-w/LEANN)'s 97% storage savings suggest growing skepticism about embedding-heavy architectures, particularly for edge deployment.
+**3. RAG is Evolving into "Structured Memory"**
+We are seeing a bifurcation in RAG technology. On one side, heavy parsing tools like **[opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** tackle the dirty work of unstructured data. On the other, projects like **[memvid](https://github.com/memvid/memvid)** and **[PageIndex](https://github.com/VectifyAI/PageIndex)** are questioning the supremacy of vector databases. The trend is moving toward "Reasoning-based Retrieval" and "Vectorless" approaches, suggesting that future AI memory might rely more on structured logic and efficient file formats than on pure vector similarity.
 
 ---
 
 ## 4. Community Hot Spots
 
-- **[claude-hud](https://github.com/jarrodwatts/claude-hud) & [claude-mem](https://github.com/thedotmack/claude-mem)** — The first wave of Claude Code plugins indicates a platform shift; early movers in this ecosystem will define standards for agent observability and memory persistence.
-
-- **[project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)** — Offline AI hardware is uncharted territory; this project's survival-computer positioning may expand to enterprise air-gapped deployments.
-
-- **[opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** — PDF-to-AI pipelines remain brittle; this project's "AI-ready data" focus addresses a genuine production bottleneck that existing tools (PyPDF, unstructured) haven't solved.
-
-- **[vllm-omni](https://github.com/vllm-project/vllm-omni)** — Omni-modality serving is the next infrastructure battleground; vLLM's extension here validates native multimodal as the default architecture, not bolt-on.
-
-- **[PageIndex](https://github.com/VectifyAI/PageIndex)** — "Vectorless RAG" challenges $100M+ in vector DB funding; if reasoning-based retrieval proves viable, it reshapes the knowledge layer stack entirely.
-
----
-
----
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*
+*   **Code Agent Observability**: With the release of tools like Claude Code, building "HUDs" (Heads-Up Displays) and memory layers for coding agents is a rapidly growing niche. Developers should watch **[claude-hud](https://github.com/jarrodwatts/claude-hud)** as a prime example.
+*   **PDF to Markdown/JSON**: The "PDF problem" remains the biggest hurdle for enterprise AI. **[opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** is riding a wave of interest in converting legacy documents into LLM-ready formats.
+*   **Offline/Resilient AI**: The concept of "Prepper AI"—systems that work offline in low-connectivity environments—is gaining traction, highlighted by **[project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)**.
+*   **Computer-Use Agents (CUA)**: Infrastructure for agents that control operating systems (mouse/keyboard) is heating up. **[trycua/cua](https://github.com/trycua/cua)** is a key project to watch for OS-level automation.

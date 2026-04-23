@@ -1,96 +1,94 @@
 # AI Open Source Trends 2026-04-02
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-02 00:10 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-01 22:08 UTC
 
 ---
 
-# AI Open Source Trends Report — April 2, 2026
+# AI Open Source Ecosystem Trends Report (2026-04-02)
 
----
+Based on the provided GitHub data, I have filtered out non-AI repositories (e.g., `axios`, `netdata`, `Julia`, general CS courses) and categorized the remaining projects to analyze the current state of the ecosystem.
 
 ## 1. Today's Highlights
-
-**Claude Code dominates the trending charts** with explosive growth (+10,749 stars), signaling massive developer interest in terminal-native AI coding agents. Anthropic's official release has triggered an ecosystem response: companion projects like `claude-howto` (+3,301 stars) and `everything-claude-code` (130K+ total stars) are surging as developers race to build tooling, tutorials, and performance optimizations around this new agent interface. Simultaneously, OpenAI's `codex` (+2,390 stars today) confirms that **terminal-based coding agents are now a validated product category** with multiple major players competing. Microsoft's `VibeVoice` (+1,685 stars) suggests voice AI remains an active frontier, while Google's `timesfm` continues steady growth for specialized foundation models.
+The most significant development today is the explosive rise of **Agentic Coding Tools**, with `anthropics/claude-code` gaining over 10,000 stars in a single day, signaling a massive shift toward AI-native developer environments. Alongside this, the ecosystem is rapidly maturing around the **Model Context Protocol (MCP)** and agent memory layers, as seen in the traction for tools like `activepieces` and `claude-mem`. There is also a notable trend toward "System 2" reasoning in data retrieval, evidenced by the new "Vectorless RAG" approach in `PageIndex`. Finally, OpenAI's `codex` (Rust) re-emergence suggests a competitive push for lightweight, high-performance local coding agents.
 
 ---
 
 ## 2. Top Projects by Category
 
-### 🔧 AI Infrastructure
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | 0 (+10,749 today) | Official Anthropic terminal agent—defines the new standard for codebase-aware AI assistance with natural language command execution |
-| [openai/codex](https://github.com/openai/codex) | 0 (+2,390 today) | OpenAI's lightweight Rust-based coding agent, validating the terminal-agent category and creating direct competition |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 74,939 | High-throughput LLM inference engine, critical infrastructure for production AI deployments |
-| [ollama/ollama](https://github.com/ollama/ollama) | 166,702 | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax, DeepSeek—expanding beyond Western models |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 131,968 | Rebranded as "the agent engineering platform," pivoting toward agent-native development |
+### 🔧 AI Infrastructure (Frameworks, Inference, Dev Tools)
+*Focus: High-performance serving, Rust adoption, and CLI tools.*
 
-### 🤖 AI Agents / Workflows
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 130,942 | "Agent harness performance optimization system"—ecosystem tooling emerging around Claude Code with skills, memory, and security layers |
-| [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 46,394 | Educational "nano claude code" implementation—signals demand for understanding agent internals |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 85,516 | Web automation for AI agents, enabling agents to interact with any website |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 70,383 | AI-driven development platform, broader scope than single-file coding agents |
-| [trycua/cua](https://github.com/trycua/cua) | 13,353 | Computer-Use Agents infrastructure—sandboxes and SDKs for desktop-controlling agents |
+*   **[openai/codex](https://github.com/openai/codex)** [Rust] ⭐2,345 (+2,345 today)
+    *   A lightweight, Rust-based coding agent that runs in the terminal, offering a high-performance alternative to Python-based agents.
+*   **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐74,937
+    *   The industry standard for high-throughput and memory-efficient LLM inference and serving.
+*   **[microsoft/VibeVoice](https://github.com/microsoft/VibeVoice)** [Python] ⭐1,704 (+1,704 today)
+    *   A new "Frontier Voice AI" release from Microsoft, indicating a push towards more naturalistic audio interfaces for agents.
+*   **[ollama/ollama](https://github.com/ollama/ollama)** [Go] ⭐166,701
+    *   The go-to tool for running local models (Kimi, DeepSeek, Qwen, etc.), simplifying local deployment for developers.
+*   **[0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)** [Rust] ⭐6,743
+    *   An emerging framework for building modular LLM applications in Rust, catering to the performance-centric side of the AI stack.
 
-### 📦 AI Applications
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice) | 0 (+1,685 today) | "Open-Source Frontier Voice AI"—Microsoft's entry into voice foundation models |
-| [langgenius/dify](https://github.com/langgenius/dify) | 135,376 | Production-ready agentic workflow platform, strong enterprise adoption |
-| [open-webui/open-webui](https://github.com/open-webui/open-webui) | 129,568 | User-friendly AI interface supporting multiple backends, democratizing LLM access |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 42,724 | AI productivity studio with 300+ assistants, unified frontier LLM access |
-| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,698 | Multi-platform AI assistant (WeChat, Feishu, DingTalk, QQ)—China-centric deployment |
+### 🤖 AI Agents & Workflows
+*Focus: Terminal-based agents, multi-agent orchestration, and browser automation.*
 
-### 🧠 LLMs / Training
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 45,295 | Train 64M-parameter GPT from scratch in 2 hours—democratizing LLM training education |
-| [google-research/timesfm](https://github.com/google-research/timesfm) | 0 (+380 today) | Google's time-series foundation model, specialized domain pretraining |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,747 | Educational implementation of ChatGPT-like LLM, sustained popularity |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 69,352 | Unified fine-tuning for 100+ LLMs/VLMs, production-grade training infrastructure |
-| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,653 | Core model-definition framework, essential infrastructure for the ecosystem |
+*   **[anthropics/claude-code](https://github.com/anthropics/claude-code)** [Shell] ⭐10,087 (+10,087 today)
+    *   An agentic coding tool that lives in the terminal, capable of handling complex git workflows and codebase understanding via natural language.
+*   **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** [JS] ⭐130,805
+    *   An optimization system for agent harnesses, focusing on memory, security, and "research-first" development for coding agents.
+*   **[browser-use/browser-use](https://github.com/browser-use/browser-use)** [Python] ⭐85,509
+    *   A leading library making websites accessible to AI agents, enabling automated online task execution.
+*   **[activepieces/activepieces](https://github.com/activepieces/activepieces)** [TypeScript] ⭐21,512
+    *   An AI workflow automation tool heavily integrating MCP (Model Context Protocol) servers to connect agents with external tools.
+*   **[trycua/cua](https://github.com/trycua/cua)** [Python] ⭐13,353
+    *   Open-source infrastructure for "Computer-Use Agents," providing sandboxes to train agents to control full desktop OSs.
 
-### 🔍 RAG / Knowledge
-| Project | Stars | Description |
-|--------|-------|-------------|
-| [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | 57,341 | "All-in-one AI productivity accelerator"—privacy-first, on-device RAG |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 23,543 | "Vectorless, Reasoning-based RAG"—potential paradigm shift away from pure vector search |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 14,848 | Knowledge engine for AI agent memory in 6 lines of code—memory layer abstraction |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 51,705 | Universal memory layer for AI agents, cross-platform agent memory |
-| [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 10,385 | 97% storage savings for private RAG—efficiency breakthrough for edge deployment |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 76,815 | RAG + Agent fusion engine, "superior context layer for LLMs" |
+### 🧠 LLMs & Training
+*Focus: Foundation models, time-series forecasting, and educational implementations.*
+
+*   **[google-research/timesfm](https://github.com/google-research/timesfm)** [Python] ⭐358 (+358 today)
+    *   Google Research's pretrained foundation model specifically designed for time-series forecasting.
+*   **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** [Jupyter] ⭐89,738
+    *   The definitive educational resource for implementing ChatGPT-like LLMs step-by-step in PyTorch.
+*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐69,350
+    *   A unified framework for efficiently fine-tuning over 100 different LLMs and Vision-Language Models.
+*   **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)** [Python] ⭐45,296
+    *   A lightweight project allowing developers to train a 64M-parameter GPT from scratch in just 2 hours.
+
+### 🔍 RAG & Knowledge Management
+*Focus: Vectorless retrieval, vector databases, and agent memory.*
+
+*   **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐23,534
+    *   A "Vectorless, Reasoning-based RAG" system that uses document indexing without traditional vector embeddings, focusing on reasoning capabilities.
+*   **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** [TypeScript] ⭐44,394
+    *   A plugin for Claude Code that captures session data and compresses it for future context, effectively creating a persistent memory layer.
+*   **[lancedb/lancedb](https://github.com/lancedb/lancedb)** [Rust/HTML] ⭐9,727
+    *   A developer-friendly, embedded vector database optimized for multimodal AI retrieval.
+*   **[run-llama/llama_index](https://github.com/run-llama/llama_index)** [Python] ⭐48,206
+    *   The leading framework for building document agents and managing context injection into LLMs.
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**Terminal-native coding agents have achieved category validation.** The simultaneous explosive growth of `claude-code` and `codex`—both terminal-based, codebase-aware agents—demonstrates that developers strongly prefer AI integration in their existing workflows rather than IDE plugins or web interfaces. This represents a shift from 2024's GitHub Copilot model (inline completions) toward **autonomous task execution** with natural language command interfaces.
+**1. The Rise of the "Terminal Agent"**
+The single most dominant signal is the explosive growth of **`anthropics/claude-code`** (+10k stars). This confirms that the "Agentic IDE" wars are moving from GUIs (like Cursor) into the raw terminal environment. Developers seem to prefer tools that integrate directly into existing `git` and CLI workflows rather than switching context to a separate app. The concurrent rise of **`openai/codex`** (Rust) reinforces this: the terminal is becoming the primary interface for AI-assisted engineering.
 
-**An ecosystem gold rush is forming around Claude Code specifically.** The emergence of `claude-howto`, `everything-claude-code`, `learn-claude-code`, and `claude-mem` within days of launch shows how quickly open-source communities mobilize around promising foundation tools. These projects address performance optimization, memory persistence, education, and plugin architecture—suggesting Claude Code's extensibility model is sufficiently open to enable third-party innovation.
+**2. "Vectorless" and Reasoning-Based RAG**
+The appearance of **`VectifyAI/PageIndex`** with significant stars highlights a potential architectural shift. While vector databases (like Milvus, Qdrant) have been the standard for RAG, the term "Vectorless, Reasoning-based RAG" suggests a move toward using the reasoning capabilities of modern LLMs to navigate documents directly, potentially bypassing the information loss inherent in vector embeddings.
 
-**Voice AI remains an unsolved frontier.** Microsoft's `VibeVoice` launch indicates continued investment despite previous voice assistant disappointments, possibly driven by improved foundation model capabilities.
+**3. Standardization of Agent Memory**
+Projects like **`claude-mem`** and **`mem0`** indicate that "Memory" is separating from the core LLM logic to become a distinct infrastructure layer. We are seeing a standardization of how agents recall past interactions, shifting from simple context windows to structured, compressed memory databases.
 
-**"Vectorless RAG" and reasoning-based retrieval** (`PageIndex`) suggest the community is exploring alternatives to embedding-based search, potentially addressing latency, cost, and accuracy limitations of pure vector approaches.
-
-**The Rust/Go systems language trend** continues: `codex` (Rust), `ollama` (Go), `vllm` (Python/C++ hybrid) show performance-critical AI infrastructure increasingly adopting systems languages while Python retains the application layer.
+**4. MCP as the New "API"**
+The repeated mention of **MCP (Model Context Protocol)** in project descriptions (e.g., `activepieces`, `langchain4j`) signals that this protocol is becoming the de facto standard for connecting AI agents to external data and tools, effectively acting as the "USB port" for AI applications.
 
 ---
 
 ## 4. Community Hot Spots
 
-- **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** — The most sophisticated early ecosystem project, treating Claude Code as a platform requiring "skills, instincts, memory, security, and research-first development." Indicates agent tooling is becoming a specialized discipline.
-
-- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** — "Vectorless, Reasoning-based RAG" challenges conventional architecture. Worth monitoring for potential paradigm shift in retrieval systems.
-
-- **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** — "Bash is all you need" educational implementation. Signals strong demand for understanding agent internals rather than just using black-box tools.
-
-- **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** — 97% storage reduction for private RAG enables personal-device deployment previously impossible. Critical for privacy-sensitive and edge applications.
-
-- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** & **[mem0ai/mem0](https://github.com/mem0ai/mem0)** — Competing memory layer abstractions suggest "agent memory" is crystallizing as a distinct infrastructure category, separate from general vector databases.
-
----
-
----
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*
+*   **[anthropics/claude-code](https://github.com/anthropics/claude-code)**: The sheer velocity of stars (10k/day) makes this the project to watch. It represents the immediate future of developer productivity.
+*   **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)**: A strong candidate for the "next big thing" in RAG architecture, challenging the dominance of vector embeddings.
+*   **[openai/codex](https://github.com/openai/codex)**: The shift to Rust for a coding agent is technically significant, promising speed and safety for local execution.
+*   **[activepieces/activepieces](https://github.com/activepieces/activepieces)**: With deep MCP integration, this project is defining how agents will practically interact with the "real world" of software tools.
+*   **[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)**: The high community interest in a "How-To" guide indicates that while the tools are powerful, there is a steep learning curve that developers are eager to flatten.

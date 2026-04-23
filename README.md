@@ -1,4 +1,4 @@
-# agents-radar
+# rl-radar
 
 English | [中文](./README.zh.md)
 
@@ -21,7 +21,7 @@ A GitHub Actions workflow that runs every morning at 08:00 CST. It aggregates AI
 
 ## Web UI
 
-**[https://duanyytop.github.io/agents-radar](https://duanyytop.github.io/agents-radar)**
+**[https://iampengqian.github.io/rl-radar](https://iampengqian.github.io/rl-radar)**
 
 Browse all historical digests in a clean, dark-themed interface — no login required. Reports are rendered from the Markdown files in this repo via GitHub Pages.
 
@@ -33,7 +33,7 @@ Subscribe to get daily digest notifications pushed directly to your preferred pl
 
 <table>
   <tr>
-    <td align="center"><b><a href="https://t.me/agents_radar">Join Telegram Channel</a></b></td>
+    <td align="center"><b><a href="https://t.me/rl_radar">Join Telegram Channel</a></b></td>
     <td align="center"><b><a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=478g7865-04a8-4fab-a7f8-23af85ba927b">Join Feishu Group</a></b></td>
   </tr>
   <tr>
@@ -44,15 +44,13 @@ Subscribe to get daily digest notifications pushed directly to your preferred pl
 
 ## RSS Feed
 
-**[https://duanyytop.github.io/agents-radar/feed.xml](https://duanyytop.github.io/agents-radar/feed.xml)**
+**[https://iampengqian.github.io/rl-radar/feed.xml](https://iampengqian.github.io/rl-radar/feed.xml)**
 
 Subscribe in any RSS reader (Feedly, Reeder, NewsBlur, etc.) to receive new digests automatically. The feed includes the latest 30 reports across all report types, updated daily alongside `manifest.json`.
 
 ## MCP Server
 
-**`https://agents-radar-mcp.duanyytop.workers.dev`**
-
-A hosted [Model Context Protocol](https://modelcontextprotocol.io) server that exposes agents-radar data as tools. Any MCP-compatible client (Claude Desktop, OpenClaw, etc.) can query the latest AI ecosystem reports directly.
+A [Model Context Protocol](https://modelcontextprotocol.io) server that exposes rl-radar data as tools. Any MCP-compatible client (Claude Desktop, OpenClaw, etc.) can query the latest AI ecosystem reports directly.
 
 **Available tools:**
 
@@ -68,38 +66,14 @@ A hosted [Model Context Protocol](https://modelcontextprotocol.io) server that e
 ```json
 {
   "mcpServers": {
-    "agents-radar": {
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+    "rl-radar": {
+      "url": "https://rl-radar-mcp.your-domain.workers.dev"
     }
   }
 }
 ```
 
 Restart Claude Desktop after saving. You can then ask Claude things like:
-- *"What's the latest in AI CLI tools?"* → calls `get_latest`
-- *"Search for Claude Code mentions this week"* → calls `search`
-- *"Show me the AI trending report for 2026-03-05"* → calls `get_report`
-
-**OpenClaw setup** — run the following command:
-
-```bash
-openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyytop.workers.dev
-```
-
-Or add it manually to `~/.openclaw/openclaw.json`:
-
-```json
-{
-  "mcpServers": {
-    "agents-radar": {
-      "type": "http",
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
-    }
-  }
-}
-```
-
-You can then ask OpenClaw things like:
 - *"What's the latest in AI CLI tools?"* → calls `get_latest`
 - *"Search for Claude Code mentions this week"* → calls `search`
 - *"Show me the AI trending report for 2026-03-05"* → calls `get_report`
@@ -284,7 +258,7 @@ export ANTHROPIC_API_KEY=sk-ant-xxxxxxxx
 # export LLM_PROVIDER=openrouter
 # export OPENROUTER_API_KEY=sk-or-xxxxxxxx
 
-export DIGEST_REPO=your-username/agents-radar  # optional; omit to only write files
+export DIGEST_REPO=your-username/rl-radar  # optional; omit to only write files
 
 pnpm start
 ```
@@ -432,4 +406,4 @@ To change the schedule, edit the cron expressions in the corresponding workflow 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=duanyytop/agents-radar&type=Date)](https://star-history.com/#duanyytop/agents-radar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=iampengqian/rl-radar&type=Date)](https://star-history.com/#iampengqian/rl-radar&Date)

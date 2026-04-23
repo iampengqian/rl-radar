@@ -1,4 +1,4 @@
-# agents-radar
+# rl-radar
 
 [English](./README.md) | 中文
 
@@ -21,7 +21,7 @@
 
 ## Web UI
 
-**[https://duanyytop.github.io/agents-radar](https://duanyytop.github.io/agents-radar)**
+**[https://iampengqian.github.io/rl-radar](https://iampengqian.github.io/rl-radar)**
 
 在线浏览所有历史简报，深色主题，无需登录。报告直接由本仓库的 Markdown 文件通过 GitHub Pages 渲染。每份报告支持中文 / 英文切换。
 
@@ -33,7 +33,7 @@
 
 <table>
   <tr>
-    <td align="center"><b><a href="https://t.me/agents_radar">加入 Telegram 频道</a></b></td>
+    <td align="center"><b><a href="https://t.me/rl_radar">加入 Telegram 频道</a></b></td>
     <td align="center"><b><a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=478g7865-04a8-4fab-a7f8-23af85ba927b">加入飞书群</a></b></td>
   </tr>
   <tr>
@@ -44,15 +44,13 @@
 
 ## RSS 订阅
 
-**[https://duanyytop.github.io/agents-radar/feed.xml](https://duanyytop.github.io/agents-radar/feed.xml)**
+**[https://iampengqian.github.io/rl-radar/feed.xml](https://iampengqian.github.io/rl-radar/feed.xml)**
 
 在任意 RSS 阅读器（Feedly、Reeder、NewsBlur 等）中订阅，每日自动推送新简报。Feed 包含最新 30 条报告（覆盖所有报告类型），与 `manifest.json` 同步更新。
 
 ## MCP Server
 
-**`https://agents-radar-mcp.duanyytop.workers.dev`**
-
-基于 [Model Context Protocol](https://modelcontextprotocol.io) 的托管服务，将 agents-radar 数据暴露为工具接口。任何支持 MCP 的客户端（Claude Desktop、OpenClaw 等）均可直接查询最新 AI 生态报告。
+基于 [Model Context Protocol](https://modelcontextprotocol.io) 的服务，将 rl-radar 数据暴露为工具接口。任何支持 MCP 的客户端（Claude Desktop、OpenClaw 等）均可直接查询最新 AI 生态报告。
 
 **可用工具：**
 
@@ -68,38 +66,14 @@
 ```json
 {
   "mcpServers": {
-    "agents-radar": {
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+    "rl-radar": {
+      "url": "https://rl-radar-mcp.your-domain.workers.dev"
     }
   }
 }
 ```
 
 保存后重启 Claude Desktop，即可直接提问：
-- *"最近 AI CLI 工具有什么动态？"* → 调用 `get_latest`
-- *"搜索本周提到 Claude Code 的报告"* → 调用 `search`
-- *"获取 2026-03-05 的 GitHub 趋势报告"* → 调用 `get_report`
-
-**OpenClaw 接入** — 执行以下命令：
-
-```bash
-openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyytop.workers.dev
-```
-
-或手动编辑 `~/.openclaw/openclaw.json`：
-
-```json
-{
-  "mcpServers": {
-    "agents-radar": {
-      "type": "http",
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
-    }
-  }
-}
-```
-
-配置完成后即可在 OpenClaw 中直接提问：
 - *"最近 AI CLI 工具有什么动态？"* → 调用 `get_latest`
 - *"搜索本周提到 Claude Code 的报告"* → 调用 `search`
 - *"获取 2026-03-05 的 GitHub 趋势报告"* → 调用 `get_report`
@@ -283,7 +257,7 @@ export ANTHROPIC_API_KEY=sk-ant-xxxxxxxx
 # export LLM_PROVIDER=openrouter
 # export OPENROUTER_API_KEY=sk-or-xxxxxxxx
 
-export DIGEST_REPO=your-username/agents-radar  # 可选，留空则仅写入本地文件
+export DIGEST_REPO=your-username/rl-radar  # 可选，留空则仅写入本地文件
 
 pnpm start
 ```
@@ -404,4 +378,4 @@ OpenAI 内容精选            (research / release / company / safety / ...)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=duanyytop/agents-radar&type=Date)](https://star-history.com/#duanyytop/agents-radar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=iampengqian/rl-radar&type=Date)](https://star-history.com/#iampengqian/rl-radar&Date)

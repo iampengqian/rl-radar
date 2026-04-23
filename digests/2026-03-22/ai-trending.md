@@ -1,145 +1,92 @@
 # AI 开源趋势日报 2026-03-22
 
-> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-22 00:08 UTC
+> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-21 22:01 UTC
 
 ---
 
-# AI 开源趋势日报 | 2026-03-22
+你好！我是专注于 AI 开源生态的技术分析师。基于 2026-03-22 的 GitHub 数据，我为你整理了今日的《AI 开源趋势日报》。
 
 ---
 
-## 第一步：AI 相关性过滤
+# 📰 AI 开源趋势日报 (2026-03-22)
 
-**Trending 榜单筛选结果**（9→5 个 AI 相关）：
-| 项目 | 判定 | 理由 |
-|:---|:---|:---|
-| MoneyPrinterV2 | ❌ 排除 | 营销自动化工具，非 AI 核心技术 |
-| systemd | ❌ 排除 | 系统服务管理器，与 AI 无关 |
-| trivy | ❌ 排除 | 安全漏洞扫描工具，非 AI 专项 |
-| **project-nomad** | ✅ 保留 | 离线 AI 生存计算机，含 AI 知识助手 |
-| **opendataloader-pdf** | ✅ 保留 | PDF 解析为 AI-ready 数据 |
-| **claude-hud** | ✅ 保留 | Claude Code 插件，AI 开发工具 |
-| protobuf | ❌ 排除 | 通用序列化格式，非 AI 专项 |
-| **vllm-omni** | ✅ 保留 | 多模态模型推理框架 |
-| arnis | ❌ 排除 | Minecraft 地图生成工具，非 AI |
+## 1. 今日速览
 
-**主题搜索**：80 个项目全部保留（已按 topic 预筛选）
+今日 GitHub AI 领域最显著的趋势是 **“Agent 开发工具链的补全”与“多模态推理的落地”**。
+Claude Code 相关的插件生态（如 `claude-hud` 和 `claude-mem`）呈现出爆发式增长，显示出开发者对 AI 编程助手“可控性”和“记忆能力”的强烈需求。
+多模态领域，`vllm-omni` 的发布标志着高性能推理引擎正式从单纯的文本 LLM 向全模态迈进。
+此外，数据预处理端出现了 `opendataloader-pdf` 和 `PageIndex` 等针对非结构化数据的“AI Ready”工具，预示着 RAG 技术正在向更底层的解析层深化。
 
 ---
 
-## 第二步：分类结果
+## 2. 各维度热门项目
 
-| 维度 | 项目数量 | 主要来源 |
-|:---|:---|:---|
-| 🔧 AI 基础工具 | 18 | ollama, transformers, open-webui, vllm, claude-hud 等 |
-| 🤖 AI 智能体/工作流 | 16 | dify, langchain, OpenHands, browser-use, activepieces 等 |
-| 📦 AI 应用 | 12 | project-nomad, chatgpt-on-wechat, cherry-studio, AionUi 等 |
-| 🧠 大模型/训练 | 15 | LlamaFactory, unsloth, LLMs-from-scratch, faceswap 等 |
-| 🔍 RAG/知识库 | 19 | ragflow, mem0, milvus, llama_index, PageIndex 等 |
+### 🔧 AI 基础工具 (Infra & DevTools)
+*聚焦推理引擎、数据处理底层设施及开发者工具。*
 
----
+- **[vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni)** [Python] ⭐0 (+82 today)
+  - **说明**：vLLM 团队推出的全模态模型高效推理框架，标志着高性能推理正式从文本扩展到图文音视全能。
+- **[opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** [Java] ⭐0 (+954 today)
+  - **说明**：今日 Trending 黑马，专注于将 PDF 转化为 AI 可直接使用的结构化数据，解决了 RAG 和训练数据清洗的痛点。
+- **[jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)** [JavaScript] ⭐0 (+957 today)
+  - **说明**：Claude Code 的实时监控插件，让开发者能透视 AI 的思考过程、工具调用和上下文消耗，极大提升了 AI 编程的可控性。
+- **[Picovoice/picollm](https://github.com/Picovoice/picollm)** [Python] ⭐305
+  - **说明**：专注于端侧设备的高效 LLM 推理库，利用量化技术在本地运行大模型。
 
-## 第三步：趋势日报
+### 🤖 AI 智能体/工作流
+*聚焦 Agent 框架、自动化编排及开发者环境。*
 
-### 1. 今日速览
+- **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** [TypeScript] ⭐35,244
+  - **说明**：基于 Bash 构建的轻量级 Agent Harness，展示了如何从零构建一个类似 Claude Code 的智能体框架，深受开发者追捧。
+- **[activepieces/activepieces](https://github.com/activepieces/activepieces)** [TypeScript] ⭐21,351
+  - **说明**：集成了大量 MCP 服务器的 AI 自动化工作流平台，让 Agent 能够轻松连接外部工具。
+- **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** [JavaScript] ⭐94,001
+  - **说明**：针对 Claude Code 的全方位性能优化与技能增强系统，提升了 Agent 的记忆与安全能力。
+- **[alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox)** [Python] ⭐8,951
+  - **说明**：阿里推出的通用沙箱平台，为 Coding Agent 和 GUI Agent 提供了安全的代码执行和环境隔离能力。
 
-今日 AI 开源领域呈现**"开发工具链深化"与"垂直场景落地"**双轨并进态势。Claude Code 生态爆发：两款插件（claude-hud、everything-claude-code）同时高热，显示开发者对 AI 编程可观测性的强烈需求。多模态推理基础设施 vllm-omni 登榜，标志着社区开始系统性支持端到端多模态部署。RAG 赛道持续火热，PageIndex 提出"无向量推理式 RAG"新范式，挑战传统向量检索架构。此外，离线 AI 生存设备 project-nomad 以 2032 星暴涨，揭示 AI 应用向极端场景渗透的新趋势。
+### 🔍 RAG/知识库
+*聚焦向量数据库、检索增强及文档解析。*
 
----
+- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐22,504
+  - **说明**：挑战传统向量检索，提出基于推理的 RAG (Reasoning-based RAG) 方案，旨在提升文档索引的逻辑准确性。
+- **[memvid/memvid](https://github.com/memvid/memvid)** [Rust] ⭐13,541
+  - **说明**：创新性的 AI 记忆层，用单文件替代复杂的 RAG 管道，实现了极致的轻量化和即时检索。
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** [TypeScript] ⭐39,068
+  - **说明**：为 Claude Code 提供自动化的长期记忆功能，能压缩对话上下文并在未来会话中复用，解决了 AI 健忘的问题。
+- **[yichuan-w/LEANN](https://github.com/yichuan-w/LEANN)** [Python] ⭐10,346
+  - **说明**：学术论文级项目，主打在个人设备上实现极低存储占用的隐私 RAG 方案。
 
-### 2. 各维度热门项目
+### 📦 AI 应用
+*面向终端用户的垂直产品与解决方案。*
 
-#### 🔧 AI 基础工具（框架/推理/CLI）
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [ollama/ollama](https://github.com/ollama/ollama) | 165,801 | - | 本地大模型运行的事实标准，已支持 Kimi-K2.5、GLM-5、gpt-oss 等最新模型 |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 73,877 | - | 高吞吐 LLM 推理引擎，生产环境部署首选 |
-| [vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni) | - | **+71** ⭐ | **今日登榜**：专为多模态模型（视觉-语言-音频）设计的高效推理框架 |
-| [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | - | **+970** ⭐ | **今日爆款**：Claude Code 实时状态面板，解决 AI 编程"黑盒"痛点 |
-| [open-webui/open-webui](https://github.com/open-webui/open-webui) | 128,155 | - | 最成熟的本地 LLM Web 界面，Ollama 生态核心组件 |
-| [f/prompts.chat](https://github.com/f/prompts.chat) | 153,606 | - | 社区驱动的高质量 Prompt 库，组织级私有化部署支持 |
-
-#### 🤖 AI 智能体/工作流（Agent/自动化）
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [langgenius/dify](https://github.com/langgenius/dify) | 133,867 | - | 企业级 Agent 工作流平台，"AI 应用工厂"定位清晰 |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 130,500 | - | Agent 工程化基础设施，工具链最完备的编排框架 |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 69,506 | - | AI 驱动软件开发，端到端代码生成与调试 |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 81,835 | - | 让 AI 代理能"看懂"网页并自动操作，浏览器自动化新标准 |
-| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,352 | - | 集成 ~400 个 MCP 服务器的 AI 自动化平台，Agent 与工具链的"超级连接器" |
-| [trycua/cua](https://github.com/trycua/cua) | 13,209 | - | 计算机使用代理（Computer-Use Agent）开源基础设施，支持多 OS 沙箱 |
-| [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 35,265 | - | 从零构建 Claude Code 类 Agent  harness，教育价值极高 |
-
-#### 📦 AI 应用（垂直场景/产品）
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) | - | **+2032** ⭐ | **今日榜首**：离线生存 AI 计算机，极端场景下的知识+工具一体化设备 |
-| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,351 | - | 多平台 AI 助理（CowAgent），支持主动思考、任务规划、长期记忆 |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 41,998 | - | 300+ 助手的 AI 生产力工作室，统一接入前沿大模型 |
-| [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | 19,624 | - | 24/7 本地协同办公应用，聚合 Gemini CLI、Claude Code、Codex 等工具 |
-| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 9,937 | - | 工业级 AI 影视生产平台，从短片到真人电影的好莱坞标准工作流 |
-
-#### 🧠 大模型/训练（微调/推理/学习）
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,207 | - | 模型定义框架的事实标准，文本/视觉/音频/多模态全覆盖 |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 88,921 | - | 从零实现 ChatGPT 级 LLM，最系统的 PyTorch 教程 |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 68,843 | - | 100+ LLM/VLM 统一高效微调，ACL 2024 明星项目 |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | 57,353 | - | 本地模型训练与运行统一 Web UI，Qwen/DeepSeek/gpt-oss 支持 |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 94,233 | - | Claude Code 性能优化系统：技能、记忆、安全、研究优先开发 |
-| [deepfakes/faceswap](https://github.com/deepfakes/faceswap) | 55,051 | - | 深度学习换脸工具，生成式 AI 经典应用 |
-
-#### 🔍 RAG/知识库（检索/向量/记忆）
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 75,725 | - | RAG+Agent 融合引擎，企业级上下文层构建 |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 50,627 | - | AI Agent 通用记忆层，跨会话长期记忆 |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 47,844 | - | 文档代理与 OCR 平台，RAG  pipeline 核心基础设施 |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,441 | - | 云原生高性能向量数据库，ANN 搜索规模化解法 |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 22,508 | - | **"无向量 RAG"**：基于推理的文档索引，97% 存储节省 |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 14,449 | - | 6 行代码构建 AI Agent 记忆知识引擎 |
-| [memvid/memvid](https://github.com/memvid/memvid) | 13,543 | - | 无服务器单文件记忆层，替代复杂 RAG pipeline |
-| [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | - | **+950** ⭐ | **今日登榜**：PDF 解析为 AI-ready 数据，自动化文档可访问性 |
+- **[Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)** [TypeScript] ⭐0 (+2054 today)
+  - **说明**：今日暴涨项目，一个离线优先的生存计算机系统，集成了 AI 知识库，旨在无网环境下提供生存指导。
+- **[saturndec/waoowaoo](https://github.com/saturndec/waoowaoo)** [TypeScript] ⭐9,931
+  - **说明**：工业级 AI 影视生产平台，利用 Agent 控制从短视频到长电影的全流程制作。
+- **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** [TypeScript] ⭐41,994
+  - **说明**：集成了智能聊天和自主代理的 AI 生产力工作室，支持多种主流前沿模型。
 
 ---
 
-### 3. 趋势信号分析
+## 3. 趋势信号分析
 
-**开发工具链的可观测性革命**是今日最显著信号。claude-hud（+970⭐）与 everything-claude-code（94K⭐）共同指向：随着 AI 编程助手深度嵌入工作流，开发者迫切需要**理解 AI 的"思考过程"**——上下文使用、工具调用、代理状态的可视化成为新刚需。这与 Anthropic 近期 Claude Code 的广泛推广直接相关。
+**1. Claude Code 生态的“越狱”式繁荣**
+今日最强烈的信号是围绕 `Claude Code` 这一特定产品的周边工具爆发。`claude-hud` (+957) 和 `claude-mem` 等项目的高增长表明，开发者不再满足于简单的 Chat 交互，而是迫切需要**深度控制 AI 的思维链、上下文和记忆**。这标志着 AI 编程助手正从“辅助工具”向“可编程的操作系统”演进。
 
-**多模态基础设施进入实用阶段**。vllm-omni 的登榜表明，社区不再满足于文本模型，开始系统性建设视觉-语言-音频统一的推理架构，为 GPT-4o 类原生多模态模型的开源替代铺路。
+**2. RAG 技术栈的“去向量”与“深度解析”双极演化**
+在 RAG 领域，我们看到了两种截然不同的创新方向：一是以 `PageIndex` 为代表的 **“Reasoning-based RAG”**，试图用推理能力替代简单的向量相似度；二是以 `opendataloader-pdf` 为代表的 **“解析层深耕”**，旨在解决 PDF 这类非结构化数据转 AI 数据的“最后一公里”难题。这预示着 RAG 的竞争重心正从检索算法下沉到数据清洗，上浮到逻辑推理。
 
-**RAG 范式出现分化**。PageIndex 提出的"无向量、纯推理"RAG 挑战了 Milvus/Qdrant 主导的传统架构，若 97% 存储节省的宣称属实，将重塑边缘设备与隐私敏感场景的检索方案。
-
-**极端场景 AI 设备意外走红**。project-nomad（+2032⭐）将 AI 与离线生存结合，反映技术社区对"AI 韧性"（resilience）的前瞻关注——在地缘冲突、网络中断等场景下，本地化 AI 的知识储备价值被重新评估。
-
----
-
-### 4. 社区关注热点
-
-- **🔥 claude-hud** — [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)  
-  今日增速最高（+970⭐），解决 AI 编程核心痛点：代理在"做什么、用了多少上下文、哪些工具在运行"。预计引发 Claude Code 插件生态爆发。
-
-- **🔥 project-nomad** — [Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)  
-  今日总增速冠军（+2032⭐）。离线 AI 生存计算机概念独特，融合知识库、工具集与硬件设计，可能开辟"AI 应急设备"新品类。
-
-- **🔥 PageIndex** — [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)  
-  "无向量 RAG"技术路线值得持续跟踪。若推理式检索在精度与效率上验证成功，将对向量数据库市场产生结构性影响。
-
-- **🔥 vllm-omni** — [vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni)  
-  vLLM 官方多模态扩展，标志生产级多模态推理框架成熟。关注其与 Qwen2.5-VL、Kimi-VL 等开源多模态模型的集成进展。
-
-- **🔥 activepieces** — [activepieces/activepieces](https://github.com/activepieces/activepieces)  
-  ~400 MCP 服务器的集成规模惊人，成为 AI Agent 与工具生态的"超级枢纽"。MCP（Model Context Protocol）作为工具调用标准的确立速度超预期。
+**3. 离线与端侧 AI 的务实回归**
+`project-nomad` 的爆火（+2054 stars）和 `picollm`、`LEANN` 的上榜，反映了社区对云端 AI 依赖的担忧。开发者开始探索在完全离线、资源受限环境下的 AI 存续方案，**Privacy-first（隐私优先）** 和 **Offline-first（离线优先）** 正成为新的差异化卖点。
 
 ---
 
-*报告生成时间：2026-03-22 | 数据来源：GitHub Trending & Search API*
+## 4. 社区关注热点
 
----
-*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*
+建议开发者重点关注以下项目/方向：
+
+*   **🚀 [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)**：如果你在做 RAG 或大模型训练，这是目前处理 PDF 数据最热门的开源工具，日增近千星，解决了文档解析的痛点。
+*   **🧠 [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)**：给 AI 注入长期记忆的标准范式。如果你在构建 Agent，这套“压缩-注入”的记忆机制非常值得借鉴。
+*   **👁️ [vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni)**：vLLM 的全模态版本。对于需要处理图像、音频而不仅是文本的开发者，这是必须关注的底层引擎升级。
+*   **🔌 [activepieces/activepieces](https://github.com/activepieces/activepieces)**：集成了数百个 MCP Server 的自动化平台。MCP（Model Context Protocol）正在成为 Agent 连接世界的标准，这是目前最活跃的实践者之一。

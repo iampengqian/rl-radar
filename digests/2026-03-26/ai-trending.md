@@ -1,136 +1,92 @@
 # AI 开源趋势日报 2026-03-26
 
-> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-26 00:11 UTC
+> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-25 22:07 UTC
 
 ---
 
-# AI 开源趋势日报 | 2026-03-26
+你好！我是专注 AI 开源生态的技术分析师。基于 2026-03-26 的 GitHub 数据，我为你整理了今日的《AI 开源趋势日报》。
 
 ---
 
-## 第一步：AI 相关性过滤
+# 📰 AI 开源趋势日报 (2026-03-26)
 
-**Trending 榜单筛选结果**：12 个仓库中，**10 个为 AI 相关**，排除以下 2 个非 AI 项目：
-- ❌ `pascalorg/editor` — 3D 建筑编辑器（纯设计工具）
-- ❌ `Crosstalk-Solutions/project-nomad` — 离线生存计算机（硬件工具包，AI 仅为附加功能）
-
-**主题搜索结果**：80 个仓库全部保留，均为 AI/ML 相关。
-
----
-
-## 第二步：分类体系
-
-| 维度 | 定义 | 今日项目数 |
-|:---|:---|:---|
-| 🔧 AI 基础工具 | 模型调用 SDK、推理引擎、网关、开发工具、CLI | 12 |
-| 🤖 AI 智能体/工作流 | Agent 框架、多智能体编排、自动化工作流、MCP | 18 |
-| 📦 AI 应用 | 垂直场景产品（金融、安全、内容生成等） | 8 |
-| 🧠 大模型/训练 | 模型实现、训练框架、微调、评估 | 14 |
-| 🔍 RAG/知识库 | 向量数据库、检索增强、记忆层、文档处理 | 16 |
+## 1. 今日速览
+今日 GitHub AI 领域最显著的趋势是 **"Agent 基础设施的成熟化"** 与 **"Claude 生态的爆发"**。
+字节跳动推出的 **deer-flow** 凭借其完整的 SuperAgent 架构（包含沙盒、记忆、技能等）迅速登顶，标志着开源 Agent 正从单一的对话工具向具备复杂任务执行能力的操作系统演进。
+同时，**ruflo** 和 **claude-subconscious** 等项目的火热，显示出社区正积极构建基于 Claude 的高级编排层和潜意识记忆系统，试图挖掘 LLM 的极限潜力。
+此外，**RuView** 展示了 "非视觉感知" 的黑科技，利用 WiFi 信号进行姿态估计，为 AI 感知能力开辟了新路径。
 
 ---
 
-## 第三步：完整报告
+## 2. 各维度热门项目
+
+### 🤖 AI 智能体/工作流
+> 今日最热赛道，聚焦于 Agent 的编排、记忆与执行环境。
+
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** [Python] ⭐3,787 (+today)
+  - **说明**：字节跳动开源的 SuperAgent 系统。集成了沙盒、记忆和子智能体，能处理耗时数小时的复杂任务，是今日最受关注的 Agent "操作系统"。
+- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** [TypeScript] ⭐1,173 (+today)
+  - **说明**：专为 Claude 设计的智能体编排平台。支持多智能体集群和分布式工作流，是企业级 Claude 应用的热门选择。
+- **[letta-ai/claude-subconscious](https://github.com/letta-ai/claude-subconscious)** [TypeScript] ⭐71 (+today)
+  - **说明**：为 Claude Code 注入"潜意识"机制。通过后台异步处理增强模型的上下文感知能力，探索 AI 认知架构的新方向。
+- **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)** [Python] ⭐1,342 (+today)
+  - **说明**：一个强大的信息搜集 Agent 技能模块。能跨 Reddit、X、YouTube 等平台调研并合成摘要，解决了 Agent 的实时信息获取痛点。
+- **[hsliuping/TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN)** [Python] ⭐449 (+today)
+  - **说明**：基于多智能体 LLM 的中文金融交易框架。展示了 Agent 在高噪音、高专业性垂直领域（金融交易）的落地应用。
+
+### 🔧 AI 基础工具
+> Agent 赖以生存的底层设施，特别是网关和感知工具。
+
+- **[BerriAI/litellm](https://github.com/BerriAI/litellm)** [Python] ⭐289 (+today)
+  - **说明**：AI 领域的"瑞士军刀"网关。统一了 100+ LLM API 的调用格式，是构建多模型 Agent 系统不可或缺的底层组件。
+- **[ruvnet/RuView](https://github.com/ruvnet/RuView)** [Rust] ⭐1,083 (+today)
+  - **说明**：极具创新性的感知工具。利用普通 WiFi 信号（DensePose）实现实时人体姿态估计，无需摄像头即可为 AI 提供环境感知能力。
+- **[alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox)** [Python] ⭐9,294 (Topic Search)
+  - **说明**：阿里开源的 AI 智能体沙箱运行时。提供了安全、快速的隔离环境，是 Agent 执行代码和危险操作的必备基础设施。
+- **[e2b-dev/E2B](https://github.com/e2b-dev/E2B)** [Python] ⭐11,434 (Topic Search)
+  - **说明**：企业级 Agent 代码执行沙箱。为 AI 提供了安全的云端执行环境，是 Deer-flow 等项目的核心依赖之一。
+
+### 📦 AI 应用
+> 面向最终用户的具体产品化方案。
+
+- **[FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)** [Python] ⭐1,065 (+today)
+  - **说明**：自动化在线赚钱工具。虽然具体实现细节需甄别，但反映了社区对 "AI 变现" 自动化的极高热情。
+- **[usestrix/strix](https://github.com/usestrix/strix)** [Python] ⭐215 (+today)
+  - **说明**：开源 AI 黑客工具。利用 AI 自动发现并修复应用漏洞，标志着 AI 正式进入网络安全攻防实战领域。
+- **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** [TypeScript] ⭐42,317 (Topic Search)
+  - **说明**：支持多助手的 AI 生产力工作室。集成了主流 LLM，提供了优秀的 GUI 体验，是目前最热门的桌面端 AI 客户端之一。
+
+### 🔍 RAG/知识库
+> 记忆与数据检索的基石。
+
+- **[supermemoryai/supermemory](https://github.com/supermemoryai/supermemory)** [TypeScript] ⭐809 (+today)
+  - **说明**：AI 时代的记忆引擎。专注于极速、可扩展的存储，为 Agent 提供长期的、可检索的上下文记忆能力。
+- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐22,936 (Topic Search)
+  - **说明**：基于推理的 RAG 文档索引。试图摆脱传统的向量检索，引入推理能力来提升 RAG 的准确性，是 RAG 技术演进的重要信号。
+- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** [Python] ⭐14,627 (Topic Search)
+  - **说明**：专为 AI Agent 记忆设计的知识引擎。几行代码即可构建知识图谱，解决了 Agent 记忆碎片化的问题。
 
 ---
 
-### 1. 今日速览
+## 3. 趋势信号分析
 
-今日 AI 开源领域呈现**"智能体基建狂飙"**态势：字节跳动开源的 `deer-flow` 以 3,787 星登顶，其"SuperAgent harness"定位标志着大厂正式入场 Agent 操作系统层；同时 `ruflo`（Claude 生态编排平台）和 `last30days-skill`（跨平台研究 Agent）的爆发，反映开发者对**生产级多智能体编排**的迫切需求。RAG/记忆层持续火热，`supermemory` 和 `cognee` 分别代表"高速可扩展记忆引擎"与"6 行代码知识图谱"两种技术路线。值得关注的是，**Claude Code 生态插件**（`claude-subconscious`、`claude-mem`）形成独立细分赛道，AI 编程助手的"意识层"改造成为新热点。
+**1. Agent "OS" 化趋势确立**
+今日 ByteDance 的 `deer-flow` 和之前 OpenAI 的种种动向表明，Agent 正在从 "Chatbot + Tools" 进化为完整的 **Agent OS**。这种架构不仅包含大脑（LLM），还集成了手脚、记忆和感知，特别是对**沙盒** 和 **网关** 的强依赖，说明社区正在严肃解决 Agent 的安全性和稳定性问题。
 
----
+**2. Claude 生态的垂直深化**
+随着 `ruflo` (Orchestration) 和 `claude-subconscious` (Memory) 的上榜，可以看出 **Claude 正在成为开发者构建复杂系统的首选基座**。相比于其他模型，Claude 在长上下文和代码能力上的优势，使其更适合作为 "自主智能体" 的核心驱动。
 
-### 2. 各维度热门项目
+**3. 感知层面的 "另辟蹊径"**
+`RuView` 的出现令人眼前一亮。利用 WiFi 信号进行姿态估计，打破了 AI 感知必须依赖摄像头的刻板印象。这种**非侵入式感知** 技术若能与家庭助手结合，将极大地扩展 AI 在物理世界中的触角。
 
-#### 🔧 AI 基础工具
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 3,787 | +3,787 | 字节开源的 SuperAgent  harness，集成沙箱、记忆、工具、子智能体与消息网关，支持分钟到小时级的复杂任务处理 |
-| [BerriAI/litellm](https://github.com/BerriAI/litellm) | 大量 | +301 | 统一 100+ LLM API 的 Python SDK 与代理服务器，企业级成本追踪、防护栏与负载均衡 |
-| [ollama/ollama](https://github.com/ollama/ollama) | 166,156 | - | 本地运行 Kimi-K2.5、GLM-5、DeepSeek 等模型的标杆工具，持续更新模型支持 |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 74,326 | - | 高吞吐、内存高效的 LLM 推理与服务引擎 |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 98,271 | - | 将整站转为 LLM-ready 数据的 Web Data API，RAG 流水线标配 |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 84,428 | - | 让网站对 AI 智能体可访问，浏览器自动化的事实标准 |
-| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | 6,663 | - | Rust 生态的模块化 LLM 应用开发框架 |
-| [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | 11,293 | - | Java 企业级 LLM 集成库，原生支持 MCP 与 RAG |
-
-#### 🤖 AI 智能体/工作流
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 1,174 | +1,174 | Claude 生态领先的智能体编排平台，支持分布式集群、RAG 集成与 Claude Code 原生对接 |
-| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 1,341 | +1,341 | 跨 Reddit/X/YouTube/HN/Polymarket 的多源研究 Agent，生成 grounded 摘要 |
-| [letta-ai/claude-subconscious](https://github.com/letta-ai/claude-subconscious) | 71 | +71 | 为 Claude Code 添加"潜意识"层，Letta 记忆技术的 IDE 集成实验 |
-| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,420 | - | 支持 ~400 个 MCP 服务器的 AI 工作流自动化平台 |
-| [trycua/cua](https://github.com/trycua/cua) | 13,269 | - | 计算机使用智能体（Computer-Use Agents）的开源基础设施，支持 macOS/Linux/Windows 桌面控制 |
-| [e2b-dev/E2B](https://github.com/e2b-dev/E2B) | 11,435 | - | 企业级智能体的安全沙箱环境，提供真实世界工具访问 |
-| [alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox) | 9,296 | - | 阿里开源的 AI 智能体安全、快速、可扩展的运行时沙箱 |
-| [crestalnetwork/intentkit](https://github.com/crestalnetwork/intentkit) | 6,499 | - | 自托管云智能体集群，管理协作式 AI 智能体团队 |
-
-#### 📦 AI 应用
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) | 1,065 | +1,065 | "自动化在线赚钱"的内容生成与变现工作流（需警惕合规风险） |
-| [usestrix/strix](https://github.com/usestrix/strix) | 102 | +102 | 开源 AI 黑客，自动发现与修复应用漏洞的安全智能体 |
-| [hsliuping/TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN) | 449 | +449 | 基于多智能体 LLM 的中文金融交易框架，TradingAgents 中文增强版 |
-| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 10,407 | - | 工业级全流程 AI 影视生产平台，从短视频到真人电影的好莱坞标准工作流 |
-| [ruvnet/RuView](https://github.com/ruvnet/RuView) | 1,082 | +1,082 | 将 WiFi 信号转为实时人体姿态估计、生命体征监测的 DensePose 系统（无需摄像头） |
-| [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 63,569 | - | 面向分析师、量化研究员与 AI 智能体的金融数据平台 |
-| [deepfakes/faceswap](https://github.com/deepfakes/faceswap) | 55,072 | - | 开源 Deepfakes 软件，视觉 AI 的经典项目 |
-| [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | 54,988 | - | YOLO 目标检测框架的最新版本，视觉 AI 基础设施 |
-
-#### 🧠 大模型/训练
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 43,705 | - | 2 小时从 0 训练 64M 参数 GPT 的极简教程，大模型教育标杆 |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,241 | - | 逐步用 PyTorch 实现类 ChatGPT LLM 的权威教程 |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 69,058 | - | 统一高效微调 100+ LLM/VLM 的框架（ACL 2024） |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | 58,196 | - | 本地训练与运行 Qwen、DeepSeek 等模型的 Web UI |
-| [open-compass/opencompass](https://github.com/open-compass/opencompass) | 6,796 | - | 支持 100+ 数据集的大模型评测平台 |
-| [BrainBlend-AI/atomic-agents](https://github.com/BrainBlend-AI/atomic-agents) | 5,812 | - | 原子化构建 AI 智能体的框架，强调模块化组合 |
-| [skyzh/tiny-llm](https://github.com/skyzh/tiny-llm) | 4,027 | - | Apple Silicon 上的 LLM 推理服务课程，从零实现 vLLM + Qwen |
-| [Picovoice/picollm](https://github.com/Picovoice/picollm) | 306 | - | X-Bit 量化的端侧 LLM 推理引擎 |
-
-#### 🔍 RAG/知识库
-
-| 项目 | Stars | 今日新增 | 一句话说明 |
-|:---|:---|:---|:---|
-| [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 810 | +810 | 极速可扩展的记忆引擎，定位为"AI 时代的 Memory API" |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 47,985 | - | 领先的文档智能体与 OCR 平台，RAG 核心基础设施 |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 76,130 | - | 融合前沿 RAG 与智能体能力的检索增强生成引擎 |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 14,628 | - | 6 行代码实现 AI 智能体记忆的知识图谱引擎 |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 51,051 | - | AI 智能体的通用记忆层，跨会话长期记忆 |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 40,605 | - | 自动捕获 Claude Code 会话、AI 压缩并注入上下文的记忆插件 |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 22,938 | - | 无向量、基于推理的 RAG 文档索引方案 |
-| [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 10,368 | - | 97% 存储节省的端侧 RAG，MLsys2026 成果 |
+**4. 金融与安全成为 Agent 落地先锋**
+`TradingAgents-CN` 和 `strix` 的上榜揭示了 Agent 的两个高价值落地场景：**高频决策（金融）** 与 **漏洞挖掘（安全）**。这两个领域对速度和精度的要求极高，是验证 LLM 实战能力的最佳试金石。
 
 ---
 
-### 3. 趋势信号分析
+## 4. 社区关注热点
 
-**智能体操作系统层爆发**：今日最显著的信号是**"Agent Harness/Orchestration"**（智能体驾驭/编排）概念的崛起。字节 `deer-flow` 的"SuperAgent harness"定位、阿里 `OpenSandbox` 的安全运行时、`ruflo` 的分布式集群编排，共同指向一个判断：**单智能体能力已趋成熟，社区焦点转向多智能体的协同基础设施**。这与 Anthropic 近期 MCP（Model Context Protocol）的生态推广直接相关——`activepieces` 明确标注支持 ~400 个 MCP 服务器，`langchain4j` 也新增 MCP 支持。
-
-**Claude Code 插件生态成型**：`claude-subconscious`（潜意识层）、`claude-mem`（记忆压缩）、`ralph-claude-code`（自主开发循环）等项目的涌现，表明 Claude Code 正从"编程助手"进化为**可扩展的 AI 开发平台**，开发者开始为其构建"意识增强"外挂。
-
-**"无向量 RAG"技术路线分歧**：`PageIndex` 提出的"Vectorless, Reasoning-based RAG"与 `LEANN` 的极端压缩方案，反映社区对向量数据库成本与复杂性的反思，检索增强生成可能进入**后向量数据库时代**。
-
----
-
-### 4. 社区关注热点
-
-- **🔥 `deer-flow`（字节跳动）** — 大厂首次开源完整 Agent 操作系统级框架，沙箱+记忆+子智能体+消息网关的全栈设计，可能重塑开源 Agent 格局
-- **🔥 `ruflo` + `last30days-skill` — Claude 生态与跨平台研究 Agent 的双星爆发，验证"专业 Agent 技能市场"的可行性
-- **🔥 `supermemory` vs `cognee`** — "速度优先"与"知识图谱深度"两种记忆层技术路线的正面竞争
-- **⚠️ `MoneyPrinterV2` 的伦理争议** — "自动化赚钱"类应用的流行，提示 AI 内容农场与垃圾信息生成工具的治理紧迫性
-- **🔬 `RuView`（WiFi DensePose）** — 无摄像头人体感知技术的开源化，隐私计算与智能感知的交叉创新
-
----
-
-*报告生成时间：2026-03-26*  
-*数据来源：GitHub Trending & Search API*
-
----
-*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*
+*   **🔥 deer-flow (ByteDance)**: 作为今日涨幅最大的项目，它代表了大厂对 Agent 架构的理解，其 "SuperAgent" 的设计思路非常值得架构师研读。
+*   **🧠 claude-subconscious**: 如果你想让 AI 记住更多、反应更快，这个项目提供的 "潜意识" 机制（异步记忆处理）是一个极佳的技术参考。
+*   **📡 RuView**: 跨界创新之作。对于物联网、智能家居领域的开发者，这种去摄像头化的 AI 感知方案具有巨大的想象空间。
+*   **🛡️ strix**: "用 AI 对抗 AI"。随着 AI 攻击的增加，自动化防御工具将成为刚需，这是一个高增长潜力的细分赛道。

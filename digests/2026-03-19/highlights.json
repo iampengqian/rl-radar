@@ -1,86 +1,53 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code手机验证Bug引爆458评论",
-      "OpenAI Codex连推4个Rust Alpha版本",
-      "Gemini CLI重构Agent记忆系统",
-      "Kimi Code CLI v1.24.0强化Plan模式",
-      "OpenCode桌面端稳定性危机待解",
-      "Qwen Code v0.13.0紧急修复编辑失败"
+      "Claude Code v2.1.78 发布，修复蓝屏并支持 MCP Sampling",
+      "社区痛点：Token 消耗焦虑，用户呼吁状态栏显示实时计数",
+      "自动化 vs 安全：OpenAI Codex 频繁弹窗审批引发开发者不满",
+      "Kimi Code CLI v1.24.0 发布，重构 Plan Mode 增强交互",
+      "Qwen Code v0.12.6 修复并发故障，强化多智能体能力",
+      "生态趋势：AI CLI 正从代码补全转向具备自主执行能力的智能体"
     ],
     "ai-agents": [
-      "OpenClaw 24小时500条Issue更新",
-      "macOS端侧语音交互里程碑达成",
-      "AWS Bedrock企业部署能力增强",
-      "钓鱼诈骗安全事件需紧急响应",
-      "分布式ACP会话锁定架构落地",
-      "第六个网页搜索提供商集成"
+      "OpenClaw 日更 500 条，核心插件系统 Hooks 迎来重大更新",
+      "修复 ReDoS 漏洞：替换 marked.js 彻底解决 UI 卡死问题",
+      "Morph 集成正式落地，代码语义搜索能力大幅提升",
+      "安全警报：社区紧急响应针对开发者的钓鱼诈骗事件",
+      "新增 LLM 调用拦截钩子，允许策略插件进行内容审查",
+      "Gateway 进程崩溃与内存泄漏成当前稳定性修复重点"
     ],
     "ai-trending": [
-      "claude-hud单日暴涨1038星登顶",
-      "Agent技能框架superpowers首入热榜",
-      "Unsloth持续领跑本地LLM训练",
-      "LangChain异步编程Agent开源",
-      "4个AI项目单日新增6500+星",
-      "Claude插件生态形成独立赛道"
+      "superpowers 日增 4000 星，定义 Agent 开发工程化规范",
+      "claude-hud 爆火，为 Claude Code 提供 Agent 专用的 DevTools",
+      "LangChain 发布 open-swe，开源异步编程 Agent 对标闭源",
+      "Newton 引擎发布，填补具身智能物理仿真工具空白",
+      "Ollama 持续领跑，已支持 Kimi-K2.5 与 DeepSeek 新模型",
+      "RAG 领域新风向：基于推理的索引开始挑战传统向量检索"
     ],
     "ai-web": [
-      "Anthropic自曝Opus 4.6评估作弊行为",
-      "Science Blog宣告AI for Science落地",
-      "长时运行Claude教程发布",
-      "高能物理自主发现链条突破",
-      "OpenAI日本青少年安全合规更新",
-      "AI科研社会学挑战首次系统阐述"
+      "Claude Opus 4.6 惊现“评估感知”，能反向识别并破解测试",
+      "Anthropic 发声：AI 智能体带来前所未有的评测危机",
+      "Anthropic 推出 Science Blog，探索 AI 外化认知的科研革命",
+      "OpenAI 绑定传统巨头，联手 Disney 与 Mattel 拓展商业版图",
+      "OpenAI 进军青少年市场，发布 Teen Safety Blueprint",
+      "工程博客新焦点：两家巨头竞相定义智能体时代开发标准"
     ],
     "ai-hn": [
-      "OpenAI 500亿美元亚马逊云交易引争议",
-      "6832字节x86汇编AI代理炫技",
-      "Tmux-IDE终端Agent-first创新",
-      "AI生成代码法律归属热议",
-      "Claude过度炒作社区显疲劳",
-      "本地化AI方案探索成务实风向"
+      "OpenAI 转向 IPO，社区热议理想主义是否向资本妥协",
+      "微软怒斥亚马逊 500 亿交易，AI 基础设施战火延烧至法庭",
+      "Tmux-IDE 登场，打造首个 Agent-First 的终端开发环境",
+      "Xybrid 开源：基于 Rust 实现无后端、完全本地化的 LLM",
+      "开发者热议 AI 代码“保修失效”，工程化可靠性引担忧",
+      "Anthropic 服务中断与逆向工程讨论占据社区热门"
+    ],
+    "rl-daily": [
+      "verl 活跃度极高，正极速适配多模态与 MoE 架构",
+      "TRL 核心转向异步化，深度集成 vLLM 推理引擎",
+      "Open Instruct 突破通信瓶颈，MFU 性能提升至 40%",
+      "Slime 攻克 Megatron 后端顽疾，解决 64K 上下文 OOM",
+      "ROLL 强化国产硬件支持，实现对华为 NPU 的深度适配",
+      "SB3 强调代码治理，明确拒绝低质量 AI 生成代码"
     ]
   },
-  "en": {
-    "ai-cli": [
-      "Claude Code v2.1.79 shipped with plugin explosion",
-      "OpenAI Codex pushed 4 alpha releases (α.5–α.9)",
-      "Gemini CLI v0.36.0-nightly focuses on memory subsystem",
-      "GitHub Copilot CLI v1.0.8 shipped with concentrated engineering",
-      "Kimi CLI v1.24.0 maintains steady development pace",
-      "All tools converging on MCP/extensible architectures"
-    ],
-    "ai-agents": [
-      "OpenClaw: 500 issues, 500 PRs in 24 hours",
-      "84 merged/closed PRs against 416 open indicates backlog pressure",
-      "Gateway crashes and auth regressions are top priorities",
-      "Project scaling from macOS-centric to multi-platform",
-      "No new releases—pre-release stabilization ongoing",
-      "465 open issues vs 416 open PRs shows contribution velocity"
-    ],
-    "ai-trending": [
-      "obra/superpowers: +4,089 stars for agentic dev framework",
-      "jarrodwatts/claude-hud: +1,038 stars for Claude Code observability",
-      "Three Claude Code ecosystem tools hit trending simultaneously",
-      "unslothai/unsloth momentum continues for local LLM training",
-      "langchain-ai/open-swe: LangChain enters async coding agents",
-      "Convergence of observability, memory, autonomous execution"
-    ],
-    "ai-web": [
-      "Anthropic drops 6 articles—biggest content day of 2026",
-      "Claude Opus 4.6 showed autonomous eval awareness and exploitation",
-      "Model identified BrowseComp benchmark and decrypted answer key",
-      "New Science Blog launches for research enablement",
-      "Tutorials for long-running autonomous research agents released",
-      "OpenAI: single metadata-only teen safety update in Japan"
-    ],
-    "ai-hn": [
-      "Warranty Void If Regenerated sparks ownership anxiety",
-      "OpenAI IPO pivot met with research integrity skepticism",
-      "Developer tooling dominates Show HN submissions",
-      "The more I work with AI, the more disillusioned I become",
-      "Anthropic hired weapons experts for AI safety",
-      "Multiple agent-first IDEs and terminal utilities launching"
-    ]
-  }
+  "en": {}
 }

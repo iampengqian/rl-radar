@@ -1,118 +1,102 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code 陷质量危机，/buddy 移除引社区反弹",
-      "OpenAI Codex v0.120.0 发布，Realtime V2 重大升级",
-      "Kimi 4 天闭环 /delete 需求，响应速度极快",
-      "Qwen Code v0.14.3 连修 5 Bug，GUI 呼声最高",
-      "OpenCode Effect 重构收尾，Windows 债务暴露",
-      "成本与计费透明成全行业共性攻坚点"
+      "Claude Code陷计费与删减风波，社区抗议",
+      "OpenAI Codex发v0.120.0，推实时交互与沙箱",
+      "OpenCode Windows兼容攻坚，会话级模型路由",
+      "Kimi Code爆发11个PR，补齐竞品核心/loop",
+      "Gemini CLI出v0.39.0，架构升级修复多字节解析",
+      "Qwen Code发v0.14.3，Session防OOM策略优化"
     ],
     "ai-agents": [
-      "OpenClaw 24h 500 Issues/PRs，活跃度达峰值",
-      "v2026.4.11-beta.1 上线 ChatGPT 对话导入 wiki",
-      "Codex 提供商正式落地，双轨并行 OpenAI",
-      "Memory-Core dreaming 功能深度整合",
-      "Google Chat/WhatsApp/Telegram 稳定性集中攻关",
-      "active-memory、heartbeat 等核心子系统密集修复"
+      "OpenClaw日更500+Issue，测v2026.4.11-beta",
+      "OpenClaw推记忆宫殿功能，可导入ChatGPT对话",
+      "v2026.4.10深度集成Codex，需重配OAuth鉴权",
+      "Telegram通道投递机制大修，合入多个关键PR",
+      "单日148个PR合并，高强度推进架构错误修复",
+      "Codex/GPT-5.4模型集成成社区当前测试重点"
     ],
     "ai-trending": [
-      "hermes-agent 单日 6438 stars 登顶 Trending",
-      "Claude Code 生态三工具同日上榜",
-      "markitdown 单日 +3086 stars，微软官方文档工具",
-      "andrej-karpathy-skills 将顶级研究者经验资产化",
-      "MultiCA 瞄准 Agent 团队协作场景",
-      "Archon 主打确定性 AI 编程"
+      "hermes-agent单日暴涨6400星，颠覆传统编码",
+      "大模型落地标配：数据解析与沙盒执行环境",
+      "VoxCPM语音合成突破：无需分词器实现真实克隆",
+      "Karpathy技能规范爆火，提示工程升级为技能工程",
+      "微软markitdown单日增3k星，文档转MD利器",
+      "Archon：首个开源AI编程Harness构建器"
     ],
     "ai-hn": [
-      "Berkeley 团队揭露主流 Agent 基准可被操纵",
-      "Anthropic Claude Mythos 安全争议升温",
-      "OpenAI 收购 Cirrus Labs 引人才整合关注",
-      "Meta 天价 AI 高管奖金凸显人才争夺",
-      "Apple Silicon 2 VM 限制破解帖技术深度高",
-      "Collabmem 瞄准超越单次会话的 AI 工作流"
+      "Anthropic Mythos模型引发AI网络安全风暴",
+      "小模型同样能找安全漏洞，打破唯大模型论",
+      "GPT-5.4成功复现0-day，AI攻防成前沿标配",
+      "伯克利打假：揭示AI Agent基准跑分存在水分",
+      "Collabmem：解决AI Agent长期记忆缺失痛点",
+      "MCP Spine中间件：削减LLM工具61%Token消耗"
     ],
-    "ai-ph": [
-      "Claude Advisor tool 395 票登顶，分层架构调度 Opus/Sonnet",
-      "Manus Skills 将工作流封装为可复用技能",
-      "Google/Perplexity/Orbit 三箭齐发金融 AI",
-      "HeyGen Avatar V 多模态能力向终端下沉",
-      "Minty 将 AI 伴侣从情感陪伴转向职业规划",
-      "Spine 集成无代码 Agent 构建工具链"
+    "rl-daily": [
+      "OpenRLHF将发v0.10，引入异步PPO与VLM支持",
+      "verl居生态活跃度榜首，多引擎与NPU适配猛进",
+      "TRL高频迭代前沿对齐算法，修复VLM工具调用",
+      "Open Instruct重构GRPO奖励，引Docker沙盒",
+      "AReaL死磕底层，重构FSDP显存与权重同步",
+      "rl_games引Triton算子，突破RL的CPU-GPU瓶颈"
     ],
-    "ai-hf": [
-      "Jackrong Qwen3.5-27B 蒸馏 Claude-4.6 Opus，点赞 2582",
-      "Google Gemma-4 系列 5 变体霸榜，下载破 200 万",
-      "HauhauCS Qwen3.5-35B Uncensored 下载 96 万",
-      "Bonsai-8B 1-bit 极致量化，端侧压缩实验",
-      "Netflix 开源视频修复模型，多模态走向产业",
-      "智谱 GLM-5.1 MoE 架构，DSA 动态稀疏激活"
-    ],
-    "ai-community": [
-      "浏览器端 WebGPU+AI 视频编辑零上传方案",
-      "RAG 架构会议智能系统 19 分钟完整案例",
-      "3 个 ML 模型替代 12 个厨房经理预测需求",
-      "JGuardrails 补齐 Java LLM 生产安全层",
-      "开发者自建开源替代对抗 GPTZero 误标记",
-      "Transformer 注意力机制深度拆解系列"
+    "agent-orch": [
+      "Claude Squad引领多智能体终端协作新范式",
+      "OpenAI Symphony发力企业级智能体工作流编排",
+      "Claude Flow实现复杂任务的自动化多智能体委派",
+      "HumanLayer聚焦：如何在关键节点引入人工审批",
+      "AutoGen与CrewAI加速整合RAG与代码解释能力",
+      "Mux Desktop推本地桌面级AI开发环境无缝接管"
     ]
   },
   "en": {
     "ai-cli": [
-      "OpenAI Codex ships v0.120.0 with Realtime V2",
-      "Claude Code faces /buddy removal crisis",
-      "Gemini CLI adds /enhance command, UTF-8 fixes",
-      "GitHub Copilot CLI hit by billing explosion crisis",
-      "Kimi, OpenCode, Pi differentiate via UX iteration",
-      "Sector tension: agentic autonomy vs cost control"
+      "AI CLI tools shifting to autonomous agentic environments",
+      "OpenAI Codex leads with 14+ PRs and enterprise sandboxing",
+      "Emerging CLIs focus on sub-agent memory and extensibility",
+      "Developers demand reliable billing and CI/CD integration",
+      "Claude Code reports 10 active issues with no new releases",
+      "Cross-platform execution remains a top ecosystem priority"
     ],
     "ai-agents": [
-      "OpenClaw releases v2026.4.11-beta.1 with memory enhancements",
-      "500 issues and 500 PRs in 24 hours for OpenClaw",
-      "ChatGPT import added to Dreaming UI",
-      "GPT-5.4/Codex agentic runtime parity focus",
-      "342 open PRs suggest healthy but backlogged pipeline",
-      "Critical stability issues in context, cron, macOS agents"
+      "OpenClaw processes 500 issues and 500 PRs in 24 hours",
+      "OpenClaw v2026.4.11-beta.1 introduces ChatGPT imports",
+      "New release adds bundled Codex provider with native threads",
+      "Project stabilizes memory-core for GPT-5.4 agentic AI",
+      "148 PRs merged as core contributors expand plugin ecosystem",
+      "Media rendering now supported in Control UI and webchat"
     ],
     "ai-trending": [
-      "NousResearch/hermes-agent gains 6,438 stars daily",
-      "Microsoft launches markitdown for document AI",
-      "Archon harness builder targets deterministic workflows",
-      "Kronos: foundation model for financial market language",
-      "VoxCPM advances tokenizer-free multilingual TTS",
-      "Karpathy skills crystallize into open infrastructure"
+      "NousResearch hermes-agent explodes in daily popularity",
+      "Archon gains 1339 stars making LLM generation deterministic",
+      "Microsoft markitdown surges with 3069 new daily stars",
+      "OpenDataLoader-PDF automates accessible AI-ready parsing",
+      "Kronos emerges as a foundational model for global finance",
+      "VoxCPM debuts for ultra-realistic speech generation"
     ],
     "ai-hn": [
-      "Anthropic Mythos release sparks security warnings",
-      "OpenAI acquires Cirrus Labs, consolidating infrastructure",
-      "Berkeley team exposes flaws in AI agent benchmarks",
-      "Borges essay on LLM interpretability resonates",
-      "GPT5.4 replicates Mythos 0-days",
-      "Meta-commentary on AI development sophistication rises"
+      "Anthropic Mythos model revolutionizes zero-day discovery",
+      "Small models found the same vulnerabilities as Mythos",
+      "OpenAI acquires Cirrus Labs amid industry consolidation",
+      "Meta reportedly offers billion-dollar AI talent bonuses",
+      "Top AI agent benchmarks exposed as brittle and flawed",
+      "Developers push to reduce steep token costs in AI coding"
     ],
-    "ai-ph": [
-      "Claude Advisor pairs Opus with Sonnet/Haiku execution",
-      "Manus Skills packages workflows into reusable agents",
-      "Google and Perplexity compete on AI finance assistants",
-      "SoulLink brings 3D vibe coding to mobile",
-      "Viktor launches agent skill marketplace",
-      "Infrastructure-to-application ratio shows composability focus"
+    "rl-daily": [
+      "RL ecosystem splits between active RLHF and quiet bases",
+      "Post-training frameworks aggressively target Huawei NPUs",
+      "NVIDIA Grace-Blackwell architecture drives RLHF scaling",
+      "Basic text-based RLHF shifts to multimodal VLM training",
+      "Foundational libraries CleanRL and Gymnasium go dormant",
+      "verl leads infrastructure scaling with 16 active PRs"
     ],
-    "ai-hf": [
-      "Google Gemma 4 family dominates with 2B-31B variants",
-      "Jackrong distills Claude 4.6 Opus into Qwen 3.5",
-      "Nvidia PersonaPlex-7B targets speech-to-speech agents",
-      "Netflix releases rare video-to-video Void model",
-      "Unsloth GGUF quantizations meet local inference demand",
-      "Zhipu GLM-5.1 pushes MoE with DSA optimization"
-    ],
-    "ai-community": [
-      "Free browser video editor uses WebGPU, zero uploads",
-      "Local-first AI tools gain strong developer momentum",
-      "Agent observability and safety infrastructure expands",
-      "Non-developers increasingly ship AI-built projects",
-      "Kitchen-themed LLM analogies prove educational hit",
-      "Wildcard CORS bugs from AI code spark security fixes"
+    "agent-orch": [
+      "Agent orchestration explodes across 45 tracked projects",
+      "AutoGPT and MetaGPT drive multi-agent collaboration",
+      "Claude Squad enables parallel autonomous agent workflows",
+      "Symphony and Crystal advance enterprise agent management",
+      "Swarm Protocol introduces decentralized agent messaging",
+      "HumanLayer prioritizes human-in-the-loop oversight"
     ]
   }
 }

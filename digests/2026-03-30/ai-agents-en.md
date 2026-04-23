@@ -1,12 +1,12 @@
 # OpenClaw Ecosystem Digest 2026-03-30
 
-> Issues: 500 | PRs: 500 | Projects covered: 12 | Generated: 2026-03-30 00:57 UTC
+> Issues: 500 | PRs: 500 | Projects covered: 12 | Generated: 2026-03-29 22:03 UTC
 
 - [OpenClaw](https://github.com/openclaw/openclaw)
 - [NanoBot](https://github.com/HKUDS/nanobot)
+- [Zeroclaw](https://github.com/zeroclaw-labs/zeroclaw)
 - [PicoClaw](https://github.com/sipeed/picoclaw)
 - [NanoClaw](https://github.com/qwibitai/nanoclaw)
-- [NullClaw](https://github.com/nullclaw/nullclaw)
 - [IronClaw](https://github.com/nearai/ironclaw)
 - [LobsterAI](https://github.com/netease-youdao/LobsterAI)
 - [TinyClaw](https://github.com/TinyAGI/tinyclaw)
@@ -21,290 +21,245 @@
 
 # OpenClaw Project Digest — 2026-03-30
 
----
-
 ## 1. Today's Overview
 
-OpenClaw shows **exceptionally high activity** with 500 issues and 500 PRs updated in the last 24 hours, indicating a mature, fast-moving project with substantial community engagement. The 388:112 open-to-closed issue ratio and 331:169 open-to-merged PR ratio suggest ongoing feature expansion outpacing resolution, typical of a growth-phase platform. A new release (v2026.3.28) shipped with breaking authentication changes for Qwen users. Key focus areas include Windows platform parity, memory/QMD system hardening, and multi-channel reliability fixes. The project demonstrates strong maintainer velocity with multiple XL-sized PRs landing for core infrastructure improvements.
-
----
+OpenClaw is experiencing **extremely high activity** with 500 issues and 500 pull requests updated in the last 24 hours, indicating a rapidly evolving codebase with strong community engagement. The project released version **v2026.3.28** (including a beta variant), introducing a significant breaking change for Qwen provider users that requires migration to Model Studio authentication. The open issue count (418) significantly outweighs closed issues (82), suggesting the project is in a phase of rapid feature expansion that is outpacing bug resolution. With 344 open PRs versus 156 merged, substantial new functionality and fixes are in the pipeline.
 
 ## 2. Releases
 
-### [v2026.3.28](https://github.com/openclaw/openclaw/releases/tag/v2026.3.28) — 2026.3.28
+### v2026.3.28 (Stable) & v2026.3.28-beta.1
 
-| Category | Details |
-|----------|---------|
-| **Breaking Changes** | **Qwen OAuth Migration**: Removed deprecated `qwen-portal-auth` OAuth integration for `portal.qwen.ai`. Users must migrate to Model Studio via `openclaw onboard --auth-choice modelstudio-api-key`. [PR #52709](https://github.com/openclaw/openclaw/pull/52709) — thanks @pomelo-nwu |
-| | **Config/Doctor**: Dropped automatic config migrations older than two months; users on ancient configs must manually migrate or reinstall |
+**Breaking Changes:**
+- **Qwen Provider Migration:** Removed deprecated `qwen-portal-auth` OAuth integration for `portal.qwen.ai`. Users must migrate to Model Studio using `openclaw onboard --auth-choice modelstudio-api-key`. ([#52709](https://github.com/openclaw/openclaw/pull/52709)) — Thanks @pomelo-nwu.
+- **Config/Doctor:** Dropped automatic config migrations older than two months.
+
+**Migration Notes:** Users relying on Qwen OAuth must re-authenticate using API keys before upgrading to avoid service interruption.
 
 ---
 
 ## 3. Project Progress
 
-### Merged/Closed PRs Today (Selected High-Impact)
+**Merged PRs (156 today)** advanced the following areas:
 
-| PR | Description | Impact |
-|----|-------------|--------|
-| [#57351](https://github.com/openclaw/openclaw/pull/57351) | QMD `--glob` flag compatibility fix | Resolves [Issue #55123](https://github.com/openclaw/openclaw/issues/55123) — collection creation failures |
-| [#57354](https://github.com/openclaw/openclaw/pull/57354) | QMD sync parity hooks (`watch` + `onSessionStart`) | Fixes [Issue #47482](https://github.com/openclaw/openclaw/issues/47482) — memory indexing now triggers properly |
-| [#57342](https://github.com/openclaw/openclaw/pull/57342) | Remove xAI auth trace logging | Cleanup of provider-specific noise in core |
-| [#57338](https://github.com/openclaw/openclaw/pull/57338) | Control UI: clear queued connect timeout on stop | Prevents ghost connection states |
-| [#57166](https://github.com/openclaw/openclaw/pull/57166) | `/v1/responses` tool schema flat format fix | Responses API compliance |
-| [#45443](https://github.com/openclaw/openclaw/pull/45443) | Telegram `/fast` menu callback routing | Native command parity |
-| [#41549](https://github.com/openclaw/openclaw/pull/41549) | Exec login shell PATH resolution for sandbox-off | Phantom sandbox fix |
-
-### Major In-Flight Features
-
-| PR | Size | Description |
-|----|------|-------------|
-| [#57332](https://github.com/openclaw/openclaw/pull/57332) | **XL** | Windows support MVP: docs, diagnostics, tray companion — addresses [Issue #75](https://github.com/openclaw/openclaw/issues/75) |
-| [#57361](https://github.com/openclaw/openclaw/pull/57361) | **XL** | Task ledger SQLite migration + audit CLI — infrastructure for multi-tenant task management |
-| [#55513](https://github.com/openclaw/openclaw/pull/55513) | **L** | Claim Check pattern for large attachments — prevents OOM via `media://inbound/<id>` contract |
-| [#57368](https://github.com/openclaw/openclaw/pull/57368) | **L** | Web UI sidebar chat sessions — discoverability fix for multi-session management |
-| [#52951](https://github.com/openclaw/openclaw/pull/52951) | **XL** | `tools.fs.roots` — per-agent filesystem roots with access modes — security-critical for multi-tenant |
-| [#43501](https://github.com/openclaw/openclaw/pull/43501) | **XL** | OpenAI Realtime API voice mode — ~200-400ms latency vs. 2-3s pipeline |
+- **Agent System:** Added `--deliver` flag to bypass LLM and send messages directly ([#57300](https://github.com/openclaw/openclaw/pull/57300)); added guard delivery and subagent review hooks ([#56904](https://github.com/openclaw/openclaw/pull/56904)).
+- **CLI Performance:** Optimized startup by skipping process respawn for short commands ([#54085](https://github.com/openclaw/openclaw/pull/54085)) and deferring plugin loading in pairing CLI ([#54086](https://github.com/openclaw/openclaw/pull/54086)).
+- **Channels:** Fixed Slack streaming replies to stay in thread ([#57310](https://github.com/openclaw/openclaw/pull/57310)); added per-channel `replyToMode` config for Slack ([#57309](https://github.com/openclaw/openclaw/pull/57309)); fixed Telegram bot-authored media handling ([#57298](https://github.com/openclaw/openclaw/pull/57298)).
+- **Docker:** Hardened Mac Docker setup and migration documentation ([#32424](https://github.com/openclaw/openclaw/pull/32424)).
+- **Providers:** Added Oracle OCI Generative AI provider plugin ([#54784](https://github.com/openclaw/openclaw/pull/54784)); normalized provider IDs for media understanding ([#56678](https://github.com/openclaw/openclaw/pull/56678)).
 
 ---
 
 ## 4. Community Hot Topics
 
-### Top Issues by Engagement
+| Issue/PR | Engagement | Underlying Need |
+|----------|------------|-----------------|
+| [#75 Linux/Windows Clawdbot Apps](https://github.com/openclaw/openclaw/issues/75) | 58 comments, 👍 66 | Strong demand for desktop parity across all major platforms (Linux/Windows apps to match macOS/iOS/Android). |
+| [#44851 Kimi web_search 401 Error](https://github.com/openclaw/openclaw/issues/44851) | 32 comments | Chinese users rely heavily on Kimi integration; authentication issues block production use. |
+| [#14593 Docker Skill Install Failure](https://github.com/openclaw/openclaw/issues/14593) | 18 comments, 👍 14 | Containerized deployments need reliable skill installation without `brew` dependency. |
+| [#26322 OAuth Token Refresh Race Condition](https://github.com/openclaw/openclaw/issues/26322) | 14 comments, 👍 12 | Multi-agent setups sharing OAuth profiles need thread-safe token management. |
+| [#53353 Matrix E2EE Missing WASM](https://github.com/openclaw/openclaw/issues/53353) | 14 comments | Matrix users require complete package distribution for end-to-end encryption support. |
 
-| Rank | Issue | Comments | 👍 | Core Need |
-|------|-------|----------|-----|-----------|
-| 1 | [#75](https://github.com/openclaw/openclaw/issues/75) Linux/Windows Clawdbot Apps | 60 | 66 | **Platform parity** — macOS/iOS/Android have native apps; Linux/Windows users excluded from full feature set |
-| 2 | [#44851](https://github.com/openclaw/openclaw/issues/44851) Kimi web_search 401 auth error | 32 | 3 | **Provider reliability** — tool-specific auth broken while chat API works; inconsistent OAuth scope handling |
-| 3 | [#14593](https://github.com/openclaw/openclaw/issues/14593) Skill install fails in Docker: `brew not installed` | 18 | 14 | **Container ergonomics** — Docker image lacks Homebrew, breaking skill installation |
-| 4 | [#26322](https://github.com/openclaw/openclaw/issues/26322) OAuth token refresh race condition | 15 | 12 | **Multi-agent auth safety** — concurrent refresh causes `refresh_token_reused` failures |
-| 5 | [#53353](https://github.com/openclaw/openclaw/issues/53353) Matrix E2EE broken: missing WASM file | 14 | 3 | **Security regression** — encryption completely non-functional since v2026.3.23 |
-
-### Underlying Needs Analysis
-
-- **Cross-platform ubiquity** dominates (#75) — the 66 👍 signals strong enterprise/self-host demand
-- **Auth system fragility** is systemic: OAuth races (#26322), provider-specific breakages (#44851, #49191), token scope gaps (#50474, #52625)
-- **Memory/QMD reliability** is emerging as a theme — multiple indexing, sync, and tool-naming issues
+**Analysis:** Cross-platform desktop apps, authentication reliability across diverse providers (Kimi, OAuth flows), and container/enterprise deployment robustness dominate community priorities.
 
 ---
 
 ## 5. Bugs & Stability
 
-| Severity | Issue | Description | Fix PR |
-|----------|-------|-------------|--------|
-| 🔴 **Critical** | [#53353](https://github.com/openclaw/openclaw/issues/53353) | Matrix E2EE completely broken (missing WASM) — messages silently dropped | None identified |
-| 🔴 **Critical** | [#53955](https://github.com/openclaw/openclaw/issues/53955) | QMD 0/10 files indexed after 2026.3.23-2 — memory_search returns empty | [#57351](https://github.com/openclaw/openclaw/pull/57351), [#57354](https://github.com/openclaw/openclaw/pull/57354) |
-| 🟡 **High** | [#53959](https://github.com/openclaw/openclaw/issues/53959) | openai-codex/gpt-5.3-codex no tool execution after 2026.3.23-2 | None identified |
-| 🟡 **High** | [#26322](https://github.com/openclaw/openclaw/issues/26322) | OAuth token refresh race condition — spurious failovers | None identified |
-| 🟡 **High** | [#51012](https://github.com/openclaw/openclaw/issues/51012) | WhatsApp relink → 401 session drop | None identified |
-| 🟡 **High** | [#52875](https://github.com/openclaw/openclaw/issues/52875) | Session_send "no session found" regression | None identified |
-| 🟢 **Medium** | [#52585](https://github.com/openclaw/openclaw/issues/52585) | SafeOpenError on plugin install (regression from 2026.2.23) | None identified |
-| 🟢 **Medium** | [#48873](https://github.com/openclaw/openclaw/issues/48873) | Cannot call second skill in one session | None identified |
+### Critical/High Severity
+| Issue | Severity | Status | Notes |
+|-------|----------|--------|-------|
+| [#53353 Matrix E2EE Broken](https://github.com/openclaw/openclaw/issues/53353) | 🔴 Critical | OPEN | Missing `matrix_sdk_crypto_wasm_bg.wasm` in npm package — blocks all Matrix encrypted messaging. No fix PR yet. |
+| [#29951 SQL Injection Vulnerability](https://github.com/openclaw/openclaw/issues/29951) | 🔴 Critical | OPEN | SQL injection in `/api/metrics/database` endpoint. Security issue needs immediate attention. |
+| [#11202 API Keys in Prompt Context](https://github.com/openclaw/openclaw/issues/11202) | 🔴 Security | OPEN | Resolved API keys injected into LLM prompt context — potential credential exposure. |
 
-### Regressions Cluster
-- **v2026.3.23-2** introduced multiple regressions: QMD indexing (#53955), openai-codex tool execution (#53959), Matrix E2EE (#53353)
-- **v2026.3.13** plugin install failures (#52585)
+### Regressions (Worked Before)
+| Issue | Severity | Status | Fix PR |
+|-------|----------|--------|--------|
+| [#53959 openai-codex Tools Not Executing](https://github.com/openclaw/openclaw/issues/53959) | 🟠 High | OPEN | None yet — tools (exec, MCP, web search) completely non-functional after v2026.3.23-2. |
+| [#52875 session_send No Session Found](https://github.com/openclaw/openclaw/issues/52875) | 🟠 High | OPEN | Inter-agent communication broken after v2026.3.22. |
+| [#54931 Discord Crash Loop](https://github.com/openclaw/openclaw/issues/54931) | 🟠 High | CLOSED | Gateway crashes every ~35 min — Discord health-monitor uncaught exception. |
+| [#41045 Telegram Streaming Broken](https://github.com/openclaw/openclaw/issues/41045) | 🟡 Medium | OPEN | Partial streaming mode broken since v3.8. |
+| [#41494 Gemini Reasoning Leaks](https://github.com/openclaw/openclaw/issues/41494) | 🟡 Medium | OPEN | Internal chain-of-thought exposed to users. |
+
+### Recent Fixes
+- [#55346 Discord Gateway Crash](https://github.com/openclaw/openclaw/issues/55346) — CLOSED, resolved max reconnect issue.
+- [#54745 Telegram Outbound Lost](https://github.com/openclaw/openclaw/issues/54745) — CLOSED, fixed restart persistence.
 
 ---
 
 ## 6. Feature Requests & Roadmap Signals
 
-| Issue | Request | Likelihood in Next Version | Rationale |
-|-------|---------|---------------------------|-----------|
-| [#75](https://github.com/openclaw/openclaw/issues/75) | Linux/Windows native apps | **High** — [#57332](https://github.com/openclaw/openclaw/pull/57332) (Windows MVP) is XL-sized and active |
-| [#12176](https://github.com/openclaw/openclaw/issues/12176) | Anthropic `speed: "fast"` parameter | Medium | Clean passthrough feature; depends on provider SDK update |
-| [#22438](https://github.com/openclaw/openclaw/issues/22438) | Tiered bootstrap file loading | Medium | Token optimization; architectural change |
-| [#56130](https://github.com/openclaw/openclaw/pull/56130) | visionOS node app | **High** — PR is XL and merged; Apple Vision Pro spatial peripheral |
-| [#43501](https://github.com/openclaw/openclaw/pull/43501) | OpenAI Realtime voice mode | **High** — Active XL PR, addresses core latency pain point |
-
-### Predicted v2026.4.x Themes
-1. **Windows GA** — tray companion, native installer, parity docs
-2. **Voice/Realtime** — OpenAI Realtime API integration
-3. **Spatial/AR** — visionOS peripheral for ambient agent presence
-4. **Memory system hardening** — QMD stability, sync reliability, FTS-only mode
+| Feature Request | Signals | Prediction |
+|-----------------|---------|------------|
+| **Linux/Windows Desktop Apps** ([#75](https://github.com/openclaw/openclaw/issues/75)) | 58 comments, 66 👍, `help wanted` label | High community priority; actively seeking contributors. Likely roadmap item but needs maintainer bandwidth. |
+| **Dynamic Model Discovery** ([#10687](https://github.com/openclaw/openclaw/issues/10687)) | `maintainer` label | Active internal discussion; essential for OpenRouter and fast-moving model catalogs. Expected in upcoming releases. |
+| **Tiered Bootstrap Loading** ([#22438](https://github.com/openclaw/openclaw/issues/22438)) | Performance optimization | Addresses token budget concerns for large workspaces. Strong candidate for next version. |
+| **Operational Assurance Gateway (OAG)** ([PR #48956](https://github.com/openclaw/openclaw/pull/48956)) | XL-sized PR, comprehensive | Self-evolving channel health runtime; indicates strategic investment in reliability infrastructure. |
 
 ---
 
 ## 7. User Feedback Summary
 
-### Pain Points (Verbatim Themes)
+**Pain Points:**
+- **Authentication Complexity:** Multiple auth-related issues (Kimi 401, OAuth race conditions, Google Vertex ADC failures) indicate the multi-provider auth layer is fragile.
+- **Regression Frequency:** 10+ regression bugs reported in recent weeks suggest insufficient automated testing before releases.
+- **Docker/Container UX:** Users struggle with `brew` dependencies, PATH issues with Nix, and skill installation in containers.
+- **Documentation Gaps:** Plugin loading failures ([#28222](https://github.com/openclaw/openclaw/issues/28222), [#52341](https://github.com/openclaw/openclaw/issues/52341)) suggest unclear extension setup instructions.
 
-| Category | Feedback | Frequency |
-|----------|----------|-----------|
-| **Platform exclusion** | "Linux and Windows are missing" [#75](https://github.com/openclaw/openclaw/issues/75) | Dominant |
-| **Auth fragility** | "Token refresh failed: 401", "missing scope: operator.read" | High |
-| **Silent failures** | "messages not processing", "memory_search always returns empty" | High |
-| **Container gaps** | "brew not installed" in Docker — skill install broken | Moderate |
-| **Provider quirks** | Kimi "漏传 path 参数", Gemini reasoning leaks | Moderate |
-
-### Satisfaction Signals
-- Strong engagement (60 comments on #75) indicates invested user base, not abandonment
-- Active maintainer response on critical regressions (QMD fixes landed same day as reports)
-- XL-sized platform expansion PRs suggest resource commitment
-
-### Dissatisfaction Signals
-- Multiple "regression" labels on recent issues — quality perception risk
-- "Stale" bot activity on legitimate bugs (#12590, #22438) — frustration with triage velocity
+**Positive Signals:**
+- Strong engagement on feature requests shows active, invested community.
+- Quick closure of Discord crash bugs indicates responsive incident handling.
+- CLI performance improvements acknowledged as needed and being addressed.
 
 ---
 
 ## 8. Backlog Watch
 
-### Long-Unanswered Critical Items
+| Item | Age | Priority | Status | Concern |
+|------|-----|----------|--------|---------|
+| [#75 Linux/Windows Apps](https://github.com/openclaw/openclaw/issues/75) | ~3 months | High | OPEN | Highly requested (66 👍), labeled `help wanted`, no maintainer assignment yet. |
+| [#29951 SQL Injection](https://github.com/openclaw/openclaw/issues/29951) | ~1 month | Critical | `stale` | Security vulnerability marked stale — needs immediate review. |
+| [#11202 API Key Exposure](https://github.com/openclaw/openclaw/issues/11202) | ~2 months | Critical | OPEN | Security issue unresolved for extended period. |
+| [#12590 memoryFlush Reliability](https://github.com/openclaw/openclaw/issues/12590) | ~2 months | Medium | `stale` | Core memory management bug without maintainer response. |
+| [#28222 OTel Plugin Broken](https://github.com/openclaw/openclaw/issues/28222) | ~1 month | Medium | `stale` | Built-in diagnostics plugin non-functional. |
 
-| Issue | Age | Problem | Risk |
-|-------|-----|---------|------|
-| [#11202](https://github.com/openclaw/openclaw/issues/11202) | ~52 days | **Security**: API keys injected into LLM prompts via resolved model catalog | Credential exposure; compliance risk |
-| [#12590](https://github.com/openclaw/openclaw/issues/12590) | ~50 days | `memoryFlush` fires every other cycle — dedup logic bug | Data loss, inconsistent state |
-| [#22438](https://github.com/openclaw/openclaw/issues/22438) | ~38 days | Tiered bootstrap loading — token waste for large workspaces | Cost/performance at scale |
-| [#28708](https://github.com/openclaw/openclaw/issues/28708) | ~32 days | ACP runs fail via OpenClaw, succeed via direct `acpx` CLI | ACP integration reliability |
-
-### PRs Needing Maintainer Attention
-
-| PR | Status | Blocker |
-|----|--------|---------|
-| [#52951](https://github.com/openclaw/openclaw/pull/52951) | Open, XL | `tools.fs.roots` — security-critical for multi-tenant; needs review bandwidth |
-| [#43501](https://github.com/openclaw/openclaw/pull/43501) | Open, XL | Realtime voice — large surface area, needs audio/infra expertise |
-| [#55513](https://github.com/openclaw/openclaw/pull/55513) | Open, L | Claim Check pattern — architectural decision needs sign-off |
-
----
-
-*Digest generated from GitHub data as of 2026-03-30. All links reference github.com/openclaw/openclaw.*
+**Recommendation:** Security issues (#29951, #11202) and the critical Matrix E2EE bug (#53353) require immediate triage. The Linux/Windows app request (#75) warrants official roadmap clarification given strong community interest.
 
 ---
 
 ## Cross-Ecosystem Comparison
 
-# Cross-Project AI Agent Ecosystem Report — 2026-03-30
+# Cross-Project Ecosystem Analysis Report
+**Date:** 2026-03-30 | **Analyst:** Senior Ecosystem Analyst
+
+---
 
 ## 1. Ecosystem Overview
 
-The personal AI assistant / agent open-source ecosystem is experiencing **intense, fragmented innovation** with over 1,000 combined PR updates across 10+ projects in 24 hours. Three distinct tiers have emerged: **mature platforms** (OpenClaw, NanoBot, IronClaw) with institutional-grade complexity; **rapidly iterating mid-tier projects** (PicoClaw, CoPaw, NanoClaw) balancing feature velocity with stability debt; and **maintenance-mode or nascent tools** (NullClaw, EasyClaw, TinyClaw). The landscape is defined by **converging technical requirements**—memory systems, multi-agent orchestration, and security hardening—yet **divergent architectural philosophies**, from OpenClaw's monolithic extensibility to IronClaw's financial-security-first kernel design and NanoClaw's container-native isolation.
+The open-source AI agent and personal assistant ecosystem is experiencing a **hyper-growth phase** characterized by rapid architectural experimentation and feature velocity. Projects are coalescing around three major paradigms: (1) comprehensive multi-channel agent frameworks (OpenClaw, Zeroclaw, IronClaw), (2) lightweight focused assistants (NanoBot, NanoClaw, ZeptoClaw), and (3) specialized integration platforms (LobsterAI, Moltis, CoPaw). A clear industry-wide shift is occurring from single-agent chatbots toward **multi-agent collaboration frameworks** with persistent memory systems, while security and authentication complexity remains the primary operational pain point across all project tiers.
 
 ---
 
 ## 2. Activity Comparison
 
-| Project | Issues (24h) | PRs (24h) | Merged/Closed PRs | Release Status | Health Score* |
-|:---|:---:|:---:|:---:|:---|:---:|
-| **OpenClaw** | 500 | 500 | 169 merged | v2026.3.28 shipped | ⭐⭐⭐⭐⭐ |
-| **NanoBot** | 19 | 97 | 5 merged | None | ⭐⭐⭐⭐☆ |
-| **PicoClaw** | 22 | 51 | 17 merged | v0.2.4-nightly | ⭐⭐⭐⭐☆ |
-| **NanoClaw** | 17 | 50 | 1 merged | None | ⭐⭐⭐☆☆ |
-| **IronClaw** | 8 | 50 | 7 merged | None | ⭐⭐⭐⭐☆ |
-| **CoPaw** | 37 | 34 | 16 merged | v0.2.0.post1 | ⭐⭐⭐⭐☆ |
-| **ZeptoClaw** | 2 | 6 | 1 merged | None | ⭐⭐⭐☆☆ |
-| **Moltis** | 6 | 3 | 1 merged | None | ⭐⭐⭐⭐☆ |
-| **LobsterAI** | 4 | 7 | 0 merged | None | ⭐⭐⭐☆☆ |
-| **NullClaw** | 2 | 2 | 0 merged | None | ⭐⭐☆☆☆ |
-| **EasyClaw** | 1 | 0 | 0 merged | v1.7.8 | ⭐⭐☆☆☆ |
-| **TinyClaw** | 0 | 0 | 0 | None | ⭐☆☆☆☆ |
-
-*Health Score: weighted by velocity, merge ratio, release cadence, critical bug response, and community engagement*
+| Project | Issues (24h) | PRs (24h) | Release | Health Score | Tier |
+|---------|-------------|-----------|---------|--------------|------|
+| **OpenClaw** | 500 | 500 (156 merged) | v2026.3.28 | 🟢 Excellent | 1 - Ecosystem Leader |
+| **NanoBot** | 17 | 98 (7 merged) | None | 🟡 Moderate | 2 - Active Development |
+| **Zeroclaw** | ~15 | 50 (14 merged) | v0.6.7 | 🟢 Strong | 1 - High Velocity |
+| **PicoClaw** | ~12 | 52 (18 merged) | v0.2.4-nightly | 🟡 Moderate | 2 - Architectural Shift |
+| **NanoClaw** | 6 | 22 (8 merged) | None | 🟢 Active | 2 - Focused Growth |
+| **IronClaw** | 9 | 50 (7 merged) | None | 🟢 Strong | 1 - Feature Expansion |
+| **LobsterAI** | 4 | 7 (0 merged) | None | 🟡 Moderate | 3 - Sprint Phase |
+| **Moltis** | 8 | 5 (3 merged) | 20260328.03 | 🟢 Healthy | 3 - Stable Iteration |
+| **CoPaw** | 40 | 30 (15 merged) | None | 🟢 Active | 2 - Community Growth |
+| **ZeptoClaw** | ~8 | 7 (1 merged) | None | 🟡 Moderate | 3 - Refinement |
+| **EasyClaw** | 1 | 0 | v1.7.8 | 🟠 Maintenance | 4 - Stable/Minimal |
+| **TinyClaw** | 0 | 0 | None | 🔴 Inactive | 5 - Dormant |
 
 ---
 
 ## 3. OpenClaw's Position
 
-### Advantages vs. Peers
-
-| Dimension | OpenClaw | Peer Comparison |
-|:---|:---|:---|
-| **Scale** | 500 PRs/24h, 388:112 issue ratio | 5-10x larger than nearest active competitor (NanoBot: 97 PRs) |
-| **Platform breadth** | Native apps: macOS, iOS, Android; Windows MVP in flight (#57332) | PicoClaw/CoPaw web-first; NanoBot Telegram-centric; IronClaw headless/server |
-| **Release discipline** | Daily patch releases, documented breaking changes | Most peers: accumulation mode or nightly-only |
-| **Memory system maturity** | QMD (Queryable Memory Documents) with FTS, sync hooks, glob indexing | NanoBot building equivalent (#2618-2620); others file-based or absent |
-| **Voice/Realtime** | OpenAI Realtime API integration ~200-400ms latency (#43501) | Unique; competitors at 2-3s pipeline latency |
+### Competitive Advantages
+- **Ecosystem Scale:** With 500 issues and 500 PRs updated daily, OpenClaw operates at **10x the velocity** of nearest competitors, establishing it as the de facto reference implementation
+- **Provider Breadth:** Native support for Oracle OCI, Qwen Model Studio, and Google Vertex ADC positions OpenClaw as the **enterprise integration standard**
+- **Channel Maturity:** Comprehensive multi-channel support (Slack, Discord, Telegram, Matrix) with advanced threading and streaming capabilities exceeds peer implementations
 
 ### Technical Approach Differences
+- **Architecture:** OpenClaw uses a monolithic-but-modular plugin architecture vs. Zeroclaw's WASM sandboxing approach and PicoClaw's multi-agent delegation model
+- **Release Cadence:** Weekly stable releases with beta variants contrasts with competitors' ad-hoc release schedules
+- **Scale Focus:** OpenClaw optimizes for multi-tenant enterprise deployments while NanoBot/NanoClaw target single-user scenarios
 
-| Aspect | OpenClaw | Alternative Approaches |
-|:---|:---|:---|
-| **Architecture** | Monolithic core with compile-time WASM sandboxing, runtime MCP | IronClaw: proposed OS-like kernel/extension model; NanoClaw: container-per-agent isolation |
-| **Auth model** | OAuth-first with provider-specific integrations (breaking changes: Qwen migration) | Moltis: vault-sealed session history; NanoClaw: token cost tracking infrastructure |
-| **Multi-agent** | Task ledger + SQLite migration for multi-tenant (#57361) | PicoClaw: Phase 2 multi-agent discovery/delegation; CoPaw: ACP protocol for external agents |
-| **Security posture** | Per-agent filesystem roots (#52951), sandbox-off PATH fixes | IronClaw: financial execution layer with human-in-the-loop; NanoClaw: Landlock sandboxing (#463) |
-
-### Community Size
-
-OpenClaw's **66 👍 on Linux/Windows parity (#75)** exceeds total engagement on most peer projects' top issues. Its 60-comment threads indicate **institutional user investment** (enterprise self-hosting demand) versus NanoBot's security-anxiety-driven engagement or PicoClaw's research-oriented memory discussions.
+### Community Size Comparison
+- **OpenClaw:** 66+ upvotes on single feature requests, 58+ comment threads — indicates **10,000+ active users**
+- **Peers:** NanoBot (4-8 upvotes), Zeroclaw (3-5 upvotes) suggest **1,000-3,000 active users** each
+- **Long Tail:** Remaining projects show sub-1,000 user bases based on engagement metrics
 
 ---
 
 ## 4. Shared Technical Focus Areas
 
-| Requirement | Projects | Specific Needs |
-|:---|:---|:---|
-| **Memory/Context Systems** | OpenClaw, NanoBot, PicoClaw, NanoClaw, CoPaw | OpenClaw: QMD sync parity, FTS-only mode; NanoBot: hybrid BM25+vector (#2618), async consolidation (#2609); PicoClaw: "Seahorse" biologically-inspired memory (#1919); NanoClaw: MemStack persistent memory (#1495), Headroom/RTK compression (#1493-1494) |
-| **Multi-Agent Orchestration** | PicoClaw, CoPaw, IronClaw, OpenClaw | PicoClaw: Phase 2 discovery/delegation (#2148); CoPaw: ACP external agent protocol (#1544); IronClaw: secure financial execution with policy enforcement (#1712); OpenClaw: task ledger + audit CLI |
-| **Security Hardening** | IronClaw, Moltis, NanoClaw, OpenClaw | IronClaw: async transaction approvals (#1739), WalletConnect; Moltis: vault sealing UX (#518); NanoClaw: container isolation, conversational approval (#1537); OpenClaw: per-agent filesystem roots |
-| **Provider Diversity & Routing** | ZeptoClaw, CoPaw, Moltis, IronClaw, OpenClaw | ZeptoClaw: OpenRouter vendor-prefix routing (#468); CoPaw: MiniMax, GLM compatibility; Moltis: Z.AI Coding Plan (#517); IronClaw: Bedrock tool block stripping; OpenClaw: 10+ provider OAuth integrations |
-| **Cost/Token Optimization** | NanoBot, NanoClaw, IronClaw, CoPaw | NanoBot: 560k token/heartbeat crisis (#2375); NanoClaw: token cost tracking (#1528); IronClaw: anti-drift self-checks (#1662); CoPaw: AI compression with domain awareness (#2482) |
-| **Windows Platform Parity** | OpenClaw, PicoClaw, CoPaw, NanoBot | OpenClaw: XL Windows MVP (#57332); PicoClaw: config persistence fixes; CoPaw: installer PATH fixes (#2489); NanoBot: Docker build hangs (#87, 8 weeks stale) |
+| Focus Area | Projects | Specific Needs |
+|------------|----------|----------------|
+| **Context Management & Memory** | OpenClaw, Zeroclaw, NanoBot, PicoClaw, ZeptoClaw | Context overflow recovery, semantic memory indexing (BM25+vector), biological hippocampus models, context compaction strategies |
+| **Authentication & Security** | OpenClaw, NanoBot, Zeroclaw, IronClaw, NanoClaw | OAuth race conditions, OIDC JWT support, supply chain security, API key exposure prevention, sealed vault architectures |
+| **Local LLM Compatibility** | IronClaw, Moltis, CoPaw, ZeptoClaw | Empty completion handling, extended probe timeouts (30s), bounded autonomous recovery, model discovery |
+| **Multi-Channel Streaming** | OpenClaw, LobsterAI, Zeroclaw, ZeptoClaw | Telegram thread persistence, WeChat message queueing, Discord crash recovery, Matrix E2EE support |
+| **Container/Docker Reliability** | OpenClaw, NanoClaw, PicoClaw, CoPaw | SELinux labels, skill installation without `brew`, PID persistence, startup optimization |
+| **Tool/Skill Extensibility** | OpenClaw, Zeroclaw, NanoClaw, ZeptoClaw | WASM plugins, dynamic skill registration, MCP protocol support, tool discovery registries |
 
 ---
 
 ## 5. Differentiation Analysis
 
-| Project | Primary Differentiator | Target User | Architecture Signature |
-|:---|:---|:---|:---|
-| **OpenClaw** | Cross-platform ubiquity + voice realtime | Power users, enterprises needing full-stack deployment | Monolithic, channel-native apps, compile-time WASM |
-| **NanoBot** | Telegram-first personal assistant + research memory | Individual power users, Chinese market | Python, hybrid search, async consolidation |
-| **PicoClaw** | Multi-agent collaboration + "serious" agent framework | Agent developers, research users | Web-first, Phase 2 delegation, biologically-inspired memory |
-| **IronClaw** | Financial security + crypto/DeFi agent infrastructure | Blockchain developers, institutional custody | Rust, NEAR ecosystem, human-in-the-loop signing |
-| **NanoClaw** | Container-native isolation + vendor-agnostic tooling | Developers, healthcare/enterprise (privacy-critical) | Docker-per-agent, dashboard observability |
-| **CoPaw** | Enterprise China integration (DingTalk, Feishu) + ACP protocol | Chinese enterprise teams | Python, extensive channel testing, skills-hub |
-| **Moltis** | Vault-sealed security + session portability | Security-conscious professionals, air-gapped ops | Rust, SQLite-backed, SSH runtime |
-| **ZeptoClaw** | Composability + browser automation | Technical builders, custom tool authors | Rust, runtime registry, Landlock sandboxing |
-| **LobsterAI** | Cowork chat UX + executable artifacts | NetEase ecosystem, visual thinkers | Claude SDK (transitioning?), HTML/React/Mermaid rendering |
-| **NullClaw** | Minimal maintenance fork | Users wanting stability over features | OpenClaw-compatible, reduced scope |
+### Feature Focus Segmentation
+
+| Segment | Projects | Primary Differentiator |
+|---------|----------|------------------------|
+| **Enterprise Agents** | OpenClaw, IronClaw | Financial execution layers, multi-tenant auth, compliance-ready |
+| **Privacy-First** | Zeroclaw, Moltis | WASM sandboxing, sealed vaults, local-only options |
+| **Embedded/Lightweight** | NanoBot, NanoClaw, PicoClaw | Single-binary deployment, ESP32 integration, low-resource operation |
+| **Productivity Suites** | LobsterAI, CoPaw | Cowork modules, skill marketplaces, IM automation focus |
+| **Research Platforms** | ZeptoClaw | Browser automation, context compaction experiments |
+
+### Target User Divergence
+- **OpenClaw/IronClaw:** DevOps teams and enterprise developers needing production-grade agents
+- **NanoBot/PicoClaw:** Hobbyists and researchers experimenting with agent architectures
+- **LobsterAI/CoPaw:** Chinese market-focused users requiring WeChat/DingTalk integration
+- **Zeroclaw/Moltis:** Privacy-conscious self-hosters and security-focused deployments
+
+### Architectural Philosophy
+- **Plugin-Heavy:** OpenClaw (dynamic providers), Zeroclaw (WASM), NanoClaw (skills marketplace)
+- **Monolithic:** EasyClaw, TinyClaw — limited extensibility
+- **Multi-Agent:** PicoClaw (agent discovery/delegation), LobsterAI (cowork module)
 
 ---
 
 ## 6. Community Momentum & Maturity
 
-### Tier 1: Rapid Iteration (Velocity Risk)
+### Rapidly Iterating (Tier 1)
+- **OpenClaw:** 500 PRs/day indicates sustained hypergrowth; 418 open issues vs 82 closed shows feature expansion outpacing stabilization
+- **Zeroclaw:** v0.6.7 release addresses core stability; WASM plugin system signals architectural maturation
+- **IronClaw:** 50 PRs with "Secure Financial Execution Layer" indicates strategic enterprise pivot
 
-| Project | Pattern | Risk |
-|:---|:---|:---|
-| **NanoBot** | 97 PRs, 5% merge ratio, critical security unaddressed (#2439) | Security incident + contributor fatigue |
-| **NanoClaw** | 50 PRs, 2% merge ratio, 49 open PRs | Review bottleneck, container instability |
-| **IronClaw** | 50 PRs, 14% merge ratio, 11 staging promotions queued | Release process friction, architectural fragmentation |
+### Stabilizing (Tier 2)
+- **NanoBot:** Security incident (#2439) requires resolution; memory system overhaul PRs show deep architectural investment
+- **PicoClaw:** "Agent Refactor Phase 2" transition causing configuration regressions; community actively patching
+- **CoPaw:** High contributor influx (first-time contributors) with focus on bug fixes over features
 
-### Tier 2: Balanced Growth
-
-| Project | Pattern | Trajectory |
-|:---|:---|:---|
-| **OpenClaw** | High volume, healthy merge ratio (34%), daily releases | Maturing toward platform stability |
-| **PicoClaw** | Pre-release stabilization, rapid critical fixes | v0.2.4 → v0.3.0 multi-agent headline |
-| **CoPaw** | Strong close rate (47% issues, 47% PRs), enterprise focus | Production hardening for Chinese market |
-
-### Tier 3: Maintenance / Stagnation
-
-| Project | Pattern | Concern |
-|:---|:---|:---|
-| **LobsterAI** | 0 PRs merged, engine architecture uncertainty (#418) | Strategic direction uncommunicated |
-| **NullClaw** | 2 PRs, individual contributor, WeChat demand unaddressed | Competitive divergence from forks |
-| **EasyClaw** | Documentation-only release, zero community engagement | Deprioritized vs. commercial QClaw |
-| **TinyClaw** | No activity | Effectively dormant |
+### Maintenance Mode (Tier 3-4)
+- **EasyClaw:** v1.7.8 addresses macOS signing only; zero PR activity
+- **Moltis:** Steady incremental releases; Matrix support remains open request
+- **TinyClaw:** Dormant — no activity in 24h window
 
 ---
 
 ## 7. Trend Signals
 
-| Trend | Evidence | Value for AI Agent Developers |
-|:---|:---|:---|
-| **Memory as competitive battleground** | 6+ projects investing in semantic search, compression, persistence | Standardize on QMD-like document models; expect hybrid BM25+vector as baseline |
-| **Human-in-the-loop for high-stakes actions** | IronClaw #1739, NanoClaw #1537, Moltis vault patterns | Design approval flows early; "autonomous" is becoming a liability term |
-| **Container-native agent isolation** | NanoClaw's Docker-per-agent, IronClaw's WASM sandbox | Security boundary clarity: process vs. VM vs. container tradeoffs |
-| **Multi-agent interoperability protocols** | CoPaw ACP, PicoClaw delegation, IronClaw kernel proposal | Avoid vendor lock-in; MCP + ACP emerging as standards |
-| **Cost visibility as core feature** | NanoBot token crisis, NanoClaw tracking PR, IronClaw anti-drift | Build metering infrastructure; users will demand accountability |
-| **Eastern provider prioritization** | Qwen, MiniMax, Z.AI, DashScope, Kimi integrations across projects | China-market compatibility is table stakes; OAuth scope handling is fragile |
-| **Realtime voice latency race** | OpenClaw 200-400ms vs. 2-3s pipeline | Sub-second voice is becoming differentiable; WebRTC/OpenAI Realtime API skills valuable |
-| **Platform parity as adoption blocker** | OpenClaw #75 (66 👍), NanoBot #87 (8 weeks), CoPaw Windows fixes | macOS-first development excludes majority of enterprise/self-host users |
+### Security Architecture Convergence
+**Signal:** 4 projects report critical security issues (OpenClaw SQL injection, NanoBot supply chain, Zeroclaw paranoid defaults friction, IronClaw approval hijacking)
+**Implication:** Security-by-default with granular override capability is becoming a competitive requirement. Projects treating security as binary (lockdown vs. open) face user rebellion.
+
+### Memory System Evolution
+**Signal:** All major projects (OpenClaw, NanoBot, Zeroclaw, PicoClaw, ZeptoClaw) actively developing context management — semantic indexing, biological models, compaction strategies
+**Implication:** Simple context windows are insufficient. **Hybrid memory architectures** (vector + BM25 + structured recall) will become standard within 6 months. Developers should prioritize memory abstraction layers.
+
+### Multi-Agent Orchestration
+**Signal:** PicoClaw's "Agent Discovery/Delegation," LobsterAI's "Cowork," IronClaw's "Commitments System"
+**Implication:** Single-agent architectures hitting complexity limits. Expect **agent-to-agent protocol standardization** (potentially MCP-based) to emerge as a cross-project initiative.
+
+### Channel Reliability as Differentiator
+**Signal:** Matrix E2EE broken in OpenClaw/Zeroclaw; Telegram streaming issues in 3 projects; WeChat queueing in LobsterAI
+**Implication:** Channel implementations are fragile. Projects investing in dedicated channel maintenance (OpenClaw's per-channel `replyToMode`) will capture enterprise market share.
+
+### Local LLM Production Readiness
+**Signal:** IronClaw, Moltis, CoPaw all shipping fixes for local model edge cases (empty completions, probe timeouts, tool schema validation)
+**Implication:** **Local LLM support is moving from checkbox feature to production requirement.** Expect increased investment in model-agnostic tool calling and graceful degradation patterns.
 
 ---
 
-*Report generated from 12 project digests dated 2026-03-30. Data sources: GitHub issue/PR activity, release notes, community comments.*
+**Recommendation for Developers:** Target OpenClaw for enterprise deployments requiring ecosystem maturity; Zeroclaw for security-sensitive self-hosted scenarios; PicoClaw/NanoBot for research and experimentation with emerging multi-agent patterns.
 
 ---
 
@@ -317,284 +272,278 @@ OpenClaw's **66 👍 on Linux/Windows parity (#75)** exceeds total engagement on
 
 ## 1. Today's Overview
 
-NanoBot shows **extremely high development velocity** with 97 PRs updated in 24 hours (92 open, 5 merged/closed) and 19 active issues. The project is experiencing a **community surge** around Telegram integrations, memory system improvements, and multi-tenant deployment scenarios. However, **critical security concerns** and **architectural debt** around token management and prompt handling are emerging as significant risks. No new releases were published, suggesting the team is accumulating changes for a larger version bump.
+NanoBot is experiencing **very high development activity** with 98 pull requests updated in the last 24 hours (91 open, 7 merged/closed) and 17 issues updated. The project is in an active iteration phase, likely preparing for a significant release. However, the community is currently grappling with a **critical security incident** (Issue #2439) involving potential supply chain compromise, which demands immediate attention. Development focus is split between Telegram channel enhancements, memory system optimization, and core agent loop stability improvements.
 
 ---
 
 ## 2. Releases
 
-**None** — No new releases published today.
+**No new releases** were published today. The last activity around releases involves the nightly branch refresh (Issue #2563), suggesting development changes are accumulating in the staging branch before a formal release.
 
 ---
 
 ## 3. Project Progress
 
-### Merged/Closed PRs Today (5 total)
+### Merged/Closed PRs (7 total)
+Limited merge activity today, with most PRs remaining in review:
+- **#2626, #2624**: Telegram forum topics support iterations (superseded by #2628)
 
-| PR | Description | Significance |
-|:---|:---|:---|
-| [#2626](https://github.com/HKUDS/nanobot/pull/2626) | Telegram forum topics support (closed as duplicate) | Community demand for threaded conversations |
-| [#2624](https://github.com/HKUDS/nanobot/pull/2624) | Telegram forum threads with unit tests (closed) | Iteration toward proper implementation |
-| [#2622](https://github.com/HKUDS/nanobot/pull/2622) | Configurable markdown header conversion for Telegram | UX polish for Telegram channel |
-| [#2612](https://github.com/HKUDS/nanobot/issues/2612) | Config validation: `sendMaxRetries` limit explanation | Documentation/clarity improvement |
-| [#2563](https://github.com/HKUDS/nanobot/issues/2563) | Nightly branch refresh announcement | Infrastructure maintenance |
-
-### Active Development Themes
-
-**Memory System Overhaul**: Three stacked PRs by [Mihir-Null](https://github.com/Mihir-Null) represent a major architectural investment:
-- [#2618](https://github.com/HKUDS/nanobot/pull/2618): Semantic memory index with hybrid BM25+vector search
-- [#2619](https://github.com/HKUDS/nanobot/pull/2619): `IndexService` with file watching and pre-retrieval injection
-- [#2620](https://github.com/HKUDS/nanobot/pull/2620): Optional QMD sidecar for LLM-based re-ranking
-
-**Telegram Channel Maturation**: Heavy activity on production-readiness features:
-- Forum topic support ([#2628](https://github.com/HKUDS/nanobot/pull/2628), [#2627](https://github.com/HKUDS/nanobot/issues/2627))
-- Silent tool hints ([#2608](https://github.com/HKUDS/nanobot/pull/2608))
-- Proper flood control handling ([#2552](https://github.com/HKUDS/nanobot/pull/2552))
-- Command suffix support for groups ([#2553](https://github.com/HKUDS/nanobot/pull/2553))
-
-**Performance & Reliability**: Critical path optimization in [#2609](https://github.com/HKUDS/nanobot/pull/2609) eliminates blocking LLM calls during memory consolidation.
+### Key Advancing Features (Open PRs)
+| Area | PR | Description |
+|------|-----|-------------|
+| **Memory System** | [#2618](https://github.com/HKUDS/nanobot/pull/2618), [#2619](https://github.com/HKUDS/nanobot/pull/2619), [#2620](https://github.com/HKUDS/nanobot/pull/2620) | Major overhaul: semantic memory index with hybrid BM25+vector search, IndexService lifecycle, and optional QMD re-ranking sidecar |
+| **Performance** | [#2609](https://github.com/HKUDS/nanobot/pull/2609) | Eliminates blocking LLM calls on critical path by moving memory consolidation to background tasks |
+| **Telegram** | [#2628](https://github.com/HKUDS/nanobot/pull/2628), [#2608](https://github.com/HKUDS/nanobot/pull/2608), [#2593](https://github.com/HKUDS/nanobot/pull/2593) | Forum topic threads support, silent tool hints, code block rendering for tool hints |
+| **Agent Core** | [#2521](https://github.com/HKUDS/nanobot/pull/2521) | SelfTool for runtime self-inspection and modification without restart |
+| **Providers** | [#2584](https://github.com/HKUDS/nanobot/pull/2584), [#2617](https://github.com/HKUDS/nanobot/pull/2617) | Xiaozhi voice gateway support (ESP32), Ollama provider addition |
 
 ---
 
 ## 4. Community Hot Topics
 
-### Most Active Issues by Engagement
+### Most Active Discussions
 
-| Issue | Comments | 👍 | Core Concern |
-|:---|:---:|:---:|:---|
-| [#2375](https://github.com/HKUDS/nanobot/issues/2375) Heartbeat session history causes ENORMOUS token usage | 10 | 1 | **Cost/performance crisis**: 560k tokens per heartbeat due to unbounded `heartbeat.jsonl` growth |
-| [#2463](https://github.com/HKUDS/nanobot/issues/2463) Architectural issue: nanobot does not preserve exact prompt prefix | 8 | 0 | **Correctness/reproducibility**: History serialization ≠ actual prompts sent, breaking OpenAI's deterministic guarantees |
-| [#2439](https://github.com/HKUDS/nanobot/issues/2439) **CRITICAL: Malicious code in `litellm_init.pth`** | 6 | 4 | **Security**: Supply chain attack in PyPI package `v0.1.4.post5` |
+| Issue/PR | Engagement | Analysis |
+|----------|------------|----------|
+| **[#2463](https://github.com/HKUDS/nanobot/issues/2463)** - Architectural issue: prompt prefix preservation | 8 comments | Core architectural concern about conversation history fidelity affecting OpenAI API compatibility. Users report context drift in long conversations. |
+| **[#2439](https://github.com/HKUDS/nanobot/issues/2439)** - Security: Malicious code in PyPI package | 6 comments, 4 👍 | **Critical severity** — Supply chain attack concern via `litellm_init.pth`. High community anxiety; needs official security advisory. |
+| **[#2114](https://github.com/HKUDS/nanobot/issues/2114)** - Webhook receiver capability | 5 comments | User demand for NanoBot as a general-purpose notification receiver (DDNS, service status). Closed but indicates integration use cases. |
+| **[#2576](https://github.com/HKUDS/nanobot/issues/2576)** - Agent loop termination logic | 2 comments | Production reliability concern when LLM returns empty content after tool execution. |
 
-### Underlying Needs Analysis
-
-- **Token Economics**: Users deploying NanoBot in production are hitting cost-prohibitive scaling limits. The heartbeat mechanism's linear growth model is unsustainable.
-- **Deterministic AI**: Advanced users need exact prompt reproducibility for debugging, testing, and compliance—currently impossible.
-- **Supply Chain Trust**: The security incident reveals gaps in dependency auditing and release verification.
+### Underlying Needs
+1. **Trust & Security**: Community seeks rapid official response to security allegations
+2. **Production Reliability**: Users running NanoBot in production need predictable agent loop behavior
+3. **Integration Flexibility**: Strong demand for webhook, HTTP streaming, and multi-tenant architectures
 
 ---
 
 ## 5. Bugs & Stability
 
-| Severity | Issue | Status | Fix PR? |
-|:---|:---|:---|:---:|
-| 🔴 **Critical** | [#2439](https://github.com/HKUDS/nanobot/issues/2439) Malicious data-exfiltration code in `litellm_init.pth` | Open, under investigation | ❌ No |
-| 🟠 **High** | [#2375](https://github.com/HKUDS/nanobot/issues/2375) 560k token heartbeat consumption | Open | ❌ No |
-| 🟠 **High** | [#2613](https://github.com/HKUDS/nanobot/issues/2613) Agent stops mid-command with `NoneType` error | Open, no comments | ❌ No |
-| 🟡 **Medium** | [#2601](https://github.com/HKUDS/nanobot/issues/2601) Cron reminders not delivered in agent mode | Open | ❌ No |
-| 🟡 **Medium** | [#2591](https://github.com/HKUDS/nanobot/issues/2591) CLI terminal error repetition (ANSI escape sequences) | Open | ❌ No |
-| 🟡 **Medium** | [#2630](https://github.com/HKUDS/nanobot/issues/2630) `Lemonade/model_not_found` — agent unresponsive after 0.1.4-post6 | Open | ❌ No |
-| 🟢 **Low** | [#87](https://github.com/HKUDS/nanobot/issues/87) Docker build hangs on Windows | Open (since Feb 4) | ❌ No |
+### Critical
+| Issue | Severity | Status | Fix Available |
+|-------|----------|--------|---------------|
+| **[#2439](https://github.com/HKUDS/nanobot/issues/2439)** - Malicious code in `litellm_init.pth` | 🔴 Critical | OPEN | No official response yet |
 
-**Regression Alert**: [#2630](https://github.com/HKUDS/nanobot/issues/2630) suggests `v0.1.4.post6` introduced breaking changes affecting model routing, with users downgrading to `post5`.
+### High
+| Issue | Description | Fix PR |
+|-------|-------------|--------|
+| **[#2613](https://github.com/HKUDS/nanobot/issues/2613)** - Agent stops with `NoneType` error mid-command | Intermittent execution failure in agent loop | None |
+| **[#2576](https://github.com/HKUDS/nanobot/issues/2576)** - Poor agent loop termination handling | Empty LLM responses after tool execution cause abrupt termination | Related: [#2609](https://github.com/HKUDS/nanobot/pull/2609) (performance fix) |
+
+### Medium
+| Issue | Description | Fix PR |
+|-------|-------------|--------|
+| **[#2601](https://github.com/HKUDS/nanobot/issues/2601)** - Cron reminders not delivered in agent mode | Scheduled reminders fail to appear in CLI | None |
+| **[#2591](https://github.com/HKUDS/nanobot/issues/2591)** - CLI duplicate output corruption | Terminal shows repeated "nanobot is thinking..." animations | None |
+| **[#2450](https://github.com/HKUDS/nanobot/issues/2450)** - minimax-m2.7 via Ollama Cloud fails on 2nd+ request | Provider-specific connection issue | Related: [#2617](https://github.com/HKUDS/nanobot/pull/2617) (Ollama provider) |
+
+### Low
+| Issue | Description | Fix PR |
+|-------|-------------|--------|
+| **[#2612](https://github.com/HKUDS/nanobot/issues/2612)** - Config validation limits `sendMaxRetries` to 10 | User wants higher retry values | Closed (by design) |
 
 ---
 
 ## 6. Feature Requests & Roadmap Signals
 
-| Request | Issue/PR | Likelihood in Next Release |
-|:---|:---|:---:|
-| **HTTP Streaming Channel for multi-tenant architectures** | [#2602](https://github.com/HKUDS/nanobot/issues/2602) | ⭐⭐⭐ High — aligns with containerized deployment trends |
-| **Ollama provider support** | [#2617](https://github.com/HKUDS/nanobot/pull/2617) | ⭐⭐⭐ High — PR open, addresses 3+ user requests |
-| **DashScope Coding Plan provider** | [#2629](https://github.com/HKUDS/nanobot/pull/2629) | ⭐⭐⭐ High — PR ready |
-| **Xiaozhi voice gateway + ESP32 MCP tools** | [#2584](https://github.com/HKUDS/nanobot/pull/2584) | ⭐⭐ Medium — specialized IoT use case |
-| **SelfTool for runtime self-inspection** | [#2521](https://github.com/HKUDS/nanobot/pull/2521) | ⭐⭐ Medium — experimental, needs review |
-| **Home Assistant knowledge/tool integration** | [#2588](https://github.com/HKUDS/nanobot/issues/2588) | ⭐⭐ Medium — user demand clear, implementation unclear |
-| **Asynchronous memory consolidation** | [#2604](https://github.com/HKUDS/nanobot/issues/2604) | ⭐⭐⭐ High — PR [#2609](https://github.com/HKUDS/nanobot/pull/2609) addresses this |
+### Likely Near-Term Additions
+| Feature | Issue/PR | Probability | Rationale |
+|---------|----------|-------------|-----------|
+| **Telegram Forum Topics** | [#2627](https://github.com/HKUDS/nanobot/issues/2627) → [#2628](https://github.com/HKUDS/nanobot/pull/2628) | High | PR complete with tests, addresses real multi-topic use case |
+| **Semantic Memory Index** | [#2618](https://github.com/HKUDS/nanobot/pull/2618), [#2619](https://github.com/HKUDS/nanobot/pull/2619) | High | 3-PR series indicates serious development investment |
+| **HTTP Health Endpoint** | [#2625](https://github.com/HKUDS/nanobot/pull/2625) | Medium | Simple addition, enables production monitoring |
+| **HTTP Streaming Channel** | [#2602](https://github.com/HKUDS/nanobot/issues/2602) | Medium | Strong multi-tenant use case, awaiting implementation |
 
-**Predicted v0.1.5 Focus**: Memory system (3 stacked PRs), Telegram production hardening, Ollama/DashScope providers, and HTTP gateway for multi-tenant ops.
+### User-Requested Features
+- **[#2588](https://github.com/HKUDS/nanobot/issues/2588)**: Home Assistant integration via OpenAI-compatible tool calling
+- **[#2602](https://github.com/HKUDS/nanobot/issues/2602)**: HTTP streaming for multi-tenant gateway architectures
+- **[#2603](https://github.com/HKUDS/nanobot/issues/2603)**: AgentHook extensibility for custom lifecycle hooks
+- **[#2604](https://github.com/HKUDS/nanobot/issues/2604)**: Fully asynchronous memory consolidation
 
 ---
 
 ## 7. User Feedback Summary
 
 ### Pain Points
-
-| Theme | Evidence | Severity |
-|:---|:---|:---:|
-| **Uncontrolled costs** | [#2375](https://github.com/HKUDS/nanobot/issues/2375) 560k tokens/heartbeat | 🔴 Critical |
-| **Security anxiety** | [#2439](https://github.com/HKUDS/nanobot/issues/2439) malicious code discovery | 🔴 Critical |
-| **Debugging opacity** | [#2463](https://github.com/HKUDS/nanobot/issues/2463) non-reproducible prompts | 🟠 High |
-| **Tool use reliability** | [#2588](https://github.com/HKUDS/nanobot/issues/2588) Home Assistant tools fail; [#2613](https://github.com/HKUDS/nanobot/issues/2613) mid-command crashes | 🟠 High |
-| **Version instability** | [#2630](https://github.com/HKUDS/nanobot/issues/2630) post6 regression | 🟠 High |
+1. **Security Anxiety**: Users alarmed by unverified claims of malicious code; lack of official response increases uncertainty
+2. **Agent Loop Reliability**: Production users frustrated when agent silently fails or returns empty responses
+3. **Model Compatibility**: Qwen users struggling with tool calling (Home Assistant integration)
+4. **CLI Experience**: Terminal output corruption affecting daily usage
 
 ### Positive Signals
+- Strong community engagement with detailed bug reports and architectural discussions
+- Multiple contributors submitting quality PRs (memory system, Telegram enhancements)
+- Active nightly branch workflow indicates healthy development process
 
-- **Telegram as primary interface**: Heavy investment in forum topics, silent notifications, flood control suggests users are deploying NanoBot as personal/team assistants
-- **Multi-tenant ambition**: [#2602](https://github.com/HKUDS/nanobot/issues/2602) indicates commercial/service-oriented deployments
-- **Local model preference**: Ollama PR and Qwen model usage show demand for self-hosted, cost-controlled inference
+### Use Cases Emerging
+- Multi-tenant Discord bot gateways with per-user container isolation
+- Home automation control via local models (Qwen)
+- Telegram community management with forum topics
+- ESP32 voice assistant integration (Xiaozhi)
 
 ---
 
 ## 8. Backlog Watch
 
-### Issues Needing Maintainer Attention
+### Urgent Maintainer Attention Required
 
-| Issue | Age | Risk |
-|:---|:---|:---|
-| [#87](https://github.com/HKUDS/nanobot/issues/87) Docker Windows build hangs | ~8 weeks | Platform support gap; blocks Windows developers |
-| [#2463](https://github.com/HKUDS/nanobot/issues/2463) Prompt prefix preservation | 5 days | Architectural debt; affects determinism guarantees |
-| [#2439](https://github.com/HKUDS/nanobot/issues/2439) Security incident | 6 days | **Unacknowledged in public** — no maintainer response visible |
-| [#2576](https://github.com/HKUDS/nanobot/issues/2576) Agent loop termination logic | 2 days | Production reliability; Chinese-language report may need translation |
+| Item | Concern | Action Needed |
+|------|---------|---------------|
+| **[#2439](https://github.com/HKUDS/nanobot/issues/2439)** - Security vulnerability claim | Unaddressed for 6+ days, 4 👍 | **Immediate official security advisory** — confirm/deny, provide mitigation steps |
+| **[#2463](https://github.com/HKUDS/nanobot/issues/2463)** - Prompt prefix preservation | Core architectural issue affecting long conversations | Technical clarification or roadmap acknowledgment |
 
-### PRs At Risk of Stagnation
-
-- [#2521](https://github.com/HKUDS/nanobot/pull/2521) SelfTool — innovative but complex, needs architectural review
-- [#2584](https://github.com/HKUDS/nanobot/pull/2584) Xiaozhi support — large surface area (WebSocket, Opus, OTA, MCP)
+### Stale But Important
+| Item | Status | Note |
+|------|--------|------|
+| **[#2450](https://github.com/HKUDS/nanobot/issues/2450)** - minimax-m2.7 Ollama Cloud failure | Open since 2026-03-24, tagged "good first issue" | Low priority but affects specific model users |
+| **[#2603](https://github.com/HKUDS/nanobot/issues/2603)** - AgentHook extensibility | Created 2026-03-29 | Architectural limitation blocking downstream customization |
 
 ---
 
-## Project Health Assessment
+**Health Assessment**: ⚠️ **Moderate Concern** — Development velocity is excellent with substantial memory and Telegram improvements in progress. However, the unaddressed security allegation (#2439) poses reputational risk and requires immediate maintainer response to maintain community trust.
 
-| Dimension | Score | Notes |
-|:---|:---:|:---|
-| Velocity | ⭐⭐⭐⭐⭐ | 97 PRs/24h is exceptional |
-| Security | ⭐⭐☆☆☆ | Critical unaddressed supply chain issue |
-| Stability | ⭐⭐⭐☆☆ | Active regression in latest release |
-| Community | ⭐⭐⭐⭐⭐ | High engagement, diverse use cases |
-| Maintainability | ⭐⭐⭐☆☆ | Architectural debt accumulating; long-open issues |
+</details>
 
-**Recommendation**: Immediate security response and hotfix release for [#2439](https://github.com/HKUDS/nanobot/issues/2439) and [#2630](https://github.com/HKUDS/nanobot/issues/2630) before proceeding with feature development.
+<details>
+<summary><strong>Zeroclaw</strong> — <a href="https://github.com/zeroclaw-labs/zeroclaw">zeroclaw-labs/zeroclaw</a></summary>
+
+# Zeroclaw Project Digest: 2026-03-30
+
+## 1. Today's Overview
+Zeroclaw demonstrates **very high velocity** with the release of **v0.6.7**, focusing heavily on agent stability via context management and overflow recovery. The project shows a healthy ratio of open (36) to merged (14) PRs, indicating a rigorous but active code review process. Activity is dominated by infrastructure improvements (CI/CD fixes) and significant enhancements to the plugin system and tool execution capabilities. While the release addresses core "brain" stability, the community is actively reporting friction regarding security defaults and specific provider integrations.
+
+## 2. Releases
+
+### **v0.6.7**
+This maintenance and stability release focuses on preventing agent loops from crashing due to context limits.
+*   **Agent Enhancements:**
+    *   Added context overflow recovery in both the interactive daemon loop and tool call loop.
+    *   Implemented fast-path tool result trimming in the context compressor.
+    *   Added preemptive context checks before provider calls to prevent wasted API requests.
+    *   Introduced a shared iteration budget to prevent infinite loops.
+*   **Migration Note:** No breaking configuration changes noted, but the new "shared iteration budget" may alter behavior for complex, multi-step agent workflows.
+
+## 3. Project Progress
+**Merged/Closed PRs (14 today):**
+*   **CI/Release Fixes:** Resolved critical blockages in the release workflow (`#5142`, `#5135`, `#5128`). This included fixing git config for tag creation and clearing a backlog of 20 Clippy errors that blocked builds.
+*   **Plugin Architecture:** A major PR (`#5149`) was closed/merged (status indicates completion of review) introducing a **WASM plugin system** with security sandboxing and integration tests, signaling a shift toward extensibility.
+*   **Tooling & Routing:** Fixed webhook request routing to ensure they pass through the tool-enabled chat path (`#5134`), ensuring webhooks can trigger agent tools just like chat messages.
+
+**Open PRs Advancing Features:**
+*   **Thread Support:** PR `#5129` adds `reply_to_message_id` across 20+ channels (Slack, Discord, Telegram, etc.).
+*   **Dynamic Skills:** PR `#5131` introduces a tool handler for skill-defined tools, allowing skills to register their own dynamic capabilities.
+
+## 4. Community Hot Topics
+*   **Security vs. Usability (47 Comments)**: Issue **#1478** remains the hottest topic. Users are frustrated that "paranoid" security defaults render the agent useless for basic tasks (like installing packages) without explicit, complex configuration. The user explicitly states: "You are so safe that this bot can only be a chatbot... what is the point?"
+    *   [Issue #1478](https://github.com/zeroclaw-labs/zeroclaw/issues/1478)
+*   **Supply Chain Risk (3 👍)**: Issue **#4955** raised a critical security concern regarding the `open_skills_enabled` feature, which clones a third-party repo (`besoeasy/open-skills`) not maintained by Zeroclaw core team.
+    *   [Issue #4955](https://github.com/zeroclaw-labs/zeroclaw/issues/4955)
+*   **Matrix Channel Friction (9 Comments)**: Issue **#4657** tracks ongoing friction with the Matrix channel, specifically E2EE (End-to-End Encryption) breaking in v0.6.2+.
+    *   [Issue #4657](https://github.com/zeroclaw-labs/zeroclaw/issues/4657)
+
+## 5. Bugs & Stability
+*   **S0 - Critical / Data Loss:**
+    *   **CPU Spikes on Input:** **#5125** reports CPU spikes across multiple cores simply when typing in the agent chat (Firefox/Ubuntu).
+    *   [Issue #5125](https://github.com/zeroclaw-labs/zeroclaw/issues/5125)
+    *   **Memory Exhaustion:** **#4916** reports that `auto_save` combined with `memory_recall` creates a recursive "snowball" effect, stuffing the database with previous context snapshots until memory is exhausted.
+    *   [Issue #4916](https://github.com/zeroclaw-labs/zeroclaw/issues/4916)
+*   **S1 - Workflow Blocked:**
+    *   **Sandboxing Limitations:** **#5126** reveals that the bubblewrap sandbox breaks dynamically-linked binaries on Debian Bookworm due to `/lib` symlink issues.
+    *   [Issue #5126](https://github.com/zeroclaw-labs/zeroclaw/issues/5126)
+    *   **Dashboard Build:** **#4866** highlights that the Web Dashboard/Tauri app fails to run, prompting a "Build it with npm" error that has persisted across versions.
+    *   [Issue #4866](https://github.com/zeroclaw-labs/zeroclaw/issues/4866)
+    *   **Mistral Provider:** **#5117** notes Mistral tool calls fail due to an invalid `tool_call.id` format sent by Zeroclaw.
+    *   [Issue #5117](https://github.com/zeroclaw-labs/zeroclaw/issues/5117)
+
+## 6. Feature Requests & Roadmap Signals
+*   **Token Minimization:** **#5146** proposes "Skill Compilation" to stop sending 400+ lines of prose for simple tasks like checking the weather. This suggests a move toward smaller, fine-tuned, or pre-compiled prompts.
+    *   [Issue #5146](https://github.com/zeroclaw-labs/zeroclaw/issues/5146)
+*   **Hallucination Detection:** **#4830** suggests adding HMAC-SHA256 receipts to tool executions to verify outputs are genuine and not hallucinated by the LLM.
+    *   [Issue #4830](https://github.com/zeroclaw-labs/zeroclaw/issues/4830)
+*   **SSRF & Private Hosts:** Multiple issues (`#5122`, `#4868`) and PRs (`#5148`, `#5104`) are pushing for granular control over `allowed_private_hosts` for internal network access. This is a high probability merge candidate.
+
+## 7. User Feedback Summary
+Users are split between **power users** and **hobbyists**.
+*   **Pain Point - Security Complexity:** There is significant friction regarding the default security posture. Users feel the agent is "gimped" out of the box, requiring deep configuration to perform basic OS operations (Issue #1478).
+*   **Pain Point - Missing Docs:** Users struggle to configure advanced providers (Aliyun Bailian #3059, GitHub Copilot #4851) due to missing or outdated documentation.
+*   **Satisfaction:** The rapid addition of WASM plugins and dynamic skills is well-received by developers looking to extend the agent without forking the core.
+
+## 8. Backlog Watch
+*   **Android Support Removal:** Issue **#4783** asks why Android binaries (`aarch64-linux-android`) were removed after v0.6.2. This has not been formally addressed by maintainers, despite users finding it useful for Termux setups.
+    *   [Issue #4783](https://github.com/zeroclaw-labs/zeroclaw/issues/4783)
+*   **Broken Auto-Generated Skills:** Issue **#5143** reports that auto-generated skills are currently "conglomerates of memories" with broken tool definitions. This degrades the "self-improving" aspect of the agent.
+    *   [Issue #5143](https://github.com/zeroclaw-labs/zeroclaw/issues/5143)
 
 </details>
 
 <details>
 <summary><strong>PicoClaw</strong> — <a href="https://github.com/sipeed/picoclaw">sipeed/picoclaw</a></summary>
 
-# PicoClaw Project Digest — 2026-03-30
-
----
+# PicoClaw Project Digest: 2026-03-30
 
 ## 1. Today's Overview
-
-PicoClaw shows **very high development velocity** with 51 PRs and 22 issues updated in 24 hours, indicating an active pre-release stabilization period for v0.2.4. The project is addressing critical configuration persistence bugs affecting multiple channels (Discord, Telegram, QQ) while simultaneously advancing major architectural work on multi-agent collaboration. A nightly build was released, suggesting the team is iterating rapidly toward a stable release. The community is particularly engaged around memory systems and agent coordination features, signaling strong interest in PicoClaw's positioning as a serious AI agent framework.
-
----
+PicoClaw is demonstrating **high velocity development** with significant activity focused on architectural evolution and stability hardening. The project is currently transitioning into **"Agent Refactor Phase 2,"** moving from single-agent execution to sophisticated multi-agent collaboration frameworks. While core architectural advancements (Seahorse memory system, Agent Discovery) are underway, the recent v0.2.4 release introduced **configuration persistence regressions** across multiple channels (Discord, Telegram, QQ), which community contributors are actively patching. The ratio of open to merged PRs (34 open vs. 18 closed) suggests a healthy but consolidating codebase.
 
 ## 2. Releases
-
-| Version | Type | Notes |
-|---------|------|-------|
-| **[v0.2.4-nightly.20260330.93f4c4a8](https://github.com/sipeed/picoclaw/compare/v0.2.4...main)** | Nightly | Automated build, marked unstable. No detailed changelog beyond commit range. |
-
-**⚠️ Caution Advised:** This is an automated nightly build. Users on v0.2.3 should await stable v0.2.4 given the configuration bug fixes in flight.
-
----
+### **Nightly Build: v0.2.4-nightly.20260329.27f638e9**
+- **Status**: Automated build (Use with caution).
+- **Changes**: Includes updates from `main` branch post-v0.2.4.
+- **Migration Note**: Users upgrading from v0.2.3 to v0.2.4 stable have reported broken channel configurations. It is recommended to verify token persistence after upgrading or wait for upcoming patches if relying heavily on Discord/Telegram/QQ channels.
+- **Link**: [Full Changelog](https://github.com/sipeed/picoclaw/compare/v0.2.4...main)
 
 ## 3. Project Progress
+**Merged PRs (18) focused on critical bug fixes and quality of life improvements:**
+- **Channel Config Persistence**: Fixed a major regression where bot tokens and secrets (Discord, Telegram, QQ `app_secret`) were lost during configuration saves ([PR #2123](https://github.com/sipeed/picoclaw/pull/2123), [PR #2024](https://github.com/sipeed/picoclaw/pull/2024)).
+- **Provider Compatibility**: Fixed Gemini API keys compatibility via OpenAI-compatible endpoints ([PR #1834](https://github.com/sipeed/picoclaw/pull/1834)).
+- **Cron System Refactor**: Simplified cron architecture by removing redundant `deliver` and `type` params, unifying execution paths ([PR #2147](https://github.com/sipeed/picoclaw/pull/2147)).
+- **UI Fixes**: Resolved unreadable contrast issues in Web Launcher Skills page dark mode ([PR #2166](https://github.com/sipeed/picoclaw/pull/2166)).
 
-### Merged/Closed PRs Today (17 total, selected highlights)
-
-| PR | Description | Impact |
-|:---|:---|:---|
-| [#2123](https://github.com/sipeed/picoclaw/pull/2123) | Fix token/secret loss when saving channel config | **Critical fix** for v0.2.4 regression affecting all channel secrets |
-| [#2024](https://github.com/sipeed/picoclaw/pull/2024) | Persist Discord token updates from channel settings | Fixes Discord configuration breakage |
-| [#2147](https://github.com/sipeed/picoclaw/pull/2147) | Remove `deliver`/`type` params from cron, unify agent execution path | Simplifies cron architecture, removes technical debt |
-| [#2166](https://github.com/sipeed/picoclaw/pull/2166) | Fix Web Launcher skills page dark mode contrast | UI polish |
-| [#2162](https://github.com/sipeed/picoclaw/pull/2162) | Add logger test case for console log format | Test coverage |
-| [#2154](https://github.com/sipeed/picoclaw/pull/2154) | Enhanced logger with highlighted components | Developer experience |
-| [#1834](https://github.com/sipeed/picoclaw/pull/1834) | Fix Gemini API keys through OpenAI-compatible endpoint | Provider compatibility |
-| [#2040](https://github.com/sipeed/picoclaw/pull/2040) | Preserve media store across config reloads | Data persistence |
-
-**Key Advances:**
-- **Configuration system stabilization:** Multiple PRs close the loop on secret persistence bugs introduced in v0.2.4
-- **Cron system refactoring:** Unified execution path reduces complexity
-- **Developer tooling:** Improved logging and test coverage
-
----
+**Active Development (Open PRs):**
+- **Multi-Agent Architecture**: Implementing Layer 1 "Agent Discovery" to enable agent-to-agent delegation ([PR #2158](https://github.com/sipeed/picoclaw/pull/2158)).
+- **New Channels**: Integrating Chatmail (Delta Chat) ([PR #2167](https://github.com/sipeed/picoclaw/pull/2167)) and Mattermost ([PR #1586](https://github.com/sipeed/picoclaw/pull/1586)).
+- **Vision Capabilities**: Adding `load_image` tool for local file vision analysis ([PR #2116](https://github.com/sipeed/picoclaw/pull/2116)).
 
 ## 4. Community Hot Topics
-
-### Most Active Issues by Engagement
-
-| Issue | Comments | Topic | Underlying Need |
-|:---|:---:|:---|:---|
-| [#1919](https://github.com/sipeed/picoclaw/issues/1919) | 8 | **Seahorse: Biologically-inspired Memory System** | Users want human-like memory (short-term context compaction, long-term consolidation) for more coherent long-horizon agent behavior |
-| [#1934](https://github.com/sipeed/picoclaw/issues/1934) | 6 | **Multi-Agent Collaboration within Single Pico** | Demand for orchestrated agent teams, not isolated single agents |
-| [#571](https://github.com/sipeed/picoclaw/issues/571) | 4 | **Progress feedback during tool execution** | Transparency into agent "thinking" — users feel blind during multi-step operations |
-| [#1228](https://github.com/sipeed/picoclaw/issues/1228) | 4 | **Pre-install dev tools in Docker image** | Friction in deployment — base image too minimal for real tasks |
-
-### Analysis
-
-The community is **pushing beyond basic functionality** toward sophisticated agent cognition. The Seahorse memory proposal (#1919) and multi-agent roadmap (#1934) indicate users want PicoClaw to compete with frameworks like LangGraph and AutoGen. The progress feedback issue (#571) reveals a UX gap: agents feel opaque compared to chat-native expectations.
-
----
+1.  **[Seahorse Memory System]** ([Issue #1919](https://github.com/sipeed/picoclaw/issues/1919))
+    *   **Topic**: Proposal for a biologically-inspired memory system (hippocampus model) for lossless context compaction and long-term memory.
+    *   **Analysis**: This is the most active enhancement discussion. It indicates a strong community desire to move beyond simple context windows toward persistent, structured agent memory, crucial for long-running autonomous tasks.
+2.  **[Meta: Agent Refactor Phase 2]** ([Issue #1934](https://github.com/sipeed/picoclaw/issues/1934) & [Issue #2148](https://github.com/sipeed/picoclaw/issues/2148))
+    *   **Topic**: Planning "Multi-Agent Collaboration within Single Pico".
+    *   **Analysis**: This roadmap item signals the project's maturity shift from a single assistant to a multi-agent orchestration platform. The "Discovery → Delegation" implementation plan suggests a focus on dynamic capability routing.
+3.  **[Live Task Feedback]** ([Issue #2137](https://github.com/sipeed/picoclaw/issues/2137))
+    *   **Topic**: Request for "Live Task List" using message edits/reactions to show progress during long tasks.
+    *   **Analysis**: Users are dissatisfied with the "black box" nature of long-running tasks. Visual progress indicators are becoming a requirement for trust and UX in agent systems.
 
 ## 5. Bugs & Stability
+*Critical issues observed in the last 24h (mostly related to v0.2.4 stable):*
 
-| Severity | Issue | Status | Fix PR | Description |
-|:---|:---|:---|:---|:---|
-| **🔴 Critical** | [#2027](https://github.com/sipeed/picoclaw/issues/2027) | **CLOSED** | #2024 | Telegram config save failure — "Bot Token required" error |
-| **🔴 Critical** | [#2072](https://github.com/sipeed/picoclaw/issues/2072) | **CLOSED** | #2123 | Discord token persistence failure |
-| **🔴 Critical** | [#2033](https://github.com/sipeed/picoclaw/issues/2033) | **CLOSED** | #2024 | QQ `app_secret` parameter loss |
-| **🔴 Critical** | [#2005](https://github.com/sipeed/picoclaw/issues/2005) | **CLOSED** | #2024 | Discord completely non-functional in v0.2.4 |
-| **🟡 High** | [#2140](https://github.com/sipeed/picoclaw/issues/2140) | OPEN | [#2143](https://github.com/sipeed/picoclaw/pull/2143) | `model_fallbacks` inherits wrong provider config — cross-provider fallbacks broken |
-| **🟡 High** | [#1532](https://github.com/sipeed/picoclaw/issues/1532) | OPEN | — | `picoclaw cron add` command has serious bug (Chinese description, needs translation) |
-| **🟡 High** | [#1582](https://github.com/sipeed/picoclaw/issues/1582) | OPEN | — | "model not found" on multi-agent setup with per-channel agents |
-| **🟢 Medium** | [#2168](https://github.com/sipeed/picoclaw/pull/2168) | OPEN | — | Media store lost on `/reload` (re-fix of #2040?) |
-| **🟢 Medium** | [#1996](https://github.com/sipeed/picoclaw/issues/1996) | OPEN | — | Web UI only shows "pico" channel sessions, hides others |
-| **🟢 Medium** | [#1757](https://github.com/sipeed/picoclaw/issues/1757) | OPEN | — | Cron task channel errors on hourly scheduling |
-
-**Stability Assessment:** v0.2.4 introduced **significant configuration regressions** across multiple channels. The rapid fix turnaround is positive, but the pattern suggests insufficient integration testing for config flows. The open `model_fallbacks` bug (#2140) with PR #2143 in review is the last major blocker for cross-provider reliability.
-
----
+-   **High Severity: Token/Secret Persistence Failure**
+    *   **Description**: Configurations for Discord, Telegram, and QQ channels fail to save `bot_token` or `app_secret` fields, breaking channel connectivity.
+    *   **Fix Status**: **PATCHED**. Fixes merged in [PR #2123](https://github.com/sipeed/picoclaw/pull/2123) and [PR #2024](https://github.com/sipeed/picoclaw/pull/2024). Users should upgrade to the latest nightly or wait for the next patch release.
+    *   *Refs*: [Issue #2027](https://github.com/sipeed/picoclaw/issues/2027), [Issue #2072](https://github.com/sipeed/picoclaw/issues/2072), [Issue #2033](https://github.com/sipeed/picoclaw/issues/2033).
+-   **Medium Severity: Model Fallback Configuration Inheritance**
+    *   **Description**: `model_fallbacks` incorrectly inherit the primary model's `api_base`/`api_key`, breaking cross-provider fallbacks.
+    *   **Fix Status**: **PR OPEN** ([PR #2143](https://github.com/sipeed/picoclaw/pull/2143)).
+    *   *Ref*: [Issue #2140](https://github.com/sipeed/picoclaw/issues/2140).
+-   **Low Severity: Gateway Startup Error**
+    *   **Description**: Reports of missing PID on fresh install gateway startup.
+    *   **Fix Status**: Investigating ([Issue #2105](https://github.com/sipeed/picoclaw/issues/2105)).
 
 ## 6. Feature Requests & Roadmap Signals
-
-| Feature | Issue/PR | Likelihood in Next Version | Rationale |
-|:---|:---|:---:|:---|
-| **Multi-agent discovery & delegation** | [#2148](https://github.com/sipeed/picoclaw/issues/2148), [#2158](https://github.com/sipeed/picoclaw/pull/2158) | **High** | Active implementation PR merged today, roadmap issue created |
-| **Live task list / progress indicators** | [#2137](https://github.com/sipeed/picoclaw/issues/2137), [#571](https://github.com/sipeed/picoclaw/issues/571) | Medium | Strong user demand, architectural work in Phase 2 may enable |
-| **Mattermost channel** | [#1587](https://github.com/sipeed/picoclaw/issues/1587), [#1586](https://github.com/sipeed/picoclaw/pull/1586) | Medium | PR open since March 15, needs review momentum |
-| **Chatmail/Delta Chat channel** | [#2167](https://github.com/sipeed/picoclaw/pull/2167) | Medium | New PR today, privacy-focused messaging integration |
-| **Seahorse memory system** | [#1919](https://github.com/sipeed/picoclaw/issues/1919) | Low-Medium | Research-phase, significant architectural undertaking |
-| **`/stop` command for task cancellation** | [#2009](https://github.com/sipeed/picoclaw/issues/2009) | Medium | Marked "recruiting" — needs contributor |
-| **Enhanced hook system for MCP** | [#2160](https://github.com/sipeed/picoclaw/issues/2160) | Medium | Aligns with industry trend (MCP standard), fresh proposal |
-| **Model switching UX (Telegram)** | [#2145](https://github.com/sipeed/picoclaw/issues/2145) | Low | Nice-to-have, competing priorities |
-
-**Prediction:** v0.2.5 or v0.3.0 will likely ship with **multi-agent collaboration** as the headline feature, given the active Phase 2 implementation.
-
----
+*Features gaining traction and likely to appear in upcoming versions:*
+-   **External Tool Injection (MCP Support)**: Request to add `respond` action in `before_tool` hooks to support Model Context Protocol tools ([Issue #2160](https://github.com/sipeed/picoclaw/issues/2160)). High architectural priority.
+-   **Task Cancellation**: Introduction of a `/stop` command to halt running tasks ([Issue #2009](https://github.com/sipeed/picoclaw/issues/2009)). "Recruiting" status suggests maintainers are looking for contributors.
+-   **Docker Dev Tools**: Pre-installing `python`, `curl`, `jq` in Docker images for better debugging capability ([Issue #1228](https://github.com/sipeed/picoclaw/issues/1228)).
 
 ## 7. User Feedback Summary
-
-### Pain Points
-
-| Issue | Frequency | User Quote / Symptom |
-|:---|:---:|:---|
-| **Silent agent execution** | Recurring | "Long-running multi-tool iterations leave users staring at a blank screen" (#571) |
-| **Configuration fragility** | **Acute** | Multiple reports of token/secret loss across channels — "always says 'Bot Token' field is required" (#2027) |
-| **Model management friction** | Moderate | "User cannot see list of models... need to manually type `/switch model to llama-3.3-70b`" (#2145) |
-| **Docker image limitations** | Moderate | "Current Docker image only includes `picoclaw`, lacking essential tools" (#1228) |
-| **Web UI session visibility** | Moderate | "Chat history only shows pico (web) sessions, hides all other channels" (#1996) |
-
-### Satisfaction Signals
-- Strong engagement with advanced features (memory systems, multi-agent)
-- Active contribution of PRs for new channels (Mattermost, Chatmail)
-- Users investing in complex deployments (cron scheduling, multi-agent setups)
-
-### Dissatisfaction Signals
-- v0.2.4 upgrade path was **disruptive** for channel configurations
-- Perceived opacity in agent operations
-- Configuration UI/UX inconsistencies
-
----
+-   **Pain Points**: The v0.2.4 upgrade path was rocky for users relying on Web UI configuration, specifically regarding channel secrets. Users express frustration when switching models due to lack of visibility (cannot see available models list).
+-   **Use Cases**: Users are attempting to run complex cron jobs on low-power devices (Raspberry Pi Zero) and multi-channel setups, indicating PicoClaw is being used for 24/7 personal automation.
+-   **Sentiment**: generally positive regarding the pace of development ("Phase 2"), but trust is currently impacted by the configuration-busting bugs in the stable release.
 
 ## 8. Backlog Watch
-
-| Issue/PR | Age | Problem | Action Needed |
-|:---|:---:|:---|:---|
-| [#1532](https://github.com/sipeed/picoclaw/issues/1532) | 16 days | Critical cron bug, Chinese-only description | **Needs triage:** Translate, reproduce, assign |
-| [#1586](https://github.com/sipeed/picoclaw/pull/1586) | 15 days | Mattermost channel implementation ready | **Needs review:** Community contribution at risk of staleness |
-| [#1067](https://github.com/sipeed/picoclaw/issues/1067) | 26 days | Authentication/authorization framework (Authula) | **Needs decision:** Security-critical, no maintainer response |
-| [#1567](https://github.com/sipeed/picoclaw/issues/1567) | 16 days | WhatsApp native build failing | **Needs owner:** Mobile channel reliability |
-| [#571](https://github.com/sipeed/picoclaw/issues/571) | 37 days | Progress feedback — high-comment, no implementation | **Needs prioritization:** UX gap affecting all users |
-
-**Risk Assessment:** The Mattermost PR (#1586) and Authula proposal (#1067) represent **community energy that may dissipate** without maintainer engagement. The cron bug (#1532) is a stability risk with unclear severity due to language barrier.
-
----
-
-*Digest generated from GitHub activity 2026-03-29 to 2026-03-30. All links reference `github.com/sipeed/picoclaw`.*
+-   **[Security] Authula Integration** ([Issue #1067](https://github.com/sipeed/picoclaw/issues/1067)): Request for Authentication/Authorization layer (1 👍). Critical for public-facing deployments but currently stagnant since early March.
+-   **[Bug] Tool Call Extraction Flaw** ([Issue #2136](https://github.com/sipeed/picoclaw/issues/2136)): Security researcher flagged a significant flaw in extraction logic. While a PR exists, the author notes conflict issues; needs maintainer review to prevent regression.
+-   **[Feature] WhatsApp Native Build** ([Issue #1567](https://github.com/sipeed/picoclaw/issues/1567)): Build failing for 2 weeks, needs attention to keep channel parity.
 
 </details>
 
@@ -604,380 +553,154 @@ The community is **pushing beyond basic functionality** toward sophisticated age
 # NanoClaw Project Digest — 2026-03-30
 
 ## 1. Today's Overview
-
-NanoClaw shows **extremely high development velocity** with 50 PRs and 17 issues updated in the last 24 hours, indicating an active, rapidly evolving project. However, the **merge ratio is concerning**: only 1 of 50 PRs was merged/closed, suggesting either strict review standards or potential bottlenecks in maintainer bandwidth. No new releases were published. The community is heavily focused on **security hardening**, **memory/context optimization**, and **alternative AI backend support**, with multiple research-oriented issues exploring external tools for compression and persistence. The project appears to be in a **feature-expansion phase** with growing operational complexity.
+NanoClaw shows **high development velocity** today with 22 pull requests updated (8 merged/closed) against 6 active issues. The project is in an active iteration phase, focusing heavily on **stability fixes** (session handling, SELinux support) and **ecosystem expansion** (new dashboard, skills marketplace, communication channels). No new official releases were cut, suggesting merged fixes are accumulating for a future stable tag. The ratio of PRs to issues indicates a healthy, code-focused contributor base actively shipping enhancements.
 
 ---
 
 ## 2. Releases
-
-**No new releases** (v0.0.0 or version bump not indicated in data).
+**No new releases** were published today. Recent merged PRs appear to be staging for an upcoming release.
 
 ---
 
 ## 3. Project Progress
+Significant advancements were merged or closed today:
 
-**Merged/Closed Today: 1 PR/Issue**
+| PR | Type | Summary |
+|---|---|---|
+| [#1532 → #1533](https://github.com/qwibitai/nanoclaw/pull/1533) | **Bug Fix** | Fixed infinite retry loop caused by persisting stale session IDs from failed containers (fixes Issue #1531) |
+| [#1529](https://github.com/qwibitai/nanoclaw/pull/1529) | **Compatibility** | Added SELinux `:z` label to Docker volume mounts for Fedora/RHEL support |
+| [#1535](https://github.com/qwibitai/nanoclaw/pull/1535) | **Refactor** | Reverted native credential proxy changes |
+| [#1506](https://github.com/qwibitai/nanoclaw/pull/1506) | **Reliability** | Added auto-recovery from stale Claude sessions after WSL/container crashes |
+| [#1539](https://github.com/qwibitai/nanoclaw/pull/1539) | **Feature** | Status tracker skill with non-main group support (closed—likely merged or restructured) |
+| [#1536](https://github.com/qwibitai/nanoclaw/pull/1536) | **Skill** | Image generation skill added |
+| [#1526](https://github.com/qwibitai/nanoclaw/pull/1526) | **Integration** | WhatsApp media fetcher utility |
 
-| Item | Type | Summary |
-|------|------|---------|
-| [#127](https://github.com/qwibitai/nanoclaw/issues/127) | Issue (CLOSED) | Opencode setup guidance — resolved with 6 comments, 9 👍 |
-
-**Notable Advancement**: The closed issue addressed alternative IDE integration (OpenCode vs. Claude), showing community demand for vendor flexibility.
+**Key themes:** Container reliability, Linux distribution compatibility, and skill ecosystem growth.
 
 ---
 
 ## 4. Community Hot Topics
 
-### Most Active by Engagement
-
-| Rank | Item | Comments | 👍 | Analysis |
-|------|------|----------|-----|----------|
-| 1 | [#127](https://github.com/qwibitai/nanoclaw/issues/127) Opencode setup? | 6 | 9 | **Core need**: Vendor-agnostic tooling. Users want NanoClaw without Claude lock-in. High 👍/comment ratio = broad latent demand. |
-| 2 | [#1503](https://github.com/qwibitai/nanoclaw/issues/1503) Invalid SSL cert on nanoclaw.dev | 5 | 0 | **Operational trust issue**. Infrastructure reliability concerns blocking adoption. |
-| 3 | [#1482](https://github.com/qwibitai/nanoclaw/issues/1482) Host idle-state detection bug | 2 | 0 | **Technical debt**: Race condition in container lifecycle management. |
-
-### Research Cluster (3 related issues by same author)
-
-| Item | Focus | Underlying Need |
-|------|-------|---------------|
-| [#1493](https://github.com/qwibitai/nanoclaw/issues/1493) Headroom (API compression) | Token cost reduction | **Scaling economics** — context window costs at scale |
-| [#1494](https://github.com/qwibitai/nanoclaw/issues/1494) RTK (CLI output compression) | 60-90% compression for tool outputs | **Agent efficiency** — reducing noise in context |
-| [#1495](https://github.com/qwibitai/nanoclaw/issues/1495) MemStack (persistent memory) | Cross-session memory | **Stateful agents** — current file-based system inadequate |
-
-**Pattern**: Community is proactively solving context/memory limitations that core project hasn't addressed. Risk of fragmentation if not integrated.
+| Item | Engagement | Analysis |
+|---|---|---|
+| [Issue #127 (CLOSED)](https://github.com/qwibitai/nanoclaw/issues/127) | 6 comments, 9 👍 | **Onboarding gap** — User struggled to set up NanoClaw with "opencode" instead of Claude. High reactions indicate demand for alternative LLM backend support or clearer multi-provider documentation. |
+| [Issue #1503](https://github.com/qwibitai/nanoclaw/issues/1503) | 4 comments | **Infrastructure incident** — `nanoclaw.dev` SSL certificate failure. Active discussion suggests this is being addressed by maintainers. |
+| [Issue #1424](https://github.com/qwibitai/nanoclaw/issues/1424) | 2 comments, 1 👍 | **Security concern** — Fork visibility for healthcare deployments. User needs private forks for sensitive environments but GitHub restricts this. Underlying need: enterprise/privacy-friendly deployment patterns. |
+| [PR #1121](https://github.com/qwibitai/nanoclaw/pull/1121) | Long-running | **Signal channel skill** — Awaiting review since mid-March. Community demand for additional messaging platforms beyond WhatsApp/Telegram. |
 
 ---
 
 ## 5. Bugs & Stability
 
-| Severity | Item | Description | Fix PR? |
-|----------|------|-------------|---------|
-| 🔴 **Critical** | [#1487](https://github.com/qwibitai/nanoclaw/issues/1487) | Container self-termination loop — "crashes hard, brings down Claude Code and container's shell" | ❌ None linked |
-| 🔴 **Critical** | [#1531](https://github.com/qwibitai/nanoclaw/issues/1531) | Infinite retry loop from failed container sessions | ❌ Reported today, no PR |
-| 🟡 **High** | [#1454](https://github.com/qwibitai/nanoclaw/issues/1454) | Sidecar exits immediately when env vars unset — design flaw in async task handling | ❌ None |
-| 🟡 **High** | [#1503](https://github.com/qwibitai/nanoclaw/issues/1503) | Production SSL certificate invalid | ❌ Infrastructure issue |
-| 🟢 **Medium** | [#1482](https://github.com/qwibitai/nanoclaw/issues/1482) | Idle-state conflation causing premature container recycling | ❌ None |
-
-**Stability Assessment**: **Concerning**. Two critical container lifecycle bugs with no linked fixes. The infinite retry loop (#1531) and container suicide (#1487) suggest orchestrator robustness issues. SSL cert lapse indicates operational maturity gaps.
+| Severity | Issue/PR | Description | Fix Status |
+|---|---|---|---|
+| 🔴 **Critical** | [Issue #1531](https://github.com/qwibitai/nanoclaw/issues/1531) | Infinite retry loop when expired session IDs are persisted from failed containers | ✅ Fixed in [PR #1533](https://github.com/qwibitai/nanoclaw/pull/1533) |
+| 🟡 **Medium** | [Issue #1503](https://github.com/qwibitai/nanoclaw/issues/1503) | Invalid SSL cert on `nanoclaw.dev` documentation site | 🔧 Active discussion |
+| 🟡 **Medium** | [Issue #1485](https://github.com/qwibitai/nanoclaw/issues/1485) | Supply chain attack vulnerability from `curl | bash` host installs | 📋 Open — PR [#1446](https://github.com/qwibitai/nanoclaw/pull/1446) addresses related Linux setup issues |
+| 🟢 **Low** | SELinux permission denied | Docker mounts fail on Fedora/RHEL | ✅ Fixed in [PR #1529](https://github.com/qwibitai/nanoclaw/pull/1529) |
 
 ---
 
 ## 6. Feature Requests & Roadmap Signals
 
-| Feature | Issue/PR | Maturity Signal | Likelihood in Next Release |
-|---------|----------|-----------------|---------------------------|
-| **Web Dashboard** | [#1514](https://github.com/qwibitai/nanoclaw/pull/1514) | PR open, comprehensive (port 3333, SQLite read-only, real-time metrics) | ⭐⭐⭐⭐⭐ High |
-| **Token Cost Tracking** | [#1528](https://github.com/qwibitai/nanoclaw/pull/1528) | PR open, touches agent-runner, container-runner, DB schema | ⭐⭐⭐⭐⭐ High |
-| **AWS Bedrock Support** | [#1492](https://github.com/qwibitai/nanoclaw/issues/1492) | Issue open, 2 👍, enterprise demand | ⭐⭐⭐⭐☆ Medium-High |
-| **GitHub Copilot Backend** | [#1351](https://github.com/qwibitai/nanoclaw/pull/1351) | PR open since Mar 22, needs review | ⭐⭐⭐⭐☆ Medium-High |
-| **Graphiti Knowledge Graph** | [#1458](https://github.com/qwibitai/nanoclaw/issues/1458) | Research issue, detailed proposal | ⭐⭐⭐☆☆ Medium |
-| **Conversational Approval Flow** | [#1537](https://github.com/qwibitai/nanoclaw/issues/1537) | Issue opened today, security-critical for remote agents | ⭐⭐⭐⭐☆ Medium-High |
-| **Docker-in-Docker Support** | [#1485](https://github.com/qwibitai/nanoclaw/issues/1485) | Security concern (supply chain), architectural change | ⭐⭐⭐☆☆ Medium |
-
-**Prediction**: Dashboard (#1514) and token tracking (#1528) are closest to merge-ready. Bedrock support (#1492) addresses enterprise blocker and may accelerate.
+| Feature Signal | Source | Likelihood | Rationale |
+|---|---|---|---|
+| **Remote agent approval flow** | [Issue #1537](https://github.com/qwibitai/nanoclaw/issues/1537) | 🔺 High | Addresses critical safety gap for Telegram/WhatsApp agents; well-structured proposal |
+| **NanoClaw-in-Docker** | [Issue #1485](https://github.com/qwibitai/nanoclaw/issues/1485) | 🔺 High | Security-focused request aligned with container-first architecture |
+| **Web dashboard** | [PR #1514](https://github.com/qwibitai/nanoclaw/pull/1514) | 🔺 High | Feature-complete PR exists; addresses multi-user collaboration need |
+| **Token cost tracking** | [PR #1528](https://github.com/qwibitai/nanoclaw/pull/1528) | 🟡 Medium | Operational visibility feature with implementation ready |
+| **MCP server integration** | [PR #1515](https://github.com/qwibitai/nanoclaw/pull/1515) | 🟡 Medium | Enables Home Assistant, Google Workspace integrations |
+| **Skills marketplace migration** | [PR #1470](https://github.com/qwibitai/nanoclaw/pull/1470) | 🟡 Medium | Architectural shift to plugin system; 24 skills ready for extraction |
+| **Alternative LLM backends** | [Issue #127](https://github.com/qwibitai/nanoclaw/issues/127) | 🟡 Medium | 9 👍 signals community demand; may require architectural changes |
 
 ---
 
 ## 7. User Feedback Summary
 
-### Pain Points
+**Pain Points:**
+- **Installation security**: Users uncomfortable with `curl | bash` patterns on production systems ([#1485](https://github.com/qwibitai/nanoclaw/issues/1485))
+- **Fork privacy**: Healthcare/enterprise users need private forks but can't make them ([#1424](https://github.com/qwibitai/nanoclaw/issues/1424))
+- **LLM provider lock-in**: Non-Claude users (opencode) face setup friction ([#127](https://github.com/qwibitai/nanoclaw/issues/127))
+- **Remote agent safety**: No approval mechanism for agents accessed via messaging apps ([#1537](https://github.com/qwibitai/nanoclaw/issues/1537))
 
-| Theme | Evidence | Severity |
-|-------|----------|----------|
-| **Container instability** | #1487, #1531, #1454 | Critical — "used to work, now crashes" |
-| **Security anxiety** | #1424 (fork privacy), #1500 (OAuth token exposure), #1485 (curl pipe security) | High — users handling sensitive data (healthcare, enterprise) |
-| **Vendor lock-in friction** | #127 (Opencode), #1492 (Bedrock), #1351 (Copilot) | Medium-High — multi-model demand |
-| **Memory/context limitations** | #1458, #1493-1495 (research issues) | Medium — workarounds emerging externally |
-| **Remote agent safety** | #1537 (no approval flow for Telegram/WhatsApp) | High — destructive action risk |
-
-### Use Cases Emerging
-
-- **Healthcare**: #1424 mentions "home user's health care system" — privacy-critical
-- **Enterprise multi-tenant**: #1490 (strict isolation requirements), #1492 (AWS Bedrock)
-- **Consumer automation**: #1382 (Instacart), #1447 (LinkedIn)
-
-### Satisfaction Signals
-
-- High engagement (50 PRs) = strong contributor interest
-- Proactive research contributions (#1493-1495) = ecosystem investment
-- Closed issue #127 with 9 👍 = responsive support
-
-### Dissatisfaction Signals
-
-- SSL cert lapse = operational unreliability
-- "That is all" (#1503) = terse frustration
-- "quite nasty, and very vulnerable" (#1485) = security distrust
+**Positive Signals:**
+- Active community contributing diverse skills (Signal, WhatsApp, image generation)
+- Multiple PRs for observability features (dashboard, cost tracking)
+- Quick turnaround on critical bug (session retry loop fixed same-day)
 
 ---
 
 ## 8. Backlog Watch
 
-### Needs Maintainer Attention
-
-| Item | Age | Risk | Action Needed |
-|------|-----|------|---------------|
-| [#1351](https://github.com/qwibitai/nanoclaw/pull/1351) Copilot SDK | 8 days | Stale PR, backend diversity | Review/merge or close |
-| [#1385](https://github.com/qwibitai/nanoclaw/pull/1385) Host networking fix | 6 days | "Needs QA" label | QA completion |
-| [#1424](https://github.com/qwibitai/nanoclaw/issues/1424) Fork security | 5 days | Privacy-sensitive users blocked | Guidance on private forks |
-| [#1487](https://github.com/qwibitai/nanoclaw/issues/1487) Container crashes | 3 days | **Critical regression** | Reproduction + fix |
-| [#1503](https://github.com/qwibitai/nanoclaw/issues/1503) SSL cert | 2 days | Production trust | Infrastructure response |
-
-### Review Bottleneck Indicator
-
-With 49 open PRs and only 1 merged in 24h, **maintainer bandwidth appears constrained**. Risk of contributor fatigue if turnaround doesn't improve.
+| Item | Age | Status | Action Needed |
+|---|---|---|---|
+| [PR #1121 — Signal Channel](https://github.com/qwibitai/nanoclaw/pull/1121) | 14 days | Needs Review | Maintainer review requested; complete implementation |
+| [PR #1470 — Skills Marketplace](https://github.com/qwibitai/nanoclaw/pull/1470) | 4 days | Open | Architectural decision needed on plugin system |
+| [Issue #1424 — Fork Security](https://github.com/qwibitai/nanoclaw/issues/1424) | 5 days | Open | Needs documentation or feature response for enterprise use cases |
+| [PR #1362 — Quad Inbox Skill](https://github.com/qwibitai/nanoclaw/pull/1362) | 7 days | Open | Container↔host async communication pattern; review needed |
 
 ---
 
-*Digest generated from GitHub activity 2026-03-29 to 2026-03-30. Data source: qwibitai/nanoclaw*
-
-</details>
-
-<details>
-<summary><strong>NullClaw</strong> — <a href="https://github.com/nullclaw/nullclaw">nullclaw/nullclaw</a></summary>
-
-# NullClaw Project Digest — 2026-03-30
-
-## 1. Today's Overview
-
-NullClaw shows **moderate development activity** with 2 active PRs and 2 open issues updated in the past 24 hours. No new releases were published. The project appears focused on **internal tooling refinements** (shared helpers, scheduler normalization) rather than user-facing features. Both PRs are from contributor `manelsen`, suggesting concentrated individual contribution rather than distributed maintainer activity. Community interest in **platform expansion** (WeChat integration) is evident but unaddressed by core team. Overall project health: **stable but maintenance-focused**, with no critical blockers but growing feature gap relative to forks.
-
----
-
-## 2. Releases
-
-**No new releases** — no version updates, changelogs, or migration notes to report.
-
----
-
-## 3. Project Progress
-
-**No merged or closed PRs today.** Both active PRs remain open:
-
-| PR | Status | Description |
-|:---|:---|:---|
-| [#745](https://github.com/nullclaw/nullclaw/pull/745) | Open | Refactors tool helpers for file/web search operations — code deduplication, no user-facing changes |
-| [#744](https://github.com/nullclaw/nullclaw/pull/745) | Open | Fixes Ollama scheduler tool alias normalization — addresses naming inconsistency in LLM adapter |
-
-**Assessment:** Incremental technical debt reduction. No feature advancement.
-
----
-
-## 4. Community Hot Topics
-
-### Most Active: WeChat Plugin Integration Request
-- **Issue [#714](https://github.com/nullclaw/nullclaw/issues/714)** — 8 comments, 0 reactions, opened 2026-03-25
-- **Underlying need:** Access to China's 1.3B+ WeChat user base; competitive parity with other OpenClaw forks
-- **Signal:** Strong user demand for **platform diversification beyond Western messaging ecosystems**
-
-### Emerging: Scheduler Tool Access Bug
-- **Issue [#743](https://github.com/nullclaw/nullclaw/issues/743)** — 0 comments, opened yesterday by `ats-bcon`
-- **Correlation:** Directly related to open PR #744's fix scope — suggests active user impact
-
----
-
-## 5. Bugs & Stability
-
-| Severity | Issue | Fix Status |
-|:---|:---|:---|
-| **Medium** | [#743](https://github.com/nullclaw/nullclaw/issues/743): Scheduler tool inaccessible despite correct config | **Fix pending** — PR [#744](https://github.com/nullclaw/nullclaw/pull/744) addresses root cause (alias normalization) |
-| **Low** | None additional reported | — |
-
-**Note:** The scheduler bug appears to be a **configuration/adapter mismatch** rather than core logic failure. PR #744's targeted fix suggests maintainers are aware and responding.
-
----
-
-## 6. Feature Requests & Roadmap Signals
-
-| Request | Source | Likelihood in Next Release |
-|:---|:---|:---|
-| **WeChat Plugin Support** | [#714](https://github.com/nullclaw/nullclaw/issues/714) | **Low** — no maintainer engagement, 5 days open; depends on community PR or fork merge |
-| **Improved Tool Discovery/Documentation** | Implied by #743 confusion | **Medium** — PR #745's refactoring may enable better abstractions |
-
-**Prediction:** Next release likely contains **bug fixes and refactors only**. Major feature additions (WeChat, new LLM providers) require sustained maintainer bandwidth not currently visible.
-
----
-
-## 7. User Feedback Summary
-
-| Pain Point | Evidence | User Segment |
-|:---|:---|:---|
-| **Platform lock-in / geographic exclusion** | WeChat request urgency; reference to "other OpenClaw forks" | China/Southeast Asia users |
-| **Configuration opacity** | Scheduler tool "correct config" claim failing | Self-hosting users |
-| **Documentation gaps** | Screenshot-based bug reports suggest CLI output unclear | New adopters |
-
-**Satisfaction:** Neutral-to-concerned. Users see active forks outpacing core development.
-
----
-
-## 8. Backlog Watch
-
-| Item | Age | Risk |
-|:---|:---|:---|
-| [#714 WeChat Plugin](https://github.com/nullclaw/nullclaw/issues/714) | 5 days | **High** — competitive divergence; user may migrate to forks |
-| [#743 Scheduler Bug](https://github.com/nullclaw/nullclaw/issues/743) | 1 day | **Low** — fix PR #744 exists, pending review |
-
-**Maintainer attention needed:** Issue #714 requires **explicit roadmap communication** — even a "help wanted" or "under evaluation" label would reduce user uncertainty.
-
----
-
-*Digest generated from github.com/nullclaw/nullclaw data as of 2026-03-30.*
+**Digest compiled from 28 GitHub events • Project health: 🟢 Active**
 
 </details>
 
 <details>
 <summary><strong>IronClaw</strong> — <a href="https://github.com/nearai/ironclaw">nearai/ironclaw</a></summary>
 
-# IronClaw Project Digest — 2026-03-30
+# IronClaw Project Digest: 2026-03-30
 
 ## 1. Today's Overview
-
-IronClaw shows **extremely high development velocity** with 50 PRs updated in 24 hours (43 open, 7 merged/closed) and 8 active issues. The project is in a heavy **staging-to-main promotion cycle** with 11 automated CI promotion PRs queued, indicating a mature but complex release pipeline. Core architectural work dominates: secure financial execution layers, async transaction approvals, and a proposed "OS-like" kernel/extension model suggest the project is maturing from an extensible framework toward a production-grade agent platform. Risk levels are elevated with multiple "high" risk PRs in flight.
-
----
+IronClaw demonstrates **very high development velocity** with a massive influx of 50 updated pull requests (43 open) against only 9 issues, signaling a heavy feature integration phase. The team is focused on architectural overhauls, specifically unifying configuration systems and extracting the frontend into a standalone crate. While core contributors push significant structural changes like the "Commitments System" and "Secure Financial Execution Layer," community members are actively expanding LLM provider support (Aliyun, MiniMax) and fixing critical edge cases in WASM tools. The ratio of open to merged PRs suggests a busy review cycle but potentially delayed integrations.
 
 ## 2. Releases
-
-**No new releases** — 0 releases published in the last 24 hours.
-
-The project appears to be accumulating substantial changes in staging (evidenced by 11 promotion PRs) without a stable release cut. This suggests either:
-- A major version release is being prepared
-- The team prioritizes continuous deployment over tagged releases
-- Release process friction exists given the promotion queue depth
-
----
+**No new releases** were recorded today. The latest updates remain in the `staging` branch, with an auto-promotion attempt visible in PR #1743.
 
 ## 3. Project Progress
+Significant advancements were merged or closed today, focusing on stability and provider compatibility:
 
-### Merged/Closed PRs (7 items)
-
-| PR | Description | Impact |
-|:---|:---|:---|
-| [#1571](https://github.com/nearai/ironclaw/pull/1571) | fix(mcp): deserialize tool annotations with camelCase per MCP spec | **Standards compliance** — fixes MCP spec violation that could break tool discovery |
-| [#1605](https://github.com/nearai/ironclaw/issues/1605) | feat: DB-backed user management with registration, invitation, and API token CRUD | **Infrastructure maturity** — replaces static env-based auth with runtime user management |
-| [#1611](https://github.com/nearai/ironclaw/issues/1611) | Execution failed: max iterations (50) exceeded | **Stability fix** — addresses Docker Sandbox Worker loop with Ollama_API empty completions |
-| [#1629](https://github.com/nearai/ironclaw/issues/1629) | fix(bedrock): strip tool blocks from messages when toolConfig is absent | **AWS compatibility** — resolves Bedrock Converse API validation errors |
-| [#1664](https://github.com/nearai/ironclaw/issues/1664) | feat(skills): support recursive discovery for grouped/bundled skill directories | **Developer experience** — enables nested skill organization |
-
-### Notable Advancements
-
-- **User management infrastructure**: Migration from static `GATEWAY_USER_TOKENS` env var to full CRUD database system removes deployment friction for multi-user scenarios
-- **MCP ecosystem health**: Tool annotation fix maintains interoperability with growing MCP server ecosystem
-- **Local model reliability**: Iteration limit fix improves Ollama local model experience
-
----
+*   **Agent Stability (Merged):** PR #1720 introduced bounded autonomous recovery for worker jobs to handle empty tool completions from local models, preventing "max iterations exceeded" crashes.
+*   **Security Fixes (Merged):** PR #1495 fixed a cross-channel approval hijacking vulnerability, ensuring thread resolution remains channel-scoped. PR #1630 resolved a validation error with AWS Bedrock when tool history was present but tools were disabled.
+*   **Authentication & Config (Merged):** PR #1463 added OIDC JWT authentication support for reverse-proxy deployments (e.g., AWS ALB, Okta). PR #1340 enabled custom LLM provider configuration directly via the Web UI.
+*   **Skills System (Merged):** PR #1664 (Issue #1664) fixed skill discovery to support recursive/bundled skill directories.
 
 ## 4. Community Hot Topics
+The most active discussions revolve around **security architecture** and **configuration flexibility**:
 
-### Most Active by Engagement
-
-| Rank | Item | Comments | Analysis |
-|:---|:---|:---:|:---|
-| 1 | [#1739](https://github.com/nearai/ironclaw/issues/1739) Async transaction approval system with WalletConnect | 4 | **Security-critical architecture** — two-phase approval for high-stakes financial actions. Strong engagement indicates this addresses a real blocker for DeFi/ crypto agent use cases. |
-| 2 | [#1712](https://github.com/nearai/ironclaw/issues/1712) Architect secure financial execution layer | 1 | **Foundational infrastructure** — builds on NEAR intents work (#1622). Labels: `risk: high`, `scope: safety`, `scope: secrets` signal this is a trust-layer priority. |
-
-### Underlying Needs Analysis
-
-- **Trust and custody**: Both #1739 and #1712 reveal demand for **human-in-the-loop financial controls**. Users want agent autonomy *with* cryptographic guarantees of human oversight.
-- **WalletConnect integration**: #1739 specifically targets mobile/web wallet workflows, suggesting IronClaw is positioning for consumer-facing crypto agents rather than just institutional custody.
-
-### Major Architectural Proposal
-
-| Item | Scope | Significance |
-|:---|:---|:---|
-| [#1741](https://github.com/nearai/ironclaw/issues/1741) design: kernel/extension architecture — move toward OS-like extensibility model | `scope: channel`, `scope: tool/wasm`, `scope: llm`, `scope: extensions`, `scope: hooks` | **Paradigm shift proposal** — acknowledges that despite extensibility "bones" (WASM, MCP, skills), too much functionality remains compile-time. Proposes runtime kernel with extension loading, hook system, and reduced core binary size. |
-
-This signals potential **v3 architecture** thinking — moving from framework to platform.
-
----
+*   **[Issue #1739] Async Transaction Approval:** A high-engagement discussion (4 comments) on implementing WalletConnect for secure, two-phase transaction approvals. This aligns with the broader push for financial agent capabilities.
+    *   *Underlying Need:* Users want agents capable of executing financial actions but require a "human-in-the-loop" security model that isolates approval from the agent's context.
+*   **[Issue #1676] Telegram Bot Reliability:** A bug report with 10 comments highlighting persistent failures in HTTP tool routines for Telegram polling.
+    *   *Underlying Need:* Users are struggling to use IronClaw as a personal assistant on alternative interfaces (Telegram) due to brittle HTTP tool implementations.
 
 ## 5. Bugs & Stability
+Several high-impact bugs were identified, with fixes in progress or recently merged:
 
-| Severity | Item | Status | Details |
-|:---|:---|:---|:---|
-| 🔴 **High** | [#1742](https://github.com/nearai/ironclaw/issues/1742) MiniMax API is not used correctly | **OPEN, no fix PR** | 401 Unauthorized errors on MiniMax-M2.7 provider. Blocks users of this Chinese LLM provider. |
-| 🟡 **Medium** | [#1611](https://github.com/nearai/ironclaw/issues/1611) Execution failed: max iterations (50) exceeded | **CLOSED** | Docker Sandbox Worker loop with local models — fix deployed. |
-| 🟡 **Medium** | [#1629](https://github.com/nearai/ironclaw/issues/1629) Bedrock tool blocks validation error | **CLOSED** | AWS Bedrock compatibility fixed. |
-
-### Stability Assessment
-
-- **Provider diversity risk**: MiniMax failure (#1742) suggests insufficient test coverage for non-Western API providers
-- **Local model fragility**: The Ollama iteration loop (#1611) indicates edge cases in tool completion parsing that may recur with other local inference engines
-- **No critical regressions** in core functionality
-
----
+1.  **[High] Execution Loop Exhaustion (Issue #1611 / PR #1720):** Local models (Ollama) returning empty tool completions caused the agent to hit the 50-iteration limit and fail.
+    *   *Status:* **Fixed** in PR #1720 (Merged).
+2.  **[High] Bedrock API Validation Errors (Issue #1629 / PR #1630):** AWS Bedrock failed when `toolConfig` was missing but tool history existed.
+    *   *Status:* **Fixed** in PR #1630 (Merged).
+3.  **[Medium] Telegram Polling Failure (Issue #1676):** The `http` tool fails to correctly poll Telegram for messages, rendering the bot half-functional.
+    *   *Status:* **Open**, actively discussed but no fix PR linked yet.
+4.  **[Medium] MiniMax API Auth Failure (Issue #1742):** 401 Unauthorized errors suggest integration issues with the MiniMax provider.
+    *   *Status:* **Open**, needs investigation.
 
 ## 6. Feature Requests & Roadmap Signals
+The roadmap is clearly trending toward **"OS-like extensibility"** and **"Financial Agent"** capabilities:
 
-| Feature | Source | Likelihood in Next Release | Rationale |
-|:---|:---|:---:|:---|
-| **Async transaction approvals / WalletConnect** | [#1739](https://github.com/nearai/ironclaw/issues/1739) | ⭐⭐⭐⭐⭐ High | Active discussion, security-critical, aligns with NEAR ecosystem priorities |
-| **Secure financial execution layer** | [#1712](https://github.com/nearai/ironclaw/issues/1712) | ⭐⭐⭐⭐⭐ High | P1 priority, builds on existing NEAR intents work, risk-labeled |
-| **OS-like kernel/extension architecture** | [#1741](https://github.com/nearai/ironclaw/issues/1741) | ⭐⭐⭐☆☆ Medium | Architectural proposal, likely v3.0 scope, requires substantial design iteration |
-| **Tool invoke HTTP endpoint** | [#1740](https://github.com/nearai/ironclaw/pull/1740) | ⭐⭐⭐⭐☆ High | PR already open (XL size), enables Tauri desktop integration |
-| **Anti-drift self-checks** | [#1662](https://github.com/nearai/ironclaw/pull/1662) | ⭐⭐⭐⭐☆ High | PR open, addresses token cost optimization — attractive for production deployments |
-| **Aliyun Coding Plan support** | [#1446](https://github.com/nearai/ironclaw/pull/1446) | ⭐⭐⭐☆☆ Medium | XL PR open since March 20, may need rebase given staging velocity |
-| **Unified Thread-Capability-CodeAct engine (v2)** | [#1557](https://github.com/nearai/ironclaw/pull/1557) | ⭐⭐☆☆☆ Lower | 7,275 lines, "can be swapped in when it passes all acceptance tests" — likely post-stabilization |
-
----
+*   **Secure Financial Layer (Issue #1712):** A high-risk proposal to architect a secure execution layer for crypto actions, custody, and policy enforcement. This is likely the next major strategic milestone.
+*   **Commitments System (PR #1736):** A proposed system for tracking personal commitments using existing memory/routine tools, moving IronClaw closer to a true "Executive Assistant" role.
+*   **Kernel/Extension Architecture (Issue #1741):** A design proposal to move from compile-time dependencies to a dynamic, OS-like extension model to reduce bloat and improve modularity.
+*   **LAN Access for LLMs (PR #1696):** A highly practical feature allowing `LLM_ALLOW_LOCAL_NETWORK` to connect to self-hosted models on LAN IPs.
 
 ## 7. User Feedback Summary
-
-### Pain Points
-
-| Issue | Evidence | User Impact |
-|:---|:---|:---|
-| **Static user management** | [#1605](https://github.com/nearai/ironclaw/issues/1605) | "Adding/removing a user requires an env var change and a process restart" — ops friction for multi-tenant deployments |
-| **Local model reliability** | [#1611](https://github.com/nearai/ironclaw/issues/1611) | Empty tool completions causing iteration exhaustion — degrades self-hosted experience |
-| **Financial action security gaps** | [#1712](https://github.com/nearai/ironclaw/issues/1712) | "We do not yet have a secure architecture for custody, signing, approvals, policy enforcement" — blocks production financial agents |
-| **Extension development friction** | [#1741](https://github.com/nearai/ironclaw/issues/1741) | "Huge amount of functionality is still compile-time" — limits community contribution velocity |
-
-### Satisfaction Indicators
-
-- **Strong extensibility foundation**: Multiple references to "trait objects everywhere," WASM sandbox, MCP support, skills system — users recognize solid architecture
-- **Active CI/CD**: Automated staging promotions indicate reliable (if complex) delivery pipeline
-- **Responsive maintenance**: 4/8 issues closed in 24h, including user-reported bugs
-
-### Use Case Signals
-
-- **DeFi/Crypto agents**: Dominance of financial security issues suggests primary user segment
-- **Enterprise multi-tenancy**: DB-backed user management request indicates B2B deployment needs
-- **Local/edge deployment**: Ollama bug reports and MiniMax integration show geographic/provider diversity
-
----
+*   **Pain Point - Tooling Reliability:** Users express frustration that basic functionalities like Telegram polling (Issue #1676) are broken compared to "forks" or previous versions (referenced as "openclaw").
+*   **Pain Point - Local Model Compatibility:** Users running local models (Ollama) face instability with empty completions (Issue #1611), indicating a need for more robust fallback handling for non-standard LLM outputs.
+*   **Positive Signal - UI Customization:** The extraction of the frontend (PR #1725) and custom LLM config UI (PR #1340) are likely to be well-received by users deploying IronClaw in corporate or self-hosted environments.
 
 ## 8. Backlog Watch
-
-### Long-Running Items Needing Attention
-
-| Item | Age | Risk | Action Needed |
-|:---|:---:|:---:|:---|
-| [#1557](https://github.com/nearai/ironclaw/pull/1557) Unified Thread-Capability-CodeAct engine | 8 days | **Architecture fragmentation** | 7,275-line PR with "bridge adapters" — needs maintainer decision on integration timeline vs. parallel maintenance burden |
-| [#1446](https://github.com/nearai/ironclaw/pull/1446) Aliyun Coding Plan support | 10 days | **Provider diversity** | XL PR from new contributor; may need rebase given 11 staging promotions since creation — maintainer review to prevent staleness |
-| [#1529](https://github.com/nearai/ironclaw/pull/1529) Gmail Content-Length fix | 9 days | **Gmail integration reliability** | Simple fix (size: M), new contributor — quick win if reviewed |
-
-### Maintainer Attention Recommended
-
-- **Staging promotion queue**: 11 stacked promotion PRs suggests either:
-  - Intentional batching for major release
-  - Potential merge conflict accumulation risk
-  - Review bottleneck in core team
-
-- **#1741 kernel architecture**: Zero comments since creation — high-impact proposal that may need explicit "accepted/deferred/rejected" status to guide community expectations
-
----
-
-## Project Health Summary
-
-| Metric | Assessment |
-|:---|:---|
-| **Velocity** | ⬆️ Exceptional — 50 PR updates, active CI pipeline |
-| **Stability** | ➡️ Stable — no critical regressions, responsive bug fixes |
-| **Community** | ➡️ Growing — new contributors visible, but review bandwidth may be constrained |
-| **Architecture** | ⬆️ Evolving — major security and extensibility proposals in flight |
-| **Release Cadence** | ⬇️ Concerning — no releases, deep staging queue suggests release process friction |
-
-**Overall**: IronClaw is in **intensive development mode** with strong technical momentum but potential release management challenges. The convergence of financial security features and kernel architecture proposals suggests a maturation inflection point — likely preparing for a significant version milestone.
+*   **[PR #1446] Aliyun Coding Plan Support:** An "XL" sized PR open since March 20th. It adds significant functionality (Aliyun Provider) but hasn't been merged, possibly due to complexity or lack of maintainer bandwidth for review.
+*   **[PR #1109] Routine Refresh Logic:** A core fix for routine event caching that has been open since March 13th. This impacts the reliability of scheduled tasks and needs priority review.
+*   **[Issue #1712] Financial Layer:** A strategic architectural issue that requires high-level input from core maintainers to define the scope before implementation begins.
 
 </details>
 
@@ -987,111 +710,42 @@ This signals potential **v3 architecture** thinking — moving from framework to
 # LobsterAI Project Digest — 2026-03-30
 
 ## 1. Today's Overview
-
-LobsterAI shows **high development velocity** with 7 active pull requests submitted or updated in the last 24 hours, all currently open and awaiting review. No new releases were published. Community activity is moderate with 4 open issues, including one critical stability concern regarding Agent Engine infinite restarts and architectural questions about the project's future direction. The project appears to be in an **active feature development phase** with significant UX improvements in progress, though maintainer bandwidth for code review may be a bottleneck given the unmerged PR backlog.
-
----
+LobsterAI is demonstrating **high active development velocity** with 7 new feature-focused Pull Requests opened in the last 24 hours against 0 merged, suggesting a sprint or feature freeze period is underway. The community engagement is moderate, with 4 active Issues discussing both architectural direction and stability bugs. While the lack of recent releases indicates a potential accumulation phase for a larger update, the project appears to be aggressively expanding its "Cowork" (agent collaboration) capabilities and user experience features. The overall project health is active but faces questions regarding long-term architectural direction.
 
 ## 2. Releases
-
-**No new releases** — No version tags or release notes published in the last 24 hours.
-
----
+**No new releases** were recorded in the last 24 hours.
+*   *Note:* The high volume of feature PRs (#1008-#1013) currently open suggests that a significant feature-packed release is likely being staged for the near future.
 
 ## 3. Project Progress
-
-**No PRs merged or closed today.** All 7 active PRs remain in open status, indicating potential review queue congestion. Key features in development include:
-
-| PR | Feature | Status | Significance |
-|:---|:---|:---|:---|
-| [#644](https://github.com/netease-youdao/LobsterAI/pull/644) | Qwen OAuth one-click login | Open | Reduces onboarding friction to ~10 seconds |
-| [#1013](https://github.com/netease-youdao/LobsterAI/pull/1013) | Slash-triggered skill picker | Open | Inline skill selection without context switching |
-| [#1012](https://github.com/netease-youdao/LobsterAI/pull/1012) | Conversation-based skill creation | Open | AI-assisted skill authoring workflow |
-| [#1011](https://github.com/netease-youdao/LobsterAI/pull/1011) | Extensible artifacts preview (HTML/React/Mermaid) | Open | Executable code outputs, competitive with Claude Artifacts |
-| [#1010](https://github.com/netease-youdao/LobsterAI/pull/1010) | Reveal-in-folder for output files | Open | File management UX polish |
-| [#1009](https://github.com/netease-youdao/LobsterAI/pull/1009) | Prompt template library with variables | Open | Reusable prompt assets, team collaboration |
-| [#1008](https://github.com/netease-youdao/LobsterAI/pull/1008) | 6 new preset agent templates | Open | Expanded vertical coverage |
-
-**Assessment**: Strong focus on **Cowork chat UX**, **skill ecosystem**, and **content rendering capabilities**. No progress on engine/architecture concerns raised in community.
-
----
+No PRs were merged today; however, substantial new code has been submitted for review, focusing heavily on the **Cowork Module** and **User Onboarding**:
+*   **UI/UX Enhancements:** PR [#1013](https://github.com/netease-youdao/LobsterAI/pull/1013) introduces a slash-triggered skill picker for faster prompt composition, and PR [#1010](https://github.com/netease-youdao/LobsterAI/pull/1010) adds "reveal in folder" actions for output files.
+*   **Content Rendering:** PR [#1011](https://github.com/netease-youdao/LobsterAI/pull/1011) proposes an extensible artifacts preview pipeline for HTML/React/Mermaid, aiming to make code blocks immediately consumable.
+*   **Prompt Engineering:** PR [#1009](https://github.com/netease-youdao/LobsterAI/pull/1009) adds a prompt template library with variable filling support to reduce repetitive typing.
+*   **Expansion:** PR [#1008](https://github.com/netease-youdao/LobsterAI/pull/1008) expands preset agents from 6 to 12 scenarios, and PR [#644](https://github.com/netease-youdao/LobsterAI/pull/644) integrates Qwen OAuth login to lower the barrier to entry.
 
 ## 4. Community Hot Topics
-
-### Most Engaged Discussions
-
-| Item | Engagement | Analysis |
-|:---|:---|:---|
-| [#418](https://github.com/netease-youdao/LobsterAI/issues/418) — Engine switch to OpenClaw? | 1 comment, 0 👍 | **Critical strategic concern**. User detected branch activity suggesting migration from Claude Agent SDK to "OpenClaw" engine. Questions maintenance commitment to Claude-based `cowork` feature and whether SDK unpredictability drove the decision. |
-| [#595](https://github.com/netease-youdao/LobsterAI/issues/595) — Windows autostart failure | 1 comment, 0 👍 | **High-impact reliability issue**. Process exits silently (~3s) with no logs. Suggests crash in early initialization, possibly permissions or logging path issues in per-user installs. |
-
-### Underlying Needs
-
-- **Transparency**: Users need official roadmap clarity on engine strategy (#418)
-- **Reliability**: Silent failures without logs block debugging (#595)
-- **Discoverability**: Third-party tools (Dispatch) seeking metadata for skill indexing (#1014)
-
----
+The most significant discussion involves the **future architectural direction** of the project:
+*   **Strategic Direction Uncertainty ([Issue #418](https://github.com/netease-youdao/LobsterAI/issues/418)):** Users have noticed code changes suggesting a switch from the Claude Agent SDK to an engine referred to as "openclaw." The community is asking for official clarification on whether the current SDK-based "cowork" features will continue to be maintained and if the switch is due to controllability issues with the Claude SDK. This issue highlights user anxiety regarding dependency stability and vendor lock-in.
 
 ## 5. Bugs & Stability
-
-| Severity | Issue | Description | Fix Status |
-|:---|:---|:---|:---|
-| 🔴 **High** | [#1007](https://github.com/netease-youdao/LobsterAI/issues/1007) | **Agent Engine infinite restart loop** — User reports frequent occurrence, requests configuration workaround. No response yet. | ❌ No fix PR |
-| 🟡 **Medium** | [#595](https://github.com/netease-youdao/LobsterAI/issues/595) | Windows autostart fails silently, no logs generated. Per-user install path (`%LOCALAPPDATA%`) suspected. | ❌ No fix PR |
-
-**Stability Assessment**: Two unresolved runtime stability issues with no associated fixes. The infinite restart loop (#1007) appears to be a **recurring, unresolved systemic problem** affecting core functionality.
-
----
+Several stability issues regarding background processes and integrations were reported:
+1.  **Agent Engine Infinite Restart ([Issue #1007](https://github.com/netease-youdao/LobsterAI/issues/1007)):** *High Severity.* Users report the Agent Engine entering an infinite restart loop, rendering the agent unusable. No fix PR is linked yet.
+2.  **Windows Auto-start Failure ([Issue #595](https://github.com/netease-youdao/LobsterAI/issues/595)):** *Medium Severity.* The process exits silently ~3 seconds after launch on Windows startup. The lack of logging makes this difficult to debug.
+3.  **WeChat Sync Delay ([Issue #986](https://github.com/netease-youdao/LobsterAI/issues/986)):** *Low Severity.* The WeChat bot queues responses and sends them all at once after the client finishes, rather than streaming, resulting in a "message bombing" user experience.
 
 ## 6. Feature Requests & Roadmap Signals
-
-| Signal | Source | Likelihood in Next Release |
-|:---|:---|:---|
-| **Qwen OAuth integration** | PR #644 (ready) | **High** — Complete implementation, reduces friction |
-| **Slash commands for skills** | PR #1013 (ready) | **High** — Improves power-user workflow |
-| **Executable artifacts (HTML/React/Mermaid)** | PR #1011 (ready) | **Medium-High** — Major differentiator vs. competitors |
-| **Prompt template library** | PR #1009 (ready) | **Medium** — Team/enterprise use case |
-| **Engine architecture clarity** | Issue #418 | **Uncertain** — Requires maintainer decision |
-
-**Predicted vNext focus**: UX refinement for Cowork chat, expanded model provider support (Qwen), and content rendering parity with Claude Artifacts.
-
----
+*   **Streaming Synchronization:** Based on Issue [#986](https://github.com/netease-youdao/LobsterAI/issues/986), there is a clear need for better message synchronization strategies for IM platforms (WeChat) to support true streaming replies.
+*   **Skill Creation via Conversation:** PR [#1012](https://github.com/netease-youdao/LobsterAI/pull/1012) addresses a latent need for easier skill generation, allowing users to create skills through dialogue rather than manual coding/uploading.
+*   **Configuration Robustness:** Issue [#1007](https://github.com/netease-youdao/LobsterAI/issues/1007) implicitly requests better configuration validation or "circuit breakers" to prevent infinite restart loops.
 
 ## 7. User Feedback Summary
-
-### Pain Points
-| Issue | User Voice | Root Cause |
-|:---|:---|:---|
-| Silent crashes | "进程启动后约3秒退出且无日志写入" (#595) | Logging initialization failure or early exception handling gap |
-| Unstable agent runtime | "经常遇到 Agent Engine 无限重启" (#1007) | Engine lifecycle management, possibly resource contention or provider API failures |
-| Skill discovery friction | "每次都需要跳转到技能页面" (#1013) | No inline skill invocation mechanism |
-| Prompt repetition | "反复输入结构相近的 Prompt" (#1009) | No template/asset management system |
-
-### Use Cases Emerging
-- **Team/enterprise**: Prompt template sharing (#1009)
-- **Visual thinkers**: Mermaid/executable diagram support (#1011)
-- **Low-friction onboarding**: OAuth-first authentication (#644)
-
-### Satisfaction Signals
-- Active PR contributions suggest engaged contributor base
-- Third-party integration interest (Dispatch #1014) indicates ecosystem relevance
-
----
+Users are actively using LobsterAI for **IM automation (WeChat)** and **local agent tasks**, but friction exists in both areas.
+*   **Pain Points:** The "burst" messaging behavior in WeChat integrations creates a poor recipient experience. Additionally, the opacity of the Agent Engine's crash logs prevents users from self-diagnosing startup failures.
+*   **Satisfaction:** The community is technically engaged (noticing engine switches in code), indicating a developer-heavy user base that values transparency and architectural stability.
 
 ## 8. Backlog Watch
-
-| Item | Age | Risk | Action Needed |
-|:---|:---|:---|:---|
-| [#418](https://github.com/netease-youdao/LobsterAI/issues/418) | 15 days | **High** — Strategic uncertainty affecting contributor confidence | Official maintainer response on engine roadmap |
-| [#595](https://github.com/netease-youdao/LobsterAI/issues/595) | 10 days | Medium — Windows user retention impact | Diagnostic guidance or fix for silent startup failures |
-| [#1007](https://github.com/netease-youdao/LobsterAI/issues/1007) | 1 day | Medium — Recurring stability complaint | Configuration documentation or engine hardening |
-
-**Maintainer Attention Required**: The unanswered engine architecture question (#418) poses **reputational and contribution risk** if left unaddressed. The 7 open PRs suggest review bandwidth may be constrained.
-
----
-
-*Digest generated from GitHub activity 2026-03-29. Data source: netease-youdao/LobsterAI*
+*   **Maintainer Attention Required:** Issue [#418](https://github.com/netease-youdao/LobsterAI/issues/418) (Engine Switch Clarification) has been open since mid-March and updated recently. It requires an official "Statement of Direction" to prevent community fragmentation or fear of deprecation regarding the Claude SDK implementation.
+*   **Technical Debt:** Issue [#595](https://github.com/netease-youdao/LobsterAI/issues/595) (Windows startup crash) remains unresolved; the lack of log output suggests a need for better bootstrapping error handling in the app.
 
 </details>
 
@@ -1107,482 +761,228 @@ No activity in the last 24 hours.
 
 # Moltis Project Digest — 2026-03-30
 
----
-
 ## 1. Today's Overview
-
-Moltis shows **steady maintenance activity** with 6 issues and 3 PRs updated in the last 24 hours. The project demonstrates **balanced velocity**: 3 issues closed with 3 remaining open, and 1 PR merged against 2 active ones. No new releases were cut. Activity centers on **provider integrations** (Z.AI), **security/UX improvements** (vault sealing, SSH runtime), and **platform expansion** (Matrix protocol). The maintainer (`penso`) is highly responsive, closing a provider bug and advancing multi-session features within 24 hours of PR creation.
-
----
+Moltis shows **high activity** with 8 issues and 5 PRs updated in the last 24 hours, indicating a rapidly evolving codebase. The team is actively shipping fixes for provider integrations (Z.AI, local LLMs) and core architectural improvements (GraphQL binding, vault security). A new release (`20260328.03`) was cut, incorporating recent stability fixes. The project appears to be in a **feature expansion phase**, balancing new channel support (Matrix) with critical bug squashing for model selection and provider timeouts.
 
 ## 2. Releases
-
-**No new releases** — version unchanged.
-
----
+### **20260328.03**
+- **Summary:** This release consolidates critical fixes for model discovery and provider connectivity.
+- **Key Changes:**
+  - Fixed GraphQL live chat service binding issues (PR #511).
+  - Increased model probe timeouts to 30s for local LLM compatibility (PR #515).
+  - Resolved issues where most models couldn't be selected due to timeout/validation failures (Issue #514).
+- **Migration Notes:** Users running local LLMs (e.g., Ollama, vLLM) should upgrade immediately to benefit from extended probe timeouts. No breaking configuration changes noted.
 
 ## 3. Project Progress
-
-### Merged/Closed Today
-
-| PR | Description | Significance |
-|:---|:---|:---|
-| [#517](https://github.com/moltis-org/moltis/pull/517) | **feat(providers): add zai-code provider for Z.AI Coding plan** | Resolves billing/endpoint mismatch for Z.AI Coding plan subscribers; unblocks paid users previously hitting "insufficient balance" errors |
-
-### Active Development
-
-| PR | Description | Status |
-|:---|:---|:---|
-| [#518](https://github.com/moltis-org/moltis/pull/518) | Allow unencrypted session history while vault sealed | **Open** — security UX fix; narrows HTTP guard scope, removes misleading UI placeholder |
-| [#503](https://github.com/moltis-org/moltis/pull/503) | Add session recall, managed SSH runtime UX, and skill portability | **Open** — major feature bundle: cross-session recall, auto-checkpoints, Cursor-compatible context ingestion, portable skill bundles |
-
----
+Significant progress was made on **provider extensibility** and **core stability**:
+- **Merged PRs:**
+  - **[PR #517]** Added `zai-code` provider, specifically targeting Z.AI Coding plan endpoints to resolve billing/auth conflicts.
+  - **[PR #511]** Fixed a critical architectural bug where GraphQL chat requests bypassed runtime state bindings.
+  - **[PR #515]** Hardened model detection for local servers by increasing timeouts from 10s to 30s.
+- **Open PRs (In Progress):**
+  - **[PR #503]** Major feature drop introducing session recall, managed SSH runtime, and skill portability.
+  - **[PR #518]** Refining vault security to allow unencrypted session history access while the vault is sealed.
 
 ## 4. Community Hot Topics
+The most engaging discussions center on **integration flexibility** and **platform support**:
 
-| Item | Engagement | Analysis |
-|:---|:---|:---|
-| [#176](https://github.com/moltis-org/moltis/issues/176) — Add datetime to system prompt context | **15 comments, 1 👍** | **Most discussed** — Closed after extensive debate. Reveals tension between deterministic reproducibility (no datetime) and agent awareness of time. Community wants opt-in flexibility. |
-| [#414](https://github.com/moltis-org/moltis/issues/414) — z.ai does not work out of the box | **8 comments, 0 👍** | **Provider friction** — Closed via #517. Highlights onboarding pain: paid Z.AI users confused by endpoint/billing mismatch. Documentation gap between "general" and "Coding plan" endpoints. |
-| [#185](https://github.com/moltis-org/moltis/issues/185) — Add Z.AI Coding Plan | **5 comments, 5 👍** | **High demand** — Top-voted open issue. Directly addressed by merged #517; likely closable pending verification. |
-| [#233](https://github.com/moltis-org/moltis/issues/233) — Matrix Support | **3 comments, 2 👍** | **Protocol expansion** — Decentralized chat demand. No maintainer response yet; signals enterprise/self-hosted user interest. |
+1.  **[Issue #176 (Closed)] Add datetime to system prompt context** (👍 1, 15 comments)
+    - *Analysis:* High comment volume suggests complex implementation details or strong community desire for time-aware agents. The closure indicates this feature is likely now part of the core logic.
+    - Link: https://github.com/moltis-org/moltis/issues/176
 
-**Underlying needs**: Better provider onboarding docs, time-aware agent modes, and decentralized communication channels.
+2.  **[Issue #185 (Open)] Add Z.AI Coding Plan** (👍 5, 5 comments)
+    - *Analysis:* Users are actively requesting alternatives to standard API tiers. The related PR (#517) was swiftly merged, showing responsiveness to user billing needs.
+    - Link: https://github.com/moltis-org/moltis/issues/185
 
----
+3.  **[Issue #233 (Open)] Matrix Support** (👍 2, 3 comments)
+    - *Analysis:* Continued interest in decentralized communication channels. This remains an open enhancement request.
+    - Link: https://github.com/moltis-org/moltis/issues/233
 
 ## 5. Bugs & Stability
+Several stability issues were identified and resolved in this cycle:
 
-| Issue | Severity | Status | Fix PR |
-|:---|:---|:---|:---|
-| [#414](https://github.com/moltis-org/moltis/issues/414) — z.ai network errors | **Medium** (blocks paid users) | ✅ Closed | #517 merged |
-| [#485](https://github.com/moltis-org/moltis/issues/485) — Built-in tools generate invalid JSON Schema for strict providers | **Medium** (provider compatibility) | ✅ Closed | Unknown (1 comment, rapid closure suggests quick fix) |
-
-**Assessment**: Two provider-compatibility bugs resolved swiftly. No critical crashes or regressions reported. JSON Schema strictness suggests ongoing alignment with OpenAI/Anthropic spec evolution.
-
----
+| Severity | Issue | Description | Status |
+| :--- | :--- | :--- | :--- |
+| **High** | [Issue #514](https://github.com/moltis-org/moltis/issues/514) | Most models couldn't be selected (probe timeouts). | **Fixed** (PR #515) |
+| **High** | [Issue #494](https://github.com/moltis-org/moltis/issues/494) | GraphQL bypassed live chat service, causing stale state. | **Fixed** (PR #511) |
+| **Medium** | [Issue #414](https://github.com/moltis-org/moltis/issues/414) | Z.AI network errors/OOB failures. | **Fixed** (PR #517 added specific provider) |
+| **Medium** | [Issue #485](https://github.com/moltis-org/moltis/issues/485) | Built-in tools generated invalid JSON Schema for strict providers. | **Closed** (Likely addressed in recent schema fixes) |
 
 ## 6. Feature Requests & Roadmap Signals
-
-| Issue | Votes | Predicted Priority | Rationale |
-|:---|:---|:---|:---|
-| [#185](https://github.com/moltis-org/moltis/issues/185) Z.AI Coding Plan | 5 👍 | **vNext** | Implementation merged (#517), pending close |
-| [#233](https://github.com/moltis-org/moltis/issues/233) Matrix Support | 2 👍 | Medium | Channel expansion; competes with Discord/Slack priorities |
-| [#490](https://github.com/moltis-org/moltis/issues/490) Local thinking | 0 👍 | Low-Medium | Privacy/local-first trend; may align with #503's portable skills |
-
-**Emerging themes**: 
-- **Session continuity** (#503) — checkpointing, recall, portability becoming core differentiator
-- **Security UX** (#518) — vault behavior refinement for operational workflows
-- **Local/privacy-preserving execution** (#490) — early signal, watch for upvotes
-
----
+- **Local/Edge AI Focus:** [Issue #490] "Local thinking" suggests users want hybrid architectures where reasoning happens locally while orchestration might be remote.
+- **Session UX:** [PR #503] introduces "Session Recall" and "Skill Portability," signaling a push towards persistent, movable agent skills rather than stateless sessions.
+- **Security UX:** [PR #518] addresses the "Sealed Vault" friction, indicating a roadmap towards smoother security boundaries for personal data.
 
 ## 7. User Feedback Summary
-
-| Pain Point | Evidence | Sentiment |
-|:---|:---|:---|
-| **Provider onboarding confusion** | #414, #185, #517 | 😤 → 😊 (resolved) |
-| **Vault UX friction** | #518 | 😐 (improvement in progress) |
-| **Session/state loss between chats** | #503 | 😤 (addressed in open PR) |
-| **Time-unaware agents** | #176 | 🤔 (debated, closed without full resolution) |
-| **Need for decentralized/self-hosted options** | #233 | 🤞 (unanswered) |
-
-**Use cases surfacing**: 
-- Professional developers needing reliable Z.AI integration
-- Teams requiring air-gapped or vault-sealed operational security
-- Users wanting agent state portability across devices/sessions
-
----
+Users are vocal about **usability friction** and **provider compatibility**:
+- **Pain Points:** Users experienced "insufficient balance" errors on Z.AI ([Issue #185]) and network errors ([Issue #414]) because the generic provider didn't match specific plan requirements.
+- **Frustration:** The inability to select models ([Issue #514]) caused immediate workflow blocks, likely due to strict timeout defaults not accounting for model loading times on consumer hardware.
+- **Satisfaction:** Rapid closure of the Z.AI Coding Plan request ([Issue #185] -> [PR #517]) demonstrates high maintainer responsiveness to payment/accessibility barriers.
 
 ## 8. Backlog Watch
-
-| Issue | Age | Risk | Action Needed |
-|:---|:---|:---|:---|
-| [#233](https://github.com/moltis-org/moltis/issues/233) Matrix Support | 33 days | **Medium** — 2 👍, no maintainer comment | Triage: evaluate against channel roadmap; assign or defer |
-| [#490](https://github.com/moltis-org/moltis/issues/490) Local thinking | 5 days | Low — early stage, 0 votes | Monitor for community traction; may duplicate #503 local execution themes |
-
-**No stale PRs** — both open PRs (#518, #503) are <48 hours old with active maintainer engagement.
-
----
-
-*Digest generated from github.com/moltis-org/moltis data as of 2026-03-30.*
+The following items require maintainer attention as they represent long-standing or strategic requests:
+- **[Issue #233] Matrix Support:** A feature request with 2 upvotes still open. As Moltis expands channel support, this is a prime candidate for the next roadmap inclusion.
+- **[Issue #490] Local Thinking:** A philosophical/architectural request with 0 upvotes but high potential impact for privacy-focused users. Needs a design RFC.
+- **[PR #503] Session Recall:** A massive PR affecting core UX. It needs thorough review as it touches SSH runtimes and context ingestion.
 
 </details>
 
 <details>
 <summary><strong>CoPaw</strong> — <a href="https://github.com/agentscope-ai/CoPaw">agentscope-ai/CoPaw</a></summary>
 
-# CoPaw Project Digest — 2026-03-30
+# CoPaw Project Digest: 2026-03-30
 
 ## 1. Today's Overview
-
-CoPaw shows **high community momentum** with 37 issues and 34 PRs updated in the last 24 hours, indicating an active development cycle. The project is currently in a **bug-fixing and stabilization phase** following the v0.2.0.post1 release, with no new version cut today. Community engagement is strong with 26 open/active issues and 18 open PRs, including significant first-time contributor activity. The maintainers appear responsive with 11 issues closed and 16 PRs merged/closed. Key focus areas include Windows installer fixes, UI/UX refinements, and enterprise channel integrations (DingTalk, Feishu).
-
----
+The CoPaw project is experiencing a **high-velocity phase of community contribution and bug reporting**, evidenced by 40 updated issues and 30 updated pull requests in the last 24 hours. While the project has not released a new version recently, the development focus appears to be on stabilization and expanding integration capabilities. Significant activity surrounds performance issues (CPU pegging) and user experience (UX) friction regarding language settings and context management. The high volume of "first-time-contributor" PRs suggests a healthy, accessible open-source ecosystem is forming around the framework.
 
 ## 2. Releases
-
-**No new releases** — Latest version remains v0.2.0.post1.
-
----
+No new releases were recorded today. The project remains on recent stable versions (likely `0.2.0` series), with development energy focused on accumulating fixes and features for the next iteration.
 
 ## 3. Project Progress
+The merge activity today (15 merged PRs) focused heavily on **quality of life improvements and bug fixes**:
 
-### Merged/Closed PRs Today (16 total, selected highlights):
-
-| PR | Author | Description | Impact |
-|:---|:---|:---|:---|
-| [#1544](https://github.com/agentscope-ai/CoPaw/pull/1544) | YingchaoX | **ACP (Agent Client Protocol) external agent support** — Enables CoPaw to invoke external agents via ACP protocol (OpenCode, Qwen-code, Gemini CLI) | **Major architectural feature** — Extends interoperability |
-| [#2489](https://github.com/agentscope-ai/CoPaw/pull/2489) | xieyxclack | Fix PowerShell cmdlet typo (`SetItemProperty` → `Set-ItemProperty`) in Windows installer | **Critical fix** — Unblocks Windows PATH configuration |
-| [#2496](https://github.com/agentscope-ai/CoPaw/pull/2496) | xieyxclack | Documentation updates for README and intro docs | Maintenance |
-| [#2486](https://github.com/agentscope-ai/CoPaw/pull/2486) | xieyxclack | Magic command documentation updates | Maintenance |
-
-### Notable Open PRs Advancing:
-
-| PR | Author | Description | Status |
-|:---|:---|:---|:---|
-| [#2506](https://github.com/agentscope-ai/CoPaw/pull/2506) / [#1837](https://github.com/agentscope-ai/CoPaw/pull/1837) | hanson-hex | **Channel testing infrastructure** — Contract tests for all 11 channels, 19 verification points, 4-layer protection | Testing framework foundation |
-| [#2426](https://github.com/agentscope-ai/CoPaw/pull/2426) | qzcpl | **Channel lazy loading refactor** — On-demand loading for startup performance | Performance optimization |
-| [#2501](https://github.com/agentscope-ai/CoPaw/pull/2501) | carlos999-hqsama | **Feishu streaming typewriter cards** — Real-time character-by-character display | UX enhancement |
-| [#2465](https://github.com/agentscope-ai/CoPaw/pull/2465) | zjncs | **DingTalk AI table/document operations** | Enterprise feature expansion |
-| [#2484](https://github.com/agentscope-ai/CoPaw/pull/2484) | lukangyu | **Knowledge base import pipeline** — Multi-format parsing for `/kb import` | Core knowledge feature |
-
----
+*   **Critical Installation Fix:** [PR #2489](https://github.com/agentscope-ai/CoPaw/pull/2489) fixed a typo in `install.ps1` that prevented Windows PATH updates, resolving [Issue #2488](https://github.com/agentscope-ai/CoPaw/issues/2488).
+*   **UI/UX Enhancements:** [PR #2483](https://github.com/agentscope-ai/CoPaw/pull/2483) improved chat session displays with channel labels/icons, and [PR #2479](https://github.com/agentscope-ai/CoPaw/pull/2479) added tooltips to the chat interface.
+*   **Documentation:** [PR #2486](https://github.com/agentscope-ai/CoPaw/pull/2486) updated documentation for magic commands, and [PR #2480](https://github.com/agentscope-ai/CoPaw/pull/2480) updated skill docs/UI.
+*   **Layout Stability:** [PR #1401](https://github.com/agentscope-ai/CoPaw/pull/1401) stabilized provider card layouts across different locales.
 
 ## 4. Community Hot Topics
-
-### Most Active Issues (by engagement):
-
-| Issue | Comments | Topic | Underlying Need |
-|:---|:---|:---|:---|
-| [#2291](https://github.com/agentscope-ai/CoPaw/issues/2291) | 36 | **"Help Wanted: Open Tasks"** — Community contribution coordination | **Structured onboarding** — Users want clear entry points to contribute; maintainers need distributed development help |
-| [#2218](https://github.com/agentscope-ai/CoPaw/issues/2218) | 17 | **100% CPU at idle** — Busy-polling epoll loop | **Production stability** — Critical resource waste affecting server deployments |
-| [#2482](https://github.com/agentscope-ai/CoPaw/issues/2482) | 9 | **Power user pain points** (CN) — Context deletion, AI compression, file reading | **Advanced user workflow control** — Heavy users hitting context management limits; need surgical memory control |
-| [#2303](https://github.com/agentscope-ai/CoPaw/issues/2303) | 5 | **MiniMax provider 404** — `/models` endpoint unsupported | **Multi-provider compatibility** — Anthropic-compatible APIs failing validation checks |
-| [#2418](https://github.com/agentscope-ai/CoPaw/issues/2418) | 5 | **Skills-hub management page** | **Discoverability** — Users can't easily find/install skills; marketplace UX gap |
-
-### Key Insight:
-The [#2291](https://github.com/agentscope-ai/CoPaw/issues/2291) "Help Wanted" issue's high engagement (36 comments) reveals a **healthy contributor funnel** but also suggests maintainer bandwidth constraints. The concentration of Chinese-language issues (#2482, #2418, #2377) indicates strong adoption in Chinese-speaking markets with localization and regional provider support as differentiators.
-
----
+*   **Community Contribution Drive:** The most active item is [Issue #2291](https://github.com/agentscope-ai/CoPaw/issues/2291) (36 comments), a "Help Wanted" board. This indicates a strong influx of new contributors claiming tasks.
+*   **Performance Regression:** [Issue #2218](https://github.com/agentscope-ai/CoPaw/issues/2218) (17 comments) reports 100% CPU usage at idle due to a busy-polling loop. This is a major concern for users running CoPaw as a persistent background service.
+*   **Context Management for Power Users:** [Issue #2482](https://github.com/agentscope-ai/CoPaw/issues/2482) (9 comments) highlights "pain points" for developers using CoPaw, specifically requesting physical deletion of conversations (to remove "noisy" context) and better AI-based context compression strategies.
 
 ## 5. Bugs & Stability
-
-| Severity | Issue | Description | Fix Status |
-|:---|:---|:---|:---|
-| **🔴 Critical** | [#2218](https://github.com/agentscope-ai/CoPaw/issues/2218) | 100% CPU at idle — busy-polling epoll loop | **Open** — No fix PR identified |
-| **🔴 Critical** | [#2445](https://github.com/agentscope-ai/CoPaw/issues/2445) | Gateway restart causes permanent Agent deadlock (100% reproducible) | **Closed** — Fixed in recent build |
-| **🟡 High** | [#2488](https://github.com/agentscope-ai/CoPaw/issues/2488) → [#2489](https://github.com/agentscope-ai/CoPaw/pull/2489) | Windows installer PATH update fails (typo) | **Fixed** — PR #2489 merged |
-| **🟡 High** | [#2431](https://github.com/agentscope-ai/CoPaw/issues/2431) / [#2269](https://github.com/agentscope-ai/CoPaw/issues/2269) | Language setting not persisted across restarts | **Partially fixed** — Multiple related issues, PR #2498 addresses agent language |
-| **🟡 High** | [#2377](https://github.com/agentscope-ai/CoPaw/issues/2377) | Batch file processing auto-interrupts (1500 files) | **Open** — Reliability issue for automation workflows |
-| **🟡 High** | [#2439](https://github.com/agentscope-ai/CoPaw/issues/2439) | Voice message transcription non-functional | **Open** — Media processing regression |
-| **🟢 Medium** | [#2303](https://github.com/agentscope-ai/CoPaw/issues/2303) | MiniMax `check_connection()` 404 error | **Open** — Provider compatibility |
-| **🟢 Medium** | [#2494](https://github.com/agentscope-ai/CoPaw/issues/2494) | Model selector dropdown closes too fast (CSS timing) | **Open** — UX polish |
-| **🟢 Medium** | [#2503](https://github.com/agentscope-ai/CoPaw/issues/2503) | MiniMax-M2.7 model ID format rejection | **Open** — Model validation |
-
-**Stability Assessment:** Two critical issues remain open, with [#2218](https://github.com/agentscope-ai/CoPaw/issues/2218) being the most concerning for production deployments. The rapid closure of [#2445](https://github.com/agentscope-ai/CoPaw/issues/2445) (deadlock) and [#2488](https://github.com/agentscope-ai/CoPaw/issues/2488) (installer) shows maintainer responsiveness to blockers.
-
----
+*   **⚠️ Critical CPU Usage:** [Issue #2218](https://github.com/agentscope-ai/CoPaw/issues/2218) - CoPaw process pegs 100% CPU at idle. *Status: Open, investigating.*
+*   **⚠️ Agent Deadlock:** [Issue #2445](https://github.com/agentscope-ai/CoPaw/issues/2445) - Gateway restarts cause Agents to freeze permanently. *Status: Closed (likely addressed or non-reproducible in current testing, but user impact was severe).*
+*   **Model Provider Failures:**
+    *   [Issue #2303](https://github.com/agentscope-ai/CoPaw/issues/2303) & [Issue #2503](https://github.com/agentscope-ai/CoPaw/issues/2503): MiniMax provider failing 404 or model ID format errors.
+    *   [Issue #2042](https://github.com/agentscope-ai/CoPaw/issues/2042): GLM model `thinking` field causing TypeErrors.
+*   **Settings Persistence:** [Issue #2431](https://github.com/agentscope-ai/CoPaw/issues/2431) & [Issue #2269](https://github.com/agentscope-ai/CoPaw/issues/2269) - Language settings reset to English after restart. *Status: Closed, likely fixed by recent patches.*
+*   **File Reading Truncation:** [Issue #2500](https://github.com/agentscope-ai/CoPaw/issues/2500) - Tools fail to read entire files; content gets truncated and auto-continuation fails.
 
 ## 6. Feature Requests & Roadmap Signals
-
-| Feature | Issue/PR | Likelihood in Next Version | Rationale |
-|:---|:---|:---|:---|
-| **ACP external agent protocol** | [#1544](https://github.com/agentscope-ai/CoPaw/pull/1544) | **Merged** — Available now | Major architectural addition |
-| **Knowledge base import (`/kb`)** | [#2484](https://github.com/agentscope-ai/CoPaw/pull/2484) | **High** | Active PR, roadmap task #18 |
-| **DingTalk AI tables/documents** | [#2451](https://github.com/agentscope-ai/CoPaw/issues/2451), [#2465](https://github.com/agentscope-ai/CoPaw/pull/2465) | **High** | PR open, enterprise demand |
-| **Feishu streaming cards** | [#2501](https://github.com/agentscope-ai/CoPaw/pull/2501) | **Medium-High** | UX differentiator, PR active |
-| **Agent message queue with priority** | [#2469](https://github.com/agentscope-ai/CoPaw/pull/2469) | **Medium** | Complex feature, first-time contributor |
-| **User asset backup/migration** | [#2443](https://github.com/agentscope-ai/CoPaw/issues/2443) | **Medium** | Strong user need, no PR yet |
-| **GitHub Copilot model support** | [#406](https://github.com/agentscope-ai/CoPaw/issues/406) | **Low-Medium** | Long-standing request, competitor parity |
-| **Skills-hub management UI** | [#2418](https://github.com/agentscope-ai/CoPaw/issues/2418) | **Medium** | Discoverability pain point |
-| **MCP tool visibility** | [#2495](https://github.com/agentscope-ai/CoPaw/issues/2495) | **Medium** | Post-configuration UX gap |
-
-**Prediction:** v0.2.1 or v0.3.0 will likely include knowledge base improvements, DingTalk enterprise features, and channel testing infrastructure. The ACP protocol merge signals a strategic shift toward **agent interoperability**.
-
----
+The roadmap is being actively shaped by power-user needs and integration requirements:
+*   **Asset Portability:** [Issue #2443](https://github.com/agentscope-ai/CoPaw/issues/2443) proposes a "User Asset Backup & Migration" system (Memories, Skills, Tools) into a ZIP format.
+*   **Advanced Task Scheduling:** [Issue #2452](https://github.com/agentscope-ai/CoPaw/issues/2452) requests suppression of conversational responses in Cron jobs for "silent" script execution.
+*   **Enterprise Integration:** [Issue #2451](https://github.com/agentscope-ai/CoPaw/issues/2451) requests DingTalk AI table/document operations as agent tools (Currently implemented in [PR #2465](https://github.com/agentscope-ai/CoPaw/pull/2465)).
+*   **Multi-Platform Synergy:** [Issue #2493](https://github.com/agentscope-ai/CoPaw/issues/2493) asks for cloud-to-local collaboration (OpenClaw-style nodes).
 
 ## 7. User Feedback Summary
-
-### Pain Points (Real Usage Patterns):
-
-| Category | Feedback | Source |
-|:---|:---|:---|
-| **Context Management** | "One bad message corrupts entire day's work; need physical deletion from context" | [#2482](https://github.com/agentscope-ai/CoPaw/issues/2482) |
-| **Context Compression** | AI-compressed context loses coherence; needs domain-aware compression (e.g., preserve natural language, strip debug/code) | [#2482](https://github.com/agentscope-ai/CoPaw/issues/2482) |
-| **File Reading** | Large files truncated, AI refuses single read, iterative reads cause errors | [#2482](https://github.com/agentscope-ai/CoPaw/issues/2482), [#2500](https://github.com/agentscope-ai/CoPaw/issues/2500) |
-| **Batch Reliability** | Long-running tasks (1500 files) interrupt without recovery despite checkpointing | [#2377](https://github.com/agentscope-ai/CoPaw/issues/2377) |
-| **Windows Experience** | Language persistence, installer PATH issues | [#2269](https://github.com/agentscope-ai/CoPaw/issues/2269), [#2431](https://github.com/agentscope-ai/CoPaw/issues/2431), [#2488](https://github.com/agentscope-ai/CoPaw/issues/2488) |
-| **Enterprise Integration** | DingTalk automation brittle (UI popups block), need better headless/CLI support | [#2490](https://github.com/agentscope-ai/CoPaw/issues/2490) |
-
-### Positive Signals:
-- Heavy daily usage ("重度copaw用户，码农，每天重度折腾") — [#2482](https://github.com/agentscope-ai/CoPaw/issues/2482)
-- Strong enterprise adoption (DingTalk, Feishu channels actively used)
-- Active contribution willingness (Help Wanted issue traction)
-
-### Satisfaction Gap:
-Users are **committed but frustrated** — they rely on CoPaw for production work but hit reliability and control limitations. The project is past "early adopter" tolerance; users expect **production-grade robustness**.
-
----
+Users are heavily utilizing CoPaw for **coding assistance and batch file processing**, but friction points exist in **long-context management** (users feel "polluted" context ruins the session and want better deletion/compression).
+*   **Pain Point:** "Context pollution" where debugging noise affects future turns; users want granular control over context history ([Issue #2482](https://github.com/agentscope-ai/CoPaw/issues/2482)).
+*   **Pain Point:** Stability in batch tasks; users report tasks stopping mid-way through large file sets ([Issue #2377](https://github.com/agentscope-ai/CoPaw/issues/2377)).
+*   **Positive Signal:** High engagement with the "Skills" system, specifically requesting a "Skills Hub" for easier discovery ([Issue #2418](https://github.com/agentscope-ai/CoPaw/issues/2418)).
 
 ## 8. Backlog Watch
-
-### Issues Needing Maintainer Attention:
-
-| Issue | Age | Problem | Risk |
-|:---|:---|:---|:---|
-| [#2218](https://github.com/agentscope-ai/CoPaw/issues/2218) | 6 days | 100% CPU idle bug — no assignee, no fix PR | **Production blocker** — affects all server deployments |
-| [#406](https://github.com/agentscope-ai/CoPaw/issues/406) | 27 days | GitHub Copilot model support — competitor parity | Market positioning |
-| [#1456](https://github.com/agentscope-ai/CoPaw/issues/1456) | 16 days | Empty tool call names cause silent failures | Debugging nightmare — invisible errors |
-| [#2042](https://github.com/agentscope-ai/CoPaw/issues/2042) | 8 days | GLM `thinking` field error — model compatibility | Provider support gap |
-| [#2459](https://github.com/agentscope-ai/CoPaw/issues/2459) | 2 days | Multi-agent `/approve` forwarding broken | Enterprise workflow blocker |
-
-### PRs Stalled:
-
-| PR | Age | Status | Action Needed |
-|:---|:---|:---|:---|
-| [#1512](https://github.com/agentscope-ai/CoPaw/pull/1512) | 15 days | OpenAI-style tool calls for local models | Review/merge for local model support |
-| [#2051](https://github.com/agentscope-ai/CoPaw/pull/2051) | 8 days | Docker optimization (-30% size, -10s startup) | Review for infrastructure improvement |
-
-**Recommendation:** Prioritize [#2218](https://github.com/agentscope-ai/CoPaw/issues/2218) (CPU bug) and establish SLA for critical bug response given production user reliance.
-
----
-
-*Digest generated from GitHub activity 2026-03-29 to 2026-03-30. Data source: agentscope-ai/CoPaw*
+*   **OpenAI-style Tool Calls Support:** [PR #1512](https://github.com/agentscope-ai/CoPaw/pull/1512) has been open since March 15. It addresses nested tool calls for local models. This is a crucial update for local model users and needs a maintainer review.
+*   **Docker Optimization:** [PR #2051](https://github.com/agentscope-ai/CoPaw/pull/2051) (open since March 22) promises a 30% reduction in image size and 10s faster startup. This is highly valuable for deployment but remains unmerged.
+*   **Empty Tool Name Bug:** [Issue #1456](https://github.com/agentscope-ai/CoPaw/issues/1456) (Open since March 13) involves silent failures due to empty tool names. This affects reliability significantly and needs prioritization.
 
 </details>
 
 <details>
 <summary><strong>ZeptoClaw</strong> — <a href="https://github.com/qhkm/zeptoclaw">qhkm/zeptoclaw</a></summary>
 
-# ZeptoClaw Project Digest — 2026-03-30
+# ZeptoClaw Project Digest: 2026-03-30
 
 ## 1. Today's Overview
-
-ZeptoClaw shows **high development velocity** with 6 PRs and 2 issues updated in the last 24 hours, all from contributor **stuartbowness**. The project is actively addressing core infrastructure gaps: provider routing for OpenRouter, custom tool parameter handling, context management at scale, and security sandboxing. No releases were cut today. All activity centers on reliability, observability, and extensibility—suggesting the project is maturing from prototype to production-ready. The single closed PR (#464) fixed a significant CLI discoverability gap where 11 tools were invisible to users.
-
----
+ZeptoClaw is currently undergoing a period of intense architectural refinement and feature expansion, evidenced by **7 active pull requests** focusing on critical infrastructure like context compaction and browser automation. The project shows no release activity today, but the volume of open PRs suggests a significant version bump is imminent. The primary focus is on fixing integration friction points—specifically regarding shell escaping and provider routing—while simultaneously hardening the agent's stability for long-running tasks. This indicates the team is prioritizing technical debt reduction and reliability over shipping immediate incremental updates.
 
 ## 2. Releases
-
-**No new releases** (v0.x.x remains current).
-
----
+No new releases were recorded today.
 
 ## 3. Project Progress
+The only merged/closed item today was **[PR #464](https://github.com/qhkm/zeptoclaw/pull/464)** (`feat(cli): register missing tools in tool registry`).
+*   **Impact:** This fix ensures that 11 previously "hidden" tools (including `git`, `pdf_read`, and `stripe`) are now visible and accessible via the CLI. This resolves a major discoverability gap where users could not interact with significant portions of the agent's capabilities.
 
-### Merged/Closed Today
-
-| PR | Description | Impact |
-|:---|:---|:---|
-| [#464](https://github.com/qhkm/zeptoclaw/pull/464) | Register missing tools in tool registry | **Major UX fix** — `zeptoclaw tools list` now surfaces all 33 tools instead of 22; users can discover `git`, `pdf_read`, `project`, `stripe`, `transcribe` and their config requirements |
-
-### Active Development (Open PRs Advancing)
-
-| PR | Stage | Significance |
-|:---|:---|:---|
-| [#460](https://github.com/qhkm/zeptoclaw/pull/460) | Multi-layered context compaction | **Critical reliability** — replaces crash-prone single-pass word-count with defense-in-depth token overflow prevention |
-| [#459](https://github.com/qhkm/zeptoclaw/pull/459) | BrowserTool with agent-browser | **Major capability** — adds browser automation with SSRF protection, Lightpanda/Chrome fallback |
-| [#468](https://github.com/qhkm/zeptoclaw/pull/468) | OpenRouter vendor-prefixed routing | **Integration fix** — enables `google/gemini-3-flash-preview` and similar models to route correctly |
-| [#467](https://github.com/qhkm/zeptoclaw/pull/467) | `raw_string` param type | **Custom tool fix** — unblocks CLI wrapper use cases (e.g., `gws {{args}}`) by skipping shell escaping |
-| [#463](https://github.com/qhkm/zeptoclaw/pull/463) | Landlock workspace access | **Security fix** — makes sandboxing actually usable by wiring up workspace permissions |
-
----
+**Advancing Features (Open PRs):**
+*   **Context Management:** **[PR #460](https://github.com/qhkm/zeptoclaw/pull/460)** introduces a multi-layered context compaction strategy to prevent token overflow crashes during long conversations.
+*   **Browser Automation:** **[PR #459](https://github.com/qhkm/zeptoclaw/pull/459)** is integrating `agent-browser` with Lightpanda/Chrome fallbacks, signaling a major expansion into web interaction capabilities.
+*   **Sandboxing:** **[PR #463](https://github.com/qhkm/zeptoclaw/pull/463)** is actively wiring up Landlock workspace access to ensure secure runtime environments.
 
 ## 4. Community Hot Topics
-
-**No commented or reacted items today** — all issues and PRs show 0 comments and 0 reactions. This indicates:
-- Either low community engagement (stuartbowness appears to be the sole active contributor)
-- Or rapid self-merging without external review
-
-**Most significant open items by technical weight:**
-
-| Item | Link | Underlying Need |
-|:---|:---|:---|
-| #465 — Runtime registry for tools list | [Issue #465](https://github.com/qhkm/zeptoclaw/issues/465) | **Architectural coherence** — CLI and runtime tool discovery must stay synchronized; current hardcoded array is technical debt blocking plugin/MCP ecosystem growth |
-| #466 — Shell escaping breaks CLI wrappers | [Issue #466](https://github.com/qhkm/zeptoclaw/issues/466) | **Power user flexibility** — users need to pass raw argument strings to external CLI tools without mangling; #467 proposes `raw_string` type as fix |
-
----
+There is minimal "community buzz" in terms of comments (most items sit at 0 comments), but the **breadth of issues** raised by a single prolific contributor (stuartbowness) highlights a concentrated effort to polish the user experience.
+*   **CLI Wrapper Friction:** **[Issue #466](https://github.com/qhkm/zeptoclaw/issues/466)** and **[PR #467](https://github.com/qhkm/zeptoclaw/pull/467)** reveal a specific pain point regarding how custom tools handle shell arguments. The need for a `raw_string` type suggests power users are building complex CLI wrappers that the current strict escaping rules break.
+*   **Architectural Decoupling:** **[Issue #465](https://github.com/qhkm/zeptoclaw/issues/465)** points to a technical desire to move away from hardcoded lists toward a dynamic runtime registry, reflecting a maturing codebase moving toward better extensibility.
 
 ## 5. Bugs & Stability
+Several high-impact stability fixes are currently in the PR pipeline, addressing silent failures and integration breaks.
 
-| Severity | Issue/PR | Description | Fix Status |
-|:---|:---|:---|:---|
-| 🔴 **High** | [#466](https://github.com/qhkm/zeptoclaw/issues/466) | Custom tool shell escaping breaks CLI wrappers (`{{args}}` becomes single-quoted blob) | **Fix PR open**: [#467](https://github.com/qhkm/zeptoclaw/pull/467) |
-| 🟡 **Medium** | [#463](https://github.com/qhkm/zeptoclaw/pull/463) | Landlock sandboxing non-functional — workspace inaccessible despite `allow_read_workspace: true` | **Fix PR open**: [#463](https://github.com/qhkm/zeptoclaw/pull/463) |
-| 🟡 **Medium** | [#468](https://github.com/qhkm/zeptoclaw/pull/468) | Vendor-prefixed models fail routing to OpenRouter (runtime/preflight mismatch) | **Fix PR open**: [#468](https://github.com/qhkm/zeptoclaw/pull/468) |
-| 🟢 **Low** (fixed) | [#464](https://github.com/qhkm/zeptoclaw/pull/464) | 11 tools invisible in `zeptoclaw tools list` | **Resolved** |
-
-**Pattern**: All active bugs have corresponding fix PRs — project maintenance is responsive.
-
----
+1.  **Silent Telegram Failures (Critical):**
+    *   **Bug:** The agent silently fails during long research tasks on Telegram.
+    *   **Fix:** **[PR #462](https://github.com/qhkm/zeptoclaw/pull/462)** implements message chunking and plaintext fallbacks.
+2.  **Shell Escaping Breaking Wrappers (High):**
+    *   **Bug:** Custom tool commands using `{{args}}` fail because of automatic single-quote escaping.
+    *   **Fix:** **[PR #467](https://github.com/qhkm/zeptoclaw/pull/467)** introduces a `raw_string` param type to bypass escaping.
+3.  **Provider Routing Mismatch (Medium):**
+    *   **Bug:** Vendor-prefixed models (e.g., `google/gemini-3-flash-preview`) fail when routing through OpenRouter.
+    *   **Fix:** **[PR #468](https://github.com/qhkm/zeptoclaw/pull/468)** aligns preflight validation with runtime routing logic.
+4.  **Sandbox Access Violation (Medium):**
+    *   **Bug:** Enabling Landlock sandboxing blocks access to the workspace directory even when permissions are set to `true`.
+    *   **Fix:** **[PR #463](https://github.com/qhkm/zeptoclaw/pull/463)** corrects the wiring of Landlock access rules.
 
 ## 6. Feature Requests & Roadmap Signals
-
-| Signal | Source | Likelihood in Next Release |
-|:---|:---|:---|
-| **Browser automation** | [#459](https://github.com/qhkm/zeptoclaw/pull/459) | High — substantial PR ready, addresses common agent need |
-| **Context compaction v2** | [#460](https://github.com/qhkm/zeptoclaw/pull/460) | High — fixes production-blocking crashes |
-| **Raw string parameters** | [#467](https://github.com/qhkm/zeptoclaw/pull/467) | High — unblocks #466, small surface area |
-| **Runtime-based tool discovery** | [#465](https://github.com/qhkm/zeptoclaw/issues/465) | Medium — architectural, may need design iteration |
-| **MCP tool visibility** | [#465](https://github.com/qhkm/zeptoclaw/issues/465) | Medium — depends on registry refactor |
-
-**Emerging theme**: ZeptoClaw is positioning as a **composable agent platform** — custom tools, MCP integration, browser automation, and pluggable providers.
-
----
+*   **Dynamic Tool Registry:** **[Issue #465](https://github.com/qhkm/zeptoclaw/issues/465)** requests a shift from static arrays to a runtime registry. This is likely a prerequisite for supporting dynamic plugins or MCP (Model Context Protocol) tools more effectively in the next version.
+*   **Advanced Browser Automation:** With **[PR #459](https://github.com/qhkm/zeptoclaw/pull/459)** (BrowserTool) and **[PR #460](https://github.com/qhkm/zeptoclaw/pull/460)** (Context Compaction) progressing simultaneously, the roadmap clearly points toward **"Long-running Autonomous Web Agents."** The compaction feature is likely necessary to support the high token usage of browsing tasks.
 
 ## 7. User Feedback Summary
-
-**Inferred pain points from issue/PR descriptions:**
-
-| Pain Point | Evidence | Severity |
-|:---|:---|:---|
-| **Tool discoverability** | "Users had no way to discover tools like `git`, `pdf_read`..." — #464 | High (fixed) |
-| **Token overflow crashes** | "Users were hitting the..." — #460 | Critical (fix in progress) |
-| **Custom tool limitations** | CLI wrappers broken by over-eager escaping — #466 | Medium (fix in progress) |
-| **Sandboxing unusable** | Landlock config ignored — #463 | Medium (fix in progress) |
-| **Provider routing confusion** | Vendor-prefixed models fail — #468 | Medium (fix in progress) |
-
-**Satisfaction indicator**: Rapid iteration on reported issues suggests healthy maintainer responsiveness. No user complaints about ignored issues visible in this window.
-
----
+*   **Pain Point - Discoverability:** Users were unable to find or use key tools (`git`, `stripe`, etc.) because the CLI list was incomplete. This frustrated users trying to assess the agent's full capabilities.
+*   **Pain Point - Silent Errors:** Telegram users reported high anxiety/frustration because the bot would "go silent" on complex tasks rather than providing error feedback or partial results.
+*   **Use Case - CLI Wrappers:** Users are attempting to wrap external CLIs (like `gws`) inside ZeptoClaw, treating the agent as a meta-operator for other command-line tools.
 
 ## 8. Backlog Watch
-
-**No stale items detected** — all open issues and PRs are from 2026-03-27 to 2026-03-29 (last 3 days).
-
-**Items needing broader review attention:**
-
-| Item | Age | Risk |
-|:---|:---|:---|
-| [#460](https://github.com/qhkm/zeptoclaw/pull/460) Context compaction | 3 days | Large architectural change — needs review for edge cases |
-| [#459](https://github.com/qhkm/zeptoclaw/pull/459) BrowserTool | 3 days | Security-sensitive (SSRF, browser automation) — needs security review |
-
-**Recommendation**: Given stuartbowness's solo contributor pattern, consider establishing CODEOWNERS or seeking co-maintainer review for security-critical PRs (#459, #463).
+There are no long-standing stale items in this 24h window; however, **[PR #460](https://github.com/qhkm/zeptoclaw/pull/460)** (Context Compaction) and **[PR #459](https://github.com/qhkm/zeptoclaw/pull/459)** (BrowserTool) are complex PRs opened 2-3 days ago that remain open. They require close monitoring as they represent high-value, high-risk changes to the core agent loop.
 
 </details>
 
 <details>
 <summary><strong>EasyClaw</strong> — <a href="https://github.com/gaoyangz77/easyclaw">gaoyangz77/easyclaw</a></summary>
 
-# EasyClaw Project Digest — 2026-03-30
-
----
+# EasyClaw Project Digest: 2026-03-30
 
 ## 1. Today's Overview
-
-EasyClaw/RivonClaw shows **minimal daily activity** with only one issue update and no pull request movement. The project published a patch release (v1.7.8) addressing macOS installation friction, indicating ongoing maintenance focus on accessibility rather than feature expansion. Community engagement remains low with zero comments on the sole active issue. The single open issue reveals a **critical compatibility conflict** with Tencent's competing QClaw product, suggesting ecosystem fragmentation challenges in the AI assistant tooling space. Overall project health appears stable but stagnant—maintained but not actively evolving.
-
----
+The EasyClaw project (specifically the RivonClaw client) shows continued maintenance with the release of version **v1.7.8**. Activity levels were low in terms of code contributions, with zero Pull Requests updated, suggesting a stabilization phase rather than active feature development. The community engagement was minimal, marked by a single new issue report regarding software conflicts. Overall, the project appears to be in a "production support" state, focusing on deployment stability for macOS users.
 
 ## 2. Releases
-
-### [v1.7.8: RivonClaw](https://github.com/gaoyangz77/easyclaw/releases/tag/v1.7.8) — Published 2026-03-30
-
-| Aspect | Details |
-|--------|---------|
-| **Type** | Patch release |
-| **Focus** | macOS user experience / distribution |
-| **Key Change** | Documented Gatekeeper bypass for unsigned app installation |
-
-**Changes:**
-- Added bilingual (EN/CN) installation instructions for macOS
-- Documented workaround for "'RivonClaw' is damaged and can't be opened" Gatekeeper error
-- Standard terminal-based quarantine attribute removal: `xattr -cr /Applications/RivonClaw.app`
-
-**Breaking Changes:** None
-
-**Migration Notes:** Not applicable—new install guidance only
-
----
+### **v1.7.8: RivonClaw v1.7.8**
+*   **Release Date:** 2026-03-30 (Approximate based on digest date)
+*   **Key Changes:** This release focuses on **distribution and deployment stability** for macOS users rather than new features.
+*   **Notes/Bug Fixes:** The release specifically addresses the **"App is damaged and can't be opened"** error caused by macOS Gatekeeper. It clarifies that this is due to the application being unsigned, rather than actual file corruption.
+*   **Migration Action:** Users do not need code changes but must perform a terminal command workaround to bypass Gatekeeper if they encounter the error.
 
 ## 3. Project Progress
-
-**No merged or closed PRs in the last 24 hours.**
-
-No feature advancement or bug fixes landed today. Release v1.7.8 appears to have been cut directly from main without associated PR activity, suggesting direct maintainer commits for documentation-only changes.
-
----
+*   **Codebase:** No Pull Requests were merged or closed in the last 24 hours.
+*   **Advancement:** The primary progress is the formal release of the macOS build (v1.7.8), indicating successful compilation and packaging despite the lack of code signing certificates. There are no indications of new functional features deployed in this specific window.
 
 ## 4. Community Hot Topics
-
-### [#30: rivonclaw和QClaw能不能同时使用](https://github.com/gaoyangz77/rivonclaw/issues/30)
-| Metric | Value |
-|--------|-------|
-| Status | 🔴 Open |
-| Author | @zgcgreat |
-| Created | 2026-03-29 |
-| Comments | 0 |
-| Reactions | 0 👍 |
-
-**Issue Summary:** Mutual exclusivity between RivonClaw and Tencent QClaw—opening QClaw after RivonClaw causes both to lose network connectivity; QClaw works only after RivonClaw is terminated.
-
-**Underlying Needs Analysis:**
-- **Port/resource conflict:** Likely both applications bind to identical local ports (common with WebSocket/HTTP proxy implementations)
-- **System-level interception collision:** Both tools may register overlapping network hooks or proxy configurations
-- **User workflow demand:** Power users want to run multiple AI assistant tools simultaneously for comparison or task-specific optimization
-- **Ecosystem lock-in concern:** Implicit competition between open-source (RivonClaw) and commercial (Tencent) solutions creating friction
-
-**Signal:** Zero engagement (no comments, no maintainer response) suggests either under-resourced maintenance or deprioritization of interoperability issues.
-
----
+*   **[#30 [OPEN] Conflict between RivonClaw and QClaw](https://github.com/gaoyangz77/rivonclaw/issues/30)**
+    *   **Author:** zgcgreat
+    *   **Activity:** Created on 2026-03-29.
+    *   **Analysis:** The sole discussion point revolves around **network resource contention**. The user reports that RivonClaw and Tencent's QClaw cannot run simultaneously; opening one disconnects the other. This suggests both clients may be attempting to bind to the same network interface, port, or proxy settings, creating a mutually exclusive environment. This reflects a user need for **concurrent multi-client operation** or better proxy isolation.
 
 ## 5. Bugs & Stability
-
-| Severity | Issue | Description | Fix PR |
-|----------|-------|-------------|--------|
-| **Medium** | [#30](https://github.com/gaoyangz77/rivonclaw/issues/30) | Port/proxy conflict with QClaw causes mutual network failure | ❌ None |
-
-**No new crash reports, regressions, or stability issues reported today.**
-
-The QClay conflict is the sole active bug. While not a crash, it represents **functional breakage** for users in mixed-tooling environments. No reproduction steps or logs provided yet.
-
----
+*   **[High] macOS Gatekeeper False Positive (Resolved via Release Notes)**
+    *   **Issue:** Users unable to launch the app on macOS due to "damaged" file error.
+    *   **Status:** Addressed in v1.7.8 release notes with a manual Terminal fix.
+    *   **Severity:** High (Blocks usage for non-technical users), but no code fix provided, only documentation/workaround.
+*   **[High] Network Port/Resource Conflict with QClaw**
+    *   **Issue:** RivonClaw disconnects if QClaw (Tencent) is launched, and vice versa.
+    *   **Status:** Reported in Issue #30. No fix PR available.
+    *   **Severity:** High for users relying on multiple network tools or specific ISP environments (e.g., Chinese university networks where QClaw is common).
 
 ## 6. Feature Requests & Roadmap Signals
-
-**No explicit feature requests opened today.**
-
-**Inferred from #30:**
-- **Multi-instance/port configuration:** Users need configurable local ports to avoid conflicts
-- **Compatibility mode:** Detection and graceful degradation when competing tools are active
-- **Network stack isolation:** Sandboxed proxy implementation preventing system-wide interference
-
-**Likelihood in next version:** Low—requires architectural changes; current release pattern suggests maintenance mode.
-
----
+*   **Concurrent Execution Support:** Implicitly requested in Issue #30. Users expect to be able to run multiple network assistants simultaneously.
+*   **Code Signing for macOS:** Implicit requirement derived from the v1.7.8 release notes. The project currently lacks an Apple Developer Certificate, which creates friction for macOS adoption.
+*   **Prediction:** The next minor version may focus on network driver isolation to prevent conflicts with other proxy tools like QClaw.
 
 ## 7. User Feedback Summary
-
-| Category | Insight |
-|----------|---------|
-| **Pain Point** | Cannot use RivonClaw alongside Tencent's QClaw—forced tool exclusivity |
-| **Use Case** | Comparative AI assistant usage; fallback tooling; task-specific selection |
-| **Satisfaction** | Neutral to frustrated—installation friction (addressed in v1.7.8) but runtime conflicts persist |
-| **Dissatisfaction** | No maintainer visibility on interoperability; zero response time on active issue |
-
-**Emerging Pattern:** Users treat AI assistants as **composable infrastructure**, not monolithic replacements. Projects ignoring interoperability will face adoption friction in multi-tool workflows.
-
----
+*   **Pain Points:**
+    *   **Installation Friction:** macOS users struggle with unsigned binaries.
+    *   **Interoperability:** The tool acts aggressively, severing connections of other active network clients (specifically QClaw).
+*   **Satisfaction:** Neutral to Low among users attempting multi-client setups. The release notes show maintainers are aware of deployment friction but are currently solving it via documentation rather than code signing.
 
 ## 8. Backlog Watch
-
-| Issue | Age | Risk | Action Needed |
-|-------|-----|------|---------------|
-| [#30](https://github.com/gaoyangz77/rivonclaw/issues/30) | 1 day | 🟡 Medium | Maintainer acknowledgment, port conflict triage, reproduction guidance |
-
-**Assessment:** The project has **no long-unanswered critical issues** due to low issue volume overall. However, the complete absence of maintainer response to #30 within 24 hours—during a release day—suggests **reactive rather than proactive community management**.
-
-**Recommendation for maintainers:** 
-1. Acknowledge #30 with request for logs (`lsof -i`, proxy settings)
-2. Document known incompatibilities
-3. Consider dynamic port allocation in future architecture
-
----
-
-*Digest generated from gaoyangz77/easyclaw and gaoyangz77/rivonclaw repositories. Data cutoff: 2026-03-30.*
+*   **Issue #30:** Requires maintainer attention. This is a technical conflict that likely cannot be solved by the user. It requires investigation into whether the app exclusively locks the network adapter or specific ports.
+    *   **Link:** [gaoyangz77/rivonclaw Issue #30](https://github.com/gaoyangz77/rivonclaw/issues/30)
 
 </details>
-
----
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

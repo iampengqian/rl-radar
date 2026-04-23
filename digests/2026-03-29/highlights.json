@@ -1,70 +1,86 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code陷权限系统危机，企业治理成深水区",
-      "OpenAI Codex密集迭代子代理运行时架构",
-      "Gemini CLI双版本齐发，SDD工作流主线推进",
-      "Kimi CLI重构ACP认证，Windows补齐追赶",
-      "OpenCode遭遇Claude Max严重故障，393评论热议",
-      "Qwen Code增强代码审查，Windows兼容加速"
+      "OpenAI Codex 爆 Token 消耗过快，Issue 热度高达 104",
+      "Claude Code 用户吐槽 Max 配额异常，计费透明度成焦点",
+      "OpenCode 登顶热议榜首，Issue #7410 揭示上游依赖不稳",
+      "AI CLI 向自主代理演进，会话持久化与成本控制成瓶颈",
+      "Windows/WSL 成重灾区：Shell 执行失败与剪贴板失效频发",
+      "社区呼唤 Token 透明度，实时显示 Context 占用成刚需"
     ],
     "ai-agents": [
-      "OpenClaw v2026.3.28-beta.1发布，废弃Qwen OAuth",
-      "嵌入式Agent认证失效引发严重回归，紧急修复",
-      "Linux/Windows原生客户端需求58评论升温",
-      "500条Issues+PRs，社区讨论密度极高",
-      "pi-coding-agent 0.63.0升级埋雷，auth-injection失效",
-      "阿里云战略调整驱动，Model Studio迁移成必选项"
+      "OpenClaw 单日狂收 500 个 PR，351 个待合并引爆期待",
+      "xAI Grok 全面升级：原生支持 x_search 与代码执行工具",
+      "修复 Matrix E2EE 加密失败，解决 ESM 模块加载难题",
+      "Telegram 修复空白消息崩溃，消息发送健壮性大幅提升",
+      "安全审计升级：强制引导配置 workspaceOnly 防止越权",
+      "149 个 PR 已合并，Linux/Windows 原生客户端呼声高涨"
     ],
     "ai-trending": [
-      "Deep-Live-Cam登顶Trending，实时换脸应用爆火",
-      "AI-Scientist-v2升级，自动化科研Agent引关注",
-      "SakanaAI持续迭代，AI科学家范式受追捧",
-      "Cherry-Studio国产AI客户端，多模型聚合突围",
-      "CopilotKit低代码AI助手框架，开发者工具新宠",
-      "Dify+LangChain+Flowise，AI工作流三强鼎立"
+      "AI-Scientist-v2 横空出世，AI 从辅助工具变身自主科学家",
+      "Dexter 爆火：专注于深度金融研究的自主智能体崛起",
+      "Chandra 登顶：专为复杂表格与手写内容设计的 OCR 模型",
+      "Superpowers 一日暴涨 2293 Star，定义 AI 辅助编程新范式",
+      "Deep-Live-Cam 持续高增长，AIGC 实时视频需求强劲",
+      "AgentScope 受追捧：致力于解决多智能体协作的黑盒难题"
     ],
     "ai-hn": [
-      "人机协作攻克Knuth经典难题，131分登顶HN",
-      "Claude Mythos模型泄露疑云，安全焦虑蔓延",
-      "反向验证码冷启动策略，多Agent平台引热议",
-      "Claude CLI+Obsidian革新个人税务工作流",
-      "生成式AI损害学习效果，学术警示引发反思",
-      "类脑芯片材料突破，AI能耗痛点迎硬件解"
+      "Anthropic 泄密模型引恐慌，'Claude Mythos' 导致网络安全股下跌",
+      "人机协作新突破：AI 助力攻克高德纳 'Claude Cycles' 猜想",
+      "Claude CLI + Obsidian 组合拳，打造个人税务处理神器",
+      "AI 编程账单来了：社区反思工具背后的 Token 经济成本",
+      "五角大楼介入？泄露模型被指具有'前所未有的网络风险'",
+      "生产力本质大讨论：从盲目拥抱 AI 转向理性计算 ROI"
+    ],
+    "rl-daily": [
+      "verl 领跑 RLHF：快速适配 Qwen3.5 并向 NPU 异构计算扩张",
+      "Open Instruct 深度重构：引入 torch.compile 提升鲁棒性",
+      "rl_games 引入 NVIDIA Warp，激进推进 GPU 并行物理环境",
+      "slime 聚焦 FSDP 深层优化，解决长上下文 CP 并行难题",
+      "TRL 引入 PSPO 算法，细粒度工具过滤提升训练效率",
+      "RL 生态分化：LLM 训练框架爆发，经典库进入维护模式"
     ]
   },
   "en": {
     "ai-cli": [
-      "Gemini CLI released v0.35.3 and v0.36.0-preview.6",
-      "OpenAI Codex leads with 50 active PRs",
-      "Claude Code has 10+ security regressions tracked",
-      "Kimi CLI rewriting ACP auth system",
-      "GitHub Copilot CLI shows possible feature freeze",
-      "MCP ecosystem standardization driving enterprise demand"
+      "Rate limiting opacity & session data loss plague Claude Code",
+      "OpenAI Codex battles token burning & platform parity issues",
+      "Gemini CLI patches address rate limits & SDD workflow bugs",
+      "Copilot CLI stuck in Autopilot loops with scrolling glitches",
+      "Windows/WSL bugs dominate Qwen Code & Kimi Code issues",
+      "Security vulnerabilities emerge in permission systems"
     ],
     "ai-agents": [
-      "OpenClaw released v2026.3.28-beta.1 with breaking changes",
-      "500 issues and 500 PRs updated in 24 hours",
-      "Critical fix for 'No API key for provider' failure",
-      "Qwen OAuth migration requires manual re-onboarding",
-      "444 open issues suggest triage challenges",
-      "Platform expansion for Linux/Windows apps prioritized"
+      "OpenClaw hits 500+ issues/PRs in 24-hour burst",
+      "xAI/Grok integration adds x_search tool support",
+      "Auth regressions & channel instability plague recent builds",
+      "Agent Identity features signal multi-agent evolution",
+      "Linux/Windows app expansion in active development",
+      "No new releases as team stabilizes gateway"
     ],
     "ai-trending": [
-      "Deep-Live-Cam gained 1,814 stars for face swap",
-      "obra/superpowers hit 2,292 stars for agentic framework",
-      "SakanaAI/AI-Scientist-v2 trending for autonomous research",
-      "onyx added 880 stars as enterprise chat alternative",
-      "agentscope gained 398 stars for observable agents",
-      "dexter emerging for financial research AI"
+      "Deep-Live-Cam gains 1,789 stars for real-time face swaps",
+      "AI-Scientist-v2 automates workshop-level research",
+      "Dexter agent targets deep financial research niche",
+      "Agentic Tree Search enables autonomous discovery",
+      "Ecosystem shifts from models to actionable agency",
+      "CopilotKit highlights frontend UI agent integration"
     ],
     "ai-hn": [
-      "Claude Mythos leak sparks cybersecurity debate",
-      "Knuth's 'Claude Cycles' shows human-AI-proof collaboration",
-      "Pentagon interest in leaked Anthropic model noted",
-      "Community debates AI productivity vs 'lazy' work culture",
-      "Anthropic consumer growth signals shifting priorities",
-      "OpenAI pivoting toward revenue-generating features"
+      "Claude Mythos leak sparks cybersecurity stock panic",
+      "Knuth's Claude Cycles solved via AI proof assistants",
+      "Developers build AI-free zones to manage LLM infiltration",
+      "Debate rages over AI creating lazy productivity culture",
+      "Economic sustainability of coding tools questioned",
+      "First 40 months of AI era reflected upon"
+    ],
+    "rl-daily": [
+      "verl leads with agentic abstractions & NPU support",
+      "Qwen3.5 integration drives post-training alignment",
+      "RL frameworks bifurcate into LLM agents vs classic Deep RL",
+      "TRL refines GRPO for tool use capabilities",
+      "ROCK focuses on RL as a Service infrastructure",
+      "rl_games community debugs SAC convergence issues"
     ]
   }
 }

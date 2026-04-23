@@ -1,6 +1,6 @@
 # AI CLI 工具社区动态日报 2026-04-07
 
-> 生成时间: 2026-04-07 00:12 UTC | 覆盖工具: 8 个
+> 生成时间: 2026-04-06 22:06 UTC | 覆盖工具: 7 个
 
 - [Claude Code](https://github.com/anthropics/claude-code)
 - [OpenAI Codex](https://github.com/openai/codex)
@@ -8,7 +8,6 @@
 - [GitHub Copilot CLI](https://github.com/github/copilot-cli)
 - [Kimi Code CLI](https://github.com/MoonshotAI/kimi-cli)
 - [OpenCode](https://github.com/anomalyco/opencode)
-- [Pi](https://github.com/badlogic/pi-mono)
 - [Qwen Code](https://github.com/QwenLM/qwen-code)
 - [Claude Code Skills](https://github.com/anthropics/skills)
 
@@ -16,99 +15,97 @@
 
 ## 横向对比
 
-# AI CLI 工具生态横向对比分析报告 | 2026-04-07
-
----
+# AI CLI 工具生态横向对比分析报告 (2026-04-07)
 
 ## 1. 生态全景
 
-当前 AI CLI 工具生态呈现**"功能趋同、体验分化"**的竞争格局：Claude Code 与 OpenAI Codex 围绕计费透明度和 Token 效率展开激烈博弈，Google Gemini CLI 加速企业级治理能力建设，国产工具（Kimi、Qwen）在架构创新和垂直场景上寻求突破。MCP（Model Context Protocol）已成为事实上的工具集成标准，但各厂商在云端支持、权限粒度、多 Agent 协调等关键能力上差距显著。社区普遍面临**长会话成本控制、跨平台终端适配、自动化工作流权限灵活性**三大共性挑战。
+当前 AI CLI 工具已从实验性玩具全面转向**生产级开发助手**，各大厂商（Anthropic、OpenAI、Google、GitHub）均已入局，竞争进入白热化阶段。**Token 消耗与成本控制**成为用户核心痛点，几乎所有主流工具都面临关于额度异常消耗或计费不透明的质疑。技术上，**MCP (Model Context Protocol)** 正成为事实标准，**子代理架构**和**长上下文管理**是工程突破的关键方向。
 
 ---
 
 ## 2. 各工具活跃度对比
 
-| 工具 | Issues（今日活跃） | PRs（今日活跃） | 版本发布 | 关键动态 |
-|:---|:---:|:---:|:---|:---|
-| **Claude Code** | 10 | 9 | 无 | 计费危机 #38335（437评论）持续发酵，开源呼声 #41447 获关注 |
-| **OpenAI Codex** | 10 | 11 | rust-v0.119.0-alpha.12 | 分析基础设施集群（5个analytics PR），Alarm工具新增 |
-| **Gemini CLI** | 10 | 10 | v0.36.0-nightly | Hook系统修复 #24784，策略引擎强制`modes`字段 |
-| **GitHub Copilot CLI** | 10（48条关闭） | 0 | v1.0.19 + v1.0.19-0 | Issue清理冲刺，MCP状态持久化、OTEL增强 |
-| **Kimi CLI** | 5 | 4 | 无 | Python→TypeScript重构争议 #1707，MCP稳定性双修复 |
-| **OpenCode** | 10 | 10 | v1.3.16 + v1.3.17 | Copilot+Opus兼容性 #13768（52评论）成焦点 |
-| **Pi** | 10+ | 10 | 无 | AWS Bedrock认证 #2879、Gemma思考支持 #2828快速合并 |
-| **Qwen Code** | 10 | 17 | 无 | `/review`重构 #2932、`/thinkback`创新功能，TUI稳定性紧急修复 |
+| 工具名称 | Issues 活跃度 | PRs 活跃度 | 新版本发布 | 核心关键词 |
+| :--- | :---: | :---: | :---: | :--- |
+| **Claude Code** | 🔴 极高 (50+ issues) | 🟠 中等 (8 PRs) | 无 | 额度异常、模型退化、开源请求 |
+| **OpenAI Codex** | 🔴 高 (主要 10+ issues) | 🔴 高 (10+ PRs) | **v0.119.0-alpha.12** | Token 燃烧、远程开发、架构重构 |
+| **Gemini CLI** | 🟠 中高 (内存/性能) | 🟠 中高 (10 PRs) | **v0.36.0-nightly** | 性能卡顿、内存溢出、架构解耦 |
+| **GitHub Copilot CLI** | 🟡 中等 (10 issues) | 🟢 低 (0 PRs) | **v1.0.19** | 网络故障、MCP 配置、模型对比 |
+| **Qwen Code** | 🟠 中高 (10 issues) | 🔴 高 (10+ PRs) | 无 (构建失败) | 功能对齐、TUI 闪烁、功能增强 |
+| **Kimi Code CLI** | 🟢 低 (5 issues) | 🟠 中等 (5 PRs) | 无 | 技术栈重写、MCP 死锁、跨平台 |
+| **OpenCode** | ⚪ 无活动 | ⚪ 无活动 | 无 | - |
 
-> **注**：Issues/PRs 按"今日速览"中明确提及的数量统计，部分工具实际处理量更高。
+> **分析师注**：Claude Code 的社区情绪最为激烈（Issue 点赞数高达 300+），而 OpenAI Codex 和 Qwen Code 在代码提交层面最为活跃。
 
 ---
 
 ## 3. 共同关注的功能方向
 
-| 功能方向 | 涉及工具 | 具体诉求 |
-|:---|:---|:---|
-| **计费/Token透明度** | Claude Code、OpenAI Codex | Claude Max额度异常消耗（#38335，437评论）；Codex Business Token燃烧（#14593，450评论） |
-| **MCP生态完善** | 全部8款工具 | 云端定时任务支持（Claude #43397）、服务器发现（Copilot #679）、大blob负载（Gemini #16369）、连接容错（Kimi #1769） |
-| **多Agent协调** | Codex、Qwen、Claude | 子Agent状态误判（Codex #16900）、并行焦点冲突（Qwen #2929）、能力对齐Claude Code（Qwen #2409） |
-| **终端体验精细化** | Claude、Codex、Gemini、Kimi、OpenCode、Pi、Qwen | 自定义主题（Claude #1302）、TUI滚动历史（Claude #42670）、粘贴图片（Gemini #15051）、闪烁/焦点（Qwen #2928/#2929） |
-| **远程/跨平台开发** | Claude、Codex、Copilot | macOS SSH主机（Claude #26694）、桌面远程开发（Codex #10450，499👍）、WSL支持（Copilot #475） |
-| **长会话成本控制** | Claude、Kimi、OpenCode | 上下文压缩后异常（Claude #41148）、增量记忆零成本（Kimi #1691）、/compact高失败率 |
+### A. Token 透明度与成本控制
+*   **涉及工具**: Claude Code, OpenAI Codex, Gemini CLI
+*   **具体诉求**: 用户普遍对"隐形消耗"感到焦虑。
+    *   **Claude Code**: Max 订阅额度在极短时间内耗尽（#38335）。
+    *   **OpenAI Codex**: 后台轮询导致 Token 指数级燃烧（#14593, #13733）。
+    *   **Gemini CLI**: "Thinking" 状态长时间空转消耗 Token（#24600）。
+*   **趋势**: 开发者要求提供实时 Token 计数器和后台任务节流机制。
+
+### B. MCP (Model Context Protocol) 标准化与配置
+*   **涉及工具**: OpenAI Codex, GitHub Copilot CLI, Kimi Code CLI, Claude Code
+*   **具体诉求**: MCP 已成为扩展能力的核心，但配置体验参差不齐。
+    *   **Copilot CLI**: 要求支持项目级 `.mcp.json` 配置（#288）。
+    *   **Kimi/OpenAI**: 均在修复 MCP 服务连接失败导致的死锁或崩溃。
+    *   **OpenAI**: 正式合并 MCP Apps 支持（#16082）。
+
+### C. 上下文管理与会话恢复
+*   **涉及工具**: Claude Code, OpenAI Codex, Kimi Code CLI
+*   **具体诉求**: 长会话中的上下文丢失或内存爆炸是共性难题。
+    *   **Claude Code**: Auto-Compact 无警告清除历史（#7502）。
+    *   **OpenAI Codex**: 引入 `/resume` 机制防止误删会话（#16950）。
+    *   **Kimi Code**: 提出增量式记忆以实现零成本压缩（#1691）。
+
+### D. 远程开发与环境一致性
+*   **涉及工具**: OpenAI Codex, GitHub Copilot CLI
+*   **具体诉求**: 像 VS Code 一样支持 SSH Remote Development 是强需求（Codex #10450, Copilot #475）。
 
 ---
 
 ## 4. 差异化定位分析
 
-| 工具 | 核心侧重 | 目标用户 | 技术路线特征 |
-|:---|:---|:---|:---|
-| **Claude Code** | 企业级安全与深度工程能力 | 专业开发者、大型团队 | 封闭产品，Cowork沙箱、权限系统精细，但开源压力增大 |
-| **OpenAI Codex** | 分析驱动的产品迭代 | 数据敏感型团队、企业 | Rust核心+TypeScript层，analytics基础设施投入激进 |
-| **Gemini CLI** | 策略即代码的企业治理 | 合规要求严格的组织 | TOML策略引擎、Hook扩展系统，Google生态深度整合 |
-| **Copilot CLI** | GitHub工作流原生集成 | GitHub重度用户、微软生态 | 与IDE/编辑器协同，MCP持久化、OTEL可观测性 |
-| **Kimi CLI** | 成本敏感型长会话场景 | 国内开发者、预算受限团队 | Python→TypeScript重构争议，增量记忆等架构创新 |
-| **OpenCode** | 多模型生态兼容性 | 模型灵活切换需求者 | 插件化架构、模型变体快速适配，移动端适配领先 |
-| **Pi** | 云原生与扩展生态 | AWS/GCP/Azure云用户 | 扩展系统架构先进，多厂商认证链、环境感知能力强 |
-| **Qwen Code** | 差异化功能创新 | 追求效率工具的开发者 | `/thinkback`会话回溯、`/plan`模式等独有功能，子Agent追赶 |
+| 维度 | Claude Code | OpenAI Codex | Gemini CLI | GitHub Copilot CLI | Qwen Code / Kimi Code |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **核心优势** | **模型能力**<br>最强推理与工程能力 | **生态整合**<br>ChatGPT/VS Code 深度绑定 | **架构实验**<br>Sidecar/ContextManager 重构 | **企业/IDE 集成**<br>GitHub 原生体验 | **垂直功能**<br> `/thinkback`、安全审查等特色指令 |
+| **当前痛点** | **定价信任危机**<br>额度计算不透明 | **Agent 稳定性**<br>Windows 兼容性、后台浪费 | **性能瓶颈**<br>UI 卡顿、内存泄漏 | **网络与模型**<br>连接不稳定、模型表现争议 | **工程健壮性**<br>TUI 闪烁、环境兼容 |
+| **技术路线** | 闭源，强调安全规则插件 | Rust + TypeScript 重构中 | 模块化架构转型中 | 深度集成 VS Code/Telemetry | 社区驱动快速迭代 (TS/Python) |
+| **目标用户** | 重度全栈工程师 | AI 原生应用开发者 | Google 生态/企业开发者 | GitHub 企业用户 | 开源社区/成本敏感型开发者 |
 
 ---
 
 ## 5. 社区热度与成熟度
 
-### 🔥 高活跃度·快速迭代
-| 工具 | 指标 | 阶段判断 |
-|:---|:---|:---|
-| **Qwen Code** | 17 PRs/日，功能密集交付 | **功能爆发期**：/review、/plan、/thinkback等创新功能快速上线，但TUI稳定性债务显现 |
-| **Pi** | 10+ Issues + 10 PRs，P0问题当日修复 | **工程成熟期**：AWS Bedrock、Gemma思考支持等生产级问题响应极快 |
-| **OpenCode** | 双版本发布，52评论热点Issue | **生态扩张期**：多模型兼容性挑战与功能迭代并行 |
-
-### 🌡️ 中活跃度·稳定演进
-| 工具 | 特征 |
-|:---|:---|
-| **OpenAI Codex** | 分析基础设施系统化建设，版本节奏规律（alpha.12） |
-| **Gemini CLI** | 企业级功能（策略引擎、Hook系统）稳步推进， nightly持续 |
-| **Claude Code** | 社区规模大但官方响应滞后，计费危机消耗信任资本 |
-
-### ❄️ 低活跃度·维护模式
-| 工具 | 特征 |
-|:---|:---|
-| **GitHub Copilot CLI** | Issue清理为主（48/50关闭），无新PR，疑似资源转移 |
-| **Kimi CLI** | 重构争议待决，功能迭代放缓，MCP修复为当务之急 |
+*   **第一梯队 (成熟度高，争议大)**: **Claude Code**。尽管无新版本，但 Issues 讨论量级远超其他工具（单 Issue 400+ 评论），说明付费用户基数大且对质量极度敏感。
+*   **第二梯队 (快速迭代期)**: **OpenAI Codex** & **Qwen Code**。频繁的 Release 和 PR 合并显示开发团队正在激进地修补漏洞和增加功能，试图追赶 Claude Code 的体验。
+*   **第三梯队 (架构调整期)**: **Gemini CLI** & **Kimi Code**。更多精力放在重构底层（如 ContextManager、Python to TS 重写）以解决根本性的性能问题。
+*   **观望期**: **GitHub Copilot CLI**。PR 沉寂，主要依靠既有生态优势，但用户开始横向对比其模型能力与竞品的差距。
 
 ---
 
 ## 6. 值得关注的趋势信号
 
-| 趋势 | 信号来源 | 开发者参考价值 |
-|:---|:---|:---|
-| **MCP成为基础设施层** | 全部工具纳入路线图，但云端支持分化 | 优先选择MCP生态完善的工具，避免供应商锁定 |
-| **"分析优先"产品方法论** | Codex 5个analytics PR集群，Claude/Copilot OTEL增强 | 企业选型需评估可观测性能力，Token审计成合规刚需 |
-| **多Agent架构进入硬核工程阶段** | Qwen并行焦点冲突、Codex子Agent误判、Claude权限绕过 | 复杂自动化场景需审慎评估协调机制成熟度 |
-| **终端体验成为差异化战场** | 7/8工具涉及TUI/主题/剪贴板议题 | 高频使用场景下，终端原生体验权重上升 |
-| **国产工具架构创新活跃** | Kimi增量记忆、Qwen/thinkback、Pi扩展系统 | 关注非头部厂商的差异化创新，可能孕育下一代范式 |
-| **开源压力与闭源张力** | Claude #41447、Kimi #1707重构争议 | 技术决策者需权衡透明度、可控性与商业支持 |
+1.  **"Token 焦虑"催生精细化控制需求**
+    *   **信号**: 用户不再只关注模型聪不聪明，更关注"烧钱速度"。
+    *   **建议**: 开发者在选型时需优先评估工具的**计费透明度**和**后台静默消耗控制**能力。企业部署时应关注类似 OpenAI #16946 的网络黑名单功能以防止内网数据泄露产生的额外费用。
 
----
+2.  **MCP 正从"特性"变为"基础设施"**
+    *   **信号**: 各工具均在抢跑 MCP 支持。
+    *   **建议**: 现在是构建**通用 MCP Server**（如数据库连接器、Jira 集成）的好时机，未来这些插件可跨工具通用。
 
-> **决策建议**：企业级场景优先考虑 Claude Code（安全）或 Gemini CLI（治理）；成本敏感团队关注 Kimi 的增量记忆进展；多模型灵活需求选择 OpenCode；云原生深度用户评估 Pi 的扩展生态。
+3.  **子代理 编排成为新战场**
+    *   **信号**: Qwen Code 明确提出要对标 Claude Code 的子代理系统；OpenAI 和 Gemini 也在优化多 Agent 调度。
+    *   **建议**: 简单的 Chat 模式已无法满足复杂工程需求。开发者应关注各工具的 **Agentic Workflow** 能力（如并行任务、自动审批、结果汇总）。
+
+4.  **终端 UI (TUI) 体验成为短板**
+    *   **信号**: 闪烁、渲染错误、内存溢出（Gemini OOM, Qwen TUI Bug）频发。
+    *   **建议**: 基于 Web 技术构建 TUI 可能带来性能负担，未来可能会出现基于 Rust/Go 的高性能原生 TUI 框架回归，或者像 Kimi 一样尝试 Bun + React Ink 的优化路径。
 
 ---
 
@@ -121,796 +118,700 @@
 
 > 数据来源: [anthropics/skills](https://github.com/anthropics/skills)
 
-# Claude Code Skills 社区热点报告（2026-04-07）
+# Claude Code Skills 社区热点报告 (2026-04-07)
+
+**数据来源**: [github.com/anthropics/skills](https://github.com/anthropics/skills) 官方仓库
 
 ---
 
-## 1. 热门 Skills 排行（按社区关注度）
+## 1. 🔥 热门 Skills 排行
 
-| 排名 | Skill | 功能概述 | 状态 | 链接 |
-|:---|:---|:---|:---|:---|
-| 1 | **document-typography** | AI 生成文档的排版质量控制，解决孤行、寡行、编号错位等常见排版问题 | 🔵 Open | [PR #514](https://github.com/anthropics/skills/pull/514) |
-| 2 | **frontend-design** | 前端设计 Skill 改进版，提升指令清晰度与可执行性，确保单轮对话内可完成设计任务 | 🔵 Open | [PR #210](https://github.com/anthropics/skills/pull/210) |
-| 3 | **skill-quality-analyzer / skill-security-analyzer** | 元 Skills：自动评估其他 Skill 的质量（结构、文档、示例等五维度）与安全性 | 🔵 Open | [PR #83](https://github.com/anthropics/skills/pull/83) |
-| 4 | **ODT** | OpenDocument 文本创建、模板填充及 ODT→HTML 解析，填补 LibreOffice 生态空白 | 🔵 Open | [PR #486](https://github.com/anthropics/skills/pull/486) |
-| 5 | **codebase-inventory-audit** | 代码库全面审计：识别孤儿代码、未使用文件、文档缺口、基础设施膨胀 | 🔵 Open | [PR #147](https://github.com/anthropics/skills/pull/147) |
-| 6 | **shodh-memory** | AI Agent 持久化记忆系统，跨对话维护上下文，主动召回相关记忆 | 🔵 Open | [PR #154](https://github.com/anthropics/skills/pull/154) |
-| 7 | **testing-patterns** | 全栈测试指南：测试哲学（Testing Trophy）、单元测试 AAA 模式、React 组件测试、E2E 策略 | 🔵 Open | [PR #723](https://github.com/anthropics/skills/pull/723) |
-| 8 | **sensory** | 原生 macOS 自动化（AppleScript/osascript），替代基于截图的 Computer Use | 🔵 Open | [PR #806](https://github.com/anthropics/skills/pull/806) |
+基于 PR 提交时间、更新活跃度及功能创新性，以下是近期最受关注的 Skills 动态：
 
----
-
-## 2. 社区需求趋势（Issues 提炼）
-
-| 需求方向 | 代表 Issue | 核心诉求 |
-|:---|:---|:---|
-| **企业级治理与安全** | [#492](https://github.com/anthropics/skills/issues/492) 信任边界滥用、[#412](https://github.com/anthropics/skills/issues/412) Agent 治理模式 | 社区 Skills 冒充官方命名空间的安全风险；需要策略执行、威胁检测、审计追踪的治理 Skill |
-| **Skill 创建工具链升级** | [#202](https://github.com/anthropics/skills/issues/202) | skill-creator 需从"开发者文档"转型为"操作指令"，减少 token 消耗，符合最佳实践 |
-| **评估与测试基础设施** | [#556](https://github.com/anthropics/skills/issues/556) | `run_eval.py` 0% 触发率问题，Skills 自动化测试框架亟待修复 |
-| **MCP 协议集成** | [#16](https://github.com/anthropics/skills/issues/16) | 将 Skills 暴露为 MCP 工具，标准化 AI 软件 API 接口 |
-| **组织级 Skill 共享** | [#228](https://github.com/anthropics/skills/issues/228) | 企业内直接共享 Skill 库，替代手动下载/上传的繁琐流程 |
-| **多云/多平台部署** | [#29](https://github.com/anthropics/skills/issues/29) | AWS Bedrock 等第三方平台兼容性支持 |
+| 排名 | Skill 名称 | 功能概要 | 状态 |
+| :--- | :--- | :--- | :--- |
+| 1 | **[document-typography](https://github.com/anthropics/skills/pull/514)** | **文档排版质控**。解决 AI 生成文档中的“孤行”、“寡行”及编号错位问题，提升专业文档输出质量。 | Open |
+| 2 | **[ODT Support](https://github.com/anthropics/skills/pull/486)** | **开放文档格式支持**。支持 ODT (LibreOffice/OpenOffice) 的创建、模板填充及 HTML 转换，填补非微软生态空白。 | Open |
+| 3 | **[shodh-memory](https://github.com/anthropics/skills/pull/154)** | **持久化记忆系统**。赋予 AI 跨对话保持上下文的能力，通过 `proactive_context` 机制主动调用相关记忆。 | Open |
+| 4 | **[frontend-design](https://github.com/anthropics/skills/pull/210)** | **前端设计指南增强**。重写现有 Skill 以提升指令的清晰度和可执行性，解决原有指导过于模糊的问题。 | Open |
+| 5 | **[SAP-RPT-1-OSS](https://github.com/anthropics/skills/pull/181)** | **SAP 数据预测**。集成 SAP 开源表格基础模型，针对 SAP 业务数据进行预测性分析。 | Open |
+| 6 | **[Masonry AI Gen](https://github.com/anthropics/skills/pull/335)** | **多媒体生成**。集成 Masonry CLI，支持通过 Imagen 3.0 和 Veo 3.1 生成图片与视频。 | Open |
+| 7 | **[Skill Analyzers](https://github.com/anthropics/skills/pull/83)** | **元技能**。包含 `skill-quality-analyzer` 和 `skill-security-analyzer`，用于自动评估 Skill 本身的质量与安全性。 | Open |
 
 ---
 
-## 3. 高潜力待合并 Skills（活跃 PR 速览）
+## 2. 📈 社区需求趋势
 
-| Skill | 亮点 | 最后更新 | 链接 |
-|:---|:---|:---|:---|
-| **quality-playbook** | 复兴传统质量工程实践，AI 驱动低成本运行，从需求而非代码生成测试 | 2026-03-29 | [PR #659](https://github.com/anthropics/skills/pull/659) |
-| **SAP-RPT-1-OSS predictor** | 集成 SAP 开源表格基础模型，专用于 SAP 业务数据预测分析 | 2026-03-16 | [PR #181](https://github.com/anthropics/skills/pull/181) |
-| **masonry-generate-image-and-videos** | 基于 Imagen 3.0/Veo 3.1 的图文视频生成，管理生成任务全生命周期 | 2026-03-14 | [PR #335](https://github.com/anthropics/skills/pull/335) |
-| **UX Product Engineer 等 11 Skills 合集** | 预部署验证器、算法艺术、UX 旅程图、Mermaid 终端等批量贡献 | 2026-03-30 | [PR #740](https://github.com/anthropics/skills/pull/740) |
+通过分析 Issues 讨论，社区目前的痛点与需求集中在以下三个方向：
 
-> 🔧 **基础设施修复**：Lubrsy706 连续提交 3 个修复 PR（[#538](https://github.com/anthropics/skills/pull/538)、[#539](https://github.com/anthropics/skills/pull/539)、[#541](https://github.com/anthropics/skills/pull/541)），解决 DOCX/PDF 大小写敏感、YAML 解析、ID 冲突等稳定性问题。
+### A. 企业级部署与安全
+*   **权限与信任边界**：社区强烈关注 Skills 的来源可信度。[Issue #492](https://github.com/anthropics/skills/issues/492) 指出社区 Skill 混入官方命名空间可能导致权限滥用，呼吁建立清晰的信任机制。
+*   **内部共享机制**：企业用户急需组织内的 Skill 共享功能，目前需手动下载/上传文件极为繁琐 ([Issue #228](https://github.com/anthropics/skills/issues/228))。
+*   **SSO/Enterprise 支持**：许多企业用户无 API Key，导致部分依赖 API 的 Skill（如优化器）无法使用 ([Issue #532](https://github.com/anthropics/skills/issues/532))。
 
----
+### B. 基础稳定性与兼容性
+*   **核心功能故障**：近期上传、删除 Skill 频繁报 500 错误 ([Issue #406](https://github.com/anthropics/skills/issues/406))，以及评估脚本无法触发 Skill ([Issue #556](https://github.com/anthropics/skills/issues/556)) 是阻碍开发者的主要障碍。
+*   **重复内容冲突**：`document-skills` 和 `example-skills` 插件安装后出现重复内容，浪费上下文窗口 ([Issue #189](https://github.com/anthropics/skills/issues/189))。
 
-## 4. Skills 生态洞察
-
-> **核心诉求**：社区正从"单点工具 Skills"向"系统化工程能力"跃迁——既要**文档/代码/测试的质量基础设施**（typography、testing-patterns、quality-playbook），也要**企业级的治理、共享与评估框架**（skill-quality-analyzer、MCP 集成、组织级共享），同时**修复工具链可靠性**（skill-creator、run_eval.py）已成为阻塞性瓶颈。
-
----
+### C. 架构演进
+*   **MCP 协议集成**：开发者希望将 Skills 暴露为 MCP (Model Context Protocol) 接口，以实现更标准化的软件调用 ([Issue #16](https://github.com/anthropics/skills/issues/16))。
 
 ---
 
-# Claude Code 社区动态日报 | 2026-04-07
+## 3. 💎 高潜力待合并 Skills
 
-## 今日速览
+以下 PR 处于 Open 状态但解决了关键技术债或提供了高价值功能，建议重点关注：
 
-Claude Max 套餐用户持续报告会话额度异常消耗问题（#38335），已引发 437 条评论和 346 个赞，成为社区最热议话题。同时，多个关于权限绕过、终端主题定制和 macOS SSH 远程支持的功能需求保持活跃，反映出专业开发者对工作流深度定制的强烈需求。
-
----
-
-## 社区热点 Issues
-
-| # | 标题 | 状态 | 评论 | 关键看点 |
-|---|------|------|------|---------|
-| [#38335](https://github.com/anthropics/claude-code/issues/38335) | Claude Max 套餐会话额度异常快速耗尽 | 🔴 OPEN | 437 | **计费危机**：自 3 月 23 日起 CLI 使用量被异常计算，Max 用户反馈几小时内耗尽月度额度。社区情绪激烈，Anthropic 官方尚未给出明确修复时间。 |
-| [#42796](https://github.com/anthropics/claude-code/issues/42796) | 2 月更新后 Claude Code 无法处理复杂工程任务 | 🟢 CLOSED | 65 | **模型质量争议**：365 赞反映广泛共鸣，用户报告代码生成质量显著下降、幻觉增加。虽被关闭，但持续有新用户报告类似问题。 |
-| [#27801](https://github.com/anthropics/claude-code/issues/27801) | Cowork 功能"无法启动工作区"VM 服务故障 | 🔴 OPEN | 57 | **核心功能阻塞**：Sandbox 模式关键故障，重启后仍无法恢复，影响依赖隔离环境的团队协作场景。 |
-| [#36168](https://github.com/anthropics/claude-code/issues/36168) | v2.1.77 后权限绕过功能失效 | 🔴 OPEN | 39 | **自动化工作流断裂**：`bypassPermissions` 等危险跳过选项被破坏，CI/CD 集成场景受严重影响。 |
-| [#1302](https://github.com/anthropics/claude-code/issues/1302) | 支持自定义终端主题 | 🔴 OPEN | 29 | **体验个性化**：122 赞的长期需求，开发者希望突破 6 种预设主题限制，匹配个人/品牌终端风格。 |
-| [#26694](https://github.com/anthropics/claude-code/issues/26694) | 支持 macOS 作为 SSH 远程主机 | 🔴 OPEN | 13 | **跨平台远程开发**：目前仅支持 Linux，macOS 开发者无法使用桌面版 SSH 远程功能，限制 Apple Silicon 服务器场景。 |
-| [#15898](https://github.com/anthropics/claude-code/issues/15898) | Shift+Tab 循环添加 YOLO 模式 | 🔴 OPEN | 9 | **效率优化**：15 赞，请求将 `bypassPermissions` 加入权限模式快速切换，减少高频操作时的确认摩擦。 |
-| [#42670](https://github.com/anthropics/claude-code/issues/42670) | v2.1.89+ 备用屏幕缓冲区杀死滚动历史 | 🔴 OPEN | 4 | **严重 UX 退化**：全屏 TUI 模式导致终端原生滚动失效，无法查看历史输出，调试长会话时极痛苦。 |
-| [#43397](https://github.com/anthropics/claude-code/issues/43397) | 云端定时任务无法访问 MCP 连接器 | 🔴 OPEN | 8 | **自动化生态缺口**：Cloud 场景下 MCP 工具加载失败，影响无人值守工作流的工具链集成。 |
-| [#44445](https://github.com/anthropics/claude-code/issues/44445) | Claude 在调试时优先怀疑外部因素而非自身编辑 | 🔴 OPEN | 1 | **元认知缺陷**：由 Claude 自身撰写的反思报告，指出模型在调试中"甩锅"给用户代码而非检查自己刚做的修改。 |
+1.  **[CONTRIBUTING.md (PR #509)](https://github.com/anthropics/skills/pull/509)**
+    *   **理由**：填补了仓库社区健康度指标的空白，为后续更多社区贡献铺平道路。
+2.  **[DOCX Tracked Change Fix (PR #541)](https://github.com/anthropics/skills/pull/541)**
+    *   **理由**：修复了 OOXML 中 `w:id` 冲突导致的文档损坏问题，对文档类 Skill 的稳定性至关重要。
+3.  **[skill-creator Validation Fix (PR #36)](https://github.com/anthropics/skills/pull/36)**
+    *   **理由**：修复了 Skill 创建工具中的 YAML 校验问题，直接响应了 [Issue #37](https://github.com/anthropics/skills/issues/202) 中关于“最佳实践”的呼声。
 
 ---
 
-## 重要 PR 进展
+## 4. 🎯 Skills 生态洞察
 
-| # | 标题 | 状态 | 功能/修复内容 |
-|---|------|------|--------------|
-| [#41661](https://github.com/anthropics/claude-code/pull/41661) | 添加 14 个革命性插件 | 🟢 CLOSED | 安全、性能、架构、全栈自动化插件集，含 27 插件的市场扩展，因"非官方插件提交"被关闭 |
-| [#41447](https://github.com/anthropics/claude-code/pull/41447) | 开源 Claude Code | 🔴 OPEN | 社区长期呼吁（关闭 #59, #456, #2846 等），象征性 PR 反映开发者对透明度和社区贡献的期待 |
-| [#44159](https://github.com/anthropics/claude-code/pull/44159) | 添加 Java 安全模式 | 🔴 OPEN | 补齐 security-guidance 插件的 Java 覆盖：SQL 注入、XXE、反序列化、JNDI、命令注入 5 类漏洞检测 |
-| [#41938](https://github.com/anthropics/claude-code/pull/41938) | 添加 Linux/macOS DevContainer 启动脚本 | 🔴 OPEN | 补齐 Windows-only 的 DevContainer 支持，提升跨平台开发者体验 |
-| [#44393](https://github.com/anthropics/claude-code/pull/44393) | 修复 backfill-duplicate-comments 脚本忽略 DAYS_BACK | 🔴 OPEN | 工作流修复：使环境变量实际生效，优化议题分页逻辑 |
-| [#44055](https://github.com/anthropics/claude-code/pull/44055) | 修复 agent 描述字段 YAML 解析错误 | 🔴 OPEN | 6 个 agent 文件的 YAML frontmatter 格式修复，解决 `mapping values are not allowed` 错误 |
-| [#41611](https://github.com/anthropics/claude-code/pull/41611) | 补充缺失的源码 | 🔴 OPEN | 与 #41447 呼应，要求完整开源 |
-| [#44071](https://github.com/anthropics/claude-code/pull/44071) | README 标题大小写一致性修复 | 🔴 OPEN | `Get started` → `Get Started`，文档润色 |
-| [#1](https://github.com/anthropics/claude-code/pull/1) | 创建 SECURITY.md | 🟢 CLOSED | 基础安全策略文档，2025 年创建近日被清理关闭 |
+**当前社区最集中的诉求是：从“功能实现”转向“工程化治理”，重点解决企业级权限管理、多平台格式兼容（ODT/PDF）及 Agent 长期记忆能力。**
 
 ---
 
-## 功能需求趋势
+# 2026-04-07 Claude Code 社区动态日报
 
-基于过去 24 小时 50 条活跃 Issue 分析，社区关注焦点集中在：
+## 📰 今日速览
 
-| 方向 | 热度 | 典型诉求 |
-|------|------|---------|
-| **权限与自动化控制** | 🔥🔥🔥 | YOLO 模式快捷切换、权限绕过修复、会话启动前钩子拦截 |
-| **终端/IDE 体验深度定制** | 🔥🔥🔥 | 自定义主题、滚动历史保留、视觉区分用户消息 |
-| **远程开发与跨平台** | 🔥🔥 | macOS SSH 主机支持、GPU 透传、worktree 处理优化 |
-| **模型质量与可靠性** | 🔥🔥🔥 | 上下文压缩后行为异常、调试时自我怀疑机制、推理质量下降 |
-| **企业/团队工作流** | 🔥🔥 | 多账号切换、会话归档恢复、Cowork VM 稳定性、MCP 云端支持 |
-| **可观测性与集成** | 🔥 | OTEL 事件补全、Hook 退出码、LSP 动态注册支持 |
+今日 Claude Code 社区活跃度持续高涨，**订阅额度异常消耗** 相关问题持续发酵，多个 Issue 评论数破百，成为用户最关注的痛点。模型质量退化和上下文窗口降级问题也引发大量讨论。PR 方面，社区持续贡献安全模式增强和插件功能改进，但官方暂无新版本发布。
 
 ---
 
-## 开发者关注点
+## 📦 版本发布
 
-### 🔴 高频痛点
-
-1. **计费透明度危机** — #38335 的会话额度异常消耗引发信任危机，开发者要求更细粒度的使用审计和实时预警
-2. **TUI 模式 UX 退化** — 全屏切换导致终端原生功能（滚动、复制、搜索）失效，#42670 和 #34269 反映对"可选 TUI"的强烈需求
-3. **权限系统的灵活性悖论** — 安全限制在自动化场景中成为阻碍，社区在"完全开放"和"严格管控"间寻求更精细的中间态
-
-### 🟡 能力缺口
-
-- **上下文管理**：压缩后恢复会话时模型行为异常（#41148），长会话可靠性存疑
-- **跨平台平等**：macOS 在 SSH 远程、GPU 支持等方面持续落后于 Linux
-- **企业级身份**：多账号切换（#30031，17 赞）是规模化部署的阻塞点
-
-### 🟢 生态期待
-
-- **开源呼声持续**：#41447 等 PR 虽为象征性提交，但反映社区希望从"黑盒产品"转向"可参与平台"
-- **MCP 生态成熟**：云端定时任务 + MCP 的整合（#43397）被视为下一代自动化基础设施
+**过去 24 小时无新版本发布。**
 
 ---
 
-*数据来源：github.com/anthropics/claude-code | 统计周期：2026-04-06 至 2026-04-07*
+## 🔥 社区热点 Issues (Top 10)
+
+| 优先级 | Issue | 主题 | 热度 | 核心问题 |
+|:---:|---|---|:---:|---|
+| 🔴 | [#38335](https://github.com/anthropics/claude-code/issues/38335) | **Max 订阅额度异常快速耗尽** | 👍 346 / 💬 435 | 自 3 月 23 日起，CLI 使用下 Max plan session limits 消耗速度异常，引发大量用户共鸣 |
+| 🔴 | [#42796](https://github.com/anthropics/claude-code/issues/42796) | **模型质量退化无法完成复杂工程任务** | 👍 344 / 💬 66 | 2 月更新后模型质量显著下降，复杂任务处理能力变弱（已关闭但讨论热烈） |
+| 🟠 | [#29579](https://github.com/anthropics/claude-code/issues/29579) | **Max 订阅遭遇 Rate Limit（仅用 16%）** | 👍 83 / 💬 145 | 订阅用户在低使用量下仍触发 API 限流错误 |
+| 🟠 | [#41788](https://github.com/anthropics/claude-code/issues/41788) | **Max $200 计划 70 分钟耗尽额度** | 👍 60 / 💬 44 | v2.1.89 更新后额度消耗速度前所未有地加快 |
+| 🟠 | [#37394](https://github.com/anthropics/claude-code/issues/37394) | **Max Plan 使用量统计异常** | 👍 38 / 💬 74 | 使用量统计触顶速度远超实际使用情况 |
+| 🟡 | [#7502](https://github.com/anthropics/claude-code/issues/7502) | **Auto-Compact 无警告清除全部聊天历史** | 👍 28 / 💬 29 | 自动压缩上下文时丢失所有对话记录且无恢复方式 |
+| 🟡 | [#13008](https://github.com/anthropics/claude-code/issues/13008) | **[FEATURE] OSC 8 超链接支持** | 👍 30 / 💬 17 | 终端文件路径无法点击跳转，请求支持 OSC 8 协议 |
+| 🟡 | [#40851](https://github.com/anthropics/claude-code/issues/40851) | **Opus 4.6 Max $100 轻量对话后配额达 93%** | 👍 4 / 💬 15 | 仅进行设计讨论（无代码生成）即触发高配额消耗 |
+| 🟡 | [#44267](https://github.com/anthropics/claude-code/issues/44267) | **OAuth 登录：CLI 超时但浏览器授权成功** | 👍 14 / 💬 10 | 浏览器完成授权后 CLI 无法接收回调 |
+| 🟡 | [#36649](https://github.com/anthropics/claude-code/issues/36649) | **上下文窗口从 1M 回退至 200K** | 👍 8 / 💬 13 | Max 计划的 1M context 被意外降级 |
+
+### 💡 分析评论
+
+- **额度消耗问题集中爆发**：Issue #38335、#29579、#37394、#41788 均指向同一核心问题——近期更新后订阅计划的额度计算/消耗逻辑出现异常，社区情绪较为激动
+- **模型质量争议**：#42796 获 344 👍 表明用户对近期模型能力退化有强烈共识
+- **数据丢失风险**：#7502 的 Auto-Compact 问题长期未解决，影响用户信任
+
+---
+
+## 🔀 重要 PR 进展 (Top 8)
+
+| PR | 标题 | 状态 | 核心变更 |
+|---|---|:---:|---|
+| [#44159](https://github.com/anthropics/claude-code/pull/44159) | **添加 Java 安全模式检测** | OPEN | 为 `security-guidance` 插件新增 5 种 Java 安全规则：SQL 注入、XXE、反序列化、JNDI、命令注入 |
+| [#39148](https://github.com/anthropics/claude-code/pull/39148) | **preserve-session 插件** | OPEN | 实现路径无关的会话历史保存，项目重命名/移动后可恢复历史 |
+| [#44393](https://github.com/anthropics/claude-code/pull/44393) | **修复 backfill 脚本 DAYS_BACK 环境变量** | OPEN | 脚本此前忽略 DAYS_BACK 参数，现按日期过滤 Issues |
+| [#44055](https://github.com/anthropics/claude-code/pull/44055) | **修复 Agent YAML frontmatter 解析错误** | OPEN | 6 个 agent 文件的 description 字段包含未转义冒号导致 YAML 解析失败 |
+| [#44071](https://github.com/anthropics/claude-code/pull/44071) | **README 标题大小写规范化** | OPEN | "Get started" → "Get Started" |
+| [#41611](https://github.com/anthropics/claude-code/pull/41611) | **添加缺失的源码** | OPEN | 补充 Claude Code 缺失源文件 |
+| [#41447](https://github.com/anthropics/claude-code/pull/41447) | **开源 Claude Code** | OPEN | 社区发起的开源请求（关联 5 个 Issues） |
+| [#1](https://github.com/anthropics/claude-code/pull/1) | **创建 SECURITY.md** | CLOSED | 安全政策文档 |
+
+---
+
+## 📈 功能需求趋势
+
+从近期 Issues 中提炼出以下高频需求方向：
+
+| 趋势 | 相关 Issues | 关键词 |
+|---|---|---|
+| **订阅额度透明化** | #38335, #29579, #37394, #41788, #40851 | 额度计算、使用统计、Rate Limit |
+| **模型稳定性** | #42796, #42634, #44403, #36649 | 质量退化、Context Window 降级 |
+| **会话历史保护** | #7502, #37273, #42890 | Auto-Compact、历史丢失、Cowork |
+| **MCP 按需加载** | #38365 | 懒加载、Context 优化 |
+| **终端集成增强** | #13008, #43365 | OSC 8 超链接、输出污染 |
+| **OAuth/认证稳定性** | #44267, #30179 | 登录超时、DCOM 权限 |
+
+---
+
+## 🎯 开发者关注点（痛点总结）
+
+### ⚠️ 高优先级痛点
+
+1. **订阅价值感知下降**
+   - Max Plan ($100/$200) 用户反馈额度消耗速度远超预期
+   - 低使用量下触发 Rate Limit，影响开发效率
+   - 缺乏透明的额度使用明细
+
+2. **模型能力不稳定**
+   - 2 月更新后复杂工程任务处理能力下降
+   - Context Window 从 1M 降级到 200K（#36649, #44403）
+   - `.claude/rules/` 自动加载失效（#44212）
+
+3. **数据安全风险**
+   - Auto-Compact 无警告清除历史（#7502）
+   - Cowork 会话历史被永久截断（#37273）
+
+### 💬 高频功能请求
+
+- **MCP 懒加载**：多 MCP 服务器用户希望按需连接以节省 Context（#38365）
+- **终端超链接支持**：OSC 8 协议支持文件路径点击（#13008）
+- **Status Line 增强**：暴露 reasoning effort level（#31987）
+
+---
+
+## 📊 数据摘要
+
+| 指标 | 数值 |
+|---|---|
+| 24h 内更新 Issues | 50 条 |
+| 24h 内更新 PRs | 8 条 |
+| 最热 Issue 👍 | 346 (#38335) |
+| 最热 Issue 💬 | 435 (#38335) |
+| 新版本发布 | 0 |
+
+---
+
+> **分析师备注**：当前社区情绪集中于**订阅额度异常消耗**问题，建议 Anthropic 优先响应该问题并提供透明的使用统计。模型质量相关讨论（#42796）虽已关闭，但 344 👍 表明用户对此有强烈诉求，值得持续关注。
+
+*日报生成时间: 2026-04-07 | 数据来源: GitHub anthropics/claude-code*
 
 </details>
 
 <details>
 <summary><strong>OpenAI Codex</strong> — <a href="https://github.com/openai/codex">openai/codex</a></summary>
 
-# OpenAI Codex 社区动态日报 | 2026-04-07
+这里是 **2026-04-07 OpenAI Codex 社区动态日报**。
+
+### 1. 今日速览
+今日 OpenAI Codex 发布了 Rust v0.119.0-alpha.12 版本。社区关注度最高的问题是 **Token 消耗过快** 以及 **桌面端远程开发支持** 的缺失。此外，开发团队正在合并大量底层重构代码（Analytics 和 MCP 支持），并针对 Linux 沙箱、上下文压缩和会话恢复提交了关键修复。
 
 ---
 
-## 1. 今日速览
-
-今日社区最突出的议题仍是**Token 消耗过快**问题（#14593 已积累 450 条评论），同时 OpenAI 团队密集推进**分析基础设施**建设，单日新增 5 个 analytics 相关 PR。Rust 版本发布 `v0.119.0-alpha.12`，MCP 生态扩展与远程开发能力成为工程重点。
-
----
-
-## 2. 版本发布
-
-| 版本 | 说明 |
-|:---|:---|
-| **rust-v0.119.0-alpha.12** | Rust 组件更新，具体变更未详细披露，推测为常规迭代修复 |
+### 2. 版本发布
+*   **[rust-v0.119.0-alpha.12](https://github.com/openai/codex/releases/tag/rust-v0.119.0-alpha.12)**
+    *   发布了最新的 Alpha 版本，主要包含依赖更新和底层优化（结合今日 PR 动态，涉及 Analytics 元数据和网络传输的重构）。
 
 ---
 
-## 3. 社区热点 Issues
+### 3. 社区热点 Issues (Top 10)
 
-| # | Issue | 重要性分析 | 社区反应 |
-|:---|:---|:---|:---|
-| [#14593](https://github.com/openai/codex/issues/14593) | **Token 消耗过快** — Business 订阅用户报告 Token 异常燃烧 | 🔴 **最高优先级** — 涉及计费公平性，已持续 25 天未获官方明确回应 | 450 评论，170 👍，用户持续施压要求透明化计费机制 |
-| [#10450](https://github.com/openai/codex/issues/10450) | **桌面应用支持远程开发** | 填补 VS Code 远程 SSH/容器开发与 Codex 桌面版的体验鸿沟 | 103 评论，499 👍，企业用户强烈需求 |
-| [#10601](https://github.com/openai/codex/issues/10601) | **Windows 沙箱设置错误** | 阻碍 Windows 用户核心功能使用，平台兼容性问题 | 41 评论，10 👍，长期未解决 |
-| [#14936](https://github.com/openai/codex/issues/14936) | **bwrap 几乎每条命令都触发审批提示** | 沙箱安全策略过度敏感，严重干扰开发流 | 32 评论，16 👍，回归问题 |
-| [#13733](https://github.com/openai/codex/issues/13733) | **后台进程轮询浪费 Token** — `write_stdin` 每次轮询携带完整历史 | 架构级效率缺陷，长期运行成本倍增 | 9 评论，技术深度分析获关注 |
-| [#3962](https://github.com/openai/codex/issues/3962) | **任务完成时播放提示音** | 用户体验细节，长时间后台任务的刚需 | 36 评论，131 👍，社区呼声高 |
-| [#16158](https://github.com/openai/codex/issues/16158) | **应用启动后 5 分钟无响应** | 桌面应用稳定性问题，影响首印象 | 10 评论，Pro 用户反馈 |
-| [#14513](https://github.com/openai/codex/issues/14513) | **Codex 执行中途停止并回答旧问题** | 状态管理/上下文污染严重 Bug | 7 评论，9 👍，影响可靠性信任 |
-| [#13491](https://github.com/openai/codex/issues/13491) | **Forked Worker 继承父级意图导致递归委托** | 多 Agent 架构的深层设计缺陷 | 6 评论，8 👍，架构层面讨论 |
-| [#16900](https://github.com/openai/codex/issues/16900) | **健康子 Agent 被误判为停滞，导致重复工作** | 多 Agent 协调机制不成熟，Token 浪费 + 上下文膨胀 | 3 评论，今日新增，问题紧迫 |
+以下 Issues 反映了当前用户最集中的痛点：
 
----
+1.  **[Critical] Token 消耗异常快速**
+    *   **链接**: [#14593](https://github.com/openai/codex/issues/14593)
+    *   **热度**: 👍 169 | 💬 446
+    *   **点评**: 这是目前社区反应最强烈的问题。Business 订阅用户报告即使在空闲或简单任务下，Token 也在极速燃烧。这可能与 Issue #13733 提到的后台轮询机制有关，严重影响成本控制。
 
-## 4. 重要 PR 进展
+2.  **[Enhancement] 桌面端远程开发支持**
+    *   **链接**: [#10450](https://github.com/openai/codex/issues/10450)
+    *   **热度**: 👍 499 | 💬 103
+    *   **点评**: 桌面版发布后，用户最迫切的需求是支持 SSH/Remote Development，以便像 VS Code 一样连接远程服务器开发。目前功能受限导致很多专业开发者无法在日常流程中使用。
 
-| # | PR | 功能/修复内容 | 技术意义 |
-|:---|:---|:---|:---|
-| [#16962](https://github.com/openai/codex/pull/16962) | **重构配置类型至独立 Crate** | 将 config types 移出主 crate，减少宏展开代码膨胀 | 编译优化与模块化架构改进 |
-| [#16949](https://github.com/openai/codex/pull/16949) | **Fast Mode 支持基于模型元数据** | 移除硬编码模型 slug 判断，通过 `supportsFastMode` 能力位动态渲染 UI | 提升多模型兼容性与可维护性 |
-| [#16950](https://github.com/openai/codex/pull/16950) | **支持 `/clear` 后通过 `/resume` 恢复会话** | 捕获 `/clear` 和 `/new` 前的线程状态，提示用户可恢复 | 解决误操作数据丢失痛点 |
-| [#16912](https://github.com/openai/codex/pull/16912) | **生成 installation_id 并注入请求元数据** | 持久化 UUID 至 `$CODEX_HOME/installation_id`，用于分析追踪 | 可观测性基础设施关键一环 |
-| [#16953](https://github.com/openai/codex/pull/16953) | **新增 Alarm 工具** | 跨客户端定时调度机制，支持 `/loop` 风格任务、Harness 重启存活 | 自动化工作流与持久化任务基础 |
-| [#16960](https://github.com/openai/codex/pull/16960) | **App-server 支持 WebRTC Realtime 呼叫创建** | 实验性实时通话能力，区分 API Key 与 ChatGPT 认证路径 | 实时交互能力扩展 |
-| [#16875](https://github.com/openai/codex/pull/16875) | **JsonSchema 支持 `anyOf` 与 `enum`** | 对齐 OpenAI API 结构化输出规范，丰富函数签名渲染 | 工具调用类型系统完善 |
-| [#16944](https://github.com/openai/codex/pull/16944) | **工具搜索扩展至自定义 MCP** | MCP 生态工具发现能力增强 | 第三方工具集成体验提升 |
-| [#16937](https://github.com/openai/codex/pull/16937) | **远程启动执行审批流程** | 统一执行服务的远程启动需经核心审批流 | 安全策略一致性保障 |
-| [#16640](https://github.com/openai/codex/pull/16640) | **[Analytics] Turn 配置数据埋点与发射** | 实现 turn 级配置数据的自定义事件采集 | 产品数据驱动决策基础 |
+3.  **[Bug] Windows 沙箱配置错误**
+    *   **链接**: [#10601](https://github.com/openai/codex/issues/10601)
+    *   **热度**: 👍 10 | 💬 41
+    *   **点评**: Windows 平台的老大难问题。涉及 CLI 在 Windows 环境下的沙箱隔离机制，导致用户无法正常初始化运行环境。
 
-> 📊 **分析基础设施集群**：PR #16640、#16706、#16659、#16641、#16870 形成 Sapling 堆栈，系统构建从 token 使用、队列提交、steering 到线程元数据的完整 analytics 链路。
+4.  **[UX] 任务完成声音提示**
+    *   **链接**: [#3962](https://github.com/openai/codex/issues/3962)
+    *   **热度**: 👍 131 | 💬 36
+    *   **点评**: 一个虽小但很实用的 UX 需求。用户希望在 Codex 长时间后台运行完成任务后播放提示音，这对于异步工作流非常重要。
 
----
+5.  **[Bug] Linux bwrap 沙箱频繁弹窗审批**
+    *   **链接**: [#14936](https://github.com/openai/codex/issues/14936)
+    *   **热度**: 👍 16 | 💬 32
+    *   **点评**: 回归 Bug。Linux 下使用 `bwrap` 沙箱时，几乎每个命令都需要用户重新批准，严重打断工作流。今日已有相关 PR (#16948) 尝试优化提示信息。
 
-## 5. 功能需求趋势
+6.  **[Bug] 桌面端启动后卡死 5 分钟**
+    *   **链接**: [#16158](https://github.com/openai/codex/issues/16158)
+    *   **热度**: 👍 2 | 💬 10
+    *   **点评**: macOS Pro 用户的严重性能问题，App 启动后长时间无响应，可能与插件加载或索引构建有关。
 
-基于 50 条活跃 Issue 分析，社区关注焦点呈现四大方向：
+7.  **[Bug] 后台进程轮询浪费 Token**
+    *   **链接**: [#13733](https://github.com/openai/codex/issues/13733)
+    *   **热度**: 👍 9 | 💬 9
+    *   **点评**: 技术细节层面的重要 Bug。后台构建（如 `cargo build`）时的状态检查会携带完整历史记录请求 API，导致 Token 消耗不仅是“快”，而是指数级增长。
 
-| 方向 | 代表 Issue | 需求强度 |
-|:---|:---|:---:|
-| **💰 计费透明与 Token 效率** | #14593, #13733, #16900 | ⭐⭐⭐⭐⭐ |
-| **🖥️ IDE/桌面端体验完善** | #10450, #3962, #2880, #13942 | ⭐⭐⭐⭐⭐ |
-| **🪟 Windows 平台稳定性** | #10601, #12414, #15975, #13659 | ⭐⭐⭐⭐☆ |
-| **🤖 多 Agent 架构健壮性** | #13491, #16900, #15723, #14667 | ⭐⭐⭐⭐☆ |
-| **🔒 沙箱安全与审批体验** | #14936, #16937 | ⭐⭐⭐☆☆ |
-| **📊 上下文/压缩管理** | #10823, #11641, #12468, #12790 | ⭐⭐⭐☆☆ |
+8.  **[Bug] WSL2 终端字符显示异常**
+    *   **链接**: [#13638](https://github.com/openai/codex/issues/13638)
+    *   **热度**: 👍 1 | 💬 15
+    *   **点评**: TUI (Terminal UI) 在 Windows WSL2 环境下无法正确处理重音字符（如某些编程符号或非英语字符），影响终端体验。
 
----
+9.  **[Bug] 插件更新后回退至 "Skills"**
+    *   **链接**: [#16006](https://github.com/openai/codex/issues/16006)
+    *   **热度**: 👍 5 | 💬 10
+    *   **点评**: 3月26日更新后，桌面端出现界面状态混乱，显示 "New Plugin" 后迅速回退到旧的 "Skills" 逻辑，暗示前后端版本兼容性问题。
 
-## 6. 开发者关注点
-
-### 🔥 高频痛点
-
-| 痛点 | 具体表现 | 影响范围 |
-|:---|:---|:---|
-| **Token 经济不可控** | 后台轮询、历史重复传输、子 Agent 重复执行导致费用飙升 | 全平台付费用户 |
-| **Windows 二等公民体验** | 沙箱失败、内存泄漏（90GB+ OOM）、启动卡顿、UI 冻结 | Windows 开发者 |
-| **上下文窗口管理失效** | 压缩失败、Spark 模型特有问题、长会话崩溃 | 复杂项目用户 |
-| **多 Agent 协调黑箱** | 子 Agent 状态不可见、误判停滞、意图继承混乱 | 高级自动化用户 |
-
-### 🎯 未满足的核心需求
-
-1. **远程开发原生支持** — 企业/云开发场景刚需（#10450，499 👍）
-2. **可配置默认模式** — Plan 模式默认启动等个性化工作流（#13942）
-3. **Hook 事件精细化** — 区分主/子 Agent 事件源（#16226）
-4. **声音/通知系统** — 后台任务完成感知（#3962，131 👍）
+10. **[Bug] VS Code 插件加载卡死**
+    *   **链接**: [#15975](https://github.com/openai/codex/issues/15975)
+    *   **热度**: 👍 0 | 💬 5
+    *   **点评**: VS Code 更新后，Codex 扩展卡在 Logo 加载界面，导致 Windows 用户无法在 IDE 中使用。
 
 ---
 
-*日报基于 GitHub 公开数据生成，不代表 OpenAI 官方立场。*
+### 4. 重要 PR 进展 (Top 10)
+
+开发团队今日主要聚焦于底层架构（Analytics）和稳定性修复：
+
+1.  **[Feature] 意外清除后的会话恢复 (`/resume`)**
+    *   **链接**: [#16950](https://github.com/openai/codex/pull/16950)
+    *   **内容**: 防止用户误输入 `/clear` 或 `/new` 导致会话丢失。现在会捕获被替换的会话，并允许用户通过 `/resume` 恢复。这是一个非常实用的“后悔药”功能。
+
+2.  **[Feature] 支持 MCP Apps (Part 1)**
+    *   **链接**: [#16082](https://github.com/openai/codex/pull/16082)
+    *   **内容**: 添加了 `mcpResource/read` 方法，开始支持 Model Context Protocol (MCP) 应用生态，这是 Codex 扩展能力的重大信号。
+
+3.  **[Feature] 基于 Model Metadata 的 Fast Mode**
+    *   **链接**: [#16949](https://github.com/openai/codex/pull/16949)
+    *   **内容**: 解耦 Fast Mode UI 与特定模型 Slug 的硬编码，改为读取模型元数据。这意味着未来新增支持 Fast Mode 的模型将更加灵活，无需改前端代码。
+
+4.  **[Refactor] 大规模 Analytics 元数据重构**
+    *   **链接**: [#16870](https://github.com/openai/codex/pull/16870), [#16706](https://github.com/openai/codex/pull/16706), [#16641](https://github.com/openai/codex/pull/16641)
+    *   **内容**: 这是一组 PR Stack，旨在重构遥测和分析系统，增加了 Turn 时间戳、Token 使用量元数据和 Steering 元数据。这通常是为更精细的计费监控或性能分析做准备。
+
+5.  **[Feature] 实验性任务调度与 `/loop` 支持**
+    *   **链接**: [#16282](https://github.com/openai/codex/pull/16282)
+    *   **内容**: 引入实验性的 `job_scheduler`，允许线程创建、运行和删除定时任务，并支持 `/loop` 命令。这开启了 Codex 自动化循环任务的可能性。
+
+6.  **[Fix] Linux Bubblewrap 安装警告澄清**
+    *   **链接**: [#16948](https://github.com/openai/codex/pull/16948)
+    *   **内容**: 针对 Issue #14936 的补充修复，明确指出 Linux 沙箱需要的是 OS 级别的 Bubblewrap 包，而非 NPM 包，减少了用户的困惑。
+
+7.  **[Network] 危险全访问模式下的黑名单网络控制**
+    *   **链接**: [#16946](https://github.com/openai/codex/pull/16946)
+    *   **内容**: 为 `danger-full-access` 模式增加了 `denylist` 支持。允许企业在使用最高权限模式时，依然能通过中央规则屏蔽特定网络请求（如内网敏感地址），提升安全性。
+
+8.  **[Feature] 插件下载回退机制**
+    *   **链接**: [#16947](https://github.com/openai/codex/pull/16947)
+    *   **内容**: 增加了从 `chatgpt.com` 后端下载精选插件的回退逻辑，提高插件加载的成功率。
+
+9.  **[Feature] 远程启动执行批准**
+    *   **链接**: [#16937](https://github.com/openai/codex/pull/16937)
+    *   **内容**: 为远程统一执行环境 增加了启动批准流程，完善了远程开发的安全管控。
+
+10. **[Fix] VS Code 扩展显示问题**
+    *   **链接**: [#14586](https://github.com/openai/codex/issues/14586) (Associated Fix)
+    *   **内容**: 虽然主要是 Issue，但相关排查显示团队正在处理 VS Code 扩展在某些环境下不可见的问题。
+
+---
+
+### 5. 功能需求趋势
+
+*   **远程与桌面端体验对齐**: 随着桌面客户端的发布，用户强烈要求其功能与 VS Code 插件对齐，尤其是 **Remote Development (SSH)** 支持。
+*   **上下文管理自动化**: 关于 Context Window 满了、Compact（压缩）失败、历史记录无法自动清理的抱怨非常多。用户期待更智能的上下文窗口管理，而不是手动 `/new`。
+*   **成本与 Token 可控性**: "Burning tokens" 成为高频词。开发者需要更透明的 Token 消耗机制，特别是后台 Agent 任务不应进行无意义的 API 轮询。
+*   **异步工作流支持**: 包括任务完成声音提示、任务调度 (`/loop`) 等，表明用户逐渐将 Codex 视为长时间运行的 Agent，而非即时聊天工具。
+
+---
+
+### 6. 开发者关注点
+
+*   **Windows 兼容性**: WSL 字符显示、原生 Sandbox 权限问题依然是 Windows 开发者的最大的阻碍。
+*   **Agent 稳定性**: 多个 Issue 提到 Agent 会突然停止执行、回答无关旧问题，或者子 Agent 无法唤醒父 Agent。这表明在多 Agent 协作流程中，状态管理依然不稳定。
+*   **隐私与沙箱**: Linux 用户对 `bwrap` 的权限弹窗极其敏感，企业用户则关注即使在 "Full Access" 模式下的网络白名单/黑名单控制能力。
 
 </details>
 
 <details>
 <summary><strong>Gemini CLI</strong> — <a href="https://github.com/google-gemini/gemini-cli">google-gemini/gemini-cli</a></summary>
 
-# Gemini CLI 社区动态日报 | 2026-04-07
+# Gemini CLI 社区动态日报 (2026-04-07)
 
-## 今日速览
+## 1. 今日速览
+Gemini CLI 今日发布了 `v0.36.0-nightly` 版本，重点优化了终端序列化性能并引入了自动内存配置功能。社区目前对 Agent 模式下的性能瓶颈（如 "Thinking" 状态耗时过长、消耗大量 Token）反响强烈，多个高优先级 Issue 正在处理中。此外，开发团队正在重构核心架构（如引入解耦的 ContextManager）以解决内存泄漏和扩展性问题。
 
-今日社区聚焦于 **v0.36.0-nightly** 版本的终端性能优化与内存自动配置功能，同时 **BeforeModel Hook 模型覆盖失效**（#21847）和 **OAuth 登录后 403 权限错误**（#24734）两大 P1 级问题引发广泛讨论。企业级功能方面，策略引擎的 TOML 规则简化与模式强制要求成为内部开发重点。
+## 2. 版本发布
+*   **v0.36.0-nightly.20260406.15298b28c**
+    *   **Terminal Serializer Optimization**: 优化了终端序列化逻辑，可能旨在提升 UI 渲染性能。
+    *   **Auto configure memory**: 新增自动内存配置功能，可能涉及上下文记忆管理（对应 PR #24474）。
+    *   **Code Quality**: 修复了 catch 块中未使用错误变量的 Lint 问题。
 
----
+## 3. 社区热点 Issues (Top 10)
 
-## 版本发布
+1.  **[OPEN] [#22141](https://github.com/google-gemini/gemini-cli/issues/22141) - Gemini CLI 变得极慢（超过 1 小时）或在代码编辑任务中卡死**
+    *   **关注理由**：目前社区最热门的 Issue（👍 85，评论 106）。用户反馈在执行极小任务（如编辑 1-3 个文件）时 CLI 陷入长时间等待，严重影响开发效率，是当前亟待解决的性能痛点。
 
-### v0.36.0-nightly.20260406.15298b28c
-| 属性 | 内容 |
-|:---|:---|
-| 发布时间 | 2026-04-06 |
-| 核心贡献者 | @jacob314, @alisa-alisa |
+2.  **[OPEN] [#24788](https://github.com/google-gemini/gemini-cli/issues/24788) - 使用 Gemini CLI 构建 Gemini CLI**
+    *   **关注理由**：极具哲学意味的反馈。用户询问 Google 团队是否在“吃自己的狗粮”（用 Gemini CLI 开发自身），暗示目前工具的稳定性可能不足，建议加强内部实战测试。
 
-**更新亮点：**
-- **Terminal Serializer Optimization** ([#24485](https://github.com/google-gemini/gemini-cli/pull/24485)) — 终端序列化性能优化，提升大规模输出渲染效率
-- **Auto configure memory** ([#24474](https://github.com/google-gemini/gemini-cli/pull/24474)) — 内存自动配置，减少手动调优负担
-- **代码质量：** 修复未使用的 catch 块错误变量问题（TypeScript 严格模式合规）
+3.  **[CLOSED] [#21847](https://github.com/google-gemini/gemini-cli/issues/21847) - [Bug] BeforeModel hook 忽略 llm_request.model 覆盖**
+    *   **关注理由**：P1 级别 Bug。Hooks 机制无法覆盖模型配置，这限制了高级用户对底层模型行为的控制能力。相关的修复 PR (#24784) 已在今日提交。
 
----
+4.  **[OPEN] [#12137](https://github.com/google-gemini/gemini-cli/issues/12137) - 登录 URL 被截断**
+    *   **关注理由**：P1 级别长期遗留问题。导致用户无法完成授权登录，属于阻断性 Bug。
 
-## 社区热点 Issues
+5.  **[CLOSED] [#24648](https://github.com/google-gemini/gemini-cli/issues/24648) - 一直显示 "Thinking" 状态**
+    *   **关注理由**：与 #22141 类似，用户反馈 CLI 在提示后毫无响应，仅显示 "Thinking" 长达十分钟以上，反映了对流式反馈机制的缺失或挂起问题。
 
-| # | 标题 | 状态 | 优先级 | 社区热度 | 关键分析 |
-|:---|:---|:---|:---|:---|:---|
-| [#21847](https://github.com/google-gemini/gemini-cli/issues/21847) | BeforeModel hook 忽略 `llm_request.model` 覆盖 | 🔴 OPEN | P1 | 💬 15 | **Hook 系统核心缺陷**：开发者无法在 BeforeModel 钩子中动态切换模型，严重影响多模型工作流。社区已提供最小复现示例，等待官方修复。 |
-| [#24734](https://github.com/google-gemini/gemini-cli/issues/24734) | OAuth 成功但返回 403 PERMISSION_DENIED | 🔴 OPEN | P1 | 💬 4, 👍 3 | **新用户 onboarding 阻断**：Google AI Pro 订阅用户完成 OAuth 后仍被鉴权拒绝，疑似订阅状态同步延迟或 scope 配置问题。 |
-| [#16060](https://github.com/google-gemini/gemini-cli/issues/16060) | 0.23 版本更新后崩溃（冻结无响应） | 🔴 OPEN | P1 | 💬 22, 👍 4 | **长期悬案**：1 月报告至今未解，用户反馈升级后会话恢复时随机冻结，Ctrl+C 无效。高评论数反映广泛影响。 |
-| [#16369](https://github.com/google-gemini/gemini-cli/issues/16369) | MCP 大 blob 负载导致崩溃 | 🟢 CLOSED | P2 | 💬 12 | **MCP 生态关键修复**：arXiv PDF 等大资源加载时崩溃，已关闭但同类资源处理问题仍值得监控。 |
-| [#18302](https://github.com/google-gemini/gemini-cli/issues/18302) | `security.environmentVariableRedaction.allowed` 失效 | 🟢 CLOSED | P1 | 💬 5, 👍 2 | **安全策略漏洞**：全局环境变量白名单被忽略，已快速修复，体现安全响应能力。 |
-| [#20394](https://github.com/google-gemini/gemini-cli/issues/20394) | 图片上传时思维链暴露+无限循环 | 🔴 OPEN | - | 💬 4 | **Agent 行为异常**：内部 `thought` 块泄露至用户界面，且触发无限循环，影响多模态体验。 |
-| [#23264](https://github.com/google-gemini/gemini-cli/issues/23264) | gemini-3-flash-preview 配额耗尽后无法切换模型 | 🔴 OPEN | P2 | 💬 3 | **配额管理缺陷**：显式指定其他模型仍被 flash 配额限制拦截，模型切换逻辑与配额检查耦合过紧。 |
-| [#12446](https://github.com/google-gemini/gemini-cli/issues/12446) | 无法识别 Google AI Pro 订阅，卡在 auto 模型 | 🔴 OPEN | P2 | 💬 3, 👍 3 | **订阅识别老问题**：VS Code 终端内运行无法检测 Code Assist 订阅，与 #24734 形成问题簇。 |
-| [#15051](https://github.com/google-gemini/gemini-cli/issues/15051) | 支持 Alt+V 直接粘贴图片 | 🔴 OPEN | - | 💬 3, 👍 9 | **高票功能请求**：对标 Codex CLI 和 Claude Code 的剪贴板图片直传，👍 数最高，UX 改进明确。 |
-| [#24796](https://github.com/google-gemini/gemini-cli/issues/24796) | macOS 上 PTY 句柄泄漏 | 🔴 OPEN | - | 💬 2 | **资源泄漏**：`lsof` 显示单个进程持有 498 个 PTY 句柄，长期运行稳定性隐患。 |
+6.  **[OPEN] [#24600](https://github.com/google-gemini/gemini-cli/issues/24600) - "Thinking..." 持续数分钟且无意义地消耗 Token**
+    *   **关注理由**：涉及成本问题。用户指出 CLI 在思考过程中不仅慢，而且持续消耗 Token，导致使用成本激增但无产出。
 
----
+7.  **[OPEN] [#24607](https://github.com/google-gemini/gemini-cli/issues/24607) - Google AI Pro 账户出现 429 错误**
+    *   **关注理由**：频繁的速率限制错误导致 Pro 用户无法正常使用服务，涉及账户权限与 API 调用策略的匹配问题。
 
-## 重要 PR 进展
+8.  **[OPEN] [#18750](https://github.com/google-gemini/gemini-cli/issues/18750) - 文档审查：Policy Engine 缺少工具名称参考列表**
+    *   **关注理由**：文档缺陷。Policy Engine 配置需要 `toolName`，但文档未列出可用名称，导致企业用户难以配置安全策略。
 
-| # | 标题 | 状态 | 核心变更 | 影响评估 |
-|:---|:---|:---|:---|:---|
-| [#24784](https://github.com/google-gemini/gemini-cli/pull/24784) | 修复 BeforeModel Hook 模型覆盖端到端传播 | 🔵 OPEN | 补全 #22326 的后续修复，确保 `llm_request.model` 覆盖实际生效 | **阻断 Issue #21847 的关键修复**，Hook 系统完整性提升 |
-| [#24758](https://github.com/google-gemini/gemini-cli/pull/24758) | 策略规则强制要求 `modes` 字段（Breaking） | 🔵 OPEN | 未指定 `modes` 的策略将加载失败，防止默认全模式应用的意外行为 | 企业级安全加固，需关注迁移成本 |
-| [#24752](https://github.com/google-gemini/gemini-cli/pull/24752) | 解耦 ContextManager 与 Sidecar 架构 | 🔵 OPEN | 引入独立的上下文管理模块，修复 #24751 系列问题 | Agent 架构重构，为复杂工作流奠基 |
-| [#24489](https://github.com/google-gemini/gemini-cli/pull/24489) | 统一 Subagent 工具为 `invoke_agent` | 🔵 OPEN | 合并专用子代理工具，策略引擎支持虚拟工具别名 | 简化工具链，提升策略一致性 |
-| [#24793](https://github.com/google-gemini/gemini-cli/pull/24793) | 历史记录选择性主题展开 + 点击展开 | 🔵 OPEN | 鼠标点击单个主题摘要切换，保留全局 Ctrl+O | 交互体验精细化，大屏用户友好 |
-| [#24664](https://github.com/google-gemini/gemini-cli/pull/24664) | ACP 主机输入请求支持 | 🔵 OPEN | ACP 客户端可自主响应 `ask_user` 和 `exit_plan_mode` | 非交互式/自动化场景关键能力 |
-| [#24795](https://github.com/google-gemini/gemini-cli/pull/24795) | 修复 tmux 检测逻辑错误 | 🔵 OPEN | 修正备用缓冲区模式检测，消除误报警告 | tmux 用户体验修复 |
-| [#24457](https://github.com/google-gemini/gemini-cli/pull/24457) | 添加不安全克隆行为评估与修复 | 🔵 OPEN | 针对 #22863 的 Agent 代码生成问题，增加行为评估 | AI 生成代码质量保障 |
-| [#24677](https://github.com/google-gemini/gemini-cli/pull/24677) | 紧凑模式工具输出格式化优化 | 🔵 OPEN | 搜索/读取工具单行化，列表工具措辞统一 | 信息密度与可读性平衡 |
-| [#24794](https://github.com/google-gemini/gemini-cli/pull/24794) | 隔离并发浏览器代理实例 | 🔵 OPEN | 修复 `browser_agent` 并行调用时的页面导航冲突 | 多任务浏览器自动化稳定性 |
+9.  **[OPEN] [#24589](https://github.com/google-gemini/gemini-cli/issues/24589) - [BUG] 达到堆限制 - JavaScript 内存溢出**
+    *   **关注理由**：严重的稳定性问题。Agent 运行约 38 分钟后因 OOM 崩溃，表明存在内存泄漏或上下文管理失控。
 
----
+10. **[OPEN] [#22745](https://github.com/google-gemini/gemini-cli/issues/22745) - 评估 AST 感知文件读取/搜索的影响**
+    *   **关注理由**：功能增强探索。讨论引入 AST（抽象语法树）感知工具，以减少 Token 噪音并提高代码修改的精确度，这是提升 Agent 智能化的重要方向。
 
-## 功能需求趋势
+## 4. 重要 PR 进展 (Top 10)
 
-基于 50 条活跃 Issue 分析，社区关注焦点呈现以下梯度：
+1.  **[OPEN] [#24784](https://github.com/google-gemini/gemini-cli/pull/24784) - fix(core): 端到端传播 BeforeModel hook 的模型覆盖**
+    *   **内容**：修复了 Issue #21847，确保用户在 Hook 中指定的模型配置能真正传递到 API 调用层。
 
-```
-第一梯队：认证与订阅体系（4 个相关 Issue）
-├── Google AI Pro / Code Assist 订阅识别失败
-├── OAuth 流程与权限边界
-└── 模型配额与切换策略
+2.  **[OPEN] [#24752](https://github.com/google-gemini/gemini-cli/pull/24752) - feat(core): 引入解耦的 ContextManager 和 Sidecar 架构**
+    *   **内容**：核心架构重构，旨在解决 Issue #24751（可能是上下文或内存相关的问题），引入 Sidecar 模式以隔离进程或管理状态。
 
-第二梯队：Agent 行为与可靠性（5 个相关 Issue）
-├── 思维链/内部状态泄露
-├── 无限循环与冻结
-├── 不安全代码生成模式
-└── 子代理与审批模式协同
+3.  **[OPEN] [#24677](https://github.com/google-gemini/gemini-cli/pull/24677) - feat(cli): 优化紧凑模式下的工具输出格式**
+    *   **内容**：针对 Search 和 Read 工具进行输出精简，移除多行 Payload，旨在提升可读性和信息密度。
 
-第三梯队：多模态与交互体验（3 个相关 Issue）
-├── 剪贴板图片直传（高票）
-├── 终端图像渲染优化
-└── SSH/远程会话兼容性
+4.  **[OPEN] [#24489](https://github.com/google-gemini/gemini-cli/pull/24489) - feat(core): 将子代理工具重构为统一的 invoke_subagent**
+    *   **内容**：将分散的子代理工具统一为单一的 `invoke_agent`，简化了代理委派机制，是迈向 Agent 编排标准化的重要一步。
 
-第四梯队：企业级治理（4 个相关 Issue）
-├── 策略引擎 TOML 简化
-├── 环境变量安全管控
-└── MCP 生态集成稳定性
-```
+5.  **[OPEN] [#24782](https://github.com/google-gemini/gemini-cli/pull/24782) - feat: 为 shell 命令添加 allowEnv 策略选项**
+    *   **内容**：允许在策略引擎中配置带环境变量的 Shell 命令（如 `PAGER=cat git commit`），增强了自动化脚本的灵活性。
 
----
+6.  **[OPEN] [#23705](https://github.com/google-gemini/gemini-cli/pull/23705) - fix(core): 保留 Shell 执行中的尾随换行符**
+    *   **内容**：修复了 Shell 命令执行时截断换行符导致的 Heredocs 等多行脚本失效的问题。
 
-## 开发者关注点
+7.  **[OPEN] [#24566](https://github.com/google-gemini/gemini-cli/pull/24566) - fix(cli): 确保在非交互环境中正确输出 skills list**
+    *   **内容**：修复了在 Python 脚本调用等非交互环境下 `gemini skills list` 无输出的问题。
 
-### 🔴 高频痛点
+8.  **[OPEN] [#24763](https://github.com/google-gemini/gemini-cli/pull/24763) - fix(core): 确保所有执行路径中沙箱清理的稳健性**
+    *   **内容**：解决内存泄漏问题，确保 Sidecar 进程和临时文件在任何情况下（成功/失败/异常）都能被清理。
 
-| 痛点 | 典型表现 | 关联 Issue |
-|:---|:---|:---|
-| **订阅状态识别不可靠** | Pro 用户被降级到 auto 模型，或 OAuth 后 403 | #12446, #24734 |
-| **Hook 系统半成熟** | BeforeModel 覆盖不生效，扩展点能力受限 | #21847, #24784 |
-| **配额与模型切换耦合** | 单模型配额耗尽阻塞全功能，无法优雅降级 | #23264 |
-| **Agent 失控行为** | 无限循环、思维泄露、冻结无响应 | #20394, #16060, #24749 |
+9.  **[OPEN] [#24630](https://github.com/google-gemini/gemini-cli/pull/24630) - feat(cli): 在 AskUser 多行回答中启用鼠标点击定位光标**
+    *   **内容**：UX 改进，修复了在多行输入框中无法使用鼠标点击移动光标的问题。
 
-### 🟡 期待改进
+10. **[MERGED] [PR #24474](https://github.com/google-gemini/gemini-cli/pull/24474) - Auto configure memory**
+    *   **内容**：今日版本更新包含的功能，自动配置内存机制，可能与优化上下文加载有关。
 
-1. **IDE 集成深化**：VS Code 终端内订阅识别问题持续数月，需优先解决
-2. **剪贴板工作流**：Alt+V 图片粘贴（#15051）是 Codex/Claude 已验证的 UX 标准
-3. **策略即代码**：TOML 规则简化（#24798）反映企业用户对可维护性的诉求
-4. **资源管理**：PTY 泄漏（#24796）、MCP 大负载（#16369）等稳定性细节
+## 5. 功能需求趋势
 
-### 💡 社区信号
+*   **性能与稳定性（首要趋势）**：社区对 Agent 模式下的“卡顿”、“思考过长”及“OOM 崩溃”容忍度降至冰点。用户强烈要求优化主循环性能，停止无意义的 Token 消耗。
+*   **精细化的权限与策略控制**：企业用户和高级开发者需要更细粒度的控制，例如环境变量控制 (`allowEnv`)、Hook 中的模型覆盖能力、以及 AST 级别的代码感知能力。
+*   **架构解耦**：开发团队正在推动 ContextManager 和 Extension Plans 的解耦，试图解决当前的内存泄漏和扩展性限制，这表明 CLI 正处于从单体向模块化架构转型的关键期。
 
-- **企业用户**：关注策略引擎的明确性与安全默认值（`modes` 强制化）
-- **自动化场景**：ACP 主机输入（#24664）、非交互式输出（#24566）需求上升
-- **多模态开发者**：图片上传链路的问题密度高于文本交互
+## 6. 开发者关注点
 
----
-
-*数据来源：google-gemini/gemini-cli | 统计周期：2026-04-06 至 2026-04-07*
+*   **Token 消耗透明度**：开发者对“隐形”消耗 Token 的行为（如长时间的 Thinking 状态）非常敏感，要求在 UI 层面提供更明确的反馈或取消机制。
+*   **跨平台兼容性**：Windows/BSD 环境下的执行问题（如 Shebang 参数 `-S` 不兼容 #24756）和 SSH 环境下的显示乱码（#24202）是持续存在的痛点。
+*   **Hook 机制的可靠性**：开发者尝试通过 Hook 深度定制 CLI 行为，但目前的 Bug（如 Model Override 失效）阻碍了这一高级用例的落地。
 
 </details>
 
 <details>
 <summary><strong>GitHub Copilot CLI</strong> — <a href="https://github.com/github/copilot-cli">github/copilot-cli</a></summary>
 
-# GitHub Copilot CLI 社区动态日报 | 2026-04-07
+你好！我是 AI 开发工具技术分析师。根据您提供的 GitHub 数据，以下是 **2026-04-07** 的 GitHub Copilot CLI 社区动态日报。
 
 ---
 
-## 1. 今日速览
+# 📅 GitHub Copilot CLI 社区动态日报 (2026-04-07)
 
-GitHub 于昨日密集发布 **v1.0.19** 正式版与预发布版，重点完善 MCP（Model Context Protocol）持久化能力与可观测性；社区 Issues 迎来大规模清理，50 条 Issue 中 48 条已关闭，显示维护团队正加速收尾 2025 年末积压问题。
-
----
-
-## 2. 版本发布
-
-### v1.0.19（正式版）| 2026-04-06
-- **MCP 状态持久化**：`/mcp enable` 与 `/mcp disable` 现在跨会话保持
-- **OpenTelemetry 增强**：子 Agent Span 改用 `INTERNAL` 类型；聊天 Span 新增 `github.copilot.time_to_first_chunk` 属性（仅流式传输）
-- **插件修复**：缺失执行权限的插件钩子脚本现可正确运行
-
-### v1.0.19-0（预发布版）
-- **IDE 连接优化**：当会话已被其他客户端占用时，跳过自动连接
-- **交互改进**：斜杠命令时间线现显示命令名称（如 "Review"、"Plan"）
-- **macOS 修复**：插件钩子脚本权限问题在 macOS 上彻底解决
+## 1. 🏁 今日速览
+今日 GitHub Copilot CLI 发布了 **v1.0.19** 正式版，重点增强了 **MCP 配置的持久化能力**，并修复了 macOS 上插件钩子脚本的执行权限问题。社区讨论焦点集中在模型选择器为空的网络故障、MCP 服务器识别失败以及 CLI 会话挂起等稳定性问题上。
 
 ---
 
-## 3. 社区热点 Issues
+## 2. 🚀 版本发布
+**版本号**: v1.0.19 (发布于 2026-04-06)
 
-| 优先级 | Issue | 状态 | 核心看点 |
-|:---|:---|:---|:---|
-| 🔴 高 | [#679](https://github.com/github/copilot-cli/issues/679) 本地 MCP 服务器检测失效 | **CLOSED** | 从 v0.0.359 开始的回归问题，18 条评论反映 MCP 生态早期稳定性挑战；社区呼吁增加状态诊断命令 |
-| 🔴 高 | [#713](https://github.com/github/copilot-cli/issues/713) 自定义指令未自动加载 | **CLOSED** | 文档与实际行为不符，18 个 👍 显示配置系统一致性是高频痛点 |
-| 🟡 中 | [#566](https://github.com/github/copilot-cli/issues/566) 自动更新机制缺失 | **CLOSED** | 10 个 👍，开发者厌倦手动检查更新，期望内建更新器或启动提示 |
-| 🟡 中 | [#475](https://github.com/github/copilot-cli/issues/475) WSL 终端支持 | **CLOSED** | 微软产品不支持自家 WSL 的讽刺，8 条评论 + Vim 模式诉求 |
-| 🟡 中 | [#599](https://github.com/github/copilot-cli/issues/599) 企业 MCP 策略管控 | **CLOSED** | 企业级部署 blocker，需组织级 MCP 白名单强制策略 |
-| 🟡 中 | [#714](https://github.com/github/copilot-cli/issues/714) 会话历史搜索 | **CLOSED** | 9 个 👍，JSONL 存储但无检索能力，知识复用场景受阻 |
-| 🟡 中 | [#547](https://github.com/github/copilot-cli/issues/547) / [#562](https://github.com/github/copilot-cli/issues/562) 主题对比度问题 | **CLOSED** | 灰底白字可读性灾难，影响 Mac 用户，视觉无障碍基础体验 |
-| 🟢 低 | [#688](https://github.com/github/copilot-cli/issues/688) 读取用户 Shell 配置 | **CLOSED** | 5 个 👍，Bash 工具忽略 `~/.bashrc` 导致别名/函数失效，安全与便利的平衡 |
-| 🟢 低 | [#528](https://github.com/github/copilot-cli/issues/528) 重复文件写入确认 | **CLOSED** | 同一 diff 弹窗两次，交互摩擦虽小但高频 |
-| 🟢 低 | [#844](https://github.com/github/copilot-cli/issues/844) 单请求临时切换模型 | **OPEN** | 避免全局切换模型，Claude 4.5 日常 + Opus 按需的灵活工作流诉求 |
+本次更新主要针对用户体验和系统稳定性进行了优化：
+*   **配置持久化**: `/mcp enable` 和 `/mcp disable` 指令现在可以在不同会话间保持状态，无需重复配置。
+*   **可观测性增强**:
+    *   引入 OpenTelemetry 监控，Subagent spans 使用 `INTERNAL` 类型。
+    *   Chat spans 新增 `github.copilot.time_to_first_chunk` 属性（仅流式模式），用于性能分析。
+*   **上下文优化**: Slash command（斜杠命令）的时间线条目现在包含具体的命令名称（如 "Review", "Plan"），提供更清晰的上下文。
+*   **Bug 修复**:
+    *   修复了 macOS 上插件钩子脚本因缺少执行权限而无法运行的问题。
+    *   优化了当会话被其他客户端占用时的 IDE 自动连接逻辑。
 
 ---
 
-## 4. 重要 PR 进展
+## 3. 🔥 社区热点 Issues (Top 10)
 
-> **今日无新增 PR 更新**（0 条）
+以下筛选了今日评论最多且最具代表性的 Issues，反映了当前用户的核心痛点：
 
-维护团队精力集中于 Issue 清理与版本发布，代码合并活动暂停。
+1.  **[#1007] 模型选择器显示为空**
+    *   **标签**: `area:models` | `CLOSED`
+    *   **解读**: 用户在 CLI 界面中无法看到任何可用的模型选项。这是最基础的功能阻断问题，可能与后端服务连接或账户权限同步有关。
+    *   **链接**: [github/copilot-cli Issue #1007](https://github.com/copilot-cli Issue #1007)
+
+2.  **[#753] 加载模型列表失败：网络错误**
+    *   **标签**: `area:networking`, `area:models` | `CLOSED`
+    *   **解读**: 用户遇到 `TypeError: fetch failed` 错误，导致无法获取模型列表。这表明 CLI 在特定网络环境下的连接稳定性仍有待提高。
+    *   **链接**: [github/copilot-cli Issue #753](https://github.com/copilot-cli Issue #753)
+
+3.  **[#266] 无法运行终端命令**
+    *   **解读**: Agent 尝试运行命令（如 `eslint .`）时因 `MODULE_NOT_FOUND` 退出。这反映了环境变量或上下文隔离导致 Agent 无法正确调用用户本地工具的问题。
+    *   **链接**: [github/copilot-cli Issue #266](https://github.com/copilot-cli Issue #266)
+
+4.  **[#424] Copilot 突然无法识别 MCP 服务器**
+    *   **标签**: `area:mcp` | `CLOSED`
+    *   **解读**: MCP (Model Context Protocol) 集成的不稳定问题。用户反馈在项目中配置的 MCP 服务器偶尔会失效，影响自定义工具链的调用。
+    *   **链接**: [github/copilot-cli Issue #424](https://github.com/copilot-cli Issue #424)
+
+5.  **[#405] 任务完成后 CLI 会话卡死**
+    *   **解读**: 任务虽然成功执行，但 CLI 不返回控制权给用户。这种"假死"状态严重影响了自动化脚本的可靠性。
+    *   **链接**: [github/copilot-cli Issue #405](https://github.com/copilot-cli Issue #405)
+
+6.  **[#288] 请求支持项目级/文件夹级 MCP 配置**
+    *   **标签**: `area:configuration`, `area:mcp` | `CLOSED`
+    *   **解读**: 这是一个高需求的功能请求。目前 MCP 配置多为全局，开发者希望能像 `.gitignore` 或 `.npmrc` 一样，为不同项目配置独立的 MCP 服务器（例如特定的数据库连接）。
+    *   **链接**: [github/copilot-cli Issue #288](https://github.com/copilot-cli Issue #288)
+
+7.  **[#475] 功能请求：支持 WSL 终端环境**
+    *   **标签**: `area:platform-windows` | `CLOSED`
+    *   **解读**: Windows 开发者强烈呼吁原生支持 WSL 环境，目前在该环境下使用体验不佳或功能受限。
+    *   **链接**: [github/copilot-cli Issue #475](https://github.com/copilot-cli Issue #475)
+
+8.  **[#307] 权限系统综合性改进提案**
+    *   **解读**: 该 Issue 汇总了 16+ 个相关问题，指出当前权限检测（如路径检测错误、文档缺失）存在系统性缺陷，并提出了详细的改进方案。
+    *   **链接**: [github/copilot-cli Issue #307](https://github.com/copilot-cli Issue #307)
+
+9.  **[#421] 高级请求失败：未发送任何数据块**
+    *   **解读**: 执行某些请求时直接报错 `request ended without sending any chunks`，导致工作流中断，可能与网络超时或服务端异常有关。
+    *   **链接**: [github/copilot-cli Issue #421](https://github.com/copilot-cli Issue #421)
+
+10. **[#891] 为什么相同模型下 Copilot 比 Claude Code "笨"？**
+    *   **标签**: `area:models` | `OPEN`
+    *   **解读**: 一个值得注意的开放性讨论。用户对比了同样使用 Opus 4.5 模型的 Claude Code 和 Copilot CLI，认为后者表现较差。这引发了关于系统提示词和工具链实现差异的讨论。
+    *   **链接**: [github/copilot-cli Issue #891](https://github.com/copilot-cli Issue #891)
 
 ---
 
-## 5. 功能需求趋势
-
-基于 50 条 Issues 分析，社区关注呈现四大方向：
-
-| 趋势方向 | 代表 Issue | 热度指标 |
-|:---|:---|:---|
-| **MCP 生态成熟化** | #679, #599, #693 | 🔥🔥🔥 服务器发现、企业策略、工具暴露机制均在快速迭代 |
-| **配置系统统一** | #713, #670, #688 | 🔥🔥🔥 指令加载顺序、全局/本地配置分层、Shell 环境继承 |
-| **终端原生体验** | #475, #540, #660, #547 | 🔥🔥 WSL 支持、键位绑定、多行输入、主题可访问性 |
-| **企业/安全场景** | #599, #707, #688 | 🔥🔥 策略管控、命令跳过（非终止）、安全包装器兼容 |
+## 4. 🛠️ 重要 PR 进展
+*过去 24 小时内无公开的 Pull Requests 更新。*
+*(注：这通常意味着开发团队可能正在内部处理积压工作，或者今日无合并到主分支的代码变更。)*
 
 ---
 
-## 6. 开发者关注点
+## 5. 📈 功能需求趋势
+通过对 Issues 的分析，我们发现以下三个技术方向是社区目前的关注焦点：
 
-### 高频痛点
-1. **"配置即代码"的确定性** — 指令文件加载顺序、MCP 启用状态等行为需与文档严格一致（#713, #679）
-2. **跨平台终端一致性** — WSL、Linux 键位、macOS 权限等边缘场景覆盖不足（#475, #540, #659）
-3. **长会话稳定性** — 模型挂起、流中断、最后一段截断等问题影响深度工作流（#548, #574, #641）
-
-### 未满足期待
-- **YOLO 模式**（#458）：完全自动执行的工作流，社区用梗表达强烈需求
-- **模型灵活调度**（#844, #684）：单 Agent 多模型、单请求临时切换，避免全局配置切换成本
-- **会话可检索性**（#714）：历史会话的知识沉淀与复用
+1.  **MCP (Model Context Protocol) 深度集成与配置**
+    *   社区不仅要求修复 Bug，更强烈要求**配置的灵活性**。从全局配置转向项目级配置（`.copilotrc` 或 `mcp.json`）是明显趋势。
+2.  **多模态与模型可控性**
+    *   开发者对于模型选择非常敏感（Issue #1007, #891）。用户希望能够自由切换模型，并且对模型的实际表现（推理能力、响应速度）有高要求，甚至开始横向对比竞品。
+3.  **非交互式与自动化场景支持**
+    *   关于 CI/CD 集成、非 TTY 环境运行、Session ID 管理（Issue #442）的请求增多，表明开发者正试图将 Copilot CLI 纳入自动化工作流中，而不仅仅是作为 REPL 工具使用。
 
 ---
 
-*日报基于 github.com/github/copilot-cli 公开数据生成*
+## 6. 🧐 开发者关注点与痛点
+*   **稳定性焦虑**: "Session Hangs"（会话挂起）和 "Network Fetch Failed"（网络获取失败）是高频词汇。开发者对工具的信任度受由于不稳定性影响较大。
+*   **环境一致性**: 用户期望 CLI 能像本地 Shell 一样无缝运行命令（Issue #266），目前的沙箱或环境隔离机制似乎阻碍了这一体验。
+*   **跨平台体验**: Windows (WSL) 和 macOS 的特定平台 Bug 依然存在，跨平台的一致性体验是存量用户留存的关键。
+
+---
+*数据来源: github.com/github/copilot-cli | 分析师: AI Technical Analyst*
 
 </details>
 
 <details>
 <summary><strong>Kimi Code CLI</strong> — <a href="https://github.com/MoonshotAI/kimi-cli">MoonshotAI/kimi-cli</a></summary>
 
-# Kimi Code CLI 社区动态日报 | 2026-04-07
+这里是 **2026-04-07 Kimi Code CLI 社区动态日报**。
 
----
+### 1. 今日速览
+今日社区最重磅的动态是出现了将 Kimi CLI 从 Python **完全重写为 Bun + TypeScript + React Ink** 的 PR，引发了关于技术栈选型的讨论。此外，Bug 修复主要集中在提升稳定性上，包括解决 MCP 服务连接失败导致的死锁问题和 Chat Completions API 的兼容性错误。Windows 平台的图片粘贴体验和上下文压缩成本仍是用户关注的功能痛点。
 
-## 1. 今日速览
+### 2. 版本发布
+*   **无新版本发布**：过去 24 小时内官方无新的 Release 发布。
 
-今日社区活跃度平稳，无新版本发布。核心关注点集中在 **MCP 生态稳定性修复** 与 **架构重构争议**——he-yufeng 连续提交两个关键修复 PR 解决 MCP 连接失败和工具消息格式问题；同时，一份将代码库从 Python 全面迁移至 Bun + TypeScript + React Ink 的重构 PR 引发技术路线讨论。Windows 平台粘贴体验与 Linux 终端主题适配问题持续获得用户反馈。
+### 3. 社区热点 Issues
+我们从近期的 Issue 中筛选了 5 个最值得关注的议题（注：今日活跃 Issue 总数为 5 条）：
 
----
+1.  **[Windows] Ctrl+V 无法粘贴图片，建议添加 Alt+V 备选 (#781)**
+    *   **重要性**：影响 Windows 用户的典型 UX 问题。由于 Windows Terminal 拦截了 `Ctrl+V`，导致无法向 CLI 传递图片数据。
+    *   **社区反应**：用户提出了具体的备选方案（`Alt+V`），目前开放讨论中。
+    *   **链接**：[MoonshotAI/kimi-cli Issue #781](https://github.com/MoonshotAI/kimi-cli/issues/781)
 
-## 2. 版本发布
+2.  **[enhancement] 增量式会话记忆实现零成本上下文压缩 (#1691)**
+    *   **重要性**：涉及核心架构优化。建议引入后台周期性提取机制，替代目前昂贵的 LLM 总结 (`/compact`) 调用，旨在解决长会话中的成本和超时问题。
+    *   **链接**：[MoonshotAI/kimi-cli Issue #1691](https://github.com/MoonshotAI/kimi-cli/issues/1691)
 
-**无新版本发布**（最新版本仍为 v1.30.0）
+3.  **Background multi-agent runs 导致 CLI 卡死及超时 (#1768)**
+    *   **重要性**：严重稳定性 Bug。多 Agent 后台运行时可能阻塞事件循环，导致 Provider 超时和前端无响应。
+    *   **链接**：[MoonshotAI/kimi-cli Issue #1768](https://github.com/MoonshotAI/kimi-cli/issues/1768)
 
----
+4.  **浅色终端下的代码高亮可读性差 (#1770)**
+    *   **重要性**：UI/UX 细节。CLI 在浅色主题终端（如 GNOME Terminal）下默认使用深色代码主题，导致对比度极低，影响 Linux 用户体验。
+    *   **链接**：[MoonshotAI/kimi-cli Issue #1770](https://github.com/MoonshotAI/kimi-cli/issues/1770)
 
-## 3. 社区热点 Issues
+5.  **[CLOSED] 用户误报：鼠标点击导致中断 (#1765)**
+    *   **重要性**：反映了终端交互的一个常见误区（鼠标点击可能被终端拦截发送中断信号），已关闭。
+    *   **链接**：[MoonshotAI/kimi-cli Issue #1765](https://github.com/MoonshotAI/kimi-cli/issues/1765)
 
-| # | 标题 | 状态 | 关键度 | 分析 |
-|---|------|------|--------|------|
-| [#781](https://github.com/MoonshotAI/kimi-cli/issues/781) | Windows Terminal 中 Ctrl+V 无法粘贴图片，建议 Alt+V 备选 | 🔵 OPEN | ⭐⭐⭐⭐ | **跨平台体验痛点**。Windows Terminal 对 Ctrl+V 的系统级拦截导致核心图片粘贴功能失效，影响 Windows 用户主流工作流。社区已有 2 个 👍，需官方提供平台特定的快捷键回退方案。 |
-| [#1691](https://github.com/MoonshotAI/kimi-cli/issues/1691) | 增量式会话记忆：零成本上下文压缩 | 🔵 OPEN | ⭐⭐⭐⭐⭐ | **架构级优化提案**。针对 `/compact` 高成本、高失败率问题，提出后台增量构建结构化记忆文件的创新方案，可将压缩成本降至零。代表社区对长会话成本控制的深层诉求。 |
-| [#1765](https://github.com/MoonshotAI/kimi-cli/issues/1765) | 终端点击误触发"用户中断" | 🟣 CLOSED | ⭐⭐⭐ | 用户误报的交互困惑案例，反映终端焦点管理的心智模型问题。已关闭但提示需优化中断提示的准确性。 |
-| [#1770](https://github.com/MoonshotAI/kimi-cli/issues/1770) | GNOME Terminal 暗色主题与浅色配色冲突致代码难读 | 🔵 OPEN | ⭐⭐⭐⭐ | **可访问性/兼容性缺陷**。Linux 桌面环境主题检测失效，强制暗色主题与系统浅色方案叠加产生对比度灾难。需实现系统主题自适应或强制覆盖机制。 |
-| [#1768](https://github.com/MoonshotAI/kimi-cli/issues/1768) | 后台多 Agent 运行导致 CLI 卡死并级联超时 | 🔵 OPEN | ⭐⭐⭐⭐⭐ | **稳定性核心问题**。MCP 运行时错误未捕获导致工作进程崩溃，前端永久挂起。直接影响多 Agent 协作可靠性，与当日两个修复 PR 直接相关。 |
+### 4. 重要 PR 进展
+今日共有 5 个活跃 PR，其中包含一个重大架构重构提案：
 
-> 注：实际 5 条 Issues 已全部列出，无更多可筛选。
+1.  **[重构] refactor: rewrite from Python to Bun + TypeScript + React Ink (#1707)**
+    *   **内容**：社区开发者提议将 Kimi CLI 从 Python 完全重写为基于 Bun + TypeScript 的技术栈，使用 React Ink 构建原生终端 UI。包含 166 个 TS 文件和完整的测试覆盖。
+    *   **状态**：Open
+    *   **链接**：[MoonshotAI/kimi-cli PR #1707](https://github.com/MoonshotAI/kimi-cli/pull/1707)
 
----
+2.  **[修复] fix: graceful degradation when MCP server fails to connect (#1769)**
+    *   **内容**：修复了当 MCP Server 启动失败（如端口冲突）时，未捕获的异常导致 Worker 崩溃、前端卡死在 "thinking" 状态的问题。
+    *   **状态**：Open
+    *   **链接**：[MoonshotAI/kimi-cli PR #1769](https://github.com/MoonshotAI/kimi-cli/pull/1769)
 
-## 4. 重要 PR 进展
+3.  **[修复] fix: always stringify tool message content in Chat Completions provider (#1771)**
+    *   **内容**：修复了对 OpenAI Chat Completions API 的兼容性问题。确保 `role: "tool"` 的 `content` 始终为字符串，防止因包含多部分内容导致的 400 错误。
+    *   **状态**：Open
+    *   **链接**：[MoonshotAI/kimi-cli PR #1771](https://github.com/MoonshotAI/kimi-cli/pull/1771)
 
-| # | 标题 | 状态 | 类型 | 技术要点 |
-|---|------|------|------|---------|
-| [#1771](https://github.com/MoonshotAI/kimi-cli/pull/1771) | fix: 强制将工具消息内容字符串化 | 🔵 OPEN | 🐛 Bugfix | **修复 OpenAI API 兼容性**。解决多 `ContentPart` 工具结果保持数组格式导致的 400 错误，确保 `role: "tool"` 消息的 `content` 始终为字符串。关联 #1762。 |
-| [#1769](https://github.com/MoonshotAI/kimi-cli/pull/1769) | fix: MCP 服务器连接失败时优雅降级 | 🔵 OPEN | 🐛 Bugfix | **稳定性关键修复**。捕获 `MCPRuntimeError` 防止工作进程崩溃，避免前端永久"thinking"状态。解决端口冲突等场景下的级联故障。 |
-| [#1709](https://github.com/MoonshotAI/kimi-cli/pull/1709) | fix(diff): 行内高亮偏移与制表符展开文本对齐 | 🔵 OPEN | 🐛 Bugfix | 制表符处理导致的 diff 可视化错位问题，影响代码审查准确性。 |
-| [#1707](https://github.com/MoonshotAI/kimi-cli/pull/1707) | refactor: Python → Bun + TypeScript + React Ink 全面重构 | 🔵 OPEN | 🔧 Refactor | **争议性技术路线提案**。32k 行 TS 代码、211 文件重写，声称解决 Python 生态的"彻底失败"。需评估维护成本、社区贡献门槛及运行时性能收益。 |
+4.  **[功能] feat(yolo-mode): add YOLO support to web interface (#1767)**
+    *   **内容**：将 "YOLO Mode"（自动批准操作模式）扩展支持到 Web 界面，允许用户在 Web UI 中一键开启自动执行。
+    *   **状态**：Open
+    *   **链接**：[MoonshotAI/kimi-cli PR #1767](https://github.com/MoonshotAI/kimi-cli/pull/1767)
 
-> 注：实际 4 条 PRs 已全部列出。
+5.  **[修复] fix(diff): align inline highlight offsets with tab-expanded text (#1709)**
+    *   **内容**：修复了代码差异对比中的高亮偏移问题，解决了 Tab 字符展开后行内高亮位置不准确的问题。
+    *   **状态**：Open
+    *   **链接**：[MoonshotAI/kimi-cli PR #1709](https://github.com/MoonshotAI/kimi-cli/pull/1709)
 
----
+### 5. 功能需求趋势
+*   **性能与成本优化**：用户对长上下文带来的 Token 成本非常敏感，开始探索无需 LLM 调用的“增量式记忆”方案（Issue #1691）。
+*   **跨平台体验一致性**：Windows 用户对图片粘贴、快捷键冲突（Issue #781）以及 Linux 用户对主题适配（Issue #1770）的关注，表明社区希望 CLI 在不同操作系统终端下均能有原生的、流畅的体验。
+*   **Web UI 功能对齐**：开发者正在积极填补 Web UI 与 CLI TUI 之间的功能鸿沟，如 YOLO Mode 的 Web 端支持（PR #1767）。
 
-## 5. 功能需求趋势
-
-基于近期 Issues 聚类分析，社区关注方向如下：
-
-| 趋势方向 | 热度 | 典型诉求 |
-|---------|------|---------|
-| **MCP 生态稳定性** | 🔥🔥🔥🔥🔥 | 连接失败容错、超时处理、多 Agent 资源隔离 |
-| **长会话成本控制** | 🔥🔥🔥🔥🔥 | 增量记忆、零成本压缩、上下文窗口智能管理 |
-| **跨平台终端适配** | 🔥🔥🔥🔥 | Windows 快捷键冲突、Linux 主题检测、多终端兼容性 |
-| **架构现代化争议** | 🔥🔥🔥 | 运行性能 vs 开发效率、TypeScript 迁移可行性 |
-| **交互体验精细化** | 🔥🔥🔥 | 误触防护、焦点管理、视觉可访问性 |
-
----
-
-## 6. 开发者关注点
-
-### 🔴 高频痛点
-1. **MCP 生产级可靠性** — 连接失败、端口冲突、级联超时成为阻断性体验问题，he-yufeng 的双修复 PR 显示官方已紧急响应
-2. **Windows 二等公民体验** — 快捷键拦截、粘贴功能受限，平台适配优先级待提升
-
-### 🟡 深层诉求
-3. **成本敏感型架构** — #1691 的增量记忆提案反映长会话场景下 Token 成本焦虑，需官方给出路线图回应
-4. **技术栈未来走向** — #1707 的重构 PR 虽激进，但暴露社区对 Python 运行时性能/分发体验的不满，需维护者明确技术决策透明度
-
-### 💡 建议跟进
-- 关注 #1771、#1769 合并进度，评估 v1.30.1 热修复可能性
-- 追踪 #1707 社区讨论，技术路线选择需官方声明
-
----
-
-*日报生成时间：2026-04-07 | 数据来源：MoonshotAI/kimi-cli*
+### 6. 开发者关注点
+*   **技术栈争议**：Python vs TypeScript/Bun 的重构提案（PR #1707）可能预示着部分开发者对当前 Python 版本的性能或生态（如终端 UI 库）存在不满，倾向于更现代的前端技术栈来构建 CLI。
+*   **稳定性痛点**：MCP 服务连接失败导致的全局卡死（Issue #1768, PR #1769）是目前影响使用体验的高频 Bug，显示了对后台 Agent 任务调度机制的健壮性需求。
 
 </details>
 
 <details>
 <summary><strong>OpenCode</strong> — <a href="https://github.com/anomalyco/opencode">anomalyco/opencode</a></summary>
 
-# OpenCode 社区动态日报 | 2026-04-07
-
-## 今日速览
-
-今日 OpenCode 连发 **v1.3.16** 和 **v1.3.17** 两个版本，重点修复 Cloudflare Workers AI 配置体验、Azure 模型选项支持等核心问题。社区 Issues 活跃度激增，**50 条更新**中 Copilot + Opus 4.6 的预填充消息兼容性故障引发最多讨论（52 评论）。PR 侧聚焦 TUI 交互优化与 AI SDK 依赖升级，移动端适配和插件生命周期钩子成为新开发方向。
-
----
-
-## 版本发布
-
-### v1.3.17（最新）
-| 模块 | 更新内容 |
-|:---|:---|
-| **Core** | Cloudflare Workers AI 和 AI Gateway 现主动提示缺失的账户信息，配置错误提示更清晰（[@mchenco](https://github.com/mchenco)） |
-| **TUI** | 恢复 Windows 终端默认 kitty 键盘处理，避免回退方案导致的输入问题 |
-
-### v1.3.16
-| 模块 | 更新内容 |
-|:---|:---|
-| **Core** | Azure 模型选项支持 chat 和 responses 双路径（[@meruiden](https://github.com/meruiden)）；ACP 暴露会话模型和模式配置（[@georgeharker](https://github.com/georgeharker)）；read 工具输出前添加分隔空行；修复 reasoning token 统计 |
-| **TUI** | - |
-
----
-
-## 社区热点 Issues（10 条）
-
-| # | 标题 | 状态 | 评论/👍 | 核心看点 |
-|:---|:---|:---|:---|:---|
-| [#13768](https://github.com/anomalyco/opencode/issues/13768) | Copilot + Opus 4.6 不支持 assistant message prefill | 🔴 OPEN | 52 / 21 | **最高热度**。GitHub Copilot 集成 Opus 4.6 时频繁中断，错误提示"对话必须以用户消息结尾"。影响主流模型组合稳定性，社区急需官方适配方案 |
-| [#20650](https://github.com/anomalyco/opencode/issues/20650) | Kimi k2.5 工具调用 JSON 解析失败 | 🔴 OPEN | 37 / 4 | 国产大模型 Kimi k2.5 工具调用时出现 `Unterminated string` 解析错误，模型尝试调用不存在的 `invalid` 工具。反映非 OpenAI 系模型的工具链兼容性挑战 |
-| [#13984](https://github.com/anomalyco/opencode/issues/13984) | CLI 无法复制粘贴 | 🔴 OPEN | 20 / 8 | 长期存在的体验问题：提示"已复制到剪贴板"但实际粘贴为空。跨平台剪贴板集成仍是痛点 |
-| [#21164](https://github.com/anomalyco/opencode/issues/21164) | Qwen 3.6 plus 免费版请求速率限制 | 🔴 OPEN | 17 / 6 | 阿里云免费模型触发"请求速率增长过快"错误，用户呼吁增加可配置请求节流参数 |
-| [#16499](https://github.com/anomalyco/opencode/issues/16499) | 请求 GPT-5.4 fast 模式 (/fast) 模型控制 | 🔴 OPEN | 16 / 62 | **高赞需求**。GPT-5.4 新增的 fast 模式未在 TUI 暴露，社区强烈希望获得响应速度/质量的显式切换 |
-| [#8501](https://github.com/anomalyco/opencode/issues/8501) | 允许展开粘贴文本摘要 | 🔴 OPEN | 11 / 115 | **最高赞活跃 Issue**。粘贴内容被压缩为 `[Pasted ~1 lines]` 后无法编辑查看，严重影响提示工程工作流 |
-| [#6719](https://github.com/anomalyco/opencode/issues/6719) | 请求 /reload 配置重载命令 | 🔴 OPEN | 12 / 40 | 高赞功能请求。修改 `opencode.jsonc` 或 `.opencode/` 后需重启，打断开发流 |
-| [#6823](https://github.com/anomalyco/opencode/issues/6823) | macOS Terminal 黑色主题对比度不足 | 🔴 OPEN | 12 / 15 | 终端主题适配问题，Pro 黑色背景下 CLI 色彩难以辨认，影响 macOS 原生终端用户 |
-| [#21100](https://github.com/anomalyco/opencode/issues/21100) | v1.3.15 web 端 `e.diffs.map is not a function` | 🔴 OPEN | 10 / 2 | 新版本 web 端崩溃，diff 渲染逻辑类型错误，需紧急修复 |
-| [#21236](https://github.com/anomalyco/opencode/issues/21236) | Ctrl+Shift+Backspace 无确认删除会话（数据丢失） | 🔴 OPEN | 2 / 0 | **严重 UX 缺陷**。误触快捷键（与 Ctrl+Backspace 删词易混淆）直接永久删除会话，无撤销机制 |
-
----
-
-## 重要 PR 进展（10 条）
-
-| # | 标题 | 状态 | 核心贡献 |
-|:---|:---|:---|:---|
-| [#21192](https://github.com/anomalyco/opencode/pull/21192) | TUI 主题模式命令面板使用句首大写 | 🟡 OPEN | 细节打磨：统一 "Toggle Theme Mode" 等条目的首字母大写规范 |
-| [#21185](https://github.com/anomalyco/opencode/pull/21185) | 为"切换模型变体"命令添加 `variant_list` 快捷键 | 🟡 OPEN | 新增 `variant_list` 键绑定，支持键盘快速打开模型变体选择对话框 |
-| [#21246](https://github.com/anomalyco/opencode/pull/21246) | 引导期间防护未定义 agents 和 MCP 状态 | 🟡 OPEN | 修复插件（如 oh-my-openagent）导致的 TUI 启动崩溃，解决 #20588、#20628 |
-| [#21243](https://github.com/anomalyco/opencode/pull/21243) | Web 应用支持 basePath 子路径部署 | 🟡 OPEN | 新增 `--base-path` CLI 参数和 `server.basePath` 配置，支持反向代理子目录部署 |
-| [#21244](https://github.com/anomalyco/opencode/pull/21244) | Snapshot 存储统一补丁替代完整内容 | 🟡 OPEN | 架构优化：文件 diff 元数据改用 unified patch 格式，减少存储；VCS diff 保留独立完整内容供审查 |
-| [#21239](https://github.com/anomalyco/opencode/pull/21239) | 重构 HTTP 代理和 workspace 适配器接口 | 🟡 OPEN | 关键基础设施：原 `fetch` 代理不支持 WebSocket 破坏终端功能，新方案让远程环境透传完整 HTTP 代理能力 |
-| [#18007](https://github.com/anomalyco/opencode/pull/18007) | 添加 session.start 生命周期钩子 | 🟡 OPEN | 插件系统增强：支持 `startup`/`resume`/`compact` 三种触发器，满足会话初始化自定义需求 |
-| [#18767](https://github.com/anomalyco/opencode/pull/18767) | 移动端触摸优化 | 🟡 OPEN | 完整移动端适配方案，保留桌面体验的同时优化触摸交互 |
-| [#19135](https://github.com/anomalyco/opencode/pull/19135) | 恢复 TUI Home/End 提示符导航 | 🟡 OPEN | 修复 Home/End 键被错误绑定到会话导航的问题，恢复行内光标跳转 |
-| [#21242](https://github.com/anomalyco/opencode/pull/21242) | 升级 OpenRouter AI SDK 包 | 🟢 CLOSED | 解决 #20047：OpenRouter 的 `console.warn` 污染 TUI 显示问题 |
-
----
-
-## 功能需求趋势
-
-基于 50 条活跃 Issue 分析，社区关注焦点集中在：
-
-| 方向 | 代表 Issue | 需求强度 |
-|:---|:---|:---:|
-| **模型生态兼容性** | Copilot/Opus 预填充、Kimi k2.5 工具调用、Qwen 速率限制 | ⭐⭐⭐⭐⭐ |
-| **TUI/UX 精细化** | 粘贴文本展开、配置热重载、快捷键防误触、复制粘贴可靠性 | ⭐⭐⭐⭐⭐ |
-| **企业/安全场景** | 预/后置 API 钩子（#19425 敏感信息脱敏）、YOLO 免确认模式 | ⭐⭐⭐⭐☆ |
-| **多模型协同** | LLM Council 支持（#4789）、GPT-5.4 fast 模式 | ⭐⭐⭐⭐☆ |
-| **可观测性** | `/dump-context` 调试命令（#14674）、推理上下文检查 | ⭐⭐⭐☆☆ |
-| **移动端/桌面端** | 触摸优化 PR 进行中、macOS 主题适配 | ⭐⭐⭐☆☆ |
-
----
-
-## 开发者关注点
-
-### 🔴 高频痛点
-
-1. **模型集成碎片化**
-   - 非 OpenAI 系模型（Kimi、Qwen、Gemini、Claude via Copilot）工具调用、token 统计、流式响应持续出现边缘 case
-   - 建议：建立模型兼容性分级认证机制
-
-2. **配置管理笨拙**
-   - 无 `/reload`、插件安装需重启、代理配置分散（环境变量 vs 配置文件）
-   - 开发者期望：声明式配置 + 热更新能力
-
-3. **数据丢失风险**
-   - #21236 无确认删除会话、#21156 Windows 会话丢失，反映状态持久化可靠性不足
-
-### 🟡 新兴需求
-
-- **安全合规**：企业用户强烈需要 API 调用前后的内容审查钩子（#19425、#21240）
-- **自动化友好**：`--dangerously-skip-permissions` 等 CI/CD 模式支持
-- **调试透明化**：上下文导出、推理过程可视化需求上升
-
----
-
-*数据来源：github.com/anomalyco/opencode | 统计周期：2026-04-06 至 2026-04-07*
-
-</details>
-
-<details>
-<summary><strong>Pi</strong> — <a href="https://github.com/badlogic/pi-mono">badlogic/pi-mono</a></summary>
-
-# Pi 社区动态日报 | 2026-04-07
-
-## 今日速览
-
-今日 Pi 社区活跃度极高，共处理 **20+ Issues** 和 **10 个 PR**，核心聚焦于 **AWS Bedrock 认证修复、Gemini 模型思考预算校准、扩展系统架构优化** 三大方向。开发团队快速响应了多个生产环境阻塞性问题，包括 EC2 IMDS 认证失败、工具 JSON 解析静默崩溃等关键 Bug。
-
----
-
-## 社区热点 Issues
-
-| 优先级 | Issue | 核心问题 | 社区影响 |
-|:---|:---|:---|:---|
-| 🔴 **P0** | [#2880](https://github.com/badlogic/pi-mono/issues/2880) Bedrock 认证失败：EC2 IMDS 场景无 API Key 即被拒绝 | 阻断 AWS 原生部署，影响所有使用 IAM 实例配置文件的云用户 | 已快速修复，royosherove 提供完整复现环境 |
-| 🔴 **P0** | [#2882](https://github.com/badlogic/pi-mono/issues/2882) 工具 JSON 解析错误导致会话静默挂起 | `edit` 工具含 JSX/模板字符串时解析失败，模型收不到错误反馈 | 生产环境稳定性问题，tugboat-solutions 深度排查 |
-| 🟡 **P1** | [#2815](https://github.com/badlogic/pi-mono/issues/2815) Antigravity 模型版本弃用警告 | 第三方模型供应商 API 变更，Pi 侧需升级适配 | gnassro 持续跟进，涉及外部依赖协调 |
-| 🟡 **P1** | [#2814](https://github.com/badlogic/pi-mono/issues/2814) 系统提示 UTC 时间导致"昨天/今天"幻觉 | 时区处理回归，影响日志生成等时间敏感任务 | 关联 #1873 #2131，FoundDream 根因分析深入 |
-| 🟡 **P1** | [#2838](https://github.com/badlogic/pi-mono/issues/2838) 2.5 Flash Lite 思考预算最小值错误 | 误用 128 而非 512，导致 Google API 拒绝请求 | 模型参数映射逻辑缺陷，lepijohnny 精准定位 |
-| 🟡 **P1** | [#2871](https://github.com/badlogic/pi-mono/issues/2871) 长工具循环中上下文无限膨胀 | 自动压缩未在回合内触发，200% 超窗风险 | 大文件重构场景性能隐患，lukeramsden 提出 |
-| 🟢 **P2** | [#2869](https://github.com/badlogic/pi-mono/issues/2869) VS Code 终端死键失效（葡萄牙语布局） | Windows + 非英语键盘输入体验问题 | 国际化兼容性，rfgamaral 提供完整环境信息 |
-| 🟢 **P2** | [#2878](https://github.com/badlogic/pi-mono/issues/2878) X11 剪贴板无原生 addon 时无降级方案 | 特殊终端嵌套场景（nvim→tmux→X11）功能缺失 | mhalder 已提供 workaround，待官方集成 |
-| 🟢 **P2** | [#2865](https://github.com/badlogic/pi-mono/issues/2865) Gemma4 on vLLM 工具调用缺失 `path` 字段 | 开源模型工具遵循性不足，schema 验证严格 | 模型生态兼容性，donutloop 验证 vLLM 场景 |
-| 🔵 **Feature** | [#2868](https://github.com/badlogic/pi-mono/issues/2868) 编码代理自标识环境变量 | 子进程需感知代理上下文以调整行为 | lukeramsden 提议 `PI_CODING_AGENT=true`，扩展生态需求 |
-
----
-
-## 重要 PR 进展
-
-| 状态 | PR | 功能/修复 | 技术要点 |
-|:---|:---|:---|:---|
-| ✅ Merged | [#2879](https://github.com/badlogic/pi-mono/pull/2879) | AWS SDK 认证支持（Bedrock IMDS） | 扩展 `hasConfiguredAuth()` 识别 AWS 凭证链，EC2 免 Key 部署 |
-| ✅ Merged | [#2883](https://github.com/badlogic/pi-mono/pull/2883) | 扩展输入通知 + 终端焦点检测 | `ui_prompt` 事件 + `hasFocus()` API，避免打扰已聚焦用户 |
-| ✅ Merged | [#2877](https://github.com/badlogic/pi-mono/pull/2877) | OpenAI Codex 设备流认证 | Termux 等无浏览器环境 headless 登录，`mixed` 流用户自选 |
-| ✅ Merged | [#2876](https://github.com/badlogic/pi-mono/pull/2876) | 扩展加载器优先 workspace src | 解决 Windows 源码运行 `Class extends undefined`，别名解析优化 |
-| ✅ Merged | [#2867](https://github.com/badlogic/pi-mono/pull/2867) | `PI_CODING_AGENT` 环境变量注入 | CLI 入口设置标识，自动传播至 bash/exec 子进程 |
-| ✅ Merged | [#2828](https://github.com/badlogic/pi-mono/pull/2828) | Gemma 4 思考支持（`thinkingLevel`） | 区分 Gemini-3 `thinkingBudget` 与 Gemma-4 `thinkingLevel` 参数 |
-| ✅ Merged | [#2826](https://github.com/badlogic/pi-mono/pull/2826) | 系统提示本地时区日期 | 替换 `toISOString()` 为本地时间格式化，消除 UTC 幻觉 |
-| ✅ Merged | [#2861](https://github.com/badlogic/pi-mono/pull/2861) | 2.5-flash-lite 思考预算修正 | 最小值 128→512，匹配 Google 官方文档 |
-| 🔄 Open | [#2887](https://github.com/badlogic/pi-mono/pull/2887) | 清理用户消息内联 OSC 133 标记 | 终端原生应用集成，libghostty-vt 渲染兼容性 |
-| 🔄 Open | [#2859](https://github.com/badlogic/pi-mono/pull/2859) | 隐藏跟进更新可见消息状态 | 修复 `state:running`→`state:done` 卡片 stuck 问题 |
-
----
-
-## 功能需求趋势
-
-基于今日 Issues 聚类分析，社区关注焦点呈现四大方向：
-
-| 趋势方向 | 代表 Issue | 需求强度 |
-|:---|:---|:---:|
-| **云原生认证体系** | #2880, #2879 | ⭐⭐⭐⭐⭐ |
-| 企业级 AWS/GCP/Azure 部署场景，IAM/IMDS/Workload Identity 支持成为刚需 |
-| **模型参数精准映射** | #2838, #2828, #2865, #2873 | ⭐⭐⭐⭐⭐ |
-| 多厂商 API 差异（thinkingBudget/level、cost 字段、tool schema）需抽象层 |
-| **扩展系统架构升级** | #2884, #2886, #2875, #2868 | ⭐⭐⭐⭐☆ |
-| 事件通知、别名解析、环境感知、焦点检测等扩展基础设施快速演进 |
-| **终端生态深度集成** | #2869, #2878, #2887, #2870 | ⭐⭐⭐⭐☆ |
-| XDG 规范、剪贴板降级、OSC 序列处理、多键盘布局兼容性 |
-
----
-
-## 开发者关注点
-
-### 🔥 高频痛点
-
-1. **认证链完整性**  
-   - AWS 场景从"有 Key"假设转向"凭证链优先"，royosherove 的 EC2 案例推动架构反思
-   - 类似问题可能存在于 GCP ADC、Azure Managed Identity
-
-2. **工具系统鲁棒性**  
-   - JSON 解析错误静默失败（#2882）暴露工具调用 pipeline 缺乏错误反馈闭环
-   - 复杂内容（JSX/模板字符串）的转义/序列化需强化
-
-3. **模型生态碎片化**  
-   - Gemma-4、Flash-Lite、vLLM 等变体的参数差异要求更灵活的 provider 抽象
-   - OpenRouter 实际成本回传（#2873）提示计费模型需动态化
-
-### 💡 架构建议涌现
-
-- **时区处理**：从 UTC 硬编码转向用户感知，#2826 为模板
-- **上下文管理**：回合内压缩触发机制，应对长循环场景（#2871）
-- **扩展开发体验**：源码运行与生产构建的行为一致性（#2875, #2876）
-
----
-
-> 📌 **数据来源**: [badlogic/pi-mono](https://github.com/badlogic/pi-mono) | 统计周期: 2026-04-06 至 2026-04-07
+过去24小时无活动。
 
 </details>
 
 <details>
 <summary><strong>Qwen Code</strong> — <a href="https://github.com/QwenLM/qwen-code">QwenLM/qwen-code</a></summary>
 
-# Qwen Code 社区动态日报 | 2026-04-07
+# Qwen Code 社区动态日报 (2026-04-07)
 
-## 今日速览
+## 1. 今日速览
+过去 24 小时内，Qwen Code 社区活跃度显著提升，虽然没有新的正式版本发布，但开发者提交了大量高质量的 PR，重点集中在增强 CLI 交互体验（如 `/plan`、`/review`、`/thinkback` 等新命令）以及修复 TUI 界面的闪烁问题。社区讨论热点主要围绕**子代理系统的功能对齐**以及**界面稳定性**展开。
 
-今日社区活跃度显著，**17 个 PR 密集更新**，核心团队持续推进 `/review` 重构、`/plan` 模式、`/thinkback` 会话回溯等新功能。同时 **TUI 闪烁、并行子 Agent 焦点冲突**等交互体验问题成为开发者高频反馈，基础设施层面出现 **CentOS 7 兼容性和夜间版构建失败**等阻断性问题。
+## 2. 版本发布
+过去 24 小时内无正式 Release 发布。值得注意的是，昨晚的 Nightly 构建流程失败，开发团队正在处理中。
 
----
+## 3. 社区热点 Issues
+以下是今日最值得关注的 10 个 Issues：
 
-## 社区热点 Issues
+1.  **#2409 [功能请求] 子代理系统需对标 Claude Code**
+    *   **重要性**：社区核心诉求。作者指出 Qwen Code 目前仅实现了 Claude Code 约 40-45% 的子代理功能，呼吁完善核心架构以实现功能对等。
+    *   **链接**：[QwenLM/qwen-code Issue #2409](https://github.com/QwenLM/qwen-code/issues/2409)
 
-| # | 状态 | 标题 | 关键要点 | 链接 |
-|---|:---:|------|---------|------|
-| **2409** | 🔵 OPEN | 子 Agent 系统功能对齐 Claude Code | 社区核心诉求：当前仅实现 40-45% 的 Claude Code 子 Agent 能力，需补足并行执行、状态隔离、工具代理等关键特性。获 2 赞，讨论深入。 | [Issue #2409](https://github.com/QwenLM/qwen-code/issues/2409) |
-| **2928** | 🔵 OPEN | 并行子 Agent TUI 频繁闪烁 | **新反馈**：Windows 11 下模型调用并行子 Agent 时终端 UI 剧烈闪烁，影响可用性。需紧急修复。 | [Issue #2928](https://github.com/QwenLM/qwen-code/issues/2928) |
-| **2929** | 🔵 OPEN | 并行子 Agent 确认弹窗焦点冲突 | **新反馈**：多个子 Agent 同时触发确认时，所有弹窗同时获得键盘焦点，导致单次按键被广播至所有确认框。已关联修复 PR #2930。 | [Issue #2929](https://github.com/QwenLM/qwen-code/issues/2929) |
-| **2926** | 🔵 OPEN | CentOS 7 安装失败：GLIBC_2.27 缺失 | **阻断性问题**：Node 二进制依赖高版本 glibc，CentOS 7 用户无法安装。影响企业级 Linux 环境部署。 | [Issue #2926](https://github.com/QwenLM/qwen-code/issues/2926) |
-| **2925** | 🔵 OPEN | v0.14.1-nightly 构建失败 | **基础设施告警**：夜间版发布流程失败，需关注持续交付稳定性。 | [Issue #2925](https://github.com/QwenLM/qwen-code/issues/2925) |
-| **2933** | 🔵 OPEN | 新增 `/rename` 命令与 Ctrl+R 快捷键 | 用户体验优化：支持会话重命名，提升长会话管理效率。零评论，待评估。 | [Issue #2933](https://github.com/QwenLM/qwen-code/issues/2933) |
-| **2903** | 🔵 OPEN | JetBrains 终端闪屏问题 | 与 #2928 类似，IDE 集成场景下的渲染稳定性问题，获 1 赞。 | [Issue #2903](https://github.com/QwenLM/qwen-code/issues/2903) |
-| **2927** | 🔵 OPEN | `git status` 绕过审批模式 | 安全合规隐患：只读命令在任何审批模式下均无需确认，用户期望可见性。 | [Issue #2927](https://github.com/QwenLM/qwen-code/issues/2927) |
-| **2672** | 🔵 OPEN | MCP 工具自动暴露用于网页研究 | 生态集成诉求：希望 `search_web`、`read_url` 等 MCP 工具默认可用，降低配置门槛。 | [Issue #2672](https://github.com/QwenLM/qwen-code/issues/2672) |
-| **2800** | 🔵 OPEN | 免费套餐额度查询方式 | 用户支持类问题：文档/产品层面需明确额度透明度。 | [Issue #2800](https://github.com/QwenLM/qwen-code/issues/2800) |
+2.  **#2928 [Bug] TUI 在并行调用子 Agent 时频繁闪烁**
+    *   **重要性**：严重影响用户体验的视觉 Bug。在 Windows 环境下，模型并行调用子代理时终端界面会出现闪烁，需重点关注。
+    *   **链接**：[QwenLM/qwen-code Issue #2928](https://github.com/QwenLM/qwen-code/issues/2928)
 
----
+3.  **#2929 [Bug] 并行子代理确认框抢占键盘焦点**
+    *   **重要性**：交互逻辑缺陷。多个子代理并行请求确认时，所有对话框同时获取焦点，导致键盘输入冲突，可能引发误操作。
+    *   **链接**：[QwenLM/qwen-code Issue #2929](https://github.com/QwenLM/qwen-code/issues/2929)
 
-## 重要 PR 进展
+4.  **#2933 [功能请求] 增加 `/rename` 命令及 Ctrl+R 快捷键**
+    *   **重要性**：提升会话管理效率。建议支持用户在 CLI 和 IDE 中快速重命名当前会话。
+    *   **链接**：[QwenLM/qwen-code Issue #2933](https://github.com/QwenLM/qwen-code/issues/2933)
 
-| # | 状态 | 标题 | 核心内容 | 链接 |
-|---|:---:|------|---------|------|
-| **2932** | 🟢 OPEN | `/review` 功能增强：确定性分析、自动修复与安全加固 | **重磅更新**：对标 Copilot Code Review、Claude Code `/ultrareview`，重构 4-Agent 并行架构，补全安全扫描与自动修复能力。 | [PR #2932](https://github.com/QwenLM/qwen-code/pull/2932) |
-| **2921** | 🟢 OPEN | 新增 `/plan` 命令进入计划模式 | 交互优化：为现有 Plan 模式（`shift+tab` 或 `/approval-mode plan`）提供快捷入口，支持计划文件持久化与模式恢复。 | [PR #2921](https://github.com/QwenLM/qwen-code/pull/2921) |
-| **2917** | 🟢 OPEN | 新增 `/thinkback` 会话决策回溯命令 | **差异化功能**：Claude Code 暂无内置实现，利用 LLM 分析对话历史生成结构化时间线，复盘关键决策与变更。 | [PR #2917](https://github.com/QwenLM/qwen-code/pull/2917) |
-| **2923** | 🟢 OPEN | 可定制状态栏与 `/statusline` 命令 | 个性化增强：支持用户配置 shell 命令在状态栏显示上下文信息（如 git 分支、构建状态）。 | [PR #2923](https://github.com/QwenLM/qwen-code/pull/2923) |
-| **2930** | 🟢 OPEN | 修复并行子 Agent 确认焦点冲突 | **紧急修复**：将 `isFocused` 硬编码改为序列化控制，解决 #2929 的输入冲突问题。 | [PR #2930](https://github.com/QwenLM/qwen-code/pull/2930) |
-| **2916** | 🟢 OPEN | SDK 模式暴露 `/context` 用量数据 | 企业集成：非交互模式与 SDK API 支持查询上下文窗口利用率，补齐可观测性缺口。 | [PR #2916](https://github.com/QwenLM/qwen-code/pull/2916) |
-| **2771** | 🟢 OPEN | SDK `canUseTool` 中断处理 | 可靠性提升：SDK 拒绝工具调用时支持 `interrupt: true` 立即终止请求，级联取消待处理工具。 | [PR #2771](https://github.com/QwenLM/qwen-code/pull/2771) |
-| **2874/2875** | 🟢 OPEN | VS Code 会话刷新与上下文用量加固 | 双 PR 联动：修复新会话按钮无效问题，并防御性处理 ACP 服务器省略 `tokenLimit` 的场景。 | [PR #2874](https://github.com/QwenLM/qwen-code/pull/2874) · [PR #2875](https://github.com/QwenLM/qwen-code/pull/2875) |
-| **2858** | 🟢 OPEN | MCP 工具 `anyOf`/`oneOf` 模式兼容 | 生态兼容：修复 LLM 将数组/对象序列化为 JSON 字符串导致的校验失败，提升 MCP 服务器兼容性。 | [PR #2858](https://github.com/QwenLM/qwen-code/pull/2858) |
-| **2670** | 🟢 OPEN | Windows 权限持久化修复 | 平台修复：解决路径大小写敏感比较导致的"始终允许"选项失效问题。 | [PR #2670](https://github.com/QwenLM/qwen-code/pull/2670) |
+5.  **#2922 [功能请求] 任务完成与审批请求的通知钩子**
+    *   **重要性**：工作流集成需求。开发者希望长时间任务（如构建、测试）完成或需要人工介入时能触发声音或回调通知。
+    *   **链接**：[QwenLM/qwen-code Issue #2922](https://github.com/QwenLM/qwen-code/issues/2922)
 
----
+6.  **#2927 [Bug] `git status` 绕过了审批模式**
+    *   **重要性**：安全/权限逻辑漏洞。用户反馈即使在严格审批模式下，`git status` 仍无需批准即可执行，与预期不符。
+    *   **链接**：[QwenLM/qwen-code Issue #2927](https://github.com/QwenLM/qwen-code/issues/2927)
 
-## 功能需求趋势
+7.  **#2926 [Bug] CentOS 7 安装失败 (GLIBC 版本不兼容)**
+    *   **重要性**：环境兼容性问题。Node 依赖的 GLIBC 版本过高导致在 CentOS 7 等旧系统上无法运行。
+    *   **链接**：[QwenLM/qwen-code Issue #2926](https://github.com/QwenLM/qwen-code/issues/2926)
 
-基于今日 12 个活跃 Issue 分析，社区关注焦点呈现 **"体验优化 > 功能补齐 > 生态扩展"** 的优先级：
+8.  **#2903 [Bug] JetBrains 终端闪屏**
+    *   **重要性**：IDE 集成体验问题。与 Issue #2928 类似，在 JetBrains IDE 终端中存在界面闪烁现象。
+    *   **链接**：[QwenLM/qwen-code Issue #2903](https://github.com/QwenLM/qwen-code/issues/2903)
 
-```
-┌─────────────────────────────────────────┐
-│  🔥 交互稳定性（35%）                    │
-│     • TUI 闪烁/焦点冲突/IDE 终端渲染      │
-│                                         │
-│  🚀 工作流增强（30%）                    │
-│     • 子 Agent 能力对齐 Claude Code      │
-│     • 会话管理（重命名、回溯、计划模式）   │
-│                                         │
-│  🔧 基础设施（20%）                      │
-│     • 旧版 Linux 兼容性（CentOS 7）       │
-│     • 构建/CD 稳定性                      │
-│                                         │
-│  🌐 生态集成（15%）                      │
-│     • MCP 工具默认暴露                   │
-│     • 模型版本同步（3.6-plus）            │
-└─────────────────────────────────────────┘
-```
+9.  **#2925 [系统] Nightly 版本发布失败**
+    *   **重要性**：CI/CD 健康度监控。昨晚的自动化构建工作流失败，可能影响测试版用户的更新。
+    *   **链接**：[QwenLM/qwen-code Issue #2925](https://github.com/QwenLM/qwen-code/issues/2925)
 
----
+10. **#2844 [已关闭] 编程计划模型列表缺失 Qwen 3.6-plus**
+    *   **重要性**：模型支持更新。用户反馈升级后 Coding Plan 中未显示最新模型，该 Issue 已在今日处理并关闭。
+    *   **链接**：[QwenLM/qwen-code Issue #2844](https://github.com/QwenLM/qwen-code/issues/2844)
 
-## 开发者关注点
+## 4. 重要 PR 进展
+以下是今日最值得关注的 10 个 Pull Requests：
 
-| 痛点类别 | 具体表现 | 影响面 |
-|---------|---------|--------|
-| **终端渲染稳定性** | Windows/JetBrains 双平台闪烁、并行 Agent 焦点冲突 | 高频使用场景的核心体验 |
-| **企业环境兼容性** | CentOS 7 因 glibc 版本无法安装 Node 绑定 | 传统行业/金融级部署阻断 |
-| **审批模式一致性** | `git status` 等只读命令绕过审批，安全可见性不足 | 合规敏感团队信任度 |
-| **子 Agent 成熟度** | 功能完成度 40-45%，并行执行、状态隔离待完善 | 复杂任务自动化天花板 |
-| **夜间版可靠性** | 构建流程失败影响早期体验者获取最新功能 | 社区贡献者参与门槛 |
+1.  **#2932 [Feature] 增强 `/review` 命令：确定性分析与安全加固**
+    *   **内容**：大幅增强代码审查能力，引入确定性分析、自动修复和安全加固，旨在对标 Copilot 和 Claude 的审查功能。
+    *   **链接**：[QwenLM/qwen-code PR #2932](https://github.com/QwenLM/qwen-code/pull/2932)
 
----
+2.  **#2917 [Feature] 新增 `/thinkback` 命令回顾会话决策**
+    *   **内容**：利用 LLM 分析对话历史，生成当前会话中关键决策、变更和修复的结构化时间线，填补了 Claude Code 尚未内置的功能空白。
+    *   **链接**：[QwenLM/qwen-code PR #2917](https://github.com/QwenLM/qwen-code/pull/2917)
 
-> 📌 **跟踪建议**：重点关注 PR #2932（review 重构）、#2930（焦点冲突修复）的合并进度，以及 Issue #2926（CentOS 兼容性）的官方响应。
+3.  **#2930 [Fix] 序列化子代理确认焦点以解决输入冲突**
+    *   **内容**：针对 Issue #2929 的修复，防止并行子代理的确认框同时抢占焦点，确保键盘输入的安全性。
+    *   **链接**：[QwenLM/qwen-code PR #2930](https://github.com/QwenLM/qwen-code/pull/2930)
+
+4.  **#2921 [Feature] 实现 `/plan` 命令进入规划模式**
+    *   **内容**：添加专门的 `/plan` 斜杠命令，方便用户快速进入规划模式并持久化计划文件，优化工作流。
+    *   **链接**：[QwenLM/qwen-code PR #2921](https://github.com/QwenLM/qwen-code/pull/2921)
+
+5.  **#2923 [Feature] 自定义状态栏 `/statusline` 命令**
+    *   **内容**：允许用户配置自定义 Shell 命令，在页脚下方显示上下文感知的状态信息，增强终端信息密度。
+    *   **链接**：[QwenLM/qwen-code PR #2923](https://github.com/QwenLM/qwen-code/pull/2923)
+
+6.  **#2874 [Fix] VSCode 插件强制新建 ACP 会话**
+    *   **内容**：修复了点击侧边栏“+”按钮无反应的 Bug，强制刷新会话上下文，确保状态重置。
+    *   **链接**：[QwenLM/qwen-code PR #2874](https://github.com/QwenLM/qwen-code/pull/2874)
+
+7.  **#2914 [Fix] 改进终端 Markdown 表格渲染**
+    *   **内容**：修复了终端中表格列宽计算错误（特别是 CJK 字符）、长内容截断及对齐标记解析失败等问题。
+    *   **链接**：[QwenLM/qwen-code PR #2914](https://github.com/QwenLM/qwen-code/pull/2914)
+
+8.  **#2770 [Feature] 紧凑/详细模式切换 (Ctrl+O)**
+    *   **内容**：支持通过 Ctrl+O 在紧凑模式（隐藏工具输出和思维链）和详细模式之间切换，保持长任务运行时终端的整洁。
+    *   **链接**：[QwenLM/qwen-code PR #2770](https://github.com/QwenLM/qwen-code/pull/2770)
+
+9.  **#2670 [Fix] 修复 Windows 下权限持久化失败**
+    *   **内容**：解决了 Windows 11 上因路径大小写敏感问题导致的“始终允许”权限无法在会话间保存的问题。
+    *   **链接**：[QwenLM/qwen-code PR #2670](https://github.com/QwenLM/qwen-code/pull/2670)
+
+10. **#2915 [Feature] 增强 `/clear` 命令功能**
+    *   **内容**：为 `/clear` 添加 `--history` 和 `--all` 参数，提供更细粒度的会话重置控制。
+    *   **链接**：[QwenLM/qwen-code PR #2915](https://github.com/QwenLM/qwen-code/pull/2915)
+
+## 5. 功能需求趋势
+从今日的 Issues 和 PRs 活动中，可以提炼出以下核心关注方向：
+
+*   **子代理架构增强**：社区强烈要求提升 Subagent 系统的能力，不仅要修复并行执行时的 UI/UX Bug（如闪烁、焦点冲突），还要在功能上对齐竞品（如 Claude Code）。
+*   **交互体验与 UI 稳定性**：TUI（终端用户界面）的流畅度是当前痛点，特别是 JetBrains 终端和 Windows 环境下的闪屏问题。同时，开发者希望通过 `/rename`, `/statusline`, `Ctrl+O` 等功能获得更精细的控制权。
+*   **工作流管理**：对于长时任务和复杂开发流程，社区需要更好的工具支持，如任务完成通知、会话决策回顾以及规划模式的快捷入口。
+
+## 6. 开发者关注点
+*   **IDE 集成兼容性**：JetBrains 和 VS Code 终端环境下的渲染和会话管理问题备受关注。
+*   **环境适配**：老旧系统（如 CentOS 7）的二进制兼容性问题阻碍了部分用户的部署。
+*   **权限与安全**：Agent 执行命令（如 `git status`）的审批机制是否严谨，是开发者审核的重点。
 
 </details>
-
----
-*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*

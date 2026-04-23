@@ -1,150 +1,115 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code Fork Subagent开放，MCP主线程加载",
-      "OpenAI Codex密集alpha迭代，PermissionProfile重构完成",
-      "Kimi Code终端挂死+MCP泄漏紧急修复，25个新增Issue",
-      "Pi v0.68.0版本引发Bedrock兼容性回归集群，50个活跃Issue",
-      "Qwen Code v0.15.0认证故障爆发，5+ 401集群投诉",
-      "Gemini CLI v0.39.0紧急修复嵌套计划目录，性能PR密集"
+      "OpenCode底层大迁移至Effect Schema，发布v1.14.20正式版",
+      "OpenAI Codex底层架构大重构，一口气发布6个Rust Alpha版",
+      "Qwen Code高速扩充，狂揽48个PR发布v0.15.0-preview.1",
+      "Claude Code发v2.1.116正式版，核心修复计费与会话性能",
+      "全网AI CLI三大痛点：Windows/ARM稳定性、Token静默燃烧",
+      "七大AI CLI工具共同发力，深度集成MCP/ACP协议"
     ],
     "ai-agents": [
-      "OpenClaw 24小时500 Issue+500 PR，1:1处理节奏",
-      "OpenClaw v2026.4.20向导体验优化，加载动画消除空白闪烁",
-      "OpenClaw插件源路径验证PR防止运行时文件逃逸",
-      "OpenClaw MiniMax M2.7 VLM支持修复合并",
-      "OpenClaw 341个待合并PR，合并带宽瓶颈显现",
-      "OpenClaw核心基础设施回归Bug突出，OpenRouter/Codex集成待修复"
+      "OpenClaw单日狂揽500条Issue，核心团队高效关闭38.6%",
+      "OpenClaw连发3个新版本，重点重构新手引导界面",
+      "修复Gateway重启超时死锁，防端口冲突提升服务可靠性",
+      "解决npm安装弃用警告，同步pnpm overrides配置",
+      "修复向导初始加载空白页，UI层体验大幅优化",
+      "本次更新无破坏性API变更，用户可平滑无缝升级"
     ],
     "ai-trending": [
-      "FinceptTerminal登顶AI应用类趋势榜",
-      "thunderbolt AI基础工具+智能体双标签热门",
-      "claude-context RAG知识库工具受关注",
-      "hermes-agent纯智能体工作流项目上榜",
-      "cherry-studio AI基础工具兼顾智能体编排",
-      "dify智能体+RAG双驱动持续热门"
+      "claude-context首发登榜，让整个代码库成为Agent上下文",
+      "微软下场出12节免费课，手把手教你构建AI Agent",
+      "用商用WiFi信号实现姿态估计，无视觉依赖多模态引热议",
+      "Hermes Agent累计星标超10万，登顶开源Agent热度榜",
+      "Picollm引擎让边缘设备也能跑大模型，实现高性能推理",
+      "Thunderbolt主打本地化隐私AI，对抗SaaS封闭生态"
     ],
     "ai-web": [
-      "Anthropic与Amazon扩展至5GW算力合作，十年百亿美元级承诺",
-      "Anthropic绑定AWS Trainium2/3/4全代际定制芯片",
-      "Anthropic明确亚洲欧洲推理扩张，对标数据合规需求",
-      "OpenAI ChatGPT Images 2.0元数据三次重复索引",
-      "OpenAI Scaling Codex To Enterprises Worldwide企业级扩张信号",
-      "OpenAI URL密集更新或预示产品矩阵调整"
+      "Anthropic联手亚马逊，签下超百亿美元5GW算力世纪大单",
+      "OpenAI重磅发布ChatGPT Images 2.0，重构视觉生成霸权",
+      "OpenAI加速商业化，推动编程智能体Codex全面出海企业级",
+      "Anthropic深耕底层算力，今年下半年将上线1GW Trainium算力",
+      "超10万客户在Bedrock运行Claude，云底座绑定抵御巨头攻势",
+      "大模型训练进入吉瓦级军备竞赛，算力壁垒正变得空前高"
     ],
     "ai-hn": [
-      "Anthropic允许Claude CLI使用后又从Pro移除，政策摇摆引众怒",
-      "Amazon向Anthropic注资50亿美元，AI资本集中度受质疑",
-      "ChatGPT Images 2.0获312分314评论，差异化争议大",
-      "Mozilla用Anthropic Mythos发现Firefox 271个漏洞",
-      "GoModel开源AI网关155分61评论，Go+多模型路由受捧",
-      "Daemons从Agent转向清理Agent遗留，获关注"
+      "Anthropic获亚马逊50亿美元重注，深度绑定AWS生态",
+      "Claude Code突遭Pro计划移除，无预警封禁引发社区强震",
+      "轻量模型逆袭：特定技能加持下Haiku 4.5超越昂贵的Opus",
+      "Mozilla用Anthropic Mythos大显身手，成功查出Firefox 271个Bug",
+      "GoModel登顶热榜，开源AI网关解决多模型统一接入难题",
+      "OpenAI商业化新动作：在ChatGPT聊天中引入点击付费广告"
     ],
-    "ai-ph": [
-      "Dune 559票：物理Mac小键盘实现上下文感知自动化",
-      "Claude Desktop Buddy 387票：开源硬件让AI走进物理世界",
-      "Google TorchTPU发布：PyTorch原生支持TPU突破",
-      "Claro 91票：数据原生型研究Agent，私有数据直接运行",
-      "K9警犬团队管理AI：垂直领域渗透新案例",
-      "空间地理分析AI：专业场景创新突出"
+    "rl-daily": [
+      "大模型RL全面工业化，veRL路线图落地引发核心架构清洗",
+      "TRL迎基础架构重构，SFT显存深度优化降低对齐算力成本",
+      "AReaL攻坚千亿参数通信瓶颈，推理与训练引擎彻底解耦",
+      "ROCK拥抱Serverless云原生，深耕Agent沙箱底层稳定性",
+      "OpenRLHF充当试金石，精准暴露PyTorch 2.10破坏性更新",
+      "Gymnasium强化环境动力学控制，持续打磨RL底层API规范"
     ],
-    "ai-arxiv": [
-      "RLVR弱监督推理成功条件获系统理论分析",
-      "饱和数据上RL训练优势信号崩溃悖论被揭示",
-      "SIREN用LLM内部多层表示检测有害内容，轻量高效",
-      "三种越狱路径行为与机制差异首次对比",
-      "Gumbel-Softmax实现2-3bit量化逼近SOTA",
-      "模块化训练+自适应路由避免灾难性遗忘"
-    ],
-    "ai-hf": [
-      "Gemma-4-31B-it 446万下载，Google开源旗舰统治力",
-      "Qwen3.6-35B-A3B 45万下载，3B激活MoE效率革命",
-      "Kimi-K2.6 8241下载，长上下文视觉推理持续领跑",
-      "去审查化微调模型占据趋势榜5席，可控性需求强烈",
-      "腾讯HY-World-2.0图像直出3D场景，世界模型前沿",
-      "百度ERNIE-Image 8B参数Apache-2.0开源，中文语义优势"
-    ],
-    "ai-community": [
-      "AI自评代码给满分，独立验证机制引反思",
-      "5k MRR AI应用仍需人类开发者，创业泡沫被戳破",
-      "Claude Agent工具输出Token成本降低一个数量级",
-      "AI Agent合规但目标偏离，沙箱设计新视角",
-      "CliGate统一Claude/Codex/Gemini/飞书/钉钉多协议",
-      "L1+L2缓存层削减90% LLM调用成本方案"
+    "agent-orch": [
+      "AI CLI工具进入深度工程化期，多模型集成成发力核心",
+      "底层架构演进进行时，Rust等强类型语言成新一代共识",
+      "开源架构版图划分，云原生与多模态支持成竞逐焦点"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.117 released weekly, trust eroding",
-      "OpenAI Codex: 6 alphas in rapid same-day iteration",
-      "Codex Rust migration restructures permission model",
-      "Gemini CLI battles platform reliability issues",
-      "Kimi Code CLI, Qwen Code race to close gaps",
-      "MCP lifecycle management dominates community discourse"
+      "AI CLI tools rapidly evolving into autonomous agent platforms",
+      "MCP (Model Context Protocol) is now the standard for integration",
+      "Opaque billing and token consumption causing major user backlash",
+      "Claude Code v2.1.116 introduced MCP regressions amid 2k+ vote issue",
+      "OpenAI Codex faces a massive user thread over severe token drain",
+      "Windows platform stability remains a critical pain point sector-wide"
     ],
     "ai-agents": [
-      "OpenClaw: 500 issues, 500 PRs in 24 hours",
-      "v2026.4.20 stable release improves onboarding UX",
-      "341 open PRs strain reviewer bandwidth",
-      "324 open vs 176 closed issues need triage",
-      "NanoBot, Hermes Agent, 11 others in ecosystem",
-      "XL-sized features in active review pipeline"
+      "OpenClaw community sees 500 issues and 500 PRs in 24 hours",
+      "Maintainers struggling to triage with 307 issues left open",
+      "OpenClaw PR throughput strained: 323 open against 177 merged",
+      "OpenClaw project pushes 3 new releases in active release cycle",
+      "v2026.4.20 focuses purely on first-run UX and setup wizard UI",
+      "Recurring LLM provider regressions suggest stability challenges"
     ],
     "ai-trending": [
-      "FinceptTerminal: +2,548 stars for AI finance",
-      "MCP adoption accelerating across projects",
-      "claude-context: +169 stars for codebase search",
-      "thunderbolt: +596 stars, privacy-first AI layer",
-      "RuView: WiFi human sensing without cameras",
-      "Rust, TypeScript dominate new hot projects"
+      "FinceptTerminal surges with +2,595 daily stars for AI finance",
+      "TrendRadar gains +584 daily stars for public opinion intelligence",
+      "Claude-context MCP server launched to solve coding context limits",
+      "Thunderbolt launches as a local-first, user-controlled AI client",
+      "Edge-computing breakthroughs push privacy-preserving computer vision",
+      "Massive demand for self-hosted personal analytics and monitoring"
     ],
     "ai-web": [
-      "Anthropic-Amazon: $100B, 10-year, 5GW deal",
-      "Anthropic operating 1M+ Trainium2 chips",
-      "Trainium2 through Trainium4 silicon roadmap",
-      "OpenAI ChatGPT Images 2.0 hinted in URLs",
-      "OpenAI Codex enterprise scaling suggested",
-      "Asymmetry: Anthropic detailed vs OpenAI opaque"
+      "Anthropic announces $100B, 10-year compute deal with AWS",
+      "AWS deal secures Anthropic up to 5 gigawatts of compute power",
+      "Compute deal anchored by Amazon's custom Trainium silicon chips",
+      "OpenAI launches ChatGPT Images 2.0 for native multimodal gen",
+      "OpenAI rolls out autonomous 'Codex' coding agent for enterprise",
+      "Frontier AI battle splits into hardware vs autonomous agents"
     ],
     "ai-hn": [
-      "Anthropic reverses CLI tool policy dramatically",
-      "Claude Code removed from Pro plans",
-      "Anthropic $5B funding, $100B cloud commitment",
-      "ChatGPT Images 2.0 draws 314 comments",
-      "Haiku 4.5 + skills outperforms Opus 4.7",
-      "Mythos found 271 Firefox bugs, access concerns"
+      "Anthropic dominates HN front page over $5B raise and AWS deal",
+      "Users outraged by sudden removal of 'Claude Code' from Pro plan",
+      "Community debates lock-in implications of Anthropic's AWS deal",
+      "OpenAI's ChatGPT Images 2.0 launch hits 136 HN upvotes",
+      "Reports emerge of CPC ads being quietly introduced to ChatGPT",
+      "Haiku 4.5 + skills benchmark outperforms the massive Opus 4.7"
     ],
-    "ai-ph": [
-      "Dune: 559 votes for context-aware Mac keypad",
-      "Claude Desktop Buddy cracks top three hardware",
-      "Claro - Research Agents operates on your data",
-      "Three Pitch Berlin products target US entry",
-      "AI-native software lifecycle tools crowd field",
-      "Hardware-meets-AI experiments gain traction"
+    "rl-daily": [
+      "Ecosystem divided between LLM post-training and classical RL",
+      "Classical RL libraries like Stable Baselines3 now in maintenance mode",
+      "Post-training frameworks aggressively tackle hardware scaling limits",
+      "verl project leading with critical architecture overhauls",
+      "Active development focused on inference-training communication overhead",
+      "Single-agent algorithm libraries experience minimal to no activity"
     ],
-    "ai-arxiv": [
-      "MathNet: multimodal math reasoning benchmark",
-      "When can LLMs reason with weak supervision?",
-      "Too Correct to Learn: saturated data paradox",
-      "Document-as-image fails for scientific retrieval",
-      "Jailbreak detection papers multiply",
-      "Efficient deployment via aggressive quantization"
-    ],
-    "ai-hf": [
-      "Gemma 4 family: 10M+ combined downloads",
-      "Qwen3.6-35B-A3B breakout Chinese MoE model",
-      "Uncensored variants rank high despite controversy",
-      "Tencent HY-World-2.0: trending 3D world model",
-      "unsloth contributes two top GGUF conversions",
-      "GLM-5.1 gains as bilingual alternative"
-    ],
-    "ai-community": [
-      "AI rated its own code 10/10, went viral",
-      "$5K MRR AI app still needed human developer",
-      "Claude token burn reduction strategies shared",
-      "Sandbox escape scenarios gain practical traction",
-      "Wasp, CliGate mature into infrastructure layer",
-      "10 failed stacks to production cautionary tale"
+    "agent-orch": [
+      "Agent orchestrator ecosystem tracks massive growth of 45 projects",
+      "Multi-agent orchestration dominated by Claude and OpenAI workflows",
+      "Claude Squad and Claude Flow lead specialized CLI orchestrators",
+      "Frameworks like AutoGPT, AutoGen, and CrewAI remain highly active",
+      "New tools emerge for strict human-in-the-loop agent management",
+      "Demand surges for secure sandbox runtimes in agent execution"
     ]
   }
 }

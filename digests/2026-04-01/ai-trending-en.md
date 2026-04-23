@@ -1,107 +1,94 @@
 # AI Open Source Trends 2026-04-01
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-01 00:12 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-31 22:07 UTC
 
 ---
 
-# AI Open Source Trends Report — April 1, 2026
-
----
+# AI Open Source Ecosystem Trends Report (2026-04-01)
 
 ## 1. Today's Highlights
-
-Today's GitHub trending reveals an **unprecedented surge in Claude Code ecosystem tooling**, with four dedicated projects amassing over 8,000 stars combined. Microsoft enters the voice AI frontier with [VibeVoice](https://github.com/microsoft/VibeVoice), while agent infrastructure matures through [hermes-agent](https://github.com/NousResearch/hermes-agent) and [superpowers](https://github.com/obra/superpowers). The data signals a decisive shift from general LLM frameworks toward **specialized agent harnesses and coding companion tooling**—developers are now building infrastructure *for* AI-assisted development rather than just *with* AI. Notably, "agentic skills frameworks" and memory systems for persistent coding sessions are emerging as first-class primitives.
+The open-source community is currently undergoing a "Claude Code" mania. Projects extending, guiding, and optimizing Anthropic's agentic coding tools are dominating the daily trending charts, signaling a shift from general LLM chatbots to specialized **agentic IDE workflows**. Simultaneously, Microsoft is doubling down on open-source AI contributions with **VibeVoice** (frontier voice AI) and **agent-lightning** (agent training), bridging the gap between raw models and production-ready agents. We are also seeing a maturation of the "Skills" ecosystem, where developers are packaging agentic capabilities into shareable, modular formats (e.g., `obra/superpowers`), moving beyond simple prompt engineering to structured software development methodologies for AI.
 
 ---
 
 ## 2. Top Projects by Category
 
-### 🔧 AI Infrastructure
-
-| Project | Stars | Why It Matters Today |
-|--------|-------|----------------------|
-| [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice) | 0 (+3,863 today) | Microsoft's open-source frontier voice AI—major vendor entry into end-to-end speech infrastructure |
-| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | 0 (+2,390 today) | Visual, example-driven Claude Code guide with copy-paste templates—highest-velocity documentation project today |
-| [obra/superpowers](https://github.com/obra/superpowers) | 0 (+2,620 today) | Agentic skills framework & software development methodology—defines reusable primitives for AI-augmented engineering |
-| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 0 (+2,407 today) | Curated best practices for Claude Code—community knowledge crystallizing around optimal human-AI collaboration patterns |
-| [microsoft/agent-lightning](https://github.com/microsoft/agent-lightning) | 0 (+130 today) | "Absolute trainer" for AI agents—Microsoft's unified agent training infrastructure |
-| [ollama/ollama](https://github.com/ollama/ollama) | 166,613 | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax, gpt-oss—continued dominance in local inference |
-
 ### 🤖 AI Agents / Workflows
+*Focus: Orchestration, multi-agent systems, and autonomous coding tools.*
 
-| Project | Stars | Why It Matters Today |
-|--------|-------|----------------------|
-| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 0 (+1,126 today) | Teams-first multi-agent orchestration for Claude Code—addresses enterprise multi-user coordination |
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 20,308 (+1,907 today) | "The agent that grows with you"—adaptive agent architecture from prominent open research collective |
-| [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 45,091 | Nano agent harness built from 0 to 1—educational minimalism proving "bash is all you need" |
-| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,501 | ~400 MCP servers for AI agents—massive pre-built integration ecosystem |
-| [trycua/cua](https://github.com/trycua/cua) | 13,342 | Computer-Use Agents infrastructure—sandboxes and benchmarks for desktop-controlling agents |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 70,307 | AI-driven development platform—mature open alternative to closed coding agents |
-| [e2b-dev/E2B](https://github.com/e2b-dev/E2B) | 11,518 | Secure sandboxed environments for enterprise-grade agents—critical infrastructure layer |
+*   **[microsoft/VibeVoice](https://github.com/microsoft/VibeVoice)** [Python] ⭐0 (+3,862 today)
+    *   An Open-Source Frontier Voice AI framework, likely enabling high-fidelity voice interaction for agents.
+*   **[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)** [Python] ⭐0 (+2,390 today)
+    *   A visual, example-driven guide to Claude Code that has become an overnight sensation for developers trying to master agentic coding.
+*   **[obra/superpowers](https://github.com/obra/superpowers)** [Shell] ⭐0 (+2,623 today)
+    *   An agentic skills framework and software development methodology that provides a structured way to build reliable AI agents.
+*   **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** [Python] ⭐20,206 (+1,909 today)
+    *   "The agent that grows with you"—a highly popular framework focusing on adaptive, long-term agent memory and evolution.
+*   **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** [TypeScript] ⭐0 (+1,127 today)
+    *   Teams-first multi-agent orchestration specifically designed for the Claude Code environment.
+*   **[OpenBMB/ChatDev](https://github.com/OpenBMB/ChatDev)** [Python] ⭐0 (+117 today)
+    *   ChatDev 2.0, focusing on LLM-powered multi-agent collaboration to simulate a virtual software company.
+
+### 🔧 AI Infrastructure
+*Focus: Dev tools, CLI, sandboxes, and runtime environments.*
+
+*   **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** [TypeScript] ⭐45,050
+    *   A "nano agent harness" built from scratch, demonstrating that basic shell scripting can power sophisticated agents.
+*   **[microsoft/agent-lightning](https://github.com/microsoft/agent-lightning)** [Python] ⭐0 (+160 today)
+    *   "The absolute trainer to light up AI agents," suggesting a new standard or toolset for fine-tuning agent behaviors.
+*   **[trycua/cua](https://github.com/trycua/cua)** [Python] ⭐13,342
+    *   Open-source infrastructure for Computer-Use Agents (CUA), providing sandboxes and SDKs for agents that control desktops.
+*   **[e2b-dev/E2B](https://github.com/e2b-dev/E2B)** [Python] ⭐11,517
+    *   Secure, open-source sandboxes for enterprise-grade agents, essential for safe code execution.
+*   **[alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox)** [Python] ⭐9,646
+    *   A secure, fast, and extensible sandbox runtime from Alibaba, competing in the agent infrastructure layer.
 
 ### 📦 AI Applications
+*Focus: End-user apps, vertical solutions, and specific use cases.*
 
-| Project | Stars | Why It Matters Today |
-|--------|-------|----------------------|
-| [vas3k/TaxHacker](https://github.com/vas3k/TaxHacker) | 0 (+318 today) | Self-hosted AI accounting with LLM receipt/invoice analysis—vertical AI app with custom prompt architecture |
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | 74,153 (+439 today) | OCR-to-structured-data bridge for LLMs—critical document ingestion layer trending in RAG pipelines |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 42,673 | AI productivity studio with 300+ assistants—unified frontier LLM access with autonomous agents |
-| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,688 | CowAgent: super AI assistant with active thinking, task planning, long-term memory—"OpenClaw alternative" |
-| [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | 29,894 | Frontend stack for agents & generative UI—React/Angular native agent components, AG-UI Protocol authors |
-
-### 🧠 LLMs / Training
-
-| Project | Stars | Why It Matters Today |
-|--------|-------|----------------------|
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 74,848 | High-throughput LLM inference engine—production serving standard |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 69,313 | Unified fine-tuning for 100+ LLMs/VLMs—ACL 2024, still essential for model customization |
-| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 45,117 | Train 64M-parameter GPT from scratch in 2 hours—educational minimalism demystifying LLM training |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 126,575 | Agent harness performance optimization: skills, instincts, memory, security—comprehensive Claude Code enhancement system |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 85,333 | Make websites accessible for AI agents—web automation primitive for agent tool use |
+*   **[vas3k/TaxHacker](https://github.com/vas3k/TaxHacker)** [TypeScript] ⭐0 (+325 today)
+    *   A self-hosted AI accounting app that uses LLMs to analyze receipts and invoices—a perfect example of "Boring AI" solving real-world problems.
+*   **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** [TypeScript] ⭐42,670
+    *   An AI productivity studio with smart chat and 300+ assistants, unifying access to frontier LLMs.
+*   **[khoj-ai/khoj](https://github.com/khoj-ai/khoj)** [Python] ⭐33,759
+    *   An "AI second brain" that acts as an autonomous research agent across web and personal docs.
 
 ### 🔍 RAG / Knowledge
+*Focus: Vector databases, OCR, and context management.*
 
-| Project | Stars | Why It Matters Today |
-|--------|-------|----------------------|
-| [langgenius/dify](https://github.com/langgenius/dify) | 135,232 | Production-ready agentic workflow platform—dominant visual builder for RAG + agents |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 131,817 | "The agent engineering platform"—pivoting from chains to agent-first architecture |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 76,742 | RAG engine fusing retrieval with agent capabilities—"superior context layer" positioning |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 51,604 | Universal memory layer for AI agents—persistent identity across sessions |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 44,072 | Claude Code plugin capturing session context, compressing with AI, injecting into future sessions—closing the memory loop |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,544 | Cloud-native vector database—scalable ANN search infrastructure |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 23,407 | Document index for vectorless, reasoning-based RAG—potential paradigm shift away from embedding-dependent retrieval |
+*   **[PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)** [Python] ⭐74,111 (+440 today)
+    *   A powerful OCR toolkit bridging the gap between images/PDFs and LLMs, crucial for "Document RAG."
+*   **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** [TypeScript] ⭐44,040
+    *   A plugin that captures Claude Code sessions and injects context back into future sessions, solving the "amnesia" problem in coding agents.
+*   **[mem0ai/mem0](https://github.com/mem0ai/mem0)** [Python] ⭐51,599
+    *   The universal memory layer for AI agents, enabling persistent context across sessions.
+
+### 🧠 LLMs / Training
+*Focus: Model training, fine-tuning, and weights.*
+
+*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐69,311
+    *   Unified efficient fine-tuning for 100+ LLMs, remaining the go-to standard for model customization.
+*   **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐74,843
+    *   The high-throughput inference engine, essential for serving the growing number of open-source models.
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**The Claude Code Ecosystem Explosion** is the defining signal of April 1, 2026. Four trending repositories dedicated to a single vendor's coding tool—totaling 7,924 stars in one day—demonstrates that **AI-assisted development has crossed from early adoption to infrastructure-building phase**. Developers aren't merely using Claude Code; they're constructing meta-tools (orchestration, memory, best practices, training guides) that treat it as a platform.
+**1. The Rise of the "Agentic IDE" Ecosystem**
+The most striking signal today is the explosive growth of projects surrounding **Claude Code**. With 4 distinct repositories (`claude-howto`, `oh-my-claudecode`, `claude-code-best-practice`, `claude-mem`) trending simultaneously, it is clear that the developer community has moved beyond simple chat interfaces. The "killer app" for LLMs in 2026 appears to be the **Integrated Development Environment (IDE)** itself. Developers are no longer just *using* AI to write code; they are building frameworks to *manage the AI that writes code*.
 
-This parallels the 2023-2024 ChatGPT plugin ecosystem but with critical differences: **deeper integration** (shell-level, not API-level), **persistence emphasis** (memory systems like [claude-mem](https://github.com/thedotmack/claude-mem)), and **team coordination** ([oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)). The "agent harness" concept—frameworks that enhance rather than replace coding agents—represents a new architectural layer.
+**2. "Skills" as the New "Apps"**
+We are witnessing the formalization of "Skills" (prompts + tools + context) as a distinct software category. Projects like [obra/superpowers](https://github.com/obra/superpowers) and [Dimillian/Skills](https://github.com/Dimillian/Skills) treat agentic capabilities not as one-off prompts, but as versioned, debuggable software modules. This mirrors the early days of mobile app stores but for AI behaviors.
 
-**Voice AI infrastructure** emerges via Microsoft's [VibeVoice](https://github.com/microsoft/VibeVoice), suggesting multimodal expansion beyond text-centric agents. The "Frontier Voice AI" framing implies end-to-end neural audio, not pipeline-based TTS/ASR.
-
-**Memory and state persistence** is the unsolved problem attracting engineering attention. Three distinct approaches appear: vector databases (Milvus, Qdrant), agent-specific memory layers (mem0, claude-mem), and "vectorless" reasoning-based retrieval (PageIndex). The latter is particularly notable as a potential inflection point—if reasoning models reduce dependency on embedding-based retrieval, RAG architectures may simplify dramatically.
-
-The data also reveals **MCP (Model Context Protocol) consolidation** as the dominant integration standard, with [activepieces](https://github.com/activepieces/activepieces) alone offering ~400 pre-built servers. This suggests the protocol has won against earlier attempts (Function Calling, Plugins), becoming the "USB-C for AI tools."
+**3. Infrastructure Maturation: Sandboxes & Memory**
+As agents become more autonomous, the need for safety and persistence grows. The presence of [trycua/cua](https://github.com/trycua/cua) (Computer-Use Agents) and [e2b-dev/E2B](https://github.com/e2b-dev/E2B) (Sandboxing) alongside [mem0ai/mem0](https://github.com/mem0ai/mem0) (Memory) indicates a robust infrastructure layer is forming to support "long-haul" agents that can operate a computer safely for hours or days without human intervention.
 
 ---
 
 ## 4. Community Hot Spots
 
-- **🔥 [everything-claude-code](https://github.com/affaan-m/everything-claude-code)** — 126K stars make this the largest Claude Code enhancement project. Its "skills, instincts, memory, security, research-first development" framework suggests a comprehensive mental model for agent augmentation that transcends single-tool optimization.
-
-- **🔥 [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** — "Vectorless, reasoning-based RAG" challenges embedding-centric orthodoxy. If reasoning models can directly navigate document structure, this could obsolete significant vector database infrastructure—worth monitoring for architectural bets.
-
-- **🔥 [trycua/cua](https://github.com/trycua/cua)** — Computer-Use Agents with full desktop control (macOS/Linux/Windows sandboxes). The "train and evaluate" positioning suggests this is infrastructure for the next generation of agents that operate GUIs rather than APIs—critical for legacy system integration.
-
-- **🔥 [obra/superpowers](https://github.com/obra/superpowers)** — "Agentic skills framework & software development methodology" from a respected practitioner. The methodology framing (not just tooling) indicates AI-native software engineering practices are crystallizing into transferable patterns.
-
-- **🔥 [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** — "Bash is all you need" minimalism from 0 to 1. The educational approach—building understanding through constraint—contrasts with abstraction-heavy frameworks and may influence how agent infrastructure is taught.
-
----
-
-*Report generated from GitHub trending data, April 1, 2026. Star counts reflect snapshot timing; velocity indicators (today's new stars) prioritize recent community attention.*
-
----
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*
+*   **[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)**: The fastest-moving doc project today. If you are integrating Claude into your workflow, this is the community-approved bible.
+*   **[obra/superpowers](https://github.com/obra/superpowers)**: Highly starred Shell project. Watch this space for a potential new standard in "Prompt Engineering as Software Engineering."
+*   **[microsoft/VibeVoice](https://github.com/microsoft/VibeVoice)**: With nearly 4k stars in one day, this Microsoft release suggests a major breakthrough in open-source Voice AI, a sector that has been relatively quiet compared to text.
+*   **[PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)**: Its resurgence in the AI era is notable. As RAG moves from plain text to "Document Understanding," OCR is becoming the critical entry point for enterprise data.
