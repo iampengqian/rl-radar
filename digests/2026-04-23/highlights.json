@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code更新至v2.1.117，遭遇沙箱回归等严重阻塞性Bug",
+      "OpenAI Codex Alpha 9连更，正彻底重构底层权限系统架构",
+      "Gemini CLI探索多模态，新增AST感知与命令注入防御机制",
+      "GitHub Copilot重点解决计费痛点，修复Premium额度无限扣减",
+      "Qwen Code v0.15.0极速交付，单日重构流式解析并发架构",
+      "Kimi Code v1.38.0积极排雷，修复OAuth竞态与长上下文压缩"
+    ],
+    "ai-agents": [
+      "OpenClaw发版引发升级事故，缺失飞书SDK致网关无法启动",
+      "v2026.4.21版本带来重要升级，默认图像模型升至gpt-image-2",
+      "安全防线完善，OpenClaw引入exec.denylist阻断高危命令",
+      "OpenClaw单日吞吐量惊人，共处理超500条Issue与500条PR",
+      "网关诊断功能大增，新增面向支持报告的诊断导出提升排障效率",
+      "社区呼声高涨，强烈要求原生客户端与高级调度功能落地"
+    ],
+    "ai-trending": [
+      "ollama稳居本地推理王座，⭐169k已支持Kimi-K2.5等新模型",
+      "claude-context今日⭐+873，将整个代码库化为Claude上下文",
+      "hermes-agent破11万星，长期记忆与学习能力的Agent成共识",
+      "CowAgent超级助理受捧，融合主动思考与技能创造无缝入微信",
+      "TrendRadar直击信息焦虑，MCP架构实现AI舆情监控与预测",
+      "无向量检索新架构崛起，向传统RAG与向量数据库发起挑战"
+    ],
+    "ai-web": [
+      "Anthropic发布8.1万人调研，揭示AI提效越大失业焦虑越强",
+      "Anthropic建立前瞻性晴雨表，将推出月度AI经济指数调查",
+      "OpenAI连发三文发力B端，重磅推出Workspace Agents",
+      "为打通Agentic工作流，OpenAI全面上线Websockets支持",
+      "企业数据安全成ToB标配，OpenAI正式发布Privacy Filter",
+      "智能体工作流成共识，AI从单点任务向接管全工作流演进"
+    ],
+    "ai-hn": [
+      "Anthropic的Mythos模型未经授权遭滥用，引发全球安全恐慌",
+      "Mythos展惊人威力：单次扫描发现Firefox 271个零日漏洞",
+      "Claude Code被移出Pro计划，订阅策略调整激怒开发者",
+      "Broccoli开源，社区热议这款云端一次性编码智能体架构",
+      "XTrace发布加密向量数据库，无需暴露原始嵌入即可搜索",
+      "Claude Code第三方Gemini插件发布，打破模型生态壁垒"
+    ],
+    "rl-daily": [
+      "大模型后训练主导生态，传统单智能体基准环境库进入静默",
+      "verl进入扩张期：向多硬件统一平台与多模态扩散模型解耦",
+      "TRL深水区重构：攻坚显存优化与底层Tokenizer规范化",
+      "AReaL硬核优化：整合底层算力与跨引擎NCCL P2P通信",
+      "OpenRLHF推行单控制器解耦，预警PyTorch底层破坏变更",
+      "前沿探索：开源社区快速复现基于惊奇度的DPG损失函数"
+    ],
+    "agent-orch": [
+      "Symphony领衔，AI编排生态正向多智能体协同与系统操控演进",
+      "Claude Squad热度不减，专注解决多智能体并发与资源调度",
+      "开发者急需编排工具，以解决智能体沙箱隔离与权限控制痛点",
+      "AutoGen与MetaGPT等老牌项目持续探索复杂任务拆解与分发",
+      "LlamaIndex向编排靠拢，试图填补大模型与动态交互界面空白",
+      "CrewAI与Agno加速架构迭代，主攻轻量级Agent框架定制"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Gemini CLI and OpenCode are leading community engagement.",
+      "Claude Code v2.1.117 removed features and has quota opacity.",
+      "OpenAI Codex Alpha 8 & 9 suffer macOS CPU and memory leaks.",
+      "Rapid innovation is causing fragile agent architectures.",
+      "Gemini CLI users report issues with runaway agents.",
+      "Qwen and OpenAI are pushing rapid-fire CLI releases."
+    ],
+    "ai-agents": [
+      "OpenClaw faces 500 new issues after v2026.4.21 release.",
+      "v2026.4.21 update defaults image gen to OpenAI gpt-image-2.",
+      "Recent OpenClaw release causes widespread dependency bugs.",
+      "Community reports bugs faster than OpenClaw team resolves.",
+      "Maintainers face friction over global npm install flows.",
+      "Contributors actively develop advanced agentic hooks."
+    ],
+    "ai-trending": [
+      "Contextual AI and automated intelligence tools surge.",
+      "RAG is shifting beyond text to multimodal parsing.",
+      "Alibaba open-sources OpenSandbox for AI agent code.",
+      "Agentic workflows rapidly maturing past simple chatbots.",
+      "Ollama now supports the latest Kimi-K2.5 and GLM-5.",
+      "vllm inference engine hits 77,736 GitHub stars."
+    ],
+    "ai-web": [
+      "Anthropic launches major macroeconomic AI jobs survey.",
+      "OpenAI releases new Workspace Agents for ChatGPT.",
+      "High AI productivity gains trigger job displacement fears.",
+      "OpenAI introduces new Privacy Filter for enterprises.",
+      "Anthropic positions itself as a socio-economic evaluator.",
+      "OpenAI accelerates agentic AI for enterprise deployment."
+    ],
+    "ai-hn": [
+      "Anthropic Mythos model finds 271 Firefox zero-days.",
+      "Anthropic quietly removes Claude Code from $20 Pro tier.",
+      "Community outraged by silent pull of Anthropic Opus 4.6.",
+      "ChatGPT allegedly used to advise a mass shooter.",
+      "AI robot outplays humans in table tennis milestone.",
+      "OpenAI officially launches Workspace Agents for business."
+    ],
+    "rl-daily": [
+      "LLM post-training frameworks dominate RL development.",
+      "TRL focuses on memory optimization and data pipelines.",
+      "verl project targets non-NVIDIA hardware accelerators.",
+      "Traditional agent tooling libraries remain in maintenance.",
+      "Reinforcement Learning ecosystem sharply bifurcated today.",
+      "AReaL introduces multi-backend orchestration for RL."
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem includes 45 active projects.",
+      "Swarm Protocol and Crystal gain traction in orchestration.",
+      "Multi-agent frameworks like CrewAI and AutoGen evolve.",
+      "Claude Squad bridges AI assistants with team workflows.",
+      "Agent Orchestrator focuses on seamless task delegation.",
+      "LlamaIndex and Agno drive new agentic workflow designs."
+    ]
+  }
+}
