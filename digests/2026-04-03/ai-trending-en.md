@@ -1,90 +1,107 @@
 # AI Open Source Trends 2026-04-03
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-02 22:07 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-03 00:11 UTC
 
 ---
 
-# AI Open Source Ecosystem Trends Report (2026-04-03)
+# AI Open Source Trends Report — April 3, 2026
+
+---
 
 ## 1. Today's Highlights
 
-The AI ecosystem today is heavily focused on **transparency and developer tooling**. The top trending repository, `system_prompts_leaks`, reveals the internal instructions of next-generation models like GPT-5.4 and Claude Opus 4.6, highlighting a community drive to reverse-engineer and understand the "black box" of top-tier proprietary models. Simultaneously, there is a massive surge in **"Code Agent Harnesses"**—tools like `oh-my-codex` and `learn-claude-code` that augment CLI-based coding agents with hooks, teams, and UI overlays, moving beyond simple chat interfaces. Additionally, the rise of `openscreen` signals a成熟 market for AI-native content creation tools aimed at replacing traditional manual editing software.
+The AI open-source ecosystem today shows explosive momentum around **agent harnesses and coding assistants**, with [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) (+2,867 stars) leading as developers rush to extend Claude Code, Codex, and similar tools with hooks, team coordination, and HUD interfaces. A parallel surge in **system prompt extraction** ([system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks), +306 stars) reveals intensifying interest in reverse-engineering frontier model behaviors. Notably, **local-first AI infrastructure** continues maturing—Ollama now supports Kimi-K2.5 and GLM-5, while RAGFlow and Mem0 push retrieval-augmented generation toward production agent systems. The trend signals a decisive shift from "chat with LLMs" to "orchestrate autonomous AI workers."
 
 ---
 
 ## 2. Top Projects by Category
 
-### 🤖 AI Agents / Workflows
-*Frameworks for autonomous systems, multi-agent collaboration, and automation.*
-
-*   [**Yeachan-Heo/oh-my-codex**](https://github.com/Yeachan-Heo/oh-my-codex) [TypeScript] ⭐2,852 (today)
-    *   An expansion layer for coding agents that adds hooks, HUDs, and team capabilities, effectively turning a single coding agent into a multi-agent orchestration system.
-*   [**shareAI-lab/learn-claude-code**](https://github.com/shareAI-lab/learn-claude-code) [TypeScript] ⭐47,195
-    *   A "nano harness" that demonstrates how to build a Claude Code-like agent from scratch using only Bash, emphasizing minimalism in agent architecture.
-*   [**CopilotKit/CopilotKit**](https://github.com/CopilotKit/CopilotKit) [TypeScript] ⭐29,939
-    *   A frontend infrastructure for building agents and generative UIs, now famous for the "AG-UI Protocol" which standardizes how agents interact with UI components.
-*   [**trycua/cua**](https://github.com/trycua/cua) [Python] ⭐13,364
-    *   Infrastructure for "Computer-Use Agents," providing sandboxes and benchmarks for agents that control full desktop OS environments (macOS/Linux/Windows).
-*   [**activepieces/activepieces**](https://github.com/activepieces/activepieces) [TypeScript] ⭐21,530
-    *   An open-source AI workflow automation tool that connects deeply with ~400 MCP (Model Context Protocol) servers, positioning itself as a central hub for agent tools.
-*   [**Panniantong/Agent-Reach**](https://github.com/Panniantong/Agent-Reach) [Python] ⭐14,589
-    *   A CLI tool giving agents "eyes" to scrape and search the open web (Reddit, YouTube, Twitter) without API fees.
-
 ### 🔧 AI Infrastructure
-*Dev tools, sandboxes, CLI, and inference engines.*
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [ollama/ollama](https://github.com/ollama/ollama) | 166,846 | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax—critical for private, offline AI deployment |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 75,030 | High-throughput inference engine; essential infrastructure for serving LLMs at scale |
+| [langgenius/dify](https://github.com/langgenius/dify) | 135,526 | Production-grade agentic workflow platform bridging prototyping to deployment |
+| [open-webui/open-webui](https://github.com/open-webui/open-webui) | 129,714 | User-friendly local AI interface—democratizing access to self-hosted models |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 103,128 | Web data API for AI agents; solves the critical "clean data ingestion" bottleneck |
+| [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 47,223 | Educational "nano agent harness" teaching developers to build Claude Code alternatives from scratch |
 
-*   [**siddharthvaddem/openscreen**](https://github.com/siddharthvaddem/openscreen) [TypeScript] ⭐2,496 (today)
-    *   A free, open-source alternative to Screen Studio that automates the creation of stunning product demos, likely using AI for motion smoothing and layout.
-*   [**asgeirtj/system_prompts_leaks**](https://github.com/asgeirtj/system_prompts_leaks) ⭐323 (today)
-    *   A critical resource containing extracted system prompts from GPT-5.4, Claude Opus 4.6, and others, essential for developers studying prompt engineering and model behavior.
-*   [**jackwener/opencli**](https://github.com/jackwener/opencli) [TypeScript] ⭐11,450
-    *   A "Universal CLI Hub" that transforms websites and local binaries into standardized CLI tools discoverable by AI agents via an `AGENT.md` protocol.
-*   [**alibaba/OpenSandbox**](https://github.com/alibaba/OpenSandbox) [Python] ⭐9,698
-    *   An industrial-grade, secure sandbox runtime specifically designed for executing code generated by AI agents.
-*   [**googleworkspace/cli**](https://github.com/googleworkspace/cli) [Rust] ⭐23,591
-    *   The official Google Workspace CLI, recently updated with "AI agent skills," allowing agents to natively interact with Drive, Gmail, and Calendar.
+### 🤖 AI Agents / Workflows
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) | 0 (+2,867 today) | **Today's breakout**: Extensible agent harness for Codex/Claude Code—hooks, teams, HUDs |
+| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 133,570 | Performance optimization system for agent harnesses: skills, memory, security, research-first dev |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 85,716 | Makes websites accessible to AI agents—core infrastructure for web-automation agents |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 70,459 | AI-driven software development—autonomous coding agents |
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,530 | ~400 MCP servers for AI agents; workflow automation with Model Context Protocol |
+| [trycua/cua](https://github.com/trycua/cua) | 13,365 | Computer-Use Agent infrastructure: sandboxes, SDKs, benchmarks for desktop-controlling agents |
+| [alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox) | 9,698 | Secure, fast sandbox runtime for AI agents—enterprise-grade isolation |
+
+### 📦 AI Applications
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [siddharthvaddem/openscreen](https://github.com/siddharthvaddem/openscreen) | 0 (+2,573 today) | **Trending now**: Open-source demo creation tool—AI-powered Screen Studio alternative |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 42,792 | AI productivity studio with 300+ assistants; unified frontier LLM access |
+| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,720 | CowAgent: super AI assistant with active planning, OS access, long-term memory |
+| [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | 29,939 | Frontend stack for agents & generative UI; AG-UI Protocol makers |
+| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 10,762 | Industry-first professional AI film/video production platform—Hollywood-grade workflows |
 
 ### 🧠 LLMs / Training
-*Model training, fine-tuning, and architecture resources.*
-
-*   [**jingyaogong/minimind**](https://github.com/jingyaogong/minimind) [Python] ⭐45,415
-    *   An educational project enabling users to train a 64M-parameter GPT model from scratch in just 2 hours, lowering the barrier to understanding LLM internals.
-*   [**galilai-group/stable-pretraining**](https://github.com/galilai-group/stable-pretraining) [Python] ⭐172
-    *   A new minimal library for pre-training foundation models reliably at scale, addressing training stability issues.
-*   [**vllm-project/vllm**](https://github.com/vllm-project/vllm) [Python] ⭐75,027
-    *   The industry-standard high-throughput inference engine for LLMs, continuing to dominate as the backend for production AI apps.
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,707 | Foundational ML framework for text, vision, audio, multimodal models |
+| [Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 183,067 | Vision of accessible AI for everyone—tools to build and use autonomous agents |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,852 | Educational: implement ChatGPT-like LLM in PyTorch step-by-step |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 69,405 | Unified efficient fine-tuning for 100+ LLMs/VLMs (ACL 2024) |
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 45,418 | Train 64M-parameter GPT from scratch in 2 hours—minimalist LLM education |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 132,133 | The agent engineering platform—foundational for LLM application development |
 
 ### 🔍 RAG / Knowledge
-*Vector databases, retrieval, and data processing.*
-
-*   [**run-llama/llama_index**](https://github.com/run-llama/llama_index) [Python] ⭐48,241
-    *   A leading framework for document agents and OCR, essential for building RAG (Retrieval-Augmented Generation) systems.
-*   [**mem0ai/mem0**](https://github.com/mem0ai/mem0) [Python] ⭐51,801
-    *   A universal memory layer for AI agents, allowing them to remember user preferences and past interactions across sessions.
-*   [**VectifyAI/PageIndex**](https://github.com/VectifyAI/PageIndex) [Python] ⭐23,700
-    *   An innovative "Vectorless, Reasoning-based RAG" system that uses AI reasoning to index documents instead of just vector chunks.
-*   [**meilisearch/meilisearch**](https://github.com/meilisearch/meilisearch) [Rust] ⭐56,918
-    *   A fast, AI-powered hybrid search engine increasingly popular for RAG implementations due to its ease of use.
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 76,942 | Leading open-source RAG engine fusing retrieval with agent capabilities |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 48,243 | Document agent and OCR platform—knowledge layer for enterprise AI |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 51,804 | Universal memory layer for AI agents—solves long-term context retention |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 44,691 | Claude Code plugin capturing session context, compressing with AI, injecting into future sessions |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,582 | Cloud-native vector database for scalable ANN search |
+| [meilisearch/meilisearch](https://github.com/meilisearch/meilisearch) | 56,919 | Lightning-fast search engine with AI-powered hybrid search |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 14,872 | Knowledge engine for AI agent memory in 6 lines of code |
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**1. The Rise of "Agent Harnesses" and Agentic IDEs**
-The most significant trend today is the shift from *using* LLMs (chat) to *managing* them (harnesses). The explosion of `oh-my-codex` (+2852 stars) and `learn-claude-code` indicates that developers are no longer satisfied with standard coding assistants. They are building "meta-layers"—custom HUDs, hook systems, and agentic loops—that wrap around base models (like Claude or Codex) to create specialized, autonomous workflows.
+**Explosive Category: Agent Harnesses for Coding Assistants**
 
-**2. Reverse Engineering "Gen-Next" Models**
-The trending of `system_prompts_leaks` is a strong signal of community curiosity regarding the logic of newly released heavyweights (GPT-5.4, Claude Opus 4.6). As these models become more capable (and more restricted), understanding their "hidden instructions" becomes a primary method for developers to replicate behaviors in open-source models or better control the proprietary ones.
+Today's data reveals a clear inflection point: developers are no longer satisfied with raw LLM access—they demand **extensible, observable, team-ready orchestration layers** for coding agents. The +2,867 star surge for [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) and the established momentum of [everything-claude-code](https://github.com/affaan-m/everything-claude-code) (133K stars) demonstrate that "agent harness" architecture—hooks, memory management, team coordination, HUDs—is becoming a first-class concern. This mirrors the industry rollout of Claude Code, Codex CLI, and similar tools; the open-source community is racing to build the "Zsh of AI coding"—customizable, scriptable, deeply integrated into dev workflows.
 
-**3. "MCP" is the New API Standard**
-Multiple top projects (`activepieces`, `opencli`, `googleworkspace/cli`) explicitly mention **MCP (Model Context Protocol)**. This indicates MCP has successfully solidified as the standard interface for connecting AI agents to external tools and data, replacing fragmented custom API integrations. "MCP-ready" is now a key feature for infrastructure tools.
+**New Tech Stack Emergence: MCP (Model Context Protocol)**
+
+[activepieces/activepieces](https://github.com/activepieces/activepieces) explicitly highlights "~400 MCP servers for AI agents," marking MCP as a rapidly standardizing protocol for tool-augmented agents. This is the first clear signal of MCP achieving ecosystem-critical mass beyond Anthropic's original specification.
+
+**Reverse-Engineering as Signal**
+
+The [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) repository (+306 stars, covering GPT-5.4, Claude Opus 4.6, Gemini 3.1) indicates heightened competitive intelligence gathering. As frontier models iterate rapidly, understanding their system prompts becomes a tactical advantage for building better wrappers and adversarial robustness.
+
+**Local-First + Multimodal Convergence**
+
+Ollama's expansion to Kimi-K2.5 and GLM-5, combined with [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)'s document-to-structured-data bridging, shows local AI infrastructure maturing toward **multimodal, document-heavy enterprise use cases**—reducing dependency on cloud APIs for sensitive data.
 
 ---
 
 ## 4. Community Hot Spots
 
-*   **Prompt Engineering & Security**: [asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) is the #1 destination for understanding how top-tier models are system-instructed.
-*   **Augmenting the Coder**: [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) represents the cutting edge of "Agentic Software Engineering"—turning the IDE into a multi-agent command center.
-*   **Desktop Autonomy**: [trycua/cua](https://github.com/trycua/cua) is the go-to infrastructure for the highly anticipated "Computer Use" sector, where agents control entire OS desktops.
-*   **Fast Demos**: [siddharthvaddem/openscreen](https://github.com/siddharthvaddem/openscreen) is trending for solving a practical creator problem (demo videos) with AI, appealing to the indie hacker/marketing crowd.
-*   **Reasoning-Based RAG**: [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) offers a new direction for RAG, moving away from simple vector similarity to reasoning-heavy document indexing.
+- **[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)** — Today's fastest-growing project; essential for developers building on Claude Code/Codex who need customization beyond vendor defaults. The "agent teams" concept suggests multi-agent coding workflows are going mainstream.
+
+- **[system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)** — Critical resource for prompt engineers and security researchers. The inclusion of GPT-5.4 and Claude Opus 4.6 suggests these versions are already in limited deployment—valuable competitive intelligence.
+
+- **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** — "Bash is all you need" approach to building agent harnesses from zero. High educational value for understanding the minimal viable architecture beneath complex tools.
+
+- **[activepieces/activepieces](https://github.com/activepieces/activepieces)** — ~400 MCP servers represents the largest public MCP ecosystem yet visible. Worth monitoring for standardization of tool-calling interfaces across agents.
+
+- **[saturndec/waoowaoo](https://github.com/saturndec/waoowaoo)** — First industrial-grade AI film production platform with "Hollywood-standard workflows." Signals AI agents moving into professional creative pipelines beyond prototyping.
+
+---
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

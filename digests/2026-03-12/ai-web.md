@@ -1,84 +1,175 @@
 # AI 官方内容追踪报告 2026-03-12
 
-> 今日更新 | 新增内容: 272 篇 | 生成时间: 2026-03-12 15:28 UTC
+> 今日更新 | 新增内容: 396 篇 | 生成时间: 2026-03-12 00:07 UTC
 
 数据来源:
-- Anthropic: [anthropic.com](https://www.anthropic.com) — 新增 0 篇（sitemap 共 318 条）
-- OpenAI: [openai.com](https://openai.com) — 新增 272 篇（sitemap 共 748 条）
+- Anthropic: [anthropic.com](https://www.anthropic.com) — 新增 4 篇（sitemap 共 318 条）
+- OpenAI: [openai.com](https://openai.com) — 新增 392 篇（sitemap 共 748 条）
 
 ---
 
-以下是基于 2026-03-12 抓取数据的《AI 官方内容追踪报告》。
-
-### **AI 官方内容追踪报告 (2026-03-12)**
-
-#### **1. 今日速览**
-今日 Anthropic 官网处于静默状态，无显著增量更新。相比之下，OpenAI 官网出现了大规模的页面更新行为，主要特征是 **272 篇文档的批量日期刷新**，涵盖了从 GPT-2 时代到未来的 GPT-5/Codex 系列。这种“时间戳重置”现象在技术上通常预示着网站架构的重大调整（如 URL 迁移至 `/index/` 路径）或 SEO 策略更新。尽管多为旧文新发，但部分具有“未来特征”的标题（如 GPT-5.3、Sora 2、Codex App）值得密切关注，这可能暗示了 OpenAI 正在为下一阶段的产品矩阵发布进行内容准备或测试。重点关注方向包括：**推理模型可控性、代码解释器的深度集成以及 GPT-5 系列的系统卡片**。
+我将为您生成这份AI官方内容追踪报告。首先需要说明的是，您提供的OpenAI内容列表中绝大多数条目显示"无法提取文本内容"，仅有标题信息可用。我将基于可获取的信息进行分析。
 
 ---
 
-#### **2. Anthropic / Claude 内容精选**
-**今日状态：** 官网（Anthropic.com & Claude.com）今日无新增公告、研究论文或博客更新。
-*   **分析：** 结合 OpenAI 的大规模动态，Anthropic 的静默可能意味着其正在筹备针对 OpenAI 新动作的回应，或者处于研发封闭期。鉴于目前 AI 竞争格局，需持续关注其 API 文档的微小变动以获取潜在模型升级的信号。
+# AI 官方内容追踪报告（2026-03-12）
+
+**报告日期**：2026年3月12日  
+**数据来源**：Anthropic官网（anthropic.com）、OpenAI官网（openai.com）  
+**增量更新范围**：2026-03-11 至 2026-03-12
 
 ---
 
-#### **3. OpenAI 内容精选**
-*注：今日更新多为历史内容的索引重建（URL 结构变更），以下筛选出最具战略解读价值的标题进行分类分析。*
+## 1. 今日速览
 
-**3.1 核心模型与未来路线图**
-*   **[GPT-5.2 for Science and Math](https://openai.com/index/gpt-5-2-for-science-and-math/)** (更新: 2026-03-12)
-    *   **解读：** 标题暗示 GPT-5 系列已迭代至 5.2 版本，且重点强化了科学与数学推理能力。这表明 OpenAI 已跨越单纯的文本生成，向硬逻辑和科研辅助领域深度渗透。
-*   **[GPT-5.3 Codex Spark](https://openai.com/index/introducing-gpt-5-3-codex-spark/)** (更新: 2026-03-12)
-    *   **解读：** “Spark”通常指轻量级或边缘侧模型。GPT-5.3 与 Codex 的结合暗示了**代码生成模型已成为核心基座**，而非插件。这可能是一个针对个人开发者的低成本、高响应速度的版本。
-*   **[Sora 2](https://openai.com/index/sora-2/)** (更新: 2026-03-12)
-    *   **解读：** 视频生成能力的二代迭代。结合 Sora First Impressions 等文章，预示着 Sora 已度过公测期，正式进入商业化成熟阶段。
+**Anthropic 今日发布四大重磅更新**：Claude Opus 4.6 与 Sonnet 4.6 双模型齐发，首次将 100 万 token 上下文窗口引入 Opus 系列；同步宣布成立 **Anthropic Institute** 聚焦 AI 社会挑战，并扩张至悉尼建立亚太第四办公室。Opus 4.6 在 GDPval-AA 经济价值工作评估中领先 GPT-5.2 达 144 Elo 分，标志着 Anthropic 在企业级知识工作场景取得显著优势。
 
-**3.2 推理与可解释性**
-*   **[Reasoning Models Chain Of Thought Controllability](https://openai.com/index/reasoning-models-chain-of-thought-controllability/)** (更新: 2026-03-12)
-    *   **解读：** 针对 O1 等推理模型的核心痛点——思维链的可控性。如何让模型在“思考”过程中听从指令而不偏离，是 Agent 落地的关键技术瓶颈。
-*   **[Evaluating Chain Of Thought Monitorability](https://openai.com/index/evaluating-chain-of-thought-monitorability/)** (更新: 2026-03-12)
-    *   **解读：** 随着模型推理深度增加，可监控性成为安全与调试的核心。这表明 OpenAI 正在建立针对“黑盒思考”的观测工具。
-*   **[Detecting And Reducing Scheming In Ai Models](https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/)** (更新: 2026-03-12)
-    *   **解读：** “Scheming”（图谋/策略）是指模型为了达成目标而欺骗用户的行为。这是对齐领域的高阶话题，表明 OpenAI 正在严肃对待 Agent 自主性带来的潜在背叛风险。
-
-**3.3 安全与治理**
-*   **[GPT-5 System Card Sensitive Conversations](https://openai.com/index/gpt-5-system-card-sensitive-conversations/)** (更新: 2026-03-12)
-    *   **解读：** 专门针对“敏感对话”的系统卡片，说明 GPT-5 在处理伦理、隐私等边界问题上有专门的微调或护栏机制。
-*   **[Updating Our Preparedness Framework](https://openai.com/index/updating-our-preparedness-framework/)** (更新: 2026-03-12)
-    *   **解读：** Preparedness Framework 是 OpenAI 应对前沿模型灾难性风险的顶层设计。此次更新可能反映了 2026 年新的威胁模型（如生化武器、网络攻击）的评估标准变化。
-
-**3.4 开发者工具与生态**
-*   **[Introducing The Codex App](https://openai.com/index/introducing-the-codex-app/)** (更新: 2026-03-12)
-    *   **解读：** 极其重要的信号。OpenAI 可能推出了独立的 Codex 桌面或移动端应用，直接竞争 GitHub Copilot，试图将代码助手作为独立入口抢占开发者心智。
-*   **[ChatGPT for Excel](https://openai.com/index/chatgpt-for-excel/)** (更新: 2026-03-12)
-    *   **解读：** B 端渗透的战略级产品。直接切入微软生态的核心地带（尽管微软是投资者），表明 OpenAI 不满足于底层 API 提供商的角色，正在构建直接面向企业办公场景的 SaaS 应用。
+**OpenAI 今日内容以安全与基础设施为主**：发布 AI Agent Link Safety 指南、Instruction Hierarchy Challenge 安全挑战，并宣布收购 Promptfoo（AI 测试工具）。值得注意的是，OpenAI 官网出现大量历史内容索引更新（共 392 条），包括 Codex 系列（GPT-5.3 Codex、GPT-5.2 Codex、GPT-5.1 Codex Max）及多项安全研究论文的系统性归档，显示其正在重构内容架构。
 
 ---
 
-#### **4. 战略信号解读**
+## 2. Anthropic / Claude 内容精选
 
-*   **技术优先级：从“生成”转向“推理与行动”**
-    OpenAI 的内容重心明显向 **Reasoning（推理）** 和 **Agents（代理）** 倾斜。关于“Chain of Thought”（思维链）、“Scheming”（模型欺骗）和“Verifiability”（可验证性）的文章密度极高。这意味着 2026 年的 AI 竞争已不再是谁生成的图文更逼真，而是谁的模型能更可靠地执行复杂任务（如写代码、做科研）。**Codex 的全面回归与升级（GPT-5.x Codex）是关键信号，代码被视为模型进行逻辑推理和操作计算机的最佳载体。**
+### 📰 News（新闻发布）
 
-*   **竞争态势：产品化 VS 研究化**
-    OpenAI 正在激进地推进**产品化与生态闭环**。通过 `ChatGPT for Excel`、`Codex App` 以及 `Mattels Iconic Brands`（美泰合作），OpenAI 正在将模型能力直接转化为终端用户产品，甚至亲自下场做应用层。相比之下，Anthropic 的“零更新”显示出其在战略上可能更倾向于通过 API 和模型能力（如 Claude 3.5/4）通过第三方集成来渗透市场，而非直接建立庞大的 C 端产品矩阵。
-
-*   **安全与治理的常态化**
-    System Card 的更新和 Preparedness Framework 的迭代表明，**安全合规已成为产品发布的前置条件**。特别是针对“Sensitive Conversactions”和“Political Bias”的专门讨论，显示 OpenAI 正极力消除模型在大规模商业化落地中的合规隐患，为其进入医疗、政务等高监管行业铺路。
+| 标题 | 发布日期 | 核心内容 | 战略意义 |
+|:---|:---|:---|:---|
+| **[Claude Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6)** | 2026-02-05 | 旗舰模型升级：编码能力显著增强，支持更长 agentic 任务，首次在 Opus 系列引入 **1M token 上下文窗口（Beta）**；在 Terminal-Bench 2.0、Humanity's Last Exam、BrowseComp 等评测中取得 SOTA；GDPval-AA 评估领先 GPT-5.2 144 Elo 分，领先前代 Opus 4.5 达 190 分 | 直接对标 OpenAI GPT-5 系列，以"经济价值工作"场景为差异化突破口；长上下文窗口成为核心竞争维度 |
+| **[Introducing Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6)** | 2026-02-17 | 中端模型全面升级：编码一致性、指令遵循、计算机使用能力大幅提升；**免费/Pro 用户默认模型**；定价维持 $3/$15 per million tokens；开发者早期反馈显示其性能已超越 2025 年 11 月的 Opus 4.5 | 推动高性能模型民主化，以性价比策略扩大用户基数；明确"Sonnet 性能逼近前代 Opus"的产品迭代节奏 |
+| **[Introducing The Anthropic Institute](https://www.anthropic.com/news/the-anthropic-institute)** | 2026-03-11 | 新设研究机构，整合 Anthropic 内部研究资源，聚焦"强大 AI 对社会的重大挑战"：就业与经济重塑、社会韧性、威胁放大、AI 价值观对齐等；明确引用 CEO Dario Amodei《Machines of Loving Grace》中的 AGI 时间线判断 | 强化"负责任 AI 领导者"品牌定位；预判 2 年内将出现"戏剧性进展"，主动塑造政策话语空间 |
+| **[Sydney will become Anthropic's fourth office in Asia-Pacific](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific)** | 2026-03-10 | 悉尼办公室将成为亚太第四据点（继东京、班加罗尔、首尔之后）；聚焦金融服务、农业科技、清洁能源、医疗健康、深科技研究；高管团队 3 月底访澳签署合作协议 | 响应澳新市场强劲需求；地缘政治布局：在印太关键节点建立本地存在，规避单一市场依赖 |
 
 ---
 
-#### **5. 值得关注的细节**
+## 3. OpenAI 内容精选
 
-1.  **URL 架构变更 (`/index/` 化)：**
-    今日 272 条更新中，绝大多数 URL 从 `/research/` 或根目录变更为 `/index/`。这在技术 SEO 中通常是为了统一权重或为新版站点架构铺路。这可能预示着 OpenAI 即将改版官网，将“研究”与“产品”的界限进一步模糊，打造更一体化的展示平台。
+### 🔬 Research / Safety（研究与安全）
 
-2.  **Codex 产品的独立化趋势：**
-    出现了 `Codex App`、`Codex Agent Loop`、`Codex Spark` 等细分条目。这暗示 **Codex 已不再是 ChatGPT 的一个插件，而是一个独立的、拥有多种规格（Max, Spark）的 AI 软件工程师产品**。开发者应重点关注 API 接口可能的独立化或功能增强。
+| 标题 | 发布日期 | 可获取信息 | 分析推断 |
+|:---|:---|:---|:---|
+| **[AI Agent Link Safety](https://openai.com/index/ai-agent-link-safety/)** | 2026-03-12 | 内容未提取 | 标题指向"AI 智能体链接安全"，可能涉及多智能体协作中的安全协议、工具调用链的安全验证，或 MCP/Function Calling 等接口的安全规范 |
+| **[Instruction Hierarchy Challenge](https://openai.com/index/instruction-hierarchy-challenge/)** | 2026-03-11 | 内容未提取 | 与 2024 年提出的"指令层级"（Instruction Hierarchy）安全框架相关，可能发布新的红队挑战或评估基准，测试模型对恶意指令注入的抵抗能力 |
+| **[OpenAI to Acquire Promptfoo](https://openai.com/index/openai-to-acquire-promptfoo/)** | 2026-03-11 | 内容未提取 | **战略级收购**：Promptfoo 是开源的 AI 提示词测试与红队工具，收购补强 OpenAI 的模型评估基础设施，强化企业级安全服务能力 |
 
-3.  **“2025/2026”的时间戳回溯：**
-    部分 URL（如 `collective-alignment-aug-2025-updates`）显示内容可能早在去年就已存在，今日才被索引。这种延迟发布可能意味着某些敏感技术（如 Collective Alignment 的治理结构）经过了长期的内部审核才得以公开，或者是为了配合今日的某种合规宣示。
+### 🚀 Product / Release（产品与发布）
 
-4.  **传统研究的重新激活：**
-    大量 2016-2020 年的研究（如 `Sparse Circuits`, `Generative Models`）被重新标记。这可能是在强调 OpenAI 的技术延续性，或者是在暗示某些早期的基础研究（如 Scaling Laws, Sparse Attention）终于在 GPT-5 等新产品中得到了完美的工程化实现。
+| 标题 | 发布日期 | 可获取信息 | 分析推断 |
+|:---|:---|:---|:---|
+| **[Introducing GPT-5.3 Codex](https://openai.com/index/introducing-gpt-5-3-codex/)** | 2026-03-11 | 内容未提取（3 条重复索引） | Codex 系列持续迭代，5.3 版本可能聚焦代码生成质量、多语言支持或 IDE 集成深度 |
+| **[GPT-5.1 Codex Max](https://openai.com/index/gpt-5-1-codex-max/)** | 2026-03-11 | 内容未提取（2 条重复索引） | "Max" 后缀暗示高容量/高性能变体，可能针对企业大规模代码库分析场景 |
+| **[Introducing GPT-5.2 Codex](https://openai.com/index/introducing-gpt-5-2-codex/)** | 2026-03-11 | 内容未提取（3 条重复索引） | 版本号跳跃（5.1→5.2→5.3）显示快速迭代节奏，可能与 Anthropic Sonnet 4.6 形成直接竞争 |
+| **[Codex Now Generally Available](https://openai.com/index/codex-now-generally-available/)** | 2026-03-11 | 内容未提取（2 条重复索引） | Codex 从预览/测试阶段进入全面可用，商业化提速 |
+| **[Introducing Upgrades to Codex](https://openai.com/index/introducing-upgrades-to-codex/)** | 2026-03-11 | 内容未提取（2 条重复索引） | 综合性功能升级公告 |
+| **[Introducing the Codex App](https://openai.com/index/introducing-the-codex-app/)** | 2026-03-11 | 内容未提取 | **重大产品形态变化**：Codex 可能从 API/插件形态扩展为独立应用，对标 Cursor、Windsurf 等 AI IDE |
+| **[Introducing GPT-5.3 Codex Spark](https://openai.com/index/introducing-gpt-5-3-codex-spark/)** | 2026-03-11 | 内容未提取（3 条重复索引） | "Spark" 可能指轻量快速版本，或针对特定场景（如教育、原型开发）的优化变体 |
+
+### 🏢 Company / Partnership（公司与合作）
+
+| 标题 | 发布日期 | 可获取信息 | 分析推断 |
+|:---|:---|:---|:---|
+| **[Introducing OpenAI Frontier](https://openai.com/index/introducing-openai-frontier/)** | 2026-03-11 | 内容未提取（2 条重复索引） | **全新品牌线**："Frontier" 可能指向最高端模型系列、企业级服务层级，或前沿研究合作项目 |
+| **[Amazon Partnership](https://openai.com/index/amazon-partnership/)** | 2026-03-11 | 内容未提取 | 云厂商合作深化，可能涉及 AWS 上的模型托管、Bedrock 集成，或 Trainium/Inferentia 芯片优化 |
+| **[Introducing the Stateful Runtime Environment for Agents in Amazon Bedrock](https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/)** | 2026-03-11 | 内容未提取 | **技术架构升级**：有状态运行时环境支持智能体跨会话记忆与上下文保持，是构建复杂多步 agent 的关键基础设施 |
+| **[Continuing Microsoft Partnership](https://openai.com/index/continuing-microsoft-partnership/)** | 2026-03-11 | 内容未提取 | 重申与微软的战略关系，可能涉及 Azure OpenAI Service 的新功能或独家合作条款更新 |
+| **[Our Agreement with the Department of War](https://openai.com/index/our-agreement-with-the-department-of-war/)** | 2026-03-11 | 内容未提取 | **敏感政治信号**：与美国国防部（传统称 Department of Defense，此处"Department of War"为历史名称或特定项目代号）的合作协议，涉及国家安全 AI 应用 |
+
+### 📊 历史内容索引化（392 条更新说明）
+
+OpenAI 今日出现大量历史内容的索引更新，涵盖 2018-2025 年的研究论文、产品发布、安全报告、合作伙伴关系等。这一现象可能的解释：
+
+| 可能性 | 分析 |
+|:---|:---|
+| **网站架构重构** | 统一 URL 结构和元数据标准，为搜索引擎优化和 AI 可发现性做准备 |
+| **知识库整合** | 将分散的研究博客、论文、公告整合为可检索的单一知识图谱 |
+| **合规与透明** | 响应监管要求，确保历史声明、安全承诺、合作关系的可追溯性 |
+| **产品化铺垫** | 为即将发布的"OpenAI Frontier"或类似平台提供完整的内容基础 |
+
+---
+
+## 4. 战略信号解读
+
+### 4.1 技术优先级对比
+
+| 维度 | Anthropic | OpenAI |
+|:---|:---|:---|
+| **核心模型** | Claude Opus/Sonnet 4.6 双发，强调长上下文（1M）与经济价值工作 | GPT-5.x Codex 系列密集迭代，独立 App 形态探索 |
+| **差异化场景** | 金融/法律/研究等知识工作；多步骤 agentic 任务 | 代码生成全栈工具链；IDE 深度集成 |
+| **安全策略** | 机构化（Anthropic Institute）+ 产品内置（Cowork 多任务自主） | 基础设施化（收购 Promptfoo）+ 红队挑战（Instruction Hierarchy） |
+| **生态构建** | 区域化深耕（亚太四城）+ 企业直销 | 云厂商绑定（AWS/Azure）+ 平台化（Frontier） |
+
+### 4.2 竞争态势：议题设定与跟进
+
+**Anthropic 正在引领的议题：**
+- **"经济价值工作"（Economically Valuable Work）**：通过 GDPval-AA 等自定义评估，重新定义企业级 AI 的衡量标准，避开与传统学术基准的正面竞争
+- **长上下文民主化**：将 1M token 窗口同时赋予旗舰（Opus）和中端（Sonnet）模型，形成对 OpenAI 的差异化优势
+- **AI 社会转型的话语权**：Anthropic Institute 的成立，将公司定位为"AI 社会冲击"的权威研究机构，抢占政策制定者心智
+
+**OpenAI 的跟进与反制：**
+- **代码工具链闭环**：Codex App 的推出，从"模型提供商"向"终端产品"延伸，直接争夺开发者工作流
+- **安全基础设施化**：收购 Promptfoo 将安全测试工具纳入自有生态，对抗 Anthropic 的"更安全"品牌认知
+- **"Frontier"品牌升级**：可能以新品牌线覆盖最高端市场，与 Claude Opus 形成对位竞争
+
+### 4.3 对开发者和企业用户的影响
+
+| 用户类型 | 关键变化 | 行动建议 |
+|:---|:---|:---|
+| **企业知识工作者** | Anthropic Opus 4.6 在文档分析、财务/法律研究场景确立优势；1M 上下文支持整本报告/代码库处理 | 评估长上下文场景的实际 ROI；测试 Cowork 的多任务自主能力 |
+| **软件开发者** | OpenAI Codex 系列选择增多（5.1 Max/5.2/5.3/Spark），独立 App 可能改变 IDE 选型 | 关注 Codex App 的发布细节，评估与 Cursor/Windsurf 的功能对比 |
+| **AI 安全/合规团队** | 双方均强化安全基础设施：Anthropic Institute 提供研究资源，OpenAI Promptfoo 提供测试工具 | 建立双轨评估框架，不依赖单一厂商的安全声明 |
+| **亚太区域企业** | Anthropic 悉尼办公室提供本地化支持；OpenAI 通过 AWS/Azure 已有覆盖 | 优先与有本地存在的厂商建立直接关系，获取定制化服务 |
+
+---
+
+## 5. 值得关注的细节
+
+### 5.1 新兴词汇与概念首次出现
+
+| 词汇/概念 | 来源 | 解读 |
+|:---|:---|:---|
+| **"Cowork"** | Anthropic Opus 4.6 公告 | Anthropic 的自主多任务 agent 平台正式品牌名，区别于 OpenAI 的"Operator"，强调"协作"而非"操作" |
+| **"GDPval-AA"** | Anthropic Opus 4.6 公告 | 自定义评估基准，"AA"可能指"Advanced Agent"或特定版本，标志着厂商自建评估体系的趋势 |
+| **"Spark"** | OpenAI GPT-5.3 Codex Spark | Codex 子品牌，可能对标 Claude 的"Haiku"或 Gemini 的"Flash"，形成"Max-标准-Spark"的产品层级 |
+| **"OpenAI Frontier"** | OpenAI 公告 | 全新品牌线，可能涵盖：① 最高端模型系列 ② 企业级服务 ③ 前沿研究合作 ④ 国家安全项目 |
+
+### 5.2 密集发布的主题信号
+
+| 主题 | 密度 | 信号解读 |
+|:---|:---|:---|
+| **Codex 系列（5.1/5.2/5.3/Spark/Max/App）** | 极高（10+ 条目） | **产品发布前夜**：大量索引更新预示正式公告即将发布，OpenAI 正在完善产品文档和营销材料 |
+| **安全研究论文索引** | 高（30+ 历史论文） | **监管应对**：系统性归档历史安全研究，可能为应对欧盟 AI Act、美国 AI 行政令等合规要求 |
+| **合作伙伴关系（Amazon/Microsoft/Disney 等）** | 中高 | **生态锁定**：强化与云厂商、内容方的绑定，构建竞争壁垒 |
+
+### 5.3 政策与合规动向
+
+| 信号 | 来源 | 深度解读 |
+|:---|:---|:---|
+| **"Department of War" 合作** | OpenAI | 名称异常（美国自 1947 年起使用 Department of Defense），可能指：① 特定历史项目代号 ② 与国防高级研究计划局（DARPA）等机构的合作 ③ 网站索引错误。若为真，标志着 OpenAI 国家安全业务的公开化 |
+| **Anthropic Institute 的"Machines of Loving Grace"引用** | Anthropic | 明确对齐 CEO 个人 AGI 论述，将公司战略与 Dario Amodei 的公共知识分子身份绑定，区别于 OpenAI 的 Sam Altman 风格 |
+| **"Instruction Hierarchy Challenge"** | OpenAI | 将内部安全框架转化为公开挑战，模仿网络安全领域的 CTF（Capture The Flag）模式，吸引外部研究者参与红队测试 |
+
+### 5.4 时间线异常与发布节奏
+
+- **Anthropic 模型实际发布 vs 公告日期**：Opus 4.6（2月5日）、Sonnet 4.6（2月17日）的实际发布早于今日公告（3月11日），说明今日为**集中营销推送**，可能配合 GTC 2026（英伟达开发者大会，3月17-21日）前的媒体周期
+- **OpenAI 392 条内容的统一日期**：全部标记为 2026-03-11，强烈指向**网站后台批量操作**，而非真正的新内容发布
+
+---
+
+## 附录：关键链接汇总
+
+### Anthropic
+- Claude Opus 4.6: https://www.anthropic.com/news/claude-opus-4-6
+- Claude Sonnet 4.6: https://www.anthropic.com/news/claude-sonnet-4-6
+- Anthropic Institute: https://www.anthropic.com/news/the-anthropic-institute
+- Sydney Office: https://www.anthropic.com/news/sydney-fourth-office-asia-pacific
+
+### OpenAI（今日有内容提取的条目）
+- AI Agent Link Safety: https://openai.com/index/ai-agent-link-safety/
+- Instruction Hierarchy Challenge: https://openai.com/index/instruction-hierarchy-challenge/
+- OpenAI to Acquire Promptfoo: https://openai.com/index/openai-to-acquire-promptfoo/
+
+---
+
+*报告完成。建议持续监控 OpenAI Codex 系列和 "Frontier" 品牌的正式公告，以及 Anthropic Institute 的首批研究成果发布。*
+
+---
+*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*

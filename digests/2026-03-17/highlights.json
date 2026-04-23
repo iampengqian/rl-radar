@@ -1,102 +1,86 @@
 {
   "zh": {
     "ai-cli": [
-      "OpenAI Codex 发布 v0.115.0，架构大重构支持视觉能力",
-      "Claude Code 爆火：Phone 验证单条 Issue 激辩 212 评论",
-      "Gemini CLI 新版重点攻关 Plan 模式与子代理编排",
-      "社区共识：Agent 需从单一对话进化为自主多代理系统",
-      "开发者关注点转移：从模型智商转向成本控制与稳定性",
-      "GitHub Copilot CLI 陷内存泄漏风波，TUI 稳定性遭吐槽"
+      "OpenAI Codex v0.115.0 发布，全分辨率图像检查上线",
+      "GitHub Copilot CLI 四连发 v1.0.6，紧急修复内存泄漏",
+      "Gemini CLI v0.34.0 推进子代理工具隔离架构",
+      "Claude Code 1M 上下文配额争议持续发酵",
+      "Qwen Code v0.12.5 发布内置 /review 技能",
+      "终端 TUI 稳定性成六大工具共同痛点"
     ],
     "ai-agents": [
-      "OpenClaw 活跃度爆表：单日 500 Issues 与 500 PRs 更新",
-      "WhatsApp 群组功能关键修复，解决 Mention 检测失效",
-      "插件系统重构：隔离运行时边界，提升系统安全性",
-      "积压 398 条 PR 待合并，项目处于重构关键期",
-      "长对话痛点：上下文压缩曾导致工具结果被错误修剪",
-      "社区呼声：聚焦多渠道接入与本地部署稳定性"
+      "OpenClaw 24小时 500 Issues + 500 PRs 极高活跃",
+      "心跳超时机制 PR 解决生产环境僵死问题",
+      "工具输出截断双层级机制根治上下文爆炸",
+      "飞书生态视觉能力与流式卡片需求升温",
+      "391个待合并 PR 显示开发节奏紧凑",
+      "QMD 分集合搜索提升 RAG 检索公平性"
     ],
     "ai-trending": [
-      "claude-mem 爆火：解决 Agent 编码'转头就忘'的痛点",
-      "project-nomad 登榜：'离线生存主义' AI 知识库需求激增",
-      "lightpanda：专为 AI 数据抓取设计的轻量级浏览器",
-      "heretic 项目引争议：全自动移除 LLM 安全限制",
-      "LangChain 推 deepagents 框架，主打子代理生成",
-      "superpowers 框架：定义 AI 辅助开发的激进新方法论"
+      "MiroFish 单日斩获 3260 Star 登顶增速冠军",
+      "字节 OpenViking 2000+ Star 上下文数据库开源",
+      "Lightpanda Zig 浏览器专为 AI 自动化优化",
+      "Claude Code 记忆插件与学习教程同日登榜",
+      "群体智能引擎成开发者关注新方向",
+      "浏览器自动化赛道显著升温"
     ],
     "ai-web": [
-      "Anthropic：提出'代码即编排'，拒绝万级 Token 消耗",
-      "OpenAI：Codex 架构升级，从代码补全迈向自主编程",
-      "Claude 新范式：动态发现工具，按需加载节省成本",
-      "OpenAI 新 API：为模型响应提供完整计算机沙盒环境",
-      "Codex 安全弃用 SAST，OpenAI 密集发布技术解析",
-      "AI 转型深水区：基础设施竞争聚焦自主执行能力"
+      "Anthropic 正式发布高级工具使用三大 Beta 特性",
+      "动态工具发现解决 MCP 上下文消耗痛点",
+      "代码执行调用定位下一代 Agent 基础设施",
+      "OpenAI 同日发布 Codex 安全架构文章",
+      "无限工具库愿景对标 OpenAI Code Interpreter",
+      "推理-执行分层架构成技术押注焦点"
     ],
     "ai-hn": [
-      "神级项目：用 Claude Code 构建完整的 Godot 3D 游戏",
-      "版权风暴：百科全书巨头 Britannica 正式起诉 OpenAI",
-      "Mistral 双发：Leanstral 与 Small 4 完善模型矩阵",
-      "安全警报：Claude Code MCP 配置致 Docker 容器孤儿",
-      "Amazon 案例引热议：AI 编程效率遭受现实性质疑",
-      "FSF 向 Anthropic 发难，AI 训练数据伦理争议升级"
-    ],
-    "rl-daily": [
-      "verl 发布 v0.7.1 大版本，确立 MTP 与 R3 Router 架构",
-      "TRL 核心转向 Async GRPO，强化 VLM 多模态支持",
-      "OpenRLHF 激进移除 DeepSpeed，全面拥抱 FSDP2",
-      "Open Instruct 引入 SWERL 代码沙箱，攻坚代码推理",
-      "AReaL 深度重构 RTensor，攻克异构资源调度难题",
-      "RL 生态分层：第一梯队冲刺异步与分布式架构"
+      "Claude Code Godot 游戏技能集 133 分登顶热榜",
+      "MCP 配置静默泄漏 Docker 容器引安全警惕",
+      "FSF 威胁 Anthropic 版权诉讼密集爆发",
+      "FreeBSD 是否集成 AI 工具引发社区激辩",
+      "YC W26 多家 AI 基础设施初创集中亮相",
+      "信息论奠基之作 Shannon 论文被重读热议"
     ]
   },
   "en": {
     "ai-cli": [
-      "OpenAI Codex v0.115.0 released amid token crisis",
-      "Gemini CLI v0.34.0-preview focuses on Plan Mode",
-      "Enterprise air-gapped deployment becomes top priority",
-      "All major tools adopt agentic subagent architectures",
-      "Claude Code users report high auth friction",
-      "Ecosystem consolidates around MCP integrations"
+      "OpenAI Codex ships 3 releases including rust-v0.115.0",
+      "Gemini CLI drops v0.33.2 stable and v0.34.0-preview.4",
+      "GitHub Copilot CLI rapid-patches 4 versions in 24h",
+      "OpenCode v1.2.27 migrates to Effect architecture",
+      "Claude Code focuses on 1M context rollout support",
+      "Windows parity and billing opacity frustrate users universally"
     ],
     "ai-agents": [
-      "OpenClaw hits extreme activity: 500 issues, 500 PRs",
-      "High regression volume in OpenClaw 2026.3.x releases",
-      "398 open PRs suggest review capacity backlog",
-      "Plugin architecture major refactoring merged",
-      "Team prioritizing stability over new releases",
-      "NanoBot and Zeroclaw among 12 tracked projects"
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours",
+      "89% open issue rate signals growing backlog pressure",
+      "Heartbeat timeout fix lands for production reliability",
+      "Feishu/Lark integration and local RAG in active development",
+      "Regression pressure from gateway and CLI connectivity bugs",
+      "No new releases despite extreme community activity"
     ],
     "ai-trending": [
-      "claude-mem gains 1,017 stars for agentic memory",
-      "langchain-ai/deepagents: new agent harness launched",
-      "obra/superpowers: +3,142 stars for skills framework",
-      "Browser-First Intelligence trend surges locally",
-      "WASM engines enable private knowledge retrieval",
-      "Context compression tools bridge autonomy gap"
+      "MiroFish gains 3,260 stars for swarm intelligence engine",
+      "claude-mem and learn-claude-code explode in Claude ecosystem",
+      "OpenViking brings ByteDance into agent infrastructure race",
+      "obra/superpowers claims production-ready agentic skills",
+      "lightpanda-io browser hits +2,086 stars for AI automation",
+      "LangChain deepagents adds subagent spawning capability"
     ],
     "ai-web": [
-      "Anthropic introduces dynamic tool discovery beta",
-      "Claude tackles 50k+ token context stuffing problem",
-      "OpenAI Codex Agent Loop detailed in new docs",
-      "Responses API signals enterprise security push",
-      "Both labs pivot to advanced agentic architectures",
-      "Code-based orchestration replaces simple chat"
+      "Anthropic debuts dynamic tool discovery beta feature",
+      "Code-based tool orchestration cuts 50K token overhead",
+      "Few-shot tool learning targets tool proliferation problem",
+      "OpenAI Codex security article metadata surfaces only",
+      "Anthropic outpaces OpenAI in public technical communication",
+      "Claude Developer Platform pushes code-native agent execution"
     ],
     "ai-hn": [
-      "Claude Code builds complete Godot games solo",
-      "Mistral unveils Leanstral for formal math proofs",
-      "Mistral Small 4 released for efficient inference",
-      "Encyclopedia Britannica challenges AI training",
-      "YC startups tackle GPU management for agents",
-      "Deepfakes spark political alarm discussions"
-    ],
-    "rl-daily": [
-      "verl v0.7.1 dominates multimodal RLHF scene",
-      "AReaL pushes FSDP2 and colocation architecture",
-      "OpenRLHF proposes critical DeepSpeed to FSDP2 shift",
-      "Open Instruct adds PPO+GAE and code sandboxes",
-      "Qwen3.5 and GLM-4.7 support lags across frameworks",
-      "Classic RL frameworks quiet vs LLM alignment surge"
+      "Claude Code Godot game skills top HN with 133 upvotes",
+      "FSF threatens Anthropic over copyright concerns",
+      "Encyclopedia Britannica sues OpenAI for training data",
+      "YC W26 startups Voygr and Chamber debut agent infra",
+      "MCP security concerns emerge in community discussions",
+      "Shannon's 1948 communication theory resurfaces on front page"
     ]
   }
 }

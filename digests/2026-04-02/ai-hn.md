@@ -1,86 +1,78 @@
 # Hacker News AI 社区动态日报 2026-04-02
 
-> 数据来源: [Hacker News](https://news.ycombinator.com/) | 共 30 条 | 生成时间: 2026-04-01 22:08 UTC
+> 数据来源: [Hacker News](https://news.ycombinator.com/) | 共 30 条 | 生成时间: 2026-04-02 00:10 UTC
 
 ---
 
-# Hacker News AI 社区动态日报 (2026-04-02)
-
-## 1. 今日速览
-
-今日 HN AI 社区被 **Anthropic (Claude)** 的相关动态全面霸屏，一起关于 Claude Code 的源代码泄露事件引发了关于隐私、工程实现和法律合规的激烈讨论。与此同时，市场层面传出 OpenAI 需求在二级市场遇冷、而 Anthropic 势头强劲的消息，标志着行业关注点的潜在转移。开发者们对 AI Agent 的实操工具表现出浓厚兴趣，涌现出多个用于监控和管理 Agent 团队的开源项目。
+# Hacker News AI 社区动态日报（2026-04-02）
 
 ---
 
-## 2. 热门新闻与讨论
+## 今日速览
+
+今日 HN 社区被 **Anthropic 代码泄露事件** 彻底点燃，相关讨论占据近半热门帖子。与此同时，OpenAI 面临"坟墓场"盘点与二级市场估值下滑的双重负面舆论。社区情绪明显偏向对 AI 巨头的不信任——既担忧代码泄露带来的隐私风险，也质疑大厂的产品交付能力。开发者工具与 AI Agent 安全成为关注焦点，"vibe coding"类 Show HN 项目持续涌现。
+
+---
+
+## 热门新闻与讨论
 
 ### 🔬 模型与研究
 
-- **[Mercury 2, a diffusion LLM, outperforms StepFun 3.5 Flash on OpenClaw tasks](https://pinchbench.com/?view=graphs&graph=radar&models=inception%2Fmercury-2%2Cstepfun%2Fstep-3.5-flash)**
-  - 分数: 7 | 评论: 1
-  - **说明**: 基准测试显示 Diffusion LLM 架构在特定任务上对主流模型的挑战，尽管热度不如八卦新闻，但技术圈的观察者仍在关注非自回归模型的潜力。
+| 标题 | 分数/评论 | 一句话说明 |
+|:---|:---|:---|
+| **Mercury 2, a diffusion LLM, outperforms StepFun 3.5 Flash on OpenClaw tasks**<br>🔗 [原文](https://pinchbench.com/?view=graphs&graph=radar&models=inception%2Fmercury-2%2Cstepfun%2Fstep-3.5-flash) \| [HN](https://news.ycombinator.com/item?id=47604033) | 8 / 1 | 扩散架构 LLM 首次在公开基准上超越主流模型，引发对 Transformer 替代路线的关注，但讨论热度偏低，被泄露事件淹没。 |
 
-- **[AI, Human Cognition and Knowledge Collapse](https://www.nber.org/papers/w34910)**
-  - 分数: 4 | 评论: 0
-  - **说明**: NBER 的新工作论文探讨了 AI 对人类认知和知识体系的影响，属于深度学术探讨，适合关注 AI 长期社会影响的研究者阅读。
+---
 
 ### 🛠️ 工具与工程
 
-- **[Show HN: Real-time dashboard for Claude Code agent teams](https://github.com/simple10/agents-observe)**
-  - 分数: 63 | 评论: 23
-  - **说明**: 今日最佳工程类项目。随着 Agent 编程的普及，如何监控这群 "数字员工" 成为痛点，该项目提供了实时仪表盘解决方案，社区反响热烈。
+| 标题 | 分数/评论 | 一句话说明 |
+|:---|:---|:---|
+| **Show HN: OpenHarness – Open-source terminal coding agent for any LLM**<br>🔗 [GitHub](https://github.com/zhijiewong/openharness) \| [HN](https://news.ycombinator.com/item?id=47600371) | 6 / 1 | 社区对"Claude Code 替代品"需求上升，此类开源终端 Agent 工具正快速涌现，试图填补泄露事件后的信任真空。 |
+| **Show HN: Agent Arnold – Gym tracker 100% vibe-coded from my phone between sets**<br>🔗 [官网](https://agent-arnold.app/) \| [HN](https://news.ycombinator.com/item?id=47599944) | 5 / 0 | 典型"手机 vibe coding"案例，展示 AI 辅助开发如何彻底降低个人项目门槛，零评论反映此类项目已常态化。 |
+| **Obfuscation is not security – AI can deobfuscate any minified JavaScript code**<br>🔗 [原文](https://www.afterpack.dev/blog/claude-code-source-leak) \| [HN](https://news.ycombinator.com/item?id=47607947) | 8 / 0 | 借泄露事件指出：AI 已使传统代码混淆失效，社区对"安全 through obscurity"的反思正在加深。 |
 
-- **[Claude Code source leak reveals how much info Anthropic can hoover up about you](https://www.theregister.com/2026/04/01/claude_code_source_leak_privacy_nightmare/)**
-  - 分数: 6 | 评论: 1
-  - **说明**: 基于泄露源码的分析文章，指出 Claude Code 可能收集的用户数据远超预期。这引发了关于 "本地 Agent vs 云端 Agent" 隐私安全性的技术讨论。
-
-- **[Reverse engineering Claude Code's request signing](https://a10k.co/b/reverse-engineering-claude-code-cch.html)**
-  - 分数: 4 | 评论: 0
-  - **说明**: 硬核技术贴，作者逆向了 Claude Code 的请求签名机制，对于想要私有化部署或进行安全审计的开发者极具参考价值。
+---
 
 ### 🏢 产业动态
 
-- **[The OpenAI graveyard: All the deals and products that haven't happened](https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/)**
-  - 分数: 196 | 评论: 148
-  - **说明**: 今日最热帖子。盘点 OpenAI 那些未能兑现的合作与产品，评论区充斥着对 "领跑者" 神话破灭的质疑，以及对其产品交付能力的担忧。
+| 标题 | 分数/评论 | 一句话说明 |
+|:---|:---|:---|
+| **The OpenAI graveyard: All the deals and products that haven't happened**<br>🔗 [Forbes](https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/) \| [HN](https://news.ycombinator.com/item?id=47602565) | **216 / 175** | 今日最高分帖，系统盘点 OpenAI 未兑现承诺（机器人、定制芯片、媒体合作等），社区共鸣强烈，认为"过度承诺"已成模式。 |
+| **OpenAI demand sinks on secondary market as Anthropic runs hot**<br>🔗 [Bloomberg](https://www.bloomberg.com/news/articles/2026-04-01/openai-demand-sinks-on-secondary-market-as-anthropic-runs-hot) \| [HN](https://news.ycombinator.com/item?id=47601405) | 131 / 58 | 资本市场"用脚投票"：OpenAI 估值承压，Anthropic 受追捧，但讽刺的是后者同日爆发严重安全事件。 |
+| **Anthropic Races to Contain Leak of Code Behind Claude AI Agent**<br>🔗 [WSJ](https://www.wsj.com/tech/ai/anthropic-races-to-contain-leak-of-code-behind-claude-ai-agent-4bc5acc7) \| [HN](https://news.ycombinator.com/item?id=47601315) | 20 / 8 | 泄露事件首发报道，Claude Code 完整源码（50 万行）意外公开，社区迅速展开逆向工程与隐私分析。 |
+| **Anthropic Leak Was Not Related to Bun, Just Developer Error**<br>🔗 [Twitter](https://twitter.com/bcherny/status/2039168928145109343) \| [HN](https://news.ycombinator.com/item?id=47596452) | 10 / 0 | 澄清泄露源于 `.npmignore` 遗漏而非 Bun 工具链，开发者将责任归咎于"人为失误"而非技术栈。 |
 
-- **[OpenAI demand sinks on secondary market as Anthropic runs hot](https://www.bloomberg.com/news/articles/2026-04-01/openai-demand-sinks-on-secondary-market-as-anthropic-runs-hot)**
-  - 分数: 130 | 评论: 59
-  - **说明**: 市场风向标似乎正在转动。二级市场数据显示投资者兴趣从 OpenAI 转向 Anthropic，社区正在讨论这是否意味着 LLM 战争进入了新阶段。
-
-- **[Anthropic Races to Contain Leak of Code Behind Claude AI Agent](https://www.wsj.com/tech/ai/anthropic-races-to-contain-leak-of-code-behind-claude-ai-agent-4bc5acc7)**
-  - 分数: 19 | 评论: 8
-  - **说明**: 关于泄露事件的官方/媒体报道，关注点在于 Anthropic 如何处理这次公关危机及潜在的知识产权风险。
+---
 
 ### 💬 观点与争议
 
-- **[Software Engineering Is Becoming Civil Engineering](https://christophermeiklejohn.com/ai/engineering/2026/04/01/software-engineering-is-becoming-civil-engineering.html)**
-  - 分数: 10 | 评论: 4
-  - **说明**: 这是一个非常深刻的类比。作者认为在 AI 辅助下，软件构建将变得更像土木工程（重规范、重监管、基于既定组件），而非手工艺。
-
-- **[Banning All Anthropic Employees](https://joeyh.name/blog/entry/banning_all_Anthropic_employees/)**
-  - 分数: 5 | 评论: 1
-  - **说明**: 一篇情绪化的个人博客，作者因不满 Anthropic 的某些行为（可能与隐私或竞争有关）而宣布封禁该公司员工，反映了独立开发者与 AI 巨头之间日益增长的对立情绪。
-
----
-
-## 3. 社区情绪信号
-
-今日 HN 的情绪呈现出明显的 **"喜新厌旧"** 与 **"审慎务实"**。
-
-1.  **焦点转移**: 社区对 OpenAI 的情绪正从 "盲目崇拜" 转向 "理性质疑"。《OpenAI graveyard》的高分和高评论量表明，用户对 "画饼" 营销感到疲惫，转而关注能交付实际产品的公司。
-2.  **Anthropic 焦虑**: 虽然 Anthropic 接过了接力棒，但伴随的是更高的隐私和安全审视。Claude Code 泄露事件不仅是吃瓜，更引发了开发者对 Agent 工具 "数据吸血" 的深度恐慌。
-3.  **工程化落地**: 相比于单纯的模型参数比拼，"如何管理 Agent"、"如何做本地部署" 等工程化话题正在获得更高权重，表明行业正从模型研发期进入应用落地期。
+| 标题 | 分数/评论 | 一句话说明 |
+|:---|:---|:---|
+| **Claude Code source leak reveals how much info Anthropic can hoover up about you**<br>🔗 [The Register](https://www.theregister.com/2026/04/01/claude_code_source_leak_privacy_nightmare/) \| [HN](https://news.ycombinator.com/item?id=47597948) | 6 / 1 | 泄露代码暴露 Anthropic 的数据收集范围远超用户预期，"隐私噩梦"定性引发对 AI Agent 监控能力的广泛担忧。 |
+| **Reverse engineering Claude Code's request signing**<br>🔗 [a10k](https://a10k.co/b/reverse-engineering-claude-code-cch.html) \| [HN](https://news.ycombinator.com/item?id=47603540) | 5 / 0 | 社区快速响应泄露事件的技术分析，展示 HN 用户从"新闻消费"到"主动逆向"的参与模式。 |
+| **Banning All Anthropic Employees**<br>🔗 [Joey Hess](https://joeyh.name/blog/entry/banning_all_Anthropic_employees/) \| [HN](https://news.ycombinator.com/item?id=47603987) | 5 / 1 | 开源社区极端反应：因泄露事件全面封禁 Anthropic 员工参与项目，反映 AI 伦理争议向"技术抵制"升级。 |
+| **What Claude Code Leak Teaches Us About Agent Skills**<br>🔗 [SkillDB](https://skilldb.dev/blog/claude-code-leaked-what-500k-lines-teach-us-about-agent-skills) \| [HN](https://news.ycombinator.com/item?id=47605341) | 5 / 0 | 从工程视角解读泄露代码的架构设计，社区试图将危机转化为学习机会。 |
 
 ---
 
-## 4. 值得深读
+## 社区情绪信号
 
-1.  **[Software Engineering Is Becoming Civil Engineering](https://christophermeiklejohn.com/ai/engineering/2026/04/01/software-engineering-is-becoming-civil-engineering.html)**
-    - **理由**: 在 AI 编程工具爆发的当下，这篇文章提供了一个极佳的行业转型隐喻，有助于开发者思考未来的职业定位和技能树方向。
+**高活跃话题**：OpenAI"坟墓场"盘点以 216 分、175 评论成为绝对焦点，兼具娱乐性与批判性；Anthropic 泄露事件形成话题集群，10+ 条相关帖子覆盖技术、隐私、商业、伦理各维度。
 
-2.  **[Show HN: Real-time dashboard for Claude Code agent teams](https://github.com/simple10/agents-observe)**
-    - **理由**: 如果你正在尝试 AI Agent 编程，这是目前最直接的生产力工具参考。它展示了多 Agent 协作监控的雏形，非常具有实操价值。
+**核心争议**：对 AI 巨头的"信任赤字"成为共识——OpenAI 被批"过度承诺、交付不足"，Anthropic 则因泄露暴露"说一套做一套"的隐私实践。社区对"AI Agent 默认收集哪些数据"的敏感度显著上升。
 
-3.  **[The OpenAI graveyard: All the deals and products that haven't happened](https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/)**
-    - **理由**: 了解行业龙头的真实交付能力对于预判行业泡沫至关重要。这篇文章梳理的 "失败清单" 是理解当前 AI 商业化瓶颈的重要案例。
+**方向变化**：相较上期对模型能力的乐观讨论，本期转向**安全、隐私与工程伦理**。开发者工具类 Show HN 从"炫技"转向"替代方案"（如 OpenHarness），暗示对商业 Agent 的替代需求正在形成。
+
+---
+
+## 值得深读
+
+| 推荐 | 理由 |
+|:---|:---|
+| **[The OpenAI graveyard](https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/)** | 系统性案例研究，对评估 AI 公司产品路线图可信度、识别"演示即产品"陷阱具有参考价值，适合投资者与产品经理。 |
+| **[Reverse engineering Claude Code's request signing](https://a10k.co/b/reverse-engineering-claude-code-cch.html)** | 高质量逆向工程笔记，展示如何从泄露代码中提取协议设计、安全机制与潜在攻击面，适合安全研究员与 Agent 开发者。 |
+| **[Obfuscation is not security](https://www.afterpack.dev/blog/claude-code-source-leak)** | 短但尖锐的技术评论，指出 AI 时代传统安全假设的失效，对前端/客户端安全策略制定有直接启发。 |
+
+---
+*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*

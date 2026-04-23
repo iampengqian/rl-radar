@@ -1,102 +1,118 @@
 {
   "zh": {
     "ai-cli": [
-      "AI CLI 工具全面迈向接管环境的自主智能体阶段",
-      "OpenAI Codex 连发 2 个 Rust Alpha 版并重构底层架构",
-      "Claude Code 遭遇手机号登录死结与 UI 黑盒化抗议",
-      "Qwen Code 因 OAuth 免费层停用引发大规模 401 报错",
-      "OpenCode 暴露渲染器崩溃与计费异常等稳定性痛点",
-      "行业共同攻坚细粒度权限与跨平台沙盒安全机制"
+      "Claude Code v2.1.114 遭遇 macOS 11 兼容性危机",
+      "OpenAI Codex rust-v0.122.0-alpha.10 推进 Goal Mode 五部曲",
+      "Kimi K2.6 模型指令遵循退化引发社区反弹",
+      "OpenCode v1.4.11 升级灾难导致 TUI 冻结连锁故障",
+      "Qwen Code OAuth 免费层停用引发 401 认证风暴",
+      "Pi 率先支持 Claude 4.7 全家族与 Node 25 兼容"
     ],
     "ai-agents": [
-      "OpenClaw 单日更新千条，正密集排查 4.14 版回归问题",
-      "修复切换模型时 cachedCwd 错误导致的网关重启失败",
-      "Codex OAuth 认证所有权集中化，解决状态漂移痛点",
-      "新增 openclaw usage 命令，支持按周期查看 Agent 成本",
-      "SIGKILL 僵尸进程修复，确保网关端口释放可靠性",
-      "多渠道消息泄露与 Onboard CLI 崩溃成当前主要挑战"
+      "OpenClaw 24 小时 500 Issues/500 PRs 创纪录活跃度",
+      "MolTrust Agent 身份验证 RFC 获 96 条评论成史上最热",
+      "v2026.4.14 onboarding 崩溃 `.trim()` 错误批量阻塞用户",
+      "Prompt Hooks 动态工具收窄降低 Token 消耗与攻击面",
+      "Amazon Bedrock Mantle 发现机制成代码贡献主战场",
+      "子 Agent 错误载荷增强提升可观测性与重试决策"
     ],
     "ai-trending": [
-      "EvoMap 凭借基因组进化协议成今日热榜星标最高项目",
-      "OpenAI 官方开源轻量级多智能体工作流编排框架",
-      "DeepSeek 开源高效 FP8 内核，攻坚底层极致算力优化",
-      "AI 自主编写 Chrome 漏洞利用代码，引安全双刃剑热议",
-      "Ollama 已全面支持 Kimi-K2.5 等最新主流本地大模型",
-      "Claude Code 推出专为 Android 逆向工程打造的自动化包"
+      "thunderbird/thunderbolt AI 客户端登 Trending 捍卫数据主权",
+      "BasedHardware/omi 多模态 AI 助手融合屏幕+语音",
+      "openai/openai-agents-python 官方多 Agent 框架上榜",
+      "EvoMap/evolver GEP 自进化 AI Agent 引擎受关注",
+      "deepseek-ai/DeepGEMM FP8 内核加速 AI 推理",
+      "aaddrick/claude-desktop-debian Linux 适配填补生态空白"
     ],
     "ai-hn": [
-      "Claude Opus 4.7 发布并公布权威性能与性价比分析",
-      "Opus 耗资两千余美元算力成功写出高危 Chrome 漏洞",
-      "Anthropic 被曝在新版发布前暗中削弱旧版 Opus 性能",
-      "社区热议 Claude Code 在审查时过度核查恶意软件",
-      "OpenAI 遭遇高管离职潮，引发行业对 AI 走向担忧",
-      "大学重拾打字机防作弊，凸显 AI 对传统教育的冲击"
+      "Claude Design 体验帖 203 分 136 评论引爆设计师焦虑",
+      "Opus 4.7 恶意软件检测过度敏感分裂社区",
+      "Anthropic 被指暗削 Opus 4.6 为 4.7 铺路",
+      "OpenAI 高管离职潮与 Anthropic 形成鲜明反差",
+      "中文模型 GLM-5.1/Kimi K2.5 首入 HN 主流对比",
+      "AI 抵抗运动筹款提问标志反 AI 情绪组织化"
     ],
-    "rl-daily": [
-      "大模型 Post-training 需求彻底重塑 RL 开源演进重心",
-      "TRL 引入 TPO 算法并排查零方差下的伪 KL 梯度问题",
-      "verl 突破算力墙，落地异步 Agent 与多教师模型蒸馏",
-      "AReaL 深度重构分布式推理引擎并扩展 DPO Trainer",
-      "OpenRLHF 引入前沿 Muon 优化器，深耕长上下文并行",
-      "传统 RL 算法库陷入停滞，被大模型对齐基础设施取代"
+    "ai-ph": [
+      "Claude Opus 4.7 493 票登顶，专攻推理与 Agent 编程",
+      "Codex 2.0 310 票跃迁全栈运行，定位 AI 员工",
+      "Athena 113 票将 Claude Code 范式迁移产品管理",
+      "Qwen3.6-35B-A3B 开源模型与闭源旗舰同台竞技",
+      "Chrome AI Mode 浏览器集成展现基础设施渗透",
+      "Vercel Day 标签 6 次出现显平台生态聚合效应"
     ],
-    "agent-orch": [
-      "智能体编排生态爆发，45 个项目重塑多智能体协作",
-      "Claude Flow 等编排工具推动多智能体向自主进化演进",
-      "OpenAI 发布多智能体工作流框架并将其标准化",
-      "Anthropic 催生繁荣周边，Claude Squad 等重塑开发流",
-      "AutoGPT 等经典框架持续探索智能体自动化落地边界",
-      "编排层正向解决计费异常与跨平台兼容等痛点深入"
+    "ai-hf": [
+      "google/gemma-4-31B-it 378 万下载量断层霸榜",
+      "Jackrong Qwen3.5 蒸馏 Claude-4.6 获 2732 点赞夺冠",
+      "MiniMax-M2.7 25.8 万下载周点赞登顶飙升",
+      "Qwen3.6-35B-A3B 国产模型强势跻身前列",
+      "腾讯混元连发视频生成与 3D 世界模型",
+      "uncensored 标签模型占比显著社区去审查化活跃"
+    ],
+    "ai-community": [
+      "Claude Design 首发解读冲击 Figma 设计主导权",
+      "架构拆分单一大模型调用省 55% 成本实战",
+      "Defluffer 工具 Earth Day 主题压缩 token 45%",
+      "文件系统 DAG 解决 Agent 上下文压缩状态丢失",
+      "Go 语言崛起成 AI 后端新趋势",
+      "停止盲目信任 AI 建议成开发者共识"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code released patch v2.1.114",
-      "OpenAI Codex pushed two alpha releases",
-      "OpenCode v1.4.12 recalled after quick patch",
-      "Qwen Code shipped new v0.14.5-nightly build",
-      "Tools pivot from code gen to autonomous agents",
-      "Shared focus on persistent background daemons"
+      "Claude Code v2.1.114 fixes permission dialog crashes",
+      "OpenAI Codex ships rust-v0.122.0-alpha.10 rewrite",
+      "Gemini CLI targets signal handling and shell speed",
+      "Eight AI CLI tools now compete for feature parity",
+      "Platform stability crises endemic across all major tools",
+      "Community demands enterprise-grade reliability controls"
     ],
     "ai-agents": [
-      "OpenClaw hit with 500 new issues and 500 PRs",
-      "Project has no official release for critical bugs",
-      "Massive cross-channel security refactor merged",
-      "Community demand outpaces core team capacity",
-      "Projects face stability and compatibility issues",
-      "Agent queue management remains a top friction"
+      "OpenClaw hits 500 issues and 500 PRs in 24 hours",
+      "Latest release 2026.4.14 introduced active regressions",
+      "Open PRs (346) outpace open issues (326)",
+      "Subagent reliability dominates community focus",
+      "Identity verification infrastructure under heavy development",
+      "Project stabilizing between releases with no new version"
     ],
     "ai-trending": [
-      "DeepSeek released efficient DeepGEMM kernels",
-      "OpenAI enters multi-agent space officially",
-      "'Genome Evolution' for self-evolving AI agents",
-      "Thunderbolt local AI framework gains 458 stars",
-      "AI harnesses for coding assistants are exploding",
-      "Standardized agent orchestration is industry goal"
+      "EvoMap's evolver gains 1,131 stars with GEP protocol",
+      "openai-agents-python adds 470 stars, official agent framework",
+      "Ollama now supports Kimi-K2.5, GLM-5, MiniMax, DeepSeek",
+      "DeepGEMM open-sources FP8 kernels with fine-grained scaling",
+      "dive-into-llms gains 547 stars for LLM education",
+      "Ambient AI assistants signal always-on mainstream readiness"
     ],
     "ai-hn": [
-      "Claude Opus wrote a Chrome zero-day exploit",
-      "Opus 4.7 keeps unprompted checking for malware",
-      "OpenAI faces mass executive 'Liberation Day' exit",
-      "Users debate ethics of AI weaponized exploits",
-      "Schools trending toward return to typewriters",
-      "Groups ask to financially support AI resistance"
+      "Claude Design crosses into professional creative workflows",
+      "Claude Opus 4.7 dominates HN discussions across multiple threads",
+      "Claude Opus wrote Chrome exploit for $2,283",
+      "OpenAI executive exodus dubbed 'Liberation Day'",
+      "Cybersecurity implications emerge as persistent undercurrent",
+      "Independent benchmark analysis of Opus 4.7 published"
     ],
-    "rl-daily": [
-      "LLM alignment frameworks dominate RL activity",
-      "AReaL shows high momentum for scaling backends",
-      "Core RL libraries face zero notable updates",
-      "Industry pivots to RLHF infrastructure at scale",
-      "verl aggressively targets distributed bottlenecks",
-      "Traditional algorithmic libraries see stagnation"
+    "ai-ph": [
+      "Claude Opus 4.7 leads Product Hunt with 493 votes",
+      "Codex 2.0 follows with 310 votes for agentic coding",
+      "Vercel Day cohort launches five coordinated AI products",
+      "E.Y.E. life-orchestration agent sparks polarizing debate",
+      "CoAgentor joins meetings as live AI participant",
+      "Qwen3.6-35B-A3B launches as sparse MoE alternative"
     ],
-    "agent-orch": [
-      "Ecosystem shifts to complex multi-agent systems",
-      "Claude Squad leads new orchestrator projects",
-      "Frameworks tackle distributed memory bottlenecks",
-      "Tools integrate persistent background daemons",
-      "Swarm Protocol defines agent orchestration standard",
-      "Projects race for enterprise-grade automations"
+    "ai-hf": [
+      "Gemma 4 family dominates downloads with three variants",
+      "Qwen 3.6-35B-A3B leads open multimodal MoE traction",
+      "Uncensored fine-tunes trend with serious download volumes",
+      "GLM-5.1 hits 103,847 downloads with dynamic sparse attention",
+      "Gemma-4-E4B-it introduces any-to-any architecture",
+      "Tencent's HY-World-2.0 advances embodied world models"
+    ],
+    "ai-community": [
+      "Defluffer tools claim 45% token usage reduction",
+      "Developer reports 55% compute savings via architectural splits",
+      "Go gains traction as AI agent backend language",
+      "Lobste.rs top story challenges Claude Mythos as misinformation",
+      "Developer argues tuning out AI advice improves productivity",
+      "AI framed as critical accessibility for neurodivergent coders"
     ]
   }
 }

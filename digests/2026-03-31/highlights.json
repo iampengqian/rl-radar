@@ -1,86 +1,86 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code 引爆配额争议，单 Issue 评论超 190 条",
-      "Copilot CLI 发布 v1.0.13，强化企业策略管控",
-      "Kimi Code CLI v1.28.0 修复卡顿，支持 Light Theme",
-      "OpenCode v1.3.7 发布，社区热切呼唤 Agent Teams",
-      "Qwen Code 推出 v0.14.0-preview，增强子代理能力",
-      "全生态痛点：Windows 兼容性与权限精细度亟待重构"
+      "Claude Code订阅Bug引发1400+评论舆情危机",
+      "OpenAI Codex计费危机335评论热议",
+      "Kimi CLI v1.28.0发布，PR数29领跑社区",
+      "Gemini CLI Ultra订阅陷无限等待争议",
+      "OpenCode v1.3.9紧急修复数据丢失漏洞",
+      "Qwen Code v0.14.0-preview.2发布Channels多平台集成"
     ],
     "ai-agents": [
-      "OpenClaw 遭遇稳定性危机，用户求助 2026.3.13 回归",
-      "Gateway 崩溃与认证失效，307 个修复 PR 排队待合",
-      "Matrix 插件安装受阻，VirusTotal 安全扫描挂起",
-      "WebSocket 握手超时，工具调用频现静默挂起",
-      "memory-core 路径映射出错，插件生态遭重创",
-      "日更 500 Issues 高度活跃，项目处于极速迭代期"
+      "OpenClaw 24小时近千条代码协作事件",
+      "网关认证安全修复防限流绕过漏洞",
+      "执行事件隔离修复权限提升漏洞",
+      "设备令牌轮换后强制断开会话防劫持",
+      "Kimi模型流式事件顺序问题修复",
+      "OpenRouter认证头丢失缺陷修复"
     ],
     "ai-trending": [
-      "Claude Code 生态爆发，实战指南日增 4150 Star",
-      "微软 VibeVoice 登顶热榜，开源语音 AI 迎来突破",
-      "Hermes-Agent 定义未来，打造“随你成长”的 Agent",
-      "oh-my-claudecode 爆火，实现多智能体协作编排",
-      "Ollama 支持国产模型，Kimi-K2.5 与 GLM-5 上线",
-      "Firecrawl 数据受捧，成 RAG 与 Agent 记忆基石"
+      "claude-howto单日暴涨4232 stars登顶",
+      "claude-code-best-practice获1108 stars",
+      "微软VibeVoice语音AI单日2492 stars",
+      "NousResearch hermes-agent可成长型Agent范式",
+      "Ollama已支持Kimi-K2.5/GLM-5/DeepSeek",
+      "OpenBB AI Agent金融数据平台上榜"
     ],
     "ai-hn": [
-      "Claude Code 严重 Bug 频繁执行 git reset，删代码引恐慌",
-      "OpenAI Codex 曝命令注入漏洞，GitHub Token 面临风险",
-      "Sora 项目陷入困境，头部厂商业遭工程性质疑",
-      "Chardet v7 全透明重写，AI 生成代码重建信任",
-      "ClamBot 热议：在 WASM 沙箱中安全运行 LLM 代码",
-      "社区热议 Agentic AI，探讨下一轮智能爆炸理论"
+      "交互式Claude Code教程109分64评论登顶",
+      "ClamBot WASM沙盒执行AI生成代码",
+      "Memv AI Agent记忆层基础设施引关注",
+      "OpenAI Codex插件兼容Claude Code",
+      "Sora产品失利财务亏损负面密集",
+      "Mistral融资欧洲AI基建受关注"
     ],
-    "rl-daily": [
-      "TRL 发布 v1.0 里程碑，全面支持 VLM 工具调用",
-      "veRL 确立多模态路线图，集成 Atropos 生态",
-      "OpenRLHF v0.9.9 重构 Ray 通信，追求性能极限",
-      "AReaL 攻坚 FP8 训练与异步 TP 性能瓶颈",
-      "Open Instruct 前瞻适配 Flash Attention 4 与 Blackwell",
-      "经典 RL 生态静默，LLM Post-training 主导资源"
+    "ai-ph": [
+      "Clico 430票全局文本框AI增强领跑",
+      "Parallel Code开源多模型并行编程",
+      "Pensieve 144票企业Agent统一上下文",
+      "Cline Kanban CLI可视化任务管理",
+      "CodingPrep开源AI面试模拟平台",
+      "多模型并行与多Agent编排同时出现"
     ]
   },
   "en": {
     "ai-cli": [
-      "AI CLI tools shifting to multi-agent orchestration systems",
-      "Claude Code faces backlash over Max plan limits crisis",
-      "Security and permissions now table-stakes for enterprise AI",
-      "Hooks and MCP integration becoming standard extensibility",
-      "OpenAI Codex receives mixed sentiment over security concerns",
-      "Platform stability emerges as key differentiator for tools"
+      "Claude Code v2.1.88 ships daily patches",
+      "OpenAI Codex stalled on auth infrastructure",
+      "Gemini CLI paused for stable migration",
+      "GitHub Copilot CLI v1.0.13 released",
+      "Kimi Code CLI enters competitive landscape",
+      "MCP ecosystem adoption drives convergence"
     ],
     "ai-agents": [
-      "OpenClaw sees 500 issues and 500 PRs in single day",
-      "High issue ratio suggests project struggling with bug backlog",
-      "307 open PRs indicate significant contribution backlog",
-      "No new releases as team focuses on codebase stabilization",
-      "Gateway streaming hardened with idempotency fixes",
-      "Windows test hangs resolved in recent pull requests"
+      "OpenClaw: 500 issues, 500 PRs in 24h",
+      "Zero releases despite high velocity",
+      "Critical regressions in Kimi k2p5 provider",
+      "WhatsApp/Telegram channel stability issues",
+      "429 open issues vs 314 open PRs",
+      "Stabilization phase post-2026.3.13"
     ],
     "ai-trending": [
-      "Claude Code ecosystem dominates with specialized coding agents",
-      "Microsoft VibeVoice brings low-latency voice AI to open source",
-      "NousResearch Hermes-Agent offers growing agent architecture",
-      "vllm remains backbone of open-source deployment stack",
-      "Ollama hits 166,505 stars for local LLM deployment",
-      "Computer-Use Agents infrastructure gaining traction"
+      "Microsoft VibeVoice: 2,492 stars debut",
+      "Three Claude Code repos in top 10",
+      "NousResearch/hermes-agent: 1,851 stars",
+      "Deep-Live-Cam persists at 1,136 stars",
+      "OpenBB positions for AI agents",
+      "Ollama adds Kimi-K2.5, GLM-5, MiniMax"
     ],
     "ai-hn": [
-      "Claude Code bug force-resets local repos every 10 minutes",
-      "OpenAI faces 'Code Red' over financial sustainability fears",
-      "Sora reportedly fails to meet expectations post-launch",
-      "Developers shifting focus from using AI to securing AI",
-      "WASM sandboxes gain interest for AI security isolation",
-      "Video generation hype bubble debated after Sora struggles"
+      "Claude Code dominates HN discussions",
+      "Sora commercial struggles surface",
+      "Codex command injection vulnerability found",
+      "Claude executed commands on IoT device",
+      "ClamBot sandboxing solution emerges",
+      "Memv memory system for agents builds"
     ],
-    "rl-daily": [
-      "TRL releases major v1.0 consolidating LLM training features",
-      "verl publishes strategic Q2 roadmap for multimodal support",
-      "RL ecosystem bifurcates into LLM-centric and foundational",
-      "Blackwell and Ascend hardware support driving iterations",
-      "Video data and tool-use training complexity increasing",
-      "Foundational RL libraries enter stable maintenance phase"
+    "ai-ph": [
+      "Clico: 430 votes for universal textbox AI",
+      "Pensieve: 144 votes for company context layer",
+      "Parallel Code: multi-model vibe coding",
+      "Cline Kanban: agent workflow management",
+      "SUN: personalized on-demand audio learning",
+      "VibecodedHub: AI-native product discovery"
     ]
   }
 }

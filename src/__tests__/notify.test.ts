@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from "vitest";
-import { buildMessage } from "../notify.ts";
+import { buildMessage, type Highlights } from "../notify.ts";
 
 const BASE_URL = "https://example.com/radar";
 
@@ -16,7 +16,7 @@ describe("buildMessage", () => {
 
   it("builds a daily message with zh + en reports", () => {
     const msg = buildMessage("2026-03-09", ["ai-cli", "ai-cli-en", "ai-agents", "ai-agents-en"], BASE_URL);
-    expect(msg).toContain("rl-radar");
+    expect(msg).toContain("agents-radar");
     expect(msg).toContain("2026-03-09");
     expect(msg).toContain("📡");
     // zh links
@@ -64,15 +64,36 @@ describe("buildMessage", () => {
     expect(msg).toContain(`${BASE_URL}/feed.xml`);
   });
 
-  it("renders rl-daily with an RL-specific label", () => {
-    const msg = buildMessage("2026-03-09", ["rl-daily"], BASE_URL);
-    expect(msg).toContain("RL 开源生态日报");
-    expect(msg).toContain(`${BASE_URL}/#2026-03-09/rl-daily`);
+  it("includes highlights when provided", () => {
+    const highlights: Highlights = {
+      zh: {
+        "ai-cli": ["Claude Code 发布 v1.2.0", "Gemini CLI 修复 streaming"],
+        "ai-agents": ["OpenClaw 新增 MCP 支持"],
+      },
+      en: {
+        "ai-cli": ["Claude Code releases v1.2.0"],
+      },
+    };
+    const msg = buildMessage(
+      "2026-03-09",
+      ["ai-cli", "ai-cli-en", "ai-agents", "ai-agents-en"],
+      BASE_URL,
+      highlights,
+    );
+    expect(msg).toContain("◦ Claude Code 发布 v1.2.0");
+    expect(msg).toContain("◦ Gemini CLI 修复 streaming");
+    expect(msg).toContain("◦ OpenClaw 新增 MCP 支持");
   });
 
-  it("renders rl-daily-en with an RL-specific English label", () => {
-    const msg = buildMessage("2026-03-09", ["rl-daily-en"], BASE_URL);
-    expect(msg).toContain("RL Open Source Ecosystem Digest");
-    expect(msg).toContain(`${BASE_URL}/#2026-03-09/rl-daily-en`);
+  it("works without highlights (null)", () => {
+    const msg = buildMessage("2026-03-09", ["ai-cli", "ai-cli-en"], BASE_URL, null);
+    expect(msg).toContain("AI CLI 工具");
+    expect(msg).not.toContain("◦");
+  });
+
+  it("works without highlights (undefined)", () => {
+    const msg = buildMessage("2026-03-09", ["ai-cli", "ai-cli-en"], BASE_URL);
+    expect(msg).toContain("AI CLI 工具");
+    expect(msg).not.toContain("◦");
   });
 });

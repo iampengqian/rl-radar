@@ -1,22 +1,22 @@
 {
   "zh": {
     "ai-weekly": [
-      "AI 工具进入 Agent OS 竞争，Claude Code 生态大爆发",
-      "OpenAI 收购 Astral，意在收拢底层工具链",
-      "Claude Opus 4.6 发布，新增原生 PDF 支持与企业 API",
-      "OpenAI 推 GPT-5.4 Mini/Nano，解构 Codex 自主编程",
-      "Claude Code 插件霸榜，开发者渴求 Agent 可视化控制",
-      "字节跳动开源 deer-flow，集成沙箱与记忆的超级智能体"
+      "Kimi CLI v1.23.0首发后台Bash异步任务",
+      "OpenCode OAuth故障引爆社区信任危机",
+      "Qwen Code max_tokens跃升至32K",
+      "Claude Code速率限制可视化上线",
+      "Gemini CLI紧急修复1.7GB内存泄漏",
+      "Kimi 38 PR合并修复Windows体验"
     ]
   },
   "en": {
     "ai-weekly": [
-      "OpenAI acquires Astral to dominate Python toolchain",
-      "Claude Opus 4.6 launches with native PDF support",
-      "ByteDance 'deer-flow' leads shift to Super Agents",
-      "Claude Code 'fork bomb' deletes repos, sparks panic",
-      "everything-claude-code repo gains +3,735 stars in 1 day",
-      "vLLM-Omni enables full-modal image, audio, video inference"
+      "Kimi CLI merges 38 PRs in single day — largest batch this quarter",
+      "Qwen Code v0.13.0 ships emergency file-edit safety hardening",
+      "OpenAI Codex stacks 4 PRs for exec-server cloud architecture",
+      "Kimi CLI v1.23.0 launches first async background bash tasks",
+      "Gemini CLI fixes 1.7GB memory leak with P0 priority",
+      "Claude Code phone bug hits 458 comments — largest issue ever"
     ]
   }
 }

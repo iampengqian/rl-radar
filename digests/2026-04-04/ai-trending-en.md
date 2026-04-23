@@ -1,84 +1,110 @@
 # AI Open Source Trends 2026-04-04
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-03 22:04 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-04 00:10 UTC
 
 ---
 
-# AI Open Source Ecosystem Trends Report (2026-04-04)
+# AI Open Source Trends Report — April 4, 2026
+
+## Step 1: Filter Applied
+
+Excluded from trending: `openscreen` (demo creation tool, non-AI core), `fff.nvim` (general file search), `sherlock` (OSINT tool). Retained 5 AI-relevant trending repos + 80 topic-search results.
+
+---
 
 ## 1. Today's Highlights
-The GitHub trending data for April 4, 2026, reveals a decisive shift from general model inference to **specialized AI utilities and "super-agent" platforms**. **Oh My CodeX** and **fff.nvim** highlight a growing demand for high-performance, agentic developer tools (ADTs) that extend coding capabilities with hooks, HUDs, and file-searching accuracy. There is significant movement in specialized domains, with **TimesFM** validating "smaller" foundation models for time-series forecasting, and **Onyx** rising as a unified "bring-your-own-model" platform. The ecosystem is maturing beyond simple chat interfaces into robust, modular frameworks where context, memory, and tool integration define the user experience.
+
+**Oh My codeX** explodes with 3,047 stars—developers are racing to extend GitHub's Codex CLI with hooks, agent teams, and HUDs, signaling massive appetite for "agent harness" customization. Google's **TimesFM** time-series foundation model gains 916 stars, showing enterprise demand for specialized non-NLP foundation models. **Onyx** (1,852 stars) and **prompts.chat** (375 stars) highlight dual momentum: enterprise-ready AI platforms and grassroots prompt engineering communities. The Rust-powered **fff.nvim**—though general-purpose—reflects infrastructure performance obsession for AI agent tooling. Together, these reveal a market bifurcated between polished enterprise suites and hacker-friendly agent extensibility layers.
 
 ---
 
 ## 2. Top Projects by Category
 
 ### 🔧 AI Infrastructure
-*   **[dmtrKovalenko/fff.nvim](https://github.com/dmtrKovalenko/fff.nvim)** [Rust] ⭐0 (+767 today)
-    *   A high-performance file search toolkit designed specifically for AI agents and IDEs, solving the "fuzzy search" bottleneck in coding assistants.
-*   **[googleworkspace/cli](https://github.com/googleworkspace/cli)** [Rust] ⭐23,713
-    *   An AI-native CLI that dynamically integrates with Google Workspace, turning cloud office suites into agent-executable tools.
-*   **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐75,176
-    *   The industry standard for high-throughput LLM serving, essential for production-grade agent backends.
-*   **[CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit)** [TypeScript] ⭐29,966
-    *   The leading frontend infrastructure for building generative UIs and agent interactions directly into React/Angular apps.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [ollama/ollama](https://github.com/ollama/ollama) | 167,021 | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax—expanding beyond Western models for global deployment |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 75,180 | High-throughput inference engine; critical infrastructure as model serving costs dominate AI budgets |
+| [dmtrKovalenko/fff.nvim](https://github.com/dmtrKovalenko/fff.nvim) | 0 (+750 today) | Rust-powered file search optimized for AI agents—sub-millisecond latency for agent context retrieval |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 132,260 | "Agent engineering platform" rebrand signals pivot from chains to autonomous agent orchestration |
+| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | 6,772 | Modular Rust LLM framework—Rust's memory safety meets AI infrastructure demands |
 
 ### 🤖 AI Agents / Workflows
-*   **[Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)** [TypeScript] ⭐0 (+2984 today)
-    *   An "agent harness" for coding that adds HUDs, hooks, and team capabilities to standard Codex models—the day's top trending repo.
-*   **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** [TypeScript] ⭐47,849
-    *   A minimalist framework demonstrating that "Bash is all you need" to build powerful autonomous agents.
-*   **[activepieces/activepieces](https://github.com/activepieces/activepieces)** [TypeScript] ⭐21,543
-    *   An AI workflow automation tool heavily integrating MCP (Model Context Protocol) servers to connect agents with external tools.
-*   **[trycua/cua](https://github.com/trycua/cua)** [Python] ⭐13,372
-    *   Open-source infrastructure for "Computer-Use Agents" (CUA), enabling AI to control full desktop operating systems.
-*   **[Significant-Gravitas/AutoGPT](https://github.com/significant-gravitas/AutoGPT)** [Python] ⭐183,117
-    *   The legacy giant of the agent world, maintaining relevance as the vision of accessible AI for everyone evolves.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) | 0 (+3,047 today) | **Top gainer**: Codex CLI supercharger with hooks, teams, HUDs—"Oh My Zsh for AI coding" |
+| [Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 183,120 | Reborn as accessible AI platform; 183K stars show sustained autonomous agent interest |
+| [langgenius/dify](https://github.com/langgenius/dify) | 135,664 | "Production-ready agentic workflow"—enterprise visual builder competing with proprietary platforms |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 85,893 | Web automation for agents; critical primitive as agents need real-world tool access |
+| [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 47,864 | Educational "nano claude code" implementation—democratizing agent harness internals |
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,543 | ~400 MCP servers for AI agents—MCP (Model Context Protocol) ecosystem acceleration |
+| [trycua/cua](https://github.com/trycua/cua) | 13,374 | Computer-Use Agent infrastructure: sandboxes, SDKs, benchmarks for desktop-controlling agents |
 
 ### 📦 AI Applications
-*   **[onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx)** [Python] ⭐0 (+1872 today)
-    *   A "Universal AI Platform" gaining traction for its ability to seamlessly switch between any LLM while offering advanced enterprise features.
-*   **[saturndec/waoowaoo](https://github.com/saturndec/waoowaoo)** [TypeScript] ⭐10,794
-    *   An industry-first professional platform for controllable AI film and video production, moving beyond simple generation to full workflows.
-*   **[Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)** [Python] ⭐14,918
-    *   A vertical application that gives agents "eyes" to scrape and analyze the internet (Twitter, Reddit, YouTube) without API fees.
-*   **[google-research/timesfm](https://github.com/google-research/timesfm)** [Python] ⭐0 (+912 today)
-    *   A specialized pretrained foundation model for time-series forecasting, proving that the "Foundation Model" era is expanding beyond text.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx) | 0 (+1,852 today) | **Enterprise AI platform**—"works with every LLM" positioning captures multi-model enterprise strategy |
+| [open-webui/open-webui](https://github.com/open-webui/open-webui) | 129,906 | User-friendly AI interface; 129K stars prove UX layer critical for LLM adoption |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 42,865 | 300+ assistants, unified frontier LLM access—personal AI productivity consolidation |
+| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,739 | CowAgent: "lighter than OpenClaw"—Chinese market's preferred agent deployment |
+| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 10,795 | Industrial AI film/video production—Hollywood-grade agent workflows for creative vertical |
 
 ### 🧠 LLMs / Training
-*   **[huggingface/transformers](https://github.com/huggingface/transformers)** [Python] ⭐158,760
-    *   The bedrock of the AI ecosystem, providing state-of-the-art model definitions for text, vision, and audio.
-*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐69,466
-    *   The go-to unified framework for efficient fine-tuning of 100+ LLMs, critical for domain adaptation.
-*   **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)** [Python] ⭐45,531
-    *   An educational powerhouse allowing developers to train a 64M-parameter GPT from scratch in just 2 hours.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [google-research/timesfm](https://github.com/google-research/timesfm) | 0 (+916 today) | **Google's time-series foundation model**—expanding foundation model scope beyond language |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,762 | Definitive model framework; multimodal expansion (vision, audio) keeps it central |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,916 | Educational PyTorch implementation—educational depth as competitive moat |
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 45,531 | 2-hour 64M-parameter GPT training—democratizing LLM training for experimentation |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 69,468 | 100+ LLMs/VLMs unified fine-tuning—efficiency essential as model diversity explodes |
 
 ### 🔍 RAG / Knowledge
-*   **[f/prompts.chat](https://github.com/f/prompts.chat)** [HTML] ⭐157,125 (+369 today)
-    *   The essential knowledge base for prompt engineering, helping users bridge the gap between raw model capability and desired output.
-*   **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** [Python] ⭐77,050
-    *   A leading open-source RAG engine that fuses deep document understanding with agent capabilities.
-*   **[mem0ai/mem0](https://github.com/mem0ai/mem0)** [Python] ⭐51,885
-    *   A universal memory layer for AI agents, solving the critical issue of context retention in long-running sessions.
-*   **[milvus-io/milvus](https://github.com/milvus-io/milvus)** [Go] ⭐43,590
-    *   High-performance vector database built for scalable retrieval in enterprise AI applications.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 77,053 | "RAG + Agent capabilities"—knowledge retrieval evolving into active agent context |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 51,888 | Universal memory layer—solving agent state persistence across sessions |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 48,273 | "Document agent and OCR platform"—RAG vendor pivot to agent-centric positioning |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,590 | Cloud-native vector DB; scalability as enterprise RAG default |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 44,946 | Claude Code memory plugin—agent session continuity via AI-compressed context |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 23,893 | "Vectorless, reasoning-based RAG"—challenging embedding-heavy paradigms |
 
 ---
 
 ## 3. Trend Signal Analysis
-**1. The Rise of the "Agent OS"**
-Today's trends signal a definitive move away from "Chat with PDF" towards **Agentic Orchestration**. The explosive interest in **Oh My CodeX** and **fff.nvim** suggests that developers are no longer satisfied with AI as a passive chatbot. They are building "HUDs" (Heads-Up Displays) and "Harnesses"—effectively creating an Operating System layer *on top* of LLMs. The specific focus on "file search for agents" (fff.nvim) indicates that the bottleneck has shifted from model reasoning speed to **context retrieval precision**.
 
-**2. Verticalized Foundation Models**
-While general LLMs dominate headlines, the trending status of **TimesFM** (Time Series Foundation Model) highlights a maturing market. We are seeing the "Foundation Model" architecture applied to specific data domains (finance, weather, logistics). This suggests that the next wave of open-source value isn't just *larger* text models, but *specialized* architectures for non-text industrial applications.
+**Explosive Category: "Agent Harness" Extensibility**
 
-**3. "Bring Your Own Model" (BYOM) Platforms**
-**Onyx**'s rapid ascent reflects "LLM Fatigue." Enterprises and power users are tired of subscribing to multiple siloed services (Claude, Gemini, GPT). They want a unified interface (like **Open WebUI** or **Onyx**) that abstracts the backend model, allowing them to switch providers instantly based on cost or performance. This commoditizes the model layer and elevates the *interface* layer.
+Today's 3,047-star surge for [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) reveals a critical inflection: developers don't want black-box AI coding tools—they want **composable, hackable agent infrastructure**. This mirrors the 2010s DevOps transformation where "infrastructure as code" replaced proprietary tooling. The pattern repeats across [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) (47,864 stars, educational agent harness), [everything-claude-code](https://github.com/affaan-m/everything-claude-code) (136,058 stars, performance optimization system), and [claude-mem](https://github.com/thedotmack/claude-mem) (44,946 stars, memory persistence).
+
+**New Tech Stack Emergence: MCP (Model Context Protocol)**
+
+[activepieces/activepieces](https://github.com/activepieces/activepieces) explicitly markets "~400 MCP servers for AI agents"—MCP, Anthropic's open protocol for model-tool integration, is becoming the "USB-C for AI agents." This standardization wave enables the [jackwener/opencli](https://github.com/jackwener/opencli) vision: "Make Any Website & Tool Your CLI" via unified AGENT.md integration.
+
+**Industry Event Connection: GitHub Codex CLI Launch Fallout**
+
+The timing aligns with GitHub's recent Codex CLI release. Rather than accepting GitHub's defaults, the community immediately built extension ecosystems—[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) for customization, [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) for autonomous loops, [AionUi](https://github.com/iOfficeAI/AionUi) as unified Cowork app. This mirrors VS Code's extension economy genesis.
+
+**Vertical Specialization Signal**
+
+[google-research/timesfm](https://github.com/google-research/timesfm) (time-series) and [waoowaoo](https://github.com/saturndec/waoowaoo) (film production) demonstrate foundation models and agent workflows penetrating **domain-specific verticals** beyond general chat—enterprise and creative industries respectively.
 
 ---
 
 ## 4. Community Hot Spots
-*   **Agentic Developer Tools (ADT):** With **Oh My CodeX** leading the day, tools that enhance coding agents (HUDs, hooks, memory injection) are the hottest sub-sector.
-*   **MCP (Model Context Protocol) Ecosystem:** Projects like **Activepieces** explicitly mention "400+ MCP servers." The standardization of how agents connect to tools is becoming a primary feature request.
-*   **Computer-Use Agents (CUA):** **CUA** and **Agent-Reach** signal a push towards agents that can browse the live web and control desktop GUIs, moving AI from "talk" to "action."
-*   **Self-Hosted Privacy Interfaces:** **Prompts.chat** and **Onyx** emphasize self-hosting, indicating that privacy and data ownership remain top priorities for the open-source community.
+
+- **[oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)** — Highest velocity today (3,047 stars). The "Oh My Zsh for Codex" positioning suggests a new category: **shell ecosystem for AI agents**. Watch for plugin marketplace emergence.
+
+- **[onyx](https://github.com/onyx-dot-app/onyx)** — Enterprise "works with every LLM" strategy captures multi-model procurement reality. 1,852 stars indicate strong product-market fit for vendor-agnostic AI platforms.
+
+- **[timesfm](https://github.com/google-research/timesfm)** — Google's time-series foundation model signals **enterprise AI moving beyond chatbots** to operational forecasting. Critical for supply chain, finance, IoT applications.
+
+- **[PageIndex](https://github.com/VectifyAI/PageIndex)** — "Vectorless, reasoning-based RAG" challenges the embedding-heavy status quo. If proven at scale, could disrupt $B vector database market with pure reasoning approaches.
+
+- **[cua](https://github.com/trycua/cua)** + **[OpenSandbox](https://github.com/alibaba/OpenSandbox)** — Computer-Use Agent infrastructure race intensifies. Sandboxed desktop environments for agents becoming critical primitive; Alibaba's entry signals Chinese market acceleration.
+
+---
+
+*Report generated from GitHub trending data, April 4, 2026. Star counts reflect snapshot timing; velocity indicators prioritize today's new stars where available.*
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

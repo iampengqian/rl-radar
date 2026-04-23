@@ -1,87 +1,108 @@
 # AI Open Source Trends 2026-03-27
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-26 22:02 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-27 00:11 UTC
 
 ---
 
-# AI Open Source Ecosystem Trend Report (2026-03-27)
+# AI Open Source Trends Report — March 27, 2026
 
 ## 1. Today's Highlights
-The AI ecosystem today is dominated by the rapid evolution of **"SuperAgents"** and **Agentic Orchestration**. ByteDance's release of `deer-flow` and the viral traction of research agents like `last30days-skill` signal a shift from single-prompt interactions to complex, long-horizon autonomous workflows that integrate memory, sandboxing, and web interaction. Simultaneously, there is a surge in specialized, high-performance perception models, led by `RuView` (WiFi sensing) and `chandra` (complex OCR), indicating a maturing of multimodal AI beyond vision and text. The ecosystem is aggressively building the "nervous system" for these agents, with notable spikes in memory layers (`mem0`) and tooling for specific coding AIs like Claude Code.
+
+Today's GitHub trending reveals explosive momentum around **long-horizon autonomous agents** capable of multi-hour research and coding workflows. ByteDance's [deer-flow](https://github.com/bytedance/deer-flow) (+2,394 stars) leads with a "SuperAgent harness" featuring sandboxes, memory, and subagents—signaling enterprise-grade agent infrastructure maturing rapidly. Meanwhile, [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) (+2,685 stars) demonstrates strong demand for **cross-platform research agents** synthesizing Reddit, X, YouTube, and prediction markets. Notably, [ruvnet/RuView](https://github.com/ruvnet/RuView) (+1,002 stars) pioneers **WiFi-based DensePose** for privacy-preserving human sensing without cameras, opening new edge-AI applications. The concentration of TypeScript and Python tooling suggests developers prioritize JavaScript-native agent UIs alongside Python backends.
 
 ---
 
 ## 2. Top Projects by Category
 
-### 🤖 AI Agents / Workflows
-*Focus: Orchestration, autonomy, and multi-agent systems.*
-
-*   **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** [Python] ⭐0 (+2388 today)
-    *   An open-source SuperAgent harness for long-horizon tasks (research, coding, creation) utilizing sandboxes and sub-agents; significant for pushing agent autonomy beyond simple chat.
-*   **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)** [Python] ⭐0 (+2684 today)
-    *   An AI agent skill that synthesizes grounded summaries from Reddit, X, and YouTube; highlights the trend towards "research-first" agentic capabilities.
-*   **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** [TypeScript] ⭐0 (+576 today)
-    *   Teams-first multi-agent orchestration specifically tailored for Claude Code, reflecting the rise of collaborative coding agents.
-*   **[agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)** [Python] ⭐0 (+439 today)
-    *   A framework to build visible, understandable, and trustworthy agents, addressing the "black box" problem in multi-agent systems.
-*   **[virattt/dexter](https://github.com/virattt/dexter)** [TypeScript] ⭐0 (+269 today)
-    *   An autonomous agent focused specifically on deep financial research, exemplifying the shift toward vertical-specific autonomous agents.
-
 ### 🔧 AI Infrastructure
-*Focus: Dev tools, CLI, sandboxing, and model serving.*
+| Project | Stars | Why It Matters |
+|--------|-------|--------------|
+| [ollama/ollama](https://github.com/ollama/ollama) | 166,244 ⭐ | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax, DeepSeek—universal model access layer |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 74,439 ⭐ | Production inference engine; PagedAttention remains throughput benchmark |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 98,812 ⭐ | Web-to-LLM data pipeline; critical infrastructure for agent knowledge ingestion |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | 58,332 ⭐ | 2x faster fine-tuning with 70% less memory; democratizing model customization |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 69,119 ⭐ | Unified 100+ model fine-tuning; ACL 2024 recognized, production-proven |
+| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | 6,671 ⭐ | Rust-native LLM applications; systems language emerging for AI infrastructure |
+| [e2b-dev/E2B](https://github.com/e2b-dev/E2B) | 11,461 ⭐ | Secure sandboxed code execution; essential for autonomous coding agents |
 
-*   **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** [JavaScript] ⭐110,143 (+high activity)
-    *   A performance optimization system for Claude Code/Codex; critical as developers seek to maximize efficiency from frontier coding models.
-*   **[ruvnet/RuView](https://github.com/ruvnet/RuView)** [Rust] ⭐0 (+1001 today)
-    *   WiFi DensePose technology turning commodity WiFi signals into pose estimation without video; a breakthrough in non-visual AI perception infrastructure.
-*   **[open-webui/open-webui](https://github.com/open-webui/open-webui)** [Python] ⭐128,843
-    *   The de-facto standard user-friendly interface for running local models (Ollama/OpenAI), essential for privacy-first AI deployment.
-*   **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐74,432
-    *   The leading high-throughput inference engine, foundational for serving the LLMs that power the trending agents.
+### 🤖 AI Agents / Workflows
+| Project | Stars | Why It Matters |
+|--------|-------|--------------|
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 0 → +2,394 today ⭐ | **Today's breakout**: Long-horizon SuperAgent with memory, skills, subagents—hours-long task autonomy |
+| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 0 → +2,685 today ⭐ | **Highest velocity**: Multi-platform research agent (Reddit, X, YouTube, Polymarket, HN) |
+| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 0 → +598 today ⭐ | Teams-first multi-agent orchestration specifically for Claude Code |
+| [virattt/dexter](https://github.com/virattt/dexter) | 0 → +210 today ⭐ | Autonomous financial research agent—vertical specialization trend |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 84,609 ⭐ | Web automation for agents; bridge between LLMs and browser environments |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 69,843 ⭐ | AI-driven software engineering; autonomous code generation and debugging |
+| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | 0 → +437 today ⭐ | Observable, trustworthy multi-agent systems—addresses debuggability gap |
+| [trycua/cua](https://github.com/trycua/cua) | 13,283 ⭐ | Computer-Use Agents infrastructure; macOS/Linux/Windows desktop control |
 
-### 🔍 RAG / Knowledge
-*Focus: Memory, retrieval, and context management.*
-
-*   **[mem0ai/mem0](https://github.com/mem0ai/mem0)** [Python] ⭐51,155
-    *   A universal memory layer for AI agents; gaining traction as "memory" becomes the defining feature of next-gen persistent agents.
-*   **[datalab-to/chandra](https://github.com/datalab-to/chandra)** [Python] ⭐0 (+546 today)
-    *   A specialized OCR model for complex tables, forms, and handwriting; crucial for unlocking enterprise data for RAG pipelines.
-*   **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** [Python] ⭐76,267
-    *   A leading open-source RAG engine fusing retrieval with agent capabilities.
-*   **[Vaibhavs10/insanely-fast-whisper](https://github.com/Vaibhavs10/insanely-fast-whisper)** [Jupyter Notebook] ⭐0 (+1381 today)
-    *   Optimized speech recognition, vital for voice-based RAG and multimodal agent inputs.
+### 📦 AI Applications
+| Project | Stars | Why It Matters |
+|--------|-------|--------------|
+| [ruvnet/RuView](https://github.com/ruvnet/RuView) | 0 → +1,002 today ⭐ | **Novel sensing**: WiFi DensePose for pose estimation, vitals, presence—zero-pixel privacy |
+| [Vaibhavs10/insanely-fast-whisper](https://github.com/Vaibhavs10/insanely-fast-whisper) | 0 → +1,370 today ⭐ | Optimized speech recognition; edge deployment focus |
+| [datalab-to/chandra](https://github.com/datalab-to/chandra) | 0 → +557 today ⭐ | Complex document OCR—tables, forms, handwriting with layout preservation |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 42,385 ⭐ | AI productivity studio; 300+ assistants, unified frontier LLM access |
+| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,573 ⭐ | Multi-platform AI assistant (WeChat, DingTalk, Feishu); enterprise deployment |
+| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 10,474 ⭐ | Industrial AI film/video production; Hollywood-standard agent workflows |
+| [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 63,606 ⭐ | Financial data platform for analysts and AI agents—structured finance data |
 
 ### 🧠 LLMs / Training
-*Focus: Models, fine-tuning, and educational resources.*
+| Project | Stars | Why It Matters |
+|--------|-------|--------------|
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,452 ⭐ | Foundational model library; de facto standard for model architecture |
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 43,984 ⭐ | Train 64M-parameter GPT from scratch in 2 hours—educational/prototyping breakthrough |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,295 ⭐ | Pedagogical implementation; understanding over abstraction |
+| [open-compass/opencompass](https://github.com/open-compass/opencompass) | 6,798 ⭐ | Comprehensive LLM evaluation; 100+ datasets, critical for model selection |
+| [skyzh/tiny-llm](https://github.com/skyzh/tiny-llm) | 4,031 ⭐ | Apple Silicon-optimized inference; edge deployment education |
+| [BrainBlend-AI/atomic-agents](https://github.com/BrainBlend-AI/atomic-agents) | 5,816 ⭐ | Modular agent construction; composability over monolithic frameworks |
 
-*   **[huggingface/transformers](https://github.com/huggingface/transformers)** [Python] ⭐158,450
-    *   The central hub for state-of-the-art machine learning models.
-*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐69,118
-    *   Unified efficient fine-tuning for 100+ LLMs; remains the go-to for customizing open-source models.
-*   **[unslothai/unsloth](https://github.com/unslothai/unsloth)** [Python] ⭐58,328
-    *   A web UI for training and running models locally, democratizing access to model fine-tuning.
+### 🔍 RAG / Knowledge
+| Project | Stars | Why It Matters |
+|--------|-------|--------------|
+| [langgenius/dify](https://github.com/langgenius/dify) | 134,616 ⭐ | Production agentic workflow platform; visual + code hybrid development |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 131,232 ⭐ | Agent engineering platform; ecosystem maturity |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 76,275 ⭐ | RAG + Agent fusion; "deep document understanding" differentiator |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 51,156 ⭐ | Universal memory layer; persistent agent context across sessions |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,490 ⭐ | Cloud-native vector database; enterprise-scale ANN search |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | 29,875 ⭐ | Rust-based vector DB; performance and developer experience balance |
+| [cognee-ai/cognee](https://github.com/cognee-ai/cognee) | 14,658 ⭐ | Knowledge engine for agent memory; 6-line integration simplicity |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 23,015 ⭐ | Vectorless reasoning-based RAG; challenges embedding assumptions |
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**The Rise of the "Research Agent" Stack**
-Today's data reveals a distinct "Research Agent" stack forming. Projects like `last30days-skill` and `deer-flow` are not just chatbots; they are complex systems designed to browse, verify, and synthesize data over long time horizons. The explosive growth of `last30days-skill` (+2684 stars) suggests developers are prioritizing agents that can navigate the "messy" web (Reddit, X, HN) rather than just clean APIs.
+**Explosive Category: Long-Horizon Autonomous Agents**
 
-**Perception Without Pixels**
-`RuView` (+1001 stars) represents a fascinating niche explosion: non-visual computer vision. Using WiFi signals for pose estimation bypasses privacy concerns associated with cameras. This suggests a growing market for "privacy-preserving perception" in AI hardware and infrastructure.
+Today's data reveals a decisive shift from simple chatbots to **multi-hour autonomous task execution**. ByteDance's [deer-flow](https://github.com/bytedance/deer-flow) and [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) collectively captured 5,000+ stars, indicating massive developer appetite for agents that maintain state, use tools, and delegate to subagents over extended durations. This directly responds to Claude 3.7 Sonnet's extended thinking capabilities and OpenAI's Operator research preview—open source is racing to democratize these enterprise features.
 
-**Standardization of Coding Agents**
-The presence of `oh-my-claudecode` and `everything-claude-code` indicates that **Anthropic's Claude Code** is currently capturing significant developer mindshare as a platform, not just a model. Developers are building "operating systems" and "memory layers" specifically for this CLI tool, signaling a potential shift away from generic IDE plugins toward model-specific agentic coding environments.
+**Emerging Tech Stack: TypeScript-First Agent Orchestration**
 
-**Verticalization**
-Generic agents are giving way to specialized ones. `dexter` (Finance) and `chandra` (Document Parsing) show that the market values depth over breadth. "General AI" is being instantiated as "Specific Agents" to solve high-value problems.
+A striking pattern is **TypeScript dominance in agent coordination layers** ([oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode), [agentscope](https://github.com/agentscope-ai/agentscope)) while Python retains model serving. This bifurcation suggests frontend developers are claiming agent UX/orchestration, with Rust ([rig](https://github.com/0xPlaygrounds/rig), [qdrant](https://github.com/qdrant/qdrant)) emerging for performance-critical infrastructure.
+
+**Novel Direction: Ambient Sensing Without Cameras**
+
+[ruvnet/RuView](https://github.com/ruvnet/RuView)'s WiFi-based DensePose represents a **privacy-preserving sensing paradigm** with immediate smart home, healthcare, and security applications. This avoids the regulatory and social friction of camera-based systems while enabling new edge-AI deployment scenarios.
+
+**Industry Context**
+
+The concentration of Claude Code ecosystem tools ([oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode), [ralph-claude-code](https://github.com/frankbria/ralph-claude-code)) correlates with Anthropic's aggressive enterprise push. Simultaneously, financial research agents ([dexter](https://github.com/virattt/dexter)) signal vertical specialization as the next agent frontier beyond general coding assistants.
 
 ---
 
 ## 4. Community Hot Spots
 
-*   **[ByteDance/deer-flow](https://github.com/bytedance/deer-flow)**: As a "SuperAgent" harness from a major tech player, this project bridges the gap between research and production-ready long-horizon tasks. Watch this for architectural patterns on sub-agent delegation.
-*   **[mem0ai/mem0](https://github.com/mem0ai/mem0)**: The hottest "picks and shovels" play. As agents get smarter, they need to remember. Mem0 is becoming the standard memory layer.
-*   **[ruvnet/RuView](https://github.com/ruvnet/RuView)**: High potential for IoT and smart home integration. It opens a new frontier for AI sensing without invasive hardware.
-*   **[datalab-to/chandra](https://github.com/datalab-to/chandra)**: Solves the "uncrackable" problem of handwriting and complex tables in documents, which is currently the biggest bottleneck in enterprise RAG adoption.
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** — ByteDance's entry validates long-horizon agents as production-ready; sandbox + memory + subagent architecture will likely become standard pattern. **Watch for enterprise adoption metrics.**
+
+- **[ruvnet/RuView](https://github.com/ruvnet/RuView)** — WiFi sensing without cameras opens regulatory-friendly ambient intelligence. **Critical for healthcare monitoring and privacy-sensitive environments.**
+
+- **[mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)** — Cross-platform information synthesis (including Polymarket prediction markets) represents **new data sources for agent reasoning** beyond traditional web search.
+
+- **[0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)** — Rust LLM framework gaining traction; **systems engineers seeking memory-safe, high-performance alternatives to Python** should evaluate.
+
+- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** — "Vectorless RAG" challenges embedding-based retrieval assumptions; **potential paradigm shift in document understanding** worth monitoring for production RAG systems.
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

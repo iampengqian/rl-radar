@@ -1,118 +1,150 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code双版本齐发，情感化功能被删引抗议",
-      "OpenAI Codex惊现Token消耗失控与Linux严重误杀",
-      "Gemini CLI突发阻断级Bug：全局无法粘贴",
-      "GitHub Copilot四连更，核心推理能力疑遭降级",
-      "Kimi Code移除思考过程展示，用户信任度骤降",
-      "Qwen Code免费额度骤降叠加鉴权失效惹众怒"
+      "Claude Code v2.1.112 热修复 Opus 4.7 上线",
+      "OpenAI Codex rust-v0.122.0 关闭 Intel mac 支持",
+      "GitHub Copilot CLI 官方三连发零社区贡献",
+      "OpenCode v1.4.7 内存泄漏成 Megathread",
+      "Qwen Code v0.14.5 免费政策变更引信任危机",
+      "Pi v0.67.6 密集修复终端兼容性"
     ],
     "ai-agents": [
-      "OpenClaw 24小时狂飙：处理500+Issue与500+PR",
-      "新版接Claude Opus 4.7并首增Gemini文本转语音",
-      "v2026.4.15引Onboard崩溃等严重回归问题",
-      "关键PR修重导时无条件覆盖网关Token致连接断开",
-      "176个PR被合并，项目处快速迭代与集中修Bug期",
-      "系统处理413条新开或活跃Issue仅关闭87条"
+      "OpenClaw v2026.4.15 正式版与 beta.2 同日发布",
+      "默认模型全面切换 Claude Opus 4.7",
+      "新增 Gemini TTS 语音合成能力",
+      "onboarding 崩溃 24 小时内快速修复",
+      "Windows 原生支持与 Memory v2 并行推进",
+      "SiliconFlow 接入中长期功能曝光"
     ],
     "ai-trending": [
-      "Karpathy LLM避坑配置单日暴涨近8K星",
-      "Claude-mem自动压缩长记忆补全AI遗忘短板",
-      "GenericAgent极简代码自生长技能树降耗6倍",
-      "Evolver提GEP协议开辟Agent自进化新范式",
-      "OpenAI官方发布轻量多智能体工作流框架",
-      "大模型教育透明化爆发：Karpathy指南登榜"
+      "andrej-karpathy-skills 单日暴涨 7959 star",
+      "claude-mem 单日涨 1900 star 成刚需",
+      "GenericAgent 自进化智能体获显著关注",
+      "evolver 低 token 消耗架构引热议",
+      "voicebox 多模态 AI 创作工具升温",
+      "AI 编程助手记忆增强成明确趋势"
     ],
     "ai-web": [
-      "OpenAI单日连发4文，展现极强产品化野心",
-      "Codex For Almost Everything预示接管全栈任务",
-      "OpenAI推网络防御生态，抢占网络安全新高地",
-      "GPT Rosalind亮相开启底层模型拟人化命名",
-      "Anthropic今日零更新疑似正蓄力打安全护城河",
-      "OpenAI将大模型能力向主动安全防御倾斜"
+      "Anthropic 正式发布 Claude Opus 4.7",
+      "Opus 4.7 首次引入差异化削弱网络攻击训练",
+      "Anthropic 公开对比 Claude Mythos Preview",
+      "OpenAI 推出 Codex For Almost Everything",
+      "OpenAI 首次曝光 GPT Rosalind",
+      "双方同日交锋 AI 网络安全与编程智能体"
     ],
     "ai-hn": [
-      "Claude Opus 4.7刷屏霸榜，实测与机制引轰动",
-      "Qwen3.6端侧实测击败顶级闭源模型Claude",
-      "OpenAI推生命科学专用模型GPT-Rosalind",
-      "Codex全栈化引爆AI辅助编程边界大讨论",
-      "1989年Macintosh上跑Transformer引热议",
-      "社区惊叹AI能力同时深陷算力枯竭与泡沫担忧"
+      "Claude Opus 4.7 帖子 1394 分 1009 评论霸榜",
+      "OpenAI Codex 扩展通用代理 634 分热议",
+      "GPT-Rosalind 进军生命科学垂直领域",
+      "Qwen3.6-35B 本地绘图击败 Opus 4.7",
+      "小模型逆袭叙事再度升温",
+      "AI 安全与 KYC 审查引发社区警惕"
     ],
-    "rl-daily": [
-      "AReaL发布v1.0.3，向Agent基础设施演进",
-      "AReaL与slime攻克显存与通信墙实现传输百倍降",
-      "AReaL率先打通MoE架构跨节点LoRA训练链路",
-      "传统RL算法库与OpenRLHF等均陷入静默期",
-      "slime引入RDMA与权重重压缩破局异构适配",
-      "AReaL落地DPO算法提供多元对齐新选择"
+    "ai-ph": [
+      "Fathom 3.0 无机器人会议 AI 581 票领跑",
+      "Claude Code Routines 528 票自动化工作流",
+      "Intent 355 票 AI agent 端到端自动发版",
+      "CC-BEEPER 围绕 Claude Code 备受关注",
+      "AI 编程助手从对话式向自动化演进",
+      "隐私安全与本地化集成成差异化关键"
     ],
-    "agent-orch": [
-      "Claude Squad与Crystal等45个编排项目活跃中",
-      "Claude Code Bridge与Claude Flow发力多Agent",
-      "OpenAI的Symphony加入编排生态混战",
-      "Swarm Protocol与ORCH探索全新通信协议",
-      "Agent Deck与AutoGPT推高工作流自动化上限",
-      "Mux Desktop与Kodo打通桌面端多智能体协同"
+    "ai-arxiv": [
+      "RL 优化边缘分布 P(y) 扩展推理边界",
+      "首次形式化 vibe-testing 为可量化指标",
+      "激活干预或成第三大模型适应范式",
+      "超 1 万亿 token 合成预训练数据研究",
+      "自适应共形预测提升 LLM 事实性",
+      "首个 AI 辅助学术评审大规模试点 AAAI-26"
+    ],
+    "ai-hf": [
+      "Gemma 4-31B-it 周下载 319 万居生态核心",
+      "Qwen3.5-27B 蒸馏 Claude 4.6 获 2679 点赞",
+      "MiniMax-M2.7 MoE 模型跻身热度前三",
+      "腾讯混元 HY-Embodied 切入机器人赛道",
+      "百度 ERNIE-Image 8B 参数 Apache 2.0 开源",
+      "k2-fsa OmniVoice 70 万下载语音克隆黑马"
+    ],
+    "ai-community": [
+      "OpenClaw 挑战赛 1200 美元奖池启动",
+      "工程师提出 Thinking Guide 保持独立思考",
+      "AI 放大而非弥补工程能力短板引热议",
+      "30 天无 AI 编码实验反思 vibe coding",
+      "Agent 框架沦为 SDK wrapper 遭批判",
+      "图数据库查询神经网络权重成前沿探索"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code shipped hotfixes v2.1.111 & v2.1.112.",
-      "OpenAI Codex alpha introduced autonomous 'Goal Mode'.",
-      "Gemini CLI struggled with API capacity and 429 errors.",
-      "GitHub Copilot CLI rushed out four rapid-fire releases.",
-      "CLI maintainers are racing to support Opus 4.7 and GPT-5.4.",
-      "Platforms are struggling to manage autonomous token limits."
+      "Claude Code shipped v2.1.111 and v2.1.112 with Auto mode.",
+      "OpenAI Codex released rust-v0.122.0-alpha.3 and alpha.5.",
+      "Gemini CLI tracked 10 hot issues in last 24 hours.",
+      "Ecosystem focus shifted to sandboxing and session persistence.",
+      "Enterprise concerns around Bedrock and Azure grew central.",
+      "Trust erosion from silent feature removals emerged as key risk."
     ],
     "ai-agents": [
-      "OpenClaw hit 500 issues and 500 PRs in a single day.",
-      "OpenClaw stable release v2026.4.15 is now available.",
-      "Anthropic Opus 4.7 model integration is now bundled.",
-      "Google Gemini TTS capabilities were added to OpenClaw.",
-      "Users report a pervasive onboarding crash in OpenClaw.",
-      "OpenClaw faces routing bugs and technical debt surge."
+      "OpenClaw released v2026.4.15 and v2026.4.15-beta.2 today.",
+      "Claude Opus 4.7 is now default for vision and Anthropic configs.",
+      "Project hit 500 issues and 500 PRs in 24 hours.",
+      "Top community issues accumulated 80-120 comments each.",
+      "Windows and Linux multi-provider support expanded rapidly.",
+      "Stability concerns rose as onboarding crashes multiplied."
     ],
     "ai-trending": [
-      "Andrej Karpathy skills plugin gained 7,939 stars today.",
-      "Context plugin claude-mem added 1,907 stars (59k total).",
-      "Agentic coding plugins are seeing near-vertical growth.",
-      "Prompt-engineering-as-infrastructure is a massive trend.",
-      "Enterprise multi-agent frameworks are becoming standard.",
-      "Surge in self-evolving agent architectures detected."
+      "andre-karpathy-skills gained +7,959 stars for one CLAUDE.md file.",
+      "claude-mem surged +1,897 stars solving ephemeral memory.",
+      "GenericAgent and evolver drew strong agentic architecture interest.",
+      "vercel-labs/open-agents gained +738 stars for serverless agents.",
+      "Voice synthesis and ambient AI hardware trended upward.",
+      "Memory and context persistence dominated coding agent trends."
     ],
     "ai-web": [
-      "OpenAI launched 'GPT Rosalind' for life sciences.",
-      "OpenAI released generalized Codex action agents.",
-      "OpenAI unveiled a dedicated cybersecurity initiative.",
-      "OpenAI executed a massive multi-front product launch.",
-      "OpenAI pushes to embed models in enterprise security.",
-      "Anthropic maintained absolute radio silence today."
+      "Anthropic launched Claude Opus 4.7 with stronger self-verification.",
+      "OpenAI teased new model or initiative called GPT Rosalind.",
+      "Codex and cyber defense ecosystem content expanded at OpenAI.",
+      "Both labs now differentially restrict cyber capabilities.",
+      "Anthropic provided full technical and policy transparency.",
+      "OpenAI published four metadata-only entries, substance still opaque."
     ],
     "ai-hn": [
-      "Claude Opus 4.7 absolutely dominated Hacker News.",
-      "HN thread on Opus 4.7 scored 1,276 points today.",
-      "Qwen3.6-35B out-prompted Opus 4.7 in local tests.",
-      "Community rigorously dissected Opus 4.7 system card.",
-      "Growing public anxiety over AI compute scarcity.",
-      "Fears of data center backlash spook open-source devs."
+      "Claude Opus 4.7 thread hit 1394 points and 1009 comments.",
+      "Simon Willison's Qwen benchmark challenged Claude at 277 points.",
+      "OpenAI's GPT-Rosalind life sciences model made waves.",
+      "Skepticism and AI fatigue ran strong through discussions.",
+      "Model card thread praised for transparency at 155 points.",
+      "Compute scarcity and data center backlash gained traction."
     ],
-    "rl-daily": [
-      "AReaL released v1.0.3 for rapid LLM scaling.",
-      "Slime pushed distributed limits via RDMA transfers.",
-      "CleanRL, TRL, and OpenRLHF entered a dormant state.",
-      "AReaL is expanding beyond pure RL into new DPO tasks.",
-      "Gymnasium received minimal but targeted maintenance.",
-      "Ecosystem exhibited a sharp bifurcation in activity."
+    "ai-ph": [
+      "Fathom 3.0 led with 581 votes pivoting to Claude integration.",
+      "Intent scored 355 votes for full autonomous code deployment.",
+      "Claude Code Routines showed explosive workflow automation demand.",
+      "Gemini Robotics ER 1.6 brought robotics hardware to Product Hunt.",
+      "Astra offered privacy-first agent execution without data exposure.",
+      "Agentic development from feature to shipped code dominated launches."
     ],
-    "agent-orch": [
-      "Claude Squad tools optimize multi-agent coding.",
-      "Claude Code Bridge enables seamless orchestrations.",
-      "Claude Flow orchestrates complex agent workflows.",
-      "Dorothy, Jean, and Ralph enhance Claude Code UX.",
-      "Symphony and AutoGen battle for orchestration devs.",
-      "Trend swings toward Kanban-based agent management."
+    "ai-arxiv": [
+      "From P(y|x) to P(y) proposes RL in pre-train space breakthrough.",
+      "From Feelings to Metrics formalizes LLM vibe-testing.",
+      "TIP identifies high-signal tokens for on-policy distillation.",
+      "Trillion-token pretraining data synthesis study submitted.",
+      "Self-evolving spatial intelligence advanced in new papers.",
+      "Hierarchical VLA systems bridged vision and robotic control."
+    ],
+    "ai-hf": [
+      "google/gemma-4-31B-it hit 3.2M downloads this week.",
+      "Jackrong's Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled led likes.",
+      "MiniMaxAI, zai-org, Tencent, and Baidu all ranked top tier.",
+      "Uncensored Gemma 4 abliterated fine-tunes proliferated rapidly.",
+      "Unsloth dominated quantization with four GGUF top-30 entries.",
+      "Tencent's HY-World 2.0 and Netflix video model trended in 3D/video."
+    ],
+    "ai-community": [
+      "Don't let AI do your thinking guide hit 34 reactions.",
+      "AI Doesn't Fix Weak Engineering spurred 29 reactions.",
+      "Claude Code and MCP servers dominated Dev.to tutorials.",
+      "Voice-enabled Telegram bot with Gemini tutorial published.",
+      "Skepticism about vibe coding eroding skills ran strong.",
+      "Lobste.rs linked deep technical reads on GPU origins and geospatial models."
     ]
   }
 }

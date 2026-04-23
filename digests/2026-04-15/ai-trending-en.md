@@ -1,81 +1,95 @@
 # AI Open Source Trends 2026-04-15
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-14 22:12 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-04-15 00:17 UTC
 
 ---
 
-# AI Open Source Ecosystem Trends Report (2026-04-15)
+# AI Open Source Trends Report — April 15, 2026
+
+## Step 1: Filter
+Excluded non-AI repos: `pascalorg/editor` (3D architecture tool), `chrislgarry/Apollo-11` (historical space code), `tw93/Mole` (Mac cleaning utility).
+
+---
 
 ## 1. Today's Highlights
-Today's GitHub trending landscape is overwhelmingly dominated by the Anthropic ecosystem, specifically tooling and methodologies surrounding **Claude Code** and agentic engineering. The explosive debut of [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) (+8,282 stars today) signals a massive community appetite for autonomous agents that can scale and adapt over time. Meanwhile, foundational developer paradigms are shifting from basic "vibe coding" to structured "agentic engineering," evidenced by the viral traction of system prompts, skills frameworks, and persistent memory layers for AI coding assistants. Alongside this Claude-centric surge, the open-source financial AI sector is rapidly maturing, with multiple AI-driven hedge fund and market language models claiming significant traction. 
+
+The open-source community is experiencing an extraordinary surge around **Claude Code ecosystem tooling**, with three repositories collectively gaining over **15,000 stars today**—including a single `CLAUDE.md` file derived from Andrej Karpathy's observations that exploded to 9,263 stars in one day. NousResearch's `hermes-agent` is also seeing massive traction (8,301 stars today), signaling strong demand for "growing" personal AI agents. Meanwhile, memory and context-management tools for coding agents are becoming a distinct product category, not just features. The trend clearly shows developers racing to build, customize, and optimize agentic coding experiences.
+
+---
 
 ## 2. Top Projects by Category
 
-### 🤖 AI Agents / Workflows
-*   [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) ⭐83,990 total (+8,282 today)
-    *What it is:* A highly anticipated autonomous agent framework designed to scale and adapt with user needs over time.
-*   [obra/superpowers](https://github.com/obra/superpowers) ⭐N/A (+1,928 today)
-    *What it is:* An agentic skills framework and software development methodology bringing structure to LLM-driven coding.
-*   [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) ⭐N/A (+2,569 today)
-    *What it is:* A comprehensive guide transitioning developers from experimental "vibe coding" to rigorous "agentic engineering."
-*   [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) ⭐55,581 total (+2,979 today)
-    *What it is:* A persistent memory plugin for Claude Code that compresses and injects cross-session context using AI.
-*   [browser-use/browser-use](https://github.com/browser-use/browser-use) ⭐87,805 total
-    *What it is:* A leading framework enabling AI agents to see, interact with, and automate tasks across web environments.
-*   [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) ⭐30,223 total
-    *What it is:* The open-source frontend stack for building generative UI and integrating AI agents directly into web applications.
-
 ### 🔧 AI Infrastructure
-*   [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) ⭐N/A (+9,230 today)
-    *What it is:* A single `CLAUDE.md` file optimizing AI coding behavior based on Andrej Karpathy's observed LLM pitfalls.
-*   [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) ⭐N/A (+922 today)
-    *What it is:* The official collection of practical notebooks and recipes showcasing advanced Claude integration techniques.
-*   [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) ⭐155,996 total
-    *What it is:* An agent harness performance system providing optimized skills, instincts, and memory for Claude Code and Cursor.
-*   [microsoft/markitdown](https://github.com/microsoft/markitdown) ⭐N/A (+1,672 today)
-    *What it is:* A crucial Python infrastructure tool converting proprietary file and office formats into clean Markdown for AI ingestion.
-*   [vllm-project/vllm](https://github.com/vllm-project/vllm) ⭐76,598 total
-    *What it is:* The industry-standard high-throughput and memory-efficient inference engine for serving open-source LLMs.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | Total: 0* / Today: +1,675 | Essential document-to-markdown converter that feeds unstructured data into LLM pipelines. |
+| [ollama/ollama](https://github.com/ollama/ollama) | 169,006 | Continues to dominate local LLM inference with expanding model support (Kimi-K2.5, GLM-5, DeepSeek, etc.). |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 76,605 | High-throughput inference engine critical for production LLM serving. |
+| [langgenius/dify](https://github.com/langgenius/dify) | 137,771 | Production-ready platform for building and deploying agentic workflows at scale. |
+| [open-webui/open-webui](https://github.com/open-webui/open-webui) | 131,860 | The leading user-friendly interface for local and remote LLM access. |
+
+*\*Total stars shown as 0 in source data for trending list entries.*
+
+### 🤖 AI Agents / Workflows
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Total: 0* / Today: +8,301 | "The agent that grows with you" — massive breakout suggesting next-gen personal agent architecture. |
+| [obra/superpowers](https://github.com/obra/superpowers) | Total: 0* / Today: +1,919 | Agentic skills framework and software development methodology gaining rapid adoption. |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 55,729 / Today: +2,997 | Claude Code plugin for persistent AI-compressed session memory — solving a real agent pain point. |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 87,814 | Making websites accessible for AI agents; core infrastructure for web automation. |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 71,204 | AI-driven development platform competing in the autonomous coding agent space. |
+| [trycua/cua](https://github.com/trycua/cua) | 13,475 | Open-source infrastructure for computer-use agents with full desktop control. |
 
 ### 📦 AI Applications
-*   [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) ⭐N/A (+1,007 today)
-    *What it is:* An open-source team of AI agents collaborating to simulate hedge fund trading and market analysis.
-*   [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) ⭐N/A (+965 today)
-    *What it is:* A specialized foundation model explicitly designed to parse and understand the complex language of financial markets.
-*   [jamiepine/voicebox](https://github.com/jamiepine/voicebox) ⭐N/A (+1,165 today)
-    *What it is:* A fully open-source studio for AI voice synthesis, bridging the gap in accessible audio generation tools.
-*   [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) ⭐65,878 total
-    *What it is:* The premier open-source financial data platform built specifically for analysts, quants, and AI agents.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | Total: 0* / Today: +1,162 | Open-source voice synthesis studio hitting the trending list as generative audio interest resurges. |
+| [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | Total: 0* / Today: +1,007 | AI-powered financial team — vertical AI application riding the agentic finance wave. |
+| [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) | Total: 0* / Today: +963 | Foundation model for the language of financial markets — novel domain-specific model release. |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 109,103 | The standard API for making web data LLM-ready through search, scrape, and interaction. |
+| [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 65,880 | Financial data platform increasingly positioned for AI agent consumption. |
 
 ### 🧠 LLMs / Training
-*   [ollama/ollama](https://github.com/ollama/ollama) ⭐168,995 total
-    *What it is:* The dominant local inference framework, now natively supporting next-gen models like Kimi-K2.5, GLM-5, and DeepSeek.
-*   [jingyaogong/minimind](https://github.com/jingyaogong/minimind) ⭐46,848 total
-    *What it is:* A highly accessible educational repository allowing developers to train a 64M-parameter GPT model from scratch in under 2 hours.
-*   [huggingface/transformers](https://github.com/huggingface/transformers) ⭐159,376 total
-    *What it is:* the foundational model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | Total: 0* / Today: +9,263 | A single `CLAUDE.md` file that exploded in popularity — Karpathy's insights on LLM coding pitfalls. |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 159,380 | The foundational model-definition framework remains indispensable. |
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 46,850 | Train a 64M-parameter GPT from scratch in 2 hours — democratizing LLM training education. |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 90,772 | Evergreen educational resource for building ChatGPT-like models from first principles. |
+| [skyzh/tiny-llm](https://github.com/skyzh/tiny-llm) | 4,090 | Apple Silicon-focused course on LLM inference serving — niche but technically deep. |
 
 ### 🔍 RAG / Knowledge
-*   [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) ⭐25,212 total
-    *What it is:* A cutting-edge document indexing system offering a "vectorless," reasoning-based approach to RAG.
-*   [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) ⭐53,319 total
-    *What it is:* A nano agent harness demonstrating that basic Bash is all you need to build powerful, from-scratch AI coding agents.
-*   [infiniflow/ragflow](https://github.com/infiniflow/ragflow) ⭐78,041 total
-    *What it is:* A leading open-source RAG engine fusing state-of-the-art retrieval with deep agent capabilities for superior context injection.
-*   [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) ⭐10,801 total
-    *What it is:* A novel architecture achieving 97% storage savings for fast, accurate, and 100% private on-device RAG applications.
+| Project | Stars | Why It Matters Today |
+|--------|-------|----------------------|
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 78,042 | Leading open-source RAG engine fusing retrieval with agent capabilities. |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 53,048 | Universal memory layer for AI agents — memory is becoming infrastructure, not feature. |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,800 | High-performance cloud-native vector database for scalable ANN search. |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 25,218 | "Vectorless, reasoning-based RAG" — represents a potential paradigm shift in retrieval architecture. |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 15,362 | Knowledge engine for AI agent memory in 6 lines of code — extreme developer ergonomics. |
 
 ---
 
 ## 3. Trend Signal Analysis
-Today's GitHub data reveals a definitive shift from foundational model training toward **Agent Optimization & Context Management**. The most explosive growth is happening around tools that act as "operating systems" for existing LLMs—specifically Claude. Projects like `andrej-karpathy-skills` (+9,230 today) and `claude-code-best-practice` (+2,569 today) indicate that the developer community is standardizing how they communicate with AI, moving away from basic prompt engineering toward systemic "agentic engineering."
 
-We are also seeing the rapid rise of **Persistent Agent Memory** as a distinct category. Tools like `claude-mem` (which compresses and saves state across sessions) prove that maintaining context is the primary bottleneck developers are currently trying to solve in AI coding workflows. 
+**The Claude Code ecosystem is experiencing a star explosion unlike anything seen in recent months.** Three of today's top trending repositories—`andrej-karpathy-skills` (+9,263), `claude-mem` (+2,997), and `claude-code-best-practice` (+2,583)—are all focused on optimizing, extending, or documenting Anthropic's coding agent. This isn't merely enthusiasm for a single product; it signals that **AI coding agents have crossed into a phase where the *meta-layer* around them**—prompt engineering, memory systems, skill frameworks, and best-practice methodologies—has become a fertile ground for open-source innovation.
 
-Furthermore, **Domain-Specific Foundation Models** are gaining massive traction. The simultaneous trending of an AI hedge fund team and Kronos (a financial market LLM) alongside general-purpose agents suggests that the open-source community is pivoting from building generalists to training highly specialized, autonomous agents for niche industries. This is largely catalyzed by the recent proliferation of powerful open-weights models (like DeepSeek and GLM-5), which give developers the raw material needed to build bespoke, domain-expert systems without relying solely on generalized APIs.
+A second explosive signal comes from [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent), which gained 8,301 stars today with the tagline "the agent that grows with you." This points to a broader community hunger for **personalized, long-lived agents** that accumulate capabilities and context over time, rather than stateless task executors.
+
+New directions emerging include **"vectorless RAG"** ([PageIndex](https://github.com/VectifyAI/PageIndex)), **AI-compressed session memory** ([claude-mem](https://github.com/thedotmack/claude-mem)), and **agentic skills frameworks** ([superpowers](https://github.com/obra/superpowers)) that treat software development as a methodology problem, not just a tooling problem. The connection to recent industry events is clear: as Anthropic, OpenAI, and others release increasingly capable coding agents, the open-source community is racing to solve the surrounding systems—memory, context, evaluation, and orchestration—that make these agents actually usable at scale.
+
+---
 
 ## 4. Community Hot Spots
-*   **The "Agentic Harness" Gold Rush:** With [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) and [obra/superpowers](https://github.com/obra/superpowers) gaining massive traction, developers should focus on building standardized frameworks (like `CLAUDE.md` configurations) that reliably shape LLM behavior into structured engineering workflows.
-*   **AI-Driven Quant & Finance:** The vertical integration of AI in finance is surging. Developers should watch [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) and [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) closely as blueprints for how LLMs are being tailored for high-stakes market analysis and algorithmic trading.
-*   **Vectorless & Next-Gen RAG:** The architecture of RAG is evolving. [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) and [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) represent a shift toward hybrid or reasoning-based document retrieval, challenging traditional dense vector embeddings.
-*   **Pervasive AI Memory Layers:** The high total stars for [mem0ai/mem0](https://github.com/mem0ai/mem0) and today's surge for [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) highlight universal cross-session memory as a critical layer for all future AI applications.
+
+- **Claude Code Meta-Tools** — Repositories like [`andrej-karpathy-skills`](https://github.com/forrestchang/andrej-karpathy-skills), [`claude-mem`](https://github.com/thedotmack/claude-mem), and [`claude-code-best-practice`](https://github.com/shanraisshan/claude-code-best-practice) are dominating today's stars. Developers should watch this space for emerging standards in agent prompting and memory.
+
+- **Personal/Growing Agents** — [`hermes-agent`](https://github.com/NousResearch/hermes-agent) and [`nanobot`](https://github.com/HKUDS/nanobot) represent a shift toward lightweight, personalized agents. This category may define the next wave of consumer-facing AI open source.
+
+- **Agent Memory Infrastructure** — [`mem0ai/mem0`](https://github.com/mem0ai/mem0), [`cognee`](https://github.com/topoteretes/cognee), and [`claude-mem`](https://github.com/thedotmack/claude-mem) are making memory a standalone layer. For builders, this is a signal to design agents with pluggable memory architectures.
+
+- **Financial AI Verticals** — [`ai-hedge-fund`](https://github.com/virattt/ai-hedge-fund) and [`Kronos`](https://github.com/shiyu-coder/Kronos) both trended today, suggesting finance remains a high-intensity application domain for agentic AI.
+
+- **Post-Vector RAG** — [`PageIndex`](https://github.com/VectifyAI/PageIndex) and [`LEANN`](https://github.com/yichuan-w/LEANN) are exploring retrieval without traditional vector embeddings. Early but potentially disruptive for cost and privacy-sensitive deployments.
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

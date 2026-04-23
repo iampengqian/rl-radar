@@ -7,12 +7,14 @@ import {
   buildPeersComparisonPrompt,
   buildRlComparisonPrompt,
   buildSkillsPrompt,
+} from "../prompts.ts";
+import {
   buildTrendingPrompt,
   buildWebReportPrompt,
   buildWeeklyPrompt,
   buildMonthlyPrompt,
   buildHnPrompt,
-} from "../prompts.ts";
+} from "../prompts-data.ts";
 import type { RepoConfig, GitHubItem, GitHubRelease } from "../github.ts";
 import type { RepoDigest } from "../prompts.ts";
 import type { TrendingData } from "../trending.ts";

@@ -1,121 +1,139 @@
 # AI 开源趋势日报 2026-03-23
 
-> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-22 22:02 UTC
+> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-23 00:10 UTC
 
 ---
 
-你好！我是专注于 AI 开源生态的技术分析师。基于 **2026-03-23** 的 GitHub 热门数据，我为你整理了今天的《AI 开源趋势日报》。
+# AI 开源趋势日报 | 2026-03-23
 
 ---
 
-# 📅 AI 开源趋势日报 (2026-03-23)
+## 第一步：AI 相关性筛选
 
-## 1. 今日速览
-今天的 GitHub AI 趋势被 **“Agentic OS（智能体操作系统）”** 和 **“Claude Code 生态”** 强势霸榜。字节跳动推出的 `deer-flow` 以超级智能体 Harness 的形态获得开源社区的高度关注，与 `MoneyPrinterV2` 共同展示了 AI 从“单一对话”向“自主执行复杂任务（如赚钱、渗透测试）”的演进。同时，`everything-claude-code` 的爆发式增长（单日 +3735）标志着 Claude Code 正在成为新一代 AI 开发者的核心生产力工具，周边的插件、记忆增强（RAG）和 UI 优化工具已形成繁荣的细分赛道。此外，金融交易与网络安全成为 AI Agent 落地最迅速的垂直领域。
+**Trending 榜单（15→11个AI相关）**
+| 排除项 | 原因 |
+|--------|------|
+| systemd/systemd | Linux 系统服务管理器 |
+| louis-e/arnis | Minecraft 地图生成工具 |
+| aquasecurity/trivy | 通用安全扫描工具 |
 
----
-
-## 2. 各维度热门项目
-
-### 🤖 AI 智能体/工作流
-> **趋势焦点**：从简单的对话机器人转向具备自主规划、工具调用能力的 Super Agent 和垂直行业 Agent。
-
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** [Python] ⭐新增 +1508
-  - **简介**：字节跳动开源的 SuperAgent“线束”系统。集成了沙箱、记忆、工具和子代理，能够研究、编码并创建内容，处理耗时从几分钟到几小时的复杂任务。
-  - **推荐理由**：今日榜单中最具统治力的 Agent 框架，代表了 Agent 编排系统的大型工程化方向。
-
-- **[vxcontrol/pentagi](https://github.com/vxcontrol/pentagi)** [Go] ⭐新增 +1015
-  - **简介**：完全自主的 AI 智能体系统，能够执行复杂的渗透测试任务。
-  - **推荐理由**：网络安全领域 Agent 的标杆，展示了 AI 在高危、高复杂度技术场景下的自主能力。
-
-- **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** [Python] ⭐新增 +1108
-  - **简介**：基于多智能体 LLM 的金融交易框架。
-  - **推荐理由**：金融量化与 LLM 结合的热门方向，多智能体协作模式在复杂决策市场中的实战应用。
-
-- **[browser-use/browser-use](https://github.com/browser-use/browser-use)** [Python] ⭐82k+ (总量) | 今日 +405
-  - **简介**：让网站对 AI 智能体可访问，轻松实现在线任务自动化。
-  - **推荐理由**：Web Agent 的基础设施，连接 LLM 与浏览器的核心桥梁，热度持续不减。
-
-- **[FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2)** [Python] ⭐今日热榜
-  - **简介**：自动化在线赚钱流程。
-  - **推荐理由**：尽管描述简单，但直击用户痛点（变现），是“Agent 实用化”在个人生产力方面的典型代表。
-
-### 🔧 AI 基础工具
-> **趋势焦点**：Claude Code 相关的开发工具链（CLI、Harness）正在重塑开发者的工作流。
-
-- **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)** [JavaScript] ⭐97k+ (总量) | 今日 +3735
-  - **简介**：Agent Harness 性能优化系统，包含技能、本能、记忆、安全和研发优先的开发模式。
-  - **推荐理由**：今日 Star 增长之王，不仅是工具，更像是一套针对 Claude Code 的“操作系统”，极大地扩展了 Coding Agent 的能力边界。
-
-- **[ollama/ollama](https://github.com/ollama/ollama)** [Go] ⭐165k+ (总量)
-  - **简介**：本地大模型运行工具，支持 Kimi-K2.5, GLM-5, DeepSeek 等最新模型。
-  - **推荐理由**：本地模型部署的绝对王者，AI 开发者的装机必备软件。
-
-- **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** [TypeScript] ⭐35k+ (总量)
-  - **简介**：一个类似 nano claude code 的 Agent Harness，强调“Bash is all you need”。
-  - **推荐理由**：从 0 到 1 构建类 Claude Code 工具的教程级项目，适合想深入理解 Agent 架构的开发者。
-
-- **[trycua/cua](https://github.com/trycua/cua)** [Python] ⭐13k+ (总量)
-  - **简介**：Computer-Use Agents 的开源基础设施，提供沙箱和 SDK。
-  - **推荐理由**：为 AI 控制桌面（GUI Agent）提供底层支持，是 Agent 物理世界交互的关键基建。
-
-### 🔍 RAG/知识库
-> **趋势焦点**：从通用向量检索转向更高效的索引结构和针对 Agent 的长期记忆优化。
-
-- **[HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)** [Python] ⭐今日热榜 (+203)
-  - **简介**：简单且快速的检索增强生成框架（EMNLP2025）。
-  - **推荐理由**：学术界与工业界结合的典范，解决了传统 RAG 复杂且昂贵的问题。
-
-- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐22k+ (总量)
-  - **简介**：面向无向量、基于推理的 RAG 文档索引。
-  - **推荐理由**：挑战了主流的 Vector RAG 范式，提出了基于推理的新索引思路，极具前瞻性。
-
-- **[memvid/memvid](https://github.com/memvid/memvid)** [Rust] ⭐13k+ (总量)
-  - **简介**：AI 智能体的记忆层，用无服务器、单文件记忆层替代复杂的 RAG 管道。
-  - **推荐理由**：Rust 编写的高性能记忆方案，简化了 Agent 记忆管理的复杂度。
-
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** [TypeScript] ⭐39k+ (总量)
-  - **简介**：Claude Code 插件，自动捕获会话并压缩注入上下文。
-  - **推荐理由**：Claude 生态爆发的一部分，解决了长上下文和记忆留存的具体痛点。
-
-### 📦 AI 应用
-> **趋势焦点**：离线生存、视频生成与内容变现。
-
-- **[Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)** [TypeScript] ⭐今日热榜 (+2294)
-  - **简介**：Project N.O.M.A.D，一个自包含的离线生存计算机，打包了关键工具、知识和 AI。
-  - **推荐理由**：结合了“离线优先”与 AI，反映了在不确定环境下（如灾难、断网）个人对 AI 依赖的解决方案。
-
-- **[harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)** [Python] ⭐今日热榜
-  - **简介**：利用 AI 大模型一键生成高清短视频。
-  - **推荐理由**：视频生成赛道的常青树，将 LLM 与视频渲染工作流结合得非常成熟。
-
-- **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** [TypeScript] ⭐42k+ (总量)
-  - **简介**：AI 生产力工作室，集成了聊天、自主代理和 300+ 助手。
-  - **推荐理由**：客户端应用层面的佼佼者，提供了统一访问各种前沿 LLM 的友好界面。
+**主题搜索（80个）**：全部为AI相关，保留全部
 
 ---
 
-## 3. 趋势信号分析
-
-**🚀 Agent Harness & CLI 的崛起**
-今日最显著的趋势是 **"Coding Agent Harness"（编码智能体线束）** 的爆发。以 `everything-claude-code` 为首的项目表明，开发者不再满足于简单的 Chat 交互，而是急需一套能管理**上下文、工具调用、安全性和记忆**的复杂系统。Claude Code 已不再仅仅是一个工具，而正在成长为一个类似 "VS Code + OS" 的平台，其周边的生态（HUD、Memory、优化器）正在快速填补空白。
-
-**⚔️ 自主性与任务复杂度的跃迁**
-从 `pentagi`（渗透测试）到 `deer-flow`（超级代理），再到 `TradingAgents`，我们看到 AI Agent 正在从“辅助”转向“全自主执行”，且任务难度从“写代码片段”升级为“攻防演练”和“金融交易”。这标志着 2026 年的开源 AI 正式进入 **“Agentic Workflow”** 的深水区，能够处理长时序、高风险任务的框架将获得巨额流量。
-
-**💾 RAG 的架构进化**
-在 Search 榜单中，`PageIndex` 和 `memvid` 的出现暗示了传统向量数据库并非终点。社区正在探索**无需向量的推理索引**以及**单文件嵌入式记忆层**，旨在降低 RAG 的部署门槛并提高 Agent 的记忆召回精度。
+## 第二步：分类体系
 
 ---
 
-## 4. 社区关注热点
+## 第三步：正式报告
 
-以下是值得开发者今日重点关注的 specific 项目/方向：
+### 1. 今日速览
 
--   **🌟 [bytedance/deer-flow](https://github.com/bytedance/deer-flow)**：如果你想构建复杂的 AI 应用，这是目前最新的工业级 SuperAgent 参考实现，务必研究其沙箱与子代理的设计架构。
--   **🔥 [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)**：如果你是 Claude Code 用户，这个仓库提供了极其硬核的性能优化和技能扩展方案，是提升生产力的必备手册。
--   **🛡️ [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi)**：网络安全领域的突破性项目，安全从业者应关注其如何将 LLM 应用于红队攻击的自动化流程。
--   **💾 [memvid/memvid](https://github.com/memvid/memvid)**：一个轻量级的 Agent 记忆解决方案，适合想要快速给 Agent 加上长期记忆而不想维护重型向量库的开发者。
+今日 AI 开源领域呈现**"智能体基础设施"爆发态势**：Claude Code 生态插件（everything-claude-code、claude-hud）单日斩获超 4500 stars，显示开发者对 AI 编程助手增强工具的强烈需求；字节跳动开源的 Deer-Flow 以 1690 新增 stars 进入视野，定位"SuperAgent harness"对标 OpenHands；金融交易多智能体框架 TradingAgents 及其中文版同日上榜，反映垂直场景 Agent 框架的实用化趋势。整体看，**"Agent 增强层"**（记忆、监控、技能编排）正成为继基础框架后的新热点层。
 
 ---
-*分析师结语*：今天的趋势表明，AI 开源社区正在迅速围绕 **Claude** 和 **Agent** 构建一套完整的“技术栈”。如果说过去两年是在造“大脑”（模型），那么现在大家都在忙着造“躯干”和“神经系统”。
+
+### 2. 各维度热门项目
+
+#### 🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 97,921 | **+3,724** | Claude Code 性能优化系统，提供技能、本能、记忆、安全等增强模块，今日登顶热榜 |
+| [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | — | **+834** | Claude Code 插件，实时监控上下文使用、活跃工具、运行中的 Agent 和待办进度 |
+| [ollama/ollama](https://github.com/ollama/ollama) | 165,885 | — | 本地大模型运行标准工具，新增支持 Kimi-K2.5、GLM-5、MiniMax 等模型 |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 73,966 | — | 高吞吐、内存高效的 LLM 推理与服务引擎 |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 130,611 | — | 智能体工程平台，持续巩固生态地位 |
+| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | 6,617 | — | Rust 模块化 LLM 应用开发框架，系统级语言生态的新选择 |
+| [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | 11,229 | — | Java 生态 LLM 集成库，支持 RAG、MCP、工具调用等企业级特性 |
+
+---
+
+#### 🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | — | **+1,690** | 字节开源 SuperAgent 框架，集成沙箱、记忆、工具、技能、子智能体，支持分钟到小时级任务 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | — | **+1,051** | 多智能体 LLM 金融交易框架，专业交易员角色协作决策 |
+| [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | — | **+1,069** | 全自主 AI 渗透测试智能体系统，安全领域深度应用 |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 82,525 | **+428** | 让网站对 AI 智能体可访问，浏览器自动化任务执行 |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 69,557 | — | AI 驱动开发平台，Deer-Flow 的直接对标参考 |
+| [trycua/cua](https://github.com/trycua/cua) | 13,216 | — | 计算机使用智能体（Computer-Use Agents）开源基础设施，支持 macOS/Linux/Windows 桌面控制 |
+| [alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox) | 9,038 | — | 通用 AI 应用沙箱平台，支持编码智能体、GUI 智能体、RL 训练等场景 |
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,371 | — | AI 工作流自动化平台，集成约 400 个 MCP 服务器 |
+
+---
+
+#### 📦 AI 应用（具体应用产品、垂直场景解决方案）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| [FujiwaraChoki/MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) | — | **+1,787** | 自动化在线赚钱流程，AI 驱动的内容变现工具 |
+| [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | — | **+189** | 一键生成高清短视频，AI 大模型驱动的视频创作 |
+| [Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) | — | **+2,300** | 离线生存计算机，集成关键工具、知识与 AI，应急场景创新产品 |
+| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,380 | — | 多平台接入的超级 AI 助理（微信/飞书/钉钉等），支持主动思考与任务规划 |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 42,059 | — | AI 生产力工作室，智能聊天、自主智能体、300+ 助手统一界面 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 96,565 | — | 网站转 LLM-ready 数据的 Web Data API，RAG 应用的基础设施 |
+| [ScrapeGraphAI/Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | 23,089 | — | 基于 AI 的 Python 爬虫，智能提取结构化数据 |
+
+---
+
+#### 🧠 大模型/训练（模型权重、训练框架、微调工具）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,258 | — | 文本/视觉/音频/多模态模型的定义框架，推理与训练统一 |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 68,890 | — | 100+ LLM/VLM 统一高效微调框架（ACL 2024） |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | 57,557 | — | 本地训练运行开源模型的统一 Web UI，支持 Qwen、DeepSeek、gpt-oss 等 |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,007 | — | 从零实现 ChatGPT 类 LLM，PyTorch 逐步教学 |
+| [open-compass/opencompass](https://github.com/open-compass/opencompass) | 6,783 | — | 大模型评测平台，支持 100+ 数据集、Llama3/GPT-4/Qwen 等主流模型 |
+| [galilai-group/stable-pretraining](https://github.com/galilai-group/stable-pretraining) | 135 | — | 可靠、极简、可扩展的基础模型与世界模型预训练库 |
+
+---
+
+#### 🔍 RAG/知识库（向量数据库、检索增强、知识管理）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| [langgenius/dify](https://github.com/langgenius/dify) | 133,967 | — | 生产级智能体工作流开发平台，RAG 与 Agent 能力融合 |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 75,803 | — | 领先开源 RAG 引擎，融合深度文档理解与 Agent 能力 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | — | **+220** | EMNLP 2025 简单快速 RAG 方案，今日持续获关注 |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,456 | — | 云原生高性能向量数据库，可扩展 ANN 搜索 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 50,713 | — | AI 智能体通用记忆层，跨会话上下文保持 |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 47,871 | — | 文档智能体与 OCR 平台，RAG 应用的核心框架 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 39,470 | — | Claude Code 记忆插件，自动捕获、压缩、注入历史会话上下文 |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 22,591 | — | 无向量、基于推理的 RAG 文档索引，存储成本降低 97% |
+
+---
+
+### 3. 趋势信号分析
+
+**"Agent 增强层"成为新爆发点**：今日最显著的信号是 Claude Code 生态插件的集体崛起——everything-claude-code（+3,724）与 claude-hud（+834）合计超 4500 新增 stars，标志着开发者不再满足于基础 AI 编程助手，而是积极构建**记忆持久化、性能监控、技能编排**等增强层。这与 Anthropic 近期推动的 "agentic coding" 战略高度契合。
+
+**字节跳动入场 SuperAgent 赛道**：Deer-Flow 以 1690 新增 stars 进入视野，其定位"分钟到小时级长任务处理"直接对标 OpenHands，且强调沙箱、子智能体等企业级特性，显示大厂正加速布局**生产级 Agent 基础设施**。
+
+**垂直场景 Agent 框架实用化**：TradingAgents（金融交易）与 pentagi（渗透测试）同日上榜，反映 Agent 技术正从通用框架向**专业领域深度渗透**，多智能体协作（multi-agent orchestration）成为解决复杂决策任务的标准范式。
+
+**技术栈 Rust 化趋势**：rig（Rust LLM 框架）、meilisearch/qdrant（Rust 向量数据库）的持续活跃，显示系统级语言在 AI 基础设施中的份额提升。
+
+---
+
+### 4. 社区关注热点
+
+- **🔥 Claude Code 插件生态** — everything-claude-code 与 claude-hud 的爆发表明，"AI 编程助手的助手"成为 immediate 机会，记忆管理、上下文监控、性能优化是核心痛点
+
+- **🔥 字节 Deer-Flow vs OpenHands** — 大厂开源 SuperAgent 框架入局，长任务处理、沙箱安全、子智能体编排将成为差异化竞争点，建议关注两者架构设计对比
+
+- **🔥 金融/安全垂直 Agent** — TradingAgents 和 pentagi 验证"专业多智能体"模式，具备领域知识编码能力的 Agent 框架在特定场景价值显著高于通用方案
+
+- **🔥 无向量 RAG（Vectorless RAG）** — PageIndex 代表的"推理驱动检索"新范式，在边缘设备部署和隐私敏感场景具有颠覆潜力，存储效率 97% 提升值得技术跟踪
+
+- **🔥 MCP（Model Context Protocol）生态扩张** — activepieces 集成 ~400 MCP 服务器，LangChain4j 新增 MCP 支持，协议层标准化正在加速工具生态整合
+
+---
+
+*报告生成时间：2026-03-23*  
+*数据来源：GitHub Trending & Topic Search API*
+
+---
+*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*

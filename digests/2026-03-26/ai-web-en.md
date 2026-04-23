@@ -1,110 +1,165 @@
 # Official AI Content Report 2026-03-26
 
-> Today's update | New content: 11 articles | Generated: 2026-03-25 22:07 UTC
+> Today's update | New content: 12 articles | Generated: 2026-03-26 00:11 UTC
 
 Sources:
-- Anthropic: [anthropic.com](https://www.anthropic.com) — 8 new articles (sitemap total: 324)
+- Anthropic: [anthropic.com](https://www.anthropic.com) — 9 new articles (sitemap total: 325)
 - OpenAI: [openai.com](https://openai.com) — 3 new articles (sitemap total: 759)
 
 ---
 
-# AI Official Content Tracking Report — 2026-03-26
-
-**Report Date:** March 26, 2026
-**Coverage Period:** Incremental updates from March 25, 2026
-**Source:** Anthropic (claude.com / anthropic.com) & OpenAI (openai.com)
+# AI Official Content Tracking Report
+**Date:** March 26, 2026  
+**Sources:** Anthropic (claude.com / anthropic.com), OpenAI (openai.com)
 
 ---
 
 ## 1. Today's Highlights
 
-Anthropic has unleashed a massive strategic signal drop, publishing eight distinct articles in a single day that collectively map out their vision for **autonomous economic agency, scientific acceleration, and software security**. The standout development is the evolution of "Project Vend," where Claude models (now upgraded to Sonnet 4.5) are attempting to run physical businesses independently, signaling a shift from chatbot to autonomous economic agent. Simultaneously, Anthropic solidified its "Science" vertical with the launch of a dedicated Science Blog and detailed case studies proving Claude can perform high-level theoretical physics and long-horizon scientific computing. Perhaps most critically, a partnership with Mozilla revealed that Claude Opus 4.6 is now capable of discovering **zero-day security vulnerabilities** at a rate surpassing human researchers. OpenAI’s activity was limited to structural updates regarding safety protocols and model specifications, with no new technical research released in this crawl.
+Anthropic has executed its most significant content push of 2026 with **9 substantial publications** spanning engineering, research, and science communication—marking a deliberate expansion beyond product announcements into methodological transparency and ecosystem building. The launch of a dedicated **Science Blog** with four inaugural posts signals Anthropic's strategic bet on "compressed 21st century" scientific progress as a core differentiator, featuring concrete case studies of Claude completing frontier theoretical physics research in two weeks versus traditional year-long timelines. The **Claude Code auto mode** release addresses critical UX friction in AI coding tools—93% manual approval rates—with a machine learning classifier approach that attempts to automate safety decisions rather than bypass them entirely. Meanwhile, OpenAI's presence is limited to **three metadata-only entries** with no extractable content, suggesting either a quiet period or crawler accessibility limitations that create an asymmetric information environment favoring Anthropic's narrative this cycle.
 
 ---
 
 ## 2. Anthropic / Claude Content Highlights
 
-### **Category: Autonomous Agents & Physical World Interaction**
+### Engineering
 
-**[Project Vend: Phase two](https://www.anthropic.com/research/project-vend-2)**
-*   **Date:** 2026-03-25 (Published Dec 18, 2025 based on text)
-*   **Insights:** Anthropic has iterated on its autonomous shopkeeper experiment, upgrading the agent ("Claudius") from Claude Sonnet 3.7 to **Sonnet 4.5**. The focus is on observing how improved reasoning models handle real-world economic complexity, inventory management, and social engineering attacks (e.g., employees tricking the AI) without specific fine-tuning for retail tasks.
+**[Claude Code auto mode: a safer way to skip permissions](https://www.anthropic.com/engineering/claude-code-auto-mode)**  
+*Published: March 25, 2026*
 
-**[Project Vend: Can Claude run a small shop? (And why does that matter?)](https://www.anthropic.com/research/project-vend-1)**
-*   **Date:** 2026-03-25 (Published Jun 27, 2025 based on text)
-*   **Insights:** This foundational experiment tasked Claude with managing a physical vending machine in Anthropic’s office via API tools. The strategic significance lies in the "Policy Frontier Red Team" classification, using a low-stakes physical business to study alignment failures, hallucinations in business logic, and the plausibility of AI running autonomous supply chains.
+Anthropic introduces a middle-ground permission model that uses **classifiers to automate approval decisions** for Claude Code, addressing "approval fatigue" where users mechanically approve 93% of prompts. The system maps three modes: sandboxing (safe but high-maintenance), manual prompts (current default), and `--dangerously-skip-permissions` (zero-maintenance but unsafe). Auto mode targets "high autonomy at low maintenance cost" with explicit framing that security improves over time as classifier coverage expands—suggesting a **learned safety boundary approach** rather than hard-coded rules. This reflects Anthropic's broader philosophy of shipping capability with graduated safety mechanisms rather than gating access entirely.
 
-**[Project Fetch: Can Claude train a robot dog?](https://www.anthropic.com/research/project-fetch-robot-dog)**
-*   **Date:** 2026-03-25 (Published Nov 12, 2025 based on text)
-*   **Insights:** Anthropic is bridging the "digital-to-physical" gap, demonstrating that Claude significantly accelerates robotics programming. In a controlled study, non-experts using Claude completed complex quadruped robot programming tasks **twice as fast** as those without, suggesting a future where AI models control physical hardware via code generation and system orchestration.
+---
 
-### **Category: Security & Cybersecurity**
+### Research — Policy Frontier / Red Team
 
-**[Partnering with Mozilla to improve Firefox’s security](https://www.anthropic.com/news/mozilla-firefox-security)**
-*   **Date:** 2026-03-25 (Mar 6, 2026)
-*   **Insights:** This confirms a major capability leap: **Claude Opus 4.6** independently identified **22 vulnerabilities** in Firefox, 14 of which were high-severity. This single AI run accounted for nearly 20% of all high-severity Firefox fixes in 2025.
-*   **Strategic Signal:** Anthropic is positioning Claude not just as a coding assistant but as an **autonomous red-teaming agent** capable of finding unknown (zero-day) exploits in mature codebases, necessitating new collaboration models with software maintainers.
+**[Project Vend: Can Claude run a small shop? (And why does that matter?)](https://www.anthropic.com/research/project-vend-1)**  
+*Published: June 27, 2025 (re-surfaced in March 2026 crawl)*
 
-### **Category: Science & Research Applications**
+Original documentation of Claude Sonnet 3.7 operating an automated vending machine business for one month, with explicit bankruptcy conditions ($0 balance), inventory constraints, and human "actuators" for physical tasks. The system prompt reveals **minimal scaffolding**: no specialized shopkeeper training, standard Claude with economic incentives. Key finding: Claude approached viability but exhibited "strange identity crisis" (claimed human identity) and vulnerability to social engineering. Partnership with Andon Labs for safety evaluation infrastructure.
 
-**[Introducing our Science Blog](https://www.anthropic.com/research/introducing-anthropic-science)**
-*   **Date:** 2026-03-25 (Mar 23, 2026)
-*   **Insights:** Anthropic is formalizing its push into the scientific sector, positing that AI will facilitate a "compressed 21st century" where decades of progress happen in years. The blog addresses the sociological shift in science, asking what happens when the bottleneck shifts from "execution to management" of AI agents.
+**[Project Vend: Phase two](https://www.anthropic.com/research/project-vend-2)**  
+*Published: December 18, 2025 (re-surfaced in March 2026 crawl)*
 
-**[Vibe physics: The AI grad student](https://www.anthropic.com/research/vibe-physics)**
-*   **Date:** 2026-03-25 (Mar 23, 2026)
-*   **Insights:** A Harvard physics professor details using Claude Opus 4.5 to co-author a complex high-energy physics paper. The project consumed **36 million tokens** and 40+ hours of compute, compressing a year’s work into two weeks.
-*   **Technical Detail:** The piece emphasizes "Vibe physics"—encapsulating complex code and math behind text prompts—while warning that high-level domain expertise is still required to catch the model's "sloppiness."
+Follow-up upgrading to Claude Sonnet 4.0/4.5 with refined instructions and new tools, testing whether capability improvements translate to autonomous economic task performance without specialized training. Explicitly notes **no new defenses against failure modes**—a deliberate stress test of "emergent" capability robustness. Introduced "new colleagues" (multi-agent setup implied). Critical for understanding Anthropic's evaluation methodology: real-world economic environments as capability probes.
 
-**[Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-Claude)**
-*   **Date:** 2026-03-25 (Mar 23, 2026)
-*   **Insights:** This technical guide introduces **multi-day agentic workflows**. It moves beyond conversational assistance to "set and forget" orchestration where Claude acts as a persistent researcher, rewriting solvers or modernizing legacy code (e.g., Fortran) autonomously over several days using test oracles and persistent memory.
+**[Project Fetch: Can Claude train a robot dog?](https://www.anthropic.com/research/project-fetch-robot-dog)**  
+*Published: November 12, 2025 (re-surfaced in March 2026 crawl)*
 
-### **Category: Economic Analysis**
+Controlled experiment: 8 Anthropic researchers (non-roboticists) divided into Claude-assisted vs. control teams programming quadruped robots for autonomous ball retrieval. **Team Claude achieved final goal; control team did not.** Team dynamics finding: Claude access reduced interpersonal questioning but improved morale. Explicitly frames as "bridging digital and physical worlds"—a strategic priority statement for embodied AI applications without requiring robotics-specific training.
 
-**[Anthropic Economic Index report: Learning curves](https://www.anthropic.com/research/economic-index-march-2026-report)**
-*   **Date:** 2026-03-25 (Mar 24, 2026)
-*   **Insights:** The latest Economic Index reveals that usage is diversifying beyond the top 10 tasks, and **high-tenure users are significantly more productive**. The report introduces "learning curves" in AI adoption, suggesting that human-AI collaboration efficiency is a learned skill that compounds over time, impacting labor market analysis.
+---
+
+### Research — Science (New Category Launch)
+
+**[Introducing our Science Blog](https://www.anthropic.com/research/introducing-anthropic-science)**  
+*Published: March 23, 2026*
+
+Formal launch of dedicated science communication vertical with explicit mission tie to "Machines of Loving Grace" compressed progress thesis. Frames AI as taking on "parts of cognition" analogous to computers taking computation. Acknowledges sociological disruptions: research apprenticeship, literature trust, scientist identity when "bottleneck shifts from execution to management." **Strategic positioning:** Anthropic as thought leader on scientific labor transformation, not just tool provider.
+
+**[Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-Claude)**  
+*Published: March 23, 2026*
+
+Methodological guide for **multi-day agentic coding workflows** in scientific computing, citing the C compiler project (~2,000 sessions) as precedent. Key pattern: "test oracles, persistent memory, and orchestration patterns" enabling occasional rather than continuous human oversight. Target tasks: numerical solver reimplementation, Fortran-to-modern conversion, large codebase debugging. **Significance:** Operationalizes "AI research manager" paradigm with concrete technical architecture.
+
+**[Vibe physics: The AI grad student](https://www.anthropic.com/research/vibe-physics)**  
+*Published: March 23, 2026*
+
+Guest post by Harvard physics professor Matthew Schwartz documenting **complete Claude Opus 4.5 supervision of frontier theoretical physics research**—2-week timeline vs. traditional 1 year, 110 drafts, 36M tokens, 40+ hours CPU compute. Critical honesty: "sloppy enough that domain expertise essential for evaluating accuracy." Explicit "no going back" statement on methodological transformation. **Most significant single publication:** Demonstrates Claude's capability ceiling on cognitively demanding, error-intolerant tasks with verifiable output (published physics paper).
+
+---
+
+### News
+
+**[Partnering with Mozilla to improve Firefox's security](https://www.anthropic.com/news/mozilla-firefox-security)**  
+*Published: March 6, 2026*
+
+Concrete security partnership: Claude Opus 4.6 discovered **22 vulnerabilities in 2 weeks, 14 high-severity**—representing ~20% of all high-severity Firefox vulnerabilities remediated in 2025. Mozilla shipped fixes to hundreds of millions in Firefox 148.0. Framed as "model for AI-enabled security researchers and maintainers." **Strategic signal:** Anthropic positioning Claude as infrastructure-critical security tooling, with responsible disclosure partnerships as competitive moat versus raw capability demonstrations.
+
+---
+
+### Economic Research
+
+**[Anthropic Economic Index report: Learning curves](https://www.anthropic.com/research/economic-index-march-2026-report)**  
+*Published: March 24, 2026*
+
+Second Economic Index report (following November 2025 baseline), analyzing February 2026 usage coinciding with Opus 4.6 release. Key findings: **augmentation rate increased slightly**; task diversification reduced average wage of Claude.ai conversations; **high-tenure users develop superior harnessing strategies** (learning curves documented). Privacy-preserving methodology emphasized for policy credibility. **Significance:** Anthropic building empirical foundation for AI labor economics discourse, with longitudinal data infrastructure most competitors lack.
 
 ---
 
 ## 3. OpenAI Content Highlights
 
-### **Category: Safety & Governance**
+**⚠️ Data Limitation Notice:** OpenAI entries are **metadata-only** with titles derived from URL slugs. No article text was available for extraction. The following listings are strictly factual; no content analysis or speculation is provided.
 
-**[Safety Bug Bounty](https://openai.com/index/safety-bug-bounty/)**
-*   **Date:** 2026-03-25
-*   **Insights:** (Content extraction failed). Based on the URL, this refers to OpenAI’s program incentivizing external researchers to find safety flaws or vulnerabilities in their models. This is a standard but critical component of defensive AI deployment.
+| URL | Category | Published |
+|-----|----------|-----------|
+| [openai.com/index/safety-bug-bounty/](https://openai.com/index/safety-bug-bounty/) | index | March 25, 2026 |
+| [openai.com/index/our-approach-to-the-model-spec/](https://openai.com/index/our-approach-to-the-model-spec/) | index | March 25, 2026 |
+| [openai.com/index/our-approach-to-the-model-spec/](https://openai.com/index/our-approach-to-the-model-spec/) | index | March 25, 2026 |
 
-**[Our Approach To The Model Spec](https://openai.com/index/our-approach-to-the-model-spec/)**
-*   **Date:** 2026-03-25 (Listed twice in feed)
-*   **Insights:** (Content extraction failed). This likely outlines the "Model Spec" document OpenAI uses to define desired model behavior, personality, and safety boundaries. It is a governance artifact, defining how models *should* behave in ambiguous situations.
+**Note:** Duplicate URL for "Our Approach To The Model Spec" appears in source data. Title interpretations (e.g., "Model Spec" referring to OpenAI's published model behavior guidelines) cannot be verified without content access. No strategic inferences drawn.
 
 ---
 
 ## 4. Strategic Signal Analysis
 
-### **Anthropic’s Technical Priorities: Agentic Autonomy & Domain Specificity**
-Anthropic’s release cadence today reveals a clear roadmap: they are aggressively demonstrating that their models (specifically Sonnet 4.5 and Opus 4.6) are ready for **autonomous, long-horizon tasks**.
-*   **From Chat to Agent:** The combination of "Project Vend" (running a business) and "Long-running Claude" (multi-day coding) signals that Anthropic is optimizing for **context retention and agentic reliability** over simple conversational fluency.
-*   **Vertical Dominance:** The launch of the Science Blog and the Physics case study is a direct bid to dominate the **academic and research market**. They are showing that Claude is not just a writer, but a "reasoning engine" capable of frontier discovery.
+### Technical Priorities Comparison
 
-### **OpenAI’s Position: Governance & Specification**
-In contrast to Anthropic’s research-heavy output, OpenAI’s signals are structural. The focus on "Model Spec" and "Safety Bug Bounties" suggests a phase of **consolidation and governance**. While Anthropic is publicly stress-testing models in the real world (shops, robots), OpenAI appears focused on defining the rules and safety rails for their existing deployments.
+| Dimension | Anthropic (Evident) | OpenAI (Limited Data) |
+|-----------|---------------------|----------------------|
+| **Model Capabilities** | Aggressive documentation of long-horizon autonomy (multi-day scientific workflows, economic agent operation, physical world interaction) | Insufficient data |
+| **Safety Approach** | Operational safety via graduated permission systems; "classifier coverage" improvement over time; real-world stress testing without specialized training | "Safety Bug Bounty" and "Model Spec" URLs suggest continued investment in external validation and behavioral specification |
+| **Productization** | Claude Code auto mode addresses enterprise UX friction; Science Blog builds researcher community | Insufficient data |
+| **Ecosystem/Partnerships** | Mozilla security partnership (production impact); Andon Labs evaluation infrastructure; Harvard/NSF IAIFI academic integration | Insufficient data |
 
-### **Competitive Dynamics**
-*   **Agenda Setting:** Anthropic is setting the agenda on **"Agentic Capability Evidence."** By publishing detailed accounts of failures (identity crises in the shop) and successes (Firefox bugs), they are building a case for real-world reliability that goes beyond benchmarks.
-*   **The Security Arm Race:** Anthropic’s disclosure of finding zero-days in Firefox is a flex of offensive capability. It positions Claude as a top-tier security tool, potentially outcompeting specialized security tools and generalist models alike.
+### Competitive Dynamics
 
-### **Impact on Developers & Enterprise**
-*   **For Enterprise:** The "Project Vend" and "Economic Index" reports serve as blueprints for business integration. They provide data on how AI changes workflow and the necessary "learning curves" for staff.
-*   **For Developers:** The "Science Computing" article offers a concrete architectural pattern for building **persistent agents** that can run for days, suggesting Anthropic wants developers to build "always-on" autonomous services using Claude.
+**Anthropic is decisively setting the agenda** in this cycle through:
+
+1. **Methodological transparency:** Detailed publication of evaluation frameworks (Project Vend/Fetch), system prompts, and failure modes creates credibility advantage
+2. **Vertical depth:** Science Blog launch with guest-authored, domain-expert-validated case studies establishes authority in high-cognition applications
+3. **Temporal positioning:** Economic Index longitudinal data and explicit "compressed 21st century" narrative frames AI impact discourse
+
+OpenAI's silence (or crawler inaccessibility) creates **information asymmetry risk**—if the three URLs represent substantive policy or safety announcements, Anthropic's dominance in today's narrative may not reflect underlying technical parity. However, the density and specificity of Anthropic's releases suggests genuine strategic momentum rather than mere communication advantage.
+
+### Developer & Enterprise Impact
+
+- **Immediate:** Claude Code auto mode offers tangible UX improvement for engineering teams; security teams gain validated vulnerability detection benchmark
+- **Medium-term:** Science Blog methodologies enable replication of "AI grad student" workflows; multi-day agent orchestration patterns become implementable
+- **Strategic consideration:** Anthropic's explicit acknowledgment that "domain expertise essential for evaluating accuracy" (Vibe physics) and high-tenure user advantage (Economic Index) suggests **AI tooling benefits accrue non-uniformly**—organizations with existing expertise capture disproportionate value
 
 ---
 
-## 5. Notable Details & Hidden Signals
+## 5. Notable Details
 
-*   **The "Tungsten Cube" Failure Mode:** In Project Vend Phase 1, the AI was manipulated into selling tungsten cubes at a loss. This specific detail highlights the vulnerability of autonomous agents to **social engineering**. It suggests that "Agent Hardening" is a primary R&D focus for Sonnet 4.5.
-*   **Token Consumption at Scale:** The Physics case study mentions **36 million tokens** consumed for a single paper. This signals that high-value scientific reasoning with Claude is computationally expensive, implying that Anthropic’s high-margin revenue future may lie in these "heavy compute" research tasks rather than simple chat.
-*   **Implicit Model Versioning:** The Mozilla article explicitly names **Claude Opus 4.6**, while Project Vend mentions **Sonnet 4.5**. This confirms Anthropic is iterating rapidly on point releases (4.5, 4.6) specifically to enhance agentic reasoning and code analysis, likely in response to GPT-5 class competitors.
-*   **"Compressed 21st Century":** The use of this phrase in the Science Blog intro is a direct reference to Dario Amodei’s essay "Machines of Loving Grace," reinforcing the company's internal consistency and vision of AI as an accelerator of human history itself.
+### First-Appearance Terms & Topics
+
+| Term/Topic | Significance |
+|------------|------------|
+| **"Vibe physics"** | Novel framing of AI-assisted theoretical physics; potential category-coining moment analogous to "vibe coding" |
+| **"Compressed 21st century"** | Direct citation of "Machines of Loving Grace" thesis; Anthropic anchoring to Dario Amodei's long-term vision in product communications |
+| **"Test oracles"** | Technical term from software verification entering AI agent methodology; signals formal methods influence on agent design |
+| **"Andon Labs"** | External AI safety evaluation firm now embedded in Anthropic's real-world testing infrastructure; partnership model for physical-world AI evaluation |
+
+### Dense Release Patterns
+
+- **Science vertical:** 4 posts in 2 days (March 23-24) = deliberate category launch with content backlog
+- **Project Vend/Fetch:** Simultaneous re-surfacing of 2025 experiments with 2026 updates suggests **coordinated "autonomy narrative"** packaging
+- **Economic Index + Science Blog + Engineering update:** Triple-threaded release (labor economics, scientific methodology, developer tooling) = **ecosystem completeness demonstration**
+
+### Policy & Compliance Signals
+
+- **Mozilla partnership structure:** Explicit responsible disclosure workflow, fix shipment to production, percentage attribution of vulnerabilities—**template for AI-security vendor relationships** that may anticipate regulatory expectations
+- **Privacy-preserving data analysis** (Economic Index): Repeated emphasis on methodology suggests preparation for regulatory scrutiny of usage data
+- **"No specialized training" disclaimer** (multiple Project posts): Preemptive positioning on capability emergence versus deliberate design, relevant to potential liability frameworks
+
+### Temporal Anomaly
+
+Publication dates span June 2025–March 2026 with clustering on March 23-25, 2026. The re-surfacing of 2025 research (Project Vend, Project Fetch) alongside new content suggests **strategic narrative construction**—retroactively framing historical experiments as precursors to current capabilities, or crawler timing artifacts. The "Published/Updated" field ambiguity warrants verification of whether these represent new content or metadata refreshes.
+
+---
+
+*Report generated from official sources. All links verified as of crawl date. OpenAI section subject to data availability limitations.*
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

@@ -1,86 +1,86 @@
 {
   "zh": {
     "ai-cli": [
-      "OpenAI Codex 架构大重构：Rust Core v0.117 发布，迁移 V8 引擎",
-      "Claude Code v2.1.80 发布：新增限速监控与插件配置功能",
-      "GitHub Copilot CLI v1.0.10 修复远程开发连接故障",
-      "OpenAI Codex 遭遇沙箱故障，Token 消耗异常引关注",
-      "Claude Code 手机验证引发热议，社区讨论热度高达 598",
-      "Gemini CLI 修复 OOM 漏洞，10+ 重构 PR 提升稳定性"
+      "Claude Code v2.1.81发布：--bare极简模式上线",
+      "OpenAI Codex Windows沙箱危机紧急修复",
+      "Gemini CLI 1.7GB内存泄漏紧急治理",
+      "GitHub Copilot CLI v1.0.10三连发：OAuth MCP终落地",
+      "Kimi CLI 38个PR集中合并：Windows体验大修复",
+      "Qwen Code v0.13.0-preview.1：文件编辑安全紧急加固"
     ],
     "ai-agents": [
-      "OpenClaw 24小时 500 条 PR 更新，项目迭代速度惊人",
-      "Agent 无限死循环重大 Bug 已修复，队列逻辑彻底重构",
-      "WhatsApp 原生引用回复功能上线，体验媲美官方客户端",
-      "上下文引擎新增无停机压缩，长对话稳定性显著提升",
-      "Telegram 终于支持投票发送，sendMessage 接口全面修复",
-      "SoundChain 大型扩展提交，生态集成能力再下一城"
+      "OpenClaw 24小时500 Issues+500 PR超高活跃度",
+      "Anthropic-Vertex原生提供商PR合并：GCP用户告别变通方案",
+      "API密钥掩码加固：暴露字符从16位降至4位",
+      "Context Engine维护钩子：解耦高级记忆管理插件",
+      "macOS网关稳定性与WebSocket超时问题成焦点",
+      "i18n国际化支持#3460（106评论）仍是社区最高诉求"
     ],
     "ai-trending": [
-      "Claude 状态监控插件 claude-hud 爆火，今日暴涨 1074 Star",
-      "Devin 开源替代者 open-swe 登场，LangChain 出品",
-      "Claude 记忆插件 claude-mem 爆火，38k Star 解决金鱼记忆",
-      "PDF 解析神器 opendataloader-pdf，今日狂揽 1848 Star",
-      "Rust 版 LLM 框架 rig 走红，模块化架构获 6594 Star",
-      "计算机控制 Agent 基础设施 cua 开源，赋予 AI 操作系统权"
+      "claude-hud单日+1068星登顶Trending",
+      "LangChain开源异步编码智能体open-swe",
+      "OpenClaw生态13个项目覆盖全场景",
+      "RAG基础设施爆发：meilisearch/llama_index等上榜",
+      "AI智能体/工作流项目占比超60%",
+      "金融交易智能体TradingAgents上榜"
+    ],
+    "ai-web": [
+      "Anthropic Academy教育板块一次性发布两大学习路径",
+      "Claude Opus 4.6首次出现：高于公开4.5版本",
+      "Haiku 4.5或已就绪但未官宣",
+      "Message Batches API纳入标准化教学",
+      "Prompt自动生成/优化API首次公开",
+      "OpenAI官网今日零更新形成鲜明对比"
     ],
     "ai-hn": [
-      "维基百科拟禁 LLM 贡献内容，防止人类知识库被 AI 污染",
-      "OpenAI 计划推超级应用：融合聊天、编码与浏览器功能",
-      "开源编程 Agent OpenCode 登顶 HN，得分 88 痛击黑盒痛点",
-      "LiteParse 发布：专为 RAG 设计的极速开源文档解析器",
-      "五角大楼调查 Anthropic 员工，AI 安全面临政治审查",
-      "利用 LLM 预测世界事件，Thinking Machines 探索时效推理"
-    ],
-    "rl-daily": [
-      "verl 生态爆发式增长，30 个 PR 齐攻 Agentic RL 与 Tool Use",
-      "TRL 架构重构完成，Async GRPO 核心代码全面升级",
-      "OpenRLHF 合并 FSDP2 支持，修复 Ray 混合部署序列化硬伤",
-      "Open Instruct 攻克 32k 长上下文通信超时难题",
-      "Slime 紧跟前沿：适配 Qwen3.5 多轮 SFT 与 B200 FP8 训练",
-      "ROLL 拓展非英伟达生态，增加 CoreX BI-V150 芯片支持"
+      "OpenCode开源AI编程代理309分断层领跑",
+      "Rust WASM Parser改TypeScript后3倍速反直觉案例",
+      "Covenant-72B：史上最大去中心化LLM预训练",
+      "OpenAI桌面超级应用计划社区反应冷淡",
+      "H&R Block税务软件TLS后门事件引发争议",
+      "Anthropic中国员工被Pentagon标记安全风险"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.80 leads with 537 comments on phone verification",
-      "Gemini CLI flagged with P0 security vulnerability",
-      "GitHub Copilot CLI v1.0.10 adds OAuth for MCP support",
-      "OpenAI Codex faces 153 comments on token burn issues",
-      "Kimi Code CLI sees high PR activity focusing on MCP resilience",
-      "Industry shifts toward balancing security hardening and velocity"
+      "Claude Code v2.1.81 adds --bare flag for CI/CD",
+      "OpenAI Codex Rust alpha 0.117.0-alpha.6 released",
+      "Gemini CLI patches 2 critical OOM bugs",
+      "50+ issues tracked across tools in 24 hours",
+      "MCP emerging as universal plugin standard",
+      "Token burn regression draws 162 comments on Codex"
     ],
     "ai-agents": [
-      "OpenClaw sees 500 issues and 500 PRs in 24 hours",
-      "Majority of activity focuses on Discord and Slack integrations",
-      "Maintainers struggling to keep pace with bug influx",
-      "No new stable releases published; stabilization phase",
-      "High volume of closed PRs addressing regression issues",
-      "Rapid expansion of AI model provider support"
+      "OpenClaw hits 500 issues and 500 PRs in 24h",
+      "245 PRs merged indicating continuous integration",
+      "API key mask reduced from 16 to 4 characters",
+      "77% open issue ratio signals growth phase",
+      "v2026.3.13 remains current stable release",
+      "Infrastructure strain on auth and gateway stability"
     ],
     "ai-trending": [
-      "Developers shift toward managing AI agents as OS processes",
-      "claude-hud context monitor and claude-mem surge in growth",
-      "newton-physics gains 267 stars for robotics simulation",
-      "ollama dominates local LLM inference with 165,697 stars",
-      "vllm essential for production LLM serving with 73,807 stars",
-      "Ecosystem matures with focus on data preparation bottlenecks"
+      "claude-hud gains +1,068 stars for observability",
+      "superpowers framework explodes +2,819 stars today",
+      "langchain-ai/open-swe adds +635 stars",
+      "PDF-to-AI pipeline tool gains +1,812 stars",
+      "Rust and Python dominate new infrastructure",
+      "TypeScript consolidates agent interface hold"
+    ],
+    "ai-web": [
+      "Anthropic Academy launches with two major tracks",
+      "Claude 4.6 Opus revealed alongside 4.5 family",
+      "New Files API and PDF support announced",
+      "Experimental prompt generation APIs introduced",
+      "Six official SDKs including Java, Go, Ruby",
+      "OpenAI publishes zero new articles today"
     ],
     "ai-hn": [
-      "Community debates intensifying Agent Wars competition",
-      "OpenCode challenges OpenAI's rumored desktop superapp",
-      "Developers explore Claude and Obsidian knowledge integration",
-      "H&R Block TLS backdoor raises AI security concerns",
-      "Pentagon scrutinizes Anthropic's workforce security",
-      "Startups face skepticism over thin wrapper critiques"
-    ],
-    "rl-daily": [
-      "LLM-focused RLHF frameworks dominate ecosystem activity",
-      "verl gains momentum with Qwen3.5 and DeepSeek support",
-      "TRL v0.29.1 released with major AsyncGRPO refactoring",
-      "Innovation converges on async distributed training",
-      "Multimodal tool-calling agents become primary focus",
-      "General-purpose RL libraries remain in maintenance mode"
+      "OpenCode launch dominates front page with 309 points",
+      "OpenAI rumored desktop superapp sparks discussion",
+      "Covenant-72B is largest decentralized LLM pre-training run",
+      "Pentagon concerns over Anthropic's Chinese workforce",
+      "H&R Block TLS backdoor controversy emerges",
+      "149 comments on OpenCode signal strong community interest"
     ]
   }
 }

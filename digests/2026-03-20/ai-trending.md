@@ -1,90 +1,135 @@
 # AI 开源趋势日报 2026-03-20
 
-> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-19 22:02 UTC
+> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-20 00:09 UTC
 
 ---
 
-你好！我是专注于 AI 开源生态的技术分析师。基于 **2026-03-20** 的 GitHub 数据，我为你整理了今天的《AI 开源趋势日报》。
+# AI 开源趋势日报 | 2026-03-20
 
 ---
 
-# 📰 AI 开源趋势日报 (2026-03-20)
+## 第一步：AI 相关性筛选
 
-## 1. 今日速览
-今日 AI 开源社区最显著的趋势是 **“AI 原生开发工作流”的崛起**。随着 Claude Code 等智能编程助手的普及，开发者的关注点正从单纯的模型调用转向构建更高效的 **Agent 控制系统**，如实时监控 Agent 状态的 HUD（平视显示器）和轻量级编排框架。在基础设施层面，**数据预处理** 再次成为瓶颈，能够将非结构化 PDF 转化为 AI 可用数据的解析器引发了爆发式关注。同时，**本地化模型训练与推理** 工具持续迭代，展现出极强的生命力。
+**Trending 榜单筛选结果（11→9）**：
+| 项目 | 判定 | 说明 |
+|:---|:---|:---|
+| opendataloader-pdf | ✅ 保留 | AI 数据预处理工具，PDF 解析 for LLM |
+| open-swe | ✅ 保留 | LangChain 官方 AI 编码 Agent |
+| superpowers | ✅ 保留 | Agentic 技能框架 |
+| claude-hud | ✅ 保留 | Claude Code 插件，AI 开发工具 |
+| unsloth | ✅ 保留 | 本地模型训练/推理 UI |
+| Maestro | ❌ 排除 | 通用移动端 E2E 测试工具，非 AI 专属 |
+| newton | ✅ 保留 | GPU 物理引擎，面向机器人/仿真研究 |
+| arnis | ❌ 排除 | Minecraft 地图生成器，地理数据可视化 |
+| MoneyPrinterV2 | ❌ 排除 | 通用自动化赚钱工具，非 AI 技术 |
+| get-shit-done | ✅ 保留 | Claude Code 元提示工程系统 |
+| learn-claude-code | ✅ 保留 | 从零构建 Agent harness 教学项目 |
 
----
-
-## 2. 各维度热门项目
-
-### 🔧 AI 基础工具 (基础设施、数据、SDK)
-
-- **[opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** [Java] ⭐0 (**+1394** today)
-  - **说明**：专为 AI 准备数据的 PDF 解析器。今日 Star 数激增，反映了社区对高质量非结构化数据转结构化数据的强烈需求，解决了 RAG 和训练数据清洗的痛点。
-
-- **[newton-physics/newton](https://github.com/newton-physics/newton)** [Python] ⭐0 (**+345** today)
-  - **说明**：基于 NVIDIA Warp 构建的开源、GPU 加速物理仿真引擎。主要面向机器人学家，为具身智能提供了关键的高性能物理模拟环境。
-
-- **[ollama/ollama](https://github.com/ollama/ollama)** [Go] ⭐165,601 [topic:llm]
-  - **说明**：本地大模型运行的事实标准工具。持续保持高热度，支持最新开源模型（如 Kimi, DeepSeek, Qwen）的一键部署。
-
-- **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐73,711 [topic:llm]
-  - **说明**：高吞吐量、内存高效的 LLM 推理和服务引擎。生产环境部署大模型的首选基础设施之一。
-
-### 🤖 AI 智能体/工作流
-
-- **[jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)** [JavaScript] ⭐0 (**+1851** today)
-  - **说明**：Claude Code 的插件，提供上下文使用量、活动工具和 Agent 进度的可视化。今日爆火，标志着开发者对“Agent 可观测性”的迫切需求。
-
-- **[langchain-ai/open-swe](https://github.com/langchain-ai/open-swe)** [Python] ⭐0 (**+955** today)
-  - **说明**：LangChain 推出的开源异步编程 Agent。试图构建一个完全自动化的软件工程（SWE）解决方案，值得关注其异步任务处理架构。
-
-- **[gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done)** [JavaScript] ⭐0 (**+1414** today)
-  - **说明**：针对 Claude Code 的元提示和上下文工程系统。展示了如何通过精妙的 Prompt 设计和规范驱动开发来提升 Agent 的执行效率。
-
-- **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** [TypeScript] ⭐33,534 (**+1458** today) [topic:ai-agent]
-  - **说明**：从零构建的类 Claude Code “Agent Harness”。不仅是教程，更是一个轻量级的 Agent 运行时框架，适合想深入理解 Agent 内部机制的开发者。
-
-- **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** [TypeScript] ⭐41,831 [topic:ai-agent]
-  - **说明**：集成了智能聊天和自主 Agent 的 AI 生产力工作室，支持多种主流 LLM，是客户端侧 Agent 应用的代表。
-
-### 🧠 大模型/训练
-
-- **[unslothai/unsloth](https://github.com/unslothai/unsloth)** [Python] ⭐56,641 (**+1259** today) [topic:llm]
-  - **说明**：统一的大模型微调和本地运行 Web UI。今日 Trending 榜单常客，以其极高的微调效率和易用性著称，支持 Qwen, DeepSeek, Gemma 等最新模型。
-
-- **[huggingface/transformers](https://github.com/huggingface/transformers)** [Python] ⭐158,108 [topic:ml]
-  - **说明**：Transformer 模型的核心库，定义了当今 AI 模型的开发标准，涵盖了文本、视觉、音频和多模态。
-
-### 🔍 RAG/知识库
-
-- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** [Python] ⭐22,306 [topic:vector-db]
-  - **说明**：一种基于推理而非向量的 RAG 索引方案。这代表了一种新趋势：利用 LLM 强大的推理能力替代传统的向量相似度搜索，可能改变 RAG 的技术架构。
-
-- **[memvid/memvid](https://github.com/memvid/memvid)** [Rust] ⭐13,504 [topic:vector-db]
-  - **说明**：面向 AI Agent 的单文件内存层。试图用极简的架构替代复杂的 RAG 管道，提供即时的检索和长期记忆。
-
-- **[run-llama/llama_index](https://github.com/run-llama/llama_index)** [Python] ⭐47,803 [topic:vector-db]
-  - **说明**：领先的文档 Agent 和 OCR 平台，是构建企业级 RAG 应用的核心框架。
+**主题搜索结果**：80 个已标注 topic，全部保留。
 
 ---
 
-## 3. 趋势信号分析
-
-**1. 从“使用 Agent”到“管理 Agent”的范式转移**
-今日 Trending 榜单被 `claude-hud`、`get-shit-done` 和 `learn-claude-code` 等项目霸榜。这表明开发者已经不再满足于简单地调用 API，而是开始深入探索 **Agent 的内部状态监控、上下文工程和任务编排**。`claude-hud` 的爆火证明，当 Agent 变得越来越自主时，人类需要一种“上帝视角”来监督其行为和资源消耗。
-
-**2. 数据层的“返璞归真”**
-`opendataloader-pdf` 的突然走红（+1394 stars）是一个强烈信号。尽管 RAG 技术已发展多年，但**高质量的数据解析**（特别是复杂的 PDF）依然是限制 AI 落地的最大拦路虎。社区开始意识到，与其纠结于复杂的检索算法，不如先解决“垃圾进，垃圾出”的源头问题。
-
-**3. 物理仿真的开源突破**
-`newton` 的出现填补了开源领域高性能 GPU 物理仿真引擎的空白，这对于 **Embodied AI（具身智能）** 和机器人训练至关重要。这标志着 AI 的影响力正从纯数字世界向物理世界建模延伸。
+## 第二步：多维度分类
 
 ---
 
-## 4. 社区关注热点
+## 第三步：完整报告
 
-- **关注 `claude-hud`**：如果你正在开发基于 Agent 的应用，这种“Agent 可视化/监控”的思路将是下一阶段提升用户体验和信任度的关键。
-- **关注 `VectifyAI/PageIndex`**：传统的向量 RAG 在处理精确逻辑时存在局限，基于推理的索引技术可能是解决 RAG 准确性问题的 Next Big Thing。
-- **关注 `unslothai/unsloth`**：对于个人开发者和中小企业，Unsloth 提供了在有限硬件上微调和部署最新 SOTA 模型的最可行路径。
-- **关注 `gsd-build/get-shit-done`**：该项目展示了通过精巧的 Prompt 结构（Meta-prompting）如何显著提升 Coding Agent 的成功率，值得所有 Prompt Engineer 深入研究。
+### 1. 今日速览
+
+今日 AI 开源生态呈现**"Agent 基础设施大爆发"**态势：Claude Code 插件生态（HUD、记忆系统、元提示工程）集体登榜，反映开发者对 AI 编码助手可观测性和可控性的迫切需求；LangChain 推出官方异步编码 Agent `open-swe`，标志着 Agent 从演示走向生产级工程化；同时，轻量级 Agent 实现教学项目 `learn-claude-code` 获得 1448 日增星，显示社区对"从零理解 Agent 原理"的强烈兴趣。基础设施层面，PDF 解析、物理仿真引擎等 AI 数据与训练支撑工具同步升温。
+
+---
+
+### 2. 各维度热门项目
+
+#### 🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)** | 新建 | **+1851** | Claude Code 实时状态面板插件，解决 AI 编码"黑盒"痛点，可视化上下文消耗、工具调用与任务进度 |
+| **[gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done)** | 新建 | **+1491** | TÂCHES 出品的元提示工程系统，将 spec-driven development 方法论注入 Claude Code，提升 AI 协作确定性 |
+| **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** | 33,585 | **+1448** | "Bash is all you need"——从零构建类 Claude Code 的 Agent harness，教学价值极高的极简实现 |
+| **[opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** | 新建 | **+1416** | 面向 AI 工作流的 PDF 解析器，自动化 PDF 可访问性转换，RAG 数据预处理关键基础设施 |
+| **[unslothai/unsloth](https://github.com/unslothai/unsloth)** | 56,684 | **+1262** | 本地模型训练/推理统一 Web UI，支持 Qwen、DeepSeek、gpt-oss、Gemma 等主流开源模型 |
+| **[newton-physics/newton](https://github.com/newton-physics/newton)** | 新建 | **+346** | 基于 NVIDIA Warp 的 GPU 加速物理引擎，面向机器人学与仿真研究，AI 训练环境构建工具 |
+
+#### 🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[langchain-ai/open-swe](https://github.com/langchain-ai/open-swe)** | 新建 | **+965** | LangChain 官方开源异步编码 Agent，生产级工程化设计，标志 Agent 从原型到企业应用的跃迁 |
+| **[obra/superpowers](https://github.com/obra/superpowers)** | 新建 | **+3494** | Agentic 技能框架与软件工程方法论，提供可复用的 Agent 能力组织范式，今日增速冠军 |
+| **[zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat)** | 42,313 | - | CowAgent 超级 AI 助理，支持多平台接入（飞书/钉钉/企微/QQ/公众号）与主动任务规划 |
+| **[CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit)** | 29,578 | - | 前端 Agent 与生成式 UI 技术栈，React/Angular 支持，AG-UI 协议制定者 |
+| **[activepieces/activepieces](https://github.com/activepieces/activepieces)** | 21,289 | - | AI 工作流自动化平台，集成 ~400 个 MCP server，Agent + 自动化双引擎 |
+| **[trycua/cua](https://github.com/trycua/cua)** | 13,191 | - | 计算机使用 Agent（Computer-Use Agent）开源基础设施，提供沙盒、SDK 与评测基准 |
+| **[alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox)** | 8,772 | - | 通用 AI 应用沙盒平台，多语言 SDK，支持 Coding Agent/GUI Agent/RL 训练等场景 |
+
+#### 📦 AI 应用（具体应用产品、垂直场景解决方案）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)** | 41,835 | - | AI 生产力工作室，智能聊天 + 自主 Agent + 300+ 助手，统一接入前沿 LLM |
+| **[iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi)** | 19,192 | - | 24/7 本地开源协作应用，集成 Gemini CLI、Claude Code、Codex、OpenCode 等主流 AI 编码工具 |
+| **[saturndec/waoowaoo](https://github.com/saturndec/waoowaoo)** | 9,797 | - | 工业级全流程 AI 影视生产平台，从短剧到真人电影的好莱坞标准工作流 |
+| **[Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)** | 10,018 | - | 赋予 AI Agent 互联网视觉能力，零 API 费读取 Twitter/Reddit/YouTube/B 站/小红书 |
+| **[browser-use/browser-use](https://github.com/browser-use/browser-use)** | 81,325 | - | 让网站对 AI Agent 可访问，浏览器自动化任务执行的事实标准工具 |
+
+#### 🧠 大模型/训练（模型权重、训练框架、微调工具）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** | 68,744 | - | 100+ LLM/VLM 统一高效微调框架（ACL 2024），开源模型定制的事实标准 |
+| **[vllm-project/vllm](https://github.com/vllm-project/vllm)** | 73,722 | - | 高吞吐、内存高效的 LLM 推理与服务引擎，生产部署核心基础设施 |
+| **[ollama/ollama](https://github.com/ollama/ollama)** | 165,611 | - | 本地运行 Kimi-K2.5、GLM-5、DeepSeek、gpt-oss 等模型的最简方案 |
+| **[0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)** | 6,584 | - | Rust 语言 LLM 应用开发框架，模块化、可扩展的模型应用架构 |
+| **[galilai-group/stable-pretraining](https://github.com/galilai-group/stable-pretraining)** | 135 | - | 稳定、极简、可扩展的基础模型与世界模型预训练库 |
+
+#### 🔍 RAG/知识库（向量数据库、检索增强、知识管理）
+
+| 项目 | Stars | 今日新增 | 一句话说明 |
+|:---|:---|:---|:---|
+| **[langgenius/dify](https://github.com/langgenius/dify)** | 133,589 | - | 生产级 Agentic 工作流开发平台，RAG + Agent 融合的代表性产品 |
+| **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** | 75,526 | - | 深度融合 RAG 与 Agent 能力的开源引擎，构建 LLM 优质上下文层 |
+| **[run-llama/llama_index](https://github.com/run-llama/llama_index)** | 47,804 | - | 领先的文档 Agent 与 OCR 平台，数据连接与检索的事实标准 |
+| **[mem0ai/mem0](https://github.com/mem0ai/mem0)** | 50,435 | - | AI Agent 通用记忆层，跨会话长期记忆与上下文管理 |
+| **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | 14,360 | - | 6 行代码构建 AI Agent 记忆的知识引擎，极简集成方案 |
+| **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** | 22,309 | - | 无向量、基于推理的 RAG 文档索引，突破传统嵌入检索范式 |
+
+---
+
+### 3. 趋势信号分析
+
+**爆发性关注类别：Claude Code 生态插件与 Agent 可观测性工具**
+
+今日热榜清晰显示，围绕 **Claude Code** 的扩展生态正经历爆发式增长：`claude-hud`（可视化面板）、`get-shit-done`（元提示工程）、`learn-claude-code`（教学实现）三个项目同日登榜，合计日增星超 4700。这反映两个深层趋势：其一，AI 编码助手从"能用"走向"可控"，开发者迫切需要理解 AI 的内部状态（上下文消耗、工具调用链、任务进度）；其二，"Claude Code 模式"正成为 AI Agent 交互的事实标准，社区快速跟进配套工具链。
+
+**新兴技术栈：Spec-Driven Development 与 Agent 技能框架**
+
+`superpowers` 提出的 Agentic 技能框架与 `get-shit-done` 的 spec-driven 方法论，标志着 Agent 开发从"提示工程"向"工程化方法论"演进。同时，`open-swe` 的异步架构设计，预示 Agent 正在突破同步调用的限制，向真正的生产级并发处理迈进。
+
+**与行业事件关联**
+
+Anthropic 近期对 Claude Code 的持续迭代（包括 Agent SDK 发布）直接催化了插件生态繁荣；而 `unsloth` 对 gpt-oss 的支持上线，呼应了 OpenAI 近期开源模型的社区热度。物理引擎 `newton` 的入榜，则与机器人学习、世界模型训练的前沿研究需求紧密相关。
+
+---
+
+### 4. 社区关注热点
+
+- **🔥 [obra/superpowers](https://github.com/obra/superpowers)** — 今日增速冠军（+3494），Agentic 技能框架的方法论创新，可能定义下一代 Agent 工程组织范式
+
+- **🔥 [langchain-ai/open-swe](https://github.com/langchain-ai/open-swe)** — LangChain 官方入局异步编码 Agent，标志"Agent 工程化"竞争进入白热化阶段
+
+- **🔥 [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** — 极简主义教学项目的高热度，反映社区对"理解原理而非调用 API"的深层需求
+
+- **📌 [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)** — PDF 解析作为 RAG Pipeline 的瓶颈环节，专业化工具的出现预示数据预处理层的价值重估
+
+- **📌 [newton-physics/newton](https://github.com/newton-physics/newton)** — 物理仿真引擎与 AI 训练的交叉领域升温，机器人学习与世界模型研究的基础设施缺口正在填补
+
+---
+
+*报告生成时间：2026-03-20 | 数据来源：GitHub Trending & Search API*
+
+---
+*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*

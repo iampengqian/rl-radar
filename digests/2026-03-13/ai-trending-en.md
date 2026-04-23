@@ -1,98 +1,114 @@
 # AI Open Source Trends 2026-03-13
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-12 22:03 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-13 00:08 UTC
 
 ---
 
-# AI Open Source Ecosystem Trends Report (2026-03-13)
-
-Based on the provided GitHub data, I have filtered out non-AI projects (e.g., generic frontend frameworks, unrelated system tools) and categorized the remaining high-impact repositories.
+# AI Open Source Trends Report — March 13, 2026
 
 ## 1. Today's Highlights
-**The Rise of the "AI Agency" and 1-Bit Architectures**
-Today's trending data reveals a significant pivot from generic AI models to specialized, structural, and role-based AI systems. **Microsoft's BitNet** is leading a new wave of interest in "1-bit LLMs," suggesting a future where models run efficiently on commodity hardware without GPUs. Simultaneously, the concept of the **"AI Agency"** is exploding, as seen with `msitarzewski/agency-agents` and `NousResearch/hermes-agent`. Developers are no longer just building "tools"; they are building autonomous entities with specific roles (e.g., "Reddit Ninjas," "Reality Checkers") and persistent memory. Furthermore, **Alibaba's Page-Agent** signals a breakthrough in making complex web interactions controllable via natural language, bridging the gap between browser automation and intelligent agents.
+
+The AI agent ecosystem is experiencing explosive growth with **agent frameworks and memory systems** dominating today's trending list. Notably, [obra/superpowers](https://github.com/obra/superpowers) (+1,706 stars) and [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) (+4,168 stars) signal strong demand for structured agent development methodologies. Microsoft's [BitNet](https://github.com/microsoft/BitNet) (+2,149 stars) brings 1-bit LLM inference to production, while Alibaba's [page-agent](https://github.com/alibaba/page-agent) (+1,205 stars) advances in-browser GUI automation. The emergence of specialized "agent agencies" and memory-learning systems like [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) suggests the field is maturing beyond simple chatbots toward persistent, collaborative AI workforces.
 
 ---
 
 ## 2. Top Projects by Category
 
 ### 🔧 AI Infrastructure
-*Focus: Inference engines, low-level SDKs, and optimized runtimes.*
 
-*   **[microsoft/BitNet](https://github.com/microsoft/BitNet)** [Python] ⭐2,149 (today)
-    *   **Why:** Official inference framework for 1-bit LLMs; it promises massive reductions in memory and energy usage, trending today as the community seeks alternatives to GPU-heavy inference.
-*   **[google-ai-edge/LiteRT](https://github.com/google-ai-edge/LiteRT)** [C++] ⭐6 (today)
-    *   **Why:** The successor to TensorFlow Lite, focusing on high-performance GenAI deployment on edge devices (mobile/IoT).
-*   **[huggingface/transformers](https://github.com/huggingface/transformers)** [Python] ⭐157,792
-    *   **Why:** The backbone of the AI ecosystem, continuously updated for state-of-the-art model architectures.
-*   **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐72,948
-    *   **Why:** The industry standard for high-throughput, memory-efficient LLM serving.
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [microsoft/BitNet](https://github.com/microsoft/BitNet) | 0 (+2,149 today) | Official inference framework for 1-bit LLMs — enables extreme quantization for edge deployment |
+| [ollama/ollama](https://github.com/ollama/ollama) | 164,945 | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax, DeepSeek — the de facto standard for private inference |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 72,952 | High-throughput inference engine with PagedAttention — essential for production serving |
+| [google-ai-edge/LiteRT](https://github.com/google-ai-edge/LiteRT) | 0 (+13 today) | TensorFlow Lite successor — Google's bet on on-device GenAI deployment |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 157,794 | The foundational model-definition framework — still the center of gravity for ML research |
 
 ### 🤖 AI Agents / Workflows
-*Focus: Autonomous systems, multi-agent collaboration, and automation.*
 
-*   **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** [Shell] ⭐4,086 (today)
-    *   **Why:** A viral concept defining a "complete AI agency" with specialized personas (wizards, ninjas), reflecting the shift toward role-based agentic teams.
-*   **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** [Python] ⭐1,235 (today)
-    *   **Why:** From the creators of the Hermes model series, this project focuses on agents that "grow with you," emphasizing persistent learning and adaptation.
-*   **[alibaba/page-agent](https://github.com/alibaba/page-agent)** [TypeScript] ⭐1,196 (today)
-    *   **Why:** A JavaScript in-page GUI agent that controls web interfaces using natural language, removing the need for traditional DOM scraping or DOM scripts.
-*   **[InsForge/InsForge](https://github.com/InsForge/InsForge)** [TypeScript] ⭐260 (today)
-    *   **Why:** A backend specifically designed for "agentic development," allowing AI agents to ship full-stack apps autonomously.
-*   **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)** [Python] ⭐300 (today)
-    *   **Why:** Tackles the critical issue of "Agent Memory," creating a system where agents learn from past actions.
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | 0 (+4,168 today) | Complete AI agency with specialized agents — "frontend wizards to Reddit community ninjas" |
+| [obra/superpowers](https://github.com/obra/superpowers) | 0 (+1,706 today) | Agentic skills framework & software development methodology — brings structure to chaotic agent dev |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 0 (+1,264 today) | Self-improving agent that "grows with you" — adaptive learning architecture |
+| [alibaba/page-agent](https://github.com/alibaba/page-agent) | 0 (+1,205 today) | JavaScript in-page GUI agent — natural language web control without browser automation |
+| [InsForge/InsForge](https://github.com/InsForge/InsForge) | 0 (+263 today) | Backend built for agentic development — "give agents everything they need to ship fullstack apps" |
+| [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | 0 (+217 today) | Agent memory that learns — addresses the critical persistence gap in agent systems |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 68,997 | AI-driven development platform — code generation and software engineering automation |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 80,528 | Makes websites accessible for AI agents — web automation infrastructure |
 
 ### 📦 AI Applications
-*Focus: End-user products and vertical solutions.*
 
-*   **[666ghj/MiroFish](https://github.com/666ghj/MiroFish)** [Python] ⭐1,809 (today)
-    *   **Why:** A "Swarm Intelligence Engine" for predicting anything, highlighting a trend toward decentralized predictive systems rather than single-model inference.
-*   **[fishaudio/fish-speech](https://github.com/fishaudio/fish-speech)** [Python] ⭐630 (today)
-    *   **Why:** A SOTA open-source Text-to-Speech (TTS) solution, critical for voice-enabled AI applications.
-*   **[open-webui/open-webui](https://github.com/open-webui/open-webui)** [Python] ⭐126,922
-    *   **Why:** A user-friendly, self-hosted web interface for Ollama/OpenAI, serving as the "default UI" for local AI enthusiasts.
-
-### 🧠 LLMs / Training
-*Focus: Core models, fine-tuning, and compression.*
-
-*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐68,305
-    *   **Why:** The leading unified framework for efficient fine-tuning of 100+ LLMs and VLMs.
-*   **[The-Pocket/PocketFlow](https://github.com/The-Pocket/PocketFlow)** [Python] ⭐10,184
-    *   **Why:** A minimalist, 100-line LLM framework that enables "Agents building Agents," lowering the barrier to meta-programming with AI.
-*   **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** [Jupyter Notebook] ⭐87,825
-    *   **Why:** The definitive educational resource for understanding the underlying mathematics and code of LLMs.
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 0 (+637 today) | SOTA open-source TTS — voice synthesis quality competitive with commercial offerings |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 41,331 | AI productivity studio with 300+ assistants — unified LLM access for power users |
+| [langgenius/dify](https://github.com/langgenius/dify) | 132,536 | Production-ready agentic workflow platform — visual builder for enterprise AI |
+| [open-webui/open-webui](https://github.com/open-webui/open-webui) | 126,931 | User-friendly AI interface — the "ChatGPT alternative" for local/remote model switching |
+| [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | 29,315 | Frontend stack for agents & generative UI — AG-UI protocol for embedded AI experiences |
 
 ### 🔍 RAG / Knowledge
-*Focus: Context injection, vector search, and data processing.*
 
-*   **[langflow-ai/openrag](https://github.com/langflow-ai/openrag)** [Python] ⭐491 (today)
-    *   **Why:** A comprehensive RAG platform built on Langflow and Opensearch, emphasizing "one package" simplicity.
-*   **[PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)** [Python] ⭐72,127
-    *   **Why:** Essential for RAG, this toolkit bridges the gap between image-based PDFs and LLM-readable text.
-*   **[mem0ai/mem0](https://github.com/mem0ai/mem0)** [Python] ⭐49,584
-    *   **Why:** The universal memory layer for AI agents, crucial for maintaining context over long sessions.
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [langflow-ai/openrag](https://github.com/langflow-ai/openrag) | 0 (+322 today) | Comprehensive RAG platform — Langflow + Docling + Opensearch in one package |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 74,876 | Leading RAG engine fusing retrieval with agent capabilities — superior context layer |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 47,627 | Document agent and OCR platform — the original RAG framework, now agent-native |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 49,587 | Universal memory layer for AI agents — cross-session persistence infrastructure |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,318 | Cloud-native vector database — scalable ANN search for enterprise RAG |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | 29,520 | High-performance vector search — Rust-based with hybrid search capabilities |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | 26,600 | Developer-friendly retrieval database — embedded-first design for rapid prototyping |
+
+### 🧠 LLMs / Training
+
+| Project | Stars | Description |
+|--------|-------|-------------|
+| [666ghj/MiroFish](https://github.com/666ghj/MiroFish) | 0 (+1,857 today) | Universal swarm intelligence engine for prediction — novel collective intelligence approach |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 68,307 | Unified fine-tuning for 100+ LLMs/VLMs — the standard for efficient model adaptation |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 87,842 | Educational ChatGPT implementation — foundational understanding for practitioners |
+| [The-Pocket/PocketFlow](https://github.com/The-Pocket/PocketFlow) | 10,184 | 100-line LLM framework — extreme minimalism enabling "agents building agents" |
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**1. The "Agency" Paradigm Shift**
-The most explosive trend today is the personification and specialization of agents. The massive spike in `msitarzewski/agency-agents` (+4,086 stars) indicates that developers are moving beyond "chatbots" to "digital workforces." The terminology used—"Reality Checkers," "Whimsy Injectors"—suggests a maturity in prompt engineering where soft skills and specific personas are being codified into software.
+**Explosive Attention: Agent Infrastructure and "Agent Agencies"**
 
-**2. The "BitNet" Moment (CPU-First AI)**
-The appearance of `microsoft/BitNet` at the top of the trending list signals a potential hardware paradigm shift. As LLM development hits a wall regarding GPU power consumption, the industry is looking toward "1-bit" architectures (binary/ternary weights). This trend suggests a future where high-performance AI runs natively on CPUs (Apple Silicon, x86), democratizing access by removing the GPU bottleneck.
+Today's data reveals a decisive shift from general-purpose LLM tools to **specialized agent infrastructure**. The +4,168 star spike for [agency-agents](https://github.com/msitarzewski/agency-agents) and +1,706 for [superpowers](https://github.com/obra/superpowers) indicate developers are no longer satisfied with single-agent demos—they want structured methodologies for building collaborative AI workforces. This mirrors industry frustration with agent reliability; the community is voting with stars for **process, personality, and persistence**.
 
-**3. In-Browser Agent Supremacy**
-`alibaba/page-agent` represents the cutting edge of "Computer Use." Unlike previous iterations that used accessibility APIs or screenshots, this JavaScript-based agent lives *inside* the page DOM. This allows for faster, more reliable control of web interfaces via natural language, effectively turning the web browser into an operating system controlled by LLMs.
+**Memory Emerges as Critical Layer**
 
-**4. Integration of Memory and Hindsight**
-Projects like `vectorize-io/hindsight` and `NousResearch/hermes-agent` emphasize *long-term context*. The industry has solved "inference"; now it is solving "continuity." The ability for an agent to learn from "hindsight" (past errors/successes) is the key differentiator between a script and an intelligent assistant.
+[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) (+217 today) and [mem0ai/mem0](https://github.com/mem0ai/mem0) (49,587 stars) highlight a new architectural focus: **stateful agents**. The "agent memory that learns" positioning directly addresses the context window limitations and session isolation that plague current systems. Expect vector databases to increasingly market themselves as "memory infrastructure" rather than just search.
+
+**1-Bit Quantization Goes Mainstream**
+
+Microsoft's [BitNet](https://github.com/microsoft/BitNet) (+2,149 today) validates extreme quantization as production-ready. With Google's [LiteRT](https://github.com/google-ai-edge/LiteRT) also trending, the **edge AI deployment stack** is consolidating—developers want models that run anywhere, not just in data centers.
+
+**New Stack Direction: In-Page Agents**
+
+Alibaba's [page-agent](https://github.com/alibaba/page-agent) represents a novel architectural pattern: **JavaScript-native agents** that operate within the DOM rather than through browser automation APIs. This avoids the fragility of Selenium/Playwright and enables tighter integration with web applications—potentially disruptive to the browser-use category.
+
+**Connection to Industry Events**
+
+The timing aligns with recent Claude Code momentum ([anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) trending) and Google's Gemma 3 release. The community is building the scaffolding for **agent-native development environments** before the models fully mature—positioning for a Cambrian explosion once reasoning capabilities improve.
 
 ---
 
 ## 4. Community Hot Spots
 
-*   **[microsoft/BitNet](https://github.com/microsoft/BitNet)**: Watch this repo closely. If 1-bit inference delivers on its promise, it will disrupt the current GPU-centric hardware market and enable local AI on older devices.
-*   **[alibaba/page-agent](https://github.com/alibaba/page-agent)**: A must-try for developers building web scrapers or automation bots. It bypasses the need for complex Selenium/Playwright selectors by using natural language commands.
-*   **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)**: A fascinating "methodology" repository. Even if you don't use the code, the prompt structures for creating specialized agent teams are highly valuable for architectural inspiration.
-*   **[666ghj/MiroFish](https://github.com/666ghj/MiroFish)**: An interesting wildcard. "Swarm Intelligence" applied to prediction is a niche but growing field that contrasts with the current mono-culture of Transformer-based single-model predictions.
+- **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** — The "complete AI agency" concept with personality-driven specialized agents represents a new product category. Worth watching for team workflow integration patterns.
+
+- **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)** — "Agent memory that learns" addresses the hottest unsolved problem in production agents. Early signal of memory-first architecture becoming standard.
+
+- **[alibaba/page-agent](https://github.com/alibaba/page-agent)** — In-page JavaScript agents could obsolete browser automation frameworks. Critical for anyone building web-native AI products.
+
+- **[microsoft/BitNet](https://github.com/microsoft/BitNet)** — 1-bit inference is now officially supported. Essential for mobile/edge deployment strategies and cost reduction at scale.
+
+- **[langflow-ai/openrag](https://github.com/langflow-ai/openrag)** — The "single package RAG platform" trend (bundling Docling, Opensearch, Langflow) indicates RAG is commoditizing toward turnkey solutions rather than DIY pipelines.
+
+---
+
+*Report generated from GitHub trending data — March 13, 2026*
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

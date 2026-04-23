@@ -1,102 +1,112 @@
 # AI Open Source Trends 2026-03-29
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-28 22:03 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-03-29 00:10 UTC
 
 ---
 
-# AI Open Source Ecosystem Trend Report (2026-03-29)
+# AI Open Source Trends Report — March 29, 2026
+
+---
 
 ## 1. Today's Highlights
-The AI ecosystem today is dominated by the rise of **"Agentic Utility"**—tools that give AI models concrete abilities to interact with the world, whether through deep research, computer control, or scientific discovery. Leading the charge is **Deep-Live-Cam**, which garnered massive attention for its real-time face-swap capabilities, signaling that consumer-grade deepfake tools remain a high-interest, high-controversy sector. On the research front, **SakanaAI/AI-Scientist-v2** represents a leap toward autonomous scientific discovery, while **virattt/dexter** and **CopilotKit** highlight the rapid maturation of agents capable of performing complex financial research and integrating into frontend UIs. Overall, the focus has shifted from raw model capabilities to **actionable agency** and **infrastructure for autonomy**.
+
+Today's GitHub trending reveals explosive interest in **real-time AI media manipulation** and **agentic development frameworks**. [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) leads with 1,814 new stars for its single-image face swap capabilities, signaling continued demand for accessible deepfake tools. Meanwhile, [obra/superpowers](https://github.com/obra/superpowers) (2,292 stars today) and [SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) demonstrate the community's pivot toward **agentic AI systems**—structured methodologies for autonomous software development and scientific discovery. The emergence of [dexter](https://github.com/virattt/dexter) for financial research and [chandra](https://github.com/datalab-to/chandra) for document OCR shows vertical AI applications maturing rapidly.
 
 ---
 
 ## 2. Top Projects by Category
 
-### 🤖 AI Agents / Workflows
-*Focus: Frameworks for autonomy, multi-agent systems, and browser/task automation.*
-
-- **[hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)** [Python] ⭐+1,789 (Today)
-  - Real-time face swap and video deepfake tool; trending due to its accessible "one-click" implementation of complex visual manipulation.
-- **[SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)** [Python] ⭐+507 (Today)
-  - An agentic system for automated scientific discovery; notable for using "Agentic Tree Search" to handle workshop-level research autonomously.
-- **[virattt/dexter](https://github.com/virattt/dexter)** [TypeScript] ⭐+583 (Today)
-  - An autonomous agent specifically designed for deep financial research, filling the niche for vertical-specific AI analysts.
-- **[agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)** [Python] ⭐+379 (Today)
-  - A robust framework for building multi-agent applications with a focus on visibility, trust, and reliability.
-- **[CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit)** [TypeScript] ⭐29.8k (Total)
-  - The leading frontend infrastructure for building agentic interfaces and generative UIs directly into React/Angular apps.
-- **[browser-use/browser-use](https://github.com/browser-use/browser-use)** [Python] ⭐84.8k (Total)
-  - A foundational library making websites accessible to AI agents via natural language, essential for web automation.
-- **[trycua/cua](https://github.com/trycua/cua)** [Python] ⭐13.3k (Total)
-  - Open-source infrastructure for "Computer-Use Agents," providing sandboxes and benchmarks for desktop-controlling AI.
-
 ### 🔧 AI Infrastructure
-*Focus: Dev tools, CLI, sandboxes, and model serving.*
 
-- **[ollama/ollama](https://github.com/ollama/ollama)** [Go] ⭐166.3k (Total)
-  - The standard for local LLM inference; continues to dominate as the easiest way to run the latest models (DeepSeek, Gemma, etc.).
-- **[vllm-project/vllm](https://github.com/vllm-project/vllm)** [Python] ⭐74.5k (Total)
-  - High-throughput inference engine; critical infrastructure for production-grade LLM serving.
-- **[e2b-dev/E2B](https://github.com/e2b-dev/E2B)** [Python] ⭐11.4k (Total)
-  - Secure sandbox environments for AI agents; vital for safe code execution and testing agent capabilities.
-- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)** [TypeScript] ⭐99.9k (Total)
-  - The Web Data API for AI; turns websites into LLM-ready markdown, serving as the "eyes" for many RAG and agent systems.
-- **[datalab-to/chandra](https://github.com/datalab-to/chandra)** [Python] ⭐+679 (Today)
-  - A specialized OCR model handling complex layouts (tables, forms); critical infrastructure for document-centric AI.
+| Project | Stars | Why It Matters |
+|--------|-------|----------------|
+| [obra/superpowers](https://github.com/obra/superpowers) | 0 (+2,292 today) | Agentic skills framework & software development methodology—positioning as a structured alternative to ad-hoc AI coding assistants |
+| [onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx) | 0 (+880 today) | Open-source AI platform with advanced chat features, universal LLM compatibility—enterprise-grade alternative to closed chat UIs |
+| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | 0 (+398 today) | Observable agent framework emphasizing transparency and trust in multi-agent systems |
+| [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | 29,828 | Frontend stack for agents & generative UI; creators of AG-UI protocol standardizing agent-interface communication |
+| [langgenius/dify](https://github.com/langgenius/dify) | 134,834 | Production-ready agentic workflow platform—visual builder for complex AI pipelines |
+| [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | 51,187 | Visual agent builder with strong ecosystem; democratizing workflow automation |
+| [ollama/ollama](https://github.com/ollama/ollama) | 166,353 | Local LLM runtime now supporting Kimi-K2.5, GLM-5, MiniMax, DeepSeek—critical infrastructure for private AI |
 
-### 🔍 RAG / Knowledge
-*Focus: Vector databases, retrieval, and context management.*
+### 🤖 AI Agents / Workflows
 
-- **[onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx)** [Python] ⭐+870 (Today)
-  - An open-source AI platform (formerly known as similar chat projects) focusing on advanced chat features and RAG for enterprise.
-- **[langgenius/dify](https://github.com/langgenius/dify)** [TypeScript] ⭐134.8k (Total)
-  - A production-ready platform for agentic workflows; central to the "low-code" AI app development movement.
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** [Python] ⭐51.3k (Total)
-  - A universal memory layer for AI agents; solves the issue of context retention in long-running conversations.
-- **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** [Python] ⭐76.4k (Total)
-  - A deep-document-understanding RAG engine; stands out for its ability to parse complex layouts better than naive text splitters.
-- **[milvus-io/milvus](https://github.com/milvus-io/milvus)** [Go] ⭐43.4k (Total)
-  - High-performance vector database; a backbone for enterprise-grade retrieval systems.
-
-### 🧠 LLMs / Training
-*Focus: Model training, fine-tuning, and optimization.*
-
-- **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐69.1k (Total)
-  - Unified framework for fine-tuning 100+ LLMs; the go-to tool for developers customizing open-source models.
-- **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** [Jupyter Notebook] ⭐89.4k (Total)
-  - The definitive educational resource for understanding LLM internals by building a GPT from the ground up.
-- **[jingyaogong/minimind](https://github.com/jingyaogong/minimind)** [Python] ⭐44.3k (Total)
-  - A lightweight project to train a small GPT from scratch in hours; popular for educational and rapid prototyping purposes.
+| Project | Stars | Why It Matters |
+|--------|-------|----------------|
+| [SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | 0 (+506 today) | Workshop-level automated scientific discovery via agentic tree search—pushing autonomous research boundaries |
+| [virattt/dexter](https://github.com/virattt/dexter) | 0 (+581 today) | Autonomous agent for deep financial research—vertical specialization in high-stakes domain |
+| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,606 | "CowAgent" super AI assistant with OS access, skill creation, long-term memory—multi-platform deployment (WeChat, Lark, DingTalk, QQ) |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 42,511 | AI productivity studio with 300+ assistants, unified frontier LLM access—consumer-grade agent hub |
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 21,465 | AI agents with ~400 MCP servers—massive tool ecosystem for agent extensibility |
+| [trycua/cua](https://github.com/trycua/cua) | 13,318 | Open-source infrastructure for Computer-Use Agents; sandboxes for desktop control agents (macOS/Linux/Windows) |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 70,047 | AI-driven development environment—autonomous coding with human oversight |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 84,853 | Makes websites accessible for AI agents—critical bridge for web automation |
 
 ### 📦 AI Applications
-*Focus: End-user verticals and specific tasks.*
 
-- **[twentyhq/twenty](https://github.com/twentyhq/twenty)** [TypeScript] ⭐+562 (Today)
-  - A modern, open-source CRM alternative; trending as a community-driven challenger to Salesforce with integrated AI features.
-- **[OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB)** [Python] ⭐63.7k (Total)
-  - An open-source financial data platform; widely used by quants and AI agents for investment analysis.
-- **[saturndec/waoowaoo](https://github.com/saturndec/waoowaoo)** [TypeScript] ⭐10.5k (Total)
-  - Industrial-grade AI platform for controllable film/video production; represents the cutting edge of generative media workflows.
+| Project | Stars | Why It Matters |
+|--------|-------|----------------|
+| [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | 0 (+1,814 today) | Real-time face swap and one-click video deepfake from single image—viral accessibility of synthetic media |
+| [datalab-to/chandra](https://github.com/datalab-to/chandra) | 0 (+687 today) | OCR for complex tables, forms, handwriting with full layout preservation—enterprise document intelligence |
+| [twentyhq/twenty](https://github.com/twentyhq/twenty) | 0 (+563 today) | Open-source Salesforce alternative—AI-powered CRM with community-driven development |
+| [saturndec/waoowaoo](https://github.com/saturndec/waoowaoo) | 10,563 | First industrial-grade AI film/video production platform—Hollywood-standard workflows for AI-generated content |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 99,989 | Web Data API for AI—turns entire websites into LLM-ready structured data |
+| [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 63,720 | Financial data platform built for analysts, quants, and AI agents—specialized data infrastructure |
+
+### 🧠 LLMs / Training
+
+| Project | Stars | Why It Matters |
+|--------|-------|----------------|
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 44,358 | Train 64M-parameter GPT from scratch in 2 hours—democratizing LLM training education |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,502 | Definitive model framework for text, vision, audio, multimodal—industry standard |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 74,579 | High-throughput LLM inference engine—production serving infrastructure |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 69,186 | Unified fine-tuning for 100+ LLMs/VLMs—efficient adaptation at scale |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 89,421 | Educational implementation of ChatGPT-like LLM—foundational learning resource |
+| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | 6,688 | Modular LLM applications in Rust—systems-language performance for AI |
+| [ScrapeGraphAI/Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | 23,145 | LLM-based web scraping—intelligent data extraction without brittle selectors |
+
+### 🔍 RAG / Knowledge
+
+| Project | Stars | Why It Matters |
+|--------|-------|----------------|
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 76,455 | Leading open-source RAG engine fusing retrieval with agent capabilities |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 51,342 | Universal memory layer for AI agents—persistent context across sessions |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 48,094 | Document agent and OCR platform—enterprise knowledge retrieval |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | 43,478 | Cloud-native vector database for scalable ANN search—vector infrastructure at scale |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | 29,889 | High-performance vector database with hybrid search—Rust-based efficiency |
+| [cognee/cognee](https://github.com/topoteretes/cognee) | 14,729 | Knowledge engine for agent memory in 6 lines—radical simplicity for memory systems |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 41,967 | Claude Code plugin with AI-compressed session memory—context persistence for coding agents |
 
 ---
 
 ## 3. Trend Signal Analysis
 
-**The Rise of Verticalized Agents & "Agentic Skills"**
-Today's trends show a clear bifurcation: while general-purpose LLMs are maturing, the "hot" development is happening in verticalized agents (e.g., **Dexter** for finance, **AI-Scientist** for research) and skills frameworks (e.g., **Superpowers**). The community is moving away from "chat with a PDF" towards "let the AI conduct deep research and execute tasks." The presence of **Deep-Live-Cam** at the top of the trending list serves as a reminder of the intense consumer demand for generative visual media, despite the ethical complexities.
+**Explosive Category: Agentic Infrastructure & Vertical Applications**
 
-**Infrastructure for "Action" over "Chat"**
-There is a strong signal that the ecosystem is building for *agency*. Tools like **E2B** (sandboxes), **Firecrawl** (web data), and **Chandra** (OCR for complex docs) are the pickaxes in this gold rush. These projects allow agents to perceive (OCR/Scraping) and act (Sandboxes/CLI) safely. The trend suggests that 2026 is the year of the **"Act-Ready" Agent**, where the value prop shifts from generating text to executing workflows reliably.
+Today's data reveals three converging acceleration patterns. First, **agent frameworks are maturing from experimentation to methodology**—evidenced by [superpowers](https://github.com/obra/superpowers)' structured "agentic skills framework" and [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)'s tree-search approach to autonomous research. This suggests the community is solving the "agent reliability" problem through architectural discipline rather than prompting alone.
 
-**Dominance of Open-Source "Wrapper" Platforms**
-Platforms like **Dify**, **Onyx**, and **Cherry Studio** continue to accrue massive stars. This indicates that developers prefer orchestration layers that are model-agnostic (supporting OpenAI, Claude, DeepSeek, etc.) rather than being locked into a single vendor's ecosystem.
+Second, **MCP (Model Context Protocol) adoption is becoming table stakes**. [activepieces](https://github.com/activepieces/activepieces) explicitly markets its ~400 MCP servers, while [langchain4j](https://github.com/langchain4j/langchain4j) highlights MCP support. The protocol is achieving de facto standard status for tool-augmented agents.
+
+Third, **real-time media AI is experiencing viral growth**. [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)'s 1,814 stars today—despite zero total stars (indicating a fresh repository or reset)—demonstrates unabated demand for accessible synthetic media tools. This coincides with [waoowaoo](https://github.com/saturndec/waoowaoo)'s industrial-grade video production platform, suggesting the field is bifurcating into consumer toys and professional pipelines.
+
+**New Tech Stack Signals**: Rust is emerging as a systems-language choice for AI infrastructure ([rig](https://github.com/0xPlaygrounds/rig), [meilisearch](https://github.com/meilisearch/meilisearch), [qdrant](https://github.com/qdrant/qdrant)), while **"observability-first" agent design** ([agentscope](https://github.com/agentscope-ai/agentscope)) addresses trust deficits in autonomous systems.
+
+**Industry Context**: The timing aligns with recent releases of Kimi-K2.5, GLM-5, and GPT-oss models—ollama's rapid integration (noted in its description) reflects the competitive pressure in local inference. The scientific discovery focus of SakanaAI v2 connects to broader industry investments in "AI scientists" for R&D acceleration.
 
 ---
 
 ## 4. Community Hot Spots
 
-*   **[SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)**: A must-watch for the intersection of AI and Science. It pushes the boundary of "autonomous research," potentially changing how academic and R&D work is done.
-*   **[virattt/dexter](https://github.com/virattt/dexter)**: Financial analysis is a prime use case for LLMs due to the high cost of human analysts. Dexter represents the new wave of "AI Financial Analysts."
-*   **[datalab-to/chandra](https://github.com/datalab-to/chandra)**: Document parsing (OCR) is the biggest bottleneck for RAG in enterprise. Chandra’s focus on complex tables and forms makes it a critical project to watch.
-*   **[CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit)**: As agents move from CLI to Web, CopilotKit provides the necessary frontend blocks to make AI interactions feel native to the web browser.
+- **[Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)** — Single-image real-time face swap represents the bleeding edge of accessible synthetic media; expect rapid forks for privacy/security research
+
+- **[obra/superpowers](https://github.com/obra/superpowers)** — Methodology-driven agent framework; watch if this establishes patterns beyond ad-hoc "vibe coding"
+
+- **[SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)** — Tree-search for scientific discovery; critical test case for whether agents can produce novel, verifiable research
+
+- **[trycua/cua](https://github.com/trycua/cua)** + **[alibaba/OpenSandbox](https://github.com/alibaba/OpenSandbox)** — Computer-use agent infrastructure converging on secure sandboxing; foundational for enterprise deployment of desktop-controlling agents
+
+- **[cognee](https://github.com/topoteretes/cognee)** — "6 lines of code" knowledge engine; radical abstraction in agent memory systems signals API consolidation in the RAG layer
+
+---
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*

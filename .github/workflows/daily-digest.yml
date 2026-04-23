@@ -2,8 +2,8 @@ name: Daily Agents Radar
 
 on:
   schedule:
-    # 每天 22:00 UTC = 次日 06:00 CST (UTC+8)
-    - cron: "0 22 * * *"
+    # 每天 00:00 UTC = 08:00 CST (UTC+8)
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     # Web content fetching adds ~60-120 s of HTTP requests on incremental runs;
     # the first-ever run (fetching 50 articles) may need up to 20 min.
-    timeout-minutes: ${{ fromJson(vars.DAILY_DIGEST_TIMEOUT_MINUTES || '25') }}
+    timeout-minutes: 40
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4.3.0
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -38,9 +38,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || secrets.ANTHROPIC_MODEL }}
-          LLM_CONCURRENCY: ${{ vars.LLM_CONCURRENCY || '2' }}
-          LLM_MIN_INTERVAL_MS: ${{ vars.LLM_MIN_INTERVAL_MS || '5000' }}
+          PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+          DIGEST_REPO: ${{ github.repository }}
         run: pnpm start
 
       - name: Commit digest files
@@ -73,11 +72,12 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@agents_radar' }}
-          PAGES_URL: https://iampengqian.github.io/rl-radar
+          PAGES_URL: https://duanyytop.github.io/agents-radar
         run: pnpm notify
 
       - name: Send Feishu notification
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          PAGES_URL: https://iampengqian.github.io/rl-radar
+          PAGES_URL: https://duanyytop.github.io/agents-radar
         run: pnpm notify:feishu
+

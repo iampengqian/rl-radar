@@ -23,6 +23,14 @@ export const REPORT_FILES = [
   "ai-trending-en",
   "ai-hn",
   "ai-hn-en",
+  "ai-ph",
+  "ai-ph-en",
+  "ai-arxiv",
+  "ai-arxiv-en",
+  "ai-hf",
+  "ai-hf-en",
+  "ai-community",
+  "ai-community-en",
   "ai-weekly",
   "ai-weekly-en",
   "ai-monthly",
@@ -42,6 +50,11 @@ interface Manifest {
   dates: DateEntry[];
 }
 
+interface ReportContent {
+  summary: string;
+  fullHtml: string;
+}
+
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -55,11 +68,6 @@ export function toRfc822(date: Date): string {
 
 export function escapeXml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-}
-
-interface ReportContent {
-  summary: string;
-  fullHtml: string;
 }
 
 async function getReportContent(date: string, report: string): Promise<ReportContent> {

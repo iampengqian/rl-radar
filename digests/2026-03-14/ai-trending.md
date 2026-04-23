@@ -1,84 +1,132 @@
 # AI 开源趋势日报 2026-03-14
 
-> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-13 22:04 UTC
+> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-03-14 00:19 UTC
 
 ---
 
-你好！作为技术分析师，我已对 2026 年 3 月 14 日的 GitHub 数据进行了深度清洗和分析。今日的开源 AI 领域呈现出明显的**“代理实体化”**与**“交互协议化”**趋势，Agent 正从概念走向具体的“岗位”定义。
-
-以下是整理后的《AI 开源趋势日报》。
+# AI 开源趋势日报 | 2026-03-14
 
 ---
 
-# 📅 AI 开源趋势日报 (2026-03-14)
+## 第一步：AI 相关性筛选
 
-## 1. 今日速览
-今日 AI 开源社区最显著的动向是 **“AI Agent 的职能化与工具化”**。Trending 榜单被各类 Agent 框架占据，`microsoft/BitNet` 凭借 1-bit LLM 的极限推理优化强势登顶，显示了端侧/边缘 AI 推理的持续热度。`alibaba/page-agent` 和 `lightpanda-io/browser` 的走红标志着 **“Web 交互”** 正成为 Agent 落地的核心战场，AI 开始拥有专属的浏览器和页面操控能力。此外，`msitarzewski/agency-agents` 的爆发式增长（单日 +5700 stars）反映了市场对**开箱即用的虚拟团队/数字员工**方案的极度渴求。
+**Trending 榜单筛选结果**（16→12，排除4个非AI项目）：
+| 排除项目 | 排除原因 |
+|---------|---------|
+| `public-apis/public-apis` | 通用API列表，非AI专属 |
+| `dolthub/dolt` | 通用数据版本控制（Git for Data） |
+| `google/A2UI` | 描述缺失，无法确认AI相关性 |
 
----
-
-## 2. 各维度热门项目
-
-### 🔧 AI 基础工具 (Infra & DevTools)
-> 包含推理引擎、开发环境、浏览器工具等底层设施。
-
-*   **[microsoft/BitNet](https://github.com/microsoft/BitNet)** [Python] ⭐0 (+2223 today)
-    *   **说明**：微软官方推出的 1-bit LLM（大语言模型）推理框架，旨在极致降低模型推理的算力消耗，是端侧 AI 部署的重要里程碑。
-*   **[lightpanda-io/browser](https://github.com/lightpanda-io/browser)** [Zig] ⭐0 (+1175 today)
-    *   **说明**：专为 AI 自动化设计的无头浏览器，解决了传统浏览器在 AI 抓取和自动化任务中的性能瓶颈。
-*   **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** [TypeScript] ⭐0 (+1850 today)
-    *   **说明**：针对 Prompt、Agent 和 RAG 的红队测试与漏洞扫描工具，支持 GPT/Claude 等主流模型对比，是 AI 安全落地的必备工具。
-*   **[google-ai-edge/LiteRT](https://github.com/google-ai-edge/LiteRT)** [C++] ⭐0 (+208 today)
-    *   **说明**：TensorFlow Lite 的继任者，Google 最新的端侧高性能 GenAI 部署框架。
-
-### 🤖 AI 智能体/工作流
-> 包含 Agent 框架、多智能体协作、自动化技能包。
-
-*   **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** [Shell] ⭐0 (+5758 today)
-    *   **说明**：今日最热门项目。一套完整的“AI 代理机构”方案，不仅提供单一 Agent，而是提供包含前端、社区管理、质量检查等具备不同“性格”和“职能”的专家 Agent 组合。
-*   **[alibaba/page-agent](https://github.com/alibaba/page-agent)** [TypeScript] ⭐0 (+1467 today)
-    *   **说明**：阿里推出的页面级 GUI Agent，允许通过自然语言直接控制 Web 界面，是 Web 3.0 交互形态的前瞻性尝试。
-*   **[obra/superpowers](https://github.com/obra/superpowers)** [Shell] ⭐0 (+2096 today)
-    *   **说明**：一种代理技能框架与软件开发方法论，定义了 AI 如何像人类工程师一样通过“技能”解决复杂问题。
-*   **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)** [Python] ⭐0 (+597 today)
-    *   **说明**：专注于 Agent 的“记忆学习”能力，解决 Agent 在长周期任务中无法从经验中进化的痛点。
-*   **[InsForge/InsForge](https://github.com/InsForge/InsForge)** [TypeScript] ⭐0 (+763 today)
-    *   **说明**：专为 Agent 自动化开发全栈应用而生的后端基础设施，目标是让 Agent 具备交付软件的能力。
-
-### 📦 AI 应用
-> 面向终端用户的具体产品、插件、聚合平台。
-
-*   **[langflow-ai/openrag](https://github.com/langflow-ai/openrag)** [Python] ⭐0 (+905 today)
-    *   **说明**：基于 Langflow 构建的一站式 RAG 平台，集成了 Docling 和 Opensearch，降低了企业级 RAG 的部署门槛。
-*   **[anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)** [Python] ⭐0 (+651 today)
-    *   **说明**：Anthropic 官方管理的 Claude Code 插件目录，标志着 AI Coding 工具正在形成类似 VS Code 的插件生态。
-*   **[AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot)** [Python] ⭐0 (+952 today)
-    *   **说明**：聚合多平台（IM）、多模型的聊天机器人基础设施，定位为 OpenClaw 的替代品，强调易用性。
-
-### 🔍 RAG/知识库
-> 检索增强、向量存储、知识管理。
-
-*   **[fishaudio/fish-speech](https://github.com/fishaudio/fish-speech)** [Python] ⭐0 (+556 today)
-    *   **说明**：SOTA 级开源 TTS（语音合成）项目，虽然主要用于语音，但在多模态 RAG（语音交互）场景中极具价值。
-*   *注：Trending 榜单中 RAG 专有项目较少，主要集中在搜索 API 返回的长期热门项目（如 `infiniflow/ragflow`, `milvus-io/milvus`）中。*
+**保留12个AI相关项目**，全部纳入分析。
 
 ---
 
-## 3. 趋势信号分析
+## 第二步：多维度分类
 
-**1. Agent “拟人化”与“职业化”成为新常态**
-今日 `agency-agents` 的爆发不仅仅是炒作，它揭示了开发者对 Agent 期望的转变：从“通用的对话机器人”转向“具备特定职能、性格和工作流的专业人士”。这种**基于角色的模块化设计**（Role-Based Modular Design）将成为构建复杂 AI 系统的主流范式。
-
-**2. Web 交互层的重构**
-`lightpanda` 和 `page-agent` 的同时上榜并非巧合。现有的浏览器和 DOM 结构是为人类设计的，AI 在理解和使用传统 Web 界面时存在效率损耗。**专门为 AI 设计的浏览器**和**让 AI 能够“看懂”并操作网页的协议**正在填补这一空白，这是实现全自动 Web Agent 的关键拼图。
-
-**3. 边缘侧 1-bit LLM 的崛起**
-Microsoft BitNet 的热度验证了“模型小型化”的巨大需求。随着隐私和延迟要求的提高，将模型压缩至 1-bit 并在本地高效运行，可能比单纯追求万亿参数的云端模型更具商业落地价值。
+| 项目 | 主要分类 | 次要分类 |
+|-----|---------|---------|
+| microsoft/BitNet | 🔧 AI基础工具 | 🧠 大模型/训练 |
+| langflow-ai/openrag | 🔍 RAG/知识库 | 🤖 AI智能体/工作流 |
+| lightpanda-io/browser | 🔧 AI基础工具 | 🤖 AI智能体/工作流 |
+| obra/superpowers | 🤖 AI智能体/工作流 | 🔧 AI基础工具 |
+| promptfoo/promptfoo | 🔧 AI基础工具 | 🤖 AI智能体/工作流 |
+| msitarzewski/agency-agents | 🤖 AI智能体/工作流 | 📦 AI应用 |
+| fishaudio/fish-speech | 🧠 大模型/训练 | 📦 AI应用 |
+| alibaba/page-agent | 🤖 AI智能体/工作流 | 📦 AI应用 |
+| anthropics/claude-plugins-official | 🔧 AI基础工具 | 🤖 AI智能体/工作流 |
+| AstrBotDevs/AstrBot | 📦 AI应用 | 🤖 AI智能体/工作流 |
+| vectorize-io/hindsight | 🔍 RAG/知识库 | 🤖 AI智能体/工作流 |
+| InsForge/InsForge | 🔧 AI基础工具 | 🤖 AI智能体/工作流 |
+| google-ai-edge/LiteRT | 🔧 AI基础工具 | 🧠 大模型/训练 |
 
 ---
 
-## 4. 社区关注热点 (值得深挖)
+## 第三步：完整报告
 
-*   🔥 **[msitarzewski/agency-agents](https://github.com/search?q=msitarzewski%2Fagency-agents)**：如果你在构建 AI 顾问团队或自动化工作室，这是目前的最佳参考范本，它定义了 Agent 协作的标准化工作流。
-*   🛡️ **[promptfoo/promptfoo](https://github.com/search?q=promptfoo%2Fpromptfoo)**：随着 Agent 进入生产环境，安全性（红队测试）成为必选项。该项目提供了 CI/CD 集成能力，是工程化落地的重要一环。
-*   🌐 **[alibaba/page-agent](https://github.com/search?q=alibaba%2Fpage-agent)**：Web 开发者重点关注。这预示着未来的 Web 应用可能需要同时面向人类用户和 AI Agent 提供接口，可能会催生新的前端开发标准。
+### 1. 今日速览
+
+今日AI开源领域呈现**"智能体基础设施"**爆发态势，微软1-bit LLM推理框架BitNet以2227星登顶，标志着极端量化推理进入实用阶段。多智能体协作平台（agency-agents、superpowers）和AI浏览器（lightpanda、page-agent）成为新热点，反映社区正从"单模型调用"向"多Agent系统"跃迁。Claude生态持续扩张，官方插件目录与记忆增强工具同日上榜。RAG领域出现平台级整合（OpenRAG），向量数据库竞争进入"记忆即服务"新阶段。
+
+---
+
+### 2. 各维度热门项目
+
+#### 🔧 AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）
+
+| 项目 | Stars | 一句话说明 |
+|-----|-------|-----------|
+| [microsoft/BitNet](https://github.com/microsoft/BitNet) | 0 ⭐ (+2227 today) | **微软官方1-bit LLM推理框架**，实现极端量化下的高效本地推理，今日增速全场最高 |
+| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | 0 ⭐ (+1668 today) | **AI系统红队测试平台**，支持多模型对比、RAG/Agent渗透测试，CI/CD原生集成 |
+| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | 0 ⭐ (+654 today) | **Claude Code官方插件目录**，标志Anthropic正式构建开发者插件生态 |
+| [lightpanda-io/browser](https://github.com/lightpanda-io/browser) | 0 ⭐ (+2093 today) | **专为AI设计的Zig语言无头浏览器**，轻量化、高性能，解决Agent网页自动化痛点 |
+| [google-ai-edge/LiteRT](https://github.com/google-ai-edge/LiteRT) | 0 ⭐ (+211 today) | **TensorFlow Lite继任者**，Google端侧ML/GenAI部署框架，支持边缘高效推理 |
+| [InsForge/InsForge](https://github.com/InsForge/InsForge) | 0 ⭐ (+766 today) | **面向Agent的全栈开发后端**，为AI Agent提供完整应用交付能力 |
+
+#### 🤖 AI 智能体/工作流（Agent 框架、自动化、多智能体）
+
+| 项目 | Stars | 一句话说明 |
+|-----|-------|-----------|
+| [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | 0 ⭐ (+5745 today) | **"完整AI Agency"多智能体系统**，含前端、运营、社区等垂直角色Agent，今日增速冠军 |
+| [obra/superpowers](https://github.com/obra/superpowers) | 0 ⭐ (+2106 today) | **Agentic技能框架与软件工程方法论**，探索人机协作的新型开发范式 |
+| [alibaba/page-agent](https://github.com/alibaba/page-agent) | 0 ⭐ (+1468 today) | **自然语言控制网页的JS内置GUI Agent**，阿里开源的浏览器原生自动化方案 |
+| [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | 0 ⭐ (+1128 today) | **多平台IM Agent基础设施**，集成LLM、插件、AI功能，OpenClaw开源替代方案 |
+
+#### 🔍 RAG/知识库（向量数据库、检索增强、知识管理）
+
+| 项目 | Stars | 一句话说明 |
+|-----|-------|-----------|
+| [langflow-ai/openrag](https://github.com/langflow-ai/openrag) | 0 ⭐ (+905 today) | **一站式RAG平台**，整合Langflow+Docling+Opensearch，单包部署企业级检索增强 |
+| [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | 0 ⭐ (+595 today) | **可学习的Agent记忆系统**，突破传统RAG的静态检索，实现记忆进化 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 49,717 ⭐ | **AI Agent通用记忆层**，长期上下文管理与个性化记忆的行业标准方案 |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 47,658 ⭐ | **文档Agent与OCR平台**，连接非结构化数据与LLM的核心基础设施 |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 74,954 ⭐ | **RAG+Agent融合引擎**，深度文档解析与可视化工作流的领先开源方案 |
+
+#### 🧠 大模型/训练（模型权重、训练框架、微调工具）
+
+| 项目 | Stars | 一句话说明 |
+|-----|-------|-----------|
+| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 0 ⭐ (+559 today) | **SOTA开源TTS模型**，语音合成质量逼近商业产品，今日持续获关注 |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | 53,922 ⭐ | **LLM高效微调框架**，训练速度2倍提升、显存消耗降低70%，支持最新开源模型 |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 68,373 ⭐ | **百模型统一微调平台**，ACL 2024成果，覆盖100+ LLM与VLM |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 73,018 ⭐ | **高吞吐LLM推理引擎**，PagedAttention技术成为服务化部署事实标准 |
+
+#### 📦 AI 应用（具体应用产品、垂直场景解决方案）
+
+| 项目 | Stars | 一句话说明 |
+|-----|-------|-----------|
+| [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | 0 ⭐ (+1128 today) | （同上，跨维度） |
+| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 0 ⭐ (+559 today) | （同上，跨维度） |
+| [alibaba/page-agent](https://github.com/alibaba/page-agent) | 0 ⭐ (+1468 today) | （同上，跨维度） |
+
+---
+
+### 3. 趋势信号分析（200-300字）
+
+**智能体基础设施爆发**：今日热榜揭示社区焦点正从"模型能力"转向"系统能力"。`agency-agents`（+5745星）和`superpowers`（+2106星）的爆发式增长，标志着多智能体协作框架进入实用化阶段——开发者不再满足于单轮API调用，而是追求可编排、可协作的Agent团队。
+
+**浏览器即Agent新范式**：`lightpanda`（Zig无头浏览器）与`page-agent`（阿里JS内置Agent）同日上榜，预示**浏览器自动化正从Selenium/Puppeteer时代向"AI原生浏览器"演进**。这类工具专为LLM视觉-动作循环优化，解决传统浏览器在Agent场景下的性能与兼容性瓶颈。
+
+**极端量化推理实用化**：微软`BitNet`以2227星登顶，1-bit量化从研究概念进入生产框架，边缘设备部署大模型的技术门槛大幅降低。
+
+**Claude生态扩张信号**：Anthropic官方插件目录与第三方记忆增强工具（`claude-mem`）同步活跃，反映Claude Code正快速构建开发者工具链，与Cursor、Windsurf形成生态竞争。
+
+---
+
+### 4. 社区关注热点
+
+- **🔥 多智能体协作系统** — `agency-agents`今日增速全场第一（+5745星），"AI Agency"概念验证完成，从单Agent工具向多角色协作平台演进成为明确方向
+
+- **🔥 AI原生浏览器基础设施** — `lightpanda`（Zig）与`page-agent`（JS）代表两条技术路线，解决Agent网页自动化的性能与集成痛点，预计将成为2026年Agent基建核心赛道
+
+- **🔥 1-bit极端量化推理** — 微软`BitNet`开源标志着1-bit LLM从论文走向工程实践，端侧大模型部署成本有望数量级下降
+
+- **🔥 可进化Agent记忆** — `hindsight`提出"记忆即学习"新范式，超越传统RAG的静态检索，长期记忆管理正成为Agent差异化竞争关键
+
+- **🔥 Claude开发者生态** — 官方插件目录+社区记忆工具同日爆发，Anthropic正加速构建围绕Claude Code的开发者工具链，与OpenAI、Cursor生态正面竞争
+
+---
+
+*报告生成时间：2026-03-14 | 数据来源：GitHub Trending & Topic Search*
+
+---
+*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*
