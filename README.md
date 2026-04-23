@@ -398,9 +398,9 @@ Historical digests are stored in [`digests/`](./digests/). Published issues are 
 
 | Workflow | Cron | UTC | CST |
 |----------|------|-----|-----|
-| Daily digest | `0 0 * * *` | 00:00 daily | 08:00 daily |
-| Weekly rollup | `0 1 * * 1` | 01:00 Monday | 09:00 Monday |
-| Monthly rollup | `0 2 1 * *` | 02:00 on the 1st | 10:00 on the 1st |
+| Daily digest | `0 22 * * *` | 22:00 daily | 06:00 next day |
+| Weekly rollup | `0 23 * * 0` | 23:00 Sunday | 07:00 Monday |
+| Monthly rollup | `0 0 1 * *` | 00:00 on the 1st | 08:00 on the 1st |
 
 To change the schedule, edit the cron expressions in the corresponding workflow files under `.github/workflows/`.
 

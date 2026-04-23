@@ -13,7 +13,7 @@ import path from "node:path";
 import { NOTIFY_LABELS } from "./i18n.ts";
 import type { Highlights } from "./notify.ts";
 
-const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
+const PAGES_URL_DEFAULT = "https://iampengqian.github.io/rl-radar";
 
 async function sendFeishu(title: string, content: string): Promise<void> {
   const webhookUrl = process.env["FEISHU_WEBHOOK_URL"] ?? "";
@@ -50,7 +50,7 @@ export function buildFeishuMessage(
 
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
   const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
-  const lines: string[] = [`${icon} **agents-radar${suffix} · ${date}**`];
+  const lines: string[] = [`${icon} **rl-radar${suffix} · ${date}**`];
 
   const ordered = [
     ...baseReports.filter((r) => !r.includes("weekly") && !r.includes("monthly")),
@@ -122,7 +122,7 @@ async function main(): Promise<void> {
   const isWeekly = reports.some((r) => r === "ai-weekly");
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
   const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
-  const title = `${icon} agents-radar${suffix} · ${date}`;
+  const title = `${icon} rl-radar${suffix} · ${date}`;
 
   const content = buildFeishuMessage(date, reports, undefined, highlights);
 

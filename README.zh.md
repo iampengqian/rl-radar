@@ -366,15 +366,13 @@ OpenAI 内容精选            (research / release / company / safety / ...)
 
 ## 定时计划
 
-默认 cron 表达式 `"0 0 * * *"` = **00:00 UTC = 08:00 CST**。
+| Workflow | Cron | UTC | CST |
+|----------|------|-----|-----|
+| 每日简报 | `0 22 * * *` | 22:00 daily | 次日 06:00 |
+| 周报 | `0 23 * * 0` | 23:00 Sunday | 周一 07:00 |
+| 月报 | `0 0 1 * *` | 00:00 on the 1st | 每月 1 日 08:00 |
 
-修改时间请编辑 `.github/workflows/daily-digest.yml` 中的 cron 表达式：
-
-| CST   | UTC cron      |
-|-------|---------------|
-| 08:00 | `0 0 * * *`  |
-| 09:00 | `0 1 * * *`  |
-| 10:00 | `0 2 * * *`  |
+修改时间请编辑 `.github/workflows/` 下对应 workflow 文件中的 cron 表达式。
 
 ## Star History
 
