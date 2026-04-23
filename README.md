@@ -143,10 +143,10 @@ OpenClaw is tracked as the primary reference project, alongside several peer pro
 |---------|-----------|-------|
 | OpenClaw | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 348.1k |
 | NanoBot | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 37.9k |
+| ZeroClaw | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 30.1k |
 | Hermes Agent | [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) | 32.3k |
 | PicoClaw | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | 27.5k |
 | NanoClaw | [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | 26.5k |
-| ZeroClaw | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 30.1k |
 | CoPaw | [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | 14.4k |
 | IronClaw | [nearai/ironclaw](https://github.com/nearai/ironclaw) | 11.4k |
 | NullClaw | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | 7.0k |
@@ -418,7 +418,7 @@ Top projects & releases
 Looking ahead
 ```
 
-Historical digests are stored in [`digests/`](./digests/). Published issues are tagged by type: [`digest`](../../issues?label=digest) · [`openclaw`](../../issues?label=openclaw) · [`web`](../../issues?label=web) · [`trending`](../../issues?label=trending) · [`hn`](../../issues?label=hn) · [`ph`](../../issues?label=ph) · [`arxiv`](../../issues?label=arxiv) · [`hf`](../../issues?label=hf) · [`community`](../../issues?label=community) · [`weekly`](../../issues?label=weekly) · [`monthly`](../../issues?label=monthly).
+Historical digests are stored in [`digests/`](./digests/). Published issues are tagged by type: [`digest`](issues?label=digest) · [`openclaw`](issues?label=openclaw) · [`web`](issues?label=web) · [`trending`](issues?label=trending) · [`hn`](issues?label=hn) · [`ph`](issues?label=ph) · [`arxiv`](issues?label=arxiv) · [`hf`](issues?label=hf) · [`community`](issues?label=community) · [`rl-daily`](issues?label=rl-daily) · [`agent-orch`](issues?label=agent-orch) · [`weekly`](issues?label=weekly) · [`monthly`](issues?label=monthly).
 
 ## Schedule
 
