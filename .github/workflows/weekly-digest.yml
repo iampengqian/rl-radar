@@ -1,4 +1,4 @@
-name: Weekly Agents Radar
+name: Weekly RL Radar
 
 on:
   schedule:

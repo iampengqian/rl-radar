@@ -1,4 +1,4 @@
-name: Monthly Agents Radar
+name: Monthly RL Radar
 
 on:
   schedule:
