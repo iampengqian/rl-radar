@@ -26,6 +26,9 @@ cli_repos:
   - id: opencode
     repo: anomalyco/opencode
     name: OpenCode
+  - id: pi
+    repo: badlogic/pi-mono
+    name: Pi
   - id: qwen-code
     repo: QwenLM/qwen-code
     name: Qwen Code
@@ -52,6 +55,9 @@ openclaw_peers:
     repo: HKUDS/nanobot
     name: NanoBot
     paginated: true
+  - id: hermes-agent
+    repo: nousresearch/hermes-agent
+    name: Hermes Agent
   - id: picoclaw
     repo: sipeed/picoclaw
     name: PicoClaw
@@ -59,6 +65,9 @@ openclaw_peers:
   - id: nanoclaw
     repo: qwibitai/nanoclaw
     name: NanoClaw
+  - id: nullclaw
+    repo: nullclaw/nullclaw
+    name: NullClaw
   - id: ironclaw
     repo: nearai/ironclaw
     name: IronClaw
@@ -66,7 +75,7 @@ openclaw_peers:
     repo: netease-youdao/LobsterAI
     name: LobsterAI
   - id: tinyclaw
-    repo: TinyAGI/tinyclaw
+    repo: TinyAGI/tinyagi
     name: TinyClaw
   - id: moltis
     repo: moltis-org/moltis
@@ -80,6 +89,9 @@ openclaw_peers:
   - id: easyclaw
     repo: gaoyangz77/easyclaw
     name: EasyClaw
+  - id: zeroclaw
+    repo: zeroclaw-labs/zeroclaw
+    name: ZeroClaw
 
 # ── RL open-source ecosystem (new category) ─────────────────────────────────
 # First-phase RL-radar seed projects. Focus on RLHF / post-training first,

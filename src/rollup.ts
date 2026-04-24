@@ -6,11 +6,16 @@
 import fs from "node:fs";
 import path from "node:path";
 import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_ROLLUP } from "./report.ts";
-import { buildWeeklyPrompt, buildMonthlyPrompt, buildRlAnalysisPrompt } from "./prompts.ts";
-import { buildHighlightsPrompt, type ReportHighlights } from "./prompts-data.ts";
+import {
+  buildWeeklyPrompt,
+  buildMonthlyPrompt,
+  buildHighlightsPrompt,
+  type ReportHighlights,
+} from "./prompts-data.ts";
+import { buildRlAnalysisPrompt } from "./prompts.ts";
 import { createGitHubIssue } from "./github.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
-import { type Lang, RL_ANALYSIS_ISSUE_TITLE } from "./i18n.ts";
+import { type Lang, WEEKLY_REPORT, MONTHLY_REPORT, RL_ANALYSIS_ISSUE_TITLE } from "./i18n.ts";
 
 const DIGESTS_DIR = "digests";
 const MAX_CHARS_PER_REPORT = 2500;
@@ -31,19 +36,18 @@ function getDateDirs(): string[] {
     .reverse();
 }
 
-/** Read and truncate all available daily digest files for a date. Returns null if none found. */
+/** Read and truncate all daily digest files for a date. Returns null if none found. */
 export function readDailyDigest(date: string): string | null {
-  const sections: string[] = [];
+  const parts: string[] = [];
   for (const type of ROLLUP_SOURCES) {
     const p = path.join(DIGESTS_DIR, date, `${type}.md`);
     if (fs.existsSync(p)) {
       const content = fs.readFileSync(p, "utf-8");
       const truncated = content.slice(0, MAX_CHARS_PER_REPORT);
-      const body = truncated.length < content.length ? truncated + "\n...[摘要截断]" : truncated;
-      sections.push(`## ${type}\n\n${body}`);
+      parts.push(truncated.length < content.length ? truncated + "\n...[摘要截断]" : truncated);
     }
   }
-  return sections.length > 0 ? sections.join("\n\n") : null;
+  return parts.length > 0 ? parts.join("\n\n") : null;
 }
 
 /** Read a weekly report file. Returns null if not found. */
@@ -76,24 +80,42 @@ async function generateRollupHighlights(
   itemsPerReport: number,
 ): Promise<void> {
   console.log(`  [${reportId}] Generating highlights for Telegram...`);
-  const highlights: Record<Lang, ReportHighlights> = { zh: {}, en: {} };
+
+  // Read existing highlights (e.g. from daily digest) so we merge instead of overwrite
+  const existingPath = path.join(DIGESTS_DIR, dateStr, "highlights.json");
+  let existing: Record<Lang, ReportHighlights> = { zh: {}, en: {} };
+  if (fs.existsSync(existingPath)) {
+    try {
+      existing = JSON.parse(fs.readFileSync(existingPath, "utf-8"));
+    } catch {
+      // ignore parse errors — start fresh
+    }
+  }
+
+  const highlights: Record<Lang, ReportHighlights> = {
+    zh: { ...existing.zh },
+    en: { ...existing.en },
+  };
+
   try {
     const [zhRaw, enRaw] = await Promise.all([
       callLlm(buildHighlightsPrompt({ [reportId]: zhContent }, "zh", itemsPerReport), 1024),
       callLlm(buildHighlightsPrompt({ [reportId]: enContent }, "en", itemsPerReport), 1024),
     ]);
-    highlights.zh = JSON.parse(
+    const zhNew = JSON.parse(
       zhRaw
         .replace(/```json?\n?/g, "")
         .replace(/```/g, "")
         .trim(),
-    );
-    highlights.en = JSON.parse(
+    ) as ReportHighlights;
+    const enNew = JSON.parse(
       enRaw
         .replace(/```json?\n?/g, "")
         .replace(/```/g, "")
         .trim(),
-    );
+    ) as ReportHighlights;
+    Object.assign(highlights.zh, zhNew);
+    Object.assign(highlights.en, enNew);
   } catch (err) {
     console.error(`  [${reportId}] Highlights generation failed: ${err}`);
   }
@@ -144,15 +166,15 @@ export async function runWeeklyRollup(): Promise<void> {
   const enFooter = autoGenFooter("en");
 
   const zhContent =
-    `# AI 工具生态周报 ${weekStr}\n\n` +
-    `> 覆盖日期: ${last7[last7.length - 1]} ~ ${last7[0]} | 生成时间: ${utcStr} UTC\n\n` +
+    `# ${WEEKLY_REPORT.title.zh} ${weekStr}\n\n` +
+    `> ${WEEKLY_REPORT.coverage.zh}: ${last7[last7.length - 1]} ~ ${last7[0]} | 生成时间: ${utcStr} UTC\n\n` +
     `---\n\n` +
     zhSummary +
     footer;
 
   const enContent =
-    `# AI Tools Ecosystem Weekly Report ${weekStr}\n\n` +
-    `> Coverage: ${last7[last7.length - 1]} ~ ${last7[0]} | Generated: ${utcStr} UTC\n\n` +
+    `# ${WEEKLY_REPORT.title.en} ${weekStr}\n\n` +
+    `> ${WEEKLY_REPORT.coverage.en}: ${last7[last7.length - 1]} ~ ${last7[0]} | Generated: ${utcStr} UTC\n\n` +
     `---\n\n` +
     enSummary +
     enFooter;
@@ -163,7 +185,7 @@ export async function runWeeklyRollup(): Promise<void> {
   await generateRollupHighlights(zhContent, enContent, "ai-weekly", dateStr, 6);
 
   if (digestRepo) {
-    const url = await createGitHubIssue(`📅 AI 工具生态周报 ${weekStr}`, zhContent, "weekly");
+    const url = await createGitHubIssue(WEEKLY_REPORT.issueTitle(weekStr), zhContent, "weekly");
     console.log(`  Created weekly issue: ${url}`);
   }
 
@@ -238,14 +260,14 @@ export async function runMonthlyRollup(): Promise<void> {
   const enFooter = autoGenFooter("en");
 
   const zhContent =
-    `# AI 工具生态月报 ${monthStr}\n\n` +
+    `# ${MONTHLY_REPORT.title.zh} ${monthStr}\n\n` +
     `> 数据来源: ${sourceLabel.zh} | 生成时间: ${utcStr} UTC\n\n` +
     `---\n\n` +
     zhSummary +
     footer;
 
   const enContent =
-    `# AI Tools Ecosystem Monthly Report ${monthStr}\n\n` +
+    `# ${MONTHLY_REPORT.title.en} ${monthStr}\n\n` +
     `> Sources: ${sourceLabel.en} | Generated: ${utcStr} UTC\n\n` +
     `---\n\n` +
     enSummary +
@@ -257,7 +279,7 @@ export async function runMonthlyRollup(): Promise<void> {
   await generateRollupHighlights(zhContent, enContent, "ai-monthly", dateStr, 6);
 
   if (digestRepo) {
-    const url = await createGitHubIssue(`📆 AI 工具生态月报 ${monthStr}`, zhContent, "monthly");
+    const url = await createGitHubIssue(MONTHLY_REPORT.issueTitle(monthStr), zhContent, "monthly");
     console.log(`  Created monthly issue: ${url}`);
   }
 
@@ -265,15 +287,18 @@ export async function runMonthlyRollup(): Promise<void> {
 }
 
 // ---------------------------------------------------------------------------
-// RL Analysis Rollup (weekly deep dive)
+// Fork-specific: RL Analysis rollup
 // ---------------------------------------------------------------------------
 
-/** Read RL daily digest for a date. Returns null if not found. */
 function readRlDailyDigest(date: string): string | null {
-  const p = path.join(DIGESTS_DIR, date, "rl-daily.md");
-  if (!fs.existsSync(p)) return null;
-  const content = fs.readFileSync(p, "utf-8");
-  return content.slice(0, MAX_CHARS_PER_REPORT);
+  for (const name of ["rl-daily.md", "rl-daily-en.md"]) {
+    const p = path.join(DIGESTS_DIR, date, name);
+    if (fs.existsSync(p)) {
+      const content = fs.readFileSync(p, "utf-8");
+      return content.slice(0, MAX_CHARS_PER_REPORT);
+    }
+  }
+  return null;
 }
 
 export async function runRlAnalysisRollup(): Promise<void> {
@@ -285,7 +310,6 @@ export async function runRlAnalysisRollup(): Promise<void> {
 
   console.log(`[rl-analysis] Generating RL deep analysis for ${weekStr} (date: ${dateStr})`);
 
-  // Collect last 7 days of RL daily digests
   const allDates = getDateDirs();
   const last7 = allDates.slice(0, 7);
 
@@ -304,12 +328,10 @@ export async function runRlAnalysisRollup(): Promise<void> {
     `[rl-analysis] Found ${Object.keys(rlDigests).length} RL digests: ${Object.keys(rlDigests).join(", ")}`,
   );
 
-  // Build a combined context from all RL digests
   const digestEntries = Object.entries(rlDigests)
     .map(([date, content]) => `## ${date}\n\n${content}`)
     .join("\n\n---\n\n");
 
-  // Generate ZH and EN in parallel with error handling
   console.log("[rl-analysis] Calling LLM for ZH and EN RL analysis reports in parallel...");
   const failZh = "⚠️ RL 生态深度分析生成失败。";
   const failEn = "⚠️ RL ecosystem deep analysis generation failed.";
