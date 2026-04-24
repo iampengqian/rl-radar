@@ -1,118 +1,166 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code 发生安全漏洞，社区强烈要求逆向开源",
-      "OpenAI Codex 生态扩张，已支持 AWS Bedrock 等第三方模型",
-      "Qwen Code 社区爆发，新版补齐跨平台桌面端与系统通知",
-      "Gemini CLI 性能优化，已支持离线模式与语音输入",
-      "Kimi Code 重构底层架构，引入 MCP 兼容与沙箱隔离",
-      "OpenCode 率先接入 GPT-5.5，正全力修复内存泄漏痛点"
+      "Claude Code爆发计费与模型退化争议，用户投诉无操作耗尽额度",
+      "OpenAI Codex底层重构，发布rust-v0.124.0强化多云环境管理",
+      "Kimi CLI极度活跃：单日27个PR，加速适配K2.6模型与MCP生态",
+      "Qwen Code修复致命死循环Bug，强势发布桌面端与本地SDK",
+      "Gemini CLI双版本齐发，死磕离线搜索与底层死锁防线",
+      "AI CLI进入深水区，面临子代理可视化与终端权限架构大考"
     ],
     "ai-agents": [
-      "OpenClaw 刚发新大版本即现严重回归，依赖缺失致全局崩溃",
-      "OpenClaw v2026.4.22 发布，全面接入 xAI 图像与语音能力",
-      "单日狂刷 500 个 PR，OpenClaw 团队运转能力极度惊人",
-      "Codex 与 GPT-5.4 路径加固，修复 Agent 热传输漂移问题",
-      "社区最大诉求：强烈要求 OpenClaw 开发跨平台客户端",
-      "OpenClaw 重磅引入可扩展接口，强化安全与权限治理"
+      "OpenClaw发布v2026.4.22，全面接入xAI多模态与图音生能力",
+      "OpenClaw单日消化超500项Issue，Bug关闭率近28%",
+      "npm全局安装现重大回归Bug，@larksuiteoapi依赖缺失成焦点",
+      "Docker打包协议报错被火速修复，保障插件运行时依赖",
+      "OpenClaw高优修复日志截断Bug，解除200条上限静默限制",
+      "项目进入极速迭代期，单日合并与处理PR数量高达185个"
     ],
     "ai-trending": [
-      "白嫖顶级编程智能体！免费 Claude Code 方案日增超 2000 星",
-      "沙箱输出压缩 98%，context-mode 爆火解决 LLM 上下文溢出",
-      "Claude-context 让 AI 瞬间拥有整个代码库的“上帝视角”",
-      "营销专属技能库冲榜，AI Agent 加速向具体业务垂直拓展",
-      "Awesome-agent-skills 收录 1000+ 技能，成 Agent 共享标准",
-      "Ollama 无缝支持 Kimi-K2.5 等最新开源模型，成端侧必备"
+      "免费平替工具free-claude-code爆火，单日狂揽近2000 Star",
+      "claude-context热门出炉：将全仓库作为上下文注入给AI",
+      "Cline成IDE编码代理标杆，提供无审查的开源平替方案",
+      "港大RAG-Anything登热榜：多模态检索增强走向统一框架",
+      "HuggingFace发布ML工程师代理，自主读论文训练发布模型",
+      "RuView展现跨界潜力：仅靠商用Wi-Fi实现实时人体姿态估计"
     ],
     "ai-web": [
-      "OpenAI 重磅发布新一代基础模型 GPT-5.5",
-      "Anthropic 坦诚 Claude 质量下降，发布复盘并已回滚降智设置",
-      "为降延迟牺牲推理能力，Anthropic 披露错误权衡致质量危机",
-      "OpenAI 发布 GPT-5.5 系统卡片，主打安全与对齐",
-      "OpenAI 推出临床医生专属 ChatGPT，加速高价值行业商业化",
-      "AI 竞争悄然转向：OpenAI 拼参数，Anthropic 拼工程化"
+      "Anthropic发布深度事后报告，回应Claude Code质量下降风波",
+      "官方定性模型变笨：系统三次工程妥协所致，非底层模型衰退",
+      "Anthropic为降UI延迟曾偷偷降低推理强度，现已全面回滚",
+      "系统为优化恢复延迟自动截断上下文，导致多轮对话能力断层",
+      "官方极力澄清：核心API与推理权重完全独立，未受此次波及",
+      "OpenAI官网静默：今日无增量内容更新，处于蓄力消化期"
     ],
     "ai-hn": [
-      "GPT-5.5 发布引爆 Hacker News，获近 500 条激烈讨论",
-      "Claude 桌面端被曝未经说明私自安装本地消息桥接程序",
-      "Anthropic 质量复盘引共鸣，开发者极度关注 AI 定价与权限",
-      "AgentBox 热议：如何安全地在本地沙盒运行任意代码模型",
-      "Anthropic 冲刺万亿估值，AI 行业商业化烧钱竞赛加剧",
-      "Zork-bench 提供新视角：用文字冒险游戏评估大模型推理"
+      "OpenAI发布GPT-5.5引爆头条，但拒公开ARC-AGI-3分数引审视",
+      "Anthropic陷信任危机：被曝未公开安装本地消息桥接",
+      "行业资金挤压论四起，底层技术定价逻辑引发开发者深度焦虑",
+      "Agent安全沙箱成刚需：Endo推出对象能力的JS隔离机制",
+      "AgentBox发布专用沙箱SDK，彻底解决本地执行代码安全隐患",
+      "Zork-bench另辟蹊径：用文字冒险游戏测试大模型长逻辑推理"
     ],
     "rl-daily": [
-      "AReaL 与 verl 主攻千亿级多模态，死磕分布式训练瓶颈",
-      "RL 框架大进化：ROCK 全力冲刺云原生与微服务企业级基建",
-      "torchtune 官方宣告 Wind-down，正式停止后续常规维护",
-      "slime 试水 400B+ 超大规模 MoE 模型的分布式排障",
-      "TRL 深度重构核心算法与架构，专注打磨 VLM 支持",
-      "经典 RL 库迈入平稳期，基础协议与 API 标准已趋于固化"
+      "RLHF训练框架迎爆发期，AReaL单日狂吞42个PR死磕底层通信",
+      "开源生态两极分化：传统RL算法库停滞，重心转向大模型对齐",
+      "verl极速狂飙：全面攻坚MoE超大规模集群及PD分离架构",
+      "slime直面400B+MoE模型上限，探索极低带宽通信优化",
+      "Open Instruct重构SFT数据处理流，实现10倍性能飙升",
+      "torchtune官方标记停止维护，大模型RL生态加速洗牌"
     ],
     "agent-orch": [
-      "Claude Squad 领衔，45 个项目混战 AI 智能体编排生态",
-      "AutoGPT 依然坚挺，持续重塑多智能体协作新范式",
-      "Swarm Protocol 强势崛起，定义多智能体通信与交互标准",
-      "Claude Flow 发力，打造高度定制化的智能研发代理网关",
-      "Claude Code Bridge 专注打通 IDE 与终端的编排孤岛",
-      "Symphony 进化，探索异构环境下的大规模任务调度与分发"
+      "Agent编排生态爆发：超45个开源项目竞逐多智能体协同架构",
+      "Claude Squad与Claude Flow领衔，深度定制AI代理集群工作流",
+      "Symphony与AutoGen角力，探索下一代多智能体底层编排协议",
+      "Claude Code Bridge成新基建：打通终端与外部环境的代理桥接",
+      "HumanLayer获高度关注：为Agent引入真实人类干预反馈回路",
+      "Mux Desktop等工具发力：将复杂Agent编排搬上可视化桌面端"
+    ],
+    "ai-arxiv": [
+      "MGDA-Decoupled：全新多目标优化框架解决大模型对齐冲突",
+      "ParetoSlider：扩散模型后训练新法，实现多标准质量精准调节",
+      "研究证实：各类大模型在训练中会自发收敛出相似的数字表示",
+      "SWE-chat发布大规模真实开发者与代码Agent交互数据集",
+      "探索自我进化机制：文本参数图优化赋能多智能体系统演进",
+      "打破方差假设：跨尺度深度解析Transformer的极限压缩性"
+    ],
+    "ai-hf": [
+      "Gemma-4-31B下载量破500万断层登顶，成最强开源小钢炮",
+      "无审查微调成流量密码：去审查化Gemma-4与Qwen3.6遭疯抢",
+      "Qwen3.6-35B-A3B凭借极致激活效率登顶本周热度榜首",
+      "智谱GLM-5.1携全新glm_moe_dsa架构惊艳亮相",
+      "3D世界模型初露锋芒：腾讯英伟达双双押注Image-to-3D",
+      "Unsloth极速跟进：FP8等新量化格式大幅降低端侧部署门槛"
+    ],
+    "ai-community": [
+      "Google重磅拆分TPU架构，揭示Agentic时代算力底层演变",
+      "Google A2A协议引爆讨论：Agent间通信才是未来真革命",
+      "语义边缘缓存成降本利器：基于Redis避免重复AI算力开销",
+      "构建安全脚手架：不懂命令行的非技术人员也能靠Agent发版",
+      "开发者呼吁冷静：冷峻审视AI基准测试与编程Agent真实效能",
+      "社区反炒作情绪高涨：警惕AI技术栈背后的零日漏洞风险"
     ]
   },
   "en": {
     "ai-cli": [
-      "AI CLI tools shifting to autonomous, agentic coding swarms.",
-      "Runaway token consumption causing shared growing pains.",
-      "Kimi Code seeing explosive surge in community patches.",
-      "OpenCode driving rapid internal tool iterations.",
-      "Claude Code ships new v2.1.118 update.",
-      "Top Claude Code issue hits 2,077 thumbs-up."
+      "AI CLI tools shifting from chat to autonomous agents.",
+      "Token consumption opacity is a growing pain for devs.",
+      "Claude Code updated to stable v2.1.119.",
+      "OpenAI Codex updated to stable v0.124.0.",
+      "Google shipped Gemini CLI v0.39.0 and a new preview.",
+      "GitHub Copilot CLI updated to stable v1.0.35."
     ],
     "ai-agents": [
-      "OpenClaw hits 500 issues and 500 PRs in 24 hours.",
-      "OpenClaw v2026.4.22 adds native xAI image generation.",
-      "New update brings 6 live xAI voices for text-to-speech.",
-      "xAI integration enables realtime audio transcription.",
-      "Pace of iteration sparks critical dependency regressions.",
-      "Global npm installations disrupted by new dependencies."
+      "OpenClaw sees 500+ PRs and issues updated in 24 hours.",
+      "OpenClaw v2026.4.22 expands xAI provider capabilities.",
+      "Feishu/Lark dependency bugs block fresh OpenClaw installs.",
+      "Maintainers actively patching OpenClaw plugin architecture.",
+      "Community contributing to OpenClaw multi-modal generation.",
+      "Cron and heartbeat stability are top priorities today."
     ],
     "ai-trending": [
-      "AI coding agent tooling overwhelmingly dominates trending.",
-      "Free-claude-code wrapper gains 2,388 stars in one day.",
-      "Claude-context turns codebases into actionable agent data.",
-      "Context-mode tool claims 98% reduction in token usage.",
-      "RAG tech shifting to highly optimized vectorless designs.",
-      "Developers push novel WiFi-based pose estimation hardware."
+      "AI coding agents and tools dominate GitHub trending.",
+      "Free-claude-code wrapper gets 1,962 stars in one day.",
+      "Context-mode tool cuts AI agent token usage by 98%.",
+      "RuView uses WiFi signals for real-time pose estimation.",
+      "Open-source devs commoditize advanced RAG frameworks.",
+      "Microsoft onnxruntime gains 49 stars as inferencing std."
     ],
     "ai-web": [
-      "OpenAI officially unveils GPT-5.5 flagship model.",
-      "OpenAI launches specialized GPT-5.5 Bio Bug Bounty.",
-      "Anthropic publishes candid postmortem on quality drops.",
-      "Claude Code default reasoning downgraded to fix freezing.",
-      "OpenAI aggressively pushing domain-specific healthcare AI.",
-      "Anthropic focuses on radical operational transparency."
+      "Anthropic issues transparent post-mortem on Code quality.",
+      "Claude Code degradation traced to UI, not base model.",
+      "Anthropic reverted a default reasoning effort reduction.",
+      "Context window management caused older thoughts to clear.",
+      "Tradeoffs between reasoning effort and latency persist.",
+      "OpenAI had no official content releases today."
     ],
     "ai-hn": [
-      "GPT-5.5 launch dominates Hacker News with 876 points.",
-      "Anthropic faces security and trust controversies.",
-      "Community suspects undisclosed Claude Desktop extensions.",
-      "Anxiety rises over expensive AI subscription pricing.",
-      "New Zork-bench tests LLM reasoning via text adventures.",
-      "OpenAI Bio Bug Bounty highlights biological risk focus."
+      "GPT-5.5 release dominates Hacker News with 710 comments.",
+      "Community calls out GPT-5.5 for lacking ARC-AGI-3 scores.",
+      "Anthropic faces trust deficit over desktop app bridges.",
+      "OpenAI launches GPT-5.5 Bio Bug Bounty program.",
+      "Devs share tools to manage agentic observability.",
+      "Discussions escalate over rising AI monetization costs."
     ],
     "rl-daily": [
-      "LLM post-training causing massive RL infrastructure overhauls.",
-      "Classic foundational RL libraries hit near-zero activity.",
-      "AReaL scales distributed LoRA and cross-engine syncing.",
-      "verl expands hardware-agnostic execution for Intel chips.",
-      "Engineers surviving compute bottlenecks of MoE models.",
-      "TRL standardizes memory optimization for multimodal VLMs."
+      "RL open-source shifting to ultra-large LLM post-training.",
+      "Distributed frameworks fighting overhead for 400B+ models.",
+      "PyTorch winding down torchtune, centralizing post-training.",
+      "AReaL and verl driving peak hardware scaling R&D.",
+      "Accessible libraries optimize data and memory efficiency.",
+      "Standard env APIs like Gymnasium in quiet maintenance."
     ],
     "agent-orch": [
-      "Developers rushing to orchestrate autonomous agent swarms.",
-      "Claude Squad and Claude Flow gain orchestration traction.",
-      "Symphony and dmux push multi-agent orchestration limits.",
-      "OpenFang and ClawTeam introduce new agent frameworks.",
-      "AutoGPT and MetaGPT see continued ecosystem expansion.",
-      "Mux Desktop and Agent Deck explore agent orchestration."
+      "Dev focus shifts from raw models to orchestrating agents.",
+      "Claude Squad and Crystal trending in agent orchestration.",
+      "AutoGPT and MetaGPT see high activity in agent design.",
+      "Developers demand cost optimization and measurable ROI.",
+      "Orchestrators focused on sub-50ms LLM logging latency.",
+      "Multi-agent dispatching becomes standard architecture."
+    ],
+    "ai-arxiv": [
+      "Agentic AI maturing into real-world freight negotiation.",
+      "MGDA-Decoupled solves multi-objective DPO alignment.",
+      "Near-Future Policy Optimization accelerates RLVR.",
+      "Surge in rigorous multimodal table reasoning benchmarks.",
+      "AI specialized for high-stakes clinical healthcare workflows.",
+      "RL with verifiable rewards raises reasoning model ceiling."
+    ],
+    "ai-hf": [
+      "Qwen 3.6 and Google Gemma 4 dominate Hugging Face.",
+      "MoE architectures and high compression lead downloads.",
+      "Qwen3.6-27B sets new baseline for mid-scale reasoning.",
+      "MiniMax-M2.7 text model nears half a million downloads.",
+      "Uncensored 'abliterated' variants see massive engagement.",
+      "Tencent Hy3-preview expands frontier of 3D world generation."
+    ],
+    "ai-community": [
+      "Google physically splits TPU for training vs inference.",
+      "Devs demand robust safety over raw AI model capabilities.",
+      "AI-assisted dev bottleneck is CI/CD guardrails, not agents.",
+      "McDonald's AI coding chatbot incident sparks security fears.",
+      "Builders target semantic caching for agentic workflows.",
+      "Practical teardowns reveal hidden costs of the AI hype stack."
     ]
   }
 }
