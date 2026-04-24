@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-23T22:29:56.293Z",
+  "generated": "2026-04-24T01:33:55.393Z",
   "dates": [
     {
       "date": "2026-04-24",
@@ -16,6 +16,12 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
+        "ai-arxiv",
+        "ai-arxiv-en",
+        "ai-hf",
+        "ai-hf-en",
+        "ai-community",
+        "ai-community-en",
         "agent-orch",
         "agent-orch-en"
       ]
