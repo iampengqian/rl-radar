@@ -1,0 +1,131 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 竞争迈入多智能体深水区，OpenCode 等拥抱本地部署",
+      "新模型频繁发布致 CLI 普遍面临严重兼容性挑战",
+      "开源工具呈社区驱动修 Bug 态势，闭源商业版 Issue 积压重",
+      "OpenCode 发布 v1.14.25，极速跟进适配 DeepSeek V4",
+      "Qwen Code 遭遇模型降智争议，重点优化 Ollama 兼容性",
+      "Pi 极力推动跨平台模型适配，重点关注国产算力透传"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时内处理超千条Issue，团队审查能力极强",
+      "重磅！OpenClaw发布v2026.4.24正式版及5个Beta版",
+      "Google Meet作为内置参与者插件加入OpenClaw生态",
+      "新版本正式集成DeepSeek V4 Flash和V4 Pro模型",
+      "Beta版重点修复Windows受限运行环境下的兼容性问题",
+      "待合并PR包含网关稳定性及自学习技能等前瞻性功能"
+    ],
+    "ai-trending": [
+      "GitHub 呈现“Agent 基建爆发”与“终端编码重塑”两大主题",
+      "free-claude-code 增速极猛，满足免费用顶级大模型渴望",
+      "HuggingFace发ml-intern，AI开始自动炼模型",
+      "DeepSeek 开源 MoE 专家并行通信库 DeepEP",
+      "字节开源长周期 SuperAgent 框架 deer-flow",
+      "everything-claude-code 破 16 万星，成编程底层标准配置"
+    ],
+    "ai-hn": [
+      "HN热帖：让Agent用Git维护Markdown知识库实现高度透明",
+      "OpenAI为GPT-5.5开启生物安全漏洞赏金计划引热议",
+      "开发者推出开源通用记忆层，解决Agent无状态痛点",
+      "Lambda Calculus基准测试引发LLM逻辑能力大讨论",
+      "开源小模型在政务与小语种微调落地正成为常态",
+      "社区激烈辩论：AI伦理、公关话术与算力监控的边界"
+    ],
+    "rl-daily": [
+      "RL开源生态分化：LLM对齐框架热度碾压传统基准环境",
+      "万卡集群与超大规模MoE适配正引发底层架构痛苦重构",
+      "TRL极速跟进万亿级MoE，并修复核心算法致命Bug",
+      "超大MoE分布式全异步训练暴露出极严重的显存挑战",
+      "torchtune率先补齐Llama4视频模态微调管线",
+      "Gymnasium持续吸纳航空航天物理仿真维持统治力"
+    ],
+    "agent-orch": [
+      "Agent生态向45个细分编排项目演化，呈现极度繁荣",
+      "Kanban和多终端桥接成为CLI Agent编排的新范式",
+      "多智能体协作框架的重心正转向人类干预和成本控制"
+    ],
+    "ai-hf": [
+      "DeepSeek V4 Pro登顶点赞榜，Flash版兼顾性能与成本",
+      "阿里Qwen3.6-35B激活参数仅3B，下载量破百万",
+      "谷歌gemma-4下载量超570万，展现统治级生态扩散",
+      "腾讯发布Hy3-preview文本生成及3D世界生成模型",
+      "MiniMax-M2.7上线即获近50万次下载反响热烈",
+      "OpenBMB 高质量多语言语音合成模型 VoxCPM2 亮眼"
+    ],
+    "ai-community": [
+      "A2A与MCP协议标准之争成智能体落地的核心议题",
+      "用MacBook本地算力替代昂贵AI订阅引发社区强烈共鸣",
+      "GPT-5.5发布，社区焦点从参数转向工程化降本增效",
+      "LLM深度推理引发的高延迟与算力消耗成基建大考",
+      "AI正从热门技术过渡为底层基础设施，堪比DevOps演进",
+      "开发者复盘实战：复杂链路中的AI连环Bug极具借鉴意义"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to autonomous agents and MCP integration",
+      "OpenAI Codex rewrites architecture in Rust for v0.126.0-alpha",
+      "Google Gemini CLI v0.40.0-preview.4 focuses on subagent flow",
+      "Teams battling platform instability with GPT-5.5 integration",
+      "Developers face severe CPU spikes and OOM crashes in tools",
+      "Claude Code lags behind with no new releases in last 24h"
+    ],
+    "ai-agents": [
+      "OpenClaw merges 431 PRs and closes 454 issues in one day",
+      "OpenClaw ships 6 new releases, led by stable v2026.4.24",
+      "New OpenClaw release introduces bundled Google Meet plugin",
+      "OpenClaw integrates DeepSeek V4 Flash and Pro models",
+      "Massive ecosystem expansion causes gateway stability issues",
+      "PicoClaw, NanoClaw, and ZeroClaw expand hardware options"
+    ],
+    "ai-trending": [
+      "Agentic coding environments dominate GitHub trending today",
+      "DeepSeek's DeepEP library gains 189 stars in a single day",
+      "Ollama hits 169,992 stars supporting local Kimi-K2.5 runs",
+      "Hugging Face releases highly anticipated open-source ML agent",
+      "AI memory plugins emerge to bridge session gaps for coders",
+      "Community builds free alternatives to Claude Code amid demand"
+    ],
+    "ai-hn": [
+      "OpenAI releases GPT-5.5 bio bug bounty to crowdsource tests",
+      "New Lambda Calculus benchmark tests AI formal logic limits",
+      "Anthropic's shifting billing practices draw community fire",
+      "Developers worry about AI degradation of digital media",
+      "Adversarial debate frameworks gain traction for AI testing",
+      "Amalia becomes first major open-source LLM for Portuguese"
+    ],
+    "rl-daily": [
+      "Post-training RLHF frameworks dominate open-source momentum",
+      "Projects target distributing massive MoE models across NPUs",
+      "verl, AReaL, and TRL lead multi-modal RL ecosystem updates",
+      "Classic RL libraries like Gymnasium reach extreme stability",
+      "Developers shifting to specialized upstream alignment repos",
+      "slime introduces new ways to distribute mixture-of-experts"
+    ],
+    "agent-orch": [
+      "Claude Squad tops orchestration tools for autonomous agents",
+      "Google A2A and MCP protocols take center stage for agents",
+      "Crystal and dmux gain traction for multi-agent workflows",
+      "Swarm Protocol released for standardized agent communication",
+      "HumanLayer offers new safety nets for autonomous AI tasks",
+      "AutoGPT and MetaGPT face tough competition from newcomers"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro becomes the most liked model of the week",
+      "Gemma-4 leads in absolute downloads across all categories",
+      "Community quantizations for Qwen3.6 MoE break records",
+      "GLM-5.1 gains massive traction with Deep Sparse Attention",
+      "Tencent and Nvidia signal strong pivot to 3D world models",
+      "MiniMax-M2.7 hits nearly 500,000 downloads this week"
+    ],
+    "ai-community": [
+      "GPT-5.5 sparks immediate comparisons to Claude and Gemini",
+      "Google A2A protocol takes center stage at Cloud NEXT '26",
+      "Developers cut AI costs to zero using local open-source AI",
+      "Community fears runaway API bills from autonomous agents",
+      "Security concerns rise as AI becomes invisible infra",
+      "Developers seek Claude Code alternatives to slash spending"
+    ]
+  }
+}
