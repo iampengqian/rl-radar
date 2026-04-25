@@ -63,6 +63,76 @@ export interface RepoFetch {
 }
 
 // ---------------------------------------------------------------------------
+// GitHub API concurrency limiter — prevents secondary rate limits when many
+// repos are tracked in parallel. Same slot + pacing pattern as the LLM limiter
+// in report.ts, but retries must release slots while backing off.
+// ---------------------------------------------------------------------------
+
+const DEFAULT_GH_CONCURRENCY = 10;
+const DEFAULT_GH_MIN_INTERVAL_MS = 200;
+const GH_MAX_RETRIES = 3;
+const GH_RETRY_BASE_MS = 10_000; // 10 s, 20 s, 40 s
+
+function readPositiveInt(value: string | undefined, fallback: number): number {
+  if (!value) return fallback;
+  const parsed = Number.parseInt(value, 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+const GH_CONCURRENCY = readPositiveInt(process.env["GITHUB_API_CONCURRENCY"], DEFAULT_GH_CONCURRENCY);
+const GH_MIN_INTERVAL_MS = readPositiveInt(
+  process.env["GITHUB_API_MIN_INTERVAL_MS"],
+  DEFAULT_GH_MIN_INTERVAL_MS,
+);
+
+let ghSlots = GH_CONCURRENCY;
+const ghQueue: Array<() => void> = [];
+let ghNextAllowedAt = 0;
+let ghPacingTail = Promise.resolve();
+
+async function acquireGhSlot(): Promise<void> {
+  if (ghSlots > 0) {
+    ghSlots--;
+    return;
+  }
+  return new Promise((resolve) => ghQueue.push(resolve));
+}
+
+function releaseGhSlot(): void {
+  const next = ghQueue.shift();
+  if (next) {
+    next();
+  } else {
+    ghSlots++;
+  }
+}
+
+async function waitForGhPacing(): Promise<void> {
+  const prior = ghPacingTail;
+  let release!: () => void;
+  ghPacingTail = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await prior;
+  try {
+    const wait = Math.max(0, ghNextAllowedAt - Date.now());
+    if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
+    ghNextAllowedAt = Date.now() + GH_MIN_INTERVAL_MS;
+  } finally {
+    release();
+  }
+}
+
+function getRetryDelayMs(resp: Response, attempt: number): number {
+  const retryAfter = resp.headers.get("retry-after");
+  if (retryAfter) {
+    const seconds = Number.parseInt(retryAfter, 10);
+    if (Number.isFinite(seconds) && seconds > 0) return seconds * 1000;
+  }
+  return GH_RETRY_BASE_MS * 2 ** attempt;
+}
+
+// ---------------------------------------------------------------------------
 // Internals
 // ---------------------------------------------------------------------------
 
@@ -80,9 +150,35 @@ function headers(): Record<string, string> {
 async function githubGet<T>(url: string, params: Record<string, string> = {}): Promise<T> {
   const u = new URL(url);
   for (const [k, v] of Object.entries(params)) u.searchParams.set(k, v);
-  const resp = await fetch(u.toString(), { headers: headers() });
-  if (!resp.ok) throw new Error(`GitHub API error ${resp.status} (${url}): ${await resp.text()}`);
-  return resp.json() as Promise<T>;
+  const fullUrl = u.toString();
+
+  for (let attempt = 0; ; attempt++) {
+    await acquireGhSlot();
+    let released = false;
+    try {
+      await waitForGhPacing();
+      const resp = await fetch(fullUrl, { headers: headers() });
+      if (!resp.ok) {
+        const body = await resp.text();
+        const isSecondaryLimit = resp.status === 403 && body.includes("secondary rate limit");
+        const isRateLimit = resp.status === 429 || isSecondaryLimit;
+        if (isRateLimit && attempt < GH_MAX_RETRIES) {
+          releaseGhSlot();
+          released = true;
+          const wait = getRetryDelayMs(resp, attempt);
+          console.warn(
+            `[github] Rate limit hit (${url}) — retry ${attempt + 1}/${GH_MAX_RETRIES} in ${wait / 1000}s...`,
+          );
+          await new Promise((resolve) => setTimeout(resolve, wait));
+          continue;
+        }
+        throw new Error(`GitHub API error ${resp.status} (${url}): ${body}`);
+      }
+      return (await resp.json()) as T;
+    } finally {
+      if (!released) releaseGhSlot();
+    }
+  }
 }
 
 async function fetchItemPage(
