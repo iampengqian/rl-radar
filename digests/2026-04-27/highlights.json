@@ -63,6 +63,14 @@
       "GPT Image 2实战：一键生成交互式360度全景图",
       "2026必知的5大MCP服务器，极速扩展AI数据边界",
       "Lobsters深度反思：警惕氛围编程与AI零日漏洞"
+    ],
+    "ai-weekly": [
+      "GPT-5.5发布，SWE-bench基准测试宣告失效",
+      "Anthropic陷安全风波：Mythos曝271个零日漏洞",
+      "开源军团爆发：free-claude-code狂揽数千Star",
+      "Claude Code承认降智：优化延迟导致代码能力下滑",
+      "OpenAI企业级组合拳：Workspace Agents全面收割ToB",
+      "OpenClaw疯狂迭代：日均合并超300个PRs"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Developers analyze thousands of Claude usage habits.",
       "Communities debate the reality of imminent AI dooms.",
       "Building custom slash commands for Claude Code surges."
+    ],
+    "ai-weekly": [
+      "Anthropic admits Claude Code quality drop is UI and context.",
+      "GPT-5.5 launches as OpenAI says SWE-bench is maxed out.",
+      "Anthropic inks 5-Gigawatt, $100B AWS cloud mega-deal.",
+      "Anthropic valuation smashes $1 trillion on secondary markets.",
+      "'Free Claude Code' tools bypassing limits explode on GitHub.",
+      "'Mythos' AI model uncovers 271 zero-day vulnerabilities."
     ]
   }
 }
