@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex v0.126.0-alpha.3 发布，GPT-5.5 适配致压缩全崩",
+      "Claude Code 计费现幽灵扣费与路由错误，多智能体频崩溃",
+      "AST感知与MCP协议成标配，AI CLI向生产力工具跨越",
+      "Kimi Code落地Git Worktree架构，探索Tauri桌面端",
+      "OpenCode发v1.14.26修内存泄漏，原生支持AST编辑",
+      "Pi与Qwen齐发力：攻克本地断连与终端API计费痛点"
+    ],
+    "ai-agents": [
+      "OpenClaw 连发4版测试版，全面重构TTS语音系统",
+      "新增小米、火山引擎等6大TTS供应商，含声音情绪控制",
+      "社区单日狂飙500个PR，核心团队火速合并109个",
+      "Web UI迎大修：修复非英语环境硬编码与本地化问题",
+      "修复符号链接致执行审批路径验证的严重安全回归",
+      "全力进击：向多模态与有情绪感知的个人AI助手演进"
+    ],
+    "ai-trending": [
+      "ollama率先支持Kimi-K2.5等最新前沿模型",
+      "CUA沙箱项目单日暴涨200星，GUI自动化走向成熟",
+      "微软用Go重写TypeScript解释器，引爆LLM工具链革命",
+      "字节开源deer-flow：长周期复杂任务SuperAgent框架",
+      "Claude Code技能编排系统斩获超16.7万星",
+      "阿里开源AI Agent安全沙箱，解决底层执行隐患"
+    ],
+    "ai-hn": [
+      "OpenAI官宣：SWE-bench基准已失效，无法测前沿代码",
+      "开发者质疑Claude Opus 4.7遭暗中削弱，引安全焦虑",
+      "Linux内核出AI查虫机器人，纯本地端侧大模型落地",
+      "AI记忆引入生物遗忘曲线，52%召回率破工程瓶颈",
+      "Semble专为Agent设计，近Transformer精度的极速搜码",
+      "反思人类主导权：AI究竟是提升还是取代人类思考？"
+    ],
+    "rl-daily": [
+      "RL后训练成绝对重心，占据大模型生态90%活跃度",
+      "TRL发v1.3.0，火速跟进Qwen3.6并打磨算法严谨性",
+      "颠覆PPO统治：verl等密集引入DAPO等新策略损失",
+      "AReaL攻坚异构算力，深度解耦Agent推理国产NPU",
+      "前沿算法落地极快，DAPO等新算法24小时内转PR",
+      "经典框架Gymnasium维稳，专注API与CI链路治理"
+    ],
+    "agent-orch": [
+      "Claude Squad领衔，45个编排项目重塑Agent协作网",
+      "Crystal与dmux发力，多智能体任务拆解走向标准化",
+      "OpenKanban爆火，用可视化看板解决AI团队协同",
+      "Claude Flow打通任督二脉，构建多模型通信网络",
+      "HumanLayer引关注：为人机协作注入审批与安全机制",
+      "Superset受捧，一键编排海量Agent的底层调度基座"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro登顶，携最强文本与对话能力霸榜",
+      "Google gemma-4-31B视觉模型狂揽600万周下载",
+      "Qwen3.6-35B仅激活3B参数，MoE架构掀起效率革命",
+      "GLM-5.1成MoE新力作，下载量超23万验证高实用性",
+      "Kimi-K2.6多模态大作开源，强势跻身热榜前列",
+      "社区蒸馏Claude Opus推理模型，开源反哺势头猛烈"
+    ],
+    "ai-community": [
+      "OpenClaw挑战赛席卷Dev.to，探索Agent安全部署",
+      "Claude Code自定义斜杠命令实战：重塑工作流",
+      "限制AI自由度反能提升代码质量，揭示约束悖论",
+      "GPT Image 2实战：一键生成交互式360度全景图",
+      "2026必知的5大MCP服务器，极速扩展AI数据边界",
+      "Lobsters深度反思：警惕氛围编程与AI零日漏洞"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLIs shifting from interactive to autonomous runtimes.",
+      "OpenCode v1.14.26 and Qwen Code v0.15.3 released.",
+      "OpenAI Codex issues new rust-v0.126.0-alpha.3 build.",
+      "Ecosystem pushing aggressive refactoring for enterprise.",
+      "Developers racing to fix context window compaction bugs.",
+      "New tools focus on unattended execution and HTTP APIs."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 new issues and PRs in 24 hours.",
+      "Low closure rates indicate a maintainer bottleneck.",
+      "OpenClaw releases four new betas in a single day.",
+      "New updates introduce massive TTS and voice upgrades.",
+      "Agentscope-ai, NetEase, and Moonshot launch new tools.",
+      "Projects focus heavily on multi-platform integrations."
+    ],
+    "ai-trending": [
+      "Open-source shifts to autonomous, local coding agents.",
+      "trycua/cua hits 14k stars, adding 200 in one day.",
+      "New vectorless reasoning-based RAG paradigm emerges.",
+      "gastownhall/beads launches as an agent memory upgrade.",
+      "Community builds free interfaces for paid AI assistants.",
+      "ollama remains the backbone of local model movement."
+    ],
+    "ai-hn": [
+      "OpenAI declares SWE-bench Verified no longer effective.",
+      "Community debates diminishing returns of AI benchmarks.",
+      "Engineers demand better architecture before AI code.",
+      "Neal Stephenson offers deep reflections on AI future.",
+      "Users anxious over quiet nerfs to Claude Opus 4.7.",
+      "Hype grows around the upcoming Musk vs. Altman trial."
+    ],
+    "rl-daily": [
+      "Post-training and LLM alignment frameworks see hyper-growth.",
+      "Classic RL environments mature into stable maintenance.",
+      "Industry pivots to RLHF/GRPO over classic agent research.",
+      "Top projects race to support complex reasoning models.",
+      "Frameworks adding massive distributed compute backends.",
+      "Standard single-agent algorithm libraries stall out."
+    ],
+    "agent-orch": [
+      "Agent orchestrators pivot to autonomous dev workflows.",
+      "Claude Squad, Crystal, and Symphony lead in activity.",
+      "Massive ecosystem expansion with 45 projects covered.",
+      "Developers seek standard protocols for agent swarms.",
+      "AutoGPT, CrewAI, and LangChain see new integrations.",
+      "Kanban boards become popular for AI agent management."
+    ],
+    "ai-hf": [
+      "Qwen3.6 and DeepSeek-V4 top the Hugging Face charts.",
+      "Google's new Gemma-4 model captures developer attention.",
+      "Uncensored and abliterated model variants see explosion.",
+      "Mixture-of-Experts architecture dominates this week.",
+      "DeepSeek-V4-Pro-Base highly sought for custom tuning.",
+      "Aggressive model compression enables local vision LLMs."
+    ],
+    "ai-community": [
+      "Dev.to flooded with OpenClaw Challenge hackathon posts.",
+      "Enterprise-grade access control deemed non-negotiable.",
+      "Constraining AI agents paradoxically yields better code.",
+      "Developers analyze thousands of Claude usage habits.",
+      "Communities debate the reality of imminent AI dooms.",
+      "Building custom slash commands for Claude Code surges."
+    ]
+  }
+}
