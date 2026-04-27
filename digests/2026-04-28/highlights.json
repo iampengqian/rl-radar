@@ -1,0 +1,145 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 向全生命周期 Agent 平台演进，长上下文与沙箱成壁垒",
+      "GitHub Copilot 遭大量投诉，Agent 陷入死循环耗尽高级配额",
+      "OpenAI Codex 单日连发4个 Alpha 底层迭代，攻坚极限上下文",
+      "OpenCode 连发2个稳定版，率先全面接入前沿模型 GPT-5.5",
+      "Claude Code 遭遇 TUI 渲染致命错误与回归 Bug 困扰",
+      "Qwen Code 发版支持 DeepSeek V4，重构后台任务系统"
+    ],
+    "ai-agents": [
+      "OpenClaw 日均处理 500 个 PR，版本闭环率高达 31.4%",
+      "OpenClaw v2026.4.25史诗级升级，TTS 全面支持火山等引擎",
+      "极速迭代引发布局阻塞与消息重注入，社区正紧急 Hotfix",
+      "PR#73034 修复 trusted-proxy 模式鉴权阻断本地服务问题",
+      "核心团队展现极强响应力，单日成功关闭 157 条 Issue",
+      "OpenClaw 正面硬刚高频迭代带来的前端 UI 渲染回归 Bug"
+    ],
+    "ai-trending": [
+      "skills 单日狂揽 5551 Star，AI 编程配置走向即插即用",
+      "free-claude-code 爆火，打破顶级 CLI 编程工具使用门槛",
+      "trycua/cua 强势登榜，让 AI 像人一样控制桌面系统",
+      "ollama 全面支持 GLM-5、Kimi-K2.5 等最新前沿模型",
+      "微软开源前沿语音工具 VibeVoice，直击自然交互痛点",
+      "阿里 OpenSandbox 上榜，为工具调用提供极速隔离空间"
+    ],
+    "ai-web": [
+      "OpenAI 一日连发三大信号， Anthropic 保持静默",
+      "开源 Codex Orchestration，多智能体协同编排框架来了",
+      "微软与 OpenAI 结束独家收入分成，迈入合作新阶段",
+      "OpenAI 重申公司治理原则，重新锚定底层企业价值观",
+      "AI 巨头重心转移，从单模型跨越到复杂工作流编排",
+      "OpenAI 商业护城河显现，开源生态与商业变现双管齐下"
+    ],
+    "ai-hn": [
+      "Claude 编程 Agent 9秒误删公司数据库，引爆安全反思",
+      "OpenAI 与微软结束独家收入分成协议，利益分配生变",
+      "Musk 与 Altman 世纪诉讼开庭，AI 地缘政治引担忧",
+      "DeepMind 发文从根本上否定 LLM 产生意识的可能性",
+      "微软警告 LLM 处理文档会导致数据损坏",
+      "开源 GPU 监控工具 Utilyze 凭精准直击算力成本痛点爆火"
+    ],
+    "rl-daily": [
+      "veRL 集中攻坚 Ascend NPU，剑指 200B+ 模型国产化",
+      "AReaL 极速响应 DeepSeek-V4，死磕长时训练 OOM 痛点",
+      "生态跨越式升级：RL 全面转向超大规模分布式基础设施",
+      "OpenRLHF 解绑 DeepSpeed，精细化支持 Qwen3 思维链",
+      "ROCK 修复 Ray 集群顽疾，发力企业级容错与 Serverless",
+      "基座项目 Gymnasium 完善类型注解，发力静态分析"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 登顶，以绝对优势斩获今日 Hugging Face 点赞榜第一",
+      "Qwen3.6 仅激活3B参数斩获百万下载，MoE 架构效率惊人",
+      "Gemma-4 凭借 600 万+下载量称霸多模态模型生态",
+      "MiniMax-M2.7 千亿级参数模型发布，下载口碑双丰收",
+      "社区“越狱”成风，基于 Qwen3.6 去审查模型爆发式增长",
+      "大厂跨界对战，腾讯 Hy3-preview 亮相文本生成基座赛道"
+    ],
+    "ai-community": [
+      "AI Agent 遭遇冷水：误删生产资源后果极其严重",
+      "9 天连发 5 个大模型，这份极限迁移指南帮你砍半成本",
+      "MEMORY.md 满篇输入？揭秘如何构建非噪音的 AI 记忆",
+      "HNSW 算法解密：如何在几秒内搜索数十亿级向量数据",
+      "打破“省 Token 就是省钱”迷思，重新定义 Token 经济学",
+      "Lobste.rs 激辩隐形水印破解与 Transformer 底层机制"
+    ],
+    "agent-orch": [
+      "报告内容被截断，无有效实质性亮点可供提取。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools are evolving into agentic coding environments.",
+      "OpenAI Codex is overhauling core internals and cloud execution.",
+      "Gemini CLI and Kimi Code focus on stability and memory.",
+      "Claude Code faces TUI freezing bugs and API regressions.",
+      "New tools focus on autonomous execution and AST comprehension.",
+      "Opaque billing and fragile TUIs cause growing pains."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs updated in 24 hours.",
+      "OpenClaw's rapid development is outpacing its review capacity.",
+      "OpenClaw v2026.4.25 introduces massive TTS and voice upgrades.",
+      "New release adds chat-scoped auto-TTS and persona controls.",
+      "Azure Speech, Xiaomi, and Volcengine added as new providers.",
+      "Aggressive release cycle causes high-severity regressions."
+    ],
+    "ai-trending": [
+      "Agentic coding tools extending Claude Code explode in growth.",
+      "Everything-claude-code hits 168k stars for agent optimization.",
+      "Ollama hits 170k stars for running local LLMs efficiently.",
+      "Microsoft open-sources VibeVoice frontier Voice AI framework.",
+      "Ds2api converts Deepseek protocols into universal API formats.",
+      "AI agents shift to having persistent memory for repositories."
+    ],
+    "ai-web": [
+      "OpenAI pushes 3 new articles; Anthropic remains silent.",
+      "OpenAI teases Open Source Codex Orchestration Symphony.",
+      "OpenAI details the next phase of Microsoft partnership.",
+      "OpenAI publishes Our Principles amid rapid commercialization.",
+      "Anthropic zero releases may hint at a major upcoming model.",
+      "Asymmetrical releases show divergent corporate strategies."
+    ],
+    "ai-hn": [
+      "Microsoft-OpenAI exclusive revenue-sharing deal ends.",
+      "Elon Musk vs Sam Altman high-stakes lawsuit begins.",
+      "Claude agent accidentally wipes a company database in seconds.",
+      "Google DeepMind paper argues LLMs will never be conscious.",
+      "CinemaCLIP tunes foundation models for cinematic language.",
+      "Community skeptical of AI reliability and corporate billing."
+    ],
+    "rl-daily": [
+      "LLM post-training frameworks drive massive RL ecosystem split.",
+      "Verl undergoes architectural refactors for multi-turn agents.",
+      "AReaL focuses on VLM memory fixes and next-gen inference.",
+      "RL ecosystem forms distinct two-tier activity structure.",
+      "Traditional RL libraries drop to minimal feature activity.",
+      "Large-scale RLHF/GRPO frameworks dominate project activity."
+    ],
+    "agent-orch": [
+      "Agentic workflows drive rapid iteration in orchestration.",
+      "Symphony leads as a major OpenAI orchestration release.",
+      "Claude Squad and Claude Flow extend Anthropic's ecosystem.",
+      "Agent orchestrators pivot to support complex multi-agents.",
+      "45 projects tracked in the rapidly expanding ecosystem.",
+      "AutoGPT and CrewAI face new niche competitor frameworks."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro takes the weekly lead with 3000+ likes.",
+      "Qwen3.6 and DeepSeek-V4 shift to native multimodal designs.",
+      "Gemma-4-31B-it surpasses 6.3 million sheer downloads.",
+      "Uncensored abliterations and Opus distillations surge.",
+      "DeepSeek-V4-Flash offers MIT-licensed rapid deployment.",
+      "GLM-5.1 utilizes a novel Mixture-of-Experts architecture."
+    ],
+    "ai-community": [
+      "AI engineering shifts from AI-assisted to fully AI-driven.",
+      "Token optimization forces structured prompt engineering.",
+      "Feeding full context every turn creates noise, not memory.",
+      "Moving AI to production requires robust error handling.",
+      "Engineers seek sustainable models amid frontier price cuts.",
+      "Developers urge caution regarding agentic AI consequences."
+    ]
+  }
+}
