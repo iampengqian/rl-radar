@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 全面转向企业级，上下文工程成核心竞争点",
+      "OpenAI Codex v0.126.0-alpha 重磅重构 Rust 底层架构",
+      "Kimi Code CLI v1.40.0 推全自动模式与审批流生命周期",
+      "Token 静默燃烧引焦虑，社区呼吁增加计费透明度",
+      "Qwen Code v0.15.4 支持后台任务并发与会话热重载",
+      "Gemini CLI v0.40.0 引入 AST 感知与 Sub-agent 架构"
+    ],
+    "ai-agents": [
+      "OpenClaw 日更逾千条，新版本发布即遇路由兼容回归",
+      "v2026.4.26 发布：引入浏览器实时语音网关中继支持",
+      "重大进展：Linux 原生应用通过 GTK 补齐跨平台短板",
+      "多通道适配：Slack 路由与 iMessage 反应过滤获修复",
+      "Agent 稳定性提升：修复计划任务误触发与内存泄漏",
+      "新增 468 个 Issue 亟待收敛，项目处于高输入高积压态"
+    ],
+    "ai-trending": [
+      "mattpoclock/skills 空降榜首，提供 Claude 开箱即用技能",
+      "free-claude-code 热度破千，社区渴望“免费白嫖”方案",
+      "vllm 稳坐开源推理引擎基石，Star 数逼近 8 万",
+      "AutoGPT 持续领跑 Agent 赛道，Star 数超 18 万",
+      "字节开源 deer-flow，主打长程 SuperAgent 架构",
+      "无向量检索(Vectorless RAG)等前沿架构进入热门视野"
+    ],
+    "ai-web": [
+      "Claude 深度进军创意软件，发布 Adobe/Autodesk 专属连接器",
+      "OpenAI on AWS 页面上线，揭秘巨头算力与分发结盟",
+      "Anthropic 强化选举安全，通过“宪法AI”确保政治中立",
+      "Anthropic 加速 ToB 扩张，正式于悉尼设立新分部",
+      "前 Snowflake 高管出任 Anthropic 澳新地区总经理",
+      "Claude 价值转移：从文本生成到消除专业软件重复劳动"
+    ],
+    "ai-hn": [
+      "Claude 接管社区正面注意力，估值反超陷入风波的 OpenAI",
+      "AI 智能体 9 秒误删公司数据库，自动化安全引热议",
+      "开发者集中反馈 Claude Code 代码质量疑似暗中降级",
+      "开发者用 MCP 协议让 ChatGPT 和 Claude 运行《毁灭战士》",
+      "开源工具实现 AI 智能体后台操控 macOS 不干扰前台",
+      "未达营收目标与高管负面，社区热议 AI 泡沫或将破裂"
+    ],
+    "rl-daily": [
+      "RLHF 演进：后训练重心转向超大规模集群显存与通信压榨",
+      "VeRL 狂揽 26 PR，攻坚 400B 级超大 MoE 模型训练",
+      "AReaL 推进多模态分布式，深入异构算力调度与容错",
+      "TRL 极致优化 SFT 显存，推进多模态模板标准化",
+      "ROLL 加速适配昇腾 NPU，探索底层权重同步新架构",
+      "Gymnasium 停止业务迭代，转入静态类型系统严格化重构"
+    ],
+    "ai-arxiv": [
+      "突破架构瓶颈：低成本将现有 Transformer 升级为长上下文混合模型",
+      "DepthKV：依赖层级的剪枝策略解决超长上下文显存膨胀",
+      "前沿防备：评估前沿 AI 模型是否会主动破坏 AI 安全研究",
+      "揭示多智能体模拟中普遍存在的“人格崩溃”与同质化现象",
+      "提出基于上下文动态调整干预强度的模型激活引导新方法",
+      "自适应运行时治理：解决无法观测状态下的自主智能体失控"
+    ],
+    "ai-hf": [
+      "Qwen3.6 系列全面爆发，多模态能力成开源标配",
+      "DeepSeek-V4-Pro 旗舰对话模型空降榜首，获赞超 3 千",
+      "Google Gemma-4-31B-it 多模态模型下载量超 650 万霸榜",
+      "GLM-5.1 首次亮相，全新一代 MoE 对话大模型引关注",
+      "腾讯开源 HY-World-2.0，进军图像到 3D 世界生成",
+      "百度 ERNIE-Image 开源 80 亿参数的文心图文生图模型"
+    ],
+    "ai-community": [
+      "Google Cloud NEXT 大会催化，多智能体系统成焦点",
+      "Copilot 转 Token 计费敲警钟，重度使用者面临成本暴增",
+      "AI 应用 OAuth 权限泛滥致 Vercel 遭遇严重数据泄露",
+      "实战分享：如何用 Gemini CLI 编排复杂的 RAG 系统迁移",
+      "深度解析 GoClaw：构建多租户 AI 智能体平台的核心指南",
+      "反思 LLM 极限：开发者探讨模型自我改进与底层量化机制"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to fully autonomous multi-agent workflows.",
+      "Token costs and context fragmentation cause systemic growing pains.",
+      "Claude Code v2.1.122 battles cost inflation and plugin bugs.",
+      "OpenAI Codex Rust v0.126.0 hits Linux with 3 alpha builds.",
+      "Vendors race for enterprise readiness with permission guardrails.",
+      "Community converges on AGENTS.md open standard for interoperability."
+    ],
+    "ai-agents": [
+      "OpenClaw faces massive 500-issue backlog outpacing its team.",
+      "OpenClaw v2026.4.26 introduces Google Live realtime voice.",
+      "Realtime voice release triggers critical channel runtime regressions.",
+      "500 PRs updated in 24 hours show massive community velocity.",
+      "OpenClaw struggles to maintain stability across messaging channels.",
+      "Project enters rapid feature expansion despite severe bug backlog."
+    ],
+    "ai-trending": [
+      "Claude Code agentic workflows spark massive tooling surge.",
+      "Agent harness 'everything-claude-code' reaches 169,271 stars.",
+      "Ollama hits 170k stars running Kimi-K2.5 and DeepSeek locally.",
+      "High-performance DeepSeek API gateway gains massive traction.",
+      "Open-source focus shifts to agent memory and zero-server RAG.",
+      "Infrastructure optimizes for sandboxed agent environments."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude for Creative Work with Adobe ties.",
+      "OpenAI deepens strategic cloud partnership with Amazon Web Services.",
+      "AI frontier shifts to deep ecosystem and industry integration.",
+      "Claude integrates natively with Blender and Autodesk software.",
+      "Anthropic expands global presence and election safeguards.",
+      "Creative software connectors automate production drudgery."
+    ],
+    "ai-hn": [
+      "Hacker News buzzes with skepticism over OpenAI revenue targets.",
+      "Report claims Claude AI agent deletes company's database.",
+      "Anthropic sponsors open-source 3D creation suite Blender.",
+      "Viral DOOM implementation released via Model Context Protocol.",
+      "OpenAI and AWS deepen frontier model enterprise integration.",
+      "Global geopolitical tensions over AI intellectual property escalate."
+    ],
+    "rl-daily": [
+      "LLM alignment RLHF projects experience explosive development.",
+      "Classic decision-science RL libraries remain completely dormant.",
+      "Industry pivots to large-scale distributed training infrastructure.",
+      "verl tackles extreme-scale MoEs and Ascend NPU support.",
+      "TRL pushes memory optimization and PEFT standardization.",
+      "AReaL adds fault tolerance and inference/training decoupling."
+    ],
+    "agent-orch": [
+      "Orchestration ecosystems rapidly expand multi-agent systems.",
+      "Claude Flow and Claude Squad lead agent orchestration tools.",
+      "AutoGPT and MetaGPT drive autonomous agent frameworks.",
+      "Agent Orchestrator coordinates complex AI workflow pipelines.",
+      "Developers seek robust orchestration for production agents.",
+      "Swarm Protocol and ORCH advance decentralized agent routing."
+    ],
+    "ai-arxiv": [
+      "ArXiv papers highlight maturation in AI safety and governance.",
+      "Long-Context Aware Upcycling converts Transformers to hybrids.",
+      "DepthKV introduces layer-dependent KV cache pruning for LLMs.",
+      "Contextual Linear Activation Steering improves LLM control.",
+      "Researchers address runtime governance for autonomous agents.",
+      "New benchmarks test scientific discovery loops in gaming."
+    ],
+    "ai-hf": [
+      "Qwen 3.6 and DeepSeek-V4 models dominate Hugging Face charts.",
+      "DeepSeek-V4-Pro tops popularity with 174,402 downloads.",
+      "GLM-5.1 utilizes novel MoE and dynamic sparse attention.",
+      "DeepSeek-V4-Flash released under highly permissive MIT license.",
+      "Google's Gemma 4 family captures millions of downloads.",
+      "Trend shifts to advanced MoE architectures for local execution."
+    ],
+    "ai-community": [
+      "Developers shift from theoretical AI to production agents.",
+      "GitHub Copilot switches to usage-based billing on June 1.",
+      "50ms database delays found to completely break AI agent UX.",
+      "A single Opus agent session can blow through a $10 sub.",
+      "Google Cloud NEXT '26 catalyzes multi-agent orchestration.",
+      "Technical critiques warn LLMs cannot self-improve to Singularity."
+    ]
+  }
+}
