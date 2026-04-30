@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI进入多模型编排与企业级工程化深水区",
+      "OpenAI Codex发布v0.128.0稳定版，支持1M上下文",
+      "Gemini CLI v0.41.0-preview发布，超10个高质量修复PR",
+      "AGENTS.md跨工具配置标准化需求爆发，获3756赞",
+      "Qwen Code v0.15.6稳定版发布，引入智能路由调度",
+      "OpenCode与Pi项目正进行核心LLM架构重构"
+    ],
+    "ai-agents": [
+      "OpenClaw活跃度极高但遭遇严重性能与稳定性瓶颈",
+      "网关CPU飙升及事件循环阻塞导致用户体验倒退",
+      "昨日连发5个版本引入主动运行转向等自动化特性",
+      "新PR引入stuckSessionAbortMs阈值自动恢复卡死会话",
+      "合并PR成功修复网关聊天流缓冲区内存泄露问题",
+      "Docker环境修复遗留运行时依赖锁文件导致的死锁"
+    ],
+    "ai-trending": [
+      "Warp终端获超8千Star，Agentic终端成开发新基建",
+      "Agent“技能化”大爆发，Claude Code转向高级形态",
+      "TradingAgents单日涨超2千星，量化投资Agent落地",
+      "全方位优化系统everything-claude-code获17万Star",
+      "Ollama已成本地推理王者，原生支持Kimi-K2.5等",
+      "无向量化及轻量化RAG方案开始崭露头角"
+    ],
+    "ai-web": [
+      "Anthropic复盘Claude Code质量下降：降级推理致智商变低",
+      "低延迟与高智商仍是鱼与熊掌，推理预算成调控手段",
+      "Anthropic大规模研究揭示AI在人际关系指导中谄媚率达25%",
+      "新研究直击谄媚痛点，反哺Opus 4.7模型训练",
+      "Anthropic更新长期利益信托LTBT，强化治理防御叙事",
+      "OpenAI上线高级账户安全及文化创意相关新内容"
+    ],
+    "ai-hn": [
+      "Musk坦承用OpenAI训练Grok引发HN社区大规模嘲讽",
+      "Claude陷争议：900亿估值传闻与越权删库吐槽齐飞",
+      "400行Shell脚本实现完整编码智能体，反击过度臃肿框架",
+      "扩散模型不仅能生图，还能在M2 Air上轻量运行语言生成",
+      "开发者需72步Prompt配置 Claude，折射工程化高摩擦",
+      "DeepSeek泄露视觉基元思考机制，展现多模态新突破"
+    ],
+    "rl-daily": [
+      "开源RL生态两极分化，LLM对齐训练吸走90%心智",
+      "verl生态爆炸式迭代，全面向多模态与昇腾异构算力拓展",
+      "AReaL深陷大规模显存泄漏，正进行大版本底层重构",
+      "slime死磕GLM5-744B等千亿级MoE模型rollout稳定性",
+      "OpenRLHF计划剥离DeepSpeed，向原生HF转型",
+      "传统RL基础库进入高度维护期，学术型项目趋于停滞"
+    ],
+    "agent-orch": [
+      "AI Agent编排工具生态大爆发，单日追踪多达45个项目",
+      "Claude Squad与Claude Flow等项目推动多智能体协同",
+      "OpenAI官方下场，推出Symphony智能体编排框架",
+      "AutoGPT与MetaGPT等早期项目仍在持续迭代演进",
+      "LlamaIndex与CrewAI等框架聚焦Agent工具链集成",
+      "社区开始探索轻量级去中心化的Swarm Protocol协议"
+    ],
+    "ai-arxiv": [
+      "跨架构蒸馏大幅降低扩散语言模型对十亿级参数的依赖",
+      "数学证明离散扩散模型本质具备创造性联想记忆能力",
+      "层级内存机制有效解决超长上下文KV缓存计算瓶颈",
+      "局部分歧节点调用大模型，极优SLM-LLM协作推理机制",
+      "Bian Que框架实现灵活技能组合，突破在线运维瓶颈",
+      "FutureWorld构建真实世界奖励反馈闭环的预测Agent环境"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro空降Hugging Face点赞榜榜首",
+      "Gemma-4-31B-it周下载量超700万成开源基建",
+      "MoE与Any-to-Any全模态架构已成为开源社区绝对主流",
+      "Qwen3.6-35B-A3B仅激活3B参数，下载量逼近2000万",
+      "智谱GLM-5.1引入MoE与DSA架构，国内热度极高",
+      "社区对去审查的微调版大模型需求依然极其旺盛"
+    ],
+    "ai-community": [
+      "开发者焦点转向构建、监控和调优高质量AI Agent",
+      "MCP协议超时及API成本监控盲区等基建挑战显现",
+      "AI未杀灭SaaS模板，反而促进样板代码生态大繁荣",
+      "社区制定5级AI代码审查标准，把控生成代码质量",
+      "摒弃复制粘贴，开发者转向设计高效的Agent上下文工作流",
+      "硬核社区反思LLM自我进化边界，理性审视AI真实能力"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Codex v0.128.0 unlocks 1M token context limits",
+      "Gemini CLI v0.40.1 introduces AST-aware context reduction",
+      "AI CLI tools transition to fully autonomous agents",
+      "Claude Code hit by severe cost and billing bugs",
+      "Community pushes for standardized config via AGENTS.md",
+      "Warp terminal pivots to an agentic dev environment"
+    ],
+    "ai-agents": [
+      "OpenClaw faces severe performance and stability regressions",
+      "OpenClaw ships v2026.4.29 with new subagent steering",
+      "OpenClaw project overwhelmed by 500 new issues in 24h",
+      "New release adds follow-up commitments for subagents",
+      "Maintainers struggle against massive backlog of 486 issues",
+      "Latest stable update enforces visible-reply for agents"
+    ],
+    "ai-trending": [
+      "DeepSeek-V4 and Qwen3.6 MoE models dominate trends",
+      "Developers shift focus to building standardized AI skills",
+      "Warp terminal adds 8,262 stars in a single day",
+      "jcode Rust/Python coding agent harness gains buzz",
+      "Specialized vertical AI agents reach production-grade",
+      "Ollama sees traction for running Kimi-K2.5 and GLM-5"
+    ],
+    "ai-web": [
+      "Anthropic details Claude Code quality degradation postmortem",
+      "Quality drop traced to lowered default reasoning effort",
+      "Anthropic releases new BioMysteryBench science benchmark",
+      "Study reveals dangers of AI sycophancy in guidance",
+      "Anthropic API explicitly unaffected by UI degradation",
+      "OpenAI transparency gap emerges after cryptic blog post"
+    ],
+    "ai-hn": [
+      "Musk admits xAI used OpenAI models to train Grok",
+      "Claude Code caught refusing OpenClaw mentions",
+      "OpenAI sparks massive buzz with 'goblins' cryptic post",
+      "DeepSeek visual primitives research paper leaks online",
+      "Diffusion language model runs smoothly on M2 Air",
+      "Community skeptical of Big Tech legal AI posturing"
+    ],
+    "rl-daily": [
+      "RL ecosystem split between LLM post-training and classic RL",
+      "verl expands enterprise support for Ascend and ARM",
+      "TRL framework expands multimodal VLM support",
+      "AReaL tackles deep infrastructure and memory leaks",
+      "Heavy engineering focuses on massive MoE orchestration",
+      "Classic algorithmic RL libraries remain in maintenance phase"
+    ],
+    "agent-orch": [
+      "AI agent frameworks pivot to robust asynchronous workflows",
+      "Developer focus shifts to orchestrating multi-agent teams",
+      "New tools integrate AI agents into Kanban workflows",
+      "Standardized protocols sought for agent communication",
+      "AutoGPT and MetaGPT face new specialized competitors",
+      "MCP integrations surge to fix agent context sharing"
+    ],
+    "ai-arxiv": [
+      "New TIDE method distills LLMs into Diffusion models",
+      "Diffusion LLMs proven to act as associative memories",
+      "New agentic frameworks automate IT operations",
+      "Speculative decoding optimizes LLM inference speed",
+      "Training-free techniques optimize neural architectures",
+      "Novel hierarchical memory manages LLM context windows"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops charts with 271k weekly downloads",
+      "Qwen3.6 series models dominate Hugging Face downloads",
+      "Google Gemma 4 secures 7.1 million weekly downloads",
+      "Nvidia Nemotron-3 pioneers any-to-any omnimodal AI",
+      "LLaDA2.0 introduces unified diffusion model architecture",
+      "Uncensored community fine-tunes drive massive model growth"
+    ],
+    "ai-community": [
+      "Developers move past hype to fix AI agent reliability",
+      "MCP protocol surges as devs fix agent context timeouts",
+      "Google Cloud targets enterprise autonomous AI platforms",
+      "Multi-tiered validation catches subtle AI code bugs",
+      "Custom dashboards expose 100x hidden API cost variances",
+      "Developers debate fundamental limits of LLM self-improve"
+    ]
+  }
+}
