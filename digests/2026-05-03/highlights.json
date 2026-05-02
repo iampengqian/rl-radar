@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 强呼 1M 上下文，底层正进行大规模架构重构。",
+      "Copilot CLI 遭吐槽：推理等级控制失效，频发底层并发死锁。",
+      "OpenCode 连发 v1.14.32/33，核心架构全面迁移解耦生命周期。",
+      "Pi 扩展发 v0.72 版，原生支持图像生成与小米 MiMo 模型。",
+      "Qwen Code 推 v0.15.6-nightly，全面修复 DeepSeek 兼容性。",
+      "Claude Code 深陷 Auto 模式安全越界与高昂计费异常争议。"
+    ],
+    "ai-agents": [
+      "OpenClaw 日更 500+ Issues，社区集中爆发性能回归严重问题。",
+      "OpenClaw 发布 v2026.5.2-beta.2，全面增强外部插件安装机制。",
+      "控制面板大升级：新增 TTS 开关与服务端麦克风听写功能。",
+      "严重 Bug 预警：会话历史修复逻辑曾误删合法的助手回复。",
+      "受限配置 Bug 修复：解决了插件工具无法被正确调用的痛点。",
+      "高优修复：大幅降低 WebUI 会话延迟抖动，优化核心体验。"
+    ],
+    "ai-trending": [
+      "TradingAgents 日增超两千星，登顶 GitHub 全站第一。",
+      "Ruflo 惊艳全场，成专为 Claude 打造的多智能体群集编排平台。",
+      "ollama 生态已成基石，现已全面支持 Kimi-K2.5 等前沿模型。",
+      "jcode 成新晋热门，AI 编程底层编排架构成开发者新战场。",
+      "无向量 RAG 架构引关注，底层基础设施正迎来升级潮。",
+      "deer-flow 星破六万，展示长周期复杂任务的 Agent 编排能力。"
+    ],
+    "ai-hn": [
+      "Agent-desktop 登顶，原生桌面操作系统级自动化 CLI 成焦点。",
+      "Mljar Studio：将本地 AI 数据分析无缝保存为 Jupyter 笔记本。",
+      "纯客户端运行，完美利用 LLM Tool Calling 解决复杂 PDF 填表。",
+      "2026 年本地大模型神机怎么选？Mini PC 极限性能引发热议。",
+      "Gary Marcus 犀利锐评：大名鼎鼎的怀疑论者被 Claude 愚弄了。",
+      "Anthropic 传估值超 9000 亿美元，AI 泡沫论再次甚嚣尘上。"
+    ],
+    "rl-daily": [
+      "后训练与 RLHF 生态繁荣，大模型对齐工具占据核心开发活动。",
+      "OpenRLHF 重大演进：正尝试剥离 DeepSpeed 拥抱 HF 原生生态。",
+      "AReaL 攻坚战：集中突破 MoE 路由对齐与检查点通信压缩。",
+      "verl 重构分布式逻辑，强势整合 TRT-LLM 作为推理后端。",
+      "研究新风向：Open Instruct 引入离线策略修正统一接口。",
+      "Gymnasium 核心重构：向量化环境引入静态类型提升鲁棒性。"
+    ],
+    "agent-orch": [
+      "Ruflo 支持分布式调度与企业级 RAG 集成，成今日最热项目。",
+      "Claude Flow 现已成为编排生态中备受瞩目的核心项目之一。",
+      "Symphony、AutoGen、CrewAI 等多框架持续角逐复杂任务编排。",
+      "Dorothy、Jean 等新兴项目，正探索更轻量级的工作流构建。",
+      "Agent Desktop 登榜，将 AI 控制权从网页延伸至原生桌面。",
+      "Vibe Kanban、OpenKanban 试图重塑看板式智能体任务管理。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 凭借卓越对话能力登顶 HF 本周点赞榜。",
+      "Google gemma-4-31B-it 炸裂登场，周下载量近 800 万。",
+      "Kimi-K2.6 支持高度压缩张量格式，下载量表现极为强劲。",
+      "小米 MiMo 登榜！主打 Agent 智能体与超长上下文处理能力。",
+      "Qwen3.6 掀起狂潮，开源社区全面展开量化与去审查微调。",
+      "蚂蚁集团推出 1 万亿参数级超大规模混合架构基础模型 Ling。"
+    ],
+    "ai-community": [
+      "AI Agent 表现受限于代码库质量，探讨如何打造对 AI 友好的 Repo。",
+      "抛弃提示词！用“契约”约束 AI 编程 Agent 解决任务偏移。",
+      "实战总结：基于 100 次部署经验分享生产级 MCP 工具编写指南。",
+      "AI Agent 公司的暗战：确定性工作流与智能体自主决策的博弈。",
+      "Vibe Coding 已过时？社区掀起以规范驱动 AI 开发的新思潮。",
+      "自托管实战：手把手教你用 Docker 部署 Agent 替代繁杂人工。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to autonomous, multi-agent environments",
+      "Open-source tools prioritize multi-model and IDE flexibility",
+      "Major AI CLI tools face an asynchronous delegation bottleneck",
+      "OpenAI Codex undergoes heavy internal refactoring",
+      "Top tools like Claude Code and Gemini CLI see no new releases",
+      "GitHub Copilot CLI lags with only 1 PR updated recently"
+    ],
+    "ai-agents": [
+      "OpenClaw faces massive backlog with 465 open issues",
+      "OpenClaw v4.29 causes severe user-reported regressions",
+      "OpenClaw v2026.5.2-beta.2 expands external plugin capabilities",
+      "NanoBot and Hermes Agent track 500 issues and PRs",
+      "OpenClaw bare package installs available via npm cutover",
+      "Maintainers struggle to triage immense OpenClaw activity"
+    ],
+    "ai-trending": [
+      "Agentic frameworks surge in the open-source landscape",
+      "ruflo emerges as a top enterprise-grade autonomous platform",
+      "TradingAgents introduces specialized financial trading AI",
+      "everything-claude-code sees explosive community growth",
+      "ollama remains top local inference engine with 170k stars",
+      "Advanced RAG and local inference drive infrastructure growth"
+    ],
+    "ai-hn": [
+      "Agent-desktop dominates for native task automation",
+      "Gary Marcus sparks fierce debate on the AI bubble",
+      "LLMs demonstrate dangerous steganography capabilities",
+      "Oscars officially ban AI-generated content",
+      "Dark-money campaigns frame Chinese AI as a threat",
+      "Developers crave practical AI workflows over raw models"
+    ],
+    "rl-daily": [
+      "Post-training RL for LLMs drives ecosystem development",
+      "TRL and OpenRLHF lead advanced model alignment efforts",
+      "RL libraries like Gymnasium enter mature maintenance phases",
+      "Projects focus on scaling infrastructure for RLHF workflows",
+      "CleanRL and PettingZoo see zero community activity",
+      "Classical deep RL shifts to typing and dependency fixes"
+    ],
+    "agent-orch": [
+      "Vibe coding shifts to robust agent orchestrator platforms",
+      "Claude Flow and Claude Squad lead AI agent orchestration",
+      "Mature orchestrators like AutoGPT and CrewAI evolve rapidly",
+      "Developers adopt graph-based context over traditional RAG",
+      "Ruflo and Symphony advance multi-agent system scaling",
+      "New tools provide deterministic contracts for AI agents"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops charts with 381k downloads",
+      "Gemma-4 fuels a massive leap in foundational models",
+      "Surging demand for abliterated, uncensored AI fine-tunes",
+      "Mixture of Experts replaces standard dense model layouts",
+      "Qwen-3.6 proves extreme parameters pair with efficiency",
+      "Any-to-any multimodal reasoning models dominate trends"
+    ],
+    "ai-community": [
+      "Developers pivot from vibe coding to production agents",
+      "AI coding agents depend more on repo structure than models",
+      "Self-hosted agents automate tedious publishing workflows",
+      "Hidden layers in AI architectures break production systems",
+      "Graph-based context overtakes traditional RAG pipelines",
+      "Sustainability and security remain top AI coding concerns"
+    ]
+  }
+}
