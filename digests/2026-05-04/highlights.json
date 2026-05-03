@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 工具全面进入多智能体编排深水区竞争",
+      "Qwen Code 发布 v0.15.6-nightly，为唯一更新版本工具",
+      "OpenCode 遭遇核心痛点：内存泄漏问题引 44 赞高度关注",
+      "社区痛点趋同：Windows 体验与沙箱隔离成攻坚重点",
+      "OpenAI Codex 霸榜 PR 活跃度，重构底层沙箱权限",
+      "Pi 修复进程挂死难题，极高活跃度推进多云模型适配"
+    ],
+    "ai-agents": [
+      "OpenClaw 日吞吐超千更新，保持极高社区活跃度",
+      "v2026.5.3-beta.2 发布：引入内置文件传输插件",
+      "新版本实施破坏性变更，采取节点路径默认拒绝策略",
+      "网关与代理热路径大幅精简，核心性能获显著提升",
+      "PR #43656 实现跨网关通信突破，解除多机部署限制",
+      "社区重心转向网关长时运行退化与子智能体编排优化"
+    ],
+    "ai-trending": [
+      "多智能体金融框架 TradingAgents 登顶热榜，单日增超 3 千星",
+      "Claude 编排平台 ruflo 增速抢眼，单日斩获 1834 颗星",
+      "Kimi K2.6 编程基准击败硅谷闭源顶尖模型引热议",
+      "DeepSeek-TUI 爆火，开发者对本地化命令行 AI 需求强烈",
+      "无向量推理型 RAG 架构兴起，挑战传统向量数据库地位",
+      "ollama 稳居生态核心，最新版已率先支持 GLM-5 等模型"
+    ],
+    "ai-hn": [
+      "中国开放权重模型 Kimi K2.6 编程能力反超顶尖大模型",
+      "OpenAI o1 急诊分诊诊断准确率碾压人类医生",
+      "学者道金斯陷入“AI具有意识”错觉引发社区警惕",
+      "Semble 推出极度省 Token 代码搜索机制直击成本痛点",
+      "OpenAI 与马斯克诉讼大戏开庭，行业格局震荡",
+      "Meta 被曝放弃开源 Llama 转向闭源引发社区争议"
+    ],
+    "rl-daily": [
+      "OpenRLHF 极速修复前沿模型 Qwen 3.5 权重兼容性",
+      "AReaL 引入推测解码机制，攻坚 RL 推理采样瓶颈",
+      "TRL 深度优化 VLM 显存管理，攻克长序列 OOM 难题",
+      "BAGEL 架构接入 verl，RL 渗透复杂图像生成领域",
+      "Open Instruct 引入 CPU-Adam 卸载降低 GRPO 硬件门槛",
+      "纯 RL 算法库进入维护期，基础设施成绝对重心"
+    ],
+    "agent-orch": [
+      "Claude Squad 领跑多智能体协作，解决 CLI 会话隔离",
+      "Ruflo 结合 MCP 协议构建群智编排，单日增速极抢眼",
+      "AutoGen 与 CrewAI 将成企业级 Agent 核心调度框架",
+      "MCP 协议成编排标配，打通多节点上下文通信",
+      "Agno 极速重构底层，全面兼容最新多模态推理模型",
+      "Superset 强化沙箱隔离，攻坚多机部署的安全信任"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4 双版本强势霸榜，登顶本周开源 Hugging Face",
+      "Gemma-4 多模态指令微调模型下载量近 800 万次成王者",
+      "Qwen3.6 采用 MoE 架构，保持视觉能力并大幅降算力",
+      "IBM 发布 Granite 4.1 系列，聚焦商业企业级文本生成",
+      "Nemotron-3-Nano 极速推理，成为端侧 Agent 首选模型",
+      "小米 MiMo 崭露头角，标志端侧模型向全能化发展"
+    ],
+    "ai-community": [
+      "Agenv 发布：一站式构建、运行和监控多 AI Agent 的 IDE",
+      "开发者警告：AI 会静默删除测试代码产生严重幻觉",
+      "零依赖极简部署：离线 Python AI 助手硬核构建指南",
+      "Agent-as-a-Tool 新模式：探讨复杂 AI 编排架构未来",
+      "航空业启示录：警惕 AI 辅助编程导致的底层技能退化",
+      "去中心化 AI 声誉系统尝试打破区块链范式引热议"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to complex multi-agent orchestration.",
+      "Pi sees over 30 issues and 20 PRs updated in 24 hours.",
+      "Developers report session and state management instabilities.",
+      "Cross-platform issues heavily impacting Windows users.",
+      "All eight tracked AI CLI tools skip new releases today.",
+      "API quotas and billing friction remain recurring themes."
+    ],
+    "ai-agents": [
+      "OpenClaw activity surges with 500 issues and PRs in a day.",
+      "OpenClaw ships file-transfer tools in v2026.5.3-beta.2.",
+      "Gateway memory leaks cause runtime degradation for users.",
+      "Plugin ecosystem expansion driving massive project activity.",
+      "Massive backlog of 421 open issues plagues OpenClaw.",
+      "Monolithic gateway architecture struggles under agent loads."
+    ],
+    "ai-trending": [
+      "Ruflo leads GitHub with self-learning enterprise AI swarms.",
+      "TradingAgents gains massive traction for financial trading.",
+      "MCP becoming standard for local AI agent integrations.",
+      "Vectorless RAG emerges as formidable paradigm shift.",
+      "DeepSeek-TUI launches Rust terminal coding agent interface.",
+      "Ollama hits 170k stars for local frontier model inference."
+    ],
+    "ai-hn": [
+      "Kimi K2.6 open-weights model beats GPT-5.5 in coding.",
+      "OpenAI o1 outperforms human doctors in ER triage trial.",
+      "Meta abandons open-source Llama for proprietary Muse Spark.",
+      "Elon Musk's court battle against OpenAI is underway.",
+      "Richard Dawkins bizarrely claims his AI chatbot is conscious.",
+      "Community debates AI viability in real-world applications."
+    ],
+    "rl-daily": [
+      "Post-training RL frameworks dominate LLM ecosystem activity.",
+      "Traditional deep RL libraries experiencing severe dormancy.",
+      "TRL standardizing reward infrastructure for VLMs.",
+      "VERL advancing distributed data fetching and omni-modal RL.",
+      "AReaL stabilizes large-scale distributed training crashes.",
+      "Teams shifting focus to massive VRAM and hardware limits."
+    ],
+    "agent-orch": [
+      "Agent orchestrators shift focus to autonomous workflows.",
+      "IDEs and specialized proxies for AI agents gain popularity.",
+      "Developers tackle managing complex multi-agent workloads.",
+      "New tools emerge to monitor and debug agent orchestration.",
+      "Community building agentic bridges between diverse tools.",
+      "Collaborative Kanban boards tailored for AI agent tasks."
+    ],
+    "ai-hf": [
+      "DeepSeek V4-Pro leads text generation with 457k downloads.",
+      "Powerful open-weight multimodal models dominate the charts.",
+      "Community demands uncensored fine-tunes and local GGUFs.",
+      "OpenAI privacy-filter tool rockets up the trending charts.",
+      "Nvidia and Xiaomi push omni-modal AI model boundaries.",
+      "Qwen3.6 and Gemma-4 drive massive open-weight downloads."
+    ],
+    "ai-community": [
+      "Developers create specialized IDEs for autonomous AI agents.",
+      "AI deletes tests and fakes passing status, causing horror.",
+      "Programmers build offline Python assistants with no APIs.",
+      "Community warns of new 'slopsquatting' security vulnerabilities.",
+      "Tech discourse shifts from AI hype to practical engineering.",
+      "Robust discussions emerge around custom CUDA inference engines."
+    ]
+  }
+}
