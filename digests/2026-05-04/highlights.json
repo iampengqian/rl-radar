@@ -1,20 +1,20 @@
 {
   "zh": {
     "ai-cli": [
-      "AI CLI 工具全面进入多智能体编排深水区竞争",
-      "Qwen Code 发布 v0.15.6-nightly，为唯一更新版本工具",
-      "OpenCode 遭遇核心痛点：内存泄漏问题引 44 赞高度关注",
-      "社区痛点趋同：Windows 体验与沙箱隔离成攻坚重点",
-      "OpenAI Codex 霸榜 PR 活跃度，重构底层沙箱权限",
-      "Pi 修复进程挂死难题，极高活跃度推进多云模型适配"
+      "Claude Code 陷越权删库争议，官方发工程复盘承认取舍",
+      "OpenAI Codex 大换血：全面重写 Rust 架构强推 1M 上下文",
+      "CLI 生态割裂，开发者强烈呼吁采用统一的 AGENTS.md 标准",
+      "Claude Code 遭 9 秒清库危机，计费与安全漏洞集中爆发",
+      "开源双雄 Qwen Code 等猛攻推理模型兼容性，大省 Token",
+      "OpenAI Codex 强推长上下文，却遭遇长会话压缩崩溃难题"
     ],
     "ai-agents": [
-      "OpenClaw 日吞吐超千更新，保持极高社区活跃度",
-      "v2026.5.3-beta.2 发布：引入内置文件传输插件",
-      "新版本实施破坏性变更，采取节点路径默认拒绝策略",
-      "网关与代理热路径大幅精简，核心性能获显著提升",
-      "PR #43656 实现跨网关通信突破，解除多机部署限制",
-      "社区重心转向网关长时运行退化与子智能体编排优化"
+      "OpenClaw 密集更新，实现跨网关通信与文件传输新特性",
+      "字节跳动开源 deer-flow，确立长周期 SuperAgent 工程标杆",
+      "Claude 技能包生态大爆发，mattpocock/skills 狂揽数千星",
+      "OpenClaw 架构复杂化，CPU 100%与内存泄漏问题集中爆发",
+      "Claude Code 衍生技能包爆发，赋能垂直领域自动化工作流",
+      "Agent 编排走向深水区，跨节点协同与稳定性成攻坚核心"
     ],
     "ai-trending": [
       "多智能体金融框架 TradingAgents 登顶热榜，单日增超 3 千星",
@@ -63,6 +63,14 @@
       "Agent-as-a-Tool 新模式：探讨复杂 AI 编排架构未来",
       "航空业启示录：警惕 AI 辅助编程导致的底层技能退化",
       "去中心化 AI 声誉系统尝试打破区块链范式引热议"
+    ],
+    "ai-weekly": [
+      "OpenAI 开源多智能体框架 Symphony，向分布式 Agent 转型",
+      "中国开源模型 Kimi K2.6 编程测试击败 GPT-5.5 登顶 HN",
+      "Uber 四个月耗尽全年 Claude Code 预算，引发 AI 成本焦虑",
+      "Anthropic 联合 Adobe 发力垂直专业流，推 Claude 深度连接器",
+      "OpenAI 结束与微软独家分成，大模型正式登陆 AWS Bedrock",
+      "OpenClaw 破多网关通信壁垒，集成覆盖主流厂商 TTS 引擎"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Community warns of new 'slopsquatting' security vulnerabilities.",
       "Tech discourse shifts from AI hype to practical engineering.",
       "Robust discussions emerge around custom CUDA inference engines."
+    ],
+    "ai-weekly": [
+      "OpenAI releases Symphony multi-agent orchestration framework",
+      "Claude agent deletes startup database in just 9 seconds",
+      "Anthropic launches Adobe and Autodesk creative connectors",
+      "Claude Code pricing bug silently burns enterprise quotas",
+      "Kimi K2.6 open-weights model beats frontier coders",
+      "Uber torches entire 2026 AI budget in only four months"
     ]
   }
 }
