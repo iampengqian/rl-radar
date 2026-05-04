@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 全面迈入自主智能体时代，底层模型迭代引连接超时",
+      "Claude Code 基础设施不稳投诉积压，超50条Issue待解",
+      "Qwen Code 狂热迭代，41个PR专注终端UI与底层防呆",
+      "精细化的Token计费与上下文感知已成为全行业刚需",
+      "脱离单一云端锁定，Pi/Opencode/Qwen力推多模型接入",
+      "开发者强烈要求提供上下文占用率可视化的指示器"
+    ],
+    "ai-agents": [
+      "OpenClaw 日处理超千条动态，正加速向5.x正式版过渡",
+      "新增内置文件传输插件，默认实行严格的节点拒绝策略",
+      "核心npm热修复：官方插件包曾被安全扫描程序误判拦截",
+      "PR 77478强化启动与回复机制，解决高昂会话竞争问题",
+      "社区反馈聚焦多渠道投递可靠性及长期记忆核心体验",
+      "快速迭代致回归问题凸显，文件传输外置化是当前重心"
+    ],
+    "ai-trending": [
+      "Claude原生多智能体平台ruflo单日暴涨2500星登顶",
+      "DeepSeek-TUI爆火，轻量级终端编码智能体需求强劲",
+      "多智能体量化框架TradingAgents单日暴涨2181星",
+      "ollama稳坐本地大模型基座，火速支持Kimi等新模型",
+      "Activepieces集成海量MCP，为Agent接入400+外部工具",
+      "大模型加速应用化，智能体基座架构已趋于成熟"
+    ],
+    "ai-web": [
+      "Anthropic联合黑石高盛成立华尔街专属AI服务公司",
+      "Anthropic直降中型企业，派内部工程师重构核心业务",
+      "OpenAI分享大规模低延迟语音AI工程实践与技术细节",
+      "巨头战略分化：Anthropic深挖商业，OpenAI筑基规模",
+      "Claude需求远超单交付能力，AI厂商开启深度捆绑模式",
+      "华尔街巨头以联合创投加技术入股模式亲自下场整合"
+    ],
+    "ai-hn": [
+      "OpenAI公布低延迟语音AI架构细节，引发社区热议",
+      "论文指大模型幻觉不可避免，开发者呼吁加强工程兜底",
+      "XGrammar-2: Agent结构化生成工具带来80倍性能飞跃",
+      "1.7B三进制端侧模型在M4 Max跑出442T/s极快速度",
+      "OpenAI敲定百亿美元合资项目，巨额资金涌入AI部署",
+      "白宫拟推AI审查法案，科技巨头涉足政治游说引争议"
+    ],
+    "rl-daily": [
+      "强化学习框架两极分化，大模型对齐架构向全异步演进",
+      "TRL高频迭代，全面拥抱VLM、MoE与在线异步RL架构",
+      "vLLM等底层依赖频繁升级致上层RL框架稳定性受考验",
+      "AReaL面向千亿级超大模型，攻坚MoE路由稳定性",
+      "CleanRL坚持极简主义，专注底层张量显存拷贝优化",
+      "Gymnasium完善核心API静态类型，深挖环境底层可控"
+    ],
+    "agent-orch": [
+      "智能体编排工具爆发，单日监控项目高达45个",
+      "Claude生态成编排核心，涌现大量终端Coding Agent",
+      "Agent网关与路由协议成为后端架构设计的绝对焦点",
+      "从单一编排转向解决多智能体并发与规模化自治管理",
+      "Claude Flow等项目致力于解决群智网络的编排难题",
+      "开源力量正重塑AI编排，传统工作流面临重构"
+    ],
+    "ai-hf": [
+      "多模态与MoE主导榜单，Google Gemma-4下载破800万",
+      "DeepSeek-V4双星闪耀，兼顾旗舰性能与轻量推理",
+      "小模型端侧推理火爆，Nvidia Nemotron-3 Nano受捧",
+      "Qwen3.6-35B-MoE以极低激活参数实现优异多模态效果",
+      "Kimi-K2.6多模态与特征提取模型下载量超82万",
+      "社区层出GGUF量化模型，端侧反审查成核心趋势"
+    ],
+    "ai-community": [
+      "技术社区告别模型崇拜，全面转向架构治理与工程落地",
+      "Anthropic Mythos安全报告引思辨，AI代码漏洞成焦点",
+      "6大真实可用Agent网关平台盘点，为架构选型避坑",
+      "多智能体自治系统揭秘如何规模化编排超150项技能",
+      "TypeScript Agent SDK登场，打破Python在AI层垄断",
+      "AI极速生成代码背后，网络连接等传统工程仍是瓶颈"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools evolving into autonomous, multi-modal agents.",
+      "Claude Code users report frequent stream timeouts and freezing.",
+      "OpenAI Codex issues 2 alpha releases amid context limit woes.",
+      "Gemini CLI pushing AST updates in latest nightly build.",
+      "Developers rushing to harden terminal UIs for local LLMs.",
+      "Guardrails for unattended background execution in demand."
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive velocity with 500 issues and PRs today.",
+      "OpenClaw ships v2026.5.4-beta.1 focusing on plugin architecture.",
+      "New bundled file-transfer plugin equips agents for binary ops.",
+      "Large volume of open PRs suggests a review bottleneck.",
+      "Maintaining baseline stability remains a primary challenge.",
+      "500 issues updated in 24 hours across 13 tracked projects."
+    ],
+    "ai-trending": [
+      "Ruvnet/ruflo explodes with 2,594 stars in a single day.",
+      "AI-driven financial automation dominates GitHub trending.",
+      "TradingAgents and dexter surge with thousands of daily stars.",
+      "Hmbown/DeepSeek-TUI gains 1,277 stars for Rust-based coding.",
+      "Ollama remains standard for local LLMs with 170,689 stars.",
+      "Developer shift toward building autonomous multi-agent systems."
+    ],
+    "ai-web": [
+      "Anthropic forms JV with Blackstone and Goldman Sachs.",
+      "New venture targets mid-sized enterprise AI operations.",
+      "Move bypasses traditional systems integrators entirely.",
+      "OpenAI signals advancements in real-time voice AI infra.",
+      "Industry shifts from pure model provision to services.",
+      "Anthropic doubles down on enterprise text workflows."
+    ],
+    "ai-hn": [
+      "White House considers bill to vet AI models pre-release.",
+      "Paper reminds devs that LLM hallucinations are inevitable.",
+      "XGrammar-2 offers 80x faster structured data generation.",
+      "Developers optimize AI workflows to reduce token usage.",
+      "Community debates limits of agentic vs deterministic systems.",
+      "OpenAI and Anthropic finalize massive PE joint ventures."
+    ],
+    "rl-daily": [
+      "TRL leads ecosystem with 5GB memory leak fix and Async GRPO.",
+      "RL ecosystem sharply bifurcated by LLM post-training demands.",
+      "Verl pushes into multi-modal agentic RL with Qwen3-Omni.",
+      "Stable Baselines3, torchtune see zero updates today.",
+      "Innovation focused on distributed inference-training decoupling.",
+      "Traditional single-agent RL libraries see quiet maintenance."
+    ],
+    "agent-orch": [
+      "45 projects tracked in agent orchestrator ecosystem digest.",
+      "Ruflo leads as top agent orchestration platform for Claude.",
+      "Enterprise-grade architecture drives Ruflo's explosive growth.",
+      "Claude Squad and Claude Flow gain developer traction.",
+      "Ecosystem shifts toward managing multi-agent workflows.",
+      "Developers build native integrations for top coding agents."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates text-generation leaderboards.",
+      "DeepSeek-V4-Flash hits nearly 500,000 total downloads.",
+      "Google's Gemma-4 drives massive community engagement.",
+      "Qwen 3.6 series utilizes aggressive MoE architectures.",
+      "Demand for uncensored, edge-deployable AI rapidly rises.",
+      "Developers flock to GGUF quantizations and abliterated tunes."
+    ],
+    "ai-community": [
+      "Anthropic 'Mythos' vulnerability sparks security debates.",
+      "Developers share practical tips to reduce LLM token usage.",
+      "6 agent gateway platforms currently in production ranked.",
+      "Mixing Claude and DeepSeek in loops optimizes cost.",
+      "Article defines 4 cognitive archetypes of AI developers.",
+      "Philosophical discussions question AI's cognitive impact."
+    ]
+  }
+}
