@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI工具向多智能体协同演进，Rust重构与防死循环成标配。",
+      "Claude Code陷Max额度计费信任危机，单Issue引685条狂热评论。",
+      "OpenAI Codex发双Alpha版，重构云执行架构攻克内存瓶颈。",
+      "Gemini CLI修复杂症：防Agent死循环，绝禁掩盖报错行为。",
+      "Qwen Code活跃度爆表，单日狂合43个PR死磕可观测性。",
+      "Pi引入防重入锁，在本地执行与Token节省间找到完美平衡。"
+    ],
+    "ai-agents": [
+      "OpenClaw单日涌入500个PR，积压量创历史新高。",
+      "底层架构大重构：OpenClaw v2026.5.4正式版发布。",
+      "全面拥抱Gemini语音桥接，Twilio实时通话体验极速飙升。",
+      "攻克企业级高可用：安全执行策略与子智能体状态流转落地。",
+      "跨平台呼声高涨，社区迫切要求Linux/Windows原生支持。",
+      "修复杂症：Token覆盖致网关鉴权混乱诊断命令获优化。"
+    ],
+    "ai-trending": [
+      "AI编程爆发：Karpathy定制Claude Code习惯项目日增两千星。",
+      "彻底告别上下文溢出：context-mode实现98%极限压缩。",
+      "多智能体编排受热捧，专为Claude设计的ruflo单日涨粉2441。",
+      "Agent操控桌面：trycua让AI直接控制Mac/Linux/Win系统。",
+      "赋予Agent网页超能力：browserbase skills填补Web交互空白。",
+      "Ollama稳居本地AI基石，Star总数超17万持续霸榜。"
+    ],
+    "ai-web": [
+      "Claude发布Opus 4.7：高级工程与视觉能力大幅跃升。",
+      "Anthropic深耕金融：推10款开箱即用的垂直领域Agent模板。",
+      "Claude全面接入Microsoft 365全家桶，一键打通企业数据孤岛。",
+      "为保安全放弃战力：Opus 4.7刻意削弱危险网络攻击能力。",
+      "OpenAI疑似发布GPT-5.5 Instant，加速中端模型商业化变现。",
+      "探索新营收边界：OpenAI正式推出ChatGPT广告购买渠道。"
+    ],
+    "ai-hn": [
+      "颠覆Transformer：SubQ架构实现1200万Token超长上下文。",
+      "Google放出大招：扩散风格推测解码让TPU推理直降3倍。",
+      "道金斯断言AI已具备意识，在HN引发强烈哲学伦理激辩。",
+      "GLM-5V-Turbo发布，为多模态智能体提供原生基础模型。",
+      "打通多数据源上下文：Airbyte Agents成企业级RAG利器。",
+      "让Claude自我进化：claude-smart项目实现每次对话自动升级。"
+    ],
+    "rl-daily": [
+      "RL开源生态分化：现代RLHF攻坚底层重构，传统基线进入维护期。",
+      "直面On-policy瓶颈：TRL实现SD-Zero将二值奖励化稠密监督。",
+      "slime死磕400B+超大MoE模型，攻坚训练稳定性与显存优化。",
+      "verl推进推理训练解耦，全面发力异构硬件NPU支持。",
+      "知识蒸馏成新宠：深度融合RL后训练与模型压缩对齐。",
+      "OpenRLHF紧跟Megatron大版本，全面升级分布式容灾机制。"
+    ],
+    "agent-orch": [
+      "Agent编排赛道极度拥挤，单日追踪45个项目生态过热。",
+      "Ruflo异军突起：专为Claude设计的多智能体集群编排平台。",
+      "Claude Flow发布，试图定义AI原生工作流的自动化标准。",
+      "HumanLayer获关注：让Agent拥有请求人类帮助与审批的能力。",
+      "Swarm Protocol发力：为去中心化多智能体通信制定协议规范。",
+      "开源看板爆发：Vibe Kanban与OpenKanban争夺AI任务管理入口。"
+    ],
+    "ai-arxiv": [
+      "突破推测解码瓶颈：SpecKV利用压缩率自适应选择超参数。",
+      "治本之策：锐度感知预训练从根源上解决灾难性遗忘难题。",
+      "无需重训即去偏：PRM在解码阶段动态消除模型刻板印象。",
+      "多智能体也有对齐传染：利用隐式特征干预阻断偏离蔓延。",
+      "合规陷阱：研究揭示结构约束会导致前沿AI丧失元认知。",
+      "降维打击：提出零样本置信度评估，打造SLM高效路由判别器。"
+    ],
+    "ai-hf": [
+      "开源之王：DeepSeek-V4-Pro狂揽三千五百赞登顶HF榜首。",
+      "Google开源重磅炸弹：Gemma-4多模态模型下载量破八百万。",
+      "极致参数效率：Qwen3.6仅激活3B参数便斩获强悍多模态性能。",
+      "Mistral发威：推出1280亿参数中体量模型挑战开源前列。",
+      "小米MiMo开源：强推理模型主打Agent智能体与长上下文。",
+      "IBM Granite-4.1双版本齐发，深度优化企业级商用场景。"
+    ],
+    "ai-community": [
+      "Agent商业化破局：用Kong网关实现LangChain智能体计费变现。",
+      "粉碎Token粉碎机：DebounceHook彻底终结Agent死循环噩梦。",
+      "终结AI幻觉：用MCP构建实时语法校验工具成社区新范式。",
+      "ContextCraft爆火：为开源大模型打造可视化上下文工作台。",
+      "身份焦虑蔓延：开发者灵魂拷问我是工程师还是提示词技工？",
+      "警惕技术债务：过度依赖AI总结恐致人类批判性思维退化。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools maturing into autonomous, multi-agent systems.",
+      "Development cycle dominated by bug fixes and refactors.",
+      "Enterprise readiness is the new primary battleground.",
+      "Shared scaling challenges: resource management, networking.",
+      "Industry shifting from feature experimentation to consolidation.",
+      "Proxy support and CI/CD integration drive user adoption."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 1,000+ events, shipping v2026.5.4 release.",
+      "Release overhauls Google Meet and Voice Call integrations.",
+      "Realtime Gemini voice bridge replaces legacy TwiML fallbacks.",
+      "Twilio dial-in now uses paced audio streaming.",
+      "Community actively reporting edge cases at a rapid pace.",
+      "PR merge rate shows aggressive iteration on new features."
+    ],
+    "ai-trending": [
+      "Massive surge in Claude Code ecosystem tooling today.",
+      "Andrej Karpathy skills file explodes with +2,381 stars.",
+      "Context-mode tool claims 98% reduction in token waste.",
+      "Ollama dominates local inference, supporting Kimi-K2.5.",
+      "Vertical AI applications seeing rapid community traction.",
+      "Shift from foundational training to agent-driven workflows."
+    ],
+    "ai-web": [
+      "Anthropic launches ten pre-built financial AI agents.",
+      "Agents cover KYC, pitchbooks, and month-end close.",
+      "Claude Opus 4.7 sets state-of-the-art on Vals AI benchmark.",
+      "OpenAI publishes metadata for new GPT-5.5 Instant model.",
+      "GPT-5.5 Instant release includes a new System Card.",
+      "OpenAI introduces new ChatGPT advertising purchasing options."
+    ],
+    "ai-hn": [
+      "SubQ introduces sub-quadratic LLM with 12M-token context.",
+      "Richard Dawkins asserts AI already possesses consciousness.",
+      "GLM-5V-Turbo paper explores native multimodal agents.",
+      "Community debates if GPT-5.5 is a genuine architectural leap.",
+      "High-engagement threads push back on AI taking jobs narrative.",
+      "Developers reminded human executives trigger actual layoffs."
+    ],
+    "rl-daily": [
+      "Ecosystem divided between LLM post-training and classical RL.",
+      "Efforts focus on scaling RLHF and GRPO to massive MoEs.",
+      "TRL undergoes enterprise-grade KTO/DPO refactoring.",
+      "verl project focuses on Ascend NPU hardware extensibility.",
+      "Post-training frameworks see critical PR merges and refactors.",
+      "11 out of 18 tracked projects recorded absolutely zero activity."
+    ],
+    "agent-orch": [
+      "Ecosystem tracks 45 active agent orchestration projects.",
+      "Tools focus on multi-agent teams and complex orchestration.",
+      "Projects target bridging autonomous agents and desktop tools.",
+      "Strong community push toward local-first agent execution.",
+      "Orchestrators aim to manage background tasks seamlessly.",
+      "Integration focuses on developer productivity workflows."
+    ],
+    "ai-arxiv": [
+      "SpecKV introduces adaptive speculative decoding for LLMs.",
+      "InfoLaw rethinks LLM scaling for data-limited regimes.",
+      "Sharpness-Aware Pretraining mitigates catastrophic forgetting.",
+      "New frameworks emerge for red-teaming LLMs via priming.",
+      "Focus on ensuring metacognitive stability under pressure.",
+      "Structured output reliability remains a critical challenge."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro and Gemma-4 dominate the trending charts.",
+      "Gemma-4-31B-it leads with over 8.2 million new downloads.",
+      "Mistral-Medium-3.5 launches massive 128B parameter model.",
+      "Nvidia's Nemotron A3B pushes sparse reasoning boundaries.",
+      "Community sees a massive surge in compressed GGUF quants.",
+      "Niche trend emerges in abliterating proprietary safety filters."
+    ],
+    "ai-community": [
+      "Developers fear becoming mere prompt engineers.",
+      "Guide offers techniques to prevent AI reasoning loops.",
+      "LangChain and Kong guide explains AI agent monetization.",
+      "Running LLMs in tiny x86 assembly footprints gains traction.",
+      "Community debates infrastructure challenges of scaling agents.",
+      "Reflection on whether devs are true system architects."
+    ]
+  }
+}
