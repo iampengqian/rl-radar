@@ -1,0 +1,43 @@
+# ArXiv AI Research Digest 2026-05-07
+
+> Source: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 50 papers | Generated: 2026-05-06 22:13 UTC
+
+---
+
+# ArXiv AI Research Digest — 2026-05-07
+
+## 1. Today's Highlights
+Today's batch of 50 AI papers reveals a significant maturation in agentic AI, with a strong pivot towards robustness, safety, and multi-agent orchestration. In the clinical and medical domain, new research demonstrates that scaling up models does not inherently guarantee safety, driving a need for atomic fact-checking and ecologically grounded decision support. We also see breakthroughs in the efficiency and architecture of foundational models, notably through quantized KV-cache sharing for on-device multi-agent systems and novel representation learning techniques for Transformers. Furthermore, the community is aggressively tackling the "data wall" and resource constraints via innovative dataset distillation methods and self-evolving language models that generate their own discriminative training rubrics.
+
+## 2. Key Papers
+
+### 🧠 Large Language Models (architecture, training, alignment, evaluation)
+- **Safety and accuracy follow different scaling laws in clinical large language models** ([arXiv:2605.04039](http://arxiv.org/abs/2605.04039v1)) — *S. Wind et al.*: Demonstrates that scaling up clinical LLMs improves accuracy but can paradoxically decrease safety, challenging the assumption that bigger models are inherently safer for medicine.
+- **EvoLM: Self-Evolving Language Models through Co-Evolved Discriminative Rubrics** ([arXiv:2605.03871](http://arxiv.org/abs/2605.03871v1)) — *S. S. Li et al.*: Proposes a framework where language models bypass the limitations of human or proprietary supervision by generating their own co-evolved rubrics for self-improvement.
+- **QKVShare: Quantized KV-Cache Handoff for Multi-Agent On-Device LLMs** ([arXiv:2605.03884](http://arxiv.org/abs/2605.03884v1)) — *P. Honavar & T. GVSL*: Introduces a mixed-precision quantization framework to efficiently hand off context between on-device LLM agents, drastically reducing memory and re-pilling overhead.
+- **Steer Like the LLM: Activation Steering that Mimics Prompting** ([arXiv:2605.03907](http://arxiv.org/abs/2605.03907v1)) — *G. Heyman & F. Vandeputte*: Proposes a novel framework that bridges activation steering and prompting, improving inference-time control without the context-window costs of traditional prompting.
+- **Logical Consistency as a Bridge: Improving LLM Hallucination Detection via Label Constraint Modeling** ([arXiv:2605.03971](http://arxiv.org/abs/2605.03971v1)) — *H. Mi et al.*: Improves hallucination detection by enforcing logical consistency between model responses and self-judgments, bridging micro-level uncertainty and macro-level self-evaluation.
+
+### 🤖 Agents & Reasoning (planning, tool use, multi-agent, search)
+- **OpenSeeker-v2: Pushing the Limits of Search Agents** ([arXiv:2605.04036](http://arxiv.org/abs/2605.04036v1)) — *Y. Du et al.*: Advances deep search capabilities for LLM agents using high-difficulty trajectories, democratizing search agent techniques previously dominated by industrial giants.
+- **Correct Is Not Enough: Training Reasoning Planners with Executor-Grounded Rewards** ([arXiv:2605.03862](http://arxiv.org/abs/2605.03862v1)) — *T. Han et al.*: Moves beyond outcome-based RL by introducing executor-grounded rewards to ensure reasoning traces are faithful and practically useful for downstream agents.
+- **From Intent to Execution: Composing Agentic Workflows with Agent Recommendation** ([arXiv:2605.03986](http://arxiv.org/abs/2605.03986v1)) — *K. Athrey et al.*: Automates the creation of multi-agent systems by recommending and composing discrete agents based on high-level user intents.
+- **Redefining AI Red Teaming in the Agentic Era: From Weeks to Hours** ([arXiv:2605.04019](http://arxiv.org/abs/2605.04019v1)) — *R. S. R. Dheekonda et al.*: Accelerates AI red teaming from manual, weeks-long workflows to automated, hours-long processes, a critical adaptation for securing modern agentic systems.
+
+### 🔧 Methods & Frameworks (new techniques, benchmarks, efficiency improvements)
+- **DMGD: Train-Free Dataset Distillation with Semantic-Distribution Matching in Diffusion Models** ([arXiv:2605.03877](http://arxiv.org/abs/2605.03877v1)) — *Q. Wang et al.*: Eliminates the need for additional training in diffusion-based dataset distillation by matching semantic distributions, vastly improving data efficiency.
+- **MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents** ([arXiv:2605.03952](http://arxiv.org/abs/2605.03952v1)) — *J. Steinberg & O. Gal*: Introduces a vital benchmark that exposes how malicious code emerges from decomposed, seemingly safe tickets, highlighting structural blind spots in agent safety alignment.
+- **Transformers with Selective Access to Early Representations** ([arXiv:2605.03953](http://arxiv.org/abs/2605.03953v1)) — *S. Gunasekaran et al.*: Enhances Transformer efficiency by allowing later layers selective access to early representations, preventing the loss of low-level features in deep residual streams.
+
+### 📊 Applications (domain-specific, multimodal, healthcare)
+- **Atomic Fact-Checking Increases Clinician Trust in LLM Recommendations for Oncology** ([arXiv:2605.03916](http://arxiv.org/abs/2605.03916v1)) — *L. C. Adams et al.*: Uses a randomized controlled trial to prove that decomposing AI recommendations into verifiable atomic claims significantly boosts clinician trust in oncology decision support.
+- **Physics-Grounded Multi-Agent Architecture for Risk-Aware Human-AI Decision Support** ([arXiv:2605.04003](http://arxiv.org/abs/2605.04003v1)) — *D. Hoang et al.*: Implements a traceable, multi-agent LLM system for CNC machining that reliably performs bounded numerical workflows where off-the-shelf LLMs typically fail.
+- **Quantifying the human visual exposome with vision language models** ([arXiv:2605.03863](http://arxiv.org/abs/2605.03863v1)) — *C. Rominger et al.*: Applies VLMs to quantify the "visual exposome" from first-person perspectives, pioneering a scalable method to assess how daily visual environments impact mental health.
+
+## 3. Research Trend Signal
+A clear trend emerging from today's submissions is the transition from building monolithic AI capabilities to engineering **trustworthy, decomposable, and resource-efficient agentic systems**. We are seeing the limits of naive scaling laws, particularly in high-stakes domains like clinical medicine, prompting a surge in verification mechanisms (e.g., atomic fact-checking) and nuanced safety benchmarks (e.g., compositional vulnerability testing in coding agents). Furthermore, as agents proliferate, resource management at the inference edge is becoming a critical bottleneck. Innovations like quantized KV-cache sharing and zeroth-order optimization highlight a push to compress and distribute AI workloads. Finally, the pursuit of high-quality data is shifting towards algorithmic autonomy, with frameworks like self-evolving rubrics and train-free dataset distillation indicating a move toward self-sustaining, data-efficient model improvement.
+
+## 4. Worth Deep Reading
+1. **Safety and accuracy follow different scaling laws in clinical large language models** ([arXiv:2605.04039](http://arxiv.org/abs/2605.04039v1)): This paper challenges the fundamental "bigger is better" ethos of current AI development. Understanding the decoupling of accuracy and safety is absolutely critical for any researcher or engineer deploying foundation models in high-stakes, regulated industries.
+2. **MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents** ([arXiv:2605.03952](http://arxiv.org/abs/2605.03952v1)): As autonomous coding agents become ubiquitous, this paper exposes a severe, structural blind spot in current alignment techniques. It is highly worth reading to understand how agentic decomposition can inadvertently bypass safety filters, redefining how we must evaluate AI security.
+3. **Correct Is Not Enough: Training Reasoning Planners with Executor-Grounded Rewards** ([arXiv:2605.03862](http://arxiv.org/abs/2605.03862v1)): Essential reading for those working on Reinforcement Learning from Human Feedback (RLHF) and Chain-of-Thought reasoning. It provides a vital critique of outcome-based reward models, demonstrating that achieving the right answer via flawed reasoning is a critical failure mode for downstream agentic applications.

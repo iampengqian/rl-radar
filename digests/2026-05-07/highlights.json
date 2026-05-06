@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code连发4版密集修复，Win平台与隐性成本成焦点",
+      "OpenAI Codex迎高频预发，社区强呼1M上下文",
+      "Gemini CLI遭遇Agent死循环，紧急重构权限机制",
+      "GitHub Copilot CLI陷自动压缩死循环",
+      "OpenCode狂揽50+PR，突击桌面端与多智能体",
+      "Qwen Code推重磅架构，Agent Team并行来袭"
+    ],
+    "ai-agents": [
+      "OpenClaw单日吞吐千级PR/Issue，极速迭代表现惊人",
+      "v2026.5.6紧急撤回：修复工具会破坏OAuth路由",
+      "新版本重点解决飞书多轮会话与微信通道兼容",
+      "CPU DoS漏洞被迅速修补，安全防线收紧",
+      "Webhook DM验证机制加码，拒绝未配置通配符",
+      "Gateway性能消耗与长尾Bug成部署新痛点"
+    ],
+    "ai-trending": [
+      "DeepSeek-TUI爆火，单日狂揽超6千Star",
+      "ruflo成最火Claude代理编排，主打多智能体集群",
+      "字节开源deer-flow：长周期SuperAgent框架",
+      "InsForge打响第一枪：专为Agent构建的后端",
+      "dexter横空出世：专攻高壁垒的深度金融研究",
+      "免费LLM API资源池汇总，成低成本试水利器"
+    ],
+    "ai-web": [
+      "Anthropic接管SpaceX超22万GPU，算力狂欢开启",
+      "Claude Code全面翻倍提速，直接取消高峰降级",
+      "重磅发布10个金融AI模板，无缝接入微软生态",
+      "Claude Opus 4.7登顶金融基准测试新标杆",
+      "MCP生态大扩容，第三方工具可直嵌Claude界面",
+      "OpenAI同步推进B2B情报与超级计算机网络"
+    ],
+    "ai-hn": [
+      "Anthropic与SpaceX算力绑定引爆AI垄断担忧",
+      "苹果探索潜在扩散技术，试图突破LLM推理瓶颈",
+      "优化后的小模型在安全测试反超前沿大模型",
+      "Costanza：一个无法被关闭的极客自主Agent",
+      "Vibeguard：直击AI生成不安全SQL痛点的护栏",
+      "社区对AI底层岗位被替代的焦虑情绪急剧升温"
+    ],
+    "rl-daily": [
+      "RLHF框架卷入异构算力与MoE支持军备竞赛",
+      "verl落地分离式推理，加速适配国产异构算力",
+      "AReaL死磕极致协同，解决MoE路由不一致难题",
+      "TRL全面适配MoE参数，深耕VLM长文本显存优化",
+      "Open Instruct完善GRPO，构建异常数据防护网",
+      "传统RL库进入平稳期，专注规避PyTorch漏洞"
+    ],
+    "agent-orch": [
+      "Claude Squad与Ruflo引领多智能体编排新风向",
+      "Claude Flow重塑工作流，解锁更复杂的智能体协作",
+      "AutoGen与CrewAI等老牌编排工具持续沉淀",
+      "Symphony与Crystal探索更细粒度的Agent调度",
+      "Mux Desktop发力桌面端，提供本地化编排体验",
+      "HumanLayer强调人在回路，把控Agent执行安全"
+    ],
+    "ai-arxiv": [
+      "临床大模型安全性与准确性遵循不同扩展规律",
+      "无需外部知识！逻辑一致性实现LLM幻觉自检",
+      "EvoLM：摆脱人类标注，大模型实现自我进化",
+      "OpenSeeker-v2开源深度搜索方案，挑战工业巨头",
+      "激活干预新框架：让底层推理媲美提示词工程",
+      "AI安全红蓝对抗升级，防范高风险场景生成"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4双星登顶，Pro与Flash霸榜文本赛道",
+      "Gemma-4最强多模态版下载量超840万创纪录",
+      "Qwen3.6 MoE架构极致优化，斩获超300万下载",
+      "NVIDIA与商汤联手推动Any-to-Any模型普及",
+      "社区对前沿大模型去审查与极限量化热度不减",
+      "IBM Granite 4.1系列专为企业级文本生成优化"
+    ],
+    "ai-community": [
+      "用汇编重写推理引擎？极客挑战大模型硬件极限",
+      "告别瞎聊！智能体工程(Agentic)必须取代Vibe Coding",
+      "两步验证法实战：彻底终结生产环境中的AI废料",
+      "AI vs纯人工对照实验：客观揭示开发效率差异",
+      "VRoid+浏览器扩展：零成本实现3D虚拟人动作捕捉",
+      "次二次方架构若突破，现有大模型格局将被颠覆"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to enterprise-grade agentic environments.",
+      "Common pain points: memory leaks, fragile loops, Windows parity.",
+      "Claude Code leads with v2.1.132 and 3 rapid releases today.",
+      "OpenAI Codex is in active Alpha, currently at rusty-v8-v147.4.0.",
+      "Gemini CLI hits v0.42.0-preview.2 with active preview patches.",
+      "Kimi Code CLI development paused with no new recent releases."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs updated in 24 hours.",
+      "High PR ratio (370 open vs 130 merged) hints at review bottlenecks.",
+      "OpenClaw deploys v2026.5.6 to revert a destructive OAuth bug.",
+      "v2026.5.5 patch broke OAuth-only GPT-5.5 setups for some users.",
+      "Bug forced users to migrate to OpenAI API-key authentication.",
+      "Rapid-fire patches show highly reactive iterative maintenance."
+    ],
+    "ai-trending": [
+      "Multi-agent orchestration platforms dominate open-source trends.",
+      "vllm remains the standard for high-throughput LLM inference.",
+      "free-llm-api-resources gains 255 stars for testing agents cheaply.",
+      "addyosmani/agent-skills sets new standards for coding agents.",
+      "InsForge introduces AI-gateway compatible Postgres backends.",
+      "Vectorless RAG and single-file memory layers are gaining traction."
+    ],
+    "ai-web": [
+      "Anthropic pushes into finance with 10 ready-to-run agent templates.",
+      "Claude integrates directly into Microsoft 365 for finance tasks.",
+      "Anthropic partners with SpaceX adding 220,000 NVIDIA GPUs.",
+      "OpenAI hints at B2B data services and supercomputing infra.",
+      "OpenAI launches startup program ChatGPT Futures Class of 2026.",
+      "Finance templates drastically cut enterprise deployment to days."
+    ],
+    "ai-hn": [
+      "Anthropic and SpaceX compute partnership sparks infrastructure debate.",
+      "OpenAI faces viral courtroom scrutiny over personal diary entries.",
+      "Mark Cuban delivers harsh economic critiques of OpenAI.",
+      "Claude agents get a dreaming process to preserve memories.",
+      "Apple LaDiR uses latent diffusion to boost LLM text reasoning.",
+      "Community wrestles with AI fatigue and software job displacement."
+    ],
+    "rl-daily": [
+      "RL ecosystem pivots from novelty to extreme distributed systems.",
+      "Post-training frameworks focus on Mixture of Experts scale.",
+      "verl leads the infrastructure arms race with 40 new PRs.",
+      "Traditional RL libraries face near-total development stagnation.",
+      "Agentic RL and disaggregated inference are top daily priorities.",
+      "Hardware democratization becomes a central theme for frameworks."
+    ],
+    "ai-arxiv": [
+      "Scaling up clinical LLMs improves accuracy but decreases safety.",
+      "EvoLM introduces self-evolving language models via new rubrics.",
+      "QKVShare solves on-device multi-agent memory handoff bottlenecks.",
+      "Researchers tackle the data wall via innovative dataset distillation.",
+      "Atomic fact-checking becomes vital for medical AI decisions.",
+      "New papers signal maturation in multi-agent orchestration safety."
+    ],
+    "ai-hf": [
+      "Google's Gemma 4 takes the open-weight ecosystem by storm.",
+      "DeepSeek-V4-Pro becomes the heavyweight backbone for complex AI.",
+      "DeepSeek-V4-Flash is heavily downloaded for high-throughput tasks.",
+      "Mistral-Medium-3.5-128B emerges as a massive new parameter model.",
+      "Any-to-Any multimodal architectures are the new 2026 standard.",
+      "MoE and Nvidia Nemotron maintain highly efficient inference."
+    ],
+    "ai-community": [
+      "Paradigm shift from basic chatbots to autonomous Agentic Workflows.",
+      "Engineers seek ways to eliminate AI slop in production systems.",
+      "Developers transition from vibe coding to spec-driven development.",
+      "Devs build autonomous AI agents for scheduled web scraping tasks.",
+      "Community scrutinizes LLM inference in extreme 8-bit assembly.",
+      "Cost-efficient multi-model gateways become a top infrastructure focus."
+    ],
+    "agent-orch": [
+      "45 distinct projects covered in today's orchestration digest.",
+      "Tools focus on standardizing swarms and multi-agent protocols.",
+      "OpenAI Symphony and Claude Squad lead the orchestration space.",
+      "Kanban and workflow boards emerge as popular agent interfaces.",
+      "HumanLayer and other tools focus on keeping human oversight.",
+      "Projects aim to bridge CLI tools with complex agent workflows."
+    ]
+  }
+}
