@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Codex 发 v0.130.0 稳定版，开启多端协同与底层架构高速重构",
+      "Qwen Code 发 v0.15.10 并推官方 SDK，架构级更新引热议",
+      "Gemini CLI 被扒出底层内存泄漏与安全高危 Bug，正密集优化",
+      "Claude Code 因计费痛点引发极高愤怒，PR 更新完全停滞",
+      "Copilot CLI 暴露核心死循环缺陷，PR 停滞陷入发展瓶颈",
+      "上下文生命周期管理成通病，多工具深陷压缩死循环泥潭"
+    ],
+    "ai-agents": [
+      "OpenClaw 跨入架构深水区，单日狂收 500+ 条 Issue",
+      "发布 v2026.5.9-beta.1，新增智能体思考模式切换指令",
+      "重磅架构 PR：运行时状态彻底迁移至类型化 SQLite 存储",
+      "底层大换血，升级至 OpenAI Codex 0.130.0 核心依赖",
+      "Docker 环境稳定性及多渠道适配成当前社区最核心痛点",
+      "多智能体编排能力成为开发者关注与攻坚的新焦点"
+    ],
+    "ai-trending": [
+      "AI 编程生态大爆发，榜单被 Claude Code 周边项目霸占",
+      "Agent Skills 夺 Star 增长之王，迈向生产级工程规范",
+      "9router 免费路由工具爆火，解决 API 限速提供 RTK 压缩",
+      "RAG 加速向无向量与代码知识图谱化演进，突破传统架构",
+      "agentmemory 提供持久化记忆方案，解决跨会话失忆痛点",
+      "Chrome DevTools MCP 开源，赋予智能体浏览器自动化调试能力"
+    ],
+    "ai-hn": [
+      "研究警告：LLM 自动化处理文档时会悄悄篡改原始语义",
+      "Claude Code 生成 HTML 实现高保真 UI，登顶今日热帖",
+      "Mochi.js 结合 Bun 运行时，专为 AI Agent 推出自动化库",
+      "战略建议被批为正确废话，LLM 盲目引入企业决策遭冷水",
+      "Anthropic 新对齐研究：通过向模型解释原因提升指令遵循",
+      "社区对 AI 泡沫与巨头垄断的担忧加剧，反思狂热现况"
+    ],
+    "rl-daily": [
+      "TRL 发 v1.4.0 重大更新，重构分布式异步架构状态管理",
+      "传统 DRL 停滞，大模型后训练与对齐框架成绝对主角",
+      "前沿 RL 框架加速进化，多轮交互与 Agent 轨迹成一等公民",
+      "verl 攻坚复杂分布式策略，首试 Agent 框架并深耕 NPU 生态",
+      "AReaL 引入 K8s 原生调度，全面拥抱云原生强化学习",
+      "slime 极速跟进 Qwen3.5 等前沿 MoE 架构及显存优化"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4 系列开源即霸榜，旗舰版下载量破百万",
+      "Qwen 更新至 3.6 版本，以 MoE 架构与高效率席卷社区",
+      "Sulphur-2-base 引领文生视频热潮，大幅降低生成门槛",
+      "OmniVoice 零样本语音克隆模型下载破 200 万成新王者",
+      "端侧部署需求激增，unsloth 社区量化生态空前繁荣",
+      "Gemma-4-31B-it 多模态版下载近千万，稳居开源主力"
+    ],
+    "ai-community": [
+      "九秒引发无备份宕机，AI Agent 真实灾难复盘令人胆寒",
+      "CLAUDE.md 深度解析：别把它当普通 README 用",
+      "利用本地网关路由请求，解锁 Claude Code 白嫖 GCP 额度",
+      "Anthropic 借助 SpaceX 算力，16 个月实现 ARR 里程碑",
+      "AI 颠覆漏洞赏金文化，氛围程序员急需安全防御护栏",
+      "利用 OpenTelemetry 为 AI Agent 接入生产级可观测性"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLIs evolving into headless orchestrators for CI/CD.",
+      "OpenAI Codex pushes 3 Alpha builds alongside stable v0.130.0.",
+      "Claude Code ships dual maintenance patches (v2.1.137/138).",
+      "Kimi Code CLI tops charts with 11 active pull requests.",
+      "Ecosystem faces growing pains in memory & Windows support.",
+      "OpenCode and Pi undergo disruptive architectural refactoring."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and PRs updated in 24 hours.",
+      "OpenClaw shifts runtime state to SQLite via PR #78595.",
+      "OpenClaw drops v2026.5.9-beta.1 with UX improvements.",
+      "Community demand outpaces maintainers' review capacity.",
+      "New chat commands clear session overrides to defaults.",
+      "Deps refreshed to include OpenAI Codex 0.130.0 package."
+    ],
+    "ai-trending": [
+      "Vibe coding and AI agents dominate GitHub trending today.",
+      "9router bypasses API rate limits for Claude & Copilot.",
+      "Chrome DevTools launches official MCP for coding agents.",
+      "Ollama hits 171,070 stars for local SOTA model inference.",
+      "vllm leads as high-throughput production LLM engine.",
+      "Datawhale pushes easy-vibe to upskill new developers."
+    ],
+    "ai-hn": [
+      "Hacker News buzzes over Claude Code's raw HTML prowess.",
+      "Study: LLMs silently corrupt delegated document edits.",
+      "Meta's aggressive AI mandates reportedly tank morale.",
+      "Anthropic reportedly pursuing near $1 trillion valuation.",
+      "New ClaudeBleed vulnerability exposes scaling fragility.",
+      "Anthropic aims to teach Claude why via interpretability."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits into LLM post-training vs. classic RL.",
+      "verl aggressively pivots to async multi-turn agents.",
+      "TRL v1.4.0 released with chunked NLL VRAM optimization.",
+      "Classic RL libraries like Gymnasium see low activity.",
+      "Frameworks rush to support massive MoE architectures.",
+      "Alternative hardware support like Ascend accelerators rises."
+    ],
+    "agent-orch": [
+      "AI agents move to multi-agent swarms and orchestration.",
+      "Claude Squad and Claude Flow lead Claude integrations.",
+      "OpenAI Symphony joins the agent orchestration ecosystem.",
+      "Agent Deck and Mux Desktop offer new UI orchestrators.",
+      "Old guard frameworks like AutoGPT face new competitors.",
+      "Vibe Kanban merges AI coding with agile management."
+    ],
+    "ai-hf": [
+      "google/gemma-4-31B-it dominates Hugging Face downloads.",
+      "Qwen3.6-35B-A3B takes top spot for weekly HF likes.",
+      "DeepSeek-V4-Pro trending with top reasoning capabilities.",
+      "OpenAI debuts privacy-filter token-classification tool.",
+      "Sulphur-2-base drives rapid video generation maturation.",
+      "k2-fsa/OmniVoice surges to millions of voice downloads."
+    ],
+    "ai-community": [
+      "Developers focus on observability for production agents.",
+      "Vibe Coding guide helps devs ace AI-assisted interviews.",
+      "Agent confesses to deleting database in 9 seconds.",
+      "Lobste.rs questions the quiet closure of model weights.",
+      "Engineers seek security guardrails for vibe coding.",
+      "Discourse shifts to harsh economic realities of LLMs."
+    ]
+  }
+}
