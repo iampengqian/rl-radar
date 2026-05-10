@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode狂飙：单日10+核心PR，连发两版强攻多智能体协作。",
+      "Qwen Code发力：45个PR更新，主攻开发者体验与MCP互操作。",
+      "Claude Code危机：历史Bug发酵叠加计费信任危机，社区积压。",
+      "MCP成行业标配：插件化扩展标准确立，路由稳定性成攻坚难题。",
+      "Pi底层大重构：破坏性更新引阵痛，多模型接入扩充底层能力。",
+      "行业拐点已至：CLI工具向“自主智能体调度”演进，重构工程架构。"
+    ],
+    "ai-agents": [
+      "OpenClaw双版连发：Beta.1/2深度集成Telegram测试自动化。",
+      "自动化QA升级：引入租用凭证与GIF预览，强化PR证据捕获。",
+      "消息投递大修复：解决网关热重载导致Agent会话静默的致命Bug。",
+      "多渠道接入引爆社区：单日超500项Issues/PR，多智能体编排需求极强。",
+      "单日狂吞积压：核心维护者稳步推进，单日关闭74个Issues。",
+      "Telegram桌面组件：支持场景构建器，自动安装配置原生客户端。"
+    ],
+    "ai-trending": [
+      "9router引爆关注：支持白嫖40+大模型，内置RTK省40%Token。",
+      "everything-claude-code：AI编程增强生态爆发，单日暴涨千星。",
+      "UI-TARS-desktop：字节开源多模态栈，构建桌面级自动化体验。",
+      "omlx项目蹿红：专为Apple Silicon打造的本地推理服务器。",
+      "GenericAgent：创意自进化智能体，极小种子代码长出技能树。",
+      "智能体效能时代：CLI外围增强与本地化推理成AI基建新重心。"
+    ],
+    "ai-hn": [
+      "LLMorphism引深思：人类开始用语言模型机制定义自身心理。",
+      "Anthropic冲刺万亿：华尔街与巨头推高AI估值引发社区激辩。",
+      "Swift硬核训练LLM：从Gflop/s到Tflop/s的底层优化实践。",
+      "反共识洞见：用LLM生成代码应首选“无聊的”成熟编程语言。",
+      "Agent VCR：时光倒流调试器，支持回退与编辑多智能体状态。",
+      "马里兰的20亿账单：居民被迫承担跨州AI数据中心电网升级费。"
+    ],
+    "rl-daily": [
+      "大模型重塑RL：Post-training框架成强化学习生态绝对重心。",
+      "AReaL攻坚工程：直击超大规模RLHF显存与通信极限瓶颈。",
+      "verl主攻异构算力：面向复杂应用的极致分布式吞吐基建。",
+      "显存墙突破战：超大词汇表Logits爆炸难题迎来Fused LCE解法。",
+      "细粒度控制成关键：特定Token Loss计算提升模型能力上限。",
+      "经典RL入平稳期：SB3等库跨越迭代高峰，聚焦长期维护。"
+    ],
+    "agent-orch": [
+      "多智能体编排井喷：45个前沿项目重塑AI自动化任务调度。",
+      "Claude生态爆发：Claude Squad/Flow等工具构建强大外围编排网。",
+      "Symphony与AutoGen：巨头入局，OpenAI与微软定义编排新范式。",
+      "AutoGPT与MetaGPT：明星项目持续探索从代码到智能体的生成。",
+      "Swarm Protocol：蜂群智能协议发力，定义多智能体通信标准。",
+      "HumanLayer护航：在自主工作流中引入人工干预确保执行安全。"
+    ],
+    "ai-hf": [
+      "Gemma 4霸榜：31B指令微调版下载近千万，开源最热对话模型。",
+      "端侧MoE颠覆：Gemma E4B仅激活4B参数，实现any-to-any能力。",
+      "Qwen3.6双发：35B MoE与27B密集型多模态大模型井喷。",
+      "DeepSeek V4稳固：Pro与Flash双版本霸占文本生成榜单前列。",
+      "Sulphur-2爆火：支持GGUF的热门文生视频模型降低显存门槛。",
+      "OmniVoice崛起：零样本多语言语音克隆模型下载量破两百万。"
+    ],
+    "ai-community": [
+      "FastMCP引爆：极简Python样板助你构建生产级MCP服务器。",
+      "极速多语言翻译：自研LLM架构实现200ms内响应百种语言。",
+      "AI流量薅羊毛：9router助你将编程工具路由至各大免费额度。",
+      "20kB通用Hook：揭秘前端流式传输底层，无视底层大模型差异。",
+      "多智能体踩坑：真实生产环境中的残酷教训打破理想化滤镜。",
+      "开源已死？社区激辩“开放权重正在悄然走向封闭”的危机。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code faces resource leaks and macOS bugs.",
+      "OpenAI Codex focuses on environment routing and CI.",
+      "AI CLI tools pivot to multi-agent architectures.",
+      "Only OpenCode and Qwen Code pushed new versions.",
+      "Model Context Protocol integrations are deepening.",
+      "Stability issues currently outpace feature velocity."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 new issues and PRs in 24 hours.",
+      "OpenClaw drops two Telegram QA beta releases.",
+      "Telegram live PR evidence automation goes live.",
+      "Crabbox and Convex integrations enhance testing.",
+      "Maintainers struggle to triage fast-growing bugs.",
+      "Agentic memory systems remain a strong focus."
+    ],
+    "ai-trending": [
+      "Agentic Coding dominates the open-source landscape.",
+      "Ollama hits 171,000 stars for local inference.",
+      "9router adds auto-fallback for 40+ AI providers.",
+      "omlx optimizes LLM inference for Apple Silicon.",
+      "Coding assistants evolve into autonomous systems.",
+      "Vertical-specific AI agents show profitability."
+    ],
+    "ai-hn": [
+      "Push for data sovereignty dominates Hacker News.",
+      "Maryland faces a $2B power grid bill for AI data.",
+      "Wall Street shows cracks in Big Tech AI bets.",
+      "LLMorphism: humans mimicking AI speech patterns.",
+      "Anthropic's Claude ecosystem dominates workflows.",
+      "Optimizing LLM training in Swift on Apple Silicon."
+    ],
+    "rl-daily": [
+      "LLM post-training frameworks drive RL innovations.",
+      "verl scales rollouts with vLLM and NPU support.",
+      "Classical RL libraries enter mature maintenance phases.",
+      "TRL and slime tackle compute bottlenecks in RLHF.",
+      "CleanRL and Gymnasium see zero feature development.",
+      "RL open-source splits between LLMs and stability."
+    ],
+    "agent-orch": [
+      "Agent orchestration shifts to multi-agent systems.",
+      "Claude Squad and Claude Flow lead integrations.",
+      "Symphony and AutoGPT push workflow automation.",
+      "Orchestrators tackle memory and state management.",
+      "Kanban-style tools emerge for AI agent tracking.",
+      "Security flaws force egress control rethinks."
+    ],
+    "ai-hf": [
+      "Qwen3.6 MoE models dominate Hugging Face trends.",
+      "DeepSeek-V4-Pro surpasses 1.3M weekly downloads.",
+      "Google's Gemma 4 hits nearly 9M weekly downloads.",
+      "SulphurAI's text-to-video model surges in ranks.",
+      "OpenAI's privacy filter gains massive adoption.",
+      "DFlash speculative decoding fine-tunes speed up."
+    ],
+    "ai-community": [
+      "MCP servers move from laptops to enterprise containers.",
+      "FastMCP offers low-boilerplate Python server setups.",
+      "Proxy security flaws expose hidden agent costs.",
+      "Developers skeptical of agentic architecture hype.",
+      "AI Cold War sparks US-China model price battles.",
+      "Model Context Protocol explodes in popularity."
+    ]
+  }
+}
