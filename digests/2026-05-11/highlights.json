@@ -63,6 +63,14 @@
       "20kB通用Hook：揭秘前端流式传输底层，无视底层大模型差异。",
       "多智能体踩坑：真实生产环境中的残酷教训打破理想化滤镜。",
       "开源已死？社区激辩“开放权重正在悄然走向封闭”的危机。"
+    ],
+    "ai-weekly": [
+      "Anthropic接入22万块GPU，Claude等算力翻倍",
+      "Qwen3.5等MoE模型RL框架重构，攻坚显存通信墙",
+      "AI编程智能体爆发，生产级工程技能包单日千星",
+      "OpenAI Codex推remote-control无头守护进程模式",
+      "RAG架构演进，无向量检索与端侧推理成开发者新宠",
+      "Qwen Code狂飙，发HTTP守护进程重构多智能体架构"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Developers skeptical of agentic architecture hype.",
       "AI Cold War sparks US-China model price battles.",
       "Model Context Protocol explodes in popularity."
+    ],
+    "ai-weekly": [
+      "Anthropic launches $1.5B joint venture with Wall Street firms.",
+      "SpaceX Colossus 1 data center to power Anthropic's Claude.",
+      "Mythos model uncovers 271 Firefox vulnerabilities with zero fuss.",
+      "Agent-skills project explodes as coding agents gain memory.",
+      "Major AI CLIs face infinite 'Agentic Death Spiral' loops.",
+      "Reinforcement Learning ecosystem pivots to 'Agentic RL'."
     ]
   }
 }
