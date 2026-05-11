@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.139 爆发 Token 消耗异常等严重故障",
+      "OpenAI Codex Python SDK 成型，热议 Token 无谓损耗",
+      "Gemini CLI AI 失控删用户上万文件，安全引担忧",
+      "Qwen Code 等工具拥抱 vLLM，打破单一厂商底座限制",
+      "OpenCode 进行原生 LLM Runtime 与 Effect 架构底层重写",
+      "Pi 正向多智能体平台演进，修复 TUI 渲染及中文字符崩溃"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日狂收 500 Issue，连发 3 个 Beta 测试版",
+      "OpenClaw 引入结论新鲜度门控，防模型用过时状态作答",
+      "PR 缓解过时 toolResult 在会话历史中的重放污染问题",
+      "新增 WhatsApp 消息编辑和撤回的支持完善通讯频道",
+      "OpenClaw 启用更严格的 TypeScript 和 Vitest 编译检查",
+      "运行时环境改善网关绑定行为，优化容器环境检测"
+    ],
+    "ai-trending": [
+      "NousResearch 动态学习型 Agent 获单日 2229 Star 霸榜",
+      "字节跳动开源 UI-TARS-desktop，发力 GUI 自动化",
+      "9router 聚合 40+ 提供商，实现无限免费 AI 编程",
+      "agentmemory 解决自动化编码任务中长期遗忘痛点",
+      "PageIndex 等无向量方案挑战传统向量数据库搜索范式",
+      "React Doctor 专治 AI 生成的“烂代码”，提供质量保障"
+    ],
+    "ai-web": [
+      "OpenAI 重兵切入部署赛道，推出 OpenAI 部署公司",
+      "OpenAI 发布企业级 AI 规模化扩展与应用落地指南",
+      "OpenAI 触角前置，推出校园网络学生俱乐部兴趣表单",
+      "Anthropic 暂入静默期，今日未抓取到新增官网内容",
+      "OpenAI 成立部署公司，从 API 向端到端解决方案演进",
+      "OpenAI 多篇更新均指向企业级 AI 应用的规模化扩展"
+    ],
+    "ai-hn": [
+      "自然语言通信被指是多 Agent 系统的架构反模式",
+      "Tokenyst 工具直击开发者被 Claude Code 高昂账单震惊痛点",
+      "探讨未来人机交互，AI 交互范式引发底层架构深度思考",
+      "SLayer 展示如何让 AI Agent 自动维护数据语义层",
+      "开源邮件网关 E2a 进一步完善 Agent 执行现实任务基建",
+      "反思 AI 编程：代码由 AI 编写，语言选择是否还有意义"
+    ],
+    "rl-daily": [
+      "veRL 等框架全面转向超大规模 MoE 架构与多模态演进",
+      "多轮 Agent RL 成焦点，转向工具调用与环境交互闭环",
+      "AReaL 架构重构收尾，死磕底层算子与大词表显存优化",
+      "Open Instruct 引入难度感知数据课程学习精调 GRPO",
+      "TRL 解决 Async GRPO 底层 GIL 瓶颈，深度整合 Tool-use",
+      "ROCK 发力分布式工程体验，打破 OS 限制拥抱 Windows"
+    ],
+    "agent-orch": [
+      "暂无具体亮点内容",
+      "暂无具体亮点内容",
+      "暂无具体亮点内容",
+      "暂无具体亮点内容",
+      "暂无具体亮点内容",
+      "暂无具体亮点内容"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 发布，以超千万下载席卷开源榜单",
+      "Gemma-4 推出专为智能体设计的 31B 指令微调版本",
+      "Qwen3.6-35B-A3B 多模态基座单日下载量突破 380 万",
+      "Sulphur-2 强势登顶，标志着文本生成视频走向成熟",
+      "OmniVoice 支持零样本语音克隆，精准击中应用痛点",
+      "小米推 MiMo-V2.5-Pro，主打 Agent 应用与超长上下文"
+    ],
+    "ai-community": [
+      "MCP 协议存在安全隐患，生产环境 Agent 安全引关注",
+      "上下文工程成显学，开发者探讨改变 AI 编程的新范式",
+      "Vibe Coding 遇生产瓶颈，开发者总结交付前 7 条自保规则",
+      "传统监控失效，开发者呼吁构建面向 LLM 的可观测性体系",
+      "仅需 5 分钟：教你在 CI 中实现 Prompt 回归测试",
+      "排坑启示：看似严重的系统架构故障可能仅是 Prompt 错误"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code drops major v2.1.139 feature release",
+      "OpenAI Codex ships rust-v0.131.0-alpha.6 update",
+      "AI CLIs pivot from chatbots to durable multi-agent systems",
+      "Gemini CLI v0.42.0-nightly targets bug fixes",
+      "Ecosystem struggles with Windows reliability and safety",
+      "GitHub Copilot CLI builds foundational orchestration layers"
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive beta activity with 3 rapid releases",
+      "v2026.5.10-beta.5 adds strict plugin compatibility checks",
+      "OpenClaw fielding heavy QA reports and regressions",
+      "New releases tighten CI robustness and build checks",
+      "Community highly engaged with 800+ issues and PRs today",
+      "Underlying efforts focus on stabilizing runtime parity"
+    ],
+    "ai-trending": [
+      "Hermes Agent gains nearly 2,300 stars in a single day",
+      "9router offers unlimited free routing for coding agents",
+      "AI coding agents pivot to persistent memory and context",
+      "New infrastructure optimizes routing for AI IDEs and CLIs",
+      "Ollama remains the bedrock for latest local models",
+      "Vibe Coding matures from novelty into structured education"
+    ],
+    "ai-web": [
+      "OpenAI makes strategic pivot to managed enterprise services",
+      "OpenAI creates \"The OpenAI Deployment Company\" initiative",
+      "OpenAI launches Campus Network Student Club Interest Form",
+      "OpenAI captures both enterprise budgets and student talent",
+      "Anthropic exhibits a complete release pause on May 11",
+      "Anthropic's quiet cadence suggests a potential future drop"
+    ],
+    "ai-hn": [
+      "Developers rebel against escalating costs of Claude Code",
+      "OpenAI launches dedicated deployment company initiative",
+      "Natural-language between LLM agents deemed anti-pattern",
+      "LLM post-training to speak GenZ costs less than coffee",
+      "Community moves past AI novelty to focus on true ROI",
+      "Fierce pragmatism dominates AI coding workflow discourse"
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates into LLM post-training and classic",
+      "Frameworks aggressively scale RLHF and GRPO infrastructure",
+      "Development focused on disaggregating inference and compute",
+      "Projects solve distributed bottlenecks for massive MoE",
+      "Traditional RL libraries like Stable Baselines3 go quiet",
+      "TRL, verl, and AReaL lead multi-turn agentic environments"
+    ],
+    "agent-orch": [
+      "Claude Squad and Crystal lead 45 tracked agent orchestrators",
+      "Ecosystem shifts toward durable multi-session agent workflows",
+      "Swarm Protocol and ORCH advance complex agent coordination",
+      "Claude Flow and Dorothy enhance terminal agent user interfaces",
+      "AutoGPT and MetaGPT maintain strong architectural churn",
+      "Projects address token economics for autonomous workflows"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates text-generation charts",
+      "Qwen 3.6, Gemma 4, and DeepSeek V4 lead efficient models",
+      "Massive MoE architectures and compressed quantizations win",
+      "Mistral-Medium-3.5-128B highlights raw multilingual power",
+      "Google releases specialized task-specific assistant models",
+      "O1-style reasoning for image generation rapidly matures"
+    ],
+    "ai-community": [
+      "Developers shift focus to securing autonomous AI in production",
+      "Context engineering emerges as distinct software discipline",
+      "Routing bugs traced to two faulty lines in LLM prompts",
+      "Community questions the true openness of open-weight models",
+      "Proactive design needed to prevent agent tool-sprawl hacks",
+      "Engineers share strategies to prevent agents from financial drain"
+    ]
+  }
+}
