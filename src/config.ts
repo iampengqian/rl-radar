@@ -49,6 +49,7 @@ const DEFAULT_CLI_REPOS: RepoConfig[] = [
   { id: "kimi-cli", repo: "MoonshotAI/kimi-cli", name: "Kimi Code CLI" },
   { id: "opencode", repo: "anomalyco/opencode", name: "OpenCode" },
   { id: "qwen-code", repo: "QwenLM/qwen-code", name: "Qwen Code" },
+  { id: "deepseek-tui", repo: "Hmbown/DeepSeek-TUI", name: "DeepSeek TUI" },
 ];
 
 const DEFAULT_SKILLS_REPO = "anthropics/skills";
