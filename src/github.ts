@@ -331,9 +331,9 @@ function neutralizeGitHubRefs(text: string): string {
 }
 
 /**
- * Close open issues created more than `days` days ago.
+ * Close open issues (not PRs) created more than `days` days ago.
  * Always re-fetches page 1: closing issues shifts pagination, so incrementing
- * pages would skip items. Returns the number of issues closed.
+ * pages would skip items. Returns the number of issues successfully closed.
  */
 export async function closeStaleIssues(days: number): Promise<number> {
   const digestRepo = process.env["DIGEST_REPO"] ?? "";
@@ -342,26 +342,40 @@ export async function closeStaleIssues(days: number): Promise<number> {
   let closed = 0;
 
   while (true) {
-    const issues = await githubGet<{ number: number; created_at: string }[]>(
+    const issues = await githubGet<{ number: number; created_at: string; pull_request?: unknown }[]>(
       `https://api.github.com/repos/${digestRepo}/issues`,
-      { state: "open", sort: "created", direction: "asc", per_page: "100" },
+      {
+        state: "open",
+        sort: "created",
+        direction: "asc",
+        per_page: "100",
+      },
     );
     if (issues.length === 0) break;
 
-    const stale = issues.filter((i) => new Date(i.created_at) < cutoff);
+    // Filter out PRs — the Issues endpoint returns both
+    const stale = issues.filter((i) => !i.pull_request && new Date(i.created_at) < cutoff);
     if (stale.length === 0) break;
 
-    await Promise.all(
-      stale.map(async (i) => {
-        const resp = await fetch(`https://api.github.com/repos/${digestRepo}/issues/${i.number}`, {
-          method: "PATCH",
-          headers: { ...headers(), "Content-Type": "application/json" },
-          body: JSON.stringify({ state: "closed" }),
-        });
-        if (!resp.ok) console.error(`[github] Failed to close #${i.number}: ${resp.status}`);
-      }),
-    );
-    closed += stale.length;
+    for (const i of stale) {
+      await waitForGhPacing();
+      const resp = await fetch(`https://api.github.com/repos/${digestRepo}/issues/${i.number}`, {
+        method: "PATCH",
+        headers: { ...headers(), "Content-Type": "application/json" },
+        body: JSON.stringify({ state: "closed" }),
+      });
+      if (resp.ok) {
+        closed++;
+      } else {
+        const body = await resp.text();
+        console.error(`[github] Failed to close #${i.number}: ${resp.status} ${body}`);
+        // Stop on auth/permission errors to avoid infinite loop
+        if (resp.status === 401 || resp.status === 403 || resp.status === 422) break;
+      }
+    }
+
+    // If no issues were successfully closed this round, stop to avoid infinite loop
+    if (closed === 0) break;
   }
   return closed;
 }

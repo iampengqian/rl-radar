@@ -93,8 +93,11 @@ export function is429(err: unknown): boolean {
   return (err as { status?: number })?.status === 429 || String(err).includes("429");
 }
 
-function is403(err: unknown): boolean {
-  return (err as { status?: number })?.status === 403 || String(err).includes("permission_error");
+function isQuotaError(err: unknown): boolean {
+  const status = (err as { status?: number })?.status;
+  if (status !== 403) return false;
+  const errStr = String(err);
+  return errStr.includes("quota") || errStr.includes("rate limit") || errStr.includes("overloaded");
 }
 
 /** Check if error is retryable (429 rate limit or 5xx server error) */
@@ -148,7 +151,7 @@ export async function callLlm(prompt: string, maxTokens = LLM_TOKENS_DEFAULT): P
         await sleep(wait);
         continue;
       }
-      if (is403(err) && fallbackProvider) {
+      if (isQuotaError(err) && fallbackProvider) {
         console.error(`[llm] 403 quota exceeded — switching to fallback provider`);
         return await fallbackProvider.call(prompt, maxTokens);
       }
