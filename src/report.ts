@@ -17,8 +17,16 @@ export const LLM_TOKENS_ROLLUP = 8192;
 const DEFAULT_LLM_CONCURRENCY = 2;
 const DEFAULT_LLM_MIN_INTERVAL_MS = 5_000;
 import { type LlmProvider, createProvider } from "./providers/index.ts";
+import { DeepSeekProvider } from "./providers/deepseek.ts";
 
 const provider: LlmProvider = createProvider();
+
+const fallbackProvider: LlmProvider | null = (() => {
+  const key = process.env["DEEPSEEK_API_KEY"];
+  if (!key) return null;
+  console.log("[providers] Fallback provider configured: deepseek");
+  return new DeepSeekProvider(key);
+})();
 
 // ---------------------------------------------------------------------------
 // Concurrency limiter — prevents rate-limit (429) errors when many LLM calls
@@ -85,6 +93,13 @@ export function is429(err: unknown): boolean {
   return (err as { status?: number })?.status === 429 || String(err).includes("429");
 }
 
+function isQuotaError(err: unknown): boolean {
+  const status = (err as { status?: number })?.status;
+  if (status !== 403) return false;
+  const errStr = String(err);
+  return errStr.includes("quota") || errStr.includes("rate limit") || errStr.includes("overloaded");
+}
+
 /** Check if error is retryable (429 rate limit or 5xx server error) */
 export function isRetryable(err: unknown): boolean {
   const status = (err as { status?: number })?.status;
@@ -135,6 +150,10 @@ export async function callLlm(prompt: string, maxTokens = LLM_TOKENS_DEFAULT): P
         console.error(`[llm] ${status} — retry ${attempt + 1}/${MAX_RETRIES} in ${wait / 1000}s...`);
         await sleep(wait);
         continue;
+      }
+      if (isQuotaError(err) && fallbackProvider) {
+        console.error(`[llm] 403 quota exceeded — switching to fallback provider`);
+        return await fallbackProvider.call(prompt, maxTokens);
       }
       throw err;
     } finally {

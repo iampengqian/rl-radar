@@ -330,6 +330,51 @@ function neutralizeGitHubRefs(text: string): string {
   );
 }
 
+/**
+ * Close open issues (not PRs) created more than `days` days ago.
+ * Uses GitHub Search API with `is:issue` qualifier to exclude PRs natively.
+ * Returns the number of issues successfully closed.
+ */
+export async function closeStaleIssues(days: number): Promise<number> {
+  const digestRepo = process.env["DIGEST_REPO"] ?? "";
+  if (!digestRepo) return 0;
+  const cutoff = new Date(Date.now() - days * 86_400_000);
+  const cutoffDate = cutoff.toISOString().split("T")[0];
+  let closed = 0;
+
+  const query = `repo:${digestRepo} is:issue is:open created:<${cutoffDate}`;
+
+  while (true) {
+    const result = await githubGet<{ total_count: number; items: { number: number }[] }>(
+      "https://api.github.com/search/issues",
+      { q: query, per_page: "100", page: "1", sort: "created", order: "asc" },
+    );
+    if (result.items.length === 0) break;
+
+    let roundClosed = 0;
+    for (const i of result.items) {
+      await waitForGhPacing();
+      const resp = await fetch(`https://api.github.com/repos/${digestRepo}/issues/${i.number}`, {
+        method: "PATCH",
+        headers: { ...headers(), "Content-Type": "application/json" },
+        body: JSON.stringify({ state: "closed" }),
+      });
+      if (resp.ok) {
+        roundClosed++;
+      } else {
+        const body = await resp.text();
+        console.error(`[github] Failed to close #${i.number}: ${resp.status} ${body}`);
+        if (resp.status === 401 || resp.status === 403 || resp.status === 422) return closed;
+      }
+    }
+    closed += roundClosed;
+
+    // Always re-fetch page 1: closing issues shrinks results, so page++ would skip items
+    if (roundClosed === 0 || result.items.length < 100) break;
+  }
+  return closed;
+}
+
 export async function createGitHubIssue(title: string, body: string, label: string): Promise<string> {
   const digestRepo = process.env["DIGEST_REPO"] ?? "";
   body = neutralizeGitHubRefs(body);
