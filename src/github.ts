@@ -332,32 +332,28 @@ function neutralizeGitHubRefs(text: string): string {
 
 /**
  * Close open issues (not PRs) created more than `days` days ago.
- * Always re-fetches page 1: closing issues shifts pagination, so incrementing
- * pages would skip items. Returns the number of issues successfully closed.
+ * Uses GitHub Search API with `is:issue` qualifier to exclude PRs natively.
+ * Returns the number of issues successfully closed.
  */
 export async function closeStaleIssues(days: number): Promise<number> {
   const digestRepo = process.env["DIGEST_REPO"] ?? "";
   if (!digestRepo) return 0;
   const cutoff = new Date(Date.now() - days * 86_400_000);
+  const cutoffDate = cutoff.toISOString().split("T")[0];
   let closed = 0;
 
+  const query = `repo:${digestRepo} is:issue is:open created:<${cutoffDate}`;
+  let page = 1;
+
   while (true) {
-    const issues = await githubGet<{ number: number; created_at: string; pull_request?: unknown }[]>(
-      `https://api.github.com/repos/${digestRepo}/issues`,
-      {
-        state: "open",
-        sort: "created",
-        direction: "asc",
-        per_page: "100",
-      },
+    const result = await githubGet<{ total_count: number; items: { number: number }[] }>(
+      "https://api.github.com/search/issues",
+      { q: query, per_page: "100", page: String(page), sort: "created", order: "asc" },
     );
-    if (issues.length === 0) break;
+    if (result.items.length === 0) break;
 
-    // Filter out PRs — the Issues endpoint returns both
-    const stale = issues.filter((i) => !i.pull_request && new Date(i.created_at) < cutoff);
-    if (stale.length === 0) break;
-
-    for (const i of stale) {
+    let roundClosed = 0;
+    for (const i of result.items) {
       await waitForGhPacing();
       const resp = await fetch(`https://api.github.com/repos/${digestRepo}/issues/${i.number}`, {
         method: "PATCH",
@@ -365,17 +361,17 @@ export async function closeStaleIssues(days: number): Promise<number> {
         body: JSON.stringify({ state: "closed" }),
       });
       if (resp.ok) {
-        closed++;
+        roundClosed++;
       } else {
         const body = await resp.text();
         console.error(`[github] Failed to close #${i.number}: ${resp.status} ${body}`);
-        // Stop on auth/permission errors to avoid infinite loop
-        if (resp.status === 401 || resp.status === 403 || resp.status === 422) break;
+        if (resp.status === 401 || resp.status === 403 || resp.status === 422) return closed;
       }
     }
+    closed += roundClosed;
 
-    // If no issues were successfully closed this round, stop to avoid infinite loop
-    if (closed === 0) break;
+    if (roundClosed === 0 || result.items.length < 100) break;
+    page++;
   }
   return closed;
 }
