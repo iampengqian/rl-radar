@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex底层疯狂重构Rust，解决多线程与沙箱隔离痛点",
+      "Claude Code陷抗议风波，用户抵制核心功能移除及计费争议",
+      "Qwen Code架构大演进，引入Daemon模式与Git Worktree隔离",
+      "Gemini CLI拉响安全红线，完善模型降级路由保底机制",
+      "DeepSeek TUI重构渲染管线，彻底解决UI严重闪烁问题",
+      "Pi极力拥抱本地开源模型，全面加固供应链安全"
+    ],
+    "ai-agents": [
+      "OpenClaw单日狂飙，连发两Beta版针对Codex运行时进行修补",
+      "ACP协议支持大完善，OpenClaw修复会话状态与工具调用",
+      "修复关键权限漏洞，OpenClaw数据摄取现已强制需管理员权限",
+      "底层架构正酝酿巨变，OpenClaw待合并PR积压超450个",
+      "多渠道稳定性提升，Telegram等网关底层重连机制全面修复",
+      "修复pnpm11环境痛点，解决核心底层依赖无法正常源码安装"
+    ],
+    "ai-trending": [
+      "Claude生态大爆发，提取自真实工程环境的技能包日增近4千星",
+      "AI交易智能体加速落地，全自动金融量化框架成GitHub热榜新宠",
+      "专治AI胡编乱造，AI生成低质量React代码专属修复工具大热",
+      "个人记忆系统受追捧，增强AI长记忆的开源项目引社区狂热",
+      "Claude专属上下文神器爆火，一键将全仓库化作精准上下文",
+      "Learn-claude-code破6万星，成极简版AI智能体驾驶舱绝佳教材"
+    ],
+    "ai-web": [
+      "OpenAI发文探讨参数高尔夫，释放追求极致模型瘦身的新信号",
+      "AI巨头内卷风向大变：从单纯多模态炫技转向拼算力效率",
+      "模型推理成本有望断崖下降，OpenAI正构筑极高成本效益护城河",
+      "Anthropic官网罕见零更新，疑似蓄力后续重量级模型发布",
+      "OpenAI新文直击大模型痛点，深度剖析参数压缩与架构优化",
+      "应对开源低价战？OpenAI秀工程肌肉探索训练成本指数级下降"
+    ],
+    "ai-hn": [
+      "极限压缩！庞大的工具调用能力被成功蒸馏进仅26M的极小模型",
+      "GLiNER推出全新开源大模型护栏，内容审核速度飙升16倍",
+      "告别失控死循环，可视化状态机让AI智能体执行绝对可靠",
+      "无需乘法运算！全新融合技术让大模型在普通CPU上极速推理",
+      "深挖Claude内心，自然语言自编码器揭示其想而不说的机制",
+      "医疗误诊致死面临诉讼，OpenAI深陷安全边界与道德争议"
+    ],
+    "rl-daily": [
+      "LLM对齐范式大迭代，GRPO正全面取代PPO成为新一代基线",
+      "死磕全异步架构，verl单日狂揽41个PR进行高频底层重构",
+      "Open Instruct全面转向GRPO，引入前沿课程学习新范式",
+      "训推效率核弹级优化！新款优化器Muon破解权重谱范数漂移",
+      "大模型强化学习框架拥抱云原生，AReaL加速适配K8s调度",
+      "AReaL、ROLL等新一代框架发力，强隔离沙箱与跨硬件生态演进"
+    ],
+    "agent-orch": [
+      "Claude Code专属外骨骼装甲爆发，多款编排工具重塑智能体协作",
+      "告别单打独斗，去中心化多智能体网络正试图重塑信任机制",
+      "开源极客死磕本地化，多款编排工具发力解决云端API高成本",
+      "智能体编排迎新规，可视化状态机成防止AI失控的新标配",
+      "Agent通信协议大爆发，去中心化网络正在构建跨平台协作标准",
+      "Kanban流融合AI编排，多款看板管理工具试图重塑开发工作流"
+    ],
+    "ai-arxiv": [
+      "打破静态计算预算！新架构实现Token级动态自适应资源分配",
+      "颠覆DPO！全新群组偏好优化算法克服推理多样性丧失难题",
+      "彻底告别红队测试！大模型安全护栏首次获得形式化数学保证",
+      "解决显存访问大瓶颈，稀疏MoE在端侧实现密集模型可比性能",
+      "深度剖析同策略蒸馏：明确定义该技术何时有益及何时有害",
+      "突破普通CPU算力限制，无需乘法运算让大模型在本地极速推理"
+    ],
+    "ai-hf": [
+      "开源界狂欢！DeepSeek-V4-Pro与轻量Flash版下载量双双破百万",
+      "多模态卷出新高度，Qwen3.6-35B以极高参数效率狂斩4百万下载",
+      "谷歌Gemma-4重磅开源，31B指令微调模型下载量直逼千万级别",
+      "小米大模型登场！MiMo-V2.5-Pro主打智能体与超长上下文处理",
+      "OpenAI开源隐私过滤模型，释放大模型数据合规与安全新信号",
+      "Sulphur-2文生视频突破，OmniVoice零样本语音克隆引瞩目"
+    ],
+    "ai-community": [
+      "零成本白嫖！利用Docker本地免费执行Claude Code告别额度焦虑",
+      "告别随性Prompt，社区呼吁用规格驱动开发替代氛围编程",
+      "架构大改造！开发者分享硬核实战将AI交易智能体成本暴砍80%",
+      "上线前必看！RAG系统极限压力测试工具成社区新宠",
+      "2GB本地模型跑赢Claude？零成本构建高性价比Agent引热议",
+      "告别中心化，社区探索用密码学协议保障多智能体去中心化通信"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to autonomous, multi-agent workflows",
+      "Claude Code v2.1.140 released with maintenance and hook fixes",
+      "Ecosystem facing token management and security growing pains",
+      "OpenCode, Kimi CLI, and Qwen CLI driving open-source innovation",
+      "Major players investing in Agent-to-Agent (A2A) protocols",
+      "Daemon and background execution modes gaining traction"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 new issues and PRs in a single day",
+      "Maintainers struggling to triage 428 open issues and 451 PRs",
+      "OpenClaw v2026.5.12-beta.1 and beta.2 patches released",
+      "Critical fixes target new Codex default runtime security scopes",
+      "Multi-agent memory leaks plague current OpenClaw builds",
+      "Messaging delivery bugs squashed across WhatsApp and Slack"
+    ],
+    "ai-trending": [
+      "Persistent memory layers like agentmemory dominate GitHub",
+      "Ollama hits 171k stars, supporting Kimi-K2.5 and GLM-5",
+      "Fully automated AI trading agents see a surge in popularity",
+      "Vectorless RAG architectures emerge as a trending paradigm",
+      "Rig: Rust LLM framework gains 7,251 stars for performance",
+      "OpenCLI turns websites into standardized tools for AI agents"
+    ],
+    "ai-web": [
+      "Anthropic goes totally silent, signaling a possible major launch",
+      "OpenAI publishes retroactive engineering post May 12",
+      "OpenAI drops highly specific post: What Parameter Golf Taught Us",
+      "Anthropic silence follows historical pre-release pattern",
+      "Zero new articles detected across Anthropic blogs today",
+      "OpenAI tracking limited to metadata-only due to crawl issues"
+    ],
+    "ai-hn": [
+      "Needle: 26M model distills Gemini tool calling, hits top of HN",
+      "Wrongful death lawsuit against OpenAI sparks safety debates",
+      "Musk v. OpenAI trial draws immense scrutiny on AI ethics",
+      "FairyFuse enables multiplication-free LLM inference on CPUs",
+      "Community skeptical of mathematically proven claims on LLMs",
+      "Shift from monolithic LLMs to nimble, task-specific distills"
+    ],
+    "rl-daily": [
+      "LLM post-training frameworks dominate over classic deep RL",
+      "verl leads ecosystem with 41 active PRs for async pipelines",
+      "TRL sees 16 active PRs focused on upstream dependencies",
+      "Massive MoE models driving RL open-source infrastructure",
+      "Training pipelines shifting from sync to async execution",
+      "New sandbox environments developed for agentic tool-calling"
+    ],
+    "agent-orch": [
+      "AI agent orchestrators maturing for multi-agent swarm deployment",
+      "Claude Squad and Ruflo streamline seamless agent scaling",
+      "AutoGPT and MetaGPT lead in complex orchestration frameworks",
+      "Specialized tools like HumanLayer add guardrails to agents",
+      "Vibe Kanban and OpenKanban introduce visual agent management",
+      "Agent Orchestrator standardizes multi-agent workflow protocols"
+    ],
+    "ai-arxiv": [
+      "Dynamic computation budgets challenge static LLM decoding",
+      "DGPO optimizes LLM alignment beyond standard pairwise prefs",
+      "Embedded Language Flows adapt diffusion models for text",
+      "Sparse MoE models finally match dense performance on edge",
+      "Novel mathematical frameworks proposed for transformer dynamics",
+      "Agentic systems focus on dynamic skill lifecycle management"
+    ],
+    "ai-hf": [
+      "Qwen3.6 and Gemma 4 families dominate Hugging Face charts",
+      "DeepSeek-V4-Pro surpasses 2M downloads for SOTA reasoning",
+      "Community shifts heavily toward efficient MoE architectures",
+      "DeepSeek-V4-Flash optimized for high-throughput generation",
+      "Xiaomi MiMo-V2.5-Pro optimized for agentic workflows",
+      "Advanced zero-shot voice cloning models see massive growth"
+    ],
+    "ai-community": [
+      "Developers shift from LLMs to building autonomous AI agents",
+      "Run Claude Code locally for free using Docker Model Runner",
+      "Micro code reviews proposed for stable AI-generated code",
+      "Lobste.rs devs debate the growing open weights crisis",
+      "AI-assisted coding makes programming language choice irrelevant",
+      "Community pivots to spec-driven AI development for production"
+    ]
+  }
+}
