@@ -343,12 +343,11 @@ export async function closeStaleIssues(days: number): Promise<number> {
   let closed = 0;
 
   const query = `repo:${digestRepo} is:issue is:open created:<${cutoffDate}`;
-  let page = 1;
 
   while (true) {
     const result = await githubGet<{ total_count: number; items: { number: number }[] }>(
       "https://api.github.com/search/issues",
-      { q: query, per_page: "100", page: String(page), sort: "created", order: "asc" },
+      { q: query, per_page: "100", page: "1", sort: "created", order: "asc" },
     );
     if (result.items.length === 0) break;
 
@@ -370,8 +369,8 @@ export async function closeStaleIssues(days: number): Promise<number> {
     }
     closed += roundClosed;
 
+    // Always re-fetch page 1: closing issues shrinks results, so page++ would skip items
     if (roundClosed === 0 || result.items.length < 100) break;
-    page++;
   }
   return closed;
 }
