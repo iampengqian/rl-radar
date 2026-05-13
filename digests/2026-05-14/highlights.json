@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Gemini CLI连发两版，正紧急构建安全熔断机制",
+      "GitHub Copilot发双版，引入/fork会话防丢失",
+      "Kimi Code陷阵痛：K2.6模型过载引发OOM泄漏",
+      "OpenCode发新版，首增OpenRouter动态模型发现",
+      "Gemini CLI爆P0级严重Bug：AI失控删库引发恐慌",
+      "OpenAI Codex陷入性能瓶颈：MCP泄漏37GB内存"
+    ],
+    "ai-agents": [
+      "OpenClaw一天狂发4个Beta版，冲刺架构大演进",
+      "Codex运行时迁移遇阻，官方包现MODULE_NOT_FOUND",
+      "OpenClaw发破坏性更新，强制升级Gateway v4协议",
+      "iMessage现严重Bug，原生图片暴露占位符文本",
+      "项目单日处理超千条Issues与PR，社区热度爆表",
+      "架构演进中后期：单日待合并PR积压高达479条"
+    ],
+    "ai-trending": [
+      "mattpoclock/skills登顶，分享Claude高级技能包",
+      "supertonic今日暴涨千星，打造极速本地多语TTS",
+      "ollama原生支持Kimi-K2.5、GLM-5等最新模型",
+      "claude-mem爆火：为智能体提供跨会话持久记忆",
+      "trycua/cua走红，定义计算机控制智能体基础设施",
+      "agentmemory热度飙升，专攻AI编程智能体记忆方案"
+    ],
+    "ai-web": [
+      "Anthropic推Claude中小企业方案，一键融入SaaS",
+      "OpenAI正构建Codex专属Windows沙盒环境",
+      "AI竞争转向：连接器生态成争夺企业预算核心",
+      "Claude化身工作流，直连QuickBooks等财务工具",
+      "基础模型红利见顶，沙盒化智能体成新发力点",
+      "OpenAI官网暗藏新文：揭秘Codex多OS底层渗透"
+    ],
+    "ai-hn": [
+      "LLM完全重写Rust版RAR解压工具，引发代码质量激辩",
+      "Claude订阅与API额度突变，Vibe Coding遇冷",
+      "Torrix发布轻量LLM监控工具，抛弃重数据库依赖",
+      "Sam Altman出庭激辩，AI初创高层诚信遭遇质疑",
+      "Claude Code无缝对接GitHub，开启自动修Issue时代",
+      "颠覆传统：探讨LLM持续学习能力的突破性尝试"
+    ],
+    "rl-daily": [
+      "verl重构发力：全面攻坚多硬件与全异步架构",
+      "TRL极速适配前沿：聚焦Gemma4与GRPO算法重构",
+      "ROCK构建录制回放代理，攻克RL环境状态确定性",
+      "LLM后训练成主旋律：GRPO难度课程学习受追捧",
+      "经典RL算法库全面静默，生态重心向LLM后训练倾斜",
+      "slime专为Agent场景裁剪底层算子，引入Off-policy"
+    ],
+    "ai-arxiv": [
+      "新优化器Pion挑战Adam：用正交变换保训练稳定",
+      "Multi-Stream架构打破LLM单线程输出性能瓶颈",
+      "颠覆GRPO：稀疏到密集奖励原则重塑后训练范式",
+      "可扩展Token级幻觉检测，精准锁定隐蔽性事实错误",
+      "ORCE方法力挽狂澜，专治大模型过度自信痛点",
+      "RL后训练新方案：在On/Off-policy间自适应切换"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro登顶，以生成质量定义开源性能天花板",
+      "Gemma-4-31B下载量破千万，成开源商用多模态首选",
+      "Sulphur-2点赞领跑，开源文生视频质量迎来大飞跃",
+      "OpenAI首发privacy-filter模型，直击企业隐私脱敏",
+      "Qwen3.6-35B凭MoE架构，霸榜图文理解任务",
+      "端侧部署需求爆发：DeepSeek-V4-Flash兼顾极速与低成本"
+    ],
+    "ai-community": [
+      "血泪复盘：开发者单月被Claude Code烧掉1.4万美元",
+      "Cursor重命名一次耗8400 Tokens，底层黑盒账单惹怒开发者",
+      "50款MCP服务器被扫出高危漏洞，涉GitHub等巨头",
+      "MCP协议过度臃肿？Code Mode被指为破局关键",
+      "Lambda新增文件系统，Serverless部署AI Agent成新趋势",
+      "Claude Code六大实战技巧：教你闭环Agent反馈流程"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools pivoting to multi-agent autonomous execution.",
+      "MCP becomes universal standard despite OAuth fragility.",
+      "Gemini CLI ships 2 releases: v0.42.0 and v0.43.0-preview.",
+      "Claude Code faces billing regressions and MCP Auth issues.",
+      "OpenAI Codex plagued by desktop app TUI crashes.",
+      "Developers report zombie processes and memory overhead."
+    ],
+    "ai-agents": [
+      "OpenClaw sees extreme 500 issue spike in 24 hours.",
+      "Maintainer bottleneck as 479 PRs remain open.",
+      "4 beta releases shipped to address urgent bugs.",
+      "v2026.5.12-beta.6 fixes iMessage image placeholder glitch.",
+      "High community engagement but short-term stability deficit.",
+      "April/May upgrades trigger flood of regression complaints."
+    ],
+    "ai-trending": [
+      "\"Agentic Coding\" revolution drives thousand-star growth.",
+      "agentmemory and claude-mem push persistent memory layers.",
+      "openhuman: local Rust-based private super-intelligence.",
+      "supertonic gains 1k stars for native multilingual TTS.",
+      "Stealth browsers designed specifically for AI agents.",
+      "LLMs-from-scratch resurges as agent foundation crucial."
+    ],
+    "ai-web": [
+      "Anthropic targets SMBs with \"Claude for Small Business\".",
+      "Claude integrates natively into Quickbooks, PayPal, HubSpot.",
+      "OpenAI details the \"Codex Windows Sandbox\" for devs.",
+      "AI market matures into horizontal vs vertical plays.",
+      "SMB sector lags in AI adoption despite 44% of US GDP.",
+      "Anthropic pivots from raw model to out-of-box business integration."
+    ],
+    "ai-hn": [
+      "Sam Altman's credibility scrutinized in OpenAI trial.",
+      "Meta faces backlash for forcing unblockable AI on Threads.",
+      "Apple and Anthropic make premium tier financial plays.",
+      "Developers rage over Claude Code pricing and rate limits.",
+      "LLMs capable of continual adaptation without retraining.",
+      "AI cited in death of 133-year-old Princeton tradition."
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates between classic RL and LLM RLHF.",
+      "Gymnasium and CleanRL experience zero activity today.",
+      "verl aggressively expands into NPUs and MLUs.",
+      "TRL focuses on scaling complex MoE and agentic architectures.",
+      "Frameworks pivot to asynchronous decoupled training.",
+      "Post-training infrastructure sees intense development."
+    ],
+    "agent-orch": [
+      "Ecosystem explodes to 45 multi-agent orchestration projects.",
+      "Claude Squad and Claude Flow expand agent coordination.",
+      "Developers shift to leaner, skill-based agent workflows.",
+      "Asynchronous pipelines essential for agentic architectures.",
+      "Intense focus on orchestrating autonomous web interaction.",
+      "Traditional frameworks like AutoGPT face new competition."
+    ],
+    "ai-arxiv": [
+      "Pion optimizer updates weights via orthogonal transformations.",
+      "LLMs memorize facts using low-dimensional geometric spaces.",
+      "Novel benchmarks introduced for highly specialized memory.",
+      "Researchers pivot to test-time interventions and self-correction.",
+      "New frameworks introduced for hybrid GUI-tool orchestration.",
+      "Reinforcement learning papers tackle reward hacking head-on."
+    ],
+    "ai-hf": [
+      "Qwen3.6 and DeepSeek-V4 families dominate download charts.",
+      "Gemma-4 31B instruction-tuned hits 10M weekly downloads.",
+      "Sulphur-2-base pushes boundaries in video generation.",
+      "Community rushes to quantize models to GGUF format.",
+      "OpenAI privacy filter gains high practical utility.",
+      "OmniVoice brings advanced open-source voice cloning."
+    ],
+    "ai-community": [
+      "Dev loses $14,502 to Claude Code in a single month.",
+      "Cursor uses 8,400 tokens just to rename a function.",
+      "MCP faces severe architectural bloat and security flaws.",
+      "Developers pivot to lean agents using markdown skills.",
+      "Local AI models integrated to regain cost predictability.",
+      "Runaway API costs become critical production pain point."
+    ]
+  }
+}
