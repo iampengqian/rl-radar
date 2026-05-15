@@ -1,0 +1,142 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 启动底层 Rust 化架构重构",
+      "Claude Code 成熟支持多 Agent 参数化调度",
+      "AI CLI 迈入多智能体协同与 MCP 深度集成时代",
+      "OpenCode 引入 Effect 架构死磕内存泄漏痛点",
+      "GitHub Copilot 接入 MCP 搜索并强化企业级管控",
+      "长会话 OOM 崩溃成刚需，社区推进上下文自动压缩"
+    ],
+    "ai-agents": [
+      "OpenClaw 日活近千单，多通道稳定性问题集中爆发",
+      "OpenClaw v2026.5.14 发布，强化多通道指令解析",
+      "OpenClaw 支持单 Agent 细粒度字数与上下文注入控制",
+      "PR#78032 修复 OpenClaw 空闲卡死会话无法恢复问题",
+      "OpenClaw 修复流式传输多数据块引发的幻影工具调用",
+      "社区反馈极热，OpenClaw 待合并 PR 积压高达 455 条"
+    ],
+    "ai-trending": [
+      "Agentic Skills 霸榜，AI 编程全面转向标准化技能拼装",
+      "mattpocock/skills 单日暴涨 3155 Star 领跑全网",
+      "RuView 仅凭家用 WiFi 信号实现空间智能感知",
+      "Anthropic 官方发布 AI 软件工程标准化操作范式",
+      "ollama 无缝支持 Kimi-K2.5 等最新一代开源大模型",
+      "supertonic 代表极速端侧多语言 TTS 引擎新突破"
+    ],
+    "ai-hn": [
+      "社区反思狂热：直指全行业陷入 AI 精神病态引共鸣",
+      "Anthropic 用 Rust 重写 Bun 运行时展现 AI 重构潜力",
+      "GlycemicGPT 开源 AI 糖尿病管理工具获高度关注",
+      "LLM 成功排查并解决存在十年的陈年 Swift/C++ Bug",
+      "TongueType 专注本地隐私保护，重塑 macOS 语音听写",
+      "Anthropic 遭质疑：以安全掩盖高成本与天价 API 账单"
+    ],
+    "rl-daily": [
+      "RL 生态分层演进：LLM 后训练主导底层异构算力适配",
+      "TRL 紧急修复 GRPO 底层数值 NaN 并攻坚 VLM 测试",
+      "verl 适配最新 MoE 大模型并密集修复 GRPO 正确性",
+      "AReaL 突破显存墙，探索零拷贝与分布式权重同步",
+      "OpenRLHF 底层交互从文本粒度彻底重构为 Token 粒度",
+      "传统单智能体算法库已高度成熟，重心转向 API 规范化"
+    ],
+    "ai-arxiv": [
+      "OpenDeepThink 突破深度缩放，提出并行推理新路径",
+      "MetaBackdoor 揭示 LLM 位置编码中的全新安全漏洞",
+      "研究证实常见 LLM 量化技术极易被恶意注入后门",
+      "标准机器反学习机制在 4-bit 量化后极易失效",
+      "MeMo 创新范式：将记忆机制直接作为模型结构优化",
+      "异步并发工具调用取得突破，无需改变模型架构"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 凭借强悍生成能力夺得本周点赞冠军",
+      "谷歌 Gemma-4-31B 狂揽近千万下载量震惊开源社区",
+      "多模态大爆发：MiniCPM-V 与 MoE 架构 Qwen3.6 封神",
+      "OpenAI 开源隐私过滤与实体识别模型抢占合规高地",
+      "HiDream-ai 助力视频生成、3D 重建等生成式任务爆发",
+      "AI 开源大势明确从单一文本向全模态交互极速演进"
+    ],
+    "ai-community": [
+      "AI Agent 安全成焦点：急需从传输层到运行时的纵深防御",
+      "MCP 协议泛滥成灾，标准化后的权限与治理架构成痛点",
+      "打破同步瓶颈：异步批处理才是大幅降低延迟的关键",
+      "社区警惕 Vibe Coding：呼吁用成熟技术栈构建 AI 应用",
+      "如何在不引发线上事故的前提下安全进行 LLM Prompt A/B 测试",
+      "开发者破除迷信：模型参数并非越大越好，需平衡性能与成本"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to complex autonomous multi-agent systems.",
+      "Claude Code v2.1.142 focuses on agent dispatching and Plan Mode.",
+      "OpenAI Codex tests new Windows sandbox and remote control app.",
+      "Gemini CLI v0.44.0-nightly adds MCP Sampling and AST-aware tools.",
+      "GitHub Copilot debuts v1.0.49 focusing on MCP registry ergonomics.",
+      "DeepSeek TUI and other new CLI tools join the rapid AI race."
+    ],
+    "ai-agents": [
+      "OpenClaw hits 500 active issues and PRs in the last 24 hours.",
+      "OpenClaw ships v2026.5.14-beta.2 with enhanced agent configs.",
+      "Severe growing pains hit OpenClaw's v2026.4.29 upgrade cycle.",
+      "Widespread reports of OpenClaw gateway instability emerge.",
+      "OpenClaw faces high CPU utilization and channel regressions.",
+      "Maintainers actively target systemic flaws in OpenClaw bots."
+    ],
+    "ai-trending": [
+      "Agentic skills and coding frameworks dominate GitHub trending.",
+      "mattpoclock/skills skyrockets, gaining over 3,100 stars today.",
+      "obra/superpowers adds 1,600 stars for autonomous agent workflows.",
+      "ruvnet/RuView turns standard WiFi into non-camera spatial AI.",
+      "supertone-inc/supertonic launches offline multilingual Text-to-Speech.",
+      "Persistent memory systems for LLMs see a massive surge in traction."
+    ],
+    "ai-hn": [
+      "HN users gripped by skepticism regarding AI industry economics.",
+      "Anthropic accused of hiding top models due to exorbitant costs.",
+      "OpenAI's new ChatGPT bank integrations trigger heavy privacy fears.",
+      "GlycemicGPT: Open-source AI-powered diabetes management debuts.",
+      "Developers focus heavily on spiraling API costs and billing bugs.",
+      "Anthropic's Bun Rust rewrite merged at the speed of AI agents."
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates between LLM post-training and classical RL.",
+      "TRL and verl aggressively tackle memory bottlenecks for MoE models.",
+      "Classical RL libraries like CleanRL and SB3 enter a mature phase.",
+      "Foundational single-agent policy tools show zero to minimal activity.",
+      "Projects target hardware heterogeneity for trillion-parameter models.",
+      "OpenRLHF operates at the bleeding edge of systems engineering."
+    ],
+    "agent-orch": [
+      "Claude Squad and Crystal lead rapid agent orchestrator iterations.",
+      "OpenKanban and Vibe Kanban introduce new workflows for AI agents.",
+      "Symphony and dmux push multi-agent scaling and execution limits.",
+      "45 agent orchestration projects tracked in today's digest.",
+      "Developers race to define standard interfaces for agent routing.",
+      "HumanLayer and Superset focus on secure agent-to-tool handoffs."
+    ],
+    "ai-arxiv": [
+      "TFGN solves catastrophic forgetting in continuous LLM pre-training.",
+      "Dual-Dimensional Consistency optimizes inference-time scaling.",
+      "MeMo treats LLM memory as a playable model, not a static database.",
+      "Quantization weaponized to inject malicious backdoors into LLMs.",
+      "Generative world models undergo rigorous geometric evaluations.",
+      "New architectures drastically improve asynchronous agent execution."
+    ],
+    "ai-hf": [
+      "Google's Gemma 4 dominates charts with nearly 10M downloads.",
+      "DeepSeek-V4-Pro becomes the most liked model of the week.",
+      "DeepSeek-V4-Flash optimizes text generation for high-speed inference.",
+      "Qwen 3.6 series upgrades standard LLMs into vision-language models.",
+      "LTX-2.3 workflows drive massive adoption in open-weight video AI.",
+      "Zero-shot voice cloning sees a major surge in open-source popularity."
+    ],
+    "ai-community": [
+      "Tech community shifts from marveling at AI to governing it.",
+      "Model Context Protocol (MCP) urgently requires new governance.",
+      "Developers push back against 'vibe coding' and AI-generated slop.",
+      "Bigger AI models aren't always better; developers seek efficiency.",
+      "Triple defense in depth architectures emerge for production agents.",
+      "Deep optimizations highlight a focus on sustainable enterprise AI."
+    ]
+  }
+}
