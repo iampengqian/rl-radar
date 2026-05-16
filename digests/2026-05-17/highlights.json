@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 开启底层六步重构，发力输入流与状态同步",
+      "Gemini CLI 密集修复内存泄漏，全面布局 AST 感知规划",
+      "Qwen Code 狂推 Daemon 守护进程架构，解决长会话痛点",
+      "OpenCode 高频发版修异步 Bug，推进动态模型降级链",
+      "AI CLI 迎拐点：多 Agent 编排与后台服务化成下一代护城河",
+      "头部工具遇 Windows 渲染冻结，跨平台体验仍具挑战"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日狂飙 3 个 Beta 版，xAI Grok OAuth 登录上线",
+      "OpenClaw 新增 cron 运行控制，定时任务调试与编排大提效",
+      "安全再加码：OpenClaw 引入网关密钥校验强制安全策略",
+      "多智能体编排遇冷：社区反馈暴露底层稳定性严峻瓶颈",
+      "OpenClaw 集成向导支持简中，大幅降低非英语用户门槛",
+      "OpenClaw 日更 500 条 Issue，功能叠加与深度打磨并行"
+    ],
+    "ai-trending": [
+      "主打本地隐私的 Rust OS openhuman 单日爆涨 1601 Star",
+      "专为 Claude Code 设计的代码图谱工具 codegraph 惊艳亮相",
+      "superpowers 斩获超千星，AI 编码 Agent 标准化工作流爆发",
+      " Ruflo 领跑多智能体编排，支持自学习与企业级原生集成",
+      "AI 基础设施标配化：提供 Agent 持久记忆与工作流编排",
+      "端侧多模态极速下沉，WiFi 感知与极速 TTS 引擎受追捧"
+    ],
+    "ai-hn": [
+      "DeepSeek-V4-Flash 引爆社区：LLM steering vectors 重获关注",
+      "震惊！仅需修改单个神经元即可瓦解大模型安全对齐",
+      "OpenClaw 创作者单月狂烧 130 万美元 OpenAI Token",
+      "冷思考：Webflow 直指清理 AI 垃圾代码的隐性高昂成本",
+      "微软开源 AI 编码分析工具，像记录运动一样追踪效率",
+      "马耳他政府与 OpenAI 合作，全民发放 ChatGPT Plus"
+    ],
+    "rl-daily": [
+      "RLHF 进入深水区：veRL, TRL 等向千亿级 MoE 异步架构攻坚",
+      "TRL 紧急修复 Reward 缺失致 NaN 中毒，为快速迭代还债",
+      "AReaL 重构底层权重同步协议，引入 Ray RDT 替代旧方案",
+      "veRL 引入 MooncakeStore，跨实例池化 KV Cache 破通信瓶颈",
+      "大模型 RL 训练重心转移：从单步 PPO 转向高并发异步交互",
+      "ROCK 聚焦千卡集群隐形资源泄漏，防御性运维成工业级刚需"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 横扫榜单，成当前开源文本生成绝对霸主",
+      "Gemma-4-31B-it 周下载近千万，多模态指令微调成社区顶流",
+      "Qwen3.6 系列霸榜，MoE 与稠密架构在图文理解表现强悍",
+      "Sulphur-2 极其火爆，预示开源视频生成 Pipeline 快速成熟",
+      "OpenAI 开源隐私过滤器，AI 安全与敏感信息脱敏需求强劲",
+      "端侧多模态狂飙：MiniCPM-V-4.6 主打轻量高效视觉理解"
+    ],
+    "ai-community": [
+      "Hermes Agent 连续执行同任务 7 天，底层技能文件自我进化",
+      "开发者自建 CLI 工具，赋予 AI Agent 真正的视觉感知能力",
+      "Gemma 4 实战揭秘：MoE 与 Dense 模型响应规则大相径庭",
+      "死互联网理论正演：技术社区被低质 AI 自动内容充斥引发反思",
+      "上下文时光机：帮你法医级取证 Agent 运行时看到的具体内容",
+      "Gemma 4 在中端安卓手机实测，揭示端侧可用 AI 巨大潜力"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to autonomous, multi-agent coding.",
+      "Claude Code v2.1.143 adds cost projection.",
+      "OpenAI Codex v0.131.0-alpha.22 is released.",
+      "OpenCode pushed three rapid-fire releases.",
+      "Ecosystem faces growing pains like context overflow.",
+      "Terminal UI rendering bugs plague all major AI CLIs."
+    ],
+    "ai-agents": [
+      "OpenClaw hit with 500 new issues and 500 PRs today.",
+      "OpenClaw shipped three rapid beta versions yesterday.",
+      "xAI Grok OAuth login added for SuperGrok subscribers.",
+      "Bug reports open faster than maintainers can triage.",
+      "OpenClaw introduced 'openclaw cron run' with timeouts.",
+      "Community heavily stress-tests OpenClaw beta releases."
+    ],
+    "ai-trending": [
+      "GitHub pivots toward agentic skills and dev tooling.",
+      "Ollama now supports Kimi-K2.5 and GLM-5 models.",
+      "Codegraph reduces token usage 100% locally.",
+      "Supertonic enables lightning-fast on-device TTS.",
+      "Everything-claude-code tops agent charts at 184k stars.",
+      "RAG and vectorless graphs become enterprise standard."
+    ],
+    "ai-hn": [
+      "DeepSeek-V4-Flash makes LLM steering interesting again.",
+      "Webflow warns of hidden AI code clean-up costs.",
+      "Indie dev spends $1.3 million on OpenAI tokens in a month.",
+      "Greg Brockman officially takes control of OpenAI products.",
+      "Single neuron is enough to bypass LLM safety alignment.",
+      "Widespread Claude API outages reported by Anthropic."
+    ],
+    "rl-daily": [
+      "RL ecosystem shifts to post-training LLMs and compute.",
+      "verl focuses on scaling massive MoE models like Gemma4.",
+      "ROCK introduces automated disk governance for clusters.",
+      "TRL stabilizes high-throughput Async GRPO training.",
+      "Foundational RL libraries experience a quiet day.",
+      "Primary battle shifts to MoE memory fragmentation."
+    ],
+    "agent-orch": [
+      "Claude Flow and Ruflo lead agent orchestration tools.",
+      "AutoGPT and MetaGPT remain top agent frameworks.",
+      "LlamaIndex and CrewAI highlight workflow integration.",
+      "Crystal and dmux gain traction in agent orchestration.",
+      "Orchestrators pivot to distributed compute governance.",
+      "Symphony joins the AI agent orchestration ecosystem."
+    ],
+    "ai-hf": [
+      "Gemma 4 and Qwen 3.6 dominate open-weight models.",
+      "DeepSeek-V4-Pro tops charts with 2.9M downloads.",
+      "Gemma-4-31B-it sets new standard with 9.8M downloads.",
+      "LTX 2.3 drives surge in text-to-video workflows.",
+      "Sulphur 2 pushes boundaries of image-to-video AI.",
+      "Voice cloning highlights focus on edge-ready AI."
+    ],
+    "ai-community": [
+      "Developers push Gemma 4 onto mid-range mobile hardware.",
+      "AI agents autonomously rewrite logic over 7 days.",
+      "Developers build local CLIs to fix agent blind spots.",
+      "MoE models search rules while dense models refuse.",
+      "Vibe coding fades as token economics spark debates.",
+      "Programmers fear losing intangible skills to automation."
+    ]
+  }
+}
