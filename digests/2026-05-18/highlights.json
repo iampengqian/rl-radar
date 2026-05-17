@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode v1.15.4 修复 Sidecar 崩溃",
+      "Pi v0.75.0 引入上下文压缩路由",
+      "DeepSeek-TUI v0.8.39 提升缓存命中率",
+      "Qwen Code 曝出 OOM 与守护进程架构讨论",
+      "Windows 兼容性成全量 AI CLI 工具生死线",
+      "各工具齐攻坚多智能体协作与内存管控"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日爆发 500 个 Issue 与 PR",
+      "连更两版：Mac UI 重构及审计抑制机制",
+      "安全 API 密钥保护成社区核心诉求",
+      "技能重命名：Codex 审查辅助变 autoreview",
+      "多渠道消息稳定及上下文串台成焦点",
+      "429 条待合并 PR 积压显极高参与度"
+    ],
+    "ai-trending": [
+      "agent-skills 为 Cursor 等提供可信扩展",
+      "codegraph 大幅降低 Token 与工具调用数",
+      "CLI-Anything 欲将所有软件转为原生 CLI",
+      "本地 RAG 架构向无向量检索与轻量化演进",
+      "多模型内容工作站获无审查自托管热捧",
+      "ollama 一键部署率先支持 Kimi-K2.5"
+    ],
+    "ai-hn": [
+      "本地跑大模型能耗成本远超云端 API",
+      "Semble 狂降 98% Token 的 AI 代码搜索",
+      "Codiff 成 AI 生成代码的本地安全审查利器",
+      "AI 智能指环突破动作捕捉与手语翻译",
+      "一线工程师分享生产级 LLM 选型偏好",
+      "AI 仇恨浪潮与激进预测引发社区争议"
+    ],
+    "rl-daily": [
+      "veRL 攻坚多轮 Agent 轨迹与底层算力",
+      "OpenRLHF 紧急修复无效 Token 静默 Bug",
+      "TRL 算力全面倾斜多模态 VLM 对齐",
+      "AReaL 发力云原生 K8s 调度与精度修复",
+      "veQL 重构底层并接入极低比特 QAT",
+      "传统 RL 生态 SB3 进入稳定维护期"
+    ],
+    "agent-orch": [
+      "Claude Code 搭配 Cursor 成最佳实践",
+      "Agent Skill 文件引爆 CI 供应链安全危机",
+      "企业级 AI 网关告别单一 OpenAI 兼容",
+      "CodeGraph 彻底解决重复扫描痛点",
+      "5 分钟教你阻止向 OpenAI 发送 PII",
+      "生产环境 RAG 系统的 5 个致命缺陷"
+    ],
+    "ai-hf": [
+      "Google Gemma 4 狂揽近千万下载领跑",
+      "DeepSeek V4 Pro 与 Flash 实现多点开花",
+      "MiniCPM-V-4.6 成为端侧多模态焦点",
+      "Sulphur-2-base 直逼百万视频生成下载",
+      "OpenAI 开源精准文本隐私过滤器",
+      "GGUF 本地量化与音频克隆热度居高"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code, Gemini CLI, and Kimi Code lead agentic CLI race.",
+      "Windows/WSL parity and OOM crashes remain major pain points.",
+      "Developers push boundaries with BYOK architectures.",
+      "CLI agents struggle with erratic context compaction.",
+      "Open-source tools drive advanced model routing flexibility.",
+      "Teams target autonomous background processing in CLIs."
+    ],
+    "ai-agents": [
+      "OpenClaw faces triage congestion with 474 open issues.",
+      "Maintainer bandwidth struggles to keep pace with community.",
+      "v2026.5.16-beta.5 brings major Mac app UI overhaul.",
+      "v2026.5.16-beta.4 focuses on core security improvements.",
+      "Repo-local Codex review skill renamed to 'autoreview'.",
+      "Rapid iteration continues with UI and routing fixes."
+    ],
+    "ai-trending": [
+      "CLI-Anything turns any software into an agent-native CLI.",
+      "Codegraph reduces token usage for AI code-search agents.",
+      "Local-first AI super-intelligence dominates user interest.",
+      "Ecosystem shifts toward standardized skill registries.",
+      "vllm maintains industry standard with 80,269 total stars.",
+      "Ollama hits 171,624 stars for local model running."
+    ],
+    "ai-hn": [
+      "Apple Silicon pricier than API aggregators like OpenRouter.",
+      "Semble uses 98% fewer tokens than grep for code search.",
+      "Polling data indicates a growing public 'AI Hate Wave'.",
+      "Microsoft AI CEO forecasts human-level AI in 18 months.",
+      "Ken Griffin says Citadel AI finishes PhD tasks in days.",
+      "Community pushes back on aggressive AGI timelines."
+    ],
+    "rl-daily": [
+      "Ecosystem-wide push to eradicate 'quiet bugs' in RLHF.",
+      "verl focuses on hardening multi-turn agentic workflows.",
+      "Deep RL libraries see zero to minimal daily activity.",
+      "Activity concentrates on LLM post-training and alignment.",
+      "verl fixes rollout rejection sampling math errors.",
+      "AReaL fixes critical PPO advantages calculation bugs."
+    ],
+    "agent-orch": [
+      "Claude Squad and dmux lead 45 tracked projects.",
+      "Orchestrators push multi-agent coding workflows forward.",
+      "Projects focus on complex agentic workflow management.",
+      "Vibe Kanban and OpenKanban track AI agent progress.",
+      "HumanLayer integrates human-in-the-loop oversight.",
+      "AutoGPT and CrewAI remain top orchestration frameworks."
+    ],
+    "ai-hf": [
+      "DeepSeek V4 dominates charts with state-of-the-art chat.",
+      "Gemma 4-31B-it leads with 9.8 million weekly downloads.",
+      "Qwen 3.6 drives MoE efficiency and quantization momentum.",
+      "Sulphur-2-base pushes the frontier of text-to-video.",
+      "LTX-2.3 highlights active text-to-video generation space.",
+      "OpenAI's privacy filter balances safety and utility."
+    ],
+    "ai-community": [
+      "Developers pair Claude Code engine with Cursor cockpit.",
+      "CodeGraph stops AI agents from redundant file scanning.",
+      "Developers demand reliability, security, and efficiency.",
+      "Cost tracking and CI/CD pipeline security take focus.",
+      "GraphRAG and model routing optimize API expenses.",
+      "Lobste.rs debates 'vibe coding' cultural shifts."
+    ]
+  }
+}
