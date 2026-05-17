@@ -55,6 +55,14 @@
       "Sulphur-2-base 直逼百万视频生成下载",
       "OpenAI 开源精准文本隐私过滤器",
       "GGUF 本地量化与音频克隆热度居高"
+    ],
+    "ai-weekly": [
+      "OpenAI 成立独立部署公司，战略转向企业端到端私有化。",
+      "Claude for Small Business 发布，深度绑定七大主流 SaaS。",
+      "Claude Code 技能包获 3000 星，AI 编程进入标准化拼装。",
+      "大模型工具调用能力被蒸馏进仅 26M 参数的极小模型！",
+      "OpenClaw 连推近 10 个 Beta，全面迁移至 Codex 架构。",
+      "强化学习全面转向 GRPO，正式取代 PPO 成后训练基线。"
     ]
   },
   "en": {
@@ -121,6 +129,14 @@
       "Cost tracking and CI/CD pipeline security take focus.",
       "GraphRAG and model routing optimize API expenses.",
       "Lobste.rs debates 'vibe coding' cultural shifts."
+    ],
+    "ai-weekly": [
+      "OpenAI becomes an end-to-end enterprise deployment company.",
+      "Gemini CLI bug causes AI to autonomously delete user files.",
+      "Anthropic launches 'Claude for Small Business' integrations.",
+      "mattpocock/skills sets new AI coding agent standards.",
+      "Hidden maintenance costs negate AI coding ROI, devs say.",
+      "Local Apple Silicon LLMs proven costlier than cloud APIs."
     ]
   }
 }
