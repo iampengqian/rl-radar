@@ -1,0 +1,142 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI工具正从单体向多Agent编排平台演进",
+      "OpenAI Codex发布v0.132.0-alpha.1，启动API连环重构",
+      "Gemini CLI发布v0.44.0，引入本地子代理与A2A协议",
+      "Pi扩展加载性能大优化：从21秒降至3.5秒",
+      "Qwen Code全面重构Daemon模式，主攻多端桥接",
+      "DeepSeek TUI大修Windows兼容性与TUI防丢稿机制"
+    ],
+    "ai-agents": [
+      "OpenClaw日活448个Issue，多Agent编排成绝对焦点",
+      "项目单日发布4个新版本，正密集进行依赖升级",
+      "v2026.5.18明确插件废弃路径，为后续大版本铺路",
+      "Docker部署大升级：支持运行时注入额外apt包",
+      "Mac客户端重构：引入一致卡片布局与缓存导航",
+      "修复Discord生命周期与Twitch认证刷新失效"
+    ],
+    "ai-trending": [
+      "AI Agent走向专业化：定制技能包霸榜GitHub热榜",
+      "CLI-Anything爆火：致力让所有软件变成Agent原生",
+      "supertonic上榜：基于ONNX的原生多语言TTS引擎",
+      "微软官方AI Agent入门教程单日新增破千Star",
+      "ruflo：针对Claude生态的领先多Agent编排平台",
+      "12-factor-agents：探讨构建生产级LLM的12个原则"
+    ],
+    "ai-web": [
+      "Anthropic收购Stainless，内化SDK与MCP基建能力",
+      "OpenAI携手Dell，推进企业级硬件与端侧部署布局",
+      "AI竞争步入深水区：巨头重心转向生态与开发者绑定",
+      "Stainless实质是Anthropic API生态的隐形冠军",
+      "收购旨在推进Claude连接外部数据与工具的进程",
+      "AI工具链频繁并购下，开发者生态中立性成博弈焦点"
+    ],
+    "ai-hn": [
+      "马斯克诉奥特曼世纪诉讼大结局：陪审团裁定败诉",
+      "用Claude Code逆向工程中国制造投影仪恶意软件",
+      "开源AI编程平台Heroku：InsForge解决Agent部署",
+      "Sebastian Raschka硬核解析大模型底层架构最新演进",
+      "新论文探讨：人类对AI担忧的话语会导致模型错位",
+      "InsForge开源：专为代码智能体打造的PaaS平台"
+    ],
+    "rl-daily": [
+      "LLM+RL框架陷入内卷：死磕分布式与算力墙",
+      "传统RL基础库全面进入静默维护期",
+      "TRL修复隐蔽漏洞：防Qwen默认参数致探索能力丧失",
+      "AReaL引入零拷贝与新型分布式传输协议",
+      "verl领跑多模态与MoE架构适配，全面转向Agentic",
+      "研究重心转向：消灭大模型RL训练的静默失败"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4系列屠榜，Pro版获赞超4千登顶",
+      "Qwen3.6系列双杀：多模态与MoE架构平衡性能成本",
+      "Google gemma-4-31B-it单日狂揽近千万次下载",
+      "Sulphur-2引爆文本生成视频，技术栈正快速成熟",
+      "MiniCPM-V-4.6成端侧多模态部署明星项目",
+      "GGUF量化与ComfyUI节点资源保持统治级活跃度"
+    ],
+    "ai-community": [
+      "MCP成绝对焦点：开发者重塑DDD架构模式",
+      "选型必看：2026年工程师真正需要的AI网关清单",
+      "起底行业潜规则：DeepSeek被主流工具无感套壳",
+      "警惕！向量数据库按量计价模型暗藏财务陷阱",
+      "AI时代新概念：团队需警惕代码理解债务",
+      "Oracle APEX 26.1的AI Agent功能遭72小时红队测试"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to persistent daemon models.",
+      "OpenAI Codex releases v0.131.0 and v0.132.0-alpha.1.",
+      "Gemini CLI launches two v0.44.0 nightly releases.",
+      "Ecosystem pushing for A2A and ACP agent protocols.",
+      "OpenCode and DeepSeek TUI dominate PR throughput.",
+      "Core engineering heavily focused on Windows stability."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in one day.",
+      "OpenClaw cuts stable v2026.5.18 weekend release.",
+      "Agents shifting to clean bounded refactors by default.",
+      "Open issues focus on agent memory and session state.",
+      "Community engagement and open-source velocity spike.",
+      "Plugin SDK gets explicit deprecation paths in update."
+    ],
+    "ai-trending": [
+      "Massive pivot towards standardizing AI Agent Skills.",
+      "CLI-Anything converts software to standardized tools.",
+      "agent-skills registry gains 1,244 stars in one day.",
+      "Surge in privacy-first local AI written in Rust.",
+      "Developers extend AI tools like Claude Code and Codex.",
+      "Community consolidates around RAG infrastructure."
+    ],
+    "ai-web": [
+      "Anthropic acquires API infrastructure startup Stainless.",
+      "Acquisition targets SDK generation and MCP tooling.",
+      "AI labs competing aggressively on developer experience.",
+      "OpenAI pushing into enterprise hardware via Dell.",
+      "Market matures towards ecosystem lock-in battles.",
+      "Agent utility bound by external system integration."
+    ],
+    "ai-hn": [
+      "Elon Musk loses landmark lawsuit against Sam Altman.",
+      "Anthropic acquires SDK startup Stainless for devex.",
+      "Community reverse-engineers malware using Claude.",
+      "Developers question sustainability of free LLMs.",
+      "Debate flares over AI governance and non-profits.",
+      "Alignment pretraining may create self-fulfilling loops."
+    ],
+    "rl-daily": [
+      "RL ecosystem shifts entirely to LLM post-training.",
+      "verl sees high architectural throughput with 35 PRs.",
+      "Focus is on scaling RLHF and GRPO for alignment.",
+      "Projects solve bottlenecks like distributed syncing.",
+      "veRL pivots to agentic workflows and NPU support.",
+      "Traditional RL projects like Gymnasium go inactive."
+    ],
+    "agent-orch": [
+      "Ecosystem tracks 45 agent orchestration projects.",
+      "Multi-agent reliability is a core engineering focus.",
+      "Activity surges in Claude Code and Codie ecosystems.",
+      "Tools push for standardized inter-agent protocols.",
+      "Long-running developer workflows drive new designs.",
+      "Orchestrators shift to complex multi-agent platforms."
+    ],
+    "ai-hf": [
+      "Google Gemma-4 and Qwen 3.6 drive massive downloads.",
+      "DeepSeek-V4-Pro tops charts with 3.4M downloads.",
+      "DeepSeek-V4-Flash offers high-speed conversation.",
+      "LTX-2.3 sparks surge in specialized video workflows.",
+      "Community rapidly quantizes models to GGUF format.",
+      "Local-first tools like Unsloth dominate accessibility."
+    ],
+    "ai-community": [
+      "MCP explodes in popularity on Dev.to.",
+      "Developers apply Domain-Driven Design to MCP servers.",
+      "Engineers seek checklists for 2026 AI Gateways.",
+      "Builders focus on cutting runaway LLM token costs.",
+      "OxCaml draws interest for data-race-free capabilities.",
+      "Philosophers examine AI as a social technology."
+    ]
+  }
+}
