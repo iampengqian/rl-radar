@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 工具向自主 Agent 编排跨越，Daemon 化成底层新标配",
+      "Claude Code 连发两版增强 Agent 编排，但 TUI 渲染乱码引热议",
+      "OpenAI Codex v0.131 引发严重回归，底层配置系统遭大重构",
+      "GitHub Copilot v1.0.49 PTY 重构致 WSL 及编辑器大面积故障",
+      "Pi 启动性能极致优化降至 66ms，正全力攻坚 Windows 兼容性",
+      "Qwen Code 架构向 Daemon 演进，引入自动化内存压缩防 OOM"
+    ],
+    "ai-agents": [
+      "OpenClaw 连发两 Beta 版，处于大版本发布前阵痛期",
+      "注意！OpenClaw 新版提高 Node.js 最低版本，存破坏性变更",
+      "OpenClaw doctor 修复严重退化：曾致 Token 消耗暴增 4 倍",
+      "OpenClaw 多渠道路由及 Agent 状态管理暴露大量回归 Bug",
+      "OpenClaw 重构修复策略，第三方插件需警惕未来 API 破坏性更新",
+      "OpenClaw 基础设施承压：待合并关键修复 PR 已积压超 450 个"
+    ],
+    "ai-trending": [
+      "AI 编程步入技能化：Claude Code 技能库项目单日 Star 破 3000",
+      "rtk-ai 代理工具零依赖，精准切入 AI 编程省钱刚需",
+      "codegraph 助力 Claude，实现 100% 本地化低 Token 代码理解",
+      "CLI-Anything：让所有传统软件一键变身 AI Agent 可控节点",
+      "12-factor-agents：为鱼龙混杂的 Agent 开发确立架构规范",
+      "无向量 RAG 及端侧小模型训练，在开源底层持续迸发活力"
+    ],
+    "ai-web": [
+      "Anthropic 收购 Stainless，买下 API 护城河强化 Agent 连接",
+      "毕马威将 Claude 深度嵌入核心业务，27.6 万员工全面接入",
+      "OpenAI 推进内容溯源技术，直击 Deepfake 与版权合规痛点",
+      "OpenAI 暗示将推 Deployco，加紧布局专属企业级部署方案",
+      "Anthropic 买入多语言 SDK 生成能力，为零代码集成铺路",
+      "打透税务与私募等高合规行业，Claude ToB 商业化规模复制"
+    ],
+    "ai-hn": [
+      "重磅！Andrej Karpathy 加入 Anthropic，引爆人才流动讨论",
+      "加护栏立大功：8B 小模型在 Agentic 任务中稳定性飙至 99%",
+      "重构 CLI 交互逻辑，成功砍掉近 80% Claude Token 消耗",
+      "Sieve 工具爆火：专扫 AI 编程助手聊天记录防泄露 API 密钥",
+      "Sebastian Raschka 深度解析：突破大模型推理显存瓶颈",
+      "SynthID 水印助力 OpenAI，商业化与安全合规发生激烈碰撞"
+    ],
+    "rl-daily": [
+      "RL 生态两极分化：LLM 对齐基础设施狂奔，经典 RL 库停滞",
+      "verl 稳居生态核心，底层性能与多模态双轮高频迭代",
+      "RL 反馈源大演进：从单一奖励模型向沙盒执行反馈快速拓展",
+      "AReaL 硬核出击：专注极致的分布式通信与显存算子优化",
+      "slime 引入 E2B 沙盒，迅速从 RLHF 向代码 Agent 拓展",
+      "TRL 紧急修复 VLM 训练数据对齐与系统级并发痛点"
+    ],
+    "ai-arxiv": [
+      "DashAttention 提出自适应分层注意力，显著提升长文本效率",
+      "自蒸馏新玩法：MoE 模型无需重训即可动态跳过半数专家",
+      "EnvFactory：自动合成可执行环境工厂，提升 RL 训练规模",
+      "SkillGenBench：不再单纯测能力，重点评估 Agent 技能生成",
+      "新 Scaling Law：LLM 事实回忆能力随模型规模与词频增长",
+      "通用偏好 RL 框架出世，打通 RLHF 与开放式偏好优化壁垒"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 霸榜，凭借极高生成质量成开源文本绝对顶流",
+      "Qwen3.6 系列视觉语言模型炸裂，带动原版下载超 570 万",
+      "Gemma-4-31B-it 周下载量破千万，成全球开发者首选基座之一",
+      "Sulphur-2 视频生成模型下载破百万，标志开源视频新阶段",
+      "端侧部署需求激增：MiniCPM-V-4.6 资源受限下图文理解卓越",
+      "supertonic-3 语音克隆模型表现抢眼，多模态与生成迎洗牌"
+    ],
+    "ai-community": [
+      "避坑！一个错误 Prompt 在 18 分钟内烧光 40 美元 Claude 额度",
+      "Claude Code 爆出 RCE 远程执行漏洞，为 AI 工具敲响安全警钟",
+      "标杆偏差：别被跑分骗了，Agent 技能评估存在严重基准测试幻觉",
+      "干货分享：基于 20+ 实战项目，总结 RAG 生产环境防崩修复模式",
+      "大幅降本！优化 MCP 服务器构建，最高可降低 99% 上下文成本",
+      "纯离线手机端智能：结合开源模型构建保护隐私的自主控制 Agent"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.145 fixes TUI rendering and OOM crash bugs.",
+      "OpenAI Codex v0.131 introduces desktop/WSL integration features.",
+      "AI CLI tools shift from terminal chat to autonomous agents.",
+      "Developers battle massive memory leaks and cross-platform bugs.",
+      "rtk-ai/rtk uses Rust to reduce LLM token consumption by 90%.",
+      "codegraph offers pre-indexed local code graphs for AI agents."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and PRs updated in just 24 hours.",
+      "Maintainers face a massive review bottleneck with 458 open PRs.",
+      "OpenClaw drops two new beta versions in a single day.",
+      "v2026.5.19-beta.2 focuses on dependency updates and refactors.",
+      "Platform stability and security hardening dominate today's work.",
+      "Developers push for clean refactors and explicit deprecation paths."
+    ],
+    "ai-trending": [
+      "Agentic coding revolution dominates GitHub trending projects.",
+      "AI agents shift from sandbox experiments to production environments.",
+      "rtk-ai/rtk proxy reduces LLM token consumption by up to 90%.",
+      "codegraph pre-indexes local code to cut AI tool calls.",
+      "CLI-Anything turns legacy software into agent-native interfaces.",
+      "CloakBrowser offers stealth scraping to bypass bot detection."
+    ],
+    "ai-web": [
+      "Anthropic buys Stainless to control core API SDK generation.",
+      "KPMG integrates Claude across a workforce of 276,000+ employees.",
+      "AI frontier shifts from raw capabilities to frictionless tooling.",
+      "Anthropic builds a deeply integrated moat for enterprise users.",
+      "OpenAI expands focus on deployment tooling and digital provenance.",
+      "AI competition targets highly regulated sectors like legal and tax."
+    ],
+    "ai-hn": [
+      "Andrej Karpathy announces he is moving to join Anthropic.",
+      "Forge guardrails boost small model agentic tasks to 99% accuracy.",
+      "OpenAI adopts Google's SynthID watermarking for AI provenance.",
+      "Developers debate Anthropic's rumored IPO and hyper-commercial shift.",
+      "Sebastian Raschka details new KV sharing and attention innovations.",
+      "Community obsesses over token optimization for agentic workflows."
+    ],
+    "rl-daily": [
+      "Post-training frameworks rapidly evolve to support AI agents.",
+      "Traditional deep RL environments experience a cyclical lull.",
+      "TRL stabilizes GRPO for vision-language multimodal models.",
+      "AReaL hardens distributed RLHF via memory optimizations.",
+      "verl scales agentic multi-turn RL for massive infrastructure.",
+      "ROCK improves K8s GPU orchestration and cluster stability."
+    ],
+    "agent-orch": [
+      "AI developer tools pivot to sophisticated multi-agent orchestration.",
+      "Claude Squad leads headless automation for background agents.",
+      "Symphony focuses on deep IDE integration for AI workflows.",
+      "Swarm Protocol tackles multi-agent coordination complexities.",
+      "HumanLayer adds essential guardrails to autonomous AI agents.",
+      "dmux offers robust multi-agent routing and orchestration logic."
+    ],
+    "ai-arxiv": [
+      "DashAttention introduces differentiable sparse hierarchical focus.",
+      "New study proves factual recall scales with model and topic size.",
+      "Tabular Foundation Models optimize ultra-low latency tasks.",
+      "AI agents get structural safety guarantees for deployment.",
+      "Dynamic computation skips Mixture-of-Experts layers efficiently.",
+      "New benchmarks test spatial embodiment for scientific AI agents."
+    ],
+    "ai-hf": [
+      "Google Gemma 4 dominates with over 10 million downloads.",
+      "DeepSeek-V4-Pro becomes the most liked open-weight model.",
+      "Industry makes a massive pivot to native vision-language AI.",
+      "DeepSeek-V4-Flash offers powerful high-efficiency inference.",
+      "Text-to-video and 3D generation models captivate the community.",
+      "ByteDance and Tencent make waves in spatial multimodal generation."
+    ],
+    "ai-community": [
+      "One bad prompt burns $40 of Claude budget in 18 minutes.",
+      "First-gen MCP servers waste up to 99% of context tokens.",
+      "Eager parsing in Claude Code enables remote code execution.",
+      "Developers pivot from AI hype to sustainable infrastructures.",
+      "Atomic budget caps prevent multi-agent loops from draining funds.",
+      "Lobste.rs users question the necessity of LLMs for basic tasks."
+    ]
+  }
+}
