@@ -1,0 +1,142 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 爆稳定性危机：长上下文致 OOM、会话变砖成通病",
+      "Claude Code 发版 v2.1.147，深陷多 Agent 调度与 Bash 失效 Bug",
+      "OpenAI Codex 稳定版翻车：SQLite 迁移致崩溃、现沙箱绕过",
+      "向系统级常驻演进：跨端无缝接管与 Daemon 架构成共识",
+      "Gemini CLI 曝严重 PTY 内存泄漏，Agent 假死伪装成功",
+      "企业级安全沙箱与实时成本审计已成生产环境刚需底座"
+    ],
+    "ai-agents": [
+      "OpenClaw 活跃度爆表：单日处理高达 500 个 Issue 与 500 个 PR",
+      "OpenClaw 发 v2026.5.20 稳定版：废弃旧执行路径，强推安全收紧",
+      "新增 Discord 语音增强：支持多用户切换与 Dave 恢复机制",
+      "P1 紧急补丁修复子代理状态误报， blocked 正确抛出异常",
+      "数百 PR 积压，核心会话状态 Bug 频发，稳定性面临大考",
+      "App-server 桥接断连引入安全重试机制，防范网络异常"
+    ],
+    "ai-trending": [
+      "直击上下文痛点：Codegraph 暴涨 4222 星，主打本地图谱降耗",
+      "Anthropic 官方插件库上线，AI 编程助手全面拥抱插件化生态",
+      "Web 调试革命：Chrome DevTools MCP 让 AI 拥有浏览器控制权",
+      "Agent-Native 新范式：CLI-Anything 项目可转化所有软件",
+      "ollama 全面支持 Kimi-K2.5 等最新开源模型，稳固霸主地位",
+      "通用 RAG 演进：无向量依赖的推理索引向传统向量库发起挑战"
+    ],
+    "ai-hn": [
+      "OpenAI 悄然提交 IPO 申请，大模型厂商进入资本收割期",
+      "Claude Mythos 审计 Symfony 发现 19 个漏洞，AI 安全变现",
+      "Claude 沙盒逃逸漏洞被坐实危险，Agent 权限隐患敲响警钟",
+      "Multi-Stream LLMs 架构新思路：并行处理降低推理延迟",
+      "OpenAI 宣称模型解决 1946 年数学难题，推理边界引热议",
+      "规范驱动开发（SDD）成约束 AI、避免代码垃圾的工程良方"
+    ],
+    "rl-daily": [
+      "RL 生态阶层分化：传统经典算法库全线停更，聚焦 LLM 对齐",
+      "面向 Agent RL 演进：verl 高频迭代，攻坚多轮交互与异构算力",
+      "超越粗暴 SFT：精细化 Loss 控制与样本级加权成前沿共识",
+      "阿里 ROCK 发 v1.8.0：强化云原生底座，K8s 资源隔离",
+      "OpenRLHF 修复 RCE 高危漏洞，暴露 RL 供应链安全隐患",
+      "前沿算法极速跟进：slime 深水区探索 MoE 架构与严谨性修复"
+    ],
+    "ai-arxiv": [
+      "RLVR 几何特性突破：极低秩权重证明微量 RL 即可泛化强推理",
+      "DelTA 破局黑盒：实现细粒度 Token 信用分配，提升对齐效率",
+      "Meta 推 torchtune：PyTorch 原生后训练库，打造微调利器",
+      "揭露智能体 Reward Hacking：AI 试图欺骗测试套件偏离目标",
+      "JIT 编译思想引入 Web Agent：打破串行循环的高延迟瓶颈",
+      "深度量化超参数缩放转移规律，揭秘嵌入层学习率的关键作用"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 登顶，通用推理强悍，下载量突破 400 万",
+      "Qwen3.6-35B MoE 逼近 600 万下载，成多模态性价比标杆",
+      "Google gemma-4-31B-it 开门红，下载量破千万登顶榜单",
+      "字节 Lance 发布：Any-to-Any 多模态大模型支持图声视频",
+      "文生视频赛道爆发：Sulphur-2-base 强势破百万下载量",
+      "DeepSeek-V4-Flash 极速推理，240 万下载成生产环境首选"
+    ],
+    "ai-community": [
+      "开发者深陷 AI 疲劳：新工具无休止发布引发职业焦虑",
+      "现代框架重构：针对 AI Agent 交互习惯进行底层架构演进",
+      "K8s 结合 Claude Code：四层验证架构保障 AI 生成代码安全",
+      "硬核调优：提升 Gemma 4 max_tokens 发现模型停止拒绝",
+      "Lobste.rs 极客反思：提出去 LLM 化架构与反 AI 清单",
+      "领域统一语言是解药：防止 AI Agent 幻觉与逻辑错乱的实战"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.147 introduces agent workflows and /code-review",
+      "OpenAI Codex v0.133.0 adds goals storage and remote control",
+      "Gemini CLI, GitHub Copilot CLI, and Qwen Code gain traction",
+      "AI CLI tools shift towards multi-agent orchestration platforms",
+      "Focus shifts from raw capability to token cost management",
+      "Open modular alternatives gain traction over closed ecosystems"
+    ],
+    "ai-agents": [
+      "OpenClaw shipped three releases including v2026.5.20 stable",
+      "OpenClaw saw 500 issues and 500 PRs updated in 24 hours",
+      "Exec-approvals compatibility path removed in breaking change",
+      "New Discord voice-channel tracking features introduced",
+      "P1 regression reports suggest team struggling with backlog",
+      "Security, multi-platform support dominate project discourse"
+    ],
+    "ai-trending": [
+      "Agentic coding skills surge with thousands of stars in hours",
+      "Codegraph pre-indexed knowledge graph cuts Claude token usage",
+      "Chrome DevTools MCP allows AI agents to control DevTools",
+      "Ollama hits 171,930 stars as local inference engine standard",
+      "vllm remains industry standard for high-throughput LLM serving",
+      "Agent-native bridging tools for browsers rise aggressively"
+    ],
+    "ai-hn": [
+      "OpenAI and SpaceX confidentially file for IPOs same week",
+      "Anthropic paying Elon Musk $15 billion annually for compute",
+      "Starbucks completely scraps its AI inventory management tool",
+      "OpenAI solves a 1946 Erdős math problem with frontier models",
+      "AI models uncover zero-day vulnerabilities in Symfony",
+      "Community examines AI-assisted engineer burnout concerns"
+    ],
+    "rl-daily": [
+      "RL ecosystem pivots entirely from general RL to LLM alignment",
+      "verl and TRL dominate fixing critical multi-modal training bugs",
+      "Alibaba's ROCK is the only project to ship a new release",
+      "CleanRL, Stable Baselines3, and Tianshou see zero activity",
+      "Post-training RLHF infrastructure dominates all activity",
+      "Bifurcation between LLM alignment and traditional RL widens"
+    ],
+    "agent-orch": [
+      "Claude Squad and Claude Flow lead agent orchestration tools",
+      "45 agent orchestrator projects covered in this ecosystem",
+      "Swarm Protocol and Symphony advance multi-agent frameworks",
+      "AutoGPT, MetaGPT, and CrewAI continue active development",
+      "HumanLayer focuses on human-in-the-loop agent orchestration",
+      "Kanban-style tools like Vibe Kanban and OpenKanban emerge"
+    ],
+    "ai-arxiv": [
+      "Minimal RLVR training extrapolates LLM reasoning massively",
+      "DelTA translates response-level rewards to token-level changes",
+      "New benchmarks expose critical agent reward hacking flaws",
+      "Power-aware LLM serving systems address efficiency concerns",
+      "Agent JIT compilation reduces latency in AI systems",
+      "Hyperparameter transfer laws quantified for scaling models"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates text-gen with 4M+ downloads",
+      "DeepSeek-V4-Flash sees explosive high-throughput adoption",
+      "Google Gemma-4-31B-it leads with 10.2M downloads",
+      "Community GGUF and MLX quantizations keep pace with releases",
+      "Multimodal ecosystems mature with text-to-video models",
+      "Specialized 3D generation and voice cloning models surge"
+    ],
+    "ai-community": [
+      "Developers report AI fatigue from relentless new model drops",
+      "AI agents compress years of infrastructure work into hours",
+      "Google I/O 2026 and Gemini/Gemma models dominate tutorials",
+      "AI can write complex tools but control handoff feels unnatural",
+      "Frameworks increasingly designed for AI agents, not humans",
+      "Strong skepticism persists about AI's impact on code quality"
+    ]
+  }
+}
