@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code陷危机：Max计费异常引数千热议",
+      "OpenAI Codex架构重构：引入配置中心化",
+      "Gemini CLI底层加固：紧急修复RCE安全漏洞",
+      "OpenCode发布v1.15.10，解决GC死亡螺旋",
+      "Pi发新版优化异步I/O，实现Bun/Node兼容",
+      "Qwen Code与DeepSeek TUI展现极高迭代速率"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时处理超500条Issue与PR",
+      "OpenClaw多智能体编排稳定性成攻克重心",
+      "跨渠道兼容提升：飞书与Discord插件获修复",
+      "OpenClaw修复非默认工作区Hooks加载失败",
+      "OpenClaw项目正深化本地与第三方模型兼容",
+      "沙箱安全管控与上下文丢失治理成技术焦点"
+    ],
+    "ai-trending": [
+      "AI编程智能体迎来技能与记忆标准化浪潮",
+      "代码图谱成提升LLM推理能力的关键基建",
+      "Karpathy理念LLM避坑指南单日增星超3千",
+      "Anthropic官方发布Claude Code规范化插件",
+      "Ollama持续称王端侧推理，支持最新大模型",
+      "开源智能体multica致力于打造数字队友"
+    ],
+    "ai-hn": [
+      "开发者单月在$200套餐跑出$30983天价账单",
+      "Anthropic解释其模型在特定测试表现邪恶原因",
+      "前沿AI实验室被曝尚未充分利用庞大计算资源",
+      "开源工具CC-Wiki实现Claude会话持久化管理",
+      "Rust写就的Ccost工具助开发者精准追踪API成本",
+      "社区狂热降温，关注点转向成本与安全审查"
+    ],
+    "rl-daily": [
+      "RL生态两极分化：LLM对齐框架成绝对重心",
+      "传统经典算法库陷入极度平稳的静默维护期",
+      "verl与TRL密集修复Loss缩放等底层算法Bug",
+      "多轮工具调用易引发奖励黑客与动作空间崩溃",
+      "AReaL攻坚分布式集群显存共置与链路可观测",
+      "社区引入混合新范式防遗忘，如熵自适应微调"
+    ],
+    "agent-orch": [
+      "多智能体调度演进：向系统级工作台快速进化",
+      "行业阵痛：底层终端异构环境兼容性依然脆弱",
+      "计费透明度不足成全行业共同面临的痛点挑战",
+      "长上下文与高并发正经受内存管理瓶颈考验",
+      "各厂商积极探索跨会话记忆与多端状态同步",
+      "工具正尝试与跨Agent生态如MCP协议深度融合"
+    ],
+    "ai-hf": [
+      "Google Gemma-4-31B-it超千万下载强势霸榜",
+      "DeepSeek-V4双版本发布，Pro版获最高点赞",
+      "Qwen3.6原生视觉多模态大作迎来全面爆发",
+      "腾讯混元发布1.8B至30B机器翻译专精模型",
+      "字节与Sulphur引领视频与3D生成赛道火热",
+      "Sapientinc发布10亿参数小而美文本生成模型"
+    ],
+    "ai-community": [
+      "从废弃黑客松项目重构出实用AI学习工作区",
+      "零闲置：在AWS Lambda容器中冷启动部署LLM",
+      "开发者仅靠Vibe Coding构建真实开发工具",
+      "纯C#实现且无JS依赖的浏览器神经网络引擎",
+      "结合MCP协议与AI代理打造智能CI/CD流水线",
+      "警告：你的MCP Server可能面临越权操作风险"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI ecosystem races to production-grade multi-agent setups.",
+      "Cross-platform UI stability and V8 memory leaks remain top pains.",
+      "Claude Code v2.1.150 hits release but causes internal regression.",
+      "OpenAI Codex ships new rust-v0.134.0-alpha.3 build.",
+      "Context management and tool calling are now commoditized features.",
+      "Extensible subsystems like MCP and ACP drive tool differentiation."
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive activity: 346 PRs merged in a single day.",
+      "OpenClaw tags new beta version v2026.5.22-beta.1 for users.",
+      "New OpenClaw release focuses heavily on onboarding docs.",
+      "331 open issues show focus on multi-agent orchestration.",
+      "OpenClaw ecosystem tackles complex session-state stability.",
+      "Agent platforms shift toward advanced enterprise edge cases."
+    ],
+    "ai-trending": [
+      "Agentic Coding revolution dominates GitHub trending lists.",
+      "Chrome DevTools MCP bridge explodes with 437 new stars.",
+      "Standardizing AI agent behaviors via Skills and .md configs.",
+      "Ollama remains top local engine for Kimi-K2.5 and GLM-5.",
+      "vllm continues to be the enterprise standard for LLMs.",
+      "AI financial analysis agents emerge as practical verticals."
+    ],
+    "ai-hn": [
+      "Developers dissect the high costs and limits of AI agents.",
+      "Cheap AI models could destabilize OpenAI and Anthropic IPOs.",
+      "Frontier labs reportedly don't use most AI compute yet.",
+      "Claude frustrates devs by not knowing the current time.",
+      "Community builds local environments to cut API expenses.",
+      "Debates heat up over AI companions and loneliness impacts."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM post-training and classic RL.",
+      "verl focuses on scaling hardware backends and Agent RL.",
+      "TRL expands algorithms and fixes critical distillation bugs.",
+      "Classical RL libraries like CleanRL experience zero activity.",
+      "LLM post-training frameworks consolidate ecosystem momentum.",
+      "AReaL drives heavy engineering for the RLHF lifecycle."
+    ],
+    "agent-orch": [
+      "Developers rush to build orchestrators for AI coding agents.",
+      "New tools like Claude Squad manage multi-agent workflows.",
+      "Agent orchestrators tackle shared memory for AI teams.",
+      "AutoGPT and CrewAI face new competition from nimble tools.",
+      "Kanban boards like Vibe Kanban adapt to track AI agents.",
+      "Projects like HumanLayer add vital human-in-the-loop guardrails."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 family takes over the open-weight leaderboards.",
+      "Google's Gemma 4-31B-it hits 10M downloads in mere days.",
+      "DeepSeek-V4-Pro dominates enterprise text-generation usage.",
+      "Next-gen multimodal VLMs dominate Hugging Face trending.",
+      "Heavy GPU needs don't deter massive text-to-video models.",
+      "DeepSeek-V4-Flash is highly sought after for its speed."
+    ],
+    "ai-community": [
+      "Gemma 4 drives massive interest in local, privacy-first AI.",
+      "Developers warn of overprivileged MCP server vulnerabilities.",
+      "Autonomous coding agents move from laptops to team infra.",
+      "Engineers optimize AI infrastructure with persistent KV caches.",
+      "Vibe coding successfully builds a version manager for llama.cpp.",
+      "Multimodal AI models introduce hidden blueprint attack risks."
+    ]
+  }
+}
