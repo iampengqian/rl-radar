@@ -1,20 +1,20 @@
 {
   "zh": {
     "ai-cli": [
-      "GitHub Copilot 连发 v1.0.53 和 v1.0.54 版本",
-      "Qwen Code 发版 v0.16.1，全面铺开 IM 端集成",
-      "DeepSeek TUI 升级至 v0.8.43，演进多智能体架构",
-      "Claude Code 遭遇升级回归，社区开启自救",
-      "OpenCode 社区极度活跃，重构模型网关与容错机制",
-      "Kimi Code 完善第三方 Agent 集成的 ACP 协议"
+      "长上下文致内存崩溃，OOM成全行业普遍痛点",
+      "Claude Code陷天价账单危机，单月Token消耗超3万刀",
+      "OpenAI Codex底层7连环重构，升级Rust TUI交互",
+      "Qwen Code重构Daemon架构，全面打通飞书通道",
+      "DeepSeek TUI品牌重塑，演进为多智能体并行工作台",
+      "Daemon常驻与精细化Token计费成CLI军备竞赛焦点"
     ],
     "ai-agents": [
-      "OpenClaw 连发两版，网关性能与缓存获极限优化",
-      "OpenClaw 单日处理超 500 Issue，社区热度极高",
-      "多通道路由架构演进，安全边界与状态管理获突破",
-      "近两版更新无破坏性 API 变更，自定义插件需留意热重载",
-      "v2026.5.24-beta.1 重点优化进程复用与 CPU 轮换",
-      "网关启动时复用不可变的插件元数据快照降低内存"
+      "OpenClaw开源智能体基建生态极度活跃，日均处理数百PR",
+      "OpenClaw底层运行时状态全面迁移至SQLite",
+      "OpenClaw多通道路由Phase 2架构重构完成",
+      "OpenClaw收紧WebSocket CSP策略消除TOCTOU竞态",
+      "OpenClaw实现基于代理身份的细粒度权限覆盖",
+      "OpenClaw正经历功能狂飙与技术债消化的阵痛并行期"
     ],
     "ai-trending": [
       "Understand Anything 单日暴涨 3987 Star 封神",
@@ -63,6 +63,14 @@
       "深度剖析 LLM 提示词注入导致控制层边界坍塌风险",
       "60 秒构建生产级 MCP 服务器，内置鉴权与限流",
       "社区探讨用传统算法在特定场景替代 LLM 的性价比"
+    ],
+    "ai-weekly": [
+      "OpenAI秘密提交IPO申请，创AI领域最大资本事件",
+      "Karpathy确认加盟Anthropic，引发AGI安全路线热议",
+      "Anthropic收购Stainless，全面把控Agent底层生态",
+      "Anthropic神蝶计划曝光，找出逾万个全球高危漏洞",
+      "OpenAI模型成功证伪1946年Erdős数学猜想",
+      "马斯克诉奥特曼案终局：陪审团裁定马斯克败诉"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Google Skill File named most impactful new dev tool.",
       "Lobste.rs users debate tasks better off without LLMs.",
       "Industry shifting from cloud prompting to local agents."
+    ],
+    "ai-weekly": [
+      "Anthropic acquires Stainless to build AI Agent highway system.",
+      "OpenAI confidentially files for IPO, eyeing public markets.",
+      "Andrej Karpathy officially joins rival Anthropic.",
+      "OpenAI model disproves decades-old discrete math conjecture.",
+      "Claude 4.5 Haiku achieves 0% agentic misalignment rate.",
+      "Anthropic 'Project Glasswing' finds 10,000 severe security bugs."
     ]
   }
 }
