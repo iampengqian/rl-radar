@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "GitHub Copilot 连发 v1.0.53 和 v1.0.54 版本",
+      "Qwen Code 发版 v0.16.1，全面铺开 IM 端集成",
+      "DeepSeek TUI 升级至 v0.8.43，演进多智能体架构",
+      "Claude Code 遭遇升级回归，社区开启自救",
+      "OpenCode 社区极度活跃，重构模型网关与容错机制",
+      "Kimi Code 完善第三方 Agent 集成的 ACP 协议"
+    ],
+    "ai-agents": [
+      "OpenClaw 连发两版，网关性能与缓存获极限优化",
+      "OpenClaw 单日处理超 500 Issue，社区热度极高",
+      "多通道路由架构演进，安全边界与状态管理获突破",
+      "近两版更新无破坏性 API 变更，自定义插件需留意热重载",
+      "v2026.5.24-beta.1 重点优化进程复用与 CPU 轮换",
+      "网关启动时复用不可变的插件元数据快照降低内存"
+    ],
+    "ai-trending": [
+      "Understand Anything 单日暴涨 3987 Star 封神",
+      "代码图谱项目 codegraph 单日斩获近 3000 Star",
+      "Anthropic 官方发布 Claude Code 插件目录",
+      "Karpathy 行为指令微调集获 2555 Star",
+      "Local LLM 运行基石 ollama 总星标突破 17.2万",
+      "金融大模型 Kronos 登榜，迈向专业预测深水区"
+    ],
+    "ai-hn": [
+      "研究曝出 LLM 生成后端代码会丢失关键约束",
+      "开发者曝 Anthropic 可远程修改 Claude Code 提示词",
+      "让本地小模型回答前先提问，能显著提升性能",
+      "Anthropic 发布大模型生成漏洞利用代码评估基准",
+      "Strudel 利用 Apple 端侧大模型自动生成 commit",
+      "Fleet 实现并行运行多个编程智能体的 Python 监控"
+    ],
+    "rl-daily": [
+      "强化学习生态呈两极分化，LLM 训练主导演进",
+      "传统单智能体框架深入底层 API 与类型系统重构",
+      "Tianshou 等极速迭代，重点攻坚 DAPO 等新算法",
+      "verl 深入底层异构算力，攻坚大模型训练显存墙",
+      "AReaL 暴露 Qwen3.5 在 FSDP 环境下的显存异常",
+      "ROLL 完善视觉语言模型强化学习的数据质控"
+    ],
+    "agent-orch": [
+      "Swarm Protocol 探索大模型智能体间的通信协议",
+      "Crystal 引入基于图结构的分布式工作流定义方式",
+      "AutoGen 发布新架构，支持多模型动态混合编排",
+      "MCP 协议成标准，打通底层通信与企业级安全边界",
+      "Superset 推出基于自然语言的自动化测试用例生成",
+      "Claude Flow 实现终端内多智能体进程的管理调度"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 断层第一，下载量超 466 万",
+      "Google Gemma-4 开源发布，下载量已破千万",
+      "字节 Any-to-Any 大模型 Lance 引爆跨模态生成",
+      "Sulphur-2-base 视频生成模型下载量超 133 万",
+      "Qwen3.6 系列霸榜，衍生量化微调去审查成热点",
+      "腾讯混元矩阵发力，精准覆盖端侧到云端翻译"
+    ],
+    "ai-community": [
+      "谷歌 I/O 发布 Skill File，提供复杂 Agent 新思路",
+      "DevOps 实测 48 小时将云端 LLM 替换为本地小模型",
+      "Claude Code Hooks 机制让 AI 升级为自动团队协作者",
+      "深度剖析 LLM 提示词注入导致控制层边界坍塌风险",
+      "60 秒构建生产级 MCP 服务器，内置鉴权与限流",
+      "社区探讨用传统算法在特定场景替代 LLM 的性价比"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Ecosystem shifting from terminal chat to autonomous agents.",
+      "Claude Code faces security and MCP breakage regressions.",
+      "OpenAI Codex stabilizes with major TUI refactors.",
+      "GitHub Copilot iterating on complex sub-agent workflows.",
+      "AI CLI tools battling severe platform-specific rendering bugs.",
+      "Challenger tools focused on memory management hardening."
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive momentum with 500 open PRs.",
+      "OpenClaw triage lagging as development outpaces resolution.",
+      "v2026.5.24-beta.1 focuses on gateway performance.",
+      "Community demands cross-platform and security hardening.",
+      "New release rotates CPU profiles for observability.",
+      "Messaging reliability for Slack and Telegram is top demand."
+    ],
+    "ai-trending": [
+      "Aggressive surge in trending Agentic DevOps tools.",
+      "Ollama hits 172k stars, adds fast Kimi-K2.5 support.",
+      "Anthropic launches official Claude Code plugin directory.",
+      "Codegraph provides local context for coding agents.",
+      "Ecosystem shifting toward governance and tool-calling infra.",
+      "vllm remains standard for high-throughput LLM inference."
+    ],
+    "ai-hn": [
+      "Engineers push back against autonomous coding agent hype.",
+      "LLM agents suffer from 'constraint decay' over time.",
+      "Remote system prompt injections spark security fears.",
+      "Industry shifting towards commercialization and IPOs.",
+      "Local LLM accuracy improved via clarifying questions.",
+      "Community warns against treating LLMs like architects."
+    ],
+    "rl-daily": [
+      "Ecosystem bifurcates between LLM alignment and classic RL.",
+      "Most innovation concentrated on scaling RLHF and GRPO.",
+      "TRL actively stabilizing GRPO/DAPO and vLLM integration.",
+      "verl fixing critical FSDP/Megatron memory crashes.",
+      "Traditional single-agent RL libraries enter dormancy.",
+      "Projects targeting multi-billion parameter model bottlenecks."
+    ],
+    "agent-orch": [
+      "Ecosystem focused on orchestrating autonomous AI agents.",
+      "Claude Squad and Crystal lead new orchestrator tools.",
+      "Developers seek better observability for agent workflows.",
+      "AutoGPT and MetaGPT trend for complex team simulations.",
+      "Rise of Kanban-style boards for managing AI agents.",
+      "HumanLayer provides vital human-in-the-loop guardrails."
+    ],
+    "ai-hf": [
+      "Google's Gemma 4 31B model breaks download records.",
+      "DeepSeek-V4-Pro trending as a top open-weight engine.",
+      "Multimodal and vision-language models surge in popularity.",
+      "ByteDance's Lance model drives massive video interest.",
+      "Chinese tech giants driving high-quality open releases.",
+      "MiniCPM-V-4.6 sees strong community engagement."
+    ],
+    "ai-community": [
+      "Google I/O 2026 unveils Gemini 3.5 Flash and skills.",
+      "Developers ditch cloud APIs for local Gemma 4 models.",
+      "Claude Code evolves into teammate via custom hooks.",
+      "Google Skill File named most impactful new dev tool.",
+      "Lobste.rs users debate tasks better off without LLMs.",
+      "Industry shifting from cloud prompting to local agents."
+    ]
+  }
+}
