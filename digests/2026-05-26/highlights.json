@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Kimi Code底层大重构：计划从Python全面转向Bun+TS。",
+      "Qwen Code发v0.16.1，Daemon后台服务模式进入生产闭环。",
+      "OpenCode遇多模型兼容地狱：GPT/DeepSeek等适配报错频发。",
+      "DeepSeek-TUI更名CodeWhale，规划多Agent新架构。",
+      "Claude Code爆安全危机：单条Issues点赞破千直指误杀痛点。",
+      "GitHub Copilot CLI发v1.0.55-0，将引入Gemini多模型支持。"
+    ],
+    "ai-agents": [
+      "OpenClaw发布新测试版，支持iMessage手势表情快捷审批。",
+      "OpenClaw吞吐惊人：单日狂飙461条Issue与500个PR。",
+      "Pi核心运行时大重构，OpenClaw彻底剥离嵌入式旧架构。",
+      "Session并发接管现竞态危机，核心清理PR已进入自动合并。",
+      "引入文件级prompt-window机制，精准控制Agent上下文。",
+      "显式审批者白名单上线，支持配置项级别权限读取。"
+    ],
+    "ai-trending": [
+      "Understand-Anything日增5.6k星，一键转AI知识图谱。",
+      "开源网络安全技能库爆火，专为AI Agent补齐安全短板。",
+      "Antirez出山新作DwarfStar，探索分布式LLM推理优化。",
+      "Ollama持续领跑，跟进支持Kimi-K2.5等最新开源模型。",
+      "Anthropic官方开源，推出Claude Cowork办公自动化插件。",
+      "gstack展现工作流微调狂热，模拟多角色协作定制Claude。"
+    ],
+    "ai-web": [
+      "Anthropic高管登梵蒂冈，回应教皇首个AI专属通谕。",
+      "Olah坦承AI前沿实验室受制于商业与地缘政治压力。",
+      "罕见高管自我揭短：呼吁系统外部力量监督AI发展。",
+      "AI安全与社会合法性成为Anthropic战略最高优先级。",
+      "争夺伦理制高点：Anthropic将品牌核心转向清醒与谦逊。",
+      "强化政企信任红利：Anthropic极力打造安全可控人设。"
+    ],
+    "ai-hn": [
+      "Anthropic即将发布最新Mythos级大模型。",
+      "Meta和Google的AI模型安全护栏被轻易剥离。",
+      "YourMemory发布，解决AI Agent长效运行失忆痛点。",
+      "Unsiloed AI登顶olmOCR-Bench榜首。",
+      "Vibe coding引热议，社区正直面AI带来的技术债。",
+      "Redis作者antirez探讨分布式LLM推理加速。"
+    ],
+    "rl-daily": [
+      "LLM对齐框架抛弃单一PPO，混合SFT与DPO成共识。",
+      "verl单日狂飙30个PR，死磕多硬件适配与底层通信。",
+      "AReaL引领PD分离架构，极尽压榨显存利用率。",
+      "Slime强势攻坚跨节点权重同步与MoE大模型支持。",
+      "TRL发力多模态与Tool-use，重塑Agent RL规范。",
+      "rl_games拓展硬件边界，跟进支持Apple MPS后端。"
+    ],
+    "agent-orch": [
+      "Claude Squad领衔，AI Agent多进程编排工具全面爆发。",
+      "Symphony与Crystal引发企业级智能体调度架构新探讨。",
+      "MCP协议安全告急：npm编排包爆出严重未设防漏洞。",
+      "OpenKanban与Vibe Kanban重塑AI编程任务可视化管理。",
+      "HumanLayer爆火，专注解决多Agent流程中的人工接管。",
+      "AutoGen与CrewAI生态演进，长时记忆管理成焦点。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro重磅登顶，单日斩获近500万次下载。",
+      "Sulphur-2-base爆火，下载超130万的视频生成基座。",
+      "腾讯连发三款Hy-MT2模型，专为高质量机器翻译打造。",
+      "MiniCPM-V-4.6斩获近千赞，端侧多模态神模型上新。",
+      "Qwen3.6引爆社区，微调量化去审查版迅速占领榜单。",
+      "字节跳动Lance开源，任意模态互生技术展现极高人气。"
+    ],
+    "ai-community": [
+      "警惕AI工具破坏团队集体思考能力与协作逻辑。",
+      "AI生成代码“足够好但不够卓越”，引发开发者反思。",
+      "AI Agent编排npm包爆未设门禁漏洞，敲响安全警钟。",
+      "Qwen 3.6四档模型怎么选？一文教你低成本智能路由。",
+      "警惕AI生成代码带来的深层认知债务与架构理解丧失。",
+      "停止构建AI信息收件箱，转向打造决策辅助层。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code tackles v2.1 data loss and guardrail false positives.",
+      "Open-source challengers rapidly close feature gap on market leaders.",
+      "Ecosystem shifts from single-prompt to complex multi-agent workflows.",
+      "Context management, guardrails, and connectivity remain growing pains.",
+      "GitHub Copilot CLI, OpenAI Codex, and Gemini CLI drive iteration.",
+      "Daemon architectures and provider diversification gain heavy focus."
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive activity: 461 issues and 500 PRs in 24 hours.",
+      "v2026.5.24-beta.2 adds thumb-approval reactions for iMessage channel.",
+      "Internal refactor removes legacy Pi-shaped architecture (PR #85341).",
+      "Rapid iteration introduces P1 gateway and session management bugs.",
+      "Project shows healthy triage with 282 closed vs 179 open issues.",
+      "Community engagement remains high across the OpenClaw ecosystem."
+    ],
+    "ai-trending": [
+      "GitHub is dominated by the agentic coding paradigm and plugins.",
+      "Developers rapidly iterate on agent harnesses and CLAUDE.md skills.",
+      "Knowledge graph-based code context management sees a major surge.",
+      "Ollama (172,299 stars) remains go-to local inference engine.",
+      "CodeGraph debuts with +3171 stars for low-token AI agent context.",
+      "Anthropic open-sources plugins to eliminate AI slop generation."
+    ],
+    "ai-web": [
+      "Anthropic co-founder Chris Olah speaks at the Vatican on AI safety.",
+      "Olah addressed AI ethics for Pope Leo XIV's new AI encyclical.",
+      "Anthropic acknowledges frontier AI labs face conflicts of interest.",
+      "Anthropic seeks external moral oversight outside the tech ecosystem.",
+      "Move signals profound institutional humility for the AI lab.",
+      "OpenAI had zero new official content or policy releases today."
+    ],
+    "ai-hn": [
+      "Anthropic to release highly anticipated Mythos-class AI models.",
+      "Mythos-class models are already causing major waves in Washington.",
+      "Chris Olah aligns with Pope Leo XIV on AI job displacement risks.",
+      "DwarfStar explores distributed LLM inference infrastructure.",
+      "Huawei 2-petabyte flash storage setup built for LLM training.",
+      "Community warns leading AI model guardrails bypassed in minutes."
+    ],
+    "rl-daily": [
+      "Ecosystem aggressively pivots to large-scale LLM post-training.",
+      "Verl expands hardware backends for massive scale RLHF support.",
+      "Slime pushes envelope on training/inference disaggregation.",
+      "TRL expands into Vision/Audio modalities and tool-calling.",
+      "AReaL optimizes PD separation and CUDA IPC weight syncing.",
+      "Foundational traditional RL libraries shift to maintenance phases."
+    ],
+    "agent-orch": [
+      "Claude Squad and Crystal lead rapidly evolving agent orchestration.",
+      "Swarm Protocol and OpenFang advance multi-agent communication.",
+      "AutoGPT, MetaGPT, and CrewAI continue to mature orchestration.",
+      "Developers shift focus to complex multi-agent team workflows.",
+      "Security and human oversight emerge as critical orchestrator themes.",
+      "Orchestrator tools bridge AI agents with existing dev workflows."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro leads open-weight space with 4.8M+ downloads.",
+      "Massive surge in vision-language models dominates the ecosystem.",
+      "Qwen 3.5/3.6 families become open-source community foundation.",
+      "Demand for uncensored model variants remains sustained and high.",
+      "HRM-Text-1B gains massive traction for edge compute devices.",
+      "Specialized, compact models for translation and TTS thrive."
+    ],
+    "ai-community": [
+      "Backlash grows against vibe coding and hidden AI software costs.",
+      "Engineers warn of cognitive debt from shipping misunderstood AI code.",
+      "Microsoft and Uber scale back AI agents due to high running costs.",
+      "Model Context Protocol (MCP) faces intense security scrutiny.",
+      "Critics suggest MCP has fundamental architectural security flaws.",
+      "Developers share strategies for cost-efficient LLM API routing."
+    ]
+  }
+}
