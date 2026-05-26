@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Qwen Code发v0.16.1，推Daemon模式与ACP协议",
+      "OpenAI Codex发rust-v0.134.0，统一配置架构",
+      "AI CLI架构向Daemon+Server演进，进入深水区",
+      "DeepSeek TUI更名为CodeWhale并发布v0.8.47",
+      "OpenCode爆火：社区极速攻坚跨平台死锁痛点",
+      "Kimi Code预热v1.45.0，强适配DeepSeek V4"
+    ],
+    "ai-agents": [
+      "OpenClaw日处500个PR，连发两Beta版极速迭代",
+      "OpenClaw新Beta版架构级优化，大幅提升响应速度",
+      "iMessage附件路径策略现Bug，已被新版本修复",
+      "Channel Broker架构演进，核心开发者提交大型PR",
+      "高速迭代引稳定性回归：Windows与OAuth现漏洞",
+      "开源Agent生态持续繁荣，单日超13个项目活跃"
+    ],
+    "ai-trending": [
+      "ECC登顶GitHub热榜，专为AI编程智能体提效",
+      "Understand-Anything日涨4721星，代码秒变图谱",
+      "Ollama稳坐本地运行霸主，迅速支持Kimi-K2.5",
+      "stop-slop引关注，爆火去除“AI味”的微调技能",
+      "AionUi受热捧，一站式免费GUI接入20+款CLI",
+      "Ruflo成焦点，专为Claude设计的多智能体编排"
+    ],
+    "ai-web": [
+      "Anthropic重磅：探讨全线产品如何“收容”Agent",
+      "意外曝光未发布模型：Claude Mythos破坏力过高",
+      "AI安全从“理论对齐”正式走向“工程硬约束”",
+      "承认不部署强模型的“机会成本”极高",
+      "打造环境隔离与权限降级的防御体系支持实战",
+      "OpenAI官网静默，疑似正蓄力筹备下轮重大发布"
+    ],
+    "ai-hn": [
+      "LLM竟有类睡眠巩固机制？研究登顶Hacker News",
+      "DeepSWE发布无污染基准，直击AI编程刷榜作弊",
+      "MCP不够用！新方案解决AI代理长任务遗忘痛点",
+      "Claude Code越更新越难用？开源OTel量化监控",
+      "Anthropic计划发布Mythos级模型引爆社区期待",
+      "开源包曝严重漏洞，狂热的Agent自动化遇安全冷"
+    ],
+    "rl-daily": [
+      "TRL打破Python GIL，死磕分布式吞吐极限",
+      "verl重构多芯片HAL层，野心成为跨设备统一底座",
+      "AReaL原生引入PD分离推理，攻坚训推一体化",
+      "OpenRLHF转向Agentic Workflow遇长文本痛点",
+      "Open Instruct引入TV divergence，比特级对齐",
+      "RLHF框架成创新主力，下沉至显存池化系统优化"
+    ],
+    "agent-orch": [
+      "Symphony与AutoGPT领衔，45款编排项目混战",
+      "Claude Squad成焦点，专注多智能体协同开发",
+      "Ruflo崛起，专为Claude设计的多智能体编排平台",
+      "HumanLayer爆火，探索人机交互安全新边界",
+      "Agent Deck等新势力涌现，大推自定义AI工具流",
+      "LlamaIndex与CrewAI稳居底层编排基础设施"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro超五百万下载，稳居开源霸主",
+      "Qwen3.6-27B火爆，社区微调与量化版本全面爆发",
+      "Sulphur-2引热议，成百万下载级Text-to-Video新宠",
+      "腾讯Hy-MT2模型开源，轻量级与MoE架构双选",
+      "字节Lance登场，开辟任意到任意多模态生成新线",
+      "MiniCPM5-1B发布，为极度受限设备提供生成方案"
+    ],
+    "ai-community": [
+      "AI审查AI代码：Cortex解决月769个PR的Review死",
+      "告别杂物间：开发者呼吁建立标准化Agent记忆架构",
+      "FastAPI+Kong实战：手把手实现AI Agent计费变现",
+      "Lobste.rs深度反思：vibe-coding带来严重安全隐患",
+      "逃离Claude与Cursor额度限制，免费本地AI指南爆",
+      "LLM-as-a-Judge教程：上线前精准识别AI幻觉错误"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Codex launches v0.134.0 shifting to Rust.",
+      "AI CLI tools transitioning into autonomous agents.",
+      "Ecosystem standardizing around Model Context Protocol.",
+      "Agentic growing pains hit memory and API limits.",
+      "Claude Code focuses on cross-surface syncing.",
+      "Gemini CLI tackles PTY and sub-agent reliability."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 390 issues and 500 PRs in 24 hours.",
+      "OpenClaw v2026.5.26-beta.1 optimizes gateway boot times.",
+      "v2026.5.25-beta.1 fixes critical iMessage attachment bug.",
+      "Maintainers aggressively address performance bottlenecks.",
+      "OAuth session state management heavily optimized.",
+      "Multi-platform channel routing rapidly expanding."
+    ],
+    "ai-trending": [
+      "Agent harnessing and context optimization top GitHub.",
+      "ECC agent performance optimizer gains 1,912 stars today.",
+      "Community pushes anti-slop tools to refine AI quality.",
+      "Vectorless RAG sees massive open-source traction.",
+      "Knowledge graphs gain steam for context management.",
+      "learn-claude-code proves Bash can orchestrate agents."
+    ],
+    "ai-web": [
+      "Anthropic reveals \"blast radius\" agent containment.",
+      "Safety fears caused Anthropic to withhold Claude Mythos.",
+      "Anthropic shifts from restriction to containment.",
+      "Internal services now grant Claude dangerous access.",
+      "Cowork collaborative agent officially confirmed.",
+      "Claude Code architecture detailed in new safety post."
+    ],
+    "ai-hn": [
+      "Sleep-like LLM consolidation mechanism wows Hacker News.",
+      "China restricts overseas travel for top AI talent.",
+      "Sam Altman retracts \"job apocalypse\" AI predictions.",
+      "DeepSWE offers contamination-free coding agent tests.",
+      "OpenAI admits hallucinations are mathematically baked in.",
+      "Developers hunt for persistent autonomous agent memory."
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates into LLM post-training vs legacy.",
+      "TRL breaks Python GIL bottlenecks for AI optimization.",
+      "verl rapidly expands hardware plugin support.",
+      "AReaL pushes FSDP precision fixes for model scaling.",
+      "Traditional RL libraries see near-zero activity.",
+      "Agentic RL and GRPO dominate current development."
+    ],
+    "agent-orch": [
+      "Multi-agent orchestration tools flood the ecosystem.",
+      "Claude Flow and Claude Squad lead new integrations.",
+      "Swarm Protocol introduces advanced agent coordination.",
+      "HumanLayer focuses on human-in-the-loop orchestration.",
+      "Vibe Kanban merges project management with AI agents.",
+      "AutoGPT and AutoGen face new specialized competitors."
+    ],
+    "ai-arxiv": [
+      "Bio-inspired \"sleep\" solves LLM context bottlenecks.",
+      "Looped Diffusion models boost efficiency sans parameters.",
+      "Self-generated replay proposed to stop forgetting.",
+      "New benchmarks target deep research AI agents.",
+      "Inference-time control gains research traction.",
+      "State-space reasoning architectures see breakthroughs."
+    ],
+    "ai-hf": [
+      "Qwen3.6-27B sets new open-weight community standard.",
+      "DeepSeek-V4-Pro tops charts with 5M+ downloads.",
+      "ByteDance Lance launches \"any-to-any\" multimodal gen.",
+      "Sulphur-2 brings highly anticipated video generation.",
+      "HRM-Text-1B gains rapid adoption for edge devices.",
+      "Ecosystem splits between proprietary and edge quantized."
+    ],
+    "ai-community": [
+      "AI agent usage-based billing architecture solved.",
+      "Vatican AI encyclical sparks deep philosophical debate.",
+      "Developers push back against insecure \"vibe coding\".",
+      "AI agents now review and merge hundreds of PRs alone.",
+      "Standardized model for agent memory architecture proposed.",
+      "Community shifts focus to local-first AI agent setups."
+    ]
+  }
+}
