@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 开启底层 Rust 重写",
+      "Qwen Code 曝出 Windows 高危自杀 Bug",
+      "Claude Code 爆配额需求与长上下文热议",
+      "OpenCode 因响应延迟引发近百条热议",
+      "DeepSeek TUI 更名 CodeWhale 并重构",
+      "Gemini CLI 极力攻坚终端防崩溃机制"
+    ],
+    "ai-agents": [
+      "OpenClaw 一天内关闭超 200 个 PR",
+      "v2026.5.26 版本彻底重构启动性能",
+      "核心修复 Gateway 会话缓存性能损耗",
+      "新版本引入 Channel 路由等回归问题",
+      "新增配置有效缓解事件循环阻塞问题",
+      "361 条 Issue 更新保持极高活跃度"
+    ],
+    "ai-trending": [
+      "ECC 系统 19 万星空降热榜增强 Agent",
+      "Understand-Anything 生成可交互知识图谱",
+      "claude-mem 实现跨会话通用记忆持久化",
+      "superpowers 框架首日狂揽 1680 Star",
+      "claude-code-harness 引入严苛自治循环",
+      "开发焦点转向高约束高品味的 Agent 执行"
+    ],
+    "ai-web": [
+      "Anthropic 首解 Claude Code 自动模式架构",
+      "OpenAI 探索构建自我改进的税务 AI 智能体",
+      "Auto Mode 训练分类器以降低审批疲劳",
+      "Anthropic 强势进军韩国并设立首尔分部",
+      "Claude 审批自动化实现安全性与易用性平衡",
+      "大厂正加速金融等高壁垒垂直场景落地"
+    ],
+    "ai-hn": [
+      "Claude Code 两百美元套餐被曝 17 倍巨额补贴",
+      "Demon 开源引擎实现本地 GPU 25Hz 实时音乐生成",
+      "多智能体系统已能自动化发现并复现漏洞",
+      "Altman 和 Amodei 集体收回 AI 失业潮警告",
+      "极客成功在 16GB 内存机器上跑千亿参数模型",
+      "数据工程基准测试新思路成功击败 Claude Code"
+    ],
+    "rl-daily": [
+      "verl 深水区迭代并支持异构算力调度",
+      "ROCK 死磕底层沙箱并发与磁盘治理",
+      "TRL 极致推进异步与多模态底层架构",
+      "slime 重心向原生 Agent RL 迁移",
+      "AReaL 重构推理与训练协同架构",
+      "OpenRLHF 等经典框架处于平稳打磨期"
+    ],
+    "agent-orch": [
+      "编排生态全面向多智能体调度管理演进",
+      "Claude Flow 成为高频使用的智能体编排工具",
+      "Ruflo 引领具备自学习的群体智能架构",
+      "Claude Squad 实现多个智能体并行协作",
+      "HumanLayer 专注打造人机协同安全层",
+      "各项目正积极整合最新 MCP 协议规范"
+    ],
+    "ai-arxiv": [
+      "RLHF 被曝出对齐篡改漏洞放大模型偏见",
+      "多 Token 预测大幅提升长链思维推理效率",
+      "稀疏自编码器精准指导后训练数据工程",
+      "MUSE-Autoskill 开创自进化智能体框架",
+      "研究揭示 LLM 顺从性源于认知不确定性",
+      "离散扩散模型加速技术打破解码速度瓶颈"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 以超 500 万下载量领跑",
+      "字节 Lance 模型引爆 Any-to-Any 跨模态生成",
+      "Qwen3.6 系列迎来 MoE 架构生态大爆发",
+      "腾讯混元发布多语种表现卓越的翻译模型",
+      "Sulphur 视频生成模型下载量突破百万",
+      "HRM-Text-1B 主打高性价比端侧文本部署"
+    ],
+    "ai-community": [
+      "MCP 是为工具赋能的电源插座而非模型功能",
+      "多数 RAG 问题本质是底层检索缺陷所致",
+      "百万 Token 模型加文件系统优于传统 RAG",
+      "开发者直击 AI 工具集成真实痛点与经验",
+      "Go 语言结合 Lua 打造高性能 LLM 网关",
+      "DeepSeek 五百万免费 Token 真实消耗避坑复盘"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift from chat to autonomous agent orchestrators.",
+      "Daemon-first architecture becomes standard for AI developer tools.",
+      "Claude Code stable v2.1.152 released alongside Codex alpha.",
+      "Gemini CLI v0.44.0 focuses on massive context window management.",
+      "Shell command safety execution remains a primary engineering hurdle.",
+      "Tools prioritize headless execution and CI/CD integrations."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 PRs updated in 24 hours of aggressive shipping.",
+      "OpenClaw v2026.5.26 introduces faster Gateway event loop.",
+      "Stabilizing integrations for OpenAI Codex and Claude-CLI prioritized.",
+      "Platform-specific regressions targeted for Windows and macOS.",
+      "Community engagement surges with robust enterprise adoption.",
+      "Reducing initialization overhead is a key focus of latest releases."
+    ],
+    "ai-trending": [
+      "Agentic coding harnesses dominate GitHub trending repositories.",
+      "ECC explodes with 2,000+ daily stars for CLI agent optimization.",
+      "Open source shift from copilots to autonomous cowork environments.",
+      "Community focuses on eliminating generic AI slop via custom skills.",
+      "Specialized agents emerge for finance and cybersecurity domains.",
+      "Superpowers repo rapidly trends for autonomous AI workflows."
+    ],
+    "ai-web": [
+      "Anthropic details building Claude Code auto mode to skip permits.",
+      "New auto mode uses classifiers to evaluate tool execution safety.",
+      "Auto mode solves approval fatigue as users blindly approve 93%.",
+      "Anthropic expands enterprise footprint into Korean markets.",
+      "OpenAI shifts towards vertical-specific enterprise AI solutions.",
+      "Agentic AI shifts away from manual human-in-the-loop approval."
+    ],
+    "ai-hn": [
+      "HN debates if OpenAI and Anthropic found true product-market fit.",
+      "AI leaders walk back previous job apocalypse predictions.",
+      "Meta introduces new commercial AI subscription tier.",
+      "Coding startup Cognition raises a massive $1B funding round.",
+      "Multi-agent LLM system automates vulnerability reproduction.",
+      "Hackers optimize massive LLMs on consumer-grade local hardware."
+    ],
+    "rl-daily": [
+      "Reinforcement learning shifts focus to LLM post-training systems.",
+      "Distributed compute replaces algorithmic design as main RL bottleneck.",
+      "verl sees critical focus on heterogeneous hardware support.",
+      "ROCK prioritizes enterprise-scale cluster disk governance.",
+      "Classic reinforcement learning libraries shift to minor maintenance.",
+      "Complex agentic workflows drive RL infrastructure hardening."
+    ],
+    "agent-orch": [
+      "Agent Orchestrator ecosystem digest covers 45 active projects.",
+      "Claude Squad leads tools managing multiple autonomous agents.",
+      "Open source orchestrators aim to standardize complex agent workflows.",
+      "Swarm Protocol and Crystal highlight new orchestration approaches.",
+      "Kanban-style tools like Vibe Kanban manage AI dev environments.",
+      "Mux Desktop and other tools focus on local agent orchestration."
+    ],
+    "ai-arxiv": [
+      "Researchers expose critical RLHF vulnerabilities exploiting biases.",
+      "MobileMoE proves sub-billion parameter models excel on edge devices.",
+      "Pair-In, Pair-Out introduces latent multi-token LLM prediction.",
+      "New papers expose reasoning illusions in Visual-Language Models.",
+      "Tailored foundation models revolutionize 6G and legal research.",
+      "Autonomous AI agents rapidly evolve into self-managing systems."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates with over 5 million total downloads.",
+      "Qwen 3.6 release sparks massive community fine-tuning wave.",
+      "MiniCPM5-1B proves highly efficient for on-device deployment.",
+      "ByteDance Lance model pioneers any-to-any multimedia generation.",
+      "Pyannote leads speaker diarization with massive download counts.",
+      "Nvidia Nemotron Labs 14B model debuts for diffusion generation."
+    ],
+    "ai-community": [
+      "Model Context Protocol (MCP) becomes standard for agent tools.",
+      "Developers push back against overcomplicated vector RAG pipelines.",
+      "Most RAG pipeline problems stem from data-fetching, not generation.",
+      "Community debates societal implications of open vs closed AI.",
+      "Discussion explores real developer AI use vs marketing hype.",
+      "Memory-optimized solutions favored over fragile CLI integrations."
+    ]
+  }
+}
