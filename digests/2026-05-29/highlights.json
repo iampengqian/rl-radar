@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.154 重磅更新，支持动态工作流",
+      "OpenAI Codex rust-v0.135.0 密集重构企业云配置栈",
+      "Gemini CLI v0.45.0-preview 修复 PTY 致 C++ 崩溃",
+      "GitHub Copilot CLI v1.0.56 修 Duplicate item 报错",
+      "OpenCode v1.15.12 引入工作流引擎与 ACP 增强",
+      "Claude Code 社区强诉求：AGENTS.md 规范获 4006 赞"
+    ],
+    "ai-agents": [
+      "OpenClaw 一天内处理 402 Issue 与 500 PR",
+      "OpenClaw 抽取网关协议为独立包，提升模块化",
+      "OpenClaw 重构 TTS 路由，统一为 voice 编目",
+      "OpenClaw 融入 Telegram 语音按钮多模态支持",
+      "v2026.5.27 强化安全，阻断不安全 Node 变量覆盖",
+      "新版修复 Native Hook Relay 与核心内存泄漏"
+    ],
+    "ai-trending": [
+      "ECC：AI 编程智能体优化系统登顶热榜(+1388)",
+      "learn-claude-code：Bash is all you need 构建轻量Agent",
+      "ruflo：专为 Claude 设计的多智能体集群编排平台",
+      "Understand-Anything 将任意代码转化为交互知识图谱",
+      "Anthropic 官方发布 Agent Skills 基础能力包",
+      "ollama 全面支持 Kimi-K2.5、DeepSeek 等新开源模型"
+    ],
+    "ai-web": [
+      "Anthropic 完成 650 亿美元 H 轮融资，估值达 9650 亿",
+      "Anthropic 年化收入突破 470 亿美元",
+      "Claude Opus 4.8 发布：引入努力程度控制功能",
+      "Anthropic Labs 推出 Claude Design 杀入 UI/UX 领域",
+      "Claude Code 动态工作流快速模式成本比前代降三倍",
+      "Anthropic 首次公开未发布的 Claude Mythos 模型"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.8 毫无争议登顶 HN 热榜(1058分)",
+      "标准 GPU 实现 LLM 实时推理(3000 tokens/s)",
+      "Claude Code 动态工作流引发前端开发新风向",
+      "Ktx 开源项目直击数据 Agent 上下文管理痛点",
+      "Various LLM Smells 热文探讨 LLM 代码工程坏味道",
+      "行业巨头集体收回 AI 失业潮末日预言引嘲讽"
+    ],
+    "rl-daily": [
+      "LLM 对齐主导 RL 开源，占据 95% 以上资源",
+      "verl 发力底层算力压榨与多模态 Agent 交互",
+      "AReaL 启动 v2 微服务架构，引入 PD 分离",
+      "Open Instruct 集中攻坚 GRPO 死锁漏洞",
+      "经典 RL 基石库趋于平稳，多数过去 24h 零动态",
+      "slime 深度定制 Megatron 算子与通信机制"
+    ],
+    "agent-orch": [
+      "多智能体编排进入深水区，跨终端调度成核心",
+      "Claude Flow 等项目重塑多智能体并发协作",
+      "Swarm Protocol 试图建立标准通信协议",
+      "AutoGPT 与 MetaGTP 探索复杂任务规划治理",
+      "HumanLayer 强调人在回路中的审批机制",
+      "LlamaIndex 与 CrewAI 整合底层工作流引擎"
+    ],
+    "ai-arxiv": [
+      "双向进化搜索：为 LLM 提供无人工标注自进化",
+      "推理即压缩：揭示推理模型的长上下文压缩能力",
+      "搜索智能体被指只验证已知知识，不探索未知",
+      "挑战二元道德：提出在 AI 中建模道德多元主义",
+      "LLM 置信度实证：解析大模型为何经常嘴硬",
+      "参数高效微调首次从稳定性与可塑性视角评估"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 屠榜，下载量破 528 万",
+      "DeepSeek-V4-Flash 兼顾性能与速度，下载超 332 万",
+      "Qwen3.6 迎生态大爆发，GGUF 量化版霸榜",
+      "pyannote 语音分离行业标杆，下载量逼近千万",
+      "Sulphur-2-base 文生视频基础模型下载超百万",
+      "腾讯 Hy-MT2-1.8B 小参数量实现高质量多语言翻译"
+    ],
+    "ai-community": [
+      "AI 辅助编码调试时间成本成倍增加引热议",
+      "AI 擅长 80%枯燥代码，20%关键业务仍需资深工程师",
+      "Vibe Coding 快速堆砌的项目在生产环境极易崩溃",
+      "Spec-Driven 模式：通过精确需求克服 AI 不可靠性",
+      "Agent = Model + Harness，外围工程才是真正护城河",
+      "2026 模型定价差距达 34 倍，选模型成算术题"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.154 adds Opus 4.8 and Dynamic Agents",
+      "OpenAI Codex tracks 11 PRs in 24 hours",
+      "AI CLI tools pivot to complex, multi-agent orchestrators",
+      "1M+ token context windows cause deep session bugs",
+      "Enterprise readiness is the new AI CLI battleground",
+      "Fragile terminal UIs dominate community friction points"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 402 issues and 500 PRs in a single day",
+      "OpenClaw v2026.5.27 focuses on security boundaries",
+      "Unsafe Node runtime overrides explicitly blocked",
+      "Event-loop saturation remains a primary challenge",
+      "Hostnames normalized to prevent parsing vulnerabilities",
+      "OpenClaw navigates typical massive scaling growing pains"
+    ],
+    "ai-trending": [
+      "ECC hits 197k stars optimizing CLI coding agents",
+      "Ollama is go-to for running local models like Kimi-K2.5",
+      "Agentic Coding revolution dominates open-source trends",
+      "Markitdown gains 1,263 stars for LLM data ingestion",
+      "AI skills, memory, and security projects rapidly surge",
+      "One-click AI video generators see explosive growth"
+    ],
+    "ai-web": [
+      "Anthropic announces massive $65B Series H funding round",
+      "Anthropic hits $965B valuation, nearing the $1T mark",
+      "Claude Opus 4.8 unveiled as next-gen flagship model",
+      "Claude Design enters visual creation and prototyping",
+      "Anthropic details internal agent containment architecture",
+      "OpenAI teases new Frontier Governance Framework update"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.8 hits 1058 points and 844 comments",
+      "Anthropic's $65B round dominates Hacker News cycle",
+      "Altman and Amodei walk back AI jobs apocalypse claims",
+      "Real-time 3k tokens/s LLM inference on standard GPUs",
+      "Developers debate LLM code smells and debugging agents",
+      "Community dissects Opus 4.8 pricing and coding limits"
+    ],
+    "rl-daily": [
+      "LLM-aligned RL frameworks see massive engineering velocity",
+      "Post-training RL pivots to extreme-scale distributed compute",
+      "RLHF frameworks tackle memory and hardware fragmentation",
+      "Ascend NPU and AMD ROCm support rapidly expand",
+      "Traditional RL environments like Gymnasium enter maintenance",
+      "Disaggregated inference microservices gain RL traction"
+    ],
+    "agent-orch": [
+      "Multi-agent orchestrators pivot to autonomous execution",
+      "Claude Squad and Crystal lead agent orchestration projects",
+      "Swarm Protocol advances decentralized agent networks",
+      "Mux Desktop and AutoGPT track new orchestration PRs",
+      "OpenKanban and Vibe Kanban surge in agentic workflows",
+      "Agent Orchestrator tools target enterprise headless ops"
+    ],
+    "ai-arxiv": [
+      "New bidirectional search helps LLMs self-improve faster",
+      "Study reveals reasoning models act as context compressors",
+      "New frameworks propose scalable superhuman AI oversight",
+      "Researchers formalize ethical pluralism in AI systems",
+      "Decentralized compute networks for AI agents explored",
+      "Robotic control architecture failure modes evaluated"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops charts with 5.2M downloads",
+      "DeepSeek-V4-Flash offers fast MIT-licensed inference",
+      "Qwen3.6 family drives massive fine-tuning activity",
+      "ByteDance's Lance model leads any-to-any multimodal",
+      "pyannote/speaker-diarization-3.1 becomes industry standard",
+      "MiniCPM5-1B brings extreme edge device efficiency"
+    ],
+    "ai-community": [
+      "Developers face massive debugging debt from AI code",
+      "Senior oversight still needed for 20% of AI-generated code",
+      "'Vibe Coding' faces harsh reality checks in production",
+      "Agentic orchestration and spec-driven dev gain traction",
+      "Vatican sparks human-centric debate on AI development",
+      "Production pipelines focus on reducing AI hallucinations"
+    ]
+  }
+}
