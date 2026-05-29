@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Kimi Code 正式发布 v1.46.0，思维链过长致额度耗尽引退款争议",
+      "OpenAI Codex Alpha 版底层重构至 Rust，Desktop 端 CPU 空转遭吐槽",
+      "GitHub Copilot 开放模型选择器，10+ MCP 插件致上下文溢出",
+      "Qwen Code 发布 v0.17.0 稳定版，SSL 证书过期致线上业务停摆",
+      "OpenCode 迎 ACP 协议里程碑合并，加速多智能体互操作性",
+      "Claude Code 连发两版重构插件生态，Opus 4.8 签名校验存漏洞"
+    ],
+    "ai-agents": [
+      "OpenClaw 24h处理326条Issue，解决率超52%处密集重构期",
+      "OpenClaw 连发3个Beta版，重构Agent与Codex运行时容错机制",
+      "运行时状态底层大重构：从 JSON 迁移至强类型 SQLite 布局",
+      "网关长时间运行频现 OOM 崩溃，新增缓存内存上限控制",
+      "Codex 僵尸插件致升级崩溃，新 PR 修复陈旧托管运行包",
+      "v2026.5.26 升级存在配置迁移陷阱，官方建议静候正式版"
+    ],
+    "ai-trending": [
+      "AI编程进入外挂增强时代，ECC 跨平台技能插件日增1413星",
+      "去AI味成刚需，消除大模型刻板文风工具包斩获数千Star",
+      "claude-mem 为任意 Agent 提供跨会话持久化上下文记忆",
+      "graphify 将任意文件夹转为 AI 可查询的工程知识图谱",
+      "LlamaIndex 开源 Rust 极简文档解析器 liteparse 击中痛点",
+      "AionUi 支持二十余种 CLI Agent，志在做统一本地交互门户"
+    ],
+    "ai-web": [
+      "OpenAI 发力生物安全，发布 Rosalind 生物防御新策略",
+      "大模型审计走向制度化，OpenAI 推可信赖第三方评估机制",
+      "OpenAI 官网单日更新4篇，安全叙事转向国家生物威胁防范",
+      "模型安全验证跨越纯粹对齐，深入具象化国家安全场景",
+      "第三方评估基金会预示 B2B 采购合规性将迎决定性影响",
+      "Anthropic 官网无更新静默蓄力，或为重大产品发布作准备"
+    ],
+    "ai-hn": [
+      "Liquid AI 发布 8B MoE 新架构，在 38T tokens 上展参数效率",
+      "Claude Opus 4.8 被指行为极似 Qwen，模型蒸馏引伦理争议",
+      "硬核开发者逆向 Claude Code 源码，总结未公开隐藏配置",
+      "开源 AISlop CLI 工具，专抓 AI 生成的隐蔽代码气味",
+      "企业级 AI 代理停用率达 40%，社区反思底层推理瓶颈",
+      "LLM 推理扩展遇阻，新论文剖析内存与算力核心瓶颈"
+    ],
+    "rl-daily": [
+      "LLM Post-training 占据 95% 开发活跃度，传统 RL 框架静默",
+      "verl 深化异构算力适配，RFC 提议向外部 Agent 后端扩展",
+      "TRL 核心算法重构去耦，发力多模态与极致显存优化",
+      "Slime 聚焦多智能体，深度整合推理引擎与底层算力精度",
+      "AReaL 演进微服务架构，引入 On-policy 蒸馏降低推理开销",
+      "ROCK 环境沙箱管理完善，正从训练框架演进为平台级底座"
+    ],
+    "agent-orch": [
+      "Claude Squad 领跑单日编排生态，多智能体协作成绝对核心",
+      "Symphony 引入自动支付授权，多智能体资金安全架构引热议",
+      "Vibe Kanban 将 AI 代码生成无缝融入敏捷开发看板",
+      "Claude Flow 开源，为单用户模式增加并发处理提升效率",
+      "HumanLayer 探索智能体敏感操作中的人为监督接管机制",
+      "OpenFang 攻坚多智能体沙箱隔离，强化权限控制机制"
+    ],
+    "ai-arxiv": [
+      "LLMSurgeon 将预训练数据当数字 DNA，实现事后成分审计",
+      "解锁大模型工作记忆，探索摆脱自回归的隐式推理",
+      "新型双路径架构打破循环 Transformer 算力与容量僵局",
+      "自动对齐审计框架 Gram 模拟17场景测 AI 破坏倾向",
+      "惊人发现：仅需少量投毒数据即可让 LoRA 适配器中后门",
+      "RLHF 新突破：上下文奖励机制让模型动态适应人类偏好"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 开源登顶，下载量超580万统治榜单",
+      "阿里 Qwen3.6-27B 多模态模型下载超485万成社区新宠",
+      "LiquidAI 非Transformer新架构 LFM2.5 探索MoE新可能",
+      "Sulphur-2 文本生成视频模型下载超150万，视频工具链成熟",
+      "HRM-Text-1B 端侧文本模型下载超13万，切中离线痛点",
+      "字节 Lance 推出 Any-to-Any 模型，支持多模态联合生成"
+    ],
+    "ai-community": [
+      "AI 编写 NestJS 竟暗藏 6 个安全漏洞，ESLint 扫描救场",
+      "MCP 协议火热背后，开发者探讨如何守住 SaaS 服务端控制权",
+      "零代码革命：AI 实现 2026 年移动端应用全自动化测试",
+      "512MB 极限压榨：硬核开发者成功抢救 RAG 助手内存泄漏",
+      "多智能体迎预算限制架构，AWS Bedrock 推自主支付安全方案",
+      "反思 Vibe Coding：博主直指氛围编程在复杂项目中已失效"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools rapidly maturing into complex agentic coders.",
+      "Claude Code v2.1.157 integrates Opus 4.8 and local plugins.",
+      "OpenAI Codex Rust client v0.136.0-alpha.1 focuses on UI.",
+      "Gemini CLI v0.45.0-nightly shores up sub-agent reliability.",
+      "Developers face API drift and Windows platform instability.",
+      "MCP integration and context management are new core paradigms."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 826 events in 24 hours, signaling a huge backlog.",
+      "Three rapid-fire OpenClaw betas focus on Codex runtime recovery.",
+      "Agent runtime integration drives 155 active OpenClaw issues.",
+      "Subagents updated to strictly maintain workspace separation.",
+      "High ratio of open PRs suggests maintainers are overwhelmed.",
+      "OpenClaw pushes rapid v2026.5.28-beta releases for stability."
+    ],
+    "ai-trending": [
+      "Agentic Coding Harness ecosystem dominates GitHub charts.",
+      "MoneyPrinterTurbo explodes with 3,563 new stars in one day.",
+      "Microsoft's markitdown gains 1,876 stars for LLM data parsing.",
+      "Ollama now runs frontier models like Kimi-K2.5 and GLM-5.",
+      "vLLm maintains its status as industry standard for LLMs.",
+      "Liteparse debuts as a fast, open-source document parser in Rust."
+    ],
+    "ai-web": [
+      "OpenAI targets biodefense and safety infrastructure globally.",
+      "Anthropic publishes zero new articles on their official site.",
+      "OpenAI publishes new foundations for third-party evaluations.",
+      "New publications show OpenAI maturing policy and gov relations.",
+      "OpenAI released a total of four new strategic announcements.",
+      "Bionsecurity focus positions AI models as critical infrastructure."
+    ],
+    "ai-hn": [
+      "Claude Code is the absolute center of HN community attention.",
+      "Liquid AI reveals massive 8B-A1B MoE trained on 38T tokens.",
+      "Anthropic valuation reportedly skyrockets to a massive $965B.",
+      "Rumors allege Claude Opus 4.8 distilled Alibaba Qwen models.",
+      "Gartner reports spark skepticism over enterprise agent failures.",
+      "Open-source project launched to actively 'poison' AI crawlers."
+    ],
+    "rl-daily": [
+      "Post-training LLM infrastructure sees aggressive new iteration.",
+      "Verl expands hardware support for Ascend and AMD chips.",
+      "TRL focuses on aggressive VRAM reduction and audio alignment.",
+      "Standard RL libraries like Gymnasium remain in maintenance.",
+      "Scaling distributed RLHF workloads drives most new engineering.",
+      "New libraries tackle multi-modal alignment to cut compute."
+    ],
+    "agent-orch": [
+      "AI agents trigger a Cambrian explosion of orchestration tools.",
+      "Developers shift to engineering outputs and agent memory.",
+      "Claude Squad and Claude Flow lead specialized agent tools.",
+      "MCP integration is vital for exposing SaaS to AI agents.",
+      "AutoGPT, CrewAI, and AutoGen lead general agent frameworks.",
+      "45 distinct projects now compete in the agent orchestration space."
+    ],
+    "ai-arxiv": [
+      "New research unlocks latent reasoning in working LLM memory.",
+      "Novel dual-path architecture lets LLMs scale test-time compute.",
+      "Parametric Memory Law introduced for model finetuning via LoRA.",
+      "Unified vision-language-action models advance embodied AI.",
+      "Researchers push looped transformers to overcome bottlenecks.",
+      "Tri-modal representations bridge static perception and robotics."
+    ],
+    "ai-hf": [
+      "Qwen 3.6 and DeepSeek-V4 dominate Hugging Face trending.",
+      "DeepSeek-V4-Pro sees over 5 million weekly model downloads.",
+      "ByteDance any-to-any Lance model disrupts generative media.",
+      "LiquidAI's LFM2.5-8B-A1B MoE enters the competitive LLM space.",
+      "Unsloth's record-breaking GGUF releases drive deployment access.",
+      "Tencent's 30B translation model gains strong community traction."
+    ],
+    "ai-community": [
+      "Dev discourse shifts to taming AI agents in strict production.",
+      "SaaS devs warn of massive security risks exposing servers to MCP.",
+      "Guide shows 89% latency reduction in LLM Chrome extensions.",
+      "Papal encyclical sparks debate on AI and human dignity.",
+      "Engineers tackle security flaws from AI-generated code reviews.",
+      "New browser embedding APIs prompt Open/Closed system debates."
+    ]
+  }
+}
