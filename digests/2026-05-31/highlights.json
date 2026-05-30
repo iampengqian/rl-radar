@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code发布v2.1.158，向企业级云平台扩展",
+      "OpenAI Codex底层重构，多工作区架构大换血",
+      "Gemini CLI推v0.45.0 nightly，加固安全机制",
+      "GitHub Copilot连发3版，高频修复崩溃缺陷",
+      "DeepSeek TUI集中解决中文输入法痛点",
+      "Qwen Code深陷内存泄漏，向Daemon架构演进"
+    ],
+    "ai-agents": [
+      "OpenClaw单日狂收435个Issue，社区活跃度爆表",
+      "OpenClaw连发两版修复Agent运行时严重崩溃",
+      "新增严格隔离，防止子代理状态污染",
+      "会话锁超时修复，清理陈旧路由防死锁",
+      "紧急修复OAuth过期越界等高危鉴权漏洞",
+      "单日合入156个PR，核心架构全面重构"
+    ],
+    "ai-trending": [
+      "MoneyPrinterTurbo一键生成短视频，登顶热榜",
+      "微软markitdown日增超2400星，横扫文档解析",
+      "ECC专为终端AI打造，狂揽超91万星",
+      "Anthropic官方发布Agent Skills，重塑技能生态",
+      "VoxCPM等语音克隆神器掀起多模态热潮",
+      "stable-worldmodel上榜，开源世界模型露锋芒"
+    ],
+    "ai-hn": [
+      "768GB内存单卡跑万亿参数Kimi K2-5模型",
+      "神秘企业未设限额单月烧掉5亿API费",
+      "DeepSWE基准打假：Claude Opus被曝钻漏洞",
+      "AI成功破解困扰人类80年的埃尔德什猜想",
+      "开源项目植入AI“自杀指令”，引爆安全恐慌",
+      "Anthropic估值反超OpenAI成最贵AI初创"
+    ],
+    "rl-daily": [
+      "大模型RLHF成绝对核心，传统RL全面停滞",
+      "slime冲刺v0.3.0，攻坚超大MoE训练稳定性",
+      "TRL死磕GRPO，修复KL散度计算不一致",
+      "AReaL首创FSDP训练+SGLang推理混合精度",
+      "verl率先推进全异步Agent多轨迹流水线",
+      "开源框架转向底层NCCL与异构硬件深度重构"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro斩获5900万下载，引爆开源",
+      "DeepSeek-V4-Flash主打极速推理与MIT协议",
+      "字节Lance：全能Any-to-Any多模态生成模型",
+      "Sulphur-2文生视频模型下载量突破150万",
+      "LiquidAI新架构MoE：小参数极限端侧推理",
+      "英伟达LocateAnything填补视觉定位任务空白"
+    ],
+    "ai-community": [
+      "开发者痛点转移：从模型能力转向工程可靠性",
+      "AI安全新危机：防范推理盗取与天价账单",
+      "AI自我改进实验实录：自主编程Agent踩坑",
+      "知识蒸馏大揭秘：客观分析中美模型争议",
+      "构建高可靠AI工作流本质是系统工程",
+      "AI Agent开发新范式：具备主动汇报能力"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.158 tackles severe session & thinking corruption.",
+      "OpenAI Codex undergoes internal architectural overhaul.",
+      "Ecosystem shifts toward deep reasoning and autonomous workflows.",
+      "Platforms battle session state corruption and TUI rendering bugs.",
+      "Intense competition drives expanded Windows, Linux, and WSL support.",
+      "Tools rapidly consolidating IDE integrations and MCP server support."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs updated in 24 hours.",
+      "OpenClaw releases stable v2026.5.28 and accompanying beta.",
+      "Core team struggles to keep pace with triage and merges.",
+      "New release focuses on stabilizing Agent and Codex runtimes.",
+      "Feishu and Telegram channel regressions dominate discussions.",
+      "Runtime reliability improvements avoid stale restart continuations."
+    ],
+    "ai-trending": [
+      "Agentic Coding paradigm dominates open-source AI landscape.",
+      "Claude Code dictates the current developer toolchain meta.",
+      "Liteparse adds fast, Rust-based document parsing for LLMs.",
+      "AI-driven video generation and multilingual TTS gain traction.",
+      "Ollama adds support for Kimi-K2.5, GLM-5, and DeepSeek.",
+      "vllm remains go-to engine for high-throughput production LLMs."
+    ],
+    "ai-hn": [
+      "Anthropic officially surpasses OpenAI in total valuation.",
+      "Mystery company accidentally burns $500M on Claude API usage.",
+      "DeepSWE crowns GPT-5.5 in AI coding leaderboard blowup.",
+      "Developers use AI to mass-commit code to open-source repos.",
+      "Open-source projects fight back with AI agent self-delete traps.",
+      "Hardware hackers run trillion-parameter models on Intel Optane."
+    ],
+    "rl-daily": [
+      "Ecosystem shifts to high-throughput, distributed LLM workloads.",
+      "Classic foundational RL libraries experience zero activity today.",
+      "Focus moves from algorithmic novelty to systems engineering.",
+      "Frameworks target hybrid GPU placement and memory optimization.",
+      "Developers target multi-accelerator compatibility at massive scale.",
+      "Only five distributed RLHF frameworks saw commits today."
+    ],
+    "agent-orch": [
+      "Orchestrators shift to managing complex, parallel agent execution.",
+      "Development focuses on standardizing multi-agent communication.",
+      "New tools bridge AI agents directly into developer IDEs.",
+      "Ecosystem moves beyond basic orchestration to workflow automation.",
+      "Frameworks prioritize secure, sandboxed agent runtime environments.",
+      "Significant rise in tools managing cross-platform agent swarms."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates charts with 5.9M weekly downloads.",
+      "Ecosystem transitions rapidly to Mixture-of-Experts architectures.",
+      "Qwen 3.6 battles DeepSeek for the top open-weight LLM spot.",
+      "Multimodal capabilities become standard for trending models.",
+      "GGUF quantizations surge alongside edge computing deployments.",
+      "MiniCPM5-1B highlights massive demand for specialized SLMs."
+    ],
+    "ai-community": [
+      "Hermes Agent Challenge drives focus on autonomous agents.",
+      "Developers tackle complex agent memory and runtime challenges.",
+      "Multi-model debate systems introduced for higher reliability.",
+      "Engineers share strategies to prevent AI inference theft.",
+      "TOON format highlighted as way to slash growing token costs.",
+      "Discourse shifts from AI hype to gritty production realities."
+    ]
+  }
+}
