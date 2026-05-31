@@ -1,0 +1,127 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 架构大重构直击痛点，261赞呼吁解决Token燃烧",
+      "Gemini CLI陷P1级挂起Bug，开发者正密集修复并发写入竞争",
+      "Pi首发适配GPT-5.5，单日狂飙14个PR解决上下文压缩崩溃",
+      "OpenCode爆出Desktop与CLI状态割裂，核心架构正紧急优化",
+      "AI CLI迈入多智能体深水区，全行业惨遭Token与死循环折磨",
+      "企业级云端托管配置成新赛点，开源社区迫切呼唤本地部署"
+    ],
+    "ai-agents": [
+      "OpenClaw单日狂发3个Beta版，死磕运行时恢复与多渠道投递",
+      "项目单日处理高达1000条Issue与PR，社区贡献吞吐量惊人",
+      "QuickStart惊爆默认开启不安全认证，生产环境升级需紧急排查",
+      "Telegram等全渠道消息投递稳定性大幅增强，Beta迭代极其密集",
+      "Codex运行时超时与会话上下文混乱，成OpenClaw核心痛点",
+      "Agent运行时容错大升级，全面优化中断工具与过期会话恢复"
+    ],
+    "ai-trending": [
+      "ECC爆火斩获20万Star，成Claude Code系统级编排神级插件",
+      "Agent持久化记忆成新圣杯，云原生到本地化方案全面爆发",
+      "微软开源文档转Markdown利器，彻底喂饱大模型降低清洗成本",
+      "Ollama原生支持GLM-5等前沿模型，稳坐本地大模型运行一哥",
+      "Hermes WebUI惊艳亮相，打通热门智能体的移动与网页端交互",
+      "IDE向插件化智能体市场演进，Cursor与Claude生态狂揽关注"
+    ],
+    "ai-hn": [
+      "AI解决埃尔德什数学猜想，LLM推理向高维纯逻辑迈进",
+      "Netflix高管开源降本利器，直击企业LLM API高昂账单痛点",
+      "开发者抵制LLM低质量代码提交，反思生产力与AI泡沫",
+      "芝加哥大学推鉴真插件，技术对抗日益泛滥的AI生成音频",
+      "业界重审TCN架构，试图打破大模型Transformer底层瓶颈",
+      "AI电影《Backrooms》登顶票房，影视创作迎落地狂欢"
+    ],
+    "rl-daily": [
+      "TRL底层重构突破Python GIL瓶颈，全面拥抱多模态与vLLM",
+      "slime v0.3.0确立Agent优先，直击跨物理机增量通信痛点",
+      "AReaL打通BF16与FP8异构精度显存墙，死磕底层系统极限",
+      "verl异步流水线支持单次输出多轨迹，逼近真实工具调用",
+      "研究向复杂过程奖励(PRM)演进，为树搜索铺平道路",
+      "大模型RL跨越验证期，全力攻坚生产级基础设施容错"
+    ],
+    "agent-orch": [],
+    "ai-hf": [
+      "DeepSeek-V4-Pro与Flash双端爆发，斩获超500万下载量",
+      "LiquidAI LFM2.5携MoE新架构，凭8B参数展现优异性能",
+      "Qwen3.6-27B多模态大模型底座发布，下载量突破500万",
+      "sapientinc推HRM-Text-1B，小体积黑马主打端侧极速推理",
+      "端侧与量化生态繁荣，开源大模型全面进军消费级硬件",
+      "社区狂热追捧去审查权重，OCR与超分等专用模型集中爆发"
+    ],
+    "ai-community": [
+      "14个协同Agent导致架构崩溃，多智能体生产环境雷区揭秘",
+      "71行Python黑盒+DuckDB，教你精准诊断Agent工具调用崩溃",
+      "用Go打造全平台Claude Code钩子，彻底解决环境依赖痛点",
+      "测试揭示安全盲区：高达63%的AI生成代码跳过底层安全加固",
+      "4张动图拆解大模型流式响应机制，前端集成必看神级教程",
+      "开发者呼吁冷静：警惕过度依赖AI导致丧失独立思考能力"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to multi-agent orchestration.",
+      "Major vendors struggle to manage token and rate limits.",
+      "Claude Code sees 10+ critical, widespread issues.",
+      "OpenAI Codex ships rust-v0.136.0-alpha.2.",
+      "GitHub Copilot CLI quietly releases v1.0.57-4.",
+      "OpenCode pushes new v1.15.1 update."
+    ],
+    "ai-agents": [
+      "OpenClaw surges with 1,000 active issues and PRs.",
+      "OpenClaw pushes 4 beta releases in a single day.",
+      "v2026.5.31-beta.3 focuses heavily on stability.",
+      "PR throughput exceeds new OpenClaw bug reports.",
+      "Codex integration causing friction for OpenClaw.",
+      "315 high-severity bugs remain open for OpenClaw."
+    ],
+    "ai-trending": [
+      "Agentic coding tools dominate GitHub trending.",
+      "Ollama hits 172,747 stars for local AI stacks.",
+      "ECC agent harness skyrockets to 200,436 stars.",
+      "Microsoft's Markitdown adds 2,759 stars today.",
+      "Claude Code terminal tool adds 490 stars today.",
+      "Vectorless memory layers replace heavy RAG."
+    ],
+    "ai-hn": [
+      "AI film 'Backrooms' dominates the box office.",
+      "OpenAI solves complex Erdős math problem.",
+      "Netflix open-sources AI cloud bill-slashing tool.",
+      "UChicago releases AI music detection tool.",
+      "Open-source maintainers purge LLM-generated code.",
+      "States propose laws mandating workplace AI transparency."
+    ],
+    "rl-daily": [
+      "RL ecosystem pivots to asynchronous training.",
+      "Monolithic synchronous RLHF loops are dying.",
+      "TRL transitions to scalable, async RLHF.",
+      "Only 4 of 16 tracked RL projects saw updates.",
+      "CleanRL and Stable Baselines3 record zero activity.",
+      "Frameworks shift to disaggregated train/inference."
+    ],
+    "agent-orch": [
+      "Claude Squad and dmux lead agent orchestration.",
+      "Orchestrators tackle UI for autonomous agents.",
+      "AutoGPT and MetaGPT remain highly active.",
+      "New tools aim to safely manage autonomous agents.",
+      "Swarm Protocol introduces new agent standards.",
+      "Vibe Kanban bridges AI agents and project mgmt."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops Hugging Face trending.",
+      "DeepSeek-V4-Flash praised for speed and MIT license.",
+      "MiniCPM5-1B brings edge-sized generative power.",
+      "MoE architectures dominate new model releases.",
+      "Massive models run on edge via aggressive compression.",
+      "Community ships uncensored variants in days."
+    ],
+    "ai-community": [
+      "Dev focus shifts to productionizing AI agents.",
+      "71-line Black Box tracks $200 agent crashes.",
+      "Claude and Gemini miss key security hardening.",
+      "3 Role Architecture fixes single agent failures.",
+      "Papal encyclical on AI ethics tops Lobste.rs.",
+      "AI agents require rigorous human security audits."
+    ]
+  }
+}
