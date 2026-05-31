@@ -56,6 +56,14 @@
       "测试揭示安全盲区：高达63%的AI生成代码跳过底层安全加固",
       "4张动图拆解大模型流式响应机制，前端集成必看神级教程",
       "开发者呼吁冷静：警惕过度依赖AI导致丧失独立思考能力"
+    ],
+    "ai-weekly": [
+      "Anthropic融资650亿，估值9650亿登顶全球第一",
+      "Claude Opus 4.8发布，首增“努力程度控制”降本",
+      "Anthropic推出Claude Design，对话生成UI原型",
+      "开源界掀“反AI味”运动，去痕工具爆火GitHub",
+      "意外曝光未发布超级模型Claude Mythos Preview",
+      "RLHF框架大重构，突破Python GIL引入混合精度"
     ]
   },
   "en": {
@@ -122,6 +130,14 @@
       "3 Role Architecture fixes single agent failures.",
       "Papal encyclical on AI ethics tops Lobste.rs.",
       "AI agents require rigorous human security audits."
+    ],
+    "ai-weekly": [
+      "Anthropic hits $965B valuation, surpassing OpenAI.",
+      "Claude Opus 4.8 debuts with dynamic effort control.",
+      "Anthropic introduces Claude Design for UI/UX prototypes.",
+      "ECC hits 200k+ stars, fueling agent memory demand.",
+      "Anthropic details new Auto Mode safety guardrails.",
+      "Anti-AI slop movement goes viral on GitHub."
     ]
   }
 }
