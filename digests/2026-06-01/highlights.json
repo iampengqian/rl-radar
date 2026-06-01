@@ -64,6 +64,14 @@
       "开源界掀“反AI味”运动，去痕工具爆火GitHub",
       "意外曝光未发布超级模型Claude Mythos Preview",
       "RLHF框架大重构，突破Python GIL引入混合精度"
+    ],
+    "ai-monthly": [
+      "OpenAI提交IPO申请，AI领域迎迄今最大资本事件",
+      "Anthropic收购SDK巨头Stainless，打造系统级护城河",
+      "Claude“神蝶计划”曝光，全球找出超1万个高危漏洞",
+      "Kimi K2.6登顶HN编程基准，开源模型反超闭源巨头",
+      "Uber用Claude Code 4个月耗尽全年预算引信任危机",
+      "OpenAI Codex底层大换血，核心向Rust TUI架构迁移"
     ]
   },
   "en": {
@@ -138,6 +146,14 @@
       "ECC hits 200k+ stars, fueling agent memory demand.",
       "Anthropic details new Auto Mode safety guardrails.",
       "Anti-AI slop movement goes viral on GitHub."
+    ],
+    "ai-monthly": [
+      "Uber exhausted 2026 Claude Code budget in only four months",
+      "OpenAI open-sources multi-agent orchestration framework Symphony",
+      "Open-weight Kimi K2.6 outperforms GPT-5.5 in coding benchmarks",
+      "Anthropic taps SpaceX 220k GPU data center to boost Claude Code",
+      "Reinforcement Learning frameworks officially deprecate PPO algorithm",
+      "Multi-agent orchestration replaces single-agent code completion"
     ]
   }
 }
