@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 发版 rust-v0.136.0：重构底层 TUI 并修复认证死循环",
+      "GitHub Copilot CLI 更新至 v1.0.57，重点修复剪贴板与 MCP 权限管控",
+      "Qwen Code 发 v0.17.0-nightly：密集修复 OOM 与本地 Ollama 适配",
+      "DeepSeek TUI 更名为 v0.8.49 并发布，引入社区极高呼声的 YOLO 模式",
+      "OpenCode 启动 V2 权限重构，底层计费模式剧变引发社区 57 赞热议",
+      "Claude Code 延长 Issue stale 至 90 天，1128 赞求恢复“陪伴模式”"
+    ],
+    "ai-agents": [
+      "OpenClaw 一天狂发 3 个 Beta 版，开启向 2026.6.x 迭代周期",
+      "底层运行时强制迁移 Codex，警告可能导致 Token 消耗暴增 4 倍",
+      "项目单日吞吐惊人：处理 474 个 Issues，500 个 PRs 发生状态更新",
+      "重构 Telegram 等多渠道投递逻辑，部分非标准协议需重新配鉴权",
+      "发布 v2026.6.1-beta.2，集中解决中断工具调用与上下文交接崩溃",
+      "引入 Codex 运行时存在配置失效风险，建议升级前务必备份目录"
+    ],
+    "ai-trending": [
+      "ECC (20万星)：为 Claude Code 等智能体提供底层安全护甲与记忆",
+      "微软 markitdown 日增超 3000 星，大幅降低大模型解析复杂文档门槛",
+      "Hermes Agent (17万星)：与你共同成长的强力通用 Agent 开源系统",
+      "MoneyPrinterTurbo 爆发式增长，提供文案即可全自动生成高清短视频",
+      "TradingAgents：专供金融交易的 LLM 多智能体框架，日增 284 星",
+      "fff：专为 AI 编程助手优化的极速 Rust 文件搜索工具"
+    ],
+    "ai-web": [
+      "重磅：Anthropic 提交保密 S-1 文件，AI 大模型头号玩家正式开启 IPO",
+      "Anthropic H 轮融资 65 亿美元，投后估值近千亿，年化收入破 470 亿",
+      "Claude Opus 4.8 发布：引入“精力调节”与代码“动态工作流”新机制",
+      "Opus 4.8 推出 Fast Mode：推理速度提升 2.5 倍，成本降至三分之一",
+      "OpenAI 前沿模型与 Codex 登陆 AWS，MaaS 触角全面伸向企业级基建",
+      "大模型演进新风向：从单纯跑分转向系统级调度与企业级成本控制"
+    ],
+    "ai-hn": [
+      "Anthropic 提交 S-1 招股书草案，AI 六小强首个迈入二级市场实质阶段",
+      "佛罗里达州对 OpenAI 提起首例州级诉讼，将 ChatGPT 与谋杀案关联",
+      "斯坦福 CS336 课程发布 AI Agent 使用指南，引发百条热议探讨人机边界",
+      "Alphabet 拟筹 800 亿美元巨资扩建 AI 基础设施，军备竞赛白热化",
+      "OpenAI 新模型解决困扰人类 80 年的数学难题，形式逻辑获重大突破",
+      "开源模型预测超 10 亿蛋白质结构，被视为超越 AlphaFold 的新里程碑"
+    ],
+    "rl-daily": [
+      "verl 跃迁至 v0.8.0，RFC 提出向复杂多轮的 Agentic RL 架构全面演进",
+      "强化学习生态核心转向：从单轮静态对齐演进至多轮 Agent 交互",
+      "各大框架集中火力攻坚：修复前沿 VLM 模型对齐导致的图像 Token 截断",
+      "ROCK 发布 v1.8.3，聚焦企业级健壮性与精细化异构算力治理",
+      "SLIME 深度攻坚：多智能体 GRPO 稳定性与分布式 TCOD 多轮蒸馏",
+      "底层大重构：RL 框架全面引入异步 Rollout 架构打破 GIL 访存瓶颈"
+    ],
+    "ai-community": [
+      "警惕：无人值守的后台 AI Agent 正在沦为黑客的命令与控制(C2)节点",
+      "深度排雷：非技术人员的“氛围编程”将引发 11 种隐蔽的架构崩坏",
+      "MCP 生态分发困境：没人愿意二次安装你的 MCP Server",
+      "实战反思：RAG 与 Agent 架构选型错误是如何搞垮整个系统的？",
+      "技术债累积：开发者呼吁警惕 AI 快速生成代码带来的长期维护成本",
+      "从氛围编程到清晰思考：非技术构建者在 AI 时代的系统化生存指南"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Codex CLI released v0.136.0 focusing on TUI upgrades.",
+      "Windows stability and agent safety top issues for Claude Code.",
+      "AI CLI tools are evolving from simple wrappers into autonomous agents.",
+      "Cross-platform instability plagues all major AI CLI tools.",
+      "Nine major AI developer tools are tracked in today's ecosystem digest.",
+      "Multi-agent orchestration and MCP integrations drive new features."
+    ],
+    "ai-agents": [
+      "OpenClaw is under heavy strain with 974 issues and PRs in 24 hours.",
+      "OpenClaw shipped three rapid-fire beta versions (v2026.6.1 line).",
+      "Developers are aggressively hardening OpenClaw session state management.",
+      "OpenClaw fixes channel delivery regressions for Telegram and Discord.",
+      "NanoBot and Hermes Agent featured in the 13-project agent digest.",
+      "The newly integrated OpenAI Codex runtime caused beta instability."
+    ],
+    "ai-trending": [
+      "microsoft/markitdown gains 3,086 stars as vital RAG pipeline tool.",
+      "D4Vinci/Scrapling surged with 1,475 stars for adaptive web scraping.",
+      "GitHub trending shifts from standalone LLMs to agent harnesses.",
+      "Open-source multimodal models are closing the gap with proprietary.",
+      "Agent frameworks are making strong pushes into financial trading.",
+      "ollama remains the definitive local engine with 172,852 total stars."
+    ],
+    "ai-web": [
+      "Anthropic confidentially submits draft S-1 to the SEC for IPO.",
+      "Anthropic raises a staggering $65B in Series H funding.",
+      "Anthropic achieves a massive $965B post-money valuation.",
+      "Claude Opus 4.8 launches with enhanced agentic capabilities.",
+      "OpenAI metadata points to a major new AWS cloud partnership.",
+      "Frontier models and Codex agent are heading to Amazon Web Services."
+    ],
+    "ai-hn": [
+      "Anthropic S-1 filing signals massive shift in AI financial landscape.",
+      "Florida sues OpenAI and Sam Altman over severe real-world harms.",
+      "Stanford releases official AI Agent guidelines for CS336 course.",
+      "New open-source model predicts the shape of 1 billion proteins.",
+      "OpenAI model reportedly solves an 80-year-old famous math problem.",
+      "Developers share anecdotes of Claude replacing DevOps engineers."
+    ],
+    "rl-daily": [
+      "Ecosystem shifts entirely to LLM post-training over traditional RL.",
+      "General RL libraries like CleanRL experience absolutely zero activity.",
+      "Alibaba ROLL targets Huawei Ascend NPUs for vendor-agnostic support.",
+      "verl and TRL aggressively iterate on multi-turn Agentic RL.",
+      "Advanced distributed memory management dominates new development.",
+      "Fifteen major RL frameworks tracked in today's open-source digest."
+    ],
+    "agent-orch": [
+      "Forty-five agent orchestration projects tracked in today's digest.",
+      "Claude Squad and Crystal lead the featured agent orchestrators.",
+      "Developers rapidly adopt Kanban boards for AI agent management.",
+      "OpenAI Symphony is highlighted as a top orchestration project.",
+      "Orchestrators focus on safely separating RAG from autonomous agents.",
+      "AutoGPT and CrewAI compete in the rapidly maturing ecosystem."
+    ],
+    "ai-hf": [
+      "deepseek-ai/DeepSeek-V4-Pro dominates with 5.8M total downloads.",
+      "Qwen3.6 27B to 35B MoE vision-language models explode in popularity.",
+      "LiquidAI LFM2.5-8B-A1B pushes edge efficiency, activating just 1B.",
+      "ByteDance Lance model represents a massive leap in multimodal AI.",
+      "Mixture-of-Experts (MoE) architectures dominate the HF leaderboard.",
+      "DeepSeek-V4-Flash makes state-of-the-art accessible with MIT license."
+    ],
+    "ai-community": [
+      "Community warns of the hidden costs and bloat in AI-generated code.",
+      "Developers demand manual debloating for AI-grown codebases.",
+      "Unchecked background agents pose critical security vulnerabilities.",
+      "Vibe coding must transition to structured thinking for reliability.",
+      "Autonomous AI platforms still lack contextual safety safeguards.",
+      "Engineers share hard-learned lessons debugging failing AI workflows."
+    ]
+  }
+}
