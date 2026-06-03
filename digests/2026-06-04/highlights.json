@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI正从单体补全向多智能体自治跨越",
+      "OpenAI Codex启动底层Rust架构重构",
+      "DeepSeek TUI正式更名为CodeWhale",
+      "GitHub Copilot CLI曝CJK输入法严重Bug",
+      "Claude Code现终端复制污染及幽灵加载OOM",
+      "开源社区强烈呼唤自带模型与端点自由路由"
+    ],
+    "ai-agents": [
+      "OpenClaw发布v2026.6.1稳定版及Beta版",
+      "新版重点增强Agent运行时中断自愈能力",
+      "底层全面优化跨平台消息通道投递稳定性",
+      "超380个待合并PR揭示项目处密集重构期",
+      "推进核心Auth模块向SQLite深度迁移",
+      "警告升级存在Node 23兼容性崩溃风险"
+    ],
+    "ai-trending": [
+      "Agent运行时性能优化系统ECC斩获超2千Star",
+      "开源记忆引擎Supermemory日增超600星",
+      "hermes-agent主打伴随成长理念登顶热榜",
+      "仅4GB显存即可跑70B大模型推理利器开源",
+      "Vibe-Trading探索个人专属金融交易Agent",
+      "上下文压缩工程成开源社区极具商业价值方向"
+    ],
+    "ai-web": [
+      "Anthropic首认取消破坏力过强的Mythos模型",
+      "OpenAI静默更新GPT Rosalind引发新猜想",
+      "AI网络攻击自动化致传统防御框架失效",
+      "Claude Partner Network获四万人申请入驻",
+      "埃森哲等巨头承诺将Claude推向数十万员工",
+      "Anthropic详解如何在产品中限制Agent破坏力"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.8 Max空消息回复引安全对齐热议",
+      "开源工具Mnemo为LLM构建本地优先图数据库记忆层",
+      "开源插件填补浏览器端AI Agent防注入攻击空白",
+      "深度拆解Claude Code超1400行Agent循环架构",
+      "OpenAI因隐私与非营利定位面临密集法律压力",
+      "YC新晋孵化项目集体押注智能体化开发范式"
+    ],
+    "rl-daily": [
+      "大模型RL开源生态全面向工业级基础设施转型",
+      "TRL极致优化DPO显存并深度融合vLLM推理",
+      "verl大幅扩展Ascend与ROCm异构算力底座",
+      "ROCK专注攻克Agent沙箱生命周期治理难题",
+      "AReaL推动FP8极限性能与云原生架构演进",
+      "OpenRLHF精细化修复多轮调用Token惩罚计算"
+    ],
+    "ai-arxiv": [
+      "Scaling Laws研究下沉揭示神经元选择性分化",
+      "受脑科学启发提出LLM睡眠记忆巩固机制",
+      "引入想象力感知Token显著增强空间推理能力",
+      "Muon优化器在LLM训练中表现亮眼获理论拆解",
+      "提出超周期预训练原语构建持续进化的模型生态",
+      "引入逻辑谜题基准精准度量模型内在推理结构"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro狂揽超580万下载稳居生态C位",
+      "谷歌发布Gemma-4-12B全面转型全模态架构",
+      "Qwen3.6-27B多模态综合性能狂揽超500万下载",
+      "Nvidia携Cosmos3系列强势发力视觉生成领域",
+      "LiquidAI新MoE架构总参8B仅激活1B专攻边缘",
+      "Sulphur-2-base开源文生视频基础大模型底座"
+    ],
+    "ai-community": [
+      "AI编程提速被警告是透支未来的技术债贷款",
+      "Docker沙箱隔离成安全运行AI Agent标配方案",
+      "开发者反思盲目在各类工具中硬塞Agent乱象",
+      "webMCP实机演示揭示未来网站构建范式转移",
+      "提出针对非确定性AI Agent的实用测试框架",
+      "开发者热论AI高速迭代带来的职业焦虑危机"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools pivot to multi-agent orchestration.",
+      "OpenAI Codex ships v0.137.0-alpha.4/5.",
+      "Claude Code releases patch v2.1.162.",
+      "Gemini CLI introduces versions v0.45.0 and v0.46.0-pre.",
+      "OpenCode and Pi see high architectural contributions.",
+      "Security and memory management dominate new updates."
+    ],
+    "ai-agents": [
+      "OpenClaw faces scaling challenges with 1,000 daily events.",
+      "OpenClaw ships v2026.6.1 and v2026.6.1-beta.3 today.",
+      "Regressions plague OpenClaw's session management.",
+      "Telegram and WhatsApp delivery steadied in new patch.",
+      "Context bloat remains a significant pain point.",
+      "388 PRs currently active for OpenClaw."
+    ],
+    "ai-trending": [
+      "Agentic Harness ecosystem dominates GitHub trends.",
+      "affaan-m/ECC hits 205k stars with 2k added today.",
+      "headroom compresses LLM prompts by up to 95%.",
+      "Microsoft releases markitdown for AI data preprocessing.",
+      "supermemoryai/supermemory fuels local-first agents.",
+      "NousResearch/hermes-agent gains massive new traction."
+    ],
+    "ai-web": [
+      "Anthropic accidentally confirms \"Claude Mythus Preview\".",
+      "Mythus deemed too risky to ship in April 2026.",
+      "OpenAI updates its \"GPT Rosalind\" model variant.",
+      "Anthropic details capping AI \"blast radius\" for safety.",
+      "Autonomous capabilities scaled via environment control.",
+      "OpenAI and Anthropic compete in frontier capability pushes."
+    ],
+    "ai-hn": [
+      "Hacker News buzzes over OpenAI's IPO and ad pivot rumors.",
+      "Gemini Spark sparks both awe and existential dread.",
+      "Claude Opus 4.8 Max shows weird empty message behavior.",
+      "Community pushes back against frontier AI monopolies.",
+      "Local-first agentic tools gain strong enthusiasm.",
+      "OpenAI faces legal troubles and commercialization scrutiny."
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates into LLM training vs classic RL.",
+      "verl pushes hardware abstraction for NPU and ROCm.",
+      "TRL focuses on peak memory reduction and AsyncGRPO.",
+      "AReaL drives aggressive systems-level engineering.",
+      "CleanRL and Stable Baselines3 remain in maintenance.",
+      "Agentic workloads dominate new infra optimizations."
+    ],
+    "agent-orch": [
+      "Claude Squad and Crystal lead agent orchestration.",
+      "45 projects tracked across the orchestration ecosystem.",
+      "OpenAI's Symphony enters the multi-agent space.",
+      "MCP and Docker sandboxes standardize autonomous coding.",
+      "Agent Orchestrator and dmux see new integrations.",
+      "AutoGPT and MetaGPT continue to evolve frameworks."
+    ],
+    "ai-arxiv": [
+      "New papers push agentic autonomy and robust reasoning.",
+      "LLMs learn to self-modify memories during \"sleep\" phases.",
+      "QUBRIC co-designs queries with rubrics for AI agents.",
+      "Humanoid-GPT scales whole-body robot control.",
+      "Hyper-Epoch Pretraining solves compute saturation.",
+      "Network-aware schedulers improve LLM serving."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops charts with 5.8M downloads.",
+      "DeepSeek-V4-Flash offers high-speed MIT licensed chat.",
+      "NVIDIA launches Cosmos3 omnimodal generative suite.",
+      "LiquidAI LFM2.5-8B-A1B uses MoE to activate 1B params.",
+      "MiniCPM5-1B brings strong edge AI performance.",
+      "Uncensored MoE architectures gain community traction."
+    ],
+    "ai-community": [
+      "MCP emerges as the next major web dev paradigm.",
+      "Developers question force-fitting AI into every tool.",
+      "Docker sandboxes deemed essential for safe AI agents.",
+      "Anthropic pushes self-hosted agent sandboxes.",
+      "Hidden costs of agent tool calls spark pragmatism.",
+      "Testing non-deterministic AI systems remains a pain."
+    ]
+  }
+}
