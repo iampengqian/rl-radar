@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code发v2.1.163遇史诗级计费争议",
+      "OpenAI Codex发v0.137.0解死锁崩溃",
+      "Gemini CLI修多个高危SSRF/IPI漏洞",
+      "OpenCode核心V2架构向事件溯源重构",
+      "Qwen Code规划全局记忆与Daemon模式",
+      "AI CLI全面演进为多智能体自治环境"
+    ],
+    "ai-agents": [
+      "OpenClaw发v2026.6.2-beta.1大改插件策略",
+      "OpenClaw底层正大规模从文件迁移至SQLite",
+      "解决数千会话致108MB缓存CPU燃烧问题",
+      "单日狂收500个Issue，处理吞吐量惊人",
+      "引进全新Operator Install Policy保安全",
+      "全面攻坚最新GPT-5.x模型适配挑战"
+    ],
+    "ai-trending": [
+      "headroom日增超3000星，硬砍95%Token消耗",
+      "ECC爆火，为AI程序员加装外挂安全本能",
+      "ollama已成基石，火速原生支持Kimi-K2.6",
+      "NVIDIA Cosmos加码具身智能与世界模型",
+      "claude-mem解决Agent跨会话记忆顽疾",
+      "RAG向知识图谱演进，代际升级已至"
+    ],
+    "ai-web": [
+      "OpenAI悄然上线ChatGPT记忆梦境功能",
+      "记忆梦境可能实现离线数据降噪与重构",
+      "Anthropic静默，或正酝酿下一代大模型",
+      "同一页面同日现3次更新或在进行A/B测",
+      "OpenAI技术从被动响应转向主动计算",
+      "大模型能力正加速向持久化状态拓展"
+    ],
+    "ai-hn": [
+      "Anthropic发文探讨AI递归自我改进引激辩",
+      "ChatGPT推Dreaming机制优化长短期记忆",
+      "华为开源于vLLM的KV-cache量化后端",
+      "Anthropic开源AI自动化挖漏洞安全框架",
+      "Boxes.dev提供云端跑Claude Code新方案",
+      "OpenAI CEO承认Token成本成落地大危机"
+    ],
+    "rl-daily": [
+      "RLHF工程重心转向极致通信与显存墙突破",
+      "TRL推进多模态对齐与AsyncGRPO并发",
+      "verl激进扩张，全面适配AMD与国产NPU",
+      "slime死磕显存墙，引入动态负载均衡",
+      "AReaL拥抱云原生，微服务化与K8s融合",
+      "对齐算法演进，DPPO等替代方案密集涌现"
+    ],
+    "agent-orch": [
+      "报告ID内容截断，仅基于现有数据提炼",
+      "AI Agent编排生态覆盖超45个开源项目",
+      "Multi-Agent流式通信成攻克重点",
+      "多智能体协作成各框架核心演进方向",
+      "Claude Squad等工具专攻Agent调度",
+      "开源生态正疯狂补齐Agent编排拼图"
+    ],
+    "ai-arxiv": [
+      "AutoLab探索AI长周期自动化科研闭环",
+      "SAID显著加速扩散大语言模型推理过程",
+      "双向逻辑机制修复LLM推理链的误差级联",
+      "研究发现基础LLM存潜在自我校准能力",
+      "扩散与双向架构挑战传统自回归模型",
+      "学术界呼吁正视廉价代理实验盛行现状"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro以断层优势成最强开源基座",
+      "DeepSeek-V4-Flash为极速推理首选平替",
+      "Qwen3.6-27B成最新中体量全能王者",
+      "Sulphur-2-base重塑开源文生视频生态",
+      "谷歌gemma-4-12B进入跨模态统一架构",
+      "英伟达LocateAnything-3B实现指哪打哪"
+    ],
+    "ai-community": [
+      "AI网关正迅速确立为新一代架构标准",
+      "CostGuard提供实时熔断防API失控刷费",
+      "硬核测算揭示Copilot不同模型24倍价差",
+      "微软将Windows打造成Agent底层安全屏障",
+      "Headroom方案硬砍LLM 95%Token消耗",
+      "MCP协议成为构建可控Agent技能标配"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to autonomous, multi-agent coding.",
+      "Claude Code stable at v2.1.163 with 10 highlighted issues.",
+      "OpenAI Codex v0.138.0 lands 4 new alpha iterations today.",
+      "Google's Gemini CLI holds steady at v0.45.1 Stable.",
+      "Ecosystem consolidating around MCP and multi-routing.",
+      "Developers prioritize context compaction and persistence."
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive activity with 500 issues and PRs.",
+      "OpenClaw cuts new v2026.6.2-beta.1 release today.",
+      "Maintainers under pressure: 341 open vs 159 closed issues.",
+      "OpenClaw migrating session and transcript storage to SQLite.",
+      "New operator install policy replaces dangerous-code scanner.",
+      "NanoBot and Hermes Agent highlighted in active ecosystem."
+    ],
+    "ai-trending": [
+      "\"Agentic Harness\" wave dominates open-source AI trends.",
+      "Headroom project gains 3,139 stars in a single day.",
+      "Headroom cuts LLM token usage by up to 95% for RAG.",
+      "Ollama hits 173k stars, supporting latest frontier models.",
+      "GitHub launches official multi-platform Copilot Agent SDK.",
+      "vLLM maintains dominance with 81,944 total GitHub stars."
+    ],
+    "ai-web": [
+      "OpenAI bursts with 3 new articles about ChatGPT Memory.",
+      "OpenAI hints at \"ChatGPT Memory Dreaming\" capabilities.",
+      "LLMs may be moving to proactive memory consolidation.",
+      "Anthropic remains publicly silent with zero new articles.",
+      "Silence may precede a major Anthropic model weight drop.",
+      "OpenAI sitemap grows to 837 total tracked articles."
+    ],
+    "ai-hn": [
+      "Anthropic dominates Hacker News with self-improvement AI.",
+      "Community anxious about AI autonomously building successors.",
+      "Developers moving AI coding agents to cloud to cut costs.",
+      "Sam Altman admits to impending token cost infra ceiling.",
+      "Claude Opus 4.8 successfully solves complex math proofs.",
+      "Recursive self-improvement post hits 219 points on HN."
+    ],
+    "rl-daily": [
+      "RL ecosystem starkly bifurcated between LLMs and classic.",
+      "Zero new version releases cut across the entire track.",
+      "TRL dominates daily activity with 11 issues and 26 PRs.",
+      "Heavy engineering commits focus on GRPO and PPO compute.",
+      "OpenRLHF, PettingZoo, and Stable Baselines3 go dormant.",
+      "Alignment frameworks entirely dominate RL development."
+    ],
+    "ai-arxiv": [
+      "New bidirectional logic fixes chain-of-thought brittleness.",
+      "Base LLMs can natively predict external judge scores.",
+      "SAID accelerates diffusion-based language models greatly.",
+      "Multi-agent architectures get efficient streamed pipelines.",
+      "Unified models introduce always-on streaming audio I/O.",
+      "Researchers extract learning signals from failed traces."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops charts with 5.6M total downloads.",
+      "Qwen3.6-27B dominates as top vision-and-language model.",
+      "Mixture of Experts architectures lead raw popularity.",
+      "Nvidia pushes highly specialized object detection models.",
+      "Community demand for local GGUF quantizations surges.",
+      "Google Gemma-4 pushes any-to-any vision-language edge."
+    ],
+    "ai-community": [
+      "GitHub Copilot's new AI credits billing shocks devs.",
+      "Copilot usage-based billing introduces a 24x price gap.",
+      "Microsoft makes Windows the OS-level security for agents.",
+      "Xiaomi announces a massive $60B investment into AI.",
+      "Model Context Protocol (MCP) sees explosive growth.",
+      "Developers move past AI hype to tackle runaway spending."
+    ]
+  }
+}
