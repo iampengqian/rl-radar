@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code深陷高成本Bug，深陷高成本与稳定性积压问题",
+      "OpenAI Codex底层V8引擎更新，攻坚Windows平台兼容性",
+      "Gemini CLI发v0.47.0-nightly，重构AST感知与Agent状态机",
+      "Qwen Code发v0.17.1，发力Web-Shell闭环与内存优化",
+      "DeepSeek TUI冲刺v0.9.0，引入多标签页与IDE插件化",
+      "AI CLI迈向多智能体编排，MCP插件生态成各厂商标配"
+    ],
+    "ai-agents": [
+      "OpenClaw单日处理472个Issue，高强度修复v2026.6.1版本Bug",
+      "OpenClaw修复单一提供商在速率限制期间被长时间挂起问题",
+      "OpenClaw解决EmbeddedAttemptSessionTakeoverError静默丢消息",
+      "OpenClaw修复群聊进入failed状态后静默丢弃后续消息严重Bug",
+      "OpenClaw为Telegram渠道新增访客模式以增强渠道集成",
+      "OpenClaw动态模型元数据丢失问题已在核心PR中得到修复"
+    ],
+    "ai-trending": [
+      "hermes-agent单日暴涨1821星，成最炙手可热智能体框架",
+      "ECC狂揽208k总星，打造Claude与Cursor等编程工具性能套件",
+      "MiroFish开源群体智能引擎，结合传统群智与大模型预测万物",
+      "NVIDIA开源Cosmos物理世界平台，具身智能成下个重注",
+      "last30days-skill跨Reddit等平台收集信息，是信息聚合Agent范例",
+      "Agent-Reach网络爬虫CLI免API费全网搜索，解决Agent信息获取痛点"
+    ],
+    "ai-web": [
+      "Anthropic单日发布16篇深度文章，迎史无前例内容井喷",
+      "Anthropic推自然语言自动编码器，神经元激活翻译成文本",
+      "分析数百万次交互：Claude Code最长无干预运行超45分钟",
+      "Anthropic发文探讨Claude当化学家，大模型迈入垂直学科",
+      "研究证实Reward Hacking会导致AI伪造对齐等危险行为",
+      "新一代防御系统将通用越狱成功率从86%骤降至4.4%"
+    ],
+    "ai-hn": [
+      "文章指Claude增加rsync的Bug，引发AI技术债热论斩获217分",
+      "Anthropic发现Zcash伪造漏洞，AI安全审计致币价暴跌30%",
+      "Anthropic呼吁全球冻结AI开发，警告人类可能失去控制权",
+      "MLX与llama.cpp在M1芯片跑Gemma大模型的硬核性能对决",
+      "AI安全警示：奖励作弊会引发模型伪造对齐或破坏研究",
+      "Anthropic探索将Claude应用于化学领域的虚拟科学家潜力"
+    ],
+    "rl-daily": [
+      "LLM对齐RL生态重心转至超长上下文与分布式集群训练",
+      "verl成生态绝对核心，深度压榨显存并布局跨硬件计算",
+      "TRL高频迭代引前沿算法，重点突破多模态视觉语言对齐",
+      "slime引入算子融合，攻坚极低精度NVFP4训练优化",
+      "ROLL全面重构，深度适配华为Ascend NPU国产算力",
+      "OpenRLHF快速集成REBEL等最新离线奖励回归对齐算法"
+    ],
+    "ai-arxiv": [
+      "新架构突破：无循环预训练RNN解决长序列并行计算难题",
+      "PC Layer引入多项式预调节，显著加速LLM预训练",
+      "Vortex专为长上下文Agent设计，实现可编程稀疏注意力",
+      "利用离散扩散模型去噪产生的不确定Token作自检索RAG",
+      "Goedel-Architect生成证明蓝图，大幅提升自动化定理证明",
+      "标准化流突破传统链式思考，拓展LLM连续隐空间推理"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro狂揽超550万下载，登顶开源LLM双料榜首",
+      "NVIDIA单日狂发9款模型，全面覆盖视觉定位与物理生成",
+      "谷歌发布Any-to-Any模型Gemma-4，成社区热门微调基座",
+      "Unsloth等迅速推Gemma-4等GGUF量化版，端侧部署是刚需",
+      "美团LongCat模型上榜，专注数字人等多模态细分领域",
+      "LiquidAI推8B参数MoE新秀，以优秀激活参数比展现小模型潜力"
+    ],
+    "ai-community": [
+      "开发者实测：用特定策略让Claude Code工程成本暴降62%",
+      "MCP协议被热捧为AI界USB-C，但也曝出底层安全漏洞",
+      "LLM API默认路由暗坑多，被指虚增3.9倍调用成本",
+      "AI端点面临推理窃取攻击，开发者发布防钱包被掏空指南",
+      "开源2行代码Claude插件，强制限制输出专治AI废话太多",
+      "焦点转移：AI工程化落地成核心，多智能体协作架构成新常态"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Major AI CLI tools rapidly shifting toward agentic orchestration.",
+      "Model Context Protocol (MCP) acting as critical tool bridge.",
+      "Claude Code v2.1.165 patch tackles token consumption blowouts.",
+      "OpenAI Codex v149.2.1 among 10 active pull requests tracked.",
+      "Ecosystem shifting from Python wrappers to single-binary files.",
+      "New 'deep research' features frequently causing token-burn."
+    ],
+    "ai-agents": [
+      "OpenClaw experiencing very high community engagement today.",
+      "Project tracker shows 472 issues and 500 PRs updated.",
+      "No new official software releases published for OpenClaw.",
+      "Bug tracker dominated by critical v2026.6.1 upgrade regressions.",
+      "Maintainers bottlenecked on reviewing massive volume of PRs.",
+      "A hotfix or v2026.6.2 patch release is likely imminent."
+    ],
+    "ai-trending": [
+      "Headroom gains 2,500 stars by compressing LLM context windows.",
+      "Hermes-agent adds 1,821 stars as a cutting-edge AI companion.",
+      "ECC brings skills, instincts, and memory to CLI coding agents.",
+      "Agentic harness ecosystem dominates today's open-source trends.",
+      "Strong push towards multi-modal physical AI infrastructure.",
+      "Memory and context persistence rapidly maturing for agents."
+    ],
+    "ai-web": [
+      "Anthropic drops 16 new research and news articles today.",
+      "Natural Language Autoencoders translate Claude's inner workings.",
+      "Reward hacking can escalate AI models into acts of sabotage.",
+      "AI could boost US labor productivity growth by 1.8% annually.",
+      "Chris Olah spoke at the Vatican on AI ethics and philosophy.",
+      "OpenAI had no new official content published today."
+    ],
+    "ai-hn": [
+      "Anthropic calls for a global pause on AI development.",
+      "US government reportedly seeking equity stakes in AI firms.",
+      "Developers deeply polarized over agentic coding workflows.",
+      "Local inference benchmark compares MLX vs. Llama.cpp for Gemma 4.",
+      "Community frustrated by AI-generated spam and maintenance fatigue.",
+      "Fears mount over AI introducing subtle bugs to infrastructure."
+    ],
+    "rl-daily": [
+      "Reinforcement learning focused on aligning massive MoE models.",
+      "verl tracks 47 pull requests focused on heavy scaling.",
+      "Dominant theme is expanding AMD ROCm and Huawei NPU support.",
+      "Asynchronous pipelines built for next-gen architectures.",
+      "Standard algorithmic libraries in dependency maintenance phases.",
+      "Complex distributed training setups stabilized for Qwen3.5."
+    ],
+    "agent-orch": [
+      "Ecosystem focuses on optimizing autonomous coding agent harnesses.",
+      "Agent Deck, Symphony, and Claude Flow actively tracked today.",
+      "Multi-agent decision-making remains a key orchestrator focus.",
+      "Orchestrators tackle the massive compute needs of AI agents.",
+      "Claude Squad and dmux among 45 active projects covered.",
+      "Robust contributor activity seen across 45 agent projects."
+    ],
+    "ai-arxiv": [
+      "LLMs now reasoning continuously in latent space via normal flows.",
+      "New method pretrain RNNs without sequential Backpropagation.",
+      "Polynomial weight preconditioning stabilizes LLM pre-training.",
+      "Cross-layer sparse attention optimizes inference-time efficiency.",
+      "LLM agents tackle self-evolving unsupervised skill acquisition.",
+      "Collaborative multi-agent simulations pushing boundaries."
+    ],
+    "ai-hf": [
+      "Google's highly anticipated Gemma-4 models finally released.",
+      "DeepSeek-V4-Pro dominates charts with 5.5M downloads.",
+      "Nvidia's LocateAnything-3B introduces zero-shot object grounding.",
+      "Sulphur-2-base drives massive interest in open-source video.",
+      "Architectural shift toward dynamic MoE routing is unmistakable.",
+      "Nvidia floods leaderboard with highly optimized domain models."
+    ],
+    "ai-community": [
+      "Community hyper-focused on the economics of AI agents.",
+      "Securing MCP servers against emerging vulnerabilities debated.",
+      "Simple architectural tweak cuts AI engineering costs by 62%.",
+      "Defending AI endpoints from denial-of-wallet attacks crucial.",
+      "Inference theft emerges as a major threat to open AI APIs.",
+      "Philosophical debate explores implications of post-training."
+    ]
+  }
+}
