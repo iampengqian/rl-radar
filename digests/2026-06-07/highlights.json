@@ -1,0 +1,129 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI向多模型动态路由与IDE深度融合演进",
+      "Claude Code引入模型回退，爆发安全误杀争议",
+      "OpenAI Codex底层Rust重构，解决额度泄漏问题",
+      "Gemini CLI准备升级3.5Flash，修复终端渲染挂起",
+      "OpenCode社区极度渴求安全沙箱与动态工作流",
+      "DeepSeek TUI密集测试验收，准备发布v0.9.0"
+    ],
+    "ai-agents": [
+      "OpenClaw日增154条Issue，社区解决率近50%",
+      "OpenClaw发布v2026.6.5-beta.1，增强通道隔离",
+      "彻底修复QQBot原生投递模型推理脚手架泄露",
+      "大幅提升MCP工具健壮性与畸形图片兼容性",
+      "引入严格Deadline解决Docker引擎无响应挂起",
+      "审查防消息丢失PR，解决SDK并发会话写锁竞态"
+    ],
+    "ai-trending": [
+      "superpowers单日暴涨破千星，颠覆Agentic方法论",
+      "Agent-Reach零API费用实现全网跨平台数据抓取",
+      "MemPalace号称最强开源AI记忆系统，解决遗忘",
+      "open-notebook对标NotebookLM成高质量平替",
+      "ollama火速支持Kimi-K2.6等前沿本地模型",
+      "ECC为Claude Code等AI编程助手提供底层记忆"
+    ],
+    "ai-web": [
+      "Anthropic罕见披露前沿Agent容器与隔离架构",
+      "Claude Mythos曾因破坏半径过大被否决发布",
+      "行业转向：不部署成本已高于部署的安全风险",
+      "Anthropic重心从对齐训练转向工程遏制",
+      "默认Agent会犯错，沙箱隔离比完美决策更重要",
+      "OpenAI今日官网静默，暂无技术或公关更新"
+    ],
+    "ai-hn": [
+      "斯坦福研究：法学教授盲测更偏爱AI生成答案",
+      "AI记忆被曝低效：终身教职项目测出95%错误率",
+      "标普拒纳SpaceX，连带质疑AI巨头商业模式",
+      "Claude一次对话修复被认为无法修复的41TB BTRFS",
+      "Ccgs开源：用Git分支管理Claude协同编程会话",
+      "HN热议：为什么开发者社区开始产生强烈的反AI情绪"
+    ],
+    "rl-daily": [
+      "RL生态向超大规模多模态后训练基建跃迁",
+      "verl死磕长上下文显存壁垒及异构算力适配",
+      "TRL转向泛化RL底座，密集集成前沿VLM算法",
+      "AReaL极速适配前沿模型，集成新型正交优化器",
+      "多模态RLVR（强化学习与视觉推理）成发力点",
+      "slime专注计算通信感知，跟进CISPO新算法"
+    ],
+    "agent-orch": [
+      "暂无数据"
+    ],
+    "ai-community": [
+      "百万美元AI系统阻拦修复，致漏洞蒸发420万",
+      "AI Slop泛滥：低质生成代码正引发维护危机",
+      "揭秘AI生成代码中无人提及的隐蔽安全漏洞",
+      "从Demo到生产级Agent必须跨越的三大检查",
+      "斯坦福51次部署证明人机协作仍是最高效范式",
+      "警告：绝对不能用笨模拟来压测LLM智能体"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code gets v2.1.166 and v2.1.167 patch releases.",
+      "OpenAI Codex Alpha 0.138.0-a5 fixes TUI deadlocks.",
+      "AI CLI tools are aggressively pivoting to multi-agent orchestrators.",
+      "Fragile context memory causes ecosystem-wide stability bottlenecks.",
+      "Tools struggle to maintain parity and reliability on Windows.",
+      "Open-source challengers rapidly close the feature gap with leaders."
+    ],
+    "ai-agents": [
+      "OpenClaw gets 300 issues and 500 PRs updated in 24 hours.",
+      "OpenClaw releases v2026.6.5-beta.1 for beta stabilization.",
+      "QQBot now strips model reasoning tags to stop logic leaks.",
+      "MCP tooling updated to correctly coerce malformed image payloads.",
+      "Core gateway and transport layers face major scaling challenges.",
+      "Maintainer review bottlenecks block 412 open pull requests."
+    ],
+    "ai-trending": [
+      "GitHub trending reveals a massive surge in agentic AI tools.",
+      "ollama hits 173,387 stars for local state-of-the-art inference.",
+      "CopilotKit gains 613 stars today to reach 33,168 total.",
+      "Microsoft open-sources new frontier Voice AI framework VibeVoice.",
+      "Developers shift focus to autonomous workflows and memory systems.",
+      "Tooling bridges gap between raw AI models and daily workflows."
+    ],
+    "ai-web": [
+      "Anthropic reveals \"containment\" architecture for agentic AI.",
+      "Post confirms withheld \"Claude Mythos Preview\" was too risky.",
+      "Safety engineering currently bottlenecks new AI capabilities.",
+      "Containment spans claude.ai, Claude Code, and Cowork products.",
+      "Engineering focus shifts to capping autonomous agent blast radius.",
+      "OpenAI official channels remain static in today's crawl."
+    ],
+    "ai-hn": [
+      "S&P 500 officially blocks OpenAI and Anthropic for profitability.",
+      "Meta AI chatbots weaponized to hack thousands of Instagram accounts.",
+      "OpenAI releases new \"Lockdown Mode\" to combat prompt injection.",
+      "\"Ask HN\" thread reveals deep developer fatigue and anti-AI sentiment.",
+      "Study shows Law Professors prefer AI answers over peer answers.",
+      "Anthropic demonstrates making Claude a specialized chemist."
+    ],
+    "rl-daily": [
+      "RL ecosystem defined by rapid maturation of post-training infra.",
+      "TRL sees high activity with aggressive VLM integration.",
+      "verl focuses on enterprise-grade scaling and NPU ecosystem support.",
+      "LLM and VLM alignment heavily drive current development activity.",
+      "CleanRL and PettingZoo enter stable maintenance phases.",
+      "Development activity is highly polarized across the ecosystem."
+    ],
+    "agent-orch": [
+      "Claude Squad, Crystal, and Symphony lead the 45-project ecosystem.",
+      "Tools rapidly bridge the gap between raw models and daily workflows.",
+      "Projects focus on unified memory systems for autonomous agents.",
+      "Ecosystem heavily focused on localized, open-source alternatives.",
+      "Automated coding skills and career search agents gain traction.",
+      "Advanced document parsing tools dominate community attention."
+    ],
+    "ai-community": [
+      "Overriding human intuition for a $1.4M AI system costs $4.2M.",
+      "\"AI slop\" creates hidden technical debt for engineering teams.",
+      "Three checks separate an agent demo from a production agent.",
+      "Developers shift focus to robust production patterns for agents.",
+      "High-level debates continue over the actual limits of LLMs.",
+      "Modern AI requires human oversight to prevent dangerous errors."
+    ]
+  }
+}
