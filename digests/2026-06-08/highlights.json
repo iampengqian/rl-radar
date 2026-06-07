@@ -55,6 +55,14 @@
       "纯向量检索失效，实战解析 RAG 混合搜索架构优化",
       "多智能体工作流遇执行安全危机，新架构模式救场",
       "Lobste.rs 硬核探讨：大模型行为在暗中传播的真相"
+    ],
+    "ai-weekly": [
+      "Anthropic提交S-1冲刺IPO，估值逼近千亿",
+      "Anthropic曝光并“熔断”极具破坏力的高危模型",
+      "OpenAI上线“记忆梦境”，演入主动潜意识计算",
+      "Token无损压缩工具headroom斩获数千Star",
+      "Claude Code越权操作引争议，急需沙箱隔离",
+      "Agent运行时受热捧，跨会话记忆成开发者刚需"
     ]
   },
   "en": {
@@ -121,6 +129,14 @@
       "Engineers dissect reality vs. AI marketing hype.",
       "Scale-to-zero Kubernetes setups for serving models.",
       "Pushback against AI hype grows in tech community."
+    ],
+    "ai-weekly": [
+      "Anthropic files for IPO with a massive $965B valuation.",
+      "Project Glasswing scales canceled AI to secure infrastructure.",
+      "AI CLI tools become fully autonomous, causing token crises.",
+      "OpenAI Codex and Gemini CLI rewrite foundations in Rust.",
+      "Context and memory compression tools explode on GitHub.",
+      "Anthropic translates neuron activations into readable text."
     ]
   }
 }
