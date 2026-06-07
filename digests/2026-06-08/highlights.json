@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 工具分化：Qwen Daemon 化，OpenCode 走极客路线",
+      "Claude Code 发 v2.1.168，计费争议与 Linux 支持成焦点",
+      "Qwen Code 架构大变：PR 达 30 个，Daemon 模式合并",
+      "DeepSeek TUI 发 v0.9.0，底层命令调度系统彻底重构",
+      "安全边界与长上下文成 CLI 工具亟待解决的共性难题",
+      "OpenAI Codex 核心重构：GPT-5.5 修复与架构密集迭代"
+    ],
+    "ai-agents": [
+      "OpenClaw 发 v2026.6.5-beta.2，修 MCP 与消息泄露",
+      "QQ 机器人修复：防模型推理标签意外泄露至频道回复",
+      "OpenClaw 单日现 500 个 PR，底层数据正迁移 SQLite",
+      "MCP 工具健壮性提升，强制兼容未知防解析时崩溃",
+      "渠道适配大进展：飞书、Telegram 等接入代码并行",
+      "PR #82864 修 Provider 路由，确保准确导向 OpenAI 节点"
+    ],
+    "ai-trending": [
+      "AI Agent 爆发：个性化智能体与跨会话记忆成新基建",
+      "无向量 RAG 登场！PageIndex 挑战传统向量检索霸权",
+      "turbovec 暴涨 1500+ star，Rust 极致性能引关注",
+      "给 AI 注入好品味，taste-skill 阻止模型生成废话",
+      "开源再发力！open-notebook 成 Google 笔记平替首选",
+      "last30days-skill 爆火，让 AI 综合全网打破信息茧房"
+    ],
+    "ai-hn": [
+      "LLM 抢饭碗？工程师职业焦虑文登顶 HN 引发热议",
+      "Claude 取代 Figma，提示词驱动设计颠覆传统开发流",
+      "Anthropic 遭请愿：Linux 开发者集体呼吁官方客户端",
+      "Lathe 爆火：用 AI 辅助深度学习而非代写的新范式",
+      "商业隐忧：巨头被指烧千元换百元，AI 泡沫再引讨论",
+      "MoE 机制遭透视，仅观察激活专家即可反推生成内容"
+    ],
+    "rl-daily": [
+      "强化学习范式转移：单轮对话迈向复杂智能体决策",
+      "TRL 深度下沉 VLM 支持，引入新算法防模型崩溃",
+      "verl 极速跟进 DeepSeek V4，突破超长上下文显存",
+      "AReaL 引入动态树注意力，构建独立 Agent 运行时",
+      "SWE-bench 成核心基准，多轮工具调用 RL 成标配",
+      "GRPO 训练瓶颈显现：长时训练导致奖励饱和引关注"
+    ],
+    "ai-hf": [
+      "DeepSeek V4 双星闪耀，狂揽超八百万下载当霸榜",
+      "英伟达生态大爆发，连发 3D 定位到视频生成多模型",
+      "LiquidAI 提出液态神经网络，实现非 Transformer 突破",
+      "Google Gemma 4 引发热潮，社区 Unsloth 领衔微调",
+      "Nvidia 发布 550B MoE 巨兽，专为企业级任务打造",
+      "视觉生成多元化：Ideogram 4 与 Sulphur 加速演进"
+    ],
+    "ai-community": [
+      "惨痛教训：VP 盲信 AI 自动测试致单日损失 280 万",
+      "Claude Code 源码分析揭秘，证实它非递归智能体",
+      "LLM 财务灾难：FinOps 团队如何按项目追踪烧钱",
+      "纯向量检索失效，实战解析 RAG 混合搜索架构优化",
+      "多智能体工作流遇执行安全危机，新架构模式救场",
+      "Lobste.rs 硬核探讨：大模型行为在暗中传播的真相"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.168 released.",
+      "OpenAI Codex top issue gets 601 comments.",
+      "AI CLI tools evolving into multi-agent IDEs.",
+      "Cross-platform parity remains a major challenge.",
+      "Context window exhaustion is a universal bottleneck.",
+      "Gemini CLI sees active triage and merging."
+    ],
+    "ai-agents": [
+      "OpenClaw handles 500 PRs in 24 hours.",
+      "Merge rate bottleneck slows OpenClaw progress.",
+      "OpenClaw v2026.6.5-beta.2 released.",
+      "QQBot update hides internal model thinking blocks.",
+      "New MCP tooling fixes malformed image payloads.",
+      "Ecosystem heavily focused on messaging reliability."
+    ],
+    "ai-trending": [
+      "Agent Harnesses dominate AI open-source trends.",
+      "ECC optimization system hits 209,790 stars.",
+      "turbovec: high-performance Rust vector index.",
+      "Frameworks for AI financial automation trending.",
+      "RAG shifts to hybrid reasoning and compression.",
+      "DeepSeek V4 shatters download records."
+    ],
+    "ai-hn": [
+      "Top post: Engineer fears career eroding via LLMs.",
+      "Community questions economics of major AI labs.",
+      "Paper: LLMs lack human-like Age of Empires logic.",
+      "MoE routing decisions leak significant info.",
+      "Developers fear an impending AI bubble.",
+      "Community debates actual reasoning of AI models."
+    ],
+    "rl-daily": [
+      "Active RL libraries pivot to LLM post-training.",
+      "Focus shifts from DPO to agentic workflows.",
+      "Classic RL libraries experience low activity.",
+      "TRL sees 24 PRs updated in 24 hours.",
+      "rl_games pushes sim-to-real robotics deployment.",
+      "Major TRL issues involve data loss and GRPO."
+    ],
+    "agent-orch": [
+      "Claude Squad leads agent orchestration ecosystem.",
+      "AutoGPT and MetaGPT remain highly active.",
+      "Rise of specialized Claude Code orchestration tools.",
+      "Projects converge on persistent daemon architectures.",
+      "Deep IDE integrations dominate development.",
+      "Ecosystem tracks 45 active orchestration projects."
+    ],
+    "ai-hf": [
+      "Google Gemma 4 12B debut drives massive downloads.",
+      "DeepSeek V4 Pro tops weekly download charts.",
+      "Nvidia launches Cosmos3 spatial intelligence suite.",
+      "MiniCPM5-1B: powerful edge device optimization.",
+      "Demand surges for uncensored/quantized models.",
+      "Community builds active open-weight quantizations."
+    ],
+    "ai-community": [
+      "Day 3 of autonomous AI testing costs $2.8M.",
+      "LLM API costs spark new FinOps tracking methods.",
+      "Security crisis in multi-agent workflows exposed.",
+      "Engineers dissect reality vs. AI marketing hype.",
+      "Scale-to-zero Kubernetes setups for serving models.",
+      "Pushback against AI hype grows in tech community."
+    ]
+  }
+}
