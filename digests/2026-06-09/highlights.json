@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 发布 v2.1.169，新增安全模式解决额度静默消耗",
+      "OpenAI Codex 密集底层重构，修复因新模型大面积故障引发的报错",
+      "Gemini CLI 紧急修补高危 SSRF 漏洞，治理 Agent 挂起与死锁",
+      "Qwen Code 修复严重内存泄漏，推进守护进程架构演进",
+      "Pi 发布 v0.79.0 引入信任机制，攻坚上下文越界与企业级网关",
+      "新一代模型引入严格流控制，迫使底层请求生命周期大量重构"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.6.5-beta.3，修复 QQ 机器人原始思考内容泄漏",
+      "项目单日处理 500 个 Issue，社区处于极速迭代期",
+      "底层执行被彻底重写，长任务消息丢失率大幅下降",
+      "MCP 工具返回的类型转换获修复，规范畸形图像处理",
+      "Cron 调度机制获多个核心 PR 修复，提升任务健壮性",
+      "底层通道协议（MCP）全面增强，保障多模态安全过滤"
+    ],
+    "ai-trending": [
+      "Agent 技能外挂化：单日暴涨 3558 Star，全网零 API 爬取社媒数据",
+      "Rust 挑战 C++/Python：TurboVec 极速向量索引受社区狂热追捧",
+      "Claude Code 周边生态爆火，开源圈已形成求职辅助变现产业链",
+      "Agent-Reach 赋予 AI 社交媒体之眼，零成本检索 Twitter 与小红书",
+      "Ollama 极速跟进支持 Kimi-K2.6、GLM-5.1 等最新开源模型",
+      "CopilotKit 超 3.4 万 Star，成 AI Agent 交互的前端事实标准"
+    ],
+    "ai-web": [
+      "OpenAI 静默提交 Confidential S-1，正式开启 IPO 历史性资本节点",
+      "Anthropic 指出当前最前沿大模型在生物数据库提取中仍频频出错",
+      "Anthropic 提出破局方案：引入确定性检索层使准确率逼近 100%",
+      "OpenAI 更新惠及所有人战略计划，完善宏观愿景叙事与话语权",
+      "Anthropic 深耕 AI 科学家：为生物学智能体铺设标准工作流",
+      "OpenAI 同步上线经济研究交流页面，加码宏观经济影响研究"
+    ],
+    "ai-hn": [
+      "OpenAI 酝酿已久的 IPO 计划彻底引爆今日 Hacker News 热搜榜",
+      "Cognition AI 发布前沿代码模型新进展，探讨 AI 编程能力天花板",
+      "Anthropic 重磅实证研究：大模型对 N-day 漏洞利用的实际影响",
+      "Rayline 智能路由：将昂贵 Claude 子任务下放给廉价模型降本",
+      "开源工具 Levi 助力 Claude Code，以极低成本运行 AlphaEvolve",
+      "Anthropic 即将发布全新模型 Claude Fable 5 引爆开发者期待"
+    ],
+    "rl-daily": [
+      "开源 RL 重心大转移：从单轮对齐算法全面转向超大规模分布式训练",
+      "verl 重点攻坚 Qwen3.5/DeepSeek V4 适配及国产 NPU 通信优化",
+      "OpenRLHF 发布核心大版本 v0.10.4 升级，跟进 PyTorch 2.11",
+      "TRL 架构向异步分布式演进，强力攻坚 GRPO LoRA 通信开销",
+      "slime 深耕多教师在线策略蒸馏，突破跨词表模型限制",
+      "AReaL 探索 SWE Agent 场景，引入策略蒸馏极致压榨显存"
+    ],
+    "agent-orch": [
+      "该报告似乎仅为项目名单，未见实质性更新，依据规则跳过解析",
+      "该报告似乎仅为项目名单，未见实质性更新，依据规则跳过解析",
+      "该报告似乎仅为项目名单，未见实质性更新，依据规则跳过解析",
+      "该报告似乎仅为项目名单，未见实质性更新，依据规则跳过解析",
+      "该报告似乎仅为项目名单，未见实质性更新，依据规则跳过解析",
+      "该报告似乎仅为项目名单，未见实质性更新，依据规则跳过解析"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 开源引爆社区，超 530 万下载量统治生成榜单",
+      "Google 发布全新 Gemma-4，向 any-to-any 全模态方向进军",
+      "NVIDIA 开源 550B 超大 MoE 模型，展现顶级基础模型野心",
+      "Sulphur-2 视频生成下载量破百万，标志生成技术平民化",
+      "MiniCPM5-1B 等轻量模型大热，社区对端侧可用模型渴求强烈",
+      "Nvidia LocateAnything-3B 空间定位模型被视为具身智能基石"
+    ],
+    "ai-community": [
+      "企业盲目提取员工经验建 AI 致崩溃，以 5 倍薪水请回原专家",
+      "Prompt 工程已死：优秀的 AI 应用正向健壮的系统级架构转移",
+      "对抗性评估揭露 5 款主流 LLM 安全软肋，防御体系亟待重构",
+      "打破常规认知：解决大模型幻觉必须从基础设施层面入手",
+      "硬核科普：直击大语言模型底层运行机制获高赞",
+      "TypeScript 生态 RAG 落地指南：向开发者提供数据库向量化实操"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.169 released for multi-tenant workflows",
+      "AI CLI ecosystem in aggressive feature parity race",
+      "Open tools challenge incumbents with multi-provider routing",
+      "Declarative agent configuration gains traction in Pi & Qwen",
+      "Cost-leaking crashes plague context window management",
+      "Specialized tools carve out niches via protocol standards"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.5-beta.3 hardens memory management",
+      "QQBot strips model reasoning scaffolding from replies",
+      "OpenClaw sees 500 issues and 494 PRs updated today",
+      "Project maintainers stretched thin by massive bug volume",
+      "Multi-agent session stability major focus of latest release",
+      "MCP tool handling improved to prevent channel errors"
+    ],
+    "ai-trending": [
+      "Google & OpenAI standardize agentic skills & plugins",
+      "RyanCodrai/turbovec gains 1730 stars for Rust vector search",
+      "CopilotKit breaks 34k stars bridging LLMs and UI",
+      "ollama adds support for Kimi-K2.6 and GLM-5.1 models",
+      "Web scraping agents hit inflection point for data synthesis",
+      "Rust-based vector search optimization dominates infra trends"
+    ],
+    "ai-web": [
+      "OpenAI confidentially submits S-1 filing for imminent IPO",
+      "Anthropic details structural needs for biology AI agents",
+      "AI agents struggle retrieving complex biological data",
+      "LLM accuracy hits 100% with deterministic retrieval layer",
+      "Frontier models fail to reliably produce biology datasets",
+      "Industry prepares for massive public market liquidity events"
+    ],
+    "ai-hn": [
+      "OpenAI confidential IPO filing dominates Hacker News",
+      "Claude Fable 5 set for release tomorrow",
+      "Anthropic researches LLMs' impact on zero-day exploits",
+      "Apple quietly releases third-gen foundation models",
+      "Builders shift focus to subagent orchestration costs",
+      "New tools run evolutionary algorithms on cheaper local AI"
+    ],
+    "rl-daily": [
+      "LLM post-training drives massive RL infrastructure changes",
+      "Traditional RL libraries remain in maintenance phases",
+      "Distributed memory optimization crucial for MoE architectures",
+      "OpenRLHF and TRL lead LLM alignment framework scaling",
+      "Activity overwhelmingly concentrated in LLM alignment tools",
+      "Traditional RL environments see zero activity over 24 hours"
+    ],
+    "agent-orch": [
+      "Claude Squad and Symphony lead multi-agent orchestration",
+      "Tool orchestration ecosystems expand to 45 active projects",
+      "Claude Code Bridge enables seamless cross-tool workflows",
+      "Agent Deck and OpenFang advance agentic UI paradigms",
+      "New tools focus on deep third-party provider integration",
+      "Multi-agent session reliability remains a primary challenge"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops Hugging Face with 5.3M downloads",
+      "Google Gemma 4 family captures immediate community focus",
+      "Nvidia LocateAnything-3B expands into spatial AI",
+      "MoE architectures run 550B parameter models locally",
+      "Extreme quantizations bring video AI to consumer hardware",
+      "DeepSeek-V4-Flash dominates as efficient generation model"
+    ],
+    "ai-community": [
+      "Company rehires laid-off engineer at 5x salary after AI fail",
+      "Agent mistakes compound silently into cascading bad decisions",
+      "Prompt Engineering Is Dead: System Engineering takes over",
+      "Developers tackle AI security vulnerabilities like RTT exploits",
+      "RadixAttention exploration signals maturing community focus",
+      "New tools aim to detect and prevent AI hallucinations"
+    ]
+  }
+}
