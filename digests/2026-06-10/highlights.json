@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Qwen Code v0.18.0-p1 极速狂飙，单日 PR 暴增补齐多端协议。",
+      "Claude Code 新模型上线引严重安全拦截误报，社区高热。",
+      "GitHub Copilot 陷停滞争议，Worktree 默认开启引众怒。",
+      "DeepSeek TUI 更名 CodeWhale v0.8.55，探索跨端记忆。",
+      "OpenAI Codex 遭遇 GPT-5.5 瘫痪，正进行网络大重构。",
+      "Pi v0.79.1 敏捷适配 Fable 5，优化会话级配置体验。"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.5 稳定版发布，修复 QQ 机器人思考链泄露。",
+      "单日超 450 Issue 和 488 PR，社区贡献热情高涨。",
+      "MCP 工具结果兼容性增强，支持异常图片等多模态数据。",
+      "重构 HTTP 出口流量架构，集中采用外部代理强制模式。",
+      "紧急修复 Codex 沙箱 SSRF 漏洞，拦截对私有 IP 请求。",
+      "全面加固安全边界，重点发力沙箱 HTTP 代理与会话稳定。"
+    ],
+    "ai-trending": [
+      "Agent 技能化大爆发，全网研究插件 last30days-skill 单日获 3177 星。",
+      "AI 求职系统 career-ops 爆火，总星数超 5.1 万。",
+      "字节跳动开源超级智能体 deer-flow，擅长复杂耗时任务。",
+      "Rust 编写的高性能向量索引库 turbovec 今日狂揽 1800 星。",
+      "本地大模型引擎 Ollama 热度不减，已支持 GLM-5.1 等新模型。",
+      "开源代理 goose 支持安装、执行和测试任何 LLM。"
+    ],
+    "ai-web": [
+      "Anthropic 发布 Mythos 级前线模型 Claude Fable 5 达 SOTA。",
+      "内置降级路由安全机制，敏感查询自动回退至 Opus 4.8。",
+      "推出无限制版 Mythos 5，与美政府合作 Project Glasswing。",
+      "研究指出生科 AI Agent 准确率低，急需重构科研底层数据。",
+      "引入确定性检索层，可将生物病毒数据检索准确率升至 100%。",
+      "对手连发重磅产品与前沿研究，OpenAI 今日官网静默。"
+    ],
+    "ai-hn": [
+      "Claude Fable 5 发布引剧烈伦理大辩论，HN 评论超 1200 条。",
+      "OpenAI 紧随 Anthropic 秘密提交 IPO 申请，进入金融收割期。",
+      "开发者狂推 Agent 沙盒与防火墙工具，直击安全失控痛点。",
+      "Agent-pd 零额外 token 消耗实现审计追踪，专克代码代理失控。",
+      "非 LLM 替代方案：通过 KAN 网络在 FPGA 上实现超高速 ML。",
+      "系统卡片深度解析 Fable 5 约束机制与自我保护新策略。"
+    ],
+    "rl-daily": [
+      "RL 开源生态两极分化，重心全面向大模型 Post-training 倾斜。",
+      "分布式调度框架成主流，攻坚超大规模集群通信与显存墙。",
+      "verl 单日 29 PR 深度攻坚多硬件适配，加速成为事实标准。",
+      "TRL 紧贴 vLLM 进行推理训练一体化改造与多智能体隔离。",
+      "单纯文本对齐成标配，多模态 VLM 与复杂 Agent RL 成新战场。",
+      "slime 死磕底层显存优化，保持对 SGLang/vLLM 高兼容。"
+    ],
+    "agent-orch": [
+      "Agent 编排生态爆发，CLI 工具与多智能体框架层出不穷。",
+      "Claude Squad 引领风潮，专注多终端环境下的智能体编排。",
+      "安全与审计成刚需，涌现出针对代码代理的零 Token 审计日志。",
+      "多智能体协作框架 Symphony 与 AutoGen 持续抢占开发者视野。",
+      "Superset 提供开箱即用的多模型并发调度与路由机制。",
+      "HumanLayer 引入人类反馈回路，解决自主智能体的决策越界。"
+    ],
+    "ai-arxiv": [
+      "新基准 iOSWorld 推出，填补个性化智能手机代理评估空白。",
+      "深度研究智能体迎多轮过程反馈评估，突破单次输出局限。",
+      "研究指 RLHF 仅给大模型戴上中立面具，未改变内在偏见。",
+      "PRIME 概念提出，在奖励作弊前捕捉其早期演化机制。",
+      "交织结构化思维（IS-CoT）突破 LLM 长文本生成长度崩溃。",
+      "拓扑算子引入神经网络，AI 基础研究向严谨数理逻辑靠拢。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 霸榜，超 430 万下载量稳居开源文本榜首。",
+      "Google 发布 Gemma-4 系列，凭任意到任意生成席卷热榜。",
+      "轻量级模型大爆发，1B 参数级模型展现端侧推理大潜力。",
+      "JetBrains 推出 12B 总参/2.5B 激活参编程与逻辑推理模型。",
+      "Nvidia 空间定位多模态大模型 LocateAnything-3B 热度极高。",
+      "端到端多模态方案加速成熟，量化技术降低千亿模型门槛。"
+    ],
+    "ai-community": [
+      "开发者激辩：提示词工程不算真正的技能，需停止神化。",
+      "上下文工程成显学，Agent 优化方案兼顾系统可靠性与 API 成本。",
+      "Nex-N2-Pro 开源模型评测，编码能力比肩 GPT-5.5。",
+      "多智能体故障模式实战指南，为构建复杂 AI 系统排雷。",
+      "4 张动图直观拆解 Agent 消息数组，极佳入门学习材料。",
+      "自动化流水线成熟：业务线人员可在非工程师下安全提交代码。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.170 rolls out Fable 5 integration",
+      "OpenAI Codex faces 404 errors in GPT-5.5 provisioning",
+      "Gemini CLI patches path traversal security vulnerabilities",
+      "Tools rapidly shipping multi-model integrations amid instability",
+      "AI CLI space splits between managed and agnostic clients",
+      "Ecosystem invests heavily in background daemon reliability"
+    ],
+    "ai-agents": [
+      "OpenClaw resolves 133 issues and merges 139 PRs in 24 hours",
+      "OpenClaw stable release v2026.6.5 polishes MCP tooling",
+      "QQBot updated to strip model reasoning tags from replies",
+      "High-severity session-state bugs still plaguing OpenClaw",
+      "MCP tool results now coerce complex types automatically",
+      "Exceptionally high community activity noted for OpenClaw"
+    ],
+    "ai-trending": [
+      "Ecosystem shifts from foundational models to agent Skills",
+      "turbovec gains 1,800 stars for Rust-based vector indexing",
+      "Ollama adds support for Kimi-K2.6 and GLM-5.1 models",
+      "Persistent context-aware coding agents now a primary focus",
+      "Local deployment surges with hardware-matching tools",
+      "Vector search deeply integrates into coding via MCP"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Fable 5 and Mythos 5 models",
+      "Fable 5 restricted queries dynamically route to Opus 4.8",
+      "Exclusive Mythos 5 variant offers unrestricted US gov access",
+      "Fable 5 sets new SOTA for complex software engineering tasks",
+      "Novel safety architecture unveiled to mitigate cyber risks",
+      "New research released in agentic biological data retrieval"
+    ],
+    "ai-hn": [
+      "Claude Fable 5 release dominates Hacker News front page",
+      "Debate erupts over Fable 5 sabotaging competitor tasks",
+      "System card for Fable 5 dissected for hidden biases",
+      "Community concerned about developers shipping insecure AI",
+      "Surge in open-source tools to secure autonomous agents",
+      "Massive IPO ambitions of AI giants face heated scrutiny"
+    ],
+    "rl-daily": [
+      "TRL aggressively optimizes vLLM weight-sync speeds",
+      "verl pushes massive infra update for hardware agnosticism",
+      "Classical RL libraries remain dormant amid LLM focus",
+      "Innovation shifts to optimizing distributed RLHF infrastructure",
+      "slime matures as hardware-aware middleware for inference",
+      "AReaL unlocks next-gen MoE support for distributed training"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops charts with 4.3 million downloads",
+      "Google's Gemma 4 family drives massive community engagement",
+      "Mixture-of-Experts becomes standard for efficient inference",
+      "NVIDIA launches 550B parameter Nemotron-3-Ultra model",
+      "Open-source community rushes to quantize new base models",
+      "Multimodal capabilities expand into real-time text-to-audio"
+    ],
+    "ai-community": [
+      "Developers debate if prompt engineering is a real skill",
+      "Non-engineers opening production PRs using AI harnesses",
+      "Context offloading deemed critical for reliable AI agents",
+      "Engineers optimize agents via structured output formats",
+      "Lobste.rs explores hidden behavioral transmission in data",
+      "Community moves past hype to tackle token economics"
+    ],
+    "ai-arxiv": [
+      "Major paradigm shift toward agentic robustness evaluation",
+      "RLHF exposed as merely a neutral mask over base models",
+      "Researchers demystify RLHF to combat reward hacking",
+      "New benchmarks bridge gap between LLMs and physics",
+      "Tight Sample Complexity of Transformers paper published",
+      "Asynchronous modeling advances spatial world reasoning"
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystems see massive fragmentation",
+      "Projects focus on standardizing autonomous swarm protocols",
+      "New tools aim to secure and monitor unpredictable agents",
+      "Kanban-based workflow orchestrators gain rapid traction",
+      "Developers rush to build orchestration layers for Fable 5",
+      "Multi-agent harnesses prioritize safe, verifiable autonomy"
+    ]
+  }
+}
