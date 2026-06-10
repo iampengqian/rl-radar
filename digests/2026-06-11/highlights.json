@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex v0.140底层Rust重构攻坚跨平台",
+      "Claude Code v2.1支持5层嵌套智能体复杂编排",
+      "Qwen Code守护进程架构及Agent Team并行协同",
+      "社区强烈呼吁GitHub Copilot支持Gemini模型",
+      "OpenCode集成ACP协议及会话生命周期管理",
+      "Gemini CLI v0.46修复终端渲染崩溃及供应链漏洞"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.6发布全方位安全边界加固",
+      "OpenClaw核心推进Session SQLite底层架构重构",
+      "OpenClaw极度活跃但核心审查资源成严重瓶颈",
+      "OpenClaw收紧沙箱绑定及ACP绕过等权限漏洞",
+      "OpenClaw跨转录、Discord及Teams安全防线升级",
+      "新版本安全策略收紧致宽松环境配置面临失效"
+    ],
+    "ai-trending": [
+      "Agent迎技能爆发：产品经理专属AI技能包上线",
+      "逆向工程成显学：主流闭源AI系统提示词泄露",
+      "mvanhorn/last30days-skill日增2.5k星登顶热榜",
+      "RAG走向无向量化：基于推理的检索受高度关注",
+      "万物皆可Agent：医疗诊断与金融研报自动化落地",
+      "Ollama成本地运行标准并快速跟进最新开源模型"
+    ],
+    "ai-web": [
+      "Anthropic研究指当前生物数据库对AI极不友好",
+      "LLM推理+确定性工具将生物检索提至近100%",
+      "OpenAI被观测到Oracle Cloud路径引多云算力布局",
+      "Anthropic呼吁未来数据库底层须为AI智能体重构",
+      "LLM面对复杂生物数据库准确率极其不稳定",
+      "智能体竞争从前台参数转向后台工作流及算力适配"
+    ],
+    "ai-hn": [
+      "Claude Fable发布不足一天即被花式绕过安全护栏",
+      "Claude Desktop被指启动生成1.8GB虚拟机占资源",
+      "AWS Bedrock将未来模型与Anthropic共享用户数据",
+      "零成本无需LLM调用的RAG模型引低成本新思路",
+      "微软因数据留存问题限制内部员工使用Claude",
+      "软银60亿美元OpenAI保证金贷款受阻引泡沫猜测"
+    ],
+    "rl-daily": [
+      "verl极度活跃：攻坚DeepSeek V4及跨硬件算力解耦",
+      "传统基础RL库进入停滞期，后训练框架占主导",
+      "AReaL发力解耦式RLHF及Agent专属运行时构建",
+      "TRL稳步推进SFT显存防错及OPSD自蒸馏算法",
+      "Open Instruct死磕DPO算子融合及MFU极限提升",
+      "slime深入计算图融合与VLM多模态对齐支持"
+    ],
+    "ai-arxiv": [
+      "研究揭示CoT微调导致LLM长上下文检索骤降",
+      "推理微调会破坏模型原本的安全对齐引信任危机",
+      "新SFT目标分布设计缓解预训练与噪声数据错位",
+      "PhantomBench填补LLM无中生有幻觉评估空白",
+      "EEVEE推动自改进智能体现实世界测试时提示学习",
+      "高维生成模型通过奖励回传实现高效精准控制"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro获超四百万下载登顶本周热榜",
+      "Gemma 4系列以MoE架构切入端侧多模态市场",
+      "Nemotron-3-Ultra发布550B参数超大MoE语言模型",
+      "Nvidia LocateAnything-3B精准空间定位受社区高赞",
+      "Ideogram-4-fp8兼顾卓越生图质量与低显存占用",
+      "Nemotron-3.5专为流式语音识别打造轻量级架构"
+    ],
+    "ai-community": [
+      "开发者呼吁停建脆弱AI代理转用稳健工作流",
+      "AI代理暴露密钥管理失效及内存泄漏安全危机",
+      "MCP被指具USB-C潜力但滥用致胶水代码与安全挑战",
+      "Claude Fable超长自主运行能力引实用性探讨",
+      "git-lrc AI审查工具经验：优化上下文优于提示词",
+      "AI面试系统漏洞：虚构候选人反向白嫖获录用"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.172 introduces recursive sub-agents.",
+      "OpenAI Codex releases v0.140.0-alpha Rust builds.",
+      "Gemini CLI v0.46.0 pushes rapid new releases.",
+      "AI CLI tools shifting to multi-agent orchestration.",
+      "Developers racing to dominate terminal-based AI workflows.",
+      "Ecosystem focused on stable background execution."
+    ],
+    "ai-agents": [
+      "OpenClaw hit by massive backlog of 500 issues and PRs.",
+      "OpenClaw v2026.6.6-beta.1 tightens security boundaries.",
+      "OpenClaw migrates transcript state to SQLite.",
+      "Maintainers struggling to resolve massive ticket backlog.",
+      "Security overhaul covers MCP, Codex, and Discord tools.",
+      "Internal refactor targets long-standing message-loss bugs."
+    ],
+    "ai-trending": [
+      "GitHub dominated by the new Agentic Skills ecosystem.",
+      "Agent Memory and Context Grounding tools see massive surge.",
+      "RuView turns WiFi signals into real-time spatial AI.",
+      "Roboflow Supervision gains 699 stars for CV tools.",
+      "vllm maintains foundational role with 82,452 stars.",
+      "ECC optimizes memory and security for CLI agents."
+    ],
+    "ai-web": [
+      "Anthropic pushes AI agents into specialized biology.",
+      "OpenAI focuses on Oracle Cloud enterprise integration.",
+      "Frontier models struggle with legacy biological data.",
+      "Deterministic retrieval layer spikes accuracy to 100%.",
+      "Contrast in strategy between Anthropic and OpenAI.",
+      "Anthropic evaluates AI navigation of biological databases."
+    ],
+    "ai-hn": [
+      "Claude Fable 5 jailbroken to bypass new guardrails.",
+      "Microsoft restricts Claude over data retention concerns.",
+      "AWS Bedrock enforces data-sharing for future models.",
+      "Claude Desktop spawns 1.8 GB Hyper-V VM on launch.",
+      "New 150M model extracts RAG evidence without LLMs.",
+      "Community debates true productivity of AI processes."
+    ],
+    "rl-daily": [
+      "Ecosystem shifting to post-training LLM/VLM alignment.",
+      "verl, TRL, and AReaL lead in LLM alignment activity.",
+      "Frameworks tackle extreme bottlenecks in distributed RLHF.",
+      "Focus on heterogeneous hardware and distributed memory.",
+      "Traditional RL libraries like Gymnasium see no activity.",
+      "CleanRL and Stable Baselines3 reflect a mature state."
+    ],
+    "agent-orch": [
+      "Developers pivot from monoliths to modular agent skills.",
+      "MCP gaining traction as USB-C-like standard for LLMs.",
+      "Engineers warn of high failure rates in multi-agent AI.",
+      "Claude Squad and Claude Flow lead orchestration tools.",
+      "Industry standardizes agent communication protocols.",
+      "New frameworks manage complex multi-container tasks."
+    ],
+    "ai-arxiv": [
+      "Chain-of-Thought fine-tuning degrades long-context recall.",
+      "Reasoning models often destroy safety alignment guardrails.",
+      "New benchmarks expose deep failure modes in AI agents.",
+      "Models dynamically adjust prompts during test-time.",
+      "Stochastic flow distillation advances generative models.",
+      "Mathematical frameworks for multimodal learning advance."
+    ],
+    "ai-hf": [
+      "Google's highly anticipated Gemma 4 family dominates.",
+      "DeepSeek-V4-Pro leads charts in likes and downloads.",
+      "NVIDIA drops massive 550B-parameter MoE model.",
+      "MoE architectures become the definitive open standard.",
+      "Ideogram 4 and Bernini-R heat up generative AI space.",
+      "Community releases massive wave of uncensored fine-tunes."
+    ],
+    "ai-community": [
+      "Stop building fragile AI agents; build AI workflows.",
+      "Engineers face memory crisis managing AI agents.",
+      "Prompt batching can actually increase LLM app costs.",
+      "Developers debate real use cases for multi-day agents.",
+      "MCP gains massive traction as standard for LLM tooling.",
+      "High skepticism remains over multi-agent reliability."
+    ]
+  }
+}
