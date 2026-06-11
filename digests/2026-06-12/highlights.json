@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.173 爆发高危Bug：Auto模式静默删除生产代码",
+      "OpenAI Codex 桌面端稳定性崩盘，Alpha版连发5次仍遭遇崩溃抗议",
+      "Gemini CLI 紧急修复间接提示词注入(IPI)绕过权限高危漏洞",
+      "Qwen Code v0.18.0 默认启用并行子代理，推出自动化计划审批闸门",
+      "DeepSeek TUI 更名 CodeWhale，全面转型多供应商平台",
+      "OpenCode 开发者痛点爆发：聚焦解决 OOM 与本地大模型接入"
+    ],
+    "ai-agents": [
+      "OpenClaw 爆发PR拥堵危机：积压385个待合并，核心Bug修复停滞",
+      "OpenClaw 引入重磅 MS Teams 语音与聊天企业级集成",
+      "OpenClaw 桥接 Google Gemini OAuth，大幅改善底层认证稳定性",
+      "OpenClaw 紧急修复内存泄漏与Cron任务失败等核心回归Bug",
+      "OpenClaw 接入 DeepSeek V4 Pro 等前沿模型，丰富智能体生态",
+      "社区高度关注 OpenClaw 多智能体并发调度与凭证安全问题"
+    ],
+    "ai-trending": [
+      "Agentic Skills 登顶GitHub：AI编程助手技能库日增超3000星",
+      "NVIDIA 发布 SkillSpector：专扫大模型调用外部工具的恶意漏洞",
+      "逆向工程宝典：Cursor/Devin等主流AI工具内部系统提示词曝光",
+      "全新智能体技能框架 superpowers 提出软件开发新方法论",
+      "字节开源长周期 SuperAgent 框架 deer-flow 突破7万星",
+      "Ollama 原生支持 Kimi-K2.6 与 GLM-5.1 等最新前沿大模型"
+    ],
+    "ai-web": [
+      "Anthropic联手DXC，将Claude嵌入全球银行与航空核心交易系统",
+      "DXC内部11.5万员工验证：Claude协助编写超95%的AI原生平台代码",
+      "Anthropic豪掷1.5亿美元推出Claude Corps，培养千名AI落地专员",
+      "Anthropic将AI红利扩散至非营利组织，建立底层原生用户群",
+      "OpenAI 官网暴露收购索引：或已悄然收购数据工程公司 Ona",
+      "Claude 获得强监管行业深水区场景的极大安全信任背书"
+    ],
+    "ai-hn": [
+      "Anthropic为Claude Fable 5隐藏的蒸馏防护栏道歉，引爆信任危机",
+      "基准测试揭秘：Claude Fable 5实际编码表现仅属中游",
+      "不安的研究：LLM在冲突模拟中极度倾向于升级武力甚至使用核武",
+      "开发者探讨：AI辅助编程时代如何平衡编写与审查的注意力",
+      "结合本地开源模型：M3 Pro上实现Claude Code完全离线运行",
+      "Anthropic强势崛起引发连锁反应，OpenAI或将迎来大幅降价"
+    ],
+    "rl-daily": [
+      "TRL v1.6.0 发布：突破 GIL 限制并大幅优化显存",
+      "字节 verl 集中攻坚千亿级 MoE 模型的显存泄漏与调度瓶颈",
+      "阿里 ROCK v1.9.0 演进为RL专用云原生基建，引入动态调度",
+      "清华 slime 扩展多教师蒸馏算法，向企业级 MLOps 演进",
+      "AReaL 极致挤压显存：FP8直传适配最新 MoE 架构",
+      "Open Instruct 核心维护者交接，保持严格的工具链标准化"
+    ],
+    "ai-arxiv": [
+      "新机制动态重路由：大幅降低VLM推理显存且无性能衰减",
+      "突破上下文瓶颈：提出跨轮次共享的多轮对话增量压缩方法",
+      "引入流形幂迭代重新设计MoE路由层，增强专家选择表征能力",
+      "利用可解释性工具深入剖析模型后训练阶段的数据作用机制",
+      "高分LLM遭遇认知脆弱性：误导上下文下极易妥协出医疗错误",
+      "APPO算法突破粗粒度限制，实现智能体过程级策略优化"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 超大参数MoE模型，斩获超四百万下载量登顶",
+      "NVIDIA发布550B级别巨型混合专家模型，专攻极致性能研究",
+      "Liquid架构新MoE模型：仅1B激活参数实现8B级性能降本",
+      "NVIDIA LocateAnything-3B 登顶视觉人气榜，精准定位赋能具身智能",
+      "Google将Gemma架构引入扩散模型，推出创新多模态方案",
+      "Ideogram 4 携手 FP8 与 NF4 量化版强势登场，图像生成竞争白热化"
+    ],
+    "ai-community": [
+      "深度反思泛滥的Vibe Coding：程序能跑绝不等于代码质量好",
+      "警惕Agent静默故障：重试与缓存机制正在掩盖真实代码错误",
+      "拆解Google ADK防御提示词注入的5层安全架构",
+      "打破纯向量搜索迷思：构建生产级 RAG 必须引入混合检索",
+      "AI编程下一波突破：不在于无限堆砌上下文，而是提升诊断能力",
+      "硬核长文褪去AI神秘面纱：从底层原理重新认识大语言模型"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Codex drops 5 alpha releases focusing on enterprise.",
+      "Claude Code v2.1.173 adds data loss prevention features.",
+      "AI CLI tools shifting from simple completion to autonomous agents.",
+      "Gemini CLI pushes AST codebase mapping for deeper context.",
+      "Developers balancing tool autonomy with system safety.",
+      "Community pushing boundaries of local-first execution."
+    ],
+    "ai-agents": [
+      "OpenClaw faces massive backlog with 865 active issues.",
+      "Agent projects seeing rapid iteration on security sandboxes.",
+      "OpenClaw community drives nearly 1,000 PRs in 24 hours.",
+      "Maintainers struggling to pace bug repro and security reviews.",
+      "New model integrations driving massive PR velocity.",
+      "OpenClaw gateway hardening and plugin ecosystem expanding."
+    ],
+    "ai-trending": [
+      "Ecosystem shifting to modular 'Agentic Skills' for AI.",
+      "addyosmani/agent-skills surges with +3,275 stars today.",
+      "obra/superpowers gains +1,323 stars for agentic workflows.",
+      "Security takes center stage to audit autonomous agents.",
+      "Local-first knowledge graphs give agents long-term recall.",
+      "hexo-ai/sia framework optimizes underlying model performance."
+    ],
+    "ai-web": [
+      "Anthropic partners with DXC to embed Claude in banking.",
+      "OpenAI acquires Ona to continue aggressive expansion.",
+      "Anthropic launches $150M 'Claude Corps' fellowship.",
+      "Frontier labs pivoting from models to ecosystem integration.",
+      "AI labs heavily targeting regulated enterprise sectors.",
+      "DxS alliance aims for mission-critical transaction systems."
+    ],
+    "ai-hn": [
+      "Community furious over Claude Fable invisible guardrails.",
+      "Independent tests reveal Claude Fable 5 mid-tier at coding.",
+      "OpenAI considers drastic price cuts to lure developers.",
+      "Developers seeking local workarounds for guardrail limits.",
+      "Tension rises between AI safety mechanisms and usability.",
+      "Engineers establishing better cognitive AI pair-workflows."
+    ],
+    "rl-daily": [
+      "TRL v1.6.0 adds GIL bypass for async model rollouts.",
+      "ROCK v1.9.0 focuses on sandbox state-machine lifecycles.",
+      "RL ecosystem split between LLM alignment and classic RL.",
+      "Frontier frameworks solving memory leaks for colossal MoE.",
+      "verl rapidly squashes bugs and expands ROCm/Ascend support.",
+      "Classic RL libraries like Stable Baselines3 see zero activity."
+    ],
+    "ai-arxiv": [
+      "Research proves perfectly eliciting AI beliefs is impossible.",
+      "Advanced context compression optimizing LLM efficiency.",
+      "New subquadratic architectures challenge standard Transformers.",
+      "Multi-agent RL moving towards decentralized collaboration.",
+      "AI alignment research probes high-stakes medical LLM flaws.",
+      "Interpretability evolving into active model training component."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro leads platform with 4M+ downloads.",
+      "Nvidia Nemotron-3-Ultra debuts massive 550B MoE model.",
+      "Google Gemma 4 dominates via efficient quantized formats.",
+      "Nvidia LocateAnything brings leaps in spatial intelligence.",
+      "Community aggressively ablating and uncensoring top models.",
+      "ByteDance and Ideogram push next-gen video rendering."
+    ],
+    "ai-community": [
+      "Developer focus shifts to fixing silent agent failures.",
+      "AI apps need serious engineering to be cost-effective.",
+      "Security teams must stop contextually malicious actions.",
+      "Experts question the human-like attributes of modern LLMs.",
+      "Specialized diagnostics crucial for fixing AI code fails.",
+      "'Vibe coding' faces hard questions on software quality."
+    ],
+    "agent-orch": [
+      "Ecosystem sees explosion of multi-agent orchestration tools.",
+      "Claude Squad and Crystal gain traction for agent teams.",
+      "Developers flock to Kanban-style AI workflow orchestrators.",
+      "OpenAI Symphony competes in crowded orchestration space.",
+      "New tools focus on bridging multiple CLI coding agents.",
+      "AutoGPT and MetaGPT see renewed life in orchestrator wave."
+    ]
+  }
+}
