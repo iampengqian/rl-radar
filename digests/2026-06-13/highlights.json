@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI工具全面迈入Agent自动化时代，终端控制权争夺战打响。",
+      "Claude Code密集迭代3版本，聚焦企业级权限管控与MCP深度集成。",
+      "社区强烈呼吁针对Doom Loop死循环引入硬性熔断机制以防Token耗尽。",
+      "Qwen Code大版本发布，上线死循环硬熔断、多智能体调度与Computer Use。",
+      "OpenAI Codex连发4版Alpha内测，死磕Windows沙盒与架构解耦。",
+      "Gemini CLI重点修复状态机卡死与CVE安全漏洞，引入AST工具。"
+    ],
+    "ai-agents": [
+      "OpenClaw单日狂揽500条Issue，正式发布v2026.6.6安全边界加固版。",
+      "v2026.6.6强安全修复：全方位收紧沙盒隔离与宿主环境继承。",
+      "修复已删除代理的ACP绕过漏洞，OpenClaw底层执行边界再升级。",
+      "多智能体协作爆发，社区热议Slack与Telegram等富媒体渠道支持。",
+      "Gateway内存泄漏与memory_search索引崩溃等严重Bug引发热烈讨论。",
+      "Discord审核机制与Teams群组行为获强化，项目迈向多平台安全化。"
+    ],
+    "ai-trending": [
+      "为AI编程智能体配置工程技能的框架霸榜，Agent技能化成社区刚需。",
+      "addyosmani/agent-skills斩获2660 Star，生产级Agent技能框架爆火。",
+      "caveman插件硬核压榨Token：将Prompt压缩为穴居人语言省65%成本。",
+      "claude-mem横空出世，通过跨会话记忆注入解决AI健忘痛点。",
+      "Ollama无缝支持Kimi-K2.6与GLM-5.1，稳居本地大模型运行基座首选。",
+      "LMCache提供极致快速KV Cache层，大幅降低高并发Agent推理成本。"
+    ],
+    "ai-web": [
+      "Anthropic联手TCS，将Claude推向全球56个国家5万名企业内部员工。",
+      "深度绑定传统IT巨头，Claude大举进军金融医疗等强监管行业。",
+      "Anthropic公布5.2万人调查：70%民众支持政府监管，仅15%信任AI公司。",
+      "Anthropic发布《Public Record》报告，巧妙为华盛顿立法游说提供背书。",
+      "Claude跨界化学！解析核磁共振波谱能力向高门槛科学领域纵深。",
+      "OpenAI官网静默，Anthropic独立主导企业服务与政策叙事节奏。"
+    ],
+    "ai-hn": [
+      "Anthropic新模型Claude Fable 5引爆Vibe Coding，引发开发者做游戏狂潮。",
+      "Claude Fable 5发布即遭越狱，社区对大模型安全围栏脆弱性见怪不怪。",
+      "Nature发文：LLM错误输出模式与人类心理病理学特征呈现高度相似性。",
+      "批量删除Claude网页聊天记录脚本登顶，重度用户急需会话数据管理。",
+      "《The 98% Problem》冲榜，深度探讨AI Agent Harness工程化难点。",
+      "大模型价格战一触即发，传OpenAI正筹备本地化部署以应对竞争。"
+    ],
+    "rl-daily": [
+      "大模型对齐基建爆发，verl与TRL全面进入底层架构重构深水区。",
+      "TRL推进AsyncGRPO工程，全面抹平多模态对齐差异并探索Agentic RL。",
+      "slime优化400B+超大模型训练调度，快速跟进CISPO等前沿算法。",
+      "AReaL死磕算子融合与显存极限，稳步推进v2微服务化架构演进。",
+      "经典RL框架rl_games重磅底层修复，全面适配PyTorch 2.12多卡训练。",
+      "Stable Baselines3严守供应链安全，探索Sim-to-Real部署验证网关。"
+    ],
+    "agent-orch": [
+      "多智能体编排正从概念走向系统化，递归工作流框架迎来爆发。",
+      "学术界引入自监督编排奖励模型，解决多智能体协调成本痛点。",
+      "《Recursive Agent Harnesses》提出让智能体动态生成大规模子代理。",
+      "HyperTool打破传统工具逐步调用，推出超越步骤的全新工作流机制。",
+      "研究揭示模型策略蒸馏参数更新呈高度稀疏，指导大模型高效对齐。",
+      "引入范畴论运算元数学结构，为LLM问题分解组合推理提供严密基础。"
+    ],
+    "ai-arxiv": [
+      "学术界引入自监督奖励模型，攻克多智能体编排缺乏有效监督痛点。",
+      "《Recursive Agent Harnesses》定义递归智能体，动态生成大规模子网。",
+      "HyperTool打破原子调用范式，解决Agent执行粒度不匹配的效率问题。",
+      "引入范畴论运算元数学结构，为LLM组合推理提供无标签失败检测信号。",
+      "揭示策略蒸馏参数更新高度稀疏的几何原理，指导大模型高效对齐。",
+      "结合强化微调让大模型学会类比推理，突破传统RAG的语义检索局限。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro狂揽338万下载量，稳居开源文本生成MoE模型榜首。",
+      "Google Gemma 4系列成社区人气王，多模态衍生量化版本全面霸榜。",
+      "NVIDIA发550B总参数MoE巨兽Nemotron-3-Ultra，提供极致性能开源选项。",
+      "Google重磅推出DiffusionGemma，将Gemma架构引入扩散模型实现对话生图。",
+      "NVIDIA多模态新星LocateAnything-3B爆火，专注精准图像空间定位。",
+      "小米推MiMo-V2.5-Pro端侧大模型，深度适配Agent场景与低显存部署。"
+    ],
+    "ai-community": [
+      "警惕！修复频率限制后Agent可能陷入高可用但产出错误的SLO陷阱。",
+      "超详尽指南：如何设计记忆库，防止长时运行Agent遗忘初始任务。",
+      "Google DiffusionGemma推理破千，颠覆单张消费级显卡部署经济性。",
+      "别再用传统断言了！教你如何针对不确定的Agent输出进行自动化测试。",
+      "用AWS官方工具包限制权限边界，防止编程助手调用API引发灾难。",
+      "AI应用可观测性指南：深度监控后台隐藏提示词与失控的工具调用成本。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLIs pivot from code generation to multi-agent orchestration.",
+      "Claude Code is pushing enterprise features and architectural overhauls.",
+      "Emerging tools focus heavily on multimodal inputs and local safety.",
+      "The industry challenge shifts to managing token economics and context.",
+      "OpenAI Codex ships four rapid alpha releases of v0.140.0.",
+      "Developers expect CLIs to function as observable automation harnesses."
+    ],
+    "ai-agents": [
+      "OpenClaw updates nearly 1,000 issues and pull requests in 24 hours.",
+      "The project shipped a new stable release: v2026.6.6.",
+      "Security boundaries tightened across the entire OpenClaw stack.",
+      "Today's development focuses on fortifying security perimeters.",
+      "Optimizing memory and context management is a major priority.",
+      "High throughput indicates robust but bottlenecked community engagement."
+    ],
+    "ai-trending": [
+      "Developer focus shifts to production-ready execution layers.",
+      "Explosive traction surrounds token-reduction tools and memory layers.",
+      "The RAG ecosystem matures specifically for long-running agent workflows.",
+      "LMCache gains 17 new stars today for radically faster LLM serving.",
+      "vLLM remains a crucial high-throughput engine for deploying models.",
+      "Ollama leads local execution, supporting frontier models like GLM-5.1."
+    ],
+    "ai-web": [
+      "Anthropic partners with Tata Consultancy Services for enterprise IT.",
+      "Claude will be deployed to 50,000 TCS employees as customer zero.",
+      "Partnership targets accuracy in financial, healthcare, and public sectors.",
+      "Anthropic published results of a massive 52,000-person AI survey.",
+      "A new deep-dive explores AI-driven chemistry and scientific reasoning.",
+      "The publisher positions itself as an accountable, safety-first developer."
+    ],
+    "ai-hn": [
+      "Anthropic's new Fable model is reportedly jailbroken on day one.",
+      "Rumors swirl of a severe price war as OpenAI prepares drastic cuts.",
+      "The Fable 5 rollout inspires a massive wave of vibe coded projects.",
+      "New YC-backed analytics platforms mature the agentic workflow space.",
+      "A new paper finds similarities between human psychopathology and LLMs.",
+      "The community debates serious legal and psychological AI liabilities."
+    ],
+    "rl-daily": [
+      "RL ecosystem shifts from single-turn RLHF to distributed workflows.",
+      "Post-training bottlenecks move from algorithmic design to orchestration.",
+      "LLM frameworks refactor into decoupled, microservice architectures.",
+      "Applied robotics RL frameworks prioritize safety and dependency stability.",
+      "Activity is heavily concentrated in the LLM alignment layer today.",
+      "Top four repositories dominate the day's pull requests and issues."
+    ],
+    "agent-orch": [
+      "Ecosystem tracks 45 distinct agent orchestration platforms today.",
+      "Symphony by OpenAI represents a major new entry into agent workflows.",
+      "HumanLayer focuses on integrating human-in-the-loop verification tools.",
+      "MetaGPT and AutoGPT continue dominating general agent orchestration.",
+      "Vibe Kanban and Claude Squad highlight specialized coding integrations.",
+      "New frameworks prioritize multi-agent swarming and complex protocols."
+    ],
+    "ai-arxiv": [
+      "Research paradigm shifts toward recursive and multi-agent systems.",
+      "Mathematical formalization uses operad theory to detect LLM failures.",
+      "Recursive Agent Harnesses bridge theory and production coding.",
+      "HyperTool solves execution-granularity mismatch in tool-augmented AI.",
+      "New benchmarks focus on verifiable, environment-engineered assessments.",
+      "Vision-language-action models are grounding AI in physical realities."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro takes the crown for engagement and raw downloads.",
+      "Google's Gemma 4 family drives an explosive wave of uncensored fine-tunes.",
+      "Nvidia releases a massive 550B parameter Mixture-of-Experts model.",
+      "LocateAnything-3B by Nvidia pushes the boundaries of spatial multimodal.",
+      "ByteDance's Bernini-R breaks new ground in image-text-to-video AI.",
+      "MiniMax-M3 brings highly competitive open-weights to developers."
+    ],
+    "ai-community": [
+      "Caching and fallbacks might silently compromise agent correctness.",
+      "Implementing observability is critical to prevent silent cost overruns.",
+      "Traditional software testing breaks down with non-deterministic AI.",
+      "Developers explore blazing-fast inference alternatives like DiffusionGemma.",
+      "AWS's new MCP toolkit helps ground models and prevent hallucinations.",
+      "Lobste.rs debates push back on the anthropomorphization of LLMs."
+    ]
+  }
+}
