@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI迈入多智能体编排时代，主打跨平台兼容与安全隔离",
+      "Qwen Code架构大改，超50个PR主攻跨平台与死循环拦截",
+      "OpenAI Codex跨平台重度重构，Alpha版修复资源泄漏",
+      "Gemini CLI合并活跃，引入AST工具并深化MCP兼容性",
+      "长时挂机与无人值守自治成Claude Code等工具共识诉求",
+      "Pi发布双正式版，发力并发会话与全栈生态整合"
+    ],
+    "ai-agents": [
+      "OpenClaw双Beta连发，强跨渠道富文本投递与安全边界",
+      "项目极度活跃，单日超150个PR被合并解决134个Issues",
+      "修复OpenAI SDK重试引发的会话静默消息丢失严重Bug",
+      "深度优化Slack与Telegram，支持结构化富文本与附件发送",
+      "团队密集重构应对网关内存泄漏及多智能体编排丢消息",
+      "DeepSeek API特定版本升级致缓存失效引发P0级热议"
+    ],
+    "ai-trending": [
+      "NVIDIA发布SkillSpector，专扫AI Agent恶意模式填补安全空白",
+      "agent-skills爆火单日增1507星，生产级技能包受狂热追捧",
+      "ollama无缝支持Kimi-K2.6等最新一代开源大模型",
+      "ECC项目爆火21万星，专为Claude Code提供性能优化",
+      "superpowers热度极高，标志Agent开发迈向成熟方法论",
+      "agentsview发布，比传统工具快百倍的会话分析利器"
+    ],
+    "ai-web": [
+      "美政府以国安为由强制下架最强模型Claude Fable 5",
+      "Fable 5全基准达SOTA，复杂任务领先优势极大",
+      "Anthropic声明涉事越狱仅发现微小漏洞仍被迫停服",
+      "模型封禁波及非美公民，连外籍员工也被禁止访问",
+      "前沿AI安全博弈升级至地缘政治与国家级网络战",
+      "Anthropic引入降级至Opus机制，做产品级安全兜底"
+    ],
+    "ai-hn": [
+      "Anthropic封禁引爆HN，单帖超三千分两千评论激辩AI民主化",
+      "亚马逊研究促成白宫密谈，成最强模型被封禁导火索",
+      "智谱GLM 5.2发布，支持百万上下文成热门替代方案",
+      "完全由Fable 5生成的游戏惊艳全网，展现极强代码力",
+      "AgentNexus提出按服务边界协调智能体的新架构设计",
+      "顶级模型接连受限空窗期，开发者急寻开源替代底座"
+    ],
+    "rl-daily": [
+      "RL生态大转向，大模型RLHF训练框架全面碾压传统游戏AI",
+      "TRL代码重构活跃，全力攻坚大模型长序列处理显存冗余",
+      "verl架构重构，主攻多轮Agent连续Token与原语解耦",
+      "slime直面视觉模型多轮推理Bug与SGLang引擎升级",
+      "PettingZoo性能优化，补齐多智能体全局状态接口",
+      "CleanRL算法除虫，修复PPO连续动作评估严重异常"
+    ],
+    "agent-orch": [
+      "Agent编排迈向复杂多智能体协作与全流程自动化",
+      "社区聚焦多智能体并发会话状态与上下文持久化",
+      "大量精力投入无头代理编排与环境沙盒安全隔离",
+      "编排工具深重构，重点解决长时任务的死循环拦截",
+      "UI/UX成发力点，开发者急需直观的会话运行轨迹监控",
+      "底层系统设计延伸，跨系统通信与容错机制成标配"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro人气登顶，下载量破三百万统治纯文本",
+      "谷歌Gemma 4-12B发布，原生Any-to-Any全能架构爆火",
+      "NVIDIA发LocateAnything-3B，小参数级视觉定位神器",
+      "谷歌融合扩散与Gemma，巧妙打通多模态对话与生成",
+      "Ideogram 4发FP8版本，文字渲染与图像理解表现强劲",
+      "小米发MiMo-V2.5-Pro，DFlash极致压缩专攻智能体"
+    ],
+    "ai-community": [
+      "最强模型Fable 5三天被下架，引发AI安全与政治激辩",
+      "实测揭秘：便宜的模型竟比预期贵8.6倍的隐藏陷阱",
+      "Fable 5超强能力引担忧，VSCode扩展安全危机四伏",
+      "Agent日志在说谎：企业级AI系统可观测性实操指南",
+      "多模型调用灾难：揭秘2026年高达106倍的AI成本问题",
+      "开发者焦点回归降本增效，Token路由与算力成本成核心"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "MCP is now the universal standard for AI CLI tool integration.",
+      "AI CLI tools are rapidly shifting toward autonomous execution.",
+      "Open-source and local LLM backends see increased CLI adoption.",
+      "Claude Code v2.1.177 released to fix severe TUI and billing bugs.",
+      "Infrastructure stability and cross-platform pathing remain key limits.",
+      "Context limit complexities challenge long-running background automation."
+    ],
+    "ai-agents": [
+      "OpenClaw hit massive scale with 1,000 updates in 24 hours.",
+      "OpenClaw v2026.6.8-beta.1 enhances Telegram and WhatsApp delivery.",
+      "Massive backlog hits OpenClaw with 342 pull requests awaiting review.",
+      "OpenClaw maintainers push hard on new channel integrations.",
+      "Message delivery reliability is a primary focus for OpenClaw.",
+      "Memory management and gateway stability cause growing pains."
+    ],
+    "ai-trending": [
+      "Agentic skills revolution transforms developer coding workflows.",
+      "NVIDIA's SkillSpector detects malicious patterns in AI agent skills.",
+      "LMCache supercharges LLM serving with ultra-fast KV cache layer.",
+      "NousResearch's Hermes Agent sees massive community traction.",
+      "agentsview launches as a local-first session intelligence dashboard.",
+      "Mem0 demonstrates massive traction for scalable agent memory."
+    ],
+    "ai-web": [
+      "US government forces Anthropic to suspend Claude Fable 5 access.",
+      "Claude Fable 5 jailbreak triggered national security directive.",
+      "Claude Fable 5 and Mythos 5 access suspended over export controls.",
+      "Jailbreak technique allowed Fable 5 to identify cyber vulnerabilities.",
+      "Anthropic routed sensitive Fable 5 queries to older Opus 4.8 model.",
+      "New Mythos-class models mark a leap in vision and coding."
+    ],
+    "ai-hn": [
+      "Amazon-backed US action suspends access to Anthropic top models.",
+      "GLM 5.2 launches with massive 1M-context window for open-source AI.",
+      "GLM 5.2 release highly relevant as Western models face access bans.",
+      "Massive debates spark over extreme stakes of frontier AI development.",
+      "Community tests if GLM 5.2 reliably holds context for huge codebases.",
+      "Developers express deep concerns over AI misuse in law enforcement."
+    ],
+    "rl-daily": [
+      "Reinforcement learning efforts concentrate heavily on LLM alignment.",
+      "Enterprise frameworks like TRL and verl dominate ecosystem dispatch.",
+      "Distributed compute bottlenecks challenge visual-language alignment.",
+      "Multi-turn agentic workflows become a primary focus for RL training.",
+      "Traditional RL libraries shift into a mature maintenance phase.",
+      "Algorithmic correctness and API standardization dominate CleanRL."
+    ],
+    "agent-orch": [
+      "Multi-agent execution and orchestration frameworks see rapid growth.",
+      "Claude Squad and OpenAI Symphony lead in orchestration activity.",
+      "Agent Orchestrator ecosystem expands to cover 45 distinct projects.",
+      "Vibe Kanban and AutoGPT push forward autonomous task management.",
+      "HumanLayer emphasizes safe human-in-the-loop agent interactions.",
+      "Developer focus shifts toward scalable multi-agent architectures."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro leads Hugging Face with over 3.2M downloads.",
+      "Google's Gemma 4 family sees explosive traction across formats.",
+      "ByteDance Bernini-R pioneers aggressive any-to-any video models.",
+      "Ideogram-4 highlights a major industry pivot to multimodal AI.",
+      "Community heavily fine-tunes models to remove safety alignments.",
+      "Massive MoE architectures optimized for local hardware via GGUF."
+    ],
+    "ai-community": [
+      "Cheaper AI models can cost 8.6x more due to verbose reasoning loops.",
+      "Dev testing demands live AI models over basic MCP unit tests.",
+      "Suspension of Claude Fable 5 sparks massive geopolitical debate.",
+      "Era of blind vibe coding shifts to structured skill linting.",
+      "Developers prioritize strict prompt security and observability.",
+      "Deep architectural understanding of LLMs demanded by community."
+    ]
+  }
+}
