@@ -1,0 +1,69 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 发布 Rust Alpha 版，正死磕跨平台支持",
+      "OpenCode 连发 v1.17.6/7，解决终端清理与额度焦虑",
+      "CodeWhale 品牌更名，Windows 下 TUI 彻底冻结引热议",
+      "Gemini CLI 爆出 Auto Memory 隐私泄漏及执行卡死",
+      "Claude Code 悬赏修复数据丢失风险及 TUI 回归 Bug",
+      "AI CLI 工具竞争核心转向多智能体与沙箱安全管控"
+    ],
+    "ai-agents": [
+      "OpenClaw 活跃度爆表：500 次 Issue 互动，482 个 PR 待审",
+      "OpenClaw 修复 ACP 绑定线程，解决后续消息无法送达",
+      "团队推进安全边界：默认拒绝无沙箱环境的直接执行权限",
+      "防内存无限增长，DeepSeek DSML 工具调用缓冲设硬限制",
+      "OpenClaw 大规模合并中文 i18n，打磨非英语母语市场体验",
+      "限制上下文压缩内存占用，底层网关架构强化稳定性"
+    ],
+    "ai-trending": [
+      "英伟达推出 AI 安全扫描器 SkillSpector，单日增星近千",
+      "吴恩达 aisuite 提供统一接口，无缝切换各家主流大模型",
+      "Caveman 强制极简语法回复，为 Claude Code 削减 65% Token",
+      "ECC 居榜首，为 Claude Code 提供技能、直觉和记忆增强",
+      "ollama 霸主地位稳固，抢先支持 Kimi-K2.6、GLM-5.1 等",
+      "browser-use 突破 9.8 万星，让 AI 像人一样浏览网页填表"
+    ],
+    "ai-hn": [
+      "里约热内卢自研大模型被社区实锤为开源模型拼接产物",
+      "Anthropic 因美国出口管制政策陷入巨大舆论漩涡",
+      "Claude Fable 5 与 GPT-5.5 基准对比：规划更强执行相当",
+      "硬核探讨大模型落地科学，Making Claude a Chemist",
+      "The Engineer 展示 Claude Code 自动打通 Issue 到 PR 闭环",
+      "Anthropic 官方释出 Claude Managed Agents 架构最佳实践"
+    ],
+    "rl-daily": [
+      "RL 生态全面转向大模型对齐，经典 RL 框架陷入停滞期",
+      "verl 深度重构底层引擎，死磕全异步训练与复杂 Agent",
+      "TRL 完善 GRPO/GOLD 鲁棒性，聚焦多模态 Gemma 4 对齐",
+      "slime 强攻 PPO 算子级显存溢出痛点，接入多模态 MoE",
+      "AReaL 修复张量并行缺陷，探索 PPO 高级双向掩码策略",
+      "RLHF 进入深水区，TRL 提出 GMPO 算法抑制异常主导"
+    ],
+    "agent-orch": [
+      "项目库扩容至 45 个，多智能体编排生态迎来爆发期",
+      "主流社区聚焦多智能体工作流与人类干预机制",
+      "底层架构持续演进，探索大规模 Agent 的任务调度极限",
+      "智能体编排从简单脚本自动化迈向复杂工程化协作",
+      "异构工具栈加速整合，标准化 API 协议成为开发刚需",
+      "编排框架与本地 LLM 结合，打造低成本高隐私工作流"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 登顶，狂揽 300 万下载与 4800 赞",
+      "谷歌发布 Gemma-4-12B，原生支持 any-to-any 任务",
+      "英伟达 LocateAnything-3B 大幅刷新细粒度视觉定位表现",
+      "Ideogram 4 高精度文生图模型及量化版引爆下载热潮",
+      "Kimi-K2.7-Code 针对编程任务深度优化备受开发者瞩目",
+      "开源量化生态繁荣，全新基座的去审查微调版主导榜单"
+    ],
+    "ai-community": [
+      "开发者分享多 CLI 并行：Claude Code 与 Codex 分工实操",
+      "抛弃昂贵订阅，用 Mac Mini 搭建本地大模型实战指南",
+      "深扒 MCP 安全漏洞：某类提示词注入攻击畅通无阻",
+      "总结 60 天构建 48 个生产级 AI 系统的避坑血泪史",
+      "警告：预发环境无法捕获的五大 Agent 失败模式",
+      "AI 时代构建免费开源的 Sourcegraph 替代方案"
+    ]
+  },
+  "en": {}
+}
