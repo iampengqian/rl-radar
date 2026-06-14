@@ -63,7 +63,24 @@
       "总结 60 天构建 48 个生产级 AI 系统的避坑血泪史",
       "警告：预发环境无法捕获的五大 Agent 失败模式",
       "AI 时代构建免费开源的 Sourcegraph 替代方案"
+    ],
+    "ai-weekly": [
+      "美国政府禁令：Anthropic最强模型被列为军工物资。",
+      "OpenAI秘密提交S-1招股书，正式冲刺IPO。",
+      "Agent技能插件库霸榜GitHub，迈入技能拼装时代。",
+      "Claude Code等CLI工具爆发“死循环”熔断危机。",
+      "Qwen Code等发力后台多智能体并行协同编排。",
+      "OpenClaw收紧安全边界，严防思考链泄露与攻击。"
     ]
   },
-  "en": {}
+  "en": {
+    "ai-weekly": [
+      "US export controls force Anthropic to ban global Claude access.",
+      "Anthropic releases Mythos 5, but risky fallback is jailbroken.",
+      "OpenAI secretly files S-1 with SEC for a massive public IPO.",
+      "Agent 'skill engineering' plugins explode on GitHub Trending.",
+      "China advances open-source with DeepSeek V4 and GLM-5.2 drop.",
+      "Dev pivot to hard security and memory over pure autonomy."
+    ]
+  }
 }
