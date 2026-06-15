@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 跨越代码生成，全面迈向多智能体任务编排深水区",
+      "Qwen Code 社区极度活跃，直击上下文撑爆与后台任务痛点",
+      "细粒度安全护栏爆发刚需，防模型绕过分支保护乱删库",
+      "Claude Code v2.1.178 发版，重点攻坚自主操作安全",
+      "OpenAI Codex rust-v0.140.0 更新，聚焦架构统一与并发控制",
+      "跨平台兼容仍是痛点，Windows/WSL 路径成开发者最大灾难"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.6.8-beta.1，重构多渠道消息投递机制",
+      "新版致 Telegram 富文本解析严重回归，社区紧急修复",
+      "PR 修复棘手的每日会话重置导致用户自定义行为丢失问题",
+      "跨平台支持迎优化：修复 Windows GBK 编码读取文件乱码",
+      "系统网关稳定性提升，解决 systemd 网关单元作用域冲突",
+      "企业级安全沙箱隔离与跨端兼容成社区当前最核心诉求"
+    ],
+    "ai-trending": [
+      "Agent-Reach 暴涨千星，一行 CLI 让 AI 读取全网社交媒体",
+      "cua 开源 Computer-Use 基建，提供接管全系统桌面的沙盒",
+      "ECC 爆火：为 Claude Code 等注入直觉模拟与安全防护",
+      "claude-mem 爆火：用 AI 压缩历史操作实现跨会话持久记忆",
+      "TradingAgents 获高关注度，多智能体大模型模拟金融交易",
+      "Ollama 支持跑前沿开源大模型，单巨头 CLI 垄断被打破"
+    ],
+    "ai-web": [
+      "OpenAI 官宣成立合作伙伴网络，加速 B2B 渠道商业化",
+      "Anthropic 破解大模型黑盒，发现高度拟人的情绪神经元",
+      "Claude 进军硬核科研，与世界顶级专家合作强化化学能力",
+      "Anthropic 聚焦跨模态流畅性，让 Claude 轻松读懂核磁共振",
+      "AI 巨头战略显分化：Anthropic 扎根底层与 OpenAI 搞商业化",
+      "解读模型情绪概念对构建安全可控的底层系统意义深远"
+    ],
+    "ai-hn": [
+      "出口管制来袭，Anthropic 旗舰 Fable/Mythos 模型被迫下线",
+      "Ask HN 爆帖：开发者热议抛弃云端全面拥抱本地大模型",
+      "AI 商业化步入深水区，Claude Code 高昂订阅费引发诉讼",
+      "Fable 5 训练方法曝光：通过分析推理轨迹进行模型对齐",
+      "Spotlight 发布：帮你实时可视追踪 AI 代码助手的底层操作",
+      "AI 化身 SRE 实战：精准排查 Postgres 底层虚警并修复"
+    ],
+    "rl-daily": [
+      "Agentic RL 架构重塑进行时，TRL 框架迎来高频迭代",
+      "verl 深度攻坚异构硬件支持与超大 MoE 模型显存优化",
+      "slime 根治千亿模型计算 OOM，推进 RL 估计算法解耦",
+      "ROCK 发力基础设施，为 Agentic RL 打造高容错沙箱集群",
+      "经典 RL 库进入极稳态，SB3 依赖瘦身并发布 v2.9.0",
+      "AReaL 演进 v2 微服务化架构，积极探索扩散模型 RL"
+    ],
+    "agent-orch": [
+      "报告缺失",
+      "报告缺失",
+      "报告缺失",
+      "报告缺失",
+      "报告缺失",
+      "报告缺失"
+    ],
+    "ai-community": [
+      "幻觉不是 Bug 而是机制？颠覆性指出架构设计存在错误分配",
+      "硬核降本指南：如何将单次 LLM 推理成本压缩至十分之一",
+      "Anthropic 旗舰模型突遭封禁引发单点故障与自主可控热议",
+      "K8s 环境规模化部署本地大模型集群的健康门控实战",
+      "无 API 依赖！微调 3B 小模型打造垂直领域的风控审查",
+      "直击生产痛点：分享部署 LLM 护栏防止提示词注入经验"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Rapid AI CLI feature expansion outpaces infrastructure stability.",
+      "Claude Code v2.1.178 focuses on granular permissions and pathing.",
+      "Industry shifts from chat interfaces to autonomous multi-agent tools.",
+      "Developers demand robust sandboxing to prevent catastrophic actions.",
+      "Strict safety guardrails emerging as universal tool bottlenecks.",
+      "Model Context Protocol heavily integrated into new dev tools."
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.6.8-beta.1 massively improves WhatsApp delivery.",
+      "OpenClaw processes 500 issues and 500 PRs in 24 hours.",
+      "OpenClaw faces a massive backlog with 434 open issues.",
+      "Telegram now supports structured rich text and expandable quotes.",
+      "Core team struggling to keep pace with complex feature requests.",
+      "Development cycle focused on hardening messaging integrations."
+    ],
+    "ai-trending": [
+      "AI open-source ecosystem dominated by agent skills frameworks.",
+      "NVIDIA SkillSpector detects malicious patterns in AI agent skills.",
+      "New surge in tools providing persistent memory to existing LLMs.",
+      "Foundation models for market prediction gaining explosive traction.",
+      "Infrastructure security for AI agents enters the spotlight.",
+      "ECC provides memory and security for agent harnesses like Cursor."
+    ],
+    "ai-web": [
+      "Anthropic maps AI neural activations to human emotion concepts.",
+      "OpenAI teases OpenAI Partner Network for enterprise scaling.",
+      "Frontier labs expanding B2B sales architectures as market matures.",
+      "Anthropic pushes specialized enterprise verticals like chemistry.",
+      "Claude Sonnet 4.5 develops internal machinery emulating psychology.",
+      "Strategic divergence shows in Anthropic and OpenAI comms."
+    ],
+    "ai-hn": [
+      "Trump admin forced shutdown of Anthropic's Fable and Mythos.",
+      "Engineers question if local models can replace cloud powerhouses.",
+      "AI successfully diagnoses complex low-level Postgres anomalies.",
+      "Anthropic launches Claude Corps amid commercial pressures.",
+      "New developer tools and a brewing AI price war underscore growth.",
+      "Deep dive into how Anthropic trained Fable 5 reasoning traces."
+    ],
+    "rl-daily": [
+      "Paradigm shift moves RL focus to LLM alignment.",
+      "Algorithmic frameworks rushing to support multi-turn agents.",
+      "Distributed platforms optimizing memory bottlenecks and Ascend NPUs.",
+      "RLVR and multi-turn agentic workflows driving major updates.",
+      "Classical RL control environments like Gymnasium remain stable.",
+      "Projects verl, slime, and TRL drive structural ecosystem updates."
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem expanding to 45 active projects.",
+      "New frameworks focus on optimizing autonomous task execution.",
+      "AutoGPT, AutoGen, and MetaGPT lead agent orchestration space.",
+      "Claude Squad and Symphony drive multi-agent orchestration.",
+      "Developer tools prioritize securing and giving sight to agents.",
+      "Projects emphasize integrating autonomous coding into workflows."
+    ],
+    "ai-community": [
+      "Anthropic Fable 5 outage sparks digital sovereignty concerns.",
+      "Guide cuts LLM inference costs from $0.011 to $0.0009.",
+      "Developers sharing production-hardened lessons on LLM unreliability.",
+      "Sudden model disappearances highlight AI supply chain vulnerabilities.",
+      "Pragmatic shift from AI hype to harsh economic realities.",
+      "Engineers focus on fixing severe amnesia in AI agents."
+    ]
+  }
+}
