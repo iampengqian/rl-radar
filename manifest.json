@@ -1,6 +1,27 @@
 {
-  "generated": "2026-06-14T23:25:47.926Z",
+  "generated": "2026-06-15T22:54:02.801Z",
   "dates": [
+    {
+      "date": "2026-06-16",
+      "reports": [
+        "ai-cli",
+        "ai-cli-en",
+        "ai-agents",
+        "ai-agents-en",
+        "rl-daily",
+        "rl-daily-en",
+        "ai-web",
+        "ai-web-en",
+        "ai-trending",
+        "ai-trending-en",
+        "ai-hn",
+        "ai-hn-en",
+        "ai-community",
+        "ai-community-en",
+        "agent-orch",
+        "agent-orch-en"
+      ]
+    },
     {
       "date": "2026-06-15",
       "reports": [
