@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 底层重构 Rust 架构，解耦执行器迎密集迭代。",
+      "Claude Code 发 v2.1.179，修补死锁瓶颈与强化安全沙盒。",
+      "Gemini CLI 专注安全防护，提交极高 PR 集中隔离修复。",
+      "Qwen Code 发 v0.18.1 预览版，攻坚多智能体与并发控制。",
+      "AI CLI 竞争迈入深水区，跨平台执行与权限管控成护城河。",
+      "开发者对 AI 失控容忍度降至冰点，精细化权限管控成刚需。"
+    ],
+    "ai-agents": [
+      "OpenClaw 社区高负荷运转，单日处理 143 个 PR 引入自动修复。",
+      "OpenClaw 发 v2026.6.8，大幅增强 Telegram 等富文本投递能力。",
+      "OpenClaw 引入多槽位记忆角色架构，解除插件全局互斥限制。",
+      "OpenClaw 修复 QQ Bot WebSocket 断线重连导致的消息丢失。",
+      "项目重心向多智能体编排倾斜，攻坚网关内存溢出与跨平台。",
+      "OpenClaw 活跃度爆表，24小时内 Issues 与 PR 触达 500 上限。"
+    ],
+    "ai-trending": [
+      "ECC 拿下 21 万星，大幅降低 Claude Code 等工具的 Token 消耗。",
+      "NousResearch 的 hermes-agent 获 19 万星，打造自适应超级智能体。",
+      "OpenCLI 获 2.4 万星，能将任意网站转化为 CLI 供 Agent 调用。",
+      "vllm 引擎狂揽 8.3 万星，稳坐大模型高吞吐量推理部署基石。",
+      "VoxCPM 热度飙升，推出突破性无分词器多语言语音生成模型。",
+      "ollama 获 17 万星，已无缝支持 Kimi-K2.6 与 GLM-5.1 最新模型。"
+    ],
+    "ai-web": [
+      "Anthropic 研究称非工程师借 Claude 写代码成功率媲美专家。",
+      "40万次会话证明 Agentic Coding 时代来临，任务经济价值飙升。",
+      "Anthropic 携手 TCS，向金融医疗等强监管行业大规模渗透。",
+      "TCS 作为零号客户，将在 5 万名员工中深度部署 Claude。",
+      "AI 行业重心转移：从基础模型能力转向智能体经济学验证。",
+      "OpenAI 疑似更新 Deployment Simulation（部署模拟）页面。"
+    ],
+    "ai-hn": [
+      "DeepSeek V4 Pro 惊艳社区：性能逼近 Claude 且成本仅 5%！",
+      "智谱发布开源 GLM-5.2，主打长周期复杂任务处理能力。",
+      "OpenAI 去年亏损暴增 8 倍至 340 亿美元震惊 HN 社区。",
+      "Anthropic 遭美政府高级模型出口禁令，牵扯出六年恩怨。",
+      "开发者推出 VS 原生版 Claude Code，支持直接应用代码差异。",
+      "Memento 上线：支持自托管的个人邮件 Agentic 搜索与知识库。"
+    ],
+    "rl-daily": [
+      "RL 开源生态向基于可验证奖励(RLVR)与多轮智能体学习演进。",
+      "verl 迎异构算力适配大爆发，加速昇腾 NPU 与 MoE 工程化。",
+      "TRL 攻坚多进程异步 GRPO 架构，全面拥抱 FSDP2 负载均衡。",
+      "ROCK 剑指生产级集群调度，推出 K8s CPU 超卖与通信优化。",
+      "AReaL 探索 Diffusion RL 跨界外溢，高频迭代前沿训练算法。",
+      "Gymnasium 提议开放底层物理参数，迎合 Sim-to-Real 泛化研究。"
+    ],
+    "agent-orch": [
+      "生态焦点转向：AI Agent 项目全面发力多智能体协同与编排。",
+      "Claude Squad 等开源项目发力，重塑终端任务的调度体验。",
+      "MetaGPT 与 AutoGen 持续引领复杂工作流与多智能体框架。",
+      "HumanLayer 引关注，致力于在 Agent 工作流中无缝融入人工干预。",
+      "Vibe Kanban 等项目爆火，探索将看板管理与 AI 编码深度融合。",
+      "开源生态涌现如 Symphony 及 dmux，攻坚智能体分布式执行流。"
+    ],
+    "ai-arxiv": [
+      "研究表明：大语言模型内部激活中隐式追踪当前推理成功率。",
+      "提出将探索性强化学习应用于大模型的“中期训练”阶段。",
+      "引入“证据树”作为奖励机制，大幅提升 Agent 搜索与推理效率。",
+      "提出基于稀疏自编码器的可扩展电路框架，提升机制可解释性。",
+      "多智能体共识框架成功解决复杂的海关关税编码分类难题。",
+      "十年数据分析：量化评估 AI 领域开放科学与代码复现效果。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 霸榜，揽获近五千点赞展现国产开源统治力。",
+      "谷歌发 12B 统一架构 Gemma-4，支持 Any-to-Any 多模态交互。",
+      "英伟达 LocateAnything-3B 模型：仅 3B 参数实现超强视觉定位。",
+      "智谱最新一代大规模 MoE 模型 GLM-5.2 发布即引社区高度关注。",
+      "结合 Diffusion 技术的跨界多模态模型 diffusiongemma 爆火。",
+      "unsloth 团队发力，最新旗舰 Kimi-K2.7 等迅速适配端侧 GGUF。"
+    ],
+    "ai-community": [
+      "利用 GraphRAG+MCP 为 AI 划定幻觉边界，企业级架构落地指南。",
+      "血泪教训：一个 $0 的死循环 Bug 导致扣除 1800 美元 API 费。",
+      "安全专家警告：接入企业代码库的 AI Agent 已成新型内鬼威胁。",
+      "地缘政策变动敲响警钟，单一的 AI 提供商是系统单点故障。",
+      "大模型输出端比输入端更难防范，极易遭受隐蔽的注入攻击。",
+      "反思：Tailwind 裁员 75% 并甩锅 AI，开源商业化困局被揭开。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Ecosystem matures into multi-agent orchestration ecosystems.",
+      "Model Context Protocol becomes a foundational standard.",
+      "Developers grapple with runaway token consumption issues.",
+      "Claude Code releases v2.1.179 focusing on stability.",
+      "OpenAI Codex rolls out v0.141.0 alpha builds with Rust.",
+      "Tools aggressively compete to support autonomous workflows."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 1,000 updates driven by messaging integrations.",
+      "v2026.6.8 overhauls Telegram and WhatsApp rich text delivery.",
+      "Project exhibits explosive but potentially unstable scaling.",
+      "High ratio of open issues suggests severe stability growing pains.",
+      "Heavy focus on refining complex multi-agent orchestration.",
+      "Critical P0/P1 memory bugs currently plague the platform."
+    ],
+    "ai-trending": [
+      "Terminal and CLI-based coding agents dominate the ecosystem.",
+      "ECC agent harness performance system hits 216,000 stars.",
+      "Alibaba's zvec offers lightning-fast localized vector retrieval.",
+      "OpenCLI transforms any website into a CLI for AI agents.",
+      "vllm remains the backbone production LLM inference engine.",
+      "Autonomous agents expand into deep web scraping and finance."
+    ],
+    "ai-web": [
+      "Anthropic and OpenAI show a strong strategic enterprise divergence.",
+      "OpenAI signals deeper push into pre-deployment risk testing.",
+      "Anthropic proves ROI of agentic coding using empirical data.",
+      "Domain experts match engineers in AI coding task success.",
+      "Human-AI collaboration shifts heavily toward AI execution.",
+      "Anthropic aggressively expands global B2B footprint via TCS."
+    ],
+    "ai-hn": [
+      "White House bans Anthropic models for G7 countries.",
+      "Leaked documents reveal OpenAI's massive $34B spend.",
+      "Z.ai's GLM-5.2 brings frontier intelligence to open weights.",
+      "DeepSeek V4 Pro challenges Claude at 5% of the cost.",
+      "Community debates sustainability of frontier model development.",
+      "Cost-efficient open-source models become highly viable."
+    ],
+    "rl-daily": [
+      "Ecosystem shifts from static RLHF to agentic workflows.",
+      "Frameworks rapidly integrate advanced DAPO and Dr.GRPO variants.",
+      "Infrastructure adapts for massive MoE and VLM architectures.",
+      "verl pushes MoE memory limits and async inference boundaries.",
+      "Systems aggressively adapt to diverse hardware accelerators.",
+      "Intense compute demands drive new hardware NPU adaptation."
+    ],
+    "agent-orch": [
+      "Orchestrators focus on managing autonomous agent workflows.",
+      "Claude Squad and Symphony lead multi-agent orchestration.",
+      "MetaGPT and AutoGPT continue to dominate ecosystem mindshare.",
+      "Vibe Kanban and OpenKanban offer visual agent management.",
+      "HumanLayer integrates critical human-in-the-loop oversight.",
+      "dmux and CrewAI push boundaries of agent collaboration."
+    ],
+    "ai-arxiv": [
+      "RL surges to optimize complex agentic workflows and reasoning.",
+      "Value Axis discovered to track LLM reasoning success rates.",
+      "ExpRL improves base models via mid-training RL injection.",
+      "KVEraser precisely deletes local context without corruption.",
+      "Mechanistic interpretability successfully reverse-engineers AI.",
+      "Novel frameworks emerge to solve KV cache bottlenecks."
+    ],
+    "ai-hf": [
+      "Google's Gemma-4 and DeepSeek-V4 dominate the model charts.",
+      "Massive surge in unified any-to-any multimodal AI models.",
+      "Community pushes aggressive quantization and edge deployment.",
+      "DeepSeek-V4-Pro surpasses 2.8 million downloads instantly.",
+      "DiffusionGemma introduces unique diffusion-based text generation.",
+      "Sub-15B parameter models accelerate localized consumer hardware."
+    ],
+    "ai-community": [
+      "Pivot from AI hype to harsh production engineering realities.",
+      "GraphRAG and better context engineering minimize hallucinations.",
+      "Unoptimized agent loops trigger massive $1,800 API bills.",
+      "Developers design targeted architectures to confine AI risks.",
+      "Emerging insider threats spark digital privacy concerns.",
+      "Growing skepticism sparks debates on developer productivity."
+    ]
+  }
+}
