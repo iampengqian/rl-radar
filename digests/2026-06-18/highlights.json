@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 跨越极客阶段，企业级自动化成主战场",
+      "OpenAI Codex 密集发布 3 个 Alpha 版，试探多 Agent",
+      "OpenCode 发布 v1.17.8，集中优化底层数据库防 OOM",
+      "Claude Code 发布 v2.1.181，增强交互配置与沙箱优化",
+      "Qwen Code 发新版，支持 Token 计费与本地模型解耦",
+      "Qwen Code 融合 QQ Bot 生态，拓展应用边界"
+    ],
+    "ai-agents": [
+      "OpenClaw 日处超 500 PR，社区活跃度爆表",
+      "积压 432 个待合并 PR，核心维护团队面临严重瓶颈",
+      "修复群聊失败后静默丢弃消息的严重 Bug",
+      "修复 API 中断导致 Telegram 通道永久挂起的缺陷",
+      "社区激烈探讨多智能体编排的可靠性",
+      "Prompt Cache 失效导致高昂成本成核心痛点"
+    ],
+    "ai-trending": [
+      "AI 开源生态呈现智能体技能化与降本增效双核驱动",
+      "mattpocock/skills 预设 AI 技能集，单日激增 1570 Star",
+      "obra/superpowers 智能体技能框架，今日斩获 1205 Star",
+      "codebase-memory-mcp 将代码库转为图谱，硬核降耗",
+      "Agent-Reach 赋予 AI 浏览全网能力，零 API 费用",
+      "caveman 模拟穴居人极简用语，硬核削减 65% Token"
+    ],
+    "ai-hn": [
+      "OpenAI 巨额财务泄露引发大模型商业模式质疑",
+      "Anthropic 与美政府博弈致模型下线，赢开发者同情",
+      "机器人冲刺时该跑 Claude 还是 Grok？引发热烈探讨",
+      "Adam (YC W25) 开源 AI CAD 被视为专业工程软件突破",
+      "Mira 开源本地 AI 代码审查，精准切中隐私控制需求",
+      "LLM 参差不齐的智能在不可预测环境下存隐患"
+    ],
+    "rl-daily": [
+      "大模型强化学习完成范式转移，聚焦 LLM 及智能体对齐",
+      "verl 发力 Agentic 异步架构及昇腾等异构算力支持",
+      "TRL 推进 AsyncGRPO 对齐与 MoE 架构适配",
+      "slime 发力分离式架构下的跨集群通信建设",
+      "ROCK 专注 Agent 沙箱生命周期与大规模集群稳定性",
+      "GRPO 算法变体成为强化学习生态绝对核心"
+    ],
+    "agent-orch": [
+      "Agent 编排生态日报 2026-06-18",
+      "涵盖 45 个多智能体编排与工作流框架",
+      "包含 Claude Squad、AutoGPT、MetaGPT 等热门项目",
+      "包含 OpenAI Symphony 与微软 AutoGen 编排方案",
+      "HumanLayer 等人机协同智能体编排框架入选",
+      "多智能体协同开发与复杂任务拆解成重点"
+    ],
+    "ai-arxiv": [
+      "循环/迭代架构回潮，显著增强模型深度推理能力",
+      "Variable-Width Transformers 打破等宽传统提升扩展效率",
+      "首次将同策略自蒸馏应用于扩散语言模型 dLLM",
+      "大规模红队测试揭示前沿大模型防越狱鲁棒性盲区",
+      "提出“认知萎缩”概念，填补长期交互评估体系空白",
+      "VERITAS 框架使具身机器人实现推理时自我引导改进"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 与 Qwen3.6 双双霸榜，接管开源生态",
+      "Unsloth 等社区全面推出 GGUF 和 FP8 轻量化变体",
+      "带 uncensored 标签的微调模型下载量突破数百万",
+      "Google diffusiongemma 创新结合扩散模型与 Gemma 架构",
+      "智谱 AI 旗舰级 MoE 模型 GLM-5.2 上线冲入前三",
+      "WeiboAI 推出 3B 小巧深度思考模型 VibeThinker"
+    ],
+    "ai-community": [
+      "生产环境痛点显现，开发者反思 AI Agent 稳健性",
+      "实测：上下文窗口耗尽是 AI Agent 运行中变笨主因",
+      "rsync 盲目采用 AI 生成提交致崩溃，敲响基建警钟",
+      "提出模块化指令架构，有效解决系统提示耗 Token 痛点",
+      "GenAI 语义支持填补 RAG 系统在 OpenTelemetry 的空白",
+      "SQLite 成为 AI Agent 轻量级状态管理的新选择"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI shifts to multi-agent orchestration and sandboxing",
+      "Claude Code v2.1.181 pushes stable enterprise features",
+      "OpenAI Codex alpha tests Rust v0.141.0 with 3 builds",
+      "Open-source CLIs gain traction via model-agnostic BYOK",
+      "Codex and Gemini lead pure code iteration velocity",
+      "Massive architectural shift enables background execution"
+    ],
+    "ai-agents": [
+      "OpenClaw ecosystem hyper-active with 500 PRs in 24 hours",
+      "Triage pipeline overwhelmed with 432 PRs left unmerged",
+      "No new releases cut as project awaits stabilization",
+      "Merged PRs focus on agent memory and gateway stability",
+      "Critical memory-loss bugs and regressions remain pending",
+      "68 PRs merged to advance diagnostics and triage tools"
+    ],
+    "ai-trending": [
+      "DeusData MCP cuts token usage by 99% with sub-ms queries",
+      "Trend shifts from foundational training to agent harnesses",
+      "RAG evolves from vector retrieval to knowledge graphs",
+      "Specialized vertical AI agents reach production maturity",
+      "Ollama trends as it adds support for new frontier models",
+      "Universal LLM gateway proxies offer intelligent load balancing"
+    ],
+    "ai-hn": [
+      "Leaked OpenAI financials reveal billions in compute losses",
+      "Trump administration targets Anthropic over AI safety",
+      "Anthropic political feud may be boosting enterprise sales",
+      "Debaters question which model is best for physical robotics",
+      "Developers explore limits of autonomous coding agents",
+      "AI proves highly practical in complex drug discovery research"
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcated between LLMs and classic algorithms",
+      "Agentic RL and RLVR dominate open-source momentum",
+      "New distributed training handles massive MoE architecture",
+      "Classic foundational RL libraries experience zero activity",
+      "Infrastructure projects solve critical sandbox bottlenecks",
+      "Developer attention shifts almost entirely to LLM training"
+    ],
+    "agent-orch": [
+      "Ecosystem accelerates multi-agent orchestration frameworks",
+      "New tools push stateful fallback patterns for AI agents",
+      "Kanban-style managers gain traction for coding assistants",
+      "Developers prioritize human-in-the-loop orchestration",
+      "Dozens of new autonomous team collaboration tools emerge",
+      "Major frameworks like AutoGPT and CrewAI keep evolving"
+    ],
+    "ai-arxiv": [
+      "Looped Transformers offer dynamic compute allocation",
+      "Inference-time steering enables autonomous self-correction",
+      "First on-policy self-distillation tailored for dLLMs",
+      "AI evaluation moves beyond standard benchmarks",
+      "Models transition from static predictors to dynamic systems",
+      "Depth-adaptive architectures solve reasoning without scaling"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro leads charts with over 2.8M downloads",
+      "Google Gemma-4 released alongside DeepSeek heavyweights",
+      "Industry shifts to lightweight, efficient MoE architectures",
+      "Multimodality is now a standard expectation for models",
+      "Qwen3.6-35B-A3B activates only 3B params at inference",
+      "Community rapidly uncensors and quantizes new releases"
+    ],
+    "ai-community": [
+      "Community shifts from AI hype to pragmatic engineering",
+      "Premortems with AI build more robust error pipelines",
+      "Silent context window bloat degrades agent performance",
+      "rsync disaster proves human guardrails remain irreplaceable",
+      "Developers dive deep into MCP implementation realities",
+      "Critics question the economic illusions of generative AI"
+    ]
+  }
+}
