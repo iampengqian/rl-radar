@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI工具迈入多智能体协同与企业级集成的深水区。",
+      "Claude Code发布v2.1.183，升级安全防御以防破坏性操作。",
+      "OpenAI Codex连发4个Alpha版，底层用Rust密集重构。",
+      "开发者痛点爆发：多智能体Token烧穿催生预算熔断机制。",
+      "DeepSeek TUI拆分命令边界，全面强化Token预算熔断。",
+      "OpenCode专项治理内存泄漏，发力模型故障转移。"
+    ],
+    "ai-agents": [
+      "OpenClaw底层架构向SQLite迁移，引入多插槽记忆架构。",
+      "OpenClaw发新版：大幅增强Telegram富文本消息投递能力。",
+      "OpenClaw合并核心快照功能，提供一键状态备份与回滚。",
+      "多平台适配：集中修复飞书流式卡片回复等交互错误。",
+      "项目单日社区热度爆表：超450条Issue与460个PR活跃。",
+      "破旧立新：记忆系统与多智能体编排功能进行密集迭代。"
+    ],
+    "ai-trending": [
+      "降本增效爆发：headroom前置压缩Token库日增近四千星。",
+      "codebase-memory-mcp将代码变图谱，狂降99%Token消耗。",
+      "Ollama引擎全面支持Kimi-K2.6与GLM-5.1最新模型。",
+      "智谱GLM-5大热：从Vibe Coding跃升至智能体工程。",
+      "Astro推新型沙箱化Agent框架，专攻代码执行环境安全。",
+      "全球首个开源Agentic视频制作系统横空出世，自带五百技能。"
+    ],
+    "ai-web": [
+      "Anthropic发40万Claude Code会话报告：证实AI经济价值。",
+      "理想协作范式确立：人类主导规划，AI全面接管执行。",
+      "技术门槛降低：非工程师用AI编程成功率追平专业程序员。",
+      "知识杠杆效应：领域专家用更少指令驱动AI完成更多工作。",
+      "AI不再只写代码：端到端任务经济价值半年内飙升25%。",
+      "战略抢跑：Anthropic抢先定义智能体编程的成熟度标准。"
+    ],
+    "ai-hn": [
+      "AlphaFold诺奖得主John Jumper重磅跨界加盟Anthropic。",
+      "安全警钟长鸣：黑客正实质滥用Claude和Codex攻击企业。",
+      "亚马逊因OpenAI合作恩怨，直接砍掉Sam Altman传记片。",
+      "企业AI成本焦虑爆发：FT深度报道引发开发者强烈共鸣。",
+      "基准测试直击痛点：MIT协议GLM-5.2准确度反超GPT-5.5。",
+      "AI展现极高社会价值：辅助医生确诊罕见儿童基因疾病。"
+    ],
+    "rl-daily": [
+      "大模型强化学习霸榜：TRL、verl等LLM对齐框架占90%热度。",
+      "HuggingFace TRL深度重构底层架构，全面拥抱Agentic GRPO。",
+      "字节verl发力强化学习：扩展Agentic与多模态异步集群调度。",
+      "研究风向标：单轮偏好对齐转向多轮交互的Agentic RL爆发。",
+      "传统RL退潮：Gymnasium与CleanRL等经典算法库进入静默期。",
+      "OpenRLHF死磕工程细节，精准优化多轮Agent场景PPO惩罚。"
+    ],
+    "agent-orch": [
+      "多智能体协同与跨设备故障恢复成为编排生态核心焦点。",
+      "AutoGPT与MetaGPT等项目持续引领智能体复杂工作流编排。",
+      "AI工具编排痛点：跨设备系统全局重规划带来巨大性能开销。",
+      "开发者高度关注AI智能体在运行时的安全策略执行与验证。",
+      "全新MCP协议成为标配，加速打通大模型与外部工具链路。",
+      "Claude Squad等轻量级编排工具爆火，主打本地开发提效。"
+    ],
+    "ai-arxiv": [
+      "重大突破：利用鼠标轨迹和眼动等隐式反馈对齐大模型。",
+      "告别黑盒：提出针对重上下文Agent的4-bit KV Cache压缩。",
+      "LedgerAgent引入结构化账本，解决复杂业务策略遵循难题。",
+      "突破全局重规划：提出跨设备Agent系统的层次化故障恢复。",
+      "深度剖析LLM：在混合合规演示下模型是如何被越狱的。",
+      "首创方法：基于概率的高效运行时AI智能体策略安全验证。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro断层登顶，狂揽近五千点赞霸榜HuggingFace。",
+      "智谱GLM-5.2热度极速攀升，挑战闭源模型文本逻辑能力。",
+      "谷歌发Gemma-4：12B旗舰基座，支持Any-to-Any全模态交互。",
+      "NVIDIA发高精度视觉定位大模型，多模态点赞榜单第一。",
+      "谷歌DiffusionGemma：结合扩散与Gemma架构的跨模态创新。",
+      "Kimi推多模态编程模型：能提取图像特征并生成高质量代码。"
+    ],
+    "ai-community": [
+      "打破迷思：AI让写代码变易，但并未让系统工程设计变简单。",
+      "血泪教训：开发者耗费一整周才修好AI修Bug引发的连带Bug。",
+      "工程实战：教你让AI生成带有证据溯源的高可信总结报告。",
+      "爆款教程：手把手教你从零构建Python版的GitHub MCP服务。",
+      "降本妙招：通过架构优化，避免在多智能体中重复支付Token。",
+      "范式转变：在AI时代，规格说明才是控制生成结果的基础设施。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shifting to multi-agent orchestration",
+      "Industry demanding better security and sandboxing",
+      "Claude Code v2.1.183 released amidst systemic bugs",
+      "OpenAI Codex v0.142.0-alpha.6 introduces 4 new alphas",
+      "Gemini CLI tackles 10 issues and 10 pull requests",
+      "Devs push for unified configs to avoid vendor lock-in"
+    ],
+    "ai-agents": [
+      "OpenClaw hit 500 issues and 500 PRs in 24 hours",
+      "v2026.6.9-beta.1 brings rich HTML to Telegram bots",
+      "Core infrastructure migrations causing a bug backlog",
+      "Maintainers struggling to stabilize the new SQLite store",
+      "Multi-agent memory handling is getting major fixes",
+      "Channel-specific message delivery failures patched"
+    ],
+    "ai-trending": [
+      "chopratejas/headroom gains 3,938 stars today",
+      "Agent harnesses and context optimization are trending",
+      "DeusData/codebase-memory-mcp gets 1,055 new stars",
+      "ollama now supports Kimi-K2.6, GLM-5.1, and DeepSeek",
+      "Lightricks/LTX-2 brings agentic frameworks to video",
+      "Context tools shrinking RAG chunks by 95% to save tokens"
+    ],
+    "ai-web": [
+      "Anthropic: non-engineers code as well as engineers",
+      "Domain experts extract significantly more AI value",
+      "Agentic workflows shifting toward complex deployments",
+      "AI debugging time cut in half in 400k session study",
+      "Anthropic analyzes 400k Claude Code user sessions",
+      "Humans handle high-level planning while AI executes"
+    ],
+    "ai-hn": [
+      "MIT-licensed GLM-5.2 outperforms GPT-5.5 in reliability",
+      "Anthropic pauses token-based billing for Agent SDK",
+      "Anthropic poaches AlphaFold Nobel Laureate John Jumper",
+      "Amazon drops Sam Altman biopic after OpenAI deal",
+      "Chinese AI labs announce massive token price cuts",
+      "AI helps physicians diagnose rare childhood diseases"
+    ],
+    "rl-daily": [
+      "Reinforcement learning ecosystem shifting to Agentic RL",
+      "TRL sees high-velocity integration of vLLM and GRPO",
+      "Multi-turn rollouts and tool-calling dominate RL focus",
+      "LLM-specific RL frameworks solving scaling bottlenecks",
+      "verl pushing boundaries in multi-environment training",
+      "Traditional RL libraries see a quiet day of activity"
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem expands to 45 projects",
+      "AutoGPT, MetaGPT, and AutoGen face new competitors",
+      "OpenAI Symphony and Claude Squad dominate workflows",
+      "Developers prioritize multi-agent memory and task states",
+      "Vibe Kanban and 1Code streamline AI dev pipelines",
+      "HumanLayer introduces human-in-the-loop safety checks"
+    ],
+    "ai-arxiv": [
+      "Researchers pivot to securing and scaling AI agents",
+      "New benchmarks target multi-turn adversarial attacks",
+      "Ultra-quantized KV caching solves agentic latency",
+      "LedgerAgent reduces policy violations during tool calls",
+      "Hierarchical recovery fixes multi-device agent errors",
+      "Mechanistic studies target LLM safety compliance"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates charts with 3M+ downloads",
+      "Google Gemma-4 family introduces any-to-any processing",
+      "Massive 397B parameter open-weight MoE model released",
+      "GLM-5.2 brings next-gen MoE architecture to the masses",
+      "DiffusionGemma fuses modalities in unprecedented ways",
+      "Community favors uncensored and quantized local builds"
+    ],
+    "ai-community": [
+      "Dev.to: AI writes code, but humans must do engineering",
+      "Engineer loses a week to bugs created by AI fixing bugs",
+      "Devs migrate from costly proprietary models to local AI",
+      "Practitioners battle hidden tech debt of agent loops",
+      "AI summaries need evidence-bound reports for credibility",
+      "Security vulnerabilities in private inference exposed"
+    ]
+  }
+}
