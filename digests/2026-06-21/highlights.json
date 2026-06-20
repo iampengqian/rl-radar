@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Codex桌面端爆严重Bug，底层Rust架构急速重构。",
+      "Claude Code陷失控与计费争议，MCP生态狂飙。",
+      "Gemini CLI急修安全漏洞，多模态能力大补齐。",
+      "OpenCode深耕本地大模型，TUI架构迎深度优化。",
+      "Qwen Code发v0.18.4版，强化底层校验与跨端交互。",
+      "AI CLI全面向多智能体协同与系统级重构演进。"
+    ],
+    "ai-agents": [
+      "OpenClaw热度爆表，单日产生近500个活跃Issue。",
+      "OpenClaw入不敷出，代码审查正面临严重积压。",
+      "OpenClaw底层大重构：核心状态平滑迁移SQLite。",
+      "修复群组聊天卡死与中断恢复等关键体验痛点。",
+      "社区热论Cron定时任务与会话状态隔离的痛点。",
+      "项目正攻坚6.x系列稳定性，今日暂无新发版。"
+    ],
+    "ai-trending": [
+      "headroom爆砍95%Token消耗，日增近3800星。",
+      "codebase-memory-mcp秒级转知识图谱，日增1200星。",
+      "ollama全面支持Kimi-K2.6、GLM-5.1等最新模型。",
+      "kilocode爆火，提供极受欢迎的开源编程Agent。",
+      "flue登榜：为AI提供安全执行的沙盒隔离环境。",
+      "learn-claude-code斩获6.7万星，教你造终端壳。"
+    ],
+    "ai-hn": [
+      "大模型去对齐：安全团队打造专属渗透测试CLI。",
+      "开源模型在特定垂直领域已追平闭源前沿模型。",
+      "强效LLM降本方案，直击Token消耗巨大痛点。",
+      "Persona.js发布原生WebMCP的JS Agent UI库。",
+      "马斯克预测中国将在明年初发布顶级大模型。",
+      "Anthropic深陷AI出口管制政治与舆论漩涡。"
+    ],
+    "rl-daily": [
+      "TRL深度重构：拥抱多模态与Agentic RL。",
+      "slime攻坚千亿参数SGLang权重同步瓶颈。",
+      "ROCK提升分布式RL训练底座的系统级稳定性。",
+      "AReaL修复大规模RLHF奖励验证挂起隐患。",
+      "verl抢占多轮Agentic RL与连续标记高地。",
+      "RL生态转向多轮长周期智能体任务训练。"
+    ],
+    "agent-orch": [
+      "Multi-Agent：Claude Squad领衔45个编排项目。",
+      "Symphony发力：OpenAI入局多智能体协同。",
+      "AutoGPT与MetaGPT持续引领多智能体编排。",
+      "Claude Squad崛起：强化多智能体并发编排。",
+      "HumanLayer聚焦：人机协同交互的边界控制。",
+      "OpenKanban与Vibe：为AI Agent打造专属看板。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro断层领先，下载量破279万。",
+      "智谱发布新一代MoE模型GLM-5.2强力压境。",
+      "Google发Gemma-4-12B：支持任意模态转换。",
+      "英伟达 LocateAnything-3B 细粒度视觉定位惊艳。",
+      "谷歌发DiffusionGemma融合图像文本多模态交互。",
+      "Qwen微调霸榜，开发者渴求编码与去审查模型。"
+    ],
+    "ai-community": [
+      "开发者传授绝招：把Claude Code升级为虚拟团队。",
+      "AI记忆应是持久产品状态，别再依赖提示词。",
+      "实战LLM网关：构建路由、降级与语义缓存。",
+      "别让Agent算几何：把确定性计算留给传统代码。",
+      "自治Agent慢性的衰退与异常监控的前瞻视角。",
+      "警惕AI隐私：本地RAG未必是真正的私有化AI。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI dev tools shift to autonomous multi-agent environments.",
+      "Claude Code v2.1.185 focuses on token burn prevention.",
+      "Major players grapple with enterprise-scale billing frictions.",
+      "Open-source tools aggressively innovate local LLM support.",
+      "Ecosystem maturing towards platformization with stricter guardrails.",
+      "Engineering focus shifts to context, sandbox, and TUI stability."
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive activity with 500 issues and 500 PRs.",
+      "Low issue resolution indicates a heavy triage backlog.",
+      "Complex SQLite migration and agent regressions currently strain health.",
+      "Active development focused on patching memory handling.",
+      "Project currently in a heavy patch and cleanup phase.",
+      "Infrastructure hardening and UI enhancements are underway."
+    ],
+    "ai-trending": [
+      "Context optimization and agentic coding dominate open-source.",
+      "Headroom compresses logs and files, saving up to 95% tokens.",
+      "Codebase-memory-mcp indexes codebases into persistent graphs.",
+      "Kilocode is an all-in-one platform for open-source agents.",
+      "Vector databases deepen integration for persistent workflows.",
+      "Codebase knowledge graphs see explosive community growth."
+    ],
+    "ai-hn": [
+      "Anthropic dominates HN via talent grabs and Claude exploits.",
+      "Community debates tension between open-source and proprietary.",
+      "China projected to have Fable 5-class AI models very soon.",
+      "Engineers showcase tools to optimize token usage practically.",
+      "Growing concern over AI security like local file scanning.",
+      "Sentiment leans cautious, balancing vibecoding with liability."
+    ],
+    "rl-daily": [
+      "RL landscape shifts from supervised tuning to agentic RLVR.",
+      "Framework development pivots toward solving systems bottlenecks.",
+      "Focus on communication overhead between training and inference.",
+      "Aiming for zero-downtime weight sync during massive rollouts.",
+      "TRL adds native vLLM decoupling for agentic RLVR.",
+      "slime focuses on scaling infrastructure for massive models."
+    ],
+    "agent-orch": [
+      "Developers shift from coding to conducting orchestration teams.",
+      "Agent observability is critical to catch silent performance drift.",
+      "Production AI requires real engineering rigor over black boxes.",
+      "Community demands architectural necessity of offline-first AI.",
+      "Engineers build deterministic tools like MCP to safely ground LLMs.",
+      "Orchestrating multi-agent teams to drive PRs in parallel."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro and Google Gemma-4 dominate Hugging Face hub.",
+      "Multimodality is now standard with powerful vision-language models.",
+      "Community activity centers on aggressive, uncensored fine-tunes.",
+      "Heavy optimization focus on GGUF quantizations for local use.",
+      "Notable surge in highly specialized edge-optimized AI models.",
+      "GLM-5.2 brings cutting-edge conversational MoE to open-source."
+    ],
+    "ai-community": [
+      "Developers shift from coding to conducting orchestration teams.",
+      "Agent observability is critical to catch silent performance drift.",
+      "Production AI requires real engineering rigor over black boxes.",
+      "Community demands architectural necessity of offline-first AI.",
+      "Engineers build deterministic tools like MCP to safely ground LLMs.",
+      "Orchestrating multi-agent teams to drive PRs in parallel."
+    ]
+  }
+}
