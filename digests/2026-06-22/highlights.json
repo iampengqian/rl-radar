@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 连发 3 个 Alpha 版重构底层",
+      "Qwen Code 发 v0.18.5，上线原生语音输入",
+      "OpenCode 发 v1.17.9，彻底重构 TUI 交互",
+      "Claude Code 遭遇 Bun 运行时灾难与计费异常",
+      "多款 CLI 引入自动压缩，拒绝静默丢失上下文",
+      "CodeWhale 发 v0.8.63，完成 Rust 单体架构解耦"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日狂刷 1000 条动态，社区极其狂热",
+      "OpenClaw 发 beta.1，大幅提升 Agent 轮次可靠性",
+      "Telegram 渠道大更新：完美保留 Markdown",
+      "修复静默故障，解决子代理消息丢失痛点",
+      "核心 PR 已就绪，即将迎来大幅稳定性跃迁",
+      "修复终端群聊死锁，恢复失败状态的会话"
+    ],
+    "ai-trending": [
+      "headroom 暴涨：大模型上下文压缩机能省 95% Token",
+      "deer-flow：字节开源长周期 SuperAgent 引擎",
+      "codebase-memory-mcp：号称减少 99% 的 Token 消耗",
+      "开发者狂热提取并共享知名大牛的工程技能包",
+      "cognee：专治 Agent 跨会话失忆的记忆引擎爆火",
+      "CowAgent 全面转型自我进化 Agent Harness"
+    ],
+    "ai-hn": [
+      "AI 红蓝对抗太猛，数小时内攻破国安机密系统",
+      "Anthropic 强制推行身份验证，引爆隐私激辩",
+      "翻车：AI 裁判盲打高分，根本没看测试文件",
+      "Maccha：专为多 Agent 打造的跨缸记忆中枢",
+      "Codeflowmap：在 AI 时代精准审计你的代码数据流",
+      "LLM 作为自动化测试评估裁判暴露致命幻觉缺陷"
+    ],
+    "rl-daily": [
+      "大模型 RL 生态分化：前沿算法与工业级训练基座",
+      "TRL 敏捷修复 Bug，快速吸收最新 SOTA 算法",
+      "AReaL 潜水排雷，修复隐蔽的核心 RL 数值 Bug",
+      "verl 强攻多模态 Agentic RL 底层工程化",
+      "slime 阻断 PPO 数据污染，发力底层重构",
+      "引入更细粒度控制，新增解决梯度消失的 CISPO Loss"
+    ],
+    "agent-orch": [
+      "开发者转向组装多 Agent 编排，开源生态大爆发",
+      "Claude Squad：专为 Claude 打造的协同编排工具",
+      "Symphony：OpenAI 官方推出的 Agent 编排框架",
+      "Vibe Kanban：用看板模式可视化你的 AI 编程流",
+      "HumanLayer：为全自动 Agent 加上人类审批锁",
+      "多 Agent 协同作战，挑战数小时级长周期开发"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 登顶，断层领先拿百万级下载",
+      "Qwen3.6 登场，3B 激活的极致性价比 MoE 爆火",
+      "智谱新一代 GLM-5.2 基座模型强势杀入榜首",
+      "LocateAnything-3B：英伟达推出端侧视觉定位标杆",
+      "谷歌创新尝试：将扩散模型与 Gemma 架构结合",
+      "无审查微调与 GGUF 量化持续霸榜开源社区"
+    ],
+    "ai-community": [
+      "给 Agent 接入 MCP 等于给黑客开了一扇后门",
+      "安全落地：别用 LLM 来决定 Agent 的操作权限",
+      "Vibe Coding 新解：它不是段位而是架构评估坐标轴",
+      "复盘 15 个真实 AI 落地翻车经历的硬核避坑指南",
+      "AI 核心瓶颈转移：人类审查速度已拖慢代码生成",
+      "AI 编程助手死循环：盘点它们反复生成的 15 个 Bug"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Shift to agentic execution with state management focus",
+      "OpenAI Codex v0.142.0-alpha.10 targets Rust core",
+      "Developers demand enterprise reliability and cost control",
+      "Memory compaction and sandbox security are top priorities",
+      "OpenCode releases v1.0 with 10 highlighted PRs",
+      "Focus pivots from raw power to agent harness safety"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 1,000 issues and PRs in 24 hours",
+      "OpenClaw struggles with 482 open vs 18 closed issues",
+      "Release v2026.6.10-beta.1 targets agent reliability",
+      "v2026.6.9 introduced critical state and chat regressions",
+      "Maintainers face growing backlog of P1 stability bugs",
+      "Users frustrated by silent message loss and crashes"
+    ],
+    "ai-trending": [
+      "Agentic Developer Tools wave dominates open source",
+      "headroom cuts token usage by up to 95% instantly",
+      "codebase-memory-mcp enables sub-ms codebase queries",
+      "ECC adds skills, instincts, and memory to CLI agents",
+      "Trend of codified AI skills and system prompts emerges",
+      "RAG, Knowledge Graphs, and Agents become defacto stack"
+    ],
+    "ai-hn": [
+      "Strict identity verification causes Claude friction",
+      "Community debates KYC creep and AI surveillance",
+      "LLM-as-a-judge models prove flawed for evaluation",
+      "Moving Machine Learning into the analog domain debated",
+      "Skepticism rises over AI deskilling of developers",
+      "Developers buzz over multi-agent parallelization workflows"
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM training and dormancy",
+      "Active projects focus on scaling RLHF and reasoning RL",
+      "TRL faces high friction in async LLM inference",
+      "AReaL focuses on PPO mechanics and tokenization parity",
+      "verl pushes architectural multimodal agentic rollouts",
+      "Development shifts to distributed execution realities"
+    ],
+    "agent-orch": [
+      "Agent orchestrators see massive ecosystem expansion",
+      "Projects focus on managing complex multi-agent workflows",
+      "New tools aim to securely orchestrate external agents",
+      "Swarm Protocol streamlines multi-agent communications",
+      "HumanLayer integrates human-in-the-loop task oversight",
+      "Claude Squad hits mainstream for parallel agent tasks"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates with 2.6M downloads",
+      "Qwen3.6-35B-A3MoE leads with 5.1M downloads",
+      "Google Gemma-4 pushes any-to-any multimodal systems",
+      "GLM-5.2 debuts in standard and FP8 efficient formats",
+      "MoE architectures see distinct industry-wide pivot",
+      "GGUF quantizations drive massive local execution push"
+    ],
+    "ai-community": [
+      "Vibe coding framed as an inspectable state axis",
+      "Connecting MCP servers opens new attack vectors",
+      "Developers warned not to use LLMs for agent permissions",
+      "Security concerns dominate AI agent integration talk",
+      "Debate sparks on using gzip for language modeling",
+      "Dictionary traversal favored over token prediction"
+    ]
+  }
+}
