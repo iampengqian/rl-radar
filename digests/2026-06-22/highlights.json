@@ -63,6 +63,14 @@
       "复盘 15 个真实 AI 落地翻车经历的硬核避坑指南",
       "AI 核心瓶颈转移：人类审查速度已拖慢代码生成",
       "AI 编程助手死循环：盘点它们反复生成的 15 个 Bug"
+    ],
+    "ai-weekly": [
+      "Anthropic强制KYC实名引爆隐私争议，成HN年度热帖。",
+      "OpenAI泄露文件显露巨额亏损，紧急推出企控加速ToB变现。",
+      "headroom前置压缩Token超九成，掀极限榨取API价值热潮。",
+      "多Agent递归失控频发耗尽配额，强制熔断成CLI开发首要任务。",
+      "黑客利用Claude与Codex执行企业渗透，AI安全转向防网络攻击。",
+      "OpenAI Codex推Rust Alpha版，重构跨设备执行与精细沙箱。"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Security concerns dominate AI agent integration talk",
       "Debate sparks on using gzip for language modeling",
       "Dictionary traversal favored over token prediction"
+    ],
+    "ai-weekly": [
+      "Anthropic mandates identity verification for Claude users.",
+      "GLM-5 release shifts focus to spec-driven agentic engineering.",
+      "New tools slash LLM token usage by up to 95 percent.",
+      "Hackers actively weaponize AI to execute remote code breaches.",
+      "Leaked financials reveal unprecedented OpenAI compute losses.",
+      "Study exposes critical flaws in LLM-as-a-judge evaluations."
     ]
   }
 }
