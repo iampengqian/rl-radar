@@ -1,0 +1,142 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.186 遭曝光：计费误杀与 Opus 降智引担忧。",
+      "OpenAI Codex Plus 用户额度计算异常，底层正密集重构沙盒。",
+      "Gemini CLI 专注底层多智能体架构打磨，发力 CI/CD 集成。",
+      "Kimi Code CLI v1.48.0 引入防死循环熔断机制，优化跨会话记忆。",
+      "OpenCode 遭遇严重内存泄漏，底层框架重构致 TUI 频繁崩溃。",
+      "MCP 确立为跨工具链扩展绝对行业标准，各家正完善其安全边界。"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.6.10-beta.2，引入对话自动快速模式。",
+      "OpenClaw 提升模型路由可靠性，重点攻坚网关内存泄漏问题。",
+      "项目处于功能迭代与架构重构期，当前积压高达 412 条待合并 PR。",
+      "QA 实验室引入 crabline 依赖，成功实现配置文件通道驱动执行。",
+      "修复 WebChat 会话状态锁死逻辑，确保使用完整请求者密钥回退。",
+      "TUI PTY 测试平滑迁移至主 Linux CI 分片中，大幅优化测试工作流。"
+    ],
+    "ai-trending": [
+      "OpenMontage 霸榜：开源智能体视频生产系统今日新增近三千星。",
+      "DeusData MCP 将代码库索引为图谱，降 99% Token 消耗热度飙升。",
+      "TS 大神 Matt Pocock 开源实用 Claude 编码技能集，疯狂吸星。",
+      "字节开源长周期 SuperAgent 框架 deer-flow，能处理数小时复杂任务。",
+      "YC 总裁开源私人 Claude 工具栈 gstack，用 23 工具扮演全栈闭环。",
+      "智能体视频生成成全新爆款赛道，霸榜前三将推理与渲染深度结合。"
+    ],
+    "ai-web": [
+      "Anthropic 研究：40万次会话证明领域专家用 AI 创造降维打击效果。",
+      "Anthropic 与盖茨基金会达成 2 亿美元合作，布局全球公共健康。",
+      "专家专业知识越高，每个指令撬动的 AI 工作量越大，价值升 25%。",
+      "报告回击失业恐慌：Claude Code 是专家放大自身价值的强力杠杆。",
+      "OpenAI 推进企业基建定制部署，与三星联合上线 Codex 部署案。",
+      "AI 巨头战略交汇：深度融入人类工作流并抢占高净值基础设施。"
+    ],
+    "ai-hn": [
+      "GLM-5.2 实测性能足以硬刚 Opus，引发平价模型追平闭源热议。",
+      "OpenAI Codex 爆致命 Bug，可能会将 TB 级无效数据写满本地硬盘。",
+      "Claude 频发宕机(529错误)，“扩展思考”机制疑似伪造引激烈讨论。",
+      "Unsloth 火速跟进 GLM-5.2 部署指南，为开发者提供摆脱 API 限制方案。",
+      "Crespo 实践极佳：将原始代码转为 AST 蓝图喂给 LLM 突破限制。",
+      "Sakana AI 推出编排模型 Fugu，试图以多智能体协作挑战顶级大模型。"
+    ],
+    "rl-daily": [
+      "verl 等大模型训练框架全面向全异步训练与超长上下文支持演进。",
+      "AReaL 极速工程化前沿 CISPO 算法，成功攻克 FP8 显存与通信墙。",
+      "TRL 推进 AsyncGRPO 稀疏同步并底层修复死锁，支持复杂 Agent 环境。",
+      "slime 修复 PPO 底层计算原位修改 Bug，大幅增强 SWE 智能体支持。",
+      "OpenRLHF 深耕多轮对话与工具调用场景下的 Token Mask 精准度。",
+      "传统 RL 接口步入稳定期，大模型对齐与分布式训练成今日绝对核心。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro 霸榜：新一代架构带来极致推理，下载量超 240 万。",
+      "GLM-5.2 采用最新 MoE DSA 架构，大幅提升推理效率引高度关注。",
+      "谷歌发布 Gemma-4-12B 支持多模态，以适中参数撬动百万下载数。",
+      "Nvidia LocateAnything-3B 发布，3B 级全能视觉定位颠覆传统检测。",
+      "谷歌推出 diffusiongemma-26B，将扩散模型与大语言架构惊艳结合。",
+      "开源大模型诸神之战：国产大模型在开源领域展现绝对统治力。"
+    ],
+    "ai-community": [
+      "开发者警醒：探讨最小化 AI 原则，何时不用 AI 才是最好的架构。",
+      "Vibe Coding 认知陷阱：AI 是让我们变优秀还是成了代码搬运工？",
+      "真实痛点反思：日产百件 PR 却求职无门，AI 重塑个人核心竞争力。",
+      "实战拆解：手把手教你发现并修复 SaaS 应用中的提示词注入漏洞。",
+      "进阶架构分享：设计可用于生产环境的自我纠错 RAG 检索循环。",
+      "多智能体协作进阶：教导开发者在复杂链路中建立动态信任与溯源。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to autonomous orchestration and MCP.",
+      "Enterprise friction grows over sandboxing and proxies.",
+      "Claude Code v2.1.186 and Codex rust-v0.142.0 released.",
+      "Community pivots to reliability and strict token management.",
+      "Next phase of AI tooling defined by operational trust.",
+      "Gemini CLI sees active issues but no new release."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 800 issues/PRs updated in 24 hours.",
+      "OpenClaw v2026.6.10-beta.2 adds dynamic fast mode.",
+      "P0 regressions hit OpenClaw session and memory handling.",
+      "412 open PRs create an OpenClaw review bottleneck.",
+      "Improved Zai model routing rolled out to OpenClaw.",
+      "Ongoing memory store migrations cause instability."
+    ],
+    "ai-trending": [
+      "Ecosystem dominated by agentic skills and agent harnesses.",
+      "Cybersecurity skills repo gains 957 stars today.",
+      "Code intelligence MCP server gains 1,186 stars today.",
+      "gstack transforms Claude Code into a full AI dev org.",
+      "Massive 817 structured cybersecurity skills mapped to MITRE.",
+      "Vertical AI in finance and video rivals enterprise software."
+    ],
+    "ai-web": [
+      "Anthropic proves ROI of agentic coding across all jobs.",
+      "Optimal AI workflow: humans plan, Claude executes.",
+      "OpenAI shifts focus to B2B with Samsung enterprise rollout.",
+      "Anthropic cements institutional footprint via philanthropy.",
+      "OpenAI targets global infrastructure and security initiatives.",
+      "Industry narrative shifts from models to agentic ROI."
+    ],
+    "ai-hn": [
+      "Dev frustration rises over proprietary model reliability.",
+      "Codex logging bug threatens to write TBs to local SSDs.",
+      "GLM 5.2 open-weights rival top-tier proprietary models.",
+      "Sakana AI ships Fugu, an orchestration model.",
+      "Corporate pushback grows over exorbitant API costs.",
+      "Community champions local deployments over cloud APIs."
+    ],
+    "rl-daily": [
+      "RL open-source pivots to agentic and reasoning post-training.",
+      "Ecosystem focuses on distributed LLM training frameworks.",
+      "Primary challenges shift to multi-turn tool-calling agents.",
+      "verl, TRL, and AReaL dominate active development.",
+      "Traditional API-level RL environments remain dormant.",
+      "Industry focus moves entirely to LLM infrastructure."
+    ],
+    "agent-orch": [
+      "45 agent orchestrator projects tracked in the ecosystem.",
+      "Symphony, dmux, and Crystal advance multi-agent workflows.",
+      "Claude Squad and Vibe Kanban lead dev tool integrations.",
+      "Orchestrators pivot toward strict typed provenance for trust.",
+      "AutoGPT and MetaGPT continue rapid open-source iteration.",
+      "HumanLayer focuses on secure human-in-the-loop integrations."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro tops the leaderboard with 5,010 likes.",
+      "GLM-5.2 utilizes MoE, gaining massive community attention.",
+      "Gemma-4-12B drives explosive community fine-tune waves.",
+      "Kimi-K2.7-Code expands multimodal agentic capabilities.",
+      "DiffusionGemma introduces unified any-to-any modeling.",
+      "Community aggressively optimizes architectures to GGUF."
+    ],
+    "ai-community": [
+      "Dev focus shifts to fixing RAG hallucinations and security.",
+      "Prompt injection flaws expose autonomous agents to attack.",
+      "Strong skepticism emerges about autonomous agent reliance.",
+      "Developers debate if AI creates reckless coding habits.",
+      "Securing AI agents before production is a critical need.",
+      "Typed provenance highlighted for trusting agent chains."
+    ]
+  }
+}
