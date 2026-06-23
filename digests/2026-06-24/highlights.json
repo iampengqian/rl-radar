@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "CLI迈入多智能体编排与守护进程化深水区",
+      "OpenAI Codex发布8个版本，发力Rust与多智能体",
+      "开发者强诉求：多智能体自动化需匹配失控阻断机制",
+      "Qwen Code推v0.19.0：新增守护进程与防御性校验",
+      "Pi发3个版本重构API，推进AgentSwarm蜂群编排",
+      "Kimi Code紧急修复YOLO模式下的权限穿透漏洞"
+    ],
+    "ai-agents": [
+      "OpenClaw单日暴走：190条Issue与500个PR更新",
+      "修复群聊卡死丢消息，OpenClaw强化消息投递",
+      "OpenClaw推进SQLite迁移，为后续高并发打基础",
+      "OpenClaw积压466个PR，项目深陷架构转型阵痛期",
+      "TTS修复：解决Telegram语音条与文本闪烁问题",
+      "底层重构：文件缓存逻辑从Agent边界剥离"
+    ],
+    "ai-trending": [
+      "Agentic Engineering全面爆发，Claude周边生态井喷",
+      "OpenMontage：首个开源Agentic视频制作系统",
+      "字节开源deer-flow：长周期SuperAgent研究框架",
+      "codebase-memory-mcp：亚毫秒级图谱查询降耗99%",
+      "Y Combinator总裁公开Claude Code真实工作流配置",
+      "Anthropic-Cybersecurity-Skills：817个安全技能库"
+    ],
+    "ai-web": [
+      "Anthropic发布重磅产品Claude Tag：化身数字同事",
+      "Claude Tag首发Slack：颠覆传统的一对一对话形态",
+      "Claude具备时间维度：能监听记忆并规划未来任务",
+      "Anthropic宣称内部团队65%产品级代码由AI生成",
+      "Claude Enterprise和Team客户今日开启Beta测试",
+      "交互大跃迁：AI从被动工具转向环境常驻代理人"
+    ],
+    "ai-hn": [
+      "OpenAI发布GPT-5.5-Cyber，专攻网络安全防御",
+      "社区探讨大模型在自动化攻防与漏洞挖掘的能力",
+      "cc-fleet：调度其他大模型充当Claude Code打工人",
+      "Anthropic服务宕机与新隐私合规政策引发热烈讨论",
+      "alma：结合MCP协议与本地优先的AI个性化身份",
+      "Corelayer0：一键将OpenAPI规范转为MCP服务器"
+    ],
+    "rl-daily": [
+      "强化学习彻底转向大模型及多模态对齐(RLHF)",
+      "verl重构V1架构，发力Ascend NPU异构算力生态",
+      "TRL深度绑定vLLM，全面铺开多模态(VLM)训练",
+      "AReaL攻坚极致分布式系统性能与MoE架构适配",
+      "slime重点攻坚长上下文Agent RL训练稳定性",
+      "Open Instruct突破GRPO显存墙探索环境反馈机制"
+    ],
+    "agent-orch": [
+      "多智能体系统在视频制作与金融量化展现落地成熟度",
+      "Claude Squad与Crystal等编排工具推进多Agent协同",
+      "代码图谱与持久化记忆重塑大模型上下文管理方式",
+      "AutoGPT与MetaGPT等老牌项目持续演进底层编排",
+      "Vibe Kanban等工具将Agent融入日常开发者看板",
+      "生态聚焦解决全自动工作流与开发者安全掌控的平衡"
+    ],
+    "ai-arxiv": [
+      "Tapered Models：挑战Transformer均分层设计范式",
+      "探讨LLM预训练中AdamW优化器在重尾噪声下的盲区",
+      "SVD-Surgeon：超越现有低秩极限的LLM压缩方法",
+      "EnterpriseClawBench：真实企业环境的硬核Agent基准",
+      "Randomized YaRN显著提升超长序列外推推理能力",
+      "揭示LLM评估意识：当前安全基准可能存在严重高估"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro与智谱GLM-5.2霸榜开源社区",
+      "Google发布gemma-4：新一代any-to-any统一模型",
+      "diffusiongemma：创新性将Diffusion引入MoE架构",
+      "英伟达LocateAnything-3B：极小参数量实现万物定位",
+      "Kimi-K2.7-Code：采用极致压缩张量的多模态代码模型",
+      "端侧无审查微调迎来井喷，Gemma-4魔改版下载量极高"
+    ],
+    "ai-community": [
+      "开发者反思AI代码陷阱：最后20%需耗费80%时间",
+      "AI三天找出300个WordPress插件0-day漏洞敲响警钟",
+      "静态分析构建知识图谱：庞杂遗留代码的AI解法",
+      "AI Agent致命伤：会写代码但缺乏长期记忆机制",
+      "AI功能无测试通过标准：开发倡导先写评估基准",
+      "AI生成代码引发越权漏洞，安全与底层优化成焦点"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI shifts to autonomous, multi-agent orchestration.",
+      "Developers demand fire-and-forget agentic workflows.",
+      "Execution safety and context gaps are being fixed.",
+      "Refactoring engines for nested subagents and daemons.",
+      "Enterprise forces rapid maturation of security boundaries.",
+      "Budget transparency added to stop runaway token use."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 PRs updated in 24 hours.",
+      "Review bottleneck as only 34 PRs are merged.",
+      "Maintainers process complex migration to SQLite.",
+      "Project strained by provider compatibility regressions.",
+      "Edge-case session-locking bugs currently being fixed.",
+      "Project continues to stabilize the 2026.6.x series."
+    ],
+    "ai-trending": [
+      "Agent Harness paradigm dominates GitHub trending.",
+      "DeusData codebase memory MCP saves 99% on tokens.",
+      "garrytan/gstack: Garry Tan's 23-tool Claude Code setup.",
+      "OpenMontage turns coding assistants into video studios.",
+      "Shift from standalone apps to agentic workflow tools.",
+      "Community builds operating systems for AI developers."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Tag for Slack teams.",
+      "@Claude in Slack acts as a proactive team member.",
+      "65% of Anthropic's product team code is AI-generated.",
+      "Claude Tag maintains persistent contextual memory.",
+      "Agentic AI moves from IDEs to corporate chat.",
+      "AI transitions from reactive bot to channel member."
+    ],
+    "ai-hn": [
+      "OpenAI launches DayBreak (GPT-5.5-Cyber) model.",
+      "Open-source community focuses on local-first AI agents.",
+      "Anthropic rolls out identity verification for users.",
+      "Anthropic aggressively bans Claude Code tool users.",
+      "Study debates AI integration in cybersecurity.",
+      "Diffusion models may not need noise conditioning."
+    ],
+    "rl-daily": [
+      "LLM post-training dominates today's RL ecosystem.",
+      "Focus shifts to extreme FP8 and NPU hardware optimization.",
+      "Frameworks tackle memory bottlenecks for huge MoE models.",
+      "Infrastructure built for agentic RL and tool-use.",
+      "Traditional RL environments enter maintenance phase.",
+      "Core RL libraries focus strictly on developer experience."
+    ],
+    "agent-orch": [
+      "45 agent orchestrator projects covered today.",
+      "Tools focus on routing and managing autonomous swarms.",
+      "Kanban-style visual orchestrators for AI agents surge.",
+      "Swarm Protocol introduces standardized agent comms.",
+      "Dev environments pivot to managing multiple AI workers.",
+      "Major frameworks focus on resilient task delegation."
+    ],
+    "ai-arxiv": [
+      "Researchers tackle test-time compute bottlenecks.",
+      "KV cache reuse maximizes LLM reasoning efficiency.",
+      "Tapered transformer design rethinks parameter depth.",
+      "Study proves prompt-conditioned LLMs have hard limits.",
+      "Paradigm shift to fixing structural model vulnerabilities.",
+      "Embodied AI bridges simulated and real-world physics."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro and zai-org/GLM-5.2 top trending charts.",
+      "Industry pivots to native multimodality and agents.",
+      "Baidu's Unlimited-OCR brings rapid document innovation.",
+      "Microsoft FastContext optimizes context handling.",
+      "Google's gemma-4-12B-it sparks highly popular fine-tunes.",
+      "Community aggressively optimizes models via GGUF."
+    ],
+    "ai-community": [
+      "The last 20% of AI code takes 80% of dev time.",
+      "AI agents write code but lack persistent memory.",
+      "Software Development Life Cycle inverts via AI intent.",
+      "Developers adopt eval-first mindset for non-determinism.",
+      "AI found 300 WordPress plugin zero-days in 72 hours.",
+      "Consensus: structural guardrails needed for AI output."
+    ]
+  }
+}
