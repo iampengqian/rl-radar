@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "MCP成生态互联绝对标准，正面临安全与稳定性大考。",
+      "OpenAI Codex发力底层，一口气发布5个Rust Alpha底座版。",
+      "Gemini CLI进行ADK底层重构，引入AST感知与UI虚拟化。",
+      "Claude Code连发v2.1.190/191双更，修复安全漏洞与限流。",
+      "全行业痛点：Token成本透明化与长思维链防透支机制告急。",
+      "Pi多智能体并发执行优化，强化流超时容错与多云底座适配。"
+    ],
+    "ai-agents": [
+      "OpenClaw重磅发布v2026.6.10：新增对话自动快速模式！",
+      "OpenClaw修复message_tool_only模式下LLM静默丢弃回复的致命缺陷。",
+      "OpenClaw多渠道会话状态管理升级，强化Zai模型路由调度。",
+      "OpenClaw社区爆发：单日积压待处理PR高达452个！",
+      "OpenClaw修复手动运行定时任务误删数据及重试计数器错误。",
+      "OpenClaw底层重构阵痛：跨模型上下文管理引发社区热议。"
+    ],
+    "ai-trending": [
+      "claude-mem获8.4万星，解决AI编程助手跨会话持久记忆痛点。",
+      "字节开源deer-flow：结合沙盒与记忆的长周期SuperAgent。",
+      "AutoGPT依然坚挺，超18万星稳居自动化Agent核心基建。",
+      "Google设计新格式design.md，让AI智能体秒懂视觉规范。",
+      "开源智能体Hermes Agent单日暴增1174星，主打自适应成长。",
+      "Orca爆火：专治并行智能体舰队的桌面端ADE开发环境。"
+    ],
+    "ai-web": [
+      "OpenAI联手博通研发代号为Jalapeno的定制化推理芯片！",
+      "Anthropic联手美国能源部，上线核武器知识AI分类器。",
+      "Anthropic调研8.1万用户：AI提速越快，员工失业焦虑越高。",
+      "前沿AI公司战略分化：Anthropic死磕安全，OpenAI下潜算力。",
+      "Claude全流量部署核安全分类器，准确率高达96%防核扩散。",
+      "OpenAI正加速向底层算力基础设施和硬件供应链纵深布局。"
+    ],
+    "ai-hn": [
+      "OpenAI发布首款定制芯片：联合博通摆脱英伟达依赖！",
+      "NSA切断权限！Anthropic陷与白宫及NSA的模型访问权争端。",
+      "写废SSD？OpenAI Codex被曝因无意义写入操作致巨额损耗。",
+      "商业化加速：OpenAI正式开启ChatGPT广告系统变现版图！",
+      "知识产权攻防：Anthropic指控阿里云非法窃取其AI模型。",
+      "技术社区担忧：AI巨头权力膨胀凌驾于国家安全之上。"
+    ],
+    "rl-daily": [
+      "传统RL库大清理技术债，PettingZoo重构物理引擎拥抱AI辅助。",
+      "verl硬核攻克MoE与长序列并行，全力推进多硬件生态。",
+      "Gymnasium筹备底层物理引擎大迁徙，强化测试防呆设计。",
+      "TRL极速跟进GRPO变体与多智能体，深度对齐vLLM底层。",
+      "slime死磕超大MoE模型适配，专攻分布式边界异常与显存调度。",
+      "ROLL紧跟FSDP2框架，发力国产昇腾NPU软硬协同适配。"
+    ],
+    "ai-arxiv": [
+      "新研究提出基于梯度的LLM幻觉检测法，专治高风险场景。",
+      "探讨大模型持续学习痛点：单纯扩大规模能否拯救可塑性丧失？",
+      "解决数据筛选痛点！OpenThoughts提出通用智能体数据配方。",
+      "架构演进：重新定义Agent原生记忆系统的全生命周期治理。",
+      "突破因式分解瓶颈：非自回归文本生成范式大幅提速。",
+      "LaGO新范式：放弃直接输出动作，用LLM潜在引导在线强化学习。"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro稳居榜首，综合性能登顶下载量破200万！",
+      "智谱GLM-5.2全新MoE架构强势开源，FP8量化版本引燃社区。",
+      "Qwen3.6无审查视觉模型疯抢，彻底释放35B模型自由度。",
+      "百度开源Unlimited-OCR神器：打破长图和复杂版式分辨率限制！",
+      "英伟达开源LocateAnything-3B：仅3B体积实现精准视觉定位。",
+      "谷歌发布gemma-4-12B：支持Any-to-Any全模态的微调绝佳基座。"
+    ],
+    "ai-community": [
+      "AI编程智能体急需项目级长期记忆，仅靠堆砌提示词已失效。",
+      "自动化红蓝对抗实操：如何防止Agent被诱导窃取AWS密钥。",
+      "给生产权限太危险？教你为AI智能体搭建专属沙盒测试场。",
+      "架构务实主义：PostgreSQL做语义搜索多数时候吊打独立向量库。",
+      "AI网关成刚需：多SDK与API混用的成本管控与路由救星。",
+      "AI编程从未真正便宜，开发者面对按量计费开始精算成本。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code and OpenAI Codex dominate GitHub activity.",
+      "Developer tools shift toward complex multi-agent orchestration.",
+      "New focus on enterprise reliability and sandboxing.",
+      "Token consumption forces new context compaction mechanisms.",
+      "Gemini CLI and DeepSeek TUI aggressively refactor architecture.",
+      "Claude Code releases v2.1.191 focusing on multi-repo support."
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 pull requests in 24 hours.",
+      "Project v2026.6.10 introduces automatic fast mode for talks.",
+      "Multi-agent workflows introduce state management challenges.",
+      "Maintainers tackle race conditions in deep memory integrations.",
+      "Upgraded Zai model synthesis routing improves stability.",
+      "Background cron tasks drive intense OpenClaw development."
+    ],
+    "ai-trending": [
+      "Ollama adds support for frontier models like Kimi-K2.6.",
+      "design.md gives coding agents a structured design system.",
+      "StablyAI Orca manages fleets of parallel coding agents.",
+      "Agent harnesses dominate the open-source AI ecosystem.",
+      "vllm remains the backbone for production-grade LLM serving.",
+      "Persistent context is the top priority for AI developers."
+    ],
+    "ai-web": [
+      "OpenAI teases a Broadcom inference chip codenamed Jalapeno.",
+      "Anthropic builds automated nuclear safeguards infrastructure.",
+      "AI labs balance safety proofs with hardware integration.",
+      "Anthropic deploys a 96% accurate nuclear safety classifier.",
+      "OpenAI shifts strategic comms toward hardware optimization.",
+      "Anthropic publishes a massive 81,000-user economic survey."
+    ],
+    "ai-hn": [
+      "OpenAI unveils a custom inference chip built with Broadcom.",
+      "Standoff erupts over Anthropic's classified Mythos model.",
+      "Mythos model found vulnerabilities in classified US systems.",
+      "Reid Hoffman sharply criticizes Elon Musk's xAI ventures.",
+      "Google loses more top AI researchers to Anthropic.",
+      "HN debates AI safety implications of the Claude Fable tests."
+    ],
+    "rl-daily": [
+      "Reinforcement learning pivots entirely to LLM alignment.",
+      "Frameworks push for memory efficiency and Ascend NPU support.",
+      "General-purpose RL libraries experience a quiet period.",
+      "Massive distributed rollout loops dominate active projects.",
+      "Hugging Face TRL leads the ecosystem with 36 new PRs.",
+      "Stabilizing policy optimization for generative models is key."
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem expands to 45 distinct projects.",
+      "Developers rush to build frameworks for autonomous agents.",
+      "Meta-frameworks focus on scaling parallel coding agents.",
+      "Agent Orchestrator aims to manage fleets of AI models.",
+      "AutoGPT and MetaGPT lead complex multi-agent systems.",
+      "HumanLayer integrates human-in-the-loop safety protocols."
+    ],
+    "ai-arxiv": [
+      "Researchers propose gradient-based LLM hallucination detection.",
+      "New scaling laws derived for task-specific LLM distillation.",
+      "Novel frameworks emerge for autonomous AI commerce.",
+      "New methods tackle plasticity loss in continuous LLM training.",
+      "Generative AI becomes structured with text-to-3D scenes.",
+      "AI applied to quantum code discovery and chaotic systems."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro dominates weekly text generation charts.",
+      "Google's Gemma 4 sees explosive community adoption.",
+      "Zhipu AI's GLM-5.2 leads as a massive context MoE model.",
+      "Massive leaps in open-weight 10B-30B parameter foundation models.",
+      "Baidu's Unlimited-OCR pushes specialized vision boundaries.",
+      "Multimodal capabilities become standard for trending models."
+    ],
+    "ai-community": [
+      "Dev.to devs realize AI coding is no longer subsidized.",
+      "Production AI deployments desperately need AI gateways.",
+      "Lobste.rs users critically examine AI prompt injection.",
+      "Engineers focus on building robust AI trust and safety layers.",
+      "Reverse-engineering NPUs proves low-level infra interest.",
+      "Token costs force teams to optimize AI infrastructure."
+    ]
+  }
+}
