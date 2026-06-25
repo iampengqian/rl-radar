@@ -1,0 +1,160 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI底层向Rust迁移，深度进入多智能体协同与复杂工程编排。",
+      "OpenAI Codex用户痛点：5.5模型配额消耗暴增20倍且缺少Undo。",
+      "Gemini CLI v0.49.0正式版发布，但存在智能体调用死锁Bug。",
+      "DeepSeek TUI更名CodeWhale并完成Rust重构，带来原生体验。",
+      "Claude Code深陷Opus 4.8推理降级与Auto-mode安全误杀焦虑。",
+      "开发者诉求高度重合：精细化配额调度与精确控制上下文记忆。"
+    ],
+    "ai-agents": [
+      "OpenClaw发布v2026.6.11-beta.1，强化Slack等多渠道消息控制。",
+      "新增Mattermost原生指令与私信模型覆盖，降低多渠道调优难度。",
+      "社区热度爆棚，过去24小时Issues与PR更新双双突破500条。",
+      "修复群聊卡死与QQ频道断线重连导致消息丢失的严重Bug。",
+      "官方合并106个PR，核心聚焦异步状态恢复与多渠道容灾基建。",
+      "项目底层沙箱隔离推进，但OOM与崩溃循环仍是核心痛点。"
+    ],
+    "ai-trending": [
+      "AI交互向深度定制的CLI智能体转移，智能体工程化全面爆发。",
+      "ECC项目狂揽22万Star，大幅提升Claude Code等工具开发效率。",
+      "Ollama全面支持Kimi-K2.6、GLM-5.1等最新一代开源大模型。",
+      "Hermes Agent热度超20万，推出高度自适应全能Agent框架。",
+      "字节开源长周期SuperAgent框架deer-flow，处理深度研究任务。",
+      "OpenMontage发布，首个开源Agentic视频制作系统今日Star暴涨。"
+    ],
+    "ai-web": [
+      "OpenAI发文强调Agent商业化，行业焦点转向深度改造工作流。",
+      "OpenAI正积极将技术语言转化为商业ROI，抢占企业级AI心智。",
+      "OpenAI高频输出愿景，试图夺回被Anthropic盖过的Agent风头。",
+      "OpenAI释放明确信号：Agent系统已Ready for Work。",
+      "Anthropic官网今日处于静默期，无新增研究与产品公告。",
+      "市场猜测Anthropic正蓄力研发下一代旗舰模型或多模态能力。"
+    ],
+    "ai-hn": [
+      "美国政府罕见介入，要求OpenAI分阶段发布GPT-5.6模型。",
+      "OpenAI开始在付费产品中植入广告，引发用户强烈抵触。",
+      "Anthropic指责阿里巴巴非法提取其模型能力，引爆社区讨论。",
+      "OpenKnowledge爆火，AI优先的开源Obsidian/Notion替代品。",
+      "Pith发布：抛弃向量库与嵌入技术，构建极简本地LLM Wiki。",
+      "Un-0项目抛弃Diffusion，另辟蹊径使用耦合振荡器生成图像。"
+    ],
+    "rl-daily": [
+      "开源强化学习转向超大规模异构算力与复杂环境交互驱动。",
+      "以LLM为核心的RLHF框架占据绝对热度与工程迭代重心。",
+      "各框架以GRPO为基线深度修补，重点攻克模型坍缩难题。",
+      "TRL死磕GRPO+vLLM稳定性，verl深化Ascend异构硬件适配。",
+      "AReaL攻坚PD分离架构，推进RL训练微服务平台化演进。",
+      "传统单智能体标准库步入现代化瘦身与核心物理引擎迁移期。"
+    ],
+    "agent-orch": [
+      "项目覆盖45个主流智能体编排与自动化工作流框架生态。",
+      "AutoGPT、AutoGen、MetaGPT等明星Agent项目持续活跃。",
+      "LlamaIndex与CrewAI稳居大模型应用编排的核心基建位。",
+      "Claude Squad与Claude Flow等深耕CLI多智能体协同编排。",
+      "HumanLayer发力人机交互层，探索安全可控的智能体执行。",
+      "多智能体协作、权限隔离与可视化任务流成为编排新重心。"
+    ],
+    "ai-arxiv": [
+      "研究提出不可禁用的安全内核，从根本上防止AI绕过护栏。",
+      "剖析多步工具使用强化学习崩溃原因，实战Agentic RL佳作。",
+      "自蒸馏提升准确率，但会导致大模型强化学习rollout多样性下降。",
+      "提出模型取证概念，为AI安全与对齐研究提供严谨归因框架。",
+      "评估揭示GPT Realtime 2等语音AI能听懂字词却忽略深层情绪。",
+      "大模型在常规预训练中会出现突然遗忘已学规则的自然反学习现象。"
+    ],
+    "ai-hf": [
+      "12B-35B混合专家模型爆发，主导端侧部署与Mac本地推理生态。",
+      "DeepSeek-V4-Pro下载量近200万，断层领先成开源绝对王者。",
+      "智谱发布全新一代GLM-5.2混合专家基座，登顶本周点赞榜首。",
+      "谷歌发布gemma-4-12B全能基座模型，兼顾高性能与端侧友好度。",
+      "阿里推Qwen-AgentWorld-35B-A3B，专为复杂工具调用设计的原生Agent。",
+      "百度推出Unlimited-OCR，解决长图与复杂排版图文识别痛点。"
+    ],
+    "ai-community": [
+      "多智能体权限编排与非确定性测试成为开发者热议焦点。",
+      "文章剖析血泪教训：警惕AI应用背后失控的云端算力账单。",
+      "业界经历信任重构，通过双重校验和权限隔离夺回系统控制权。",
+      "直击多智能体协作痛点，提供清晰防错的AI编排策略。",
+      "探讨Text-to-SQL幻觉带来的数据信任危机及工程解法。",
+      "反思AI替代的是任务而非初级程序员，引发广泛共鸣。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Multi-agent environments replacing simple assistants",
+      "OOM errors plague complex agentic workflows",
+      "Context amnesia during compaction remains unsolved",
+      "Claude Code v2.1.193 fixes rate limits",
+      "OpenAI Codex v0.142.2 focuses on MCP",
+      "MCP standardization drives tool integration"
+    ],
+    "ai-agents": [
+      "500 issues and 500 PRs updated in 24 hours",
+      "Slack Relay Mode introduced for routing",
+      "Mattermost gets native queueing with /oc_queue",
+      "Enterprise focus on severe memory leak fixes",
+      "Granular model overrides added in new beta",
+      "Security tightened for untrusted inputs"
+    ],
+    "ai-trending": [
+      "Agentic Engineering dominates open source",
+      "OpenMontage hits +3,553 stars on launch day",
+      "Agent-as-Organization setups trending on GitHub",
+      "817 cybersecurity skills mapped for agents",
+      "Context optimization bypasses token limits",
+      "Complex vertical workflows commoditized into packs"
+    ],
+    "ai-web": [
+      "OpenAI teases transforming-work agent content",
+      "Industry shifts focus to enterprise agentic ROI",
+      "Full article text restricted at time of crawl",
+      "Anthropic quiet today with zero new releases"
+    ],
+    "ai-hn": [
+      "Trump admin asks OpenAI to stagger GPT-5.6 release",
+      "OpenAI testing ads in paid ChatGPT tiers",
+      "Anthropic accuses Alibaba of scraping Claude",
+      "Novel coupled oscillator image generation debated",
+      "GLM-5.2 security vulnerabilities exposed",
+      "Strong appetite for local-first LLM architectures"
+    ],
+    "rl-daily": [
+      "LLM alignment dominates reinforcement learning",
+      "Explosive growth in distributed inference orchestration",
+      "Pure RL libraries shift to maintenance mode",
+      "Systems engineering overtakes algorithmic novelty",
+      "TRL leads daily API maturation efforts"
+    ],
+    "agent-orch": [
+      "Structured orchestration needed for production trust",
+      "Growing demand for local AI and custom NPU compilers",
+      "Vibe coding matures into structured development",
+      "Permission matrices enforced for AI agents"
+    ],
+    "ai-arxiv": [
+      "Self-distillation severely damages output diversity",
+      "Language models abruptly forget rules mid-training",
+      "New optimizers decouple weight magnitudes",
+      "RL fine-tuning improves Vision-Language-Action models",
+      "Benchmarks expose structural reasoning flaws",
+      "Paralinguistic comprehension tested in voice models"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro hits 1.8M downloads in a week",
+      "Gemma-4-12B becomes the default open-source backbone",
+      "GLM-5.2 captures massive community attention",
+      "Qwen AgentWorld drives massive agentic adoption",
+      "GGUF and NVFP4 quantizations see explosive growth",
+      "Uncensored fine-tunes see staggering downloads"
+    ],
+    "ai-community": [
+      "AI costs spike as minor traffic triggers huge bills",
+      "Strict deterministic boundaries needed for agents",
+      "Engineers actively seek self-hosted AI infrastructure",
+      "Vector database alternatives gain strong traction",
+      "Thinking Engineer Toolkit launched for productivity"
+    ]
+  }
+}
