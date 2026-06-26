@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code发布v2.1.195修复TUI交互冲突。",
+      "OpenAI Codex被曝Git进程风暴致CPU满载且计费暴增。",
+      "Gemini CLI出现子智能体死锁与终端假死Bug。",
+      "Copilot CLI更新v1.0.66-1，被曝跨仓库上下文泄漏。",
+      "DeepSeek TUI筹备v0.9.0，深耕权限与Token极简主义。",
+      "多AI CLI工具转向轻量级守护进程与系统级权限管控。"
+    ],
+    "ai-agents": [
+      "OpenClaw单日处理500条PR与Issue，活跃度极高。",
+      "合并多Agent并发资源泄漏与Bootstrap Token竞态修复。",
+      "优化status命令查询性能，大幅降低存储开销。",
+      "修复Mattermost交互令牌伪造等底层安全漏洞。",
+      "增强飞书、QQ Bot及WhatsApp等Webhook断线重连补发。",
+      "社区热议v2026.5.x会话状态管理回归问题。"
+    ],
+    "ai-trending": [
+      "design.md新增Star超2300，规范AI Agent设计系统。",
+      "Ollama无缝支持Kimi-K2.6、GLM-5.1等最新开源大模型。",
+      "AWS推出Agent Toolkit助力AI安全调用云服务。",
+      "字节开源deer-flow，专攻长周期复杂任务SuperAgent。",
+      "Y Combinator总裁开源Claude Code多重身份配置栈。",
+      "OpenMontage爆火，实现全自动Agentic视频生产流。"
+    ],
+    "ai-web": [
+      "疑似Claude 4.7模型曝光：能独立发现并利用零日漏洞。",
+      "Claude Tag发布：以数字员工身份深度入驻Slack协作。",
+      "Anthropic联手DXC，将Claude推向银行与政府机构。",
+      "Anthropic与TCS合作，将AI打包进受强监管的金融医疗业。",
+      "Anthropic设立首尔办事处，加速亚洲市场合规化布局。",
+      "携手盖茨基金会投入2亿美元重塑AI时代社会契约。"
+    ],
+    "ai-hn": [
+      "GPT-5.6 Sol预览引爆HN，高昂门槛与政府审批惹争议。",
+      "DeepSeek Flash以“代码即计划”颠覆Agent产品经济学。",
+      "Claude与Cursor获智能模型路由工具，按复杂度降成本。",
+      "开源无审查(Uncensored)与本地量化模型成部署新宠。",
+      "讨论开源与闭源大模型的能力差距及企业应用基准。",
+      "开发者开源Mantis：私有化大语言模型API网关。"
+    ],
+    "rl-daily": [
+      "TRL发布v1.7.0：大幅优化显存并推进异步GRPO训练。",
+      "verl死磕多轮Agent上下文保留，深度适配异构算力。",
+      "AReaL突破单一文本，发力扩散模型RL与多教师蒸馏。",
+      "Gymnasium底层物理引擎大修，激进拥抱Python 3.14。",
+      "ROLL全面重仓华为昇腾，打通双引擎国产NPU链路。",
+      "Open Instruct正探索前沿的On-Policy蒸馏算法机制。"
+    ],
+    "agent-orch": [
+      "Claude Squad与Crystal领衔多智能体编排与调度架构。",
+      "AutoGPT与MetaGPT持续引领自治多智能体软件开发流。",
+      "微软AutoGen深度探索复杂Agent间的角色通信协议。",
+      "LlamaIndex与CrewAI着力强化底层RAG与工作流集成。",
+      "Claude Flow致力于为开发链路构建全流程自动化管线。",
+      "HumanLayer推进人在环路(Human-in-the-loop)审查节点。"
+    ],
+    "ai-arxiv": [
+      "重磅：多模型协作存在“协同失败上限”，盲目堆叠遇阻。",
+      "RiVER框架实现无需标准答案的强化学习大模型对齐。",
+      "BINEVAL：用二元判断破解大模型评测黑盒难题。",
+      "研究揭示语言模型作为知识库时的内部事实一致性。",
+      "CARVE架构补全线性注意力遗忘门，提升长文本处理。",
+      "具身智能迈向全模态日常物理自治与非结构化交互。"
+    ],
+    "ai-hf": [
+      "智谱发布超大规模MoE模型GLM-5.2空降榜单前列。",
+      "Google全模态gemma-4-12B-it狂揽超230万次下载。",
+      "MiniMax-M3发布，兼顾强悍文本与视觉综合理解能力。",
+      "百度Unlimited-OCR发布，直击无限长图文档解析痛点。",
+      "英伟达LocateAnything-3B赋予大模型像素级框选能力。",
+      "Gemma-4与Qwen3.x的无审查及QAT量化版受热捧。"
+    ],
+    "ai-community": [
+      "文章警示：AI生成代码能跑通不代表架构合理或安全。",
+      "深度拆解Claude Code底层计费规则，规避隐性巨额成本。",
+      "LiteLLM与OpenRouter真实生产环境的踩坑与断点对比。",
+      "别把大模型当记忆库：Agent状态维持的正确实践。",
+      "MCP的进阶：作为上下文分发机制比RPC工具调用更香。",
+      "多Agent系统致命伤：数据交接与流转节点的设计排雷。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Proprietary CLI tools face severe infra scaling pains.",
+      "Open-source CLIs aggressively iterate on local reliability.",
+      "Industry focus shifts to agentic autonomy and memory.",
+      "Context exhaustion without high API costs is a top goal.",
+      "Claude Code addresses 10 hot issues in new release.",
+      "Alternative tools focus on sandbox security and providers."
+    ],
+    "ai-agents": [
+      "OpenClaw hit by 500 issue updates and 500 PRs in 24h.",
+      "Massive inbound activity leaves 470 issues needing triage.",
+      "Multi-agent orchestration growing pains cause state loss.",
+      "P1 bugs spike as session management deadlocks emerge.",
+      "OpenClaw community remains highly active and invested.",
+      "Project progress relies on massive volume of user fixes."
+    ],
+    "ai-trending": [
+      "Massive shift towards agentic coding skills and harnesses.",
+      "google-labs-code/design.md gains 2,319 stars today.",
+      "Developers standardize how AI coding assistants operate.",
+      "AI agents now bypass API paywalls to freely read web.",
+      "Multi-agent adversarial frameworks hit the finance sector.",
+      "Ollama adds support for frontier models like GLM-5.1."
+    ],
+    "ai-web": [
+      "Anthropic shifts focus to long-running enterprise agents.",
+      "Claude Tag transforms Slack into proactive team member.",
+      "65% of Anthropic's product code generated via agents.",
+      "Anthropic launches $150M Claude Corps national fellowship.",
+      "Global IT giants like DXC deepen Anthropic alliances.",
+      "OpenAI drops cryptic hint about impending GPT-5.6 Sol."
+    ],
+    "ai-hn": [
+      "OpenAI's GPT-5.6 Sol released under strict US gov limits.",
+      "Government restricts GPT-5.6 access to approved customers.",
+      "Developers clash over open-weight vs closed-source models.",
+      "OpenAI PDF signals major shift to autonomous agentic AI.",
+      "New routing layers and gateways optimize chaotic AI tools.",
+      "Community cautious over safety, access, and AI control."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM post-training and agents.",
+      "Massive engineering push to scale GRPO and MoE training.",
+      "LLM frameworks rapidly converge on multi-turn agent loops.",
+      "Frameworks aggressively shed legacy tech debt like Py3.9.",
+      "Gymnasium and PettingZoo migrate from Box2D to Pymunk.",
+      "TRL and verl add tool-calling termination and SWE-bench."
+    ],
+    "agent-orch": [
+      "Ecosystem tracks 45 active agent orchestration projects.",
+      "GitHub hosts diverse array of autonomous agent managers.",
+      "OpenAI's Symphony and CrewAI lead orchestrator landscape.",
+      "MetaGPT and AutoGPT continue iterating team-based agents.",
+      "Developers heavily focus on complex multi-agent handoffs.",
+      "Tooling expands for monitoring and routing agent swarms."
+    ],
+    "ai-arxiv": [
+      "New research tackles LLM reliability and interpretability.",
+      "Paper questions decoding basis tied to sequence likelihood.",
+      "Multi-model LLM routing faces mathematical co-failure cap.",
+      "Novel papers address reward shaping and predictable halluc.",
+      "Bridging digital intelligence with omnimodal robotics.",
+      "Test-time scaling proves crucial for robotic manipulation."
+    ],
+    "ai-hf": [
+      "Google's Gemma 4 sets baseline for open-weight multimodal.",
+      "Qwen 3.5/3.6 and Z.ai's GLM-5.2 dominate HF trending.",
+      "Industry pivots hard towards agentic workflow models.",
+      "Ultra-compact 230M parameter edge AI models see massive use.",
+      "Krea-2 matures, blurring lines in open-weight generation.",
+      "Specialized models emerge for deep reasoning and terminals."
+    ],
+    "ai-community": [
+      "Focus shifts from hype to building robust multi-agent systems.",
+      "Functional AI code risks failing complex business logic.",
+      "Multi-agent failures mostly live in the communication seams.",
+      "Model Context Protocol (MCP) better for context than RPC.",
+      "Engineers debate cost-management and hidden AI failure points.",
+      "Deep dives explore prompt injection and adaptive AI worms."
+    ]
+  }
+}
