@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 发版救火：猛修计费Bug与沙箱死锁",
+      "Gemini CLI 重构安全策略，严控Agent静默越权操作",
+      "DeepSeek TUI 极限狂飙：合并42个PR重构基础架构",
+      "Qwen Code 发布Nightly版，推多端驻留Agent",
+      "Claude Code 功能迭代远超文档速度，引发合规争议",
+      "OpenCode 着力修复内存泄漏，推出插件市场MVP"
+    ],
+    "ai-agents": [
+      "OpenClaw 展现极高热度，单日狂收500+条Issue",
+      "合并核心PR，彻底修复SDK重试致消息丢失问题",
+      "修复手动运行误删一次性定时任务的严重逻辑漏洞",
+      "飞书Markdown渲染缺陷修复，优化多渠道排版体验",
+      "Telegram渠道更新，修复错误剥离推理标签问题",
+      "项目底层网关与多渠道适配成为社区开发绝对重心"
+    ],
+    "ai-trending": [
+      "规格驱动开发成Agent新范式，大幅降低模型幻觉",
+      "谷歌design.md爆火，让AI拥有视觉设计系统理解力",
+      "Claude Code 外挂大爆发，性能优化项目飙涨超400星",
+      "Ollama 霸榜，原生支持Kimi-K2.6与GLM-5.1等新秀",
+      "字节开源deer-flow，长周期SuperAgent重塑投研流",
+      "多智能体在金融量化领域深度落地，重塑价值投资"
+    ],
+    "ai-web": [
+      "Anthropic经济指数：AI形态已演变为长时自主智能体任务",
+      "大模型评估不再只看单次对话，专属分类器重磅上线",
+      "Anthropic重磅引入社会学调研，弥补平台数据局限",
+      "第一方API与Cowork等细颗粒度数据实现重新拆分建模",
+      "OpenAI官方近期暂未发力，未抓取到任何新增内容",
+      "Anthropic正密切追踪复杂任务流，B端生态护城河加固"
+    ],
+    "ai-hn": [
+      "DeepSeek发新论文，推测性解码技术大幅提升推理速度",
+      "美国允许Anthropic向受信任机构发布Mythos模型",
+      "Anthropic指控阿里用2.5万账号疯狂挖掘Claude",
+      "Ornith-1.0发布：专为智能体编程设计的开源大模型",
+      "llama.cpp硬核优化：开发者狂榨20%提示处理性能",
+      "防止电脑休眠！专为Mac后台常驻Agent设计的工具"
+    ],
+    "rl-daily": [
+      "RL生态分化：大模型对齐层主导超80%社区活跃度",
+      "verl硬核重构，猛攻全异步与多模态MoE显存瓶颈",
+      "AReaL拓宽RL边界，全面布局多教师蒸馏技术",
+      "TRL拥抱融合，大幅提升海量对齐算法鲁棒性",
+      "slime攻坚多模态交互，死磕Token级精细化预算控制",
+      "Gymnasium摆脱老旧依赖，全面泛化图数据结构支持"
+    ],
+    "ai-hf": [
+      "GLM-5.2凭借卓越对话推理能力强势登顶点赞榜首",
+      "DeepSeek-V4-Pro旗舰大模型发布，极高关注度引爆社区",
+      "百度发Unlimited-OCR模型，强势突破传统分辨率限制",
+      "英伟达LocateAnything-3B发布，精准实现图像目标定位",
+      "LiquidAI推出230M超微型语言模型，主打极致端侧轻量",
+      "MiniMax-M3原生多模态大模型发布，深度图文理解"
+    ],
+    "ai-community": [
+      "实战案例：如何将LLM失控账单从2480刀降至冰点",
+      "传统软件确定性要求与AI随机性冲突该怎么破？",
+      "金融AI陷阱：看似成功实则隐藏致命错误的评估黑洞",
+      "OpenTelemetry标准化方案解决Agent半夜异常执行溯源",
+      "深度实战：多智能体协作架构设计从入门到精通",
+      "反思AI寒冬：警惕大模型对代码质量与技能的退化影响"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to multi-agent workflows and deep IDEs.",
+      "Industry-wide memory leaks plague long-running AI sessions.",
+      "OpenAI Codex pushes 2 new alphas built on a Rust core.",
+      "Developer trust now relies on transparent cost-tracking tools.",
+      "Gemini CLI focuses on OS sandboxing and subagent safety.",
+      "Claude Code addresses documentation gaps and cyber safety."
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive engagement with ~1,000 daily updates.",
+      "Maintainers focus on stabilizing gateway and message loss.",
+      "No new OpenClaw releases recorded today.",
+      "Project is carefully reviewing complex, high-impact PRs.",
+      "OpenClaw actively triages 483 open issues.",
+      "Progress made on channel integrations and agent stability."
+    ],
+    "ai-trending": [
+      "design.md explodes with +1542 stars for persistent context.",
+      "OpenSpec uses Spec-Driven Dev to cut AI hallucinations.",
+      "Domain-specific trading agents evolve for enterprise use.",
+      "OpenCode gains massive traction as an open coding agent.",
+      "Ollama remains the standard engine for local LLM inference.",
+      "Persistent agent memory infrastructures gain rapid traction."
+    ],
+    "ai-web": [
+      "Anthropic's 'Cadences' redefines AI economic tracking.",
+      "Autonomous workflows officially eclipse standard chat use.",
+      "Macro-economic impact surveys now measure AI career shifts.",
+      "Claude Code dominates as primary AI interaction mode.",
+      "Anthropic expands data pipelines for long-running tasks.",
+      "OpenAI cedes the macroeconomic AI narrative to Anthropic."
+    ],
+    "ai-hn": [
+      "US restricts release of Anthropic's powerful 'Mythos' AI.",
+      "Alibaba allegedly used 25,000 accounts to scrape Claude.",
+      "DeepSeek's DSpark paper introduces breakthrough decoding.",
+      "Corporate customers push back on soaring AI inference costs.",
+      "New open-source models specialize in agentic coding.",
+      "llama.cpp gains 20% prompt processing speed via patch."
+    ],
+    "rl-daily": [
+      "Reinforcement learning splits between RLHF and base APIs.",
+      "verl pushes fully async PPO for next-gen B200 hardware.",
+      "AReaL expands RL pipelines into massive MoE VLMs.",
+      "TRL focuses on stabilization and resolving edge-case bugs.",
+      "Foundational RL libraries prioritize long-term API stability.",
+      "Frameworks optimize distributed infra for 30B+ models."
+    ],
+    "ai-hf": [
+      "Unreleased Qwen3.5, Gemma-4, and GLM-5.2 dominate charts.",
+      "zai-org/GLM-5.2 takes the lead in text generation benchmarks.",
+      "Uncensored local models see explosive community downloads.",
+      "Nvidia leads NVFP4 quantizations to shrink 35B MoE models.",
+      "Specialized multimodal pipelines power unlimited OCR tasks.",
+      "MiniMax-M3 brings enterprise-grade vision-language AI."
+    ],
+    "ai-community": [
+      "Developers grapple with mounting LLM API bills.",
+      "Adversarial prompts bypass security in 25 of 49 tests.",
+      "Community questions AI boom sustainability in 'AI Winter'.",
+      "Hidden token usage can quadruple bills without new features.",
+      "Architecting deterministic systems for stochastic AI matures.",
+      "Prompt injection threats highlight need for strict security."
+    ]
+  }
+}
