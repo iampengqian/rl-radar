@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex被爆Token扣费异常达10至20倍",
+      "Gemini CLI修复子代理伪装成功与SSRF绕过高危漏洞",
+      "Qwen Code爆发僵尸会话夜间狂烧Token及中文输入法失效",
+      "OpenCode推进V2引擎重构以支持Cursor等多Provider路由",
+      "开发者核心痛点转向Token隐形消耗与本地数据防泄漏",
+      "AI CLI生态正从单一指令生成器向跨平台研发工作台演进"
+    ],
+    "ai-agents": [
+      "OpenClaw单日超500条PR集中攻坚长会话内存泄漏",
+      "核心维护者推进SQLite迁移重构以解决网关内存泄漏",
+      "修复定时任务崩溃与精确到秒的Cron槽位识别问题",
+      "合并网关配对死锁修复大幅提升CLI操作安全性",
+      "控制UI静态资源压缩与诊断优化提升前端可观测性",
+      "社区强烈需求UI交互与Telegram等外围平台生态扩展"
+    ],
+    "ai-trending": [
+      "ECC爆火专为Claude Code设计提供安全与记忆调度",
+      "codebase-memory-mcp今日爆火将代码库转为知识图谱",
+      "claude-mem为所有CLI Agent提供跨会话持久化记忆",
+      "字节开源deer-flow长周期SuperAgent处理复杂深度任务",
+      "NousResearch发布能伴随用户自进化的AI智能体",
+      "ollama全面支持Kimi-K2.6与GLM-5.1等最新开源模型"
+    ],
+    "ai-hn": [
+      "开发者用Claude Code分析MRI报告引发医疗民主化热议",
+      "智谱GLM 5.2网安测试击败Claude引发AI竞赛重置讨论",
+      "OpenAI Codex存无法排除敏感文件的严重安全隐患",
+      "中国AI网安能力追平西方标志军备竞赛进入新阶段",
+      "Google限制Meta使用Gemini引发大厂算力博弈",
+      "探讨LLM能否通过镜像测试引发学术哲学激辩"
+    ],
+    "rl-daily": [
+      "verl引入CPPO算法攻坚大模型强化学习策略崩溃",
+      "Open Instruct引入DPPO寻找比PPO更稳定的优化机制",
+      "slime暴露并攻坚超长序列RL训练的显存爆炸痛点",
+      "verl推进OPD策略蒸馏实现强化学习与蒸馏融合",
+      "Gymnasium筹备更换底层物理引擎并适配NumPy 2.0",
+      "大模型RL全面接管创新制高点转向长时序Agent交互"
+    ],
+    "ai-hf": [
+      "百度Unlimited-OCR发布无限制图像提取下载破29万",
+      "智谱GLM-5.2采用全新MoE架构标志着该系列强力回归",
+      "DeepSeek首发V4系列旗舰文本模型DSPark社区紧盯突破",
+      "英伟达LocateAnything-3B视觉模型精准定位下载超64万",
+      "微软发FastContext超长上下文极速响应子智能体协作模型",
+      "LiquidAI推230M液态神经网络专攻极低资源边缘部署"
+    ],
+    "ai-community": [
+      "硬核实测打破本地小模型省钱迷思多模型反而烧钱",
+      "MCP协议在输入前狂烧超5万Token预热引警惕",
+      "CEO亲属接管AI项目导致架构崩溃客户一月内流失",
+      "抛硬币都能拿高分揭示当前AI监控评估标准严重失效",
+      "警告自适应AI计算机蠕虫及提示词注入数据破坏威胁",
+      "作者呼吁构建防破坏护栏避免Agent恶意删库灾难"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools pivot to Rust for stability and speed",
+      "Providers battle runaway token costs and bad UI",
+      "Model Context Protocol becomes a baseline requirement",
+      "Claude Code adds cybersecurity filters and IDE safety",
+      "Provider-agnostic tools gain massive community traction",
+      "Community shifts focus to securing MCP tool calls"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours",
+      "Massive 407 PRs and 448 open issues bottleneck OpenClaw",
+      "OpenClaw shifts core architecture to SQLite",
+      "OpenClaw battles memory leaks and state regressions",
+      "Maintainers navigate complex stabilization phase",
+      "No new OpenClaw releases cut today due to backlog"
+    ],
+    "ai-trending": [
+      "DeusData codebase-memory-mcp gains 2,162 stars today",
+      "Agent infrastructure dominates GitHub trending",
+      "affaan-m/ECC hits 223,000 stars for agent optimization",
+      "ai-berkshire and Vibe-Trading surge for stock analysis",
+      "Local AI stacks mature with macOS voice-to-text tools",
+      "Codebase-memory-mcp promises sub-ms graph queries"
+    ],
+    "ai-hn": [
+      "GLM 5.2 beats Claude in cybersecurity benchmarks",
+      "Developers build budget enforcers for runaway agents",
+      "US export controls spark debate on global AI supremacy",
+      "Ford rehires veteran engineers after AI falls short",
+      "Z.Ai and 360 match Western AI benchmarks",
+      "Severe data leakage risks found in OpenAI Codex"
+    ],
+    "rl-daily": [
+      "Ecosystem shifts from text gen to agentic execution",
+      "verl iterates on distributed fault tolerance and CPPO",
+      "TRL stabilizes GRPO with vLLM and PEFT integration",
+      "Massive distributed systems built for long reasoning",
+      "Traditional single-agent RL libraries see zero activity",
+      "Gymnasium and PettingZoo undergo structural updates"
+    ],
+    "agent-orch": [
+      "45 agent orchestrators analyzed in massive ecosystem map",
+      "Agent ecosystems shift toward parallel task execution",
+      "Swarm Protocol and dmux push agentic workflows",
+      "Claude Squad bridges CLI with orchestrator platforms",
+      "Orchestrators focus on human-in-the-loop integrations",
+      "AutoGPT and MetaGPT face new orchestrator rivals"
+    ],
+    "ai-hf": [
+      "GLM-5.2 MoE sets the benchmark for open-weight LLMs",
+      "Qwen3.6 Aggressive Uncensored sees 3.2M downloads",
+      "DeepSeek-V4-Pro-DSPark debuts to major community buzz",
+      "Nvidia aggressively pushes NVFP4 quantization for models",
+      "Qwen AgentWorld models lead agentic capability traction",
+      "Baidu Unlimited-OCR highlights multimodal advancements"
+    ],
+    "ai-community": [
+      "Your MCP servers might burn 50k+ tokens instantly",
+      "Codebases treated merely as data cause AI failures",
+      "Devs actively fight context rot in legacy codebases",
+      "Community debates if an AI Winter is approaching",
+      "Free local AI executors often cost more than cloud",
+      "Consensus shifts to cost-efficient, constrained AI"
+    ]
+  }
+}
