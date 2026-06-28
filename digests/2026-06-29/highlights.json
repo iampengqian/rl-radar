@@ -55,6 +55,14 @@
       "抛硬币都能拿高分揭示当前AI监控评估标准严重失效",
       "警告自适应AI计算机蠕虫及提示词注入数据破坏威胁",
       "作者呼吁构建防破坏护栏避免Agent恶意删库灾难"
+    ],
+    "ai-weekly": [
+      "OpenAI Codex 暴露硬件级 Bug，狂写 TB 级日志烧硬盘。",
+      "Claude Tag 重塑 B2B 协同，化身 Slack 常驻数字员工。",
+      "OpenAI 联手博通推自研推理芯片 Jalapeno 狂降成本。",
+      "金融多智能体爆发，投研与量化对抗框架霸榜 GitHub。",
+      "国产开源大模型 GLM-5.2 在网络安全测试击败闭源。",
+      "OpenClaw 底层大重构，向 SQLite 迁移解决内存泄漏。"
     ]
   },
   "en": {
@@ -121,6 +129,14 @@
       "Community debates if an AI Winter is approaching",
       "Free local AI executors often cost more than cloud",
       "Consensus shifts to cost-efficient, constrained AI"
+    ],
+    "ai-weekly": [
+      "Claude Tag turns Slack into an autonomous AI workspace",
+      "OpenAI Codex bug burns out developer SSDs",
+      "NSA loses access after Anthropic's Mythos finds flaws",
+      "GPT-5.6 release restricted by US government",
+      "Smart routing cuts soaring API costs for developers",
+      "AI framework simulating Warren Buffett goes viral"
     ]
   }
 }
