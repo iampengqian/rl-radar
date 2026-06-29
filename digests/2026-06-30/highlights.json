@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex推进底层并发优化，正紧急排查Token暴涨20倍危机。",
+      "Gemini CLI发布Nightly构建，重点加固安全沙箱与Subagent稳定性。",
+      "Qwen Code高频迭代，推出qwen serve平台化架构及流式输出修复。",
+      "OpenCode启动V2架构重构，发力解耦与国产模型网关适配。",
+      "DeepSeek TUI推v0.8.67，重构权限契约并新增配置向导。",
+      "长上下文致Token消耗暴增，各大社区呼吁支持AST级代码读取。"
+    ],
+    "ai-agents": [
+      "OpenClaw发布v2026.6.11-beta.2，引入Slack中继模式强化渠道控制。",
+      "OpenClaw单日处理387个Issue与500个PR，社区活跃度爆棚。",
+      "P1级Bug预警：OpenClaw网关在异步并发下存在消息静默丢失风险。",
+      "新增Mattermost原生指令与私聊级模型覆盖，运营更精细。",
+      "PR#89038紧急修复qqbot WebSocket重连导致的消息队列丢失问题。",
+      "修复子智能体运行后会话过早归档，导致记忆核心提取失败的Bug。"
+    ],
+    "ai-trending": [
+      "ai-berkshire单日狂揽1397星，复刻巴菲特多Agent对抗价值投资。",
+      "ECC狂飙至22万星，成为Claude Code等AI Agent的底座基建。",
+      "video-use今日爆火，靠编写代码的AI Agent实现全自动视频剪辑。",
+      "Vibe-Trading爆火出圈，面向个人的AI智能量化交易代理走红。",
+      "VulnClaw整合AI与MCP工具链，实现全自然语言驱动的渗透测试。",
+      "FluidVoice发布，成为macOS上最快且完全本地运行的离线听写应用。"
+    ],
+    "ai-web": [
+      "OpenAI更新页面，疑似与科技巨头惠普达成前沿硬件合作关系。",
+      "OpenAI或正布局边缘计算，加速抢占终端算力与硬件生态。",
+      "Anthropic官网零更新，疑似正处于重大技术突破前的静默期。",
+      "竞争态势分化：OpenAI向外扩张主导议题，Anthropic向内发力打磨。",
+      "企业级AI部署门槛有望降低，大模型或深度嵌入办公硬件设备。",
+      "OpenAI频繁复用Frontier标签，从前沿模型延伸至前沿生态结盟。"
+    ],
+    "ai-hn": [
+      "Anthropic下一代核心模型Fable 5即将回归，大模型军备赛打响。",
+      "Karpathy背书：ScreenMind实现Mac端侧实时截屏视觉隐私分析。",
+      "Micro-Agent：在API内部进行多智能体协作，以极低成本击败大模型。",
+      "开发者反思：为何一天的AI调用API费用，竟超过一月的服务器租用？",
+      "博主发文怒怼媒体，强硬反驳中国AI算力与模型已追平美国的论调。",
+      "Micro-Agent与端侧AI爆火，开发者极度渴求开源与降本增效。"
+    ],
+    "rl-daily": [
+      "verl实现硬核底层优化，异构硬件适配与FP8/MoE支持业界领先。",
+      "HuggingFace TRL吞吐量大幅提升，原生兼容多模态与MoE架构。",
+      "强化学习生态加速演进，原生支持MoE与长上下文成默认基建。",
+      "slime开启高频迭代，死磕非共存架构与Rollout引擎容错解耦。",
+      "AReaL正筹备v2.0大版本，向全栈CLI服务化与MTP前沿对齐演进。",
+      "RLHF框架主导社区活跃度，底层算力调度取代算法成新竞争壁垒。"
+    ],
+    "agent-orch": [
+      "AI Agent生态极度繁荣，基于CLI的智能体编排框架迎来大爆发。",
+      "AutoGPT持续演进，致力于让非开发者也能零门槛构建AI工作流。",
+      "MetaGPT、AutoGen等主流多智能体协作框架维持高频技术迭代。",
+      "CrewAI稳居编排生态头部，持续强化智能体角色分配与流程串联。",
+      "Claude Squad等轻量级CLI工具，为单点AI任务提供高效编排解法。",
+      "HumanLayer发力安全治理，探索智能体自动化与人工介入的完美平衡。"
+    ],
+    "ai-hf": [
+      "GLM-5.2横扫榜单，新一代MoE架构基础模型原生性能爆表。",
+      "DeepSeek-V4-Pro初步亮相，预示着新一轮基础模型架构迭代的开启。",
+      "百度推Unlimited-OCR，主打无限制高精度复杂场景文本提取。",
+      "英伟达LocateAnything-3B发布，3B轻量模型实现任意场景精准定位。",
+      "微软FastContext-1.0-4B发布，主打超长上下文极速处理专供子代理。",
+      "LiquidAI发布230M超轻量级模型，非Transformer架构主打端侧推理。"
+    ],
+    "ai-community": [
+      "RAG遭颠覆？技术社区热议基于情境动态为LLM提供上下文记忆。",
+      "零成本落地：手把手教你用本地大模型实现自动化Git提交信息。",
+      "防泄露最佳实践：绝对不要把密钥等机密信息塞进Agent系统提示词。",
+      "API返回巨量JSON吃Token？网友用变点检测算法构建超强压缩器。",
+      "GPT-5.6 Sol携带定制芯片且受政府监管发布，硬件与政策成重头戏。",
+      "AI Engineer Fair热议：剥开黑盒，拆解调用LLM API的全链路流转。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLIs have matured into complex, terminal-native agentic platforms.",
+      "Tools are shifting toward multi-agent orchestration and autonomy.",
+      "Ecosystem grapples with brittle TUI inputs and token consumption.",
+      "Fragmentation grows between vendor-locked tools and open clients.",
+      "Claude Code tracks 10 issues focusing on TUI regressions.",
+      "Claude Code focuses on multi-agent state and safety filters."
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 PRs and 387 issues in 24 hours.",
+      "445 open PRs indicate deep architectural refactors.",
+      "Platform focuses on new SQLite-backed session runtime.",
+      "Project integrates DeepSeek, MiniMax, and Codex providers.",
+      "v2026.6.11-beta.2 introduces enhanced channel control.",
+      "Recent feature drops introduced notable regressions."
+    ],
+    "ai-trending": [
+      "Ecosystem dominated by CLI-based agents like Claude Code.",
+      "Vertical AI surges for investing, trading, and cybersecurity.",
+      "Context compression is critical for long-term agent memory.",
+      "Local-first AI tools offer offline, privacy-preserving tasks.",
+      "affaan-m/ECC boosts Claude Code and Codex agent harnesses.",
+      "ollama supports frontier weights like Kimi-K2.6 and GLM-5.1."
+    ],
+    "ai-web": [
+      "OpenAI signals a massive pivot to physical hardware ecosystems.",
+      "OpenAI announces HP Frontier Partnership for enterprise AI.",
+      "Integration points to edge computing hardware partnerships.",
+      "Shift marks a move from software to monopolizing AI hardware.",
+      "Anthropic exhibits a quiet release day with zero new updates.",
+      "Anthropic cadence suggests heads-down model training period."
+    ],
+    "ai-hn": [
+      "Tension grows between exorbitant API costs and local deployment.",
+      "Devs seek ways to avoid API retry storm billing traps.",
+      "Anthropic readies Claude Fable 5 for imminent release.",
+      "Anthropic offers aggressive B2G discounts to CA government.",
+      "Community fêtes fine-tuning 9B models to rival proprietary ones.",
+      "Cooling venture spending reality shapes a pragmatic AI market."
+    ],
+    "rl-daily": [
+      "RL shifts from single-agent to LLM-driven post-training.",
+      "verl pushes hardware-agnostic scaling on Ascend networks.",
+      "Frameworks battle over distributed network optimization.",
+      "TRL undergoes massive codebase unification and MoE scaling.",
+      "Foundational APIs like Gymnasium enter quiet maintenance.",
+      "Agentic RL infrastructure takes center stage in verl."
+    ],
+    "agent-orch": [
+      "Agent orchestrators manage complex terminal-native platforms.",
+      "Tools shift to multi-agent orchestration and autonomy.",
+      "Platforms face brittle TUI inputs and high token use.",
+      "Fragmentation splits vendor tools from open ecosystems.",
+      "Claude Code tracks 10 issues on TUI regressions.",
+      "Focus remains on multi-agent state and safety filters."
+    ],
+    "ai-hf": [
+      "Next-gen models Qwen 3.5, Gemma 4, and DeepSeek V4 dominate.",
+      "Extended reasoning and coding drive LLM engagement.",
+      "Nvidia NVFP4 quantizations see massive download volumes.",
+      "Multimodal apps mature beyond chat into 3D video generation.",
+      "zai-org/GLM-5.2 leads the text-generation leaderboard.",
+      "LiquidAI releases compact 230M parameter edge model."
+    ],
+    "ai-community": [
+      "AI Engineer World’s Fair shapes developer role discussions.",
+      "Dev.to highlights building efficient infrastructure for LLMs.",
+      "Devs focus on governing AI code before production release.",
+      "Lobste.rs debates philosophical limits and AI Winters.",
+      "Community shifts past hype to security and compute costs.",
+      "Rethink RAG by prioritizing situational awareness over memory."
+    ]
+  }
+}
