@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 全面迈入多智能体编排与企业级工程化深水区",
+      "Claude Code 集成 Sonnet 5，攻坚多 Agent 跨进程通信",
+      "OpenAI Codex 排查 GPT-5.5 推理异常，熔修 Windows 沙箱",
+      "Gemini CLI 引入 AST 感知读取，修复子 Agent 假状态",
+      "OpenCode 支持跨模型 Fallback 机制与 MCP 规范化",
+      "DeepSeek TUI 优化多并发锁竞争，筹备 YOLO 模式稳定版"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.6.11，增强 Slack 等 IM 频道控制",
+      "单日狂收 500 条 PR，OpenClaw 修复多渠道路由与鉴权",
+      "QQ Bot WebSocket 断线重连时的丢消息隐患被彻底修复",
+      "内存刷新失败致回复中断的严重隐患已被解决",
+      "引入动态上下文窗口缩放，取代原硬编码的 4000 上限",
+      "修复并发内存检索单点失败导致全部结果被丢弃的问题"
+    ],
+    "ai-trending": [
+      "OmniRoute：聚合 231+ 供应商，免费 AI 网关带 95% 压缩",
+      "Ollama 极速适配 Kimi-K2.6、GLM-5.1 等最新开源模型",
+      "Superpowers：为 Claude Code 量身定制智能体技能框架",
+      "FluidVoice：macOS 最快端侧离线语音听写工具，主打隐私",
+      "Google 官方推出 agents-cli，将编程助手变 Agent 专家",
+      "ECC 爆火：为 Claude Code 注入本能和记忆的性能优化套件"
+    ],
+    "ai-web": [
+      "Anthropic 重磅发布 Claude Sonnet 5，Agentic 能力大跃升",
+      "Sonnet 5 以极高性价比提供媲美 Opus 的自主执行能力",
+      "Anthropic 推出科研工作台 Claude Science 绑定专业工作流",
+      "Claude Science 整合 Jupyter 和 R，带有强审计的生成历史",
+      "前沿红队密集发布 AI 发现 0-day 漏洞等网安威胁研究",
+      "为保安全，Anthropic 特意限制了 Sonnet 5 执行网络安全任务"
+    ],
+    "ai-hn": [
+      "Claude Sonnet 5 登顶爆文，复杂编码和推理受开发者热捧",
+      "第三方独立跑分揭示 Claude Sonnet 5 详细性能数据",
+      "Meta 开源脑机接口系统，AI 非侵入式解码大脑信号生成文本",
+      "143.dev 开源企业级内部 AI 编程代理基础架构设施",
+      "AutoTuneLLM 开源：本地硬件自动优化大模型性能",
+      "Meta 开源非侵入式脑机结合 AI 生成文本的脑机接口系统"
+    ],
+    "rl-daily": [
+      "RL 生态进入大模型分布式与复杂智能体驱动的工业级深水区",
+      "TRL 完善 GRPO 架构，并完成与 vLLM 的深度解耦重构",
+      "verl 攻坚 VLM 与复杂 Agentic 强化学习的分布式性能压榨",
+      "slime 攻克异步强化学习中的样本陈旧度与显存控制难题",
+      "AReaL 演进复杂 Agentic 工作流与微服务系统架构",
+      "Open Instruct 探索 GRPO 框架下的在线策略蒸馏落地"
+    ],
+    "ai-arxiv": [
+      "35B 混合专家模型证明扩展动作空间比单纯推高参数更有效",
+      "全新架构实现 Transformer 向混合注意力模型的无损转换",
+      "颠覆性发现：保守的离线训练反而会放大奖励黑客问题",
+      "研究揭示多智能体长对话中吸引子状态的动力学涌现现象",
+      "WorldEvolver：自进化世界模型大幅提升长视野规划能力",
+      "精准定义工具增强智能体中选对工具但操作错对象的缺陷"
+    ],
+    "ai-hf": [
+      "智谱大规模 MoE 模型 GLM-5.2 凭原生对话能力登顶点赞榜",
+      "深度求索旗舰版 DeepSeek-V4-Pro-DSpark 展现顶级推理潜力",
+      "通义千问发布 Qwen-AgentWorld-35B，专为复杂智能体设计",
+      "百度 Unlimited-OCR 无限制图文转换神器下载量破 42 万",
+      "英伟达 LocateAnything-3B 视觉定位大模型精准识别任意目标",
+      "Krea 发布新一代文生图基础与加速扩散模型 Krea-2"
+    ],
+    "ai-community": [
+      "AI 工程化迎拐点：上下文工程正全面取代提示词工程",
+      "日志记录与状态机才是构建可靠 AI Agent 系统的真正核心",
+      "配置 AGENTS.md 成标准化 AI 编码助手协作的最佳实践",
+      "利用 Git Worktrees 并行运行多个 Claude Code 成倍提效",
+      "硬核社区反思生成式 AI 狂热，深度讨论新一次 AI 寒冬",
+      "知识图谱化解 AI 跨多个代码库的自然语言查询入口难题"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.197 focuses on cowork and Windows hooks",
+      "AI CLI tools shift toward multi-agent orchestration",
+      "Ecosystem battle shifts from model size to CLI stability",
+      "Tool wrappers focus on OS intricacies and context retrieval",
+      "Major players rush to support new reasoning models",
+      "Managing autonomous execution remains a top challenge"
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 active PRs in a single day",
+      "OpenClaw v2026.6.11 adds Slack relay and Mattermost support",
+      "OpenClaw introduces per-direct-message model overrides",
+      "Explosive development hits the OpenClaw ecosystem",
+      "OpenClaw struggles with provider stability regressions",
+      "Engineering focus balances new features with bug fixes"
+    ],
+    "ai-trending": [
+      "Agentic dev tools dominate GitHub trending charts",
+      "claude-mem hits 85k stars for persistent AI context",
+      "ollama adds native support for Kimi-K2.6 and GLM-5.1",
+      "headroom MCP server cuts LLM token usage by 95%",
+      "Context compression emerges as a critical AI infra layer",
+      "Vertical AI surges in trading and cybersecurity"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Sonnet 5 with elite coding skills",
+      "Claude Sonnet 5 commoditizes autonomous AI workflows",
+      "Anthropic debuts Claude Science workbench for researchers",
+      "OpenAI metadata reveals launch of Genebench Pro",
+      "Frontier labs pivot to scientific R&D monetization",
+      "Industry shifts from generalized chatbots to research tools"
+    ],
+    "ai-hn": [
+      "Claude Sonnet 5 release tops Hacker News charts",
+      "Meta open-sources Brain2Qwerty brain-scanning AI",
+      "Hacker News users accuse Claude Code of hidden spyware",
+      "Community frustrated by Anthropic transcript deletions",
+      "Debates flare over AI's role in open-source software",
+      "Users actively benchmark Sonnet 5 against OpenAI models"
+    ],
+    "rl-daily": [
+      "Reinforcement learning shifts to multi-turn agentic flows",
+      "Industry pivots to solving RL infrastructure bottlenecks",
+      "verl scales agentic loops across Ascend and Megatron",
+      "Development concentrates in distributed LLM frameworks",
+      "Traditional single-agent RL environments stagnate",
+      "slime focuses on distributed async hardening"
+    ],
+    "agent-orch": [
+      "Multi-agent orchestrators see massive ecosystem growth",
+      "Claude Squad and dmux lead in agent orchestration",
+      "AutoGPT and MetaGPT continue rapid development",
+      "AI agent tools focus on production-ready architectures",
+      "Swarm Protocol streamlines complex multi-agent tasks",
+      "Claude Flow gains traction among developers"
+    ],
+    "ai-arxiv": [
+      "35B agent model hits trillion-parameter performance",
+      "New papers focus on behavioral forensics for LLMs",
+      "Routing firewalls secure multi-agent ecosystems",
+      "Self-evolving world models advance AI planning",
+      "Researchers unveil new Muon optimizer dynamics",
+      "Smaller MoE models scale by extending agent horizons"
+    ],
+    "ai-hf": [
+      "GLM-5.2 tops the open-weight chatbot charts",
+      "DeepSeek V4 Pro generates massive community hype",
+      "Ornith-1.0 pushes boundaries with 397B parameters",
+      "NVIDIA NVFP4 brings massive MoEs to consumer GPUs",
+      "Qwen 3.5 and Gemma 4 see rapid community adoption",
+      "High-precision OCR models dominate trending charts"
+    ],
+    "ai-community": [
+      "Local and open-source AI models are gaining traction",
+      "Dev.to explores parallel Claude Code via Git worktrees",
+      "Lambda MicroVMs isolate untrusted AI code on AWS",
+      "Developers pivot towards loop engineering over prompts",
+      "Community debates potential echoes of an AI Winter",
+      "Tech identity shifts from mathematician to engineer"
+    ]
+  }
+}
