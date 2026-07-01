@@ -71,6 +71,14 @@
       "利用 Git Worktrees 并行运行多个 Claude Code 成倍提效",
       "硬核社区反思生成式 AI 狂热，深度讨论新一次 AI 寒冬",
       "知识图谱化解 AI 跨多个代码库的自然语言查询入口难题"
+    ],
+    "ai-monthly": [
+      "Anthropic估值逼近千亿，年化收入突破470亿美元登顶。",
+      "Claude Fable 5首发降级路由，Mythos 5专供国家级网络防御。",
+      "OpenAI秘密提交IPO招股书，年亏损扩大8倍至340亿。",
+      "AI大模型被视作军工物资，美国禁令强制限制非美访问。",
+      "OpenAI联手博通推自研芯片Jalapeno，摆脱英伟达依赖。",
+      "GLM-5.2网络安全测试击败闭源，国内开源生态大狂欢。"
     ]
   },
   "en": {
@@ -153,6 +161,14 @@
       "Developers pivot towards loop engineering over prompts",
       "Community debates potential echoes of an AI Winter",
       "Tech identity shifts from mathematician to engineer"
+    ],
+    "ai-monthly": [
+      "Anthropic closes $65B Series H at a $965B valuation.",
+      "OpenAI moves toward a secretive IPO with an S-1 filing.",
+      "US forces Anthropic to block Claude Fable 5 for non-citizens.",
+      "RL frameworks pivot hard to Agentic RL and FP8 optimization.",
+      "Industry abandons monolithic bots for Agentic Engineering.",
+      "Multi-agent systems face a severe resource out-of-control crisis."
     ]
   }
 }
