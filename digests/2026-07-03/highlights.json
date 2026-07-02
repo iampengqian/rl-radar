@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI迈向多智能体编排与AST级代码感知",
+      "自动化失控与Windows兼容成企业级痛点",
+      "OpenAI Codex狂飙：发布v0.143高优重构安全架构",
+      "OpenCode V2事件流重构，Qwen Code底层性能极致优化",
+      "Claude Code陷争议：极高热度背后伴随账单与安全担忧",
+      "开源工具发力全渠道，Qwen Code正式版集成微信/QQ"
+    ],
+    "ai-agents": [
+      "OpenClaw发布beta版，全面首发支持OpenAI GPT-5.6",
+      "单日500个PR！OpenClaw社区热度与开发极其活跃",
+      "补齐短板：引入Windows第一方MXC安全沙盒后端",
+      "降低企业门槛：全面支持GitHub Enterprise数据驻留",
+      "全面重构iOS原生应用，采用标准SwiftUI导航体验",
+      "跨平台并发与OAuth刷新成为近期报错核心焦点"
+    ],
+    "ai-trending": [
+      "编码智能体配件化：Claude Code与Codex插件互相打通",
+      "降本利器：限制词汇让Claude Code削减65%的Token消耗",
+      "新星项目：msitarzewski/agency-agents单日暴涨2925星",
+      "爆款框架：obra/superpowers提供可落地的智能体技能库",
+      "底层神器：ECC为编码智能体提供记忆与安全保障",
+      "Chrome DevTools封装为MCP服务，支持Agent直接调试前端"
+    ],
+    "ai-web": [
+      "Anthropic发布Claude Sonnet 5，史上最强Agent模型",
+      "性价比颠覆：Sonnet 5以中端价格提供逼近Opus 4.8的性能",
+      "精准安全阉割：Sonnet 5大幅降低网络安全攻击能力",
+      "Agentic能力平民化：终端与浏览器自主规划全面下放",
+      "默认模型易主：Sonnet 5成为免费与Pro计划的默认选项",
+      "竞品缓冲：OpenAI官网今日无新增，处于罕见静默期"
+    ],
+    "ai-hn": [
+      "重磅传闻：OpenAI拟向美国特朗普政府出让5%股份",
+      "供应链觉醒：开发者呼吁将LLM生成代码踢出软件依赖",
+      "防闭源窃取IP：开发者群体对闭源工具不信任感蔓延",
+      "硬核跑分：实测11款大模型重构复杂代码节点表现",
+      "YC S25新人：Manufact推出首个云端MCP上下文管理平台",
+      "极客开源：claude-real-video让任意LLM解析真实视频"
+    ],
+    "rl-daily": [
+      "大模型对齐成重心：RL生态全面倾斜至RLHF后训练",
+      "TRL深度重构：聚焦DPO/KTO架构统一与数据流简化",
+      "攻坚异构算力：verl推进全异步训练与昇腾NPU适配",
+      "工程壁垒极高：slime死磕P2P权重同步与跨集群通信",
+      "系统级隔离：ROCK升级高并发沙箱管理与内核级安全",
+      "Tianshou代码静默：团队正蓄力筹备大版本与文档重构"
+    ],
+    "agent-orch": [
+      "多智能体协同爆发，成为Claude Code生态核心方向",
+      "工具链繁荣：近50个编排框架围绕AI开发狂飙突进",
+      "以Kanban为核心的管理工具成多智能体调度新范式",
+      "AutoGPT、MetaGPT等老牌框架持续引领复杂任务编排",
+      "Claude Squad与Claude Flow等轻量级助手崛起",
+      "Symphony及dmux主打标准化多路并发智能体管理"
+    ],
+    "ai-arxiv": [
+      "颠覆常识：单层强化学习微调即可媲美全参数效果",
+      "分离即增效：Transformer架构实现状态与预测解耦",
+      "动态混合：引入因果推断解决大模型数据分布难题",
+      "基准出炉：系统性量化AI科研想法与人类的真实差距",
+      "致命脆弱性：研究揭示Agent在动态工具下的泛化短板",
+      "认知突破：AutoMem将元记忆训练为可学习技能"
+    ],
+    "ai-hf": [
+      "新御三家：GLM-5.2、DeepSeek-V4与Qwen3.6霸榜基座",
+      "狂揽百万下载：百度Unlimited-OCR彻底解决长图识别",
+      "指哪打哪：英伟达LocateAnything-3B实现精准视觉定位",
+      "原生支持Agent：Qwen-AgentWorld-35B主打工具调用",
+      "端侧狂飙：LiquidAI发布230M超轻量级极速生成模型",
+      "兼顾速度与质量：Krea-2-Turbo顶流文生图模型发布"
+    ],
+    "ai-community": [
+      "避坑指南：LLM擅长写假测试，自动化验证易偏离业务",
+      "降本利器：非关键任务路由至本地模型，体验零妥协",
+      "安全警报：分享防范恶意提示词接管大模型的审查机制",
+      "放弃IDE：极客用Telegram作为AI编程的控制面板",
+      "精准澄清：MCP并未赋予AI记忆，而是外部访问接口",
+      "极客反思：剥离硅谷营销话术，探讨AI与劳动力真相"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to autonomous, multi-agent platforms.",
+      "Major players focus on security, context windows, and stability.",
+      "Codex rolls out aggressive security updates.",
+      "Pi and DeepSeek TUI undergo architectural overhauls.",
+      "Claude Code addresses safety flaws and billing glitches.",
+      "Open-source tools fiercely iterate on UI/UX and routing."
+    ],
+    "ai-agents": [
+      "OpenClaw ships v2026.7.1-beta.1 with GPT-5.6 support.",
+      "New OpenClaw update adds external harness attachments.",
+      "OpenClaw hits 500 PRs in 24 hours amid review bottleneck.",
+      "External OAuth integrations regress in OpenClaw.",
+      "OpenClaw maintainers struggle to merge staggering 454 PRs.",
+      "OpenClaw requires immediate patches for multi-agent sessions."
+    ],
+    "ai-trending": [
+      "Agent Harness frameworks dominate to supercharge CLIs.",
+      "New ECC framework adds memory and security for Claude Code.",
+      "Headroom MCP server cuts token usage by up to 95%.",
+      "Chrome DevTools MCP lets agents debug live web apps.",
+      "Claude-mem gives persistent memory to multiple CLI agents.",
+      "Autonomous cybersecurity and trading agents go viral."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Sonnet 5 for agentic workflows.",
+      "Sonnet 5 rivals Opus 4.8 performance at lower costs.",
+      "Sonnet 5 becomes default for Free and Pro tier users.",
+      "Anthropic pushes to dominate the cost-efficient agent market.",
+      "Sonnet 5 optimized for browser and terminal tool use.",
+      "OpenAI shows no new updates today."
+    ],
+    "ai-hn": [
+      "Backlash over OpenAI giving a 5% equity stake to Trump.",
+      "Community warns of hidden LLM dependencies in generated code.",
+      "Claude Code faces pushback over intrusive user telemetry.",
+      "MCP Cloud platforms launch to improve AI infrastructure.",
+      "New project lets any text LLM process and understand video.",
+      "ZKP privacy implementations for AI gain major traction."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM infrastructure and algorithms.",
+      "LLM RL frameworks battle severe systems-level bottlenecks.",
+      "Asynchronous pipelines drive TRL pivot to agentic RL.",
+      "verl and slime optimize disaggregated weight synchronization.",
+      "Traditional RL libraries adopt NumPy 2.0 and strict typing.",
+      "Gymnasium and PettingZoo fix parallel environment edge cases."
+    ],
+    "agent-orch": [
+      "Dev focus shifts to multi-agent orchestration platforms.",
+      "Symphony and Claude Squad lead autonomous agent workflows.",
+      "HumanLayer puts strict user consent controls into agents.",
+      "OpenKanban introduces multiplayer coding agent management.",
+      "Vibe Kanban visually tracks autonomous AI coding tasks.",
+      "dmux tackles routing for complex multi-agent environments."
+    ],
+    "ai-arxiv": [
+      "Research pivots to managing autonomous agent lifecycles.",
+      "LLMs increasingly used to generate verifiable code rules.",
+      "Training a single Transformer layer matches full RL updates.",
+      "State-Prediction Separation improves language modeling.",
+      "Researchers optimize training and inference efficiency.",
+      "New studies highlight blind spots in LLM evaluation safety."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Pro gains massive traction despite low downloads.",
+      "Qwen-AgentWorld-35B drives explosive agentic workflows.",
+      "GLM-5.2 acts as a massive MoE flagship for new fine-tunes.",
+      "Baidu Unlimited-OCR pushes multimodal capabilities forward.",
+      "Highly quantized, uncensored models rack up downloads.",
+      "NVIDIA LocateAnything and Google TabFM hyper-specialize AI."
+    ],
+    "ai-community": [
+      "AI Engineer World's Fair sparks deep operational AI talks.",
+      "Practical AI focus shifts to model routing and cost control.",
+      "Dev.to warns AI test generation often validates wrong behavior.",
+      "Micro AI code reviewers become crucial to stop prompt hacks.",
+      "EU-hosted inference providers see massive demand in 2026.",
+      "Lobste.rs debates the mathematical limits of LLMs."
+    ]
+  }
+}
