@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 迈入多智能体协同深水区，企业级安全沙箱成重心",
+      "OpenAI Codex 开启 Alpha 迭代，进行 10 项底层重构",
+      "Gemini CLI 频出 P1 缺陷，解决代理调度死循环等痛点",
+      "OpenCode 全量重构 V2 架构，着力解决免费模型路由崩溃",
+      "Qwen Code 修复 KV-cache 失效，核心聚焦安全与性能",
+      "Claude Code 活跃度极高，连发两版以解决子代理 OOM"
+    ],
+    "ai-agents": [
+      "OpenClaw 生态极为活跃，单日处理超 500 条 PR 动态",
+      "项目开发重心聚焦于 v2026.6.11 回归与多渠道投递修复",
+      "底层存储正进行 SQLite 架构重构，强化数据可靠性",
+      "引入防谄媚压力测试套件，全面强化大模型对齐评估",
+      "修复 Nextcloud 结构化 mention 解析等渠道集成 Bug",
+      "社区热议 Agent 内部状态对用户通信渠道的严重污染"
+    ],
+    "ai-trending": [
+      "Claude Code 生态爆发，AI 命令行智能体技能化成趋势",
+      "caveman 爆款工具：强制 AI 精简语法，降低 65% 消耗",
+      "Chrome DevTools MCP 发布，让智能体直接控制浏览器",
+      "Ollama 本地推理引擎无缝支持 Kimi-K2.6 等最新模型",
+      "obra/superpowers 热度飙升，提供标准 AI 开发方法论",
+      "herdr 终端多路复用器爆火，允许同时调度多个 AI 智能体"
+    ],
+    "ai-web": [
+      "Anthropic 重磅发布 Claude Sonnet 5，主打高性价比智能体",
+      "Claude Sonnet 5 性能直逼 Opus 4.8，大幅降低开发成本",
+      "Anthropic 刻意大幅削弱 Fable 5 的网络安全任务执行能力",
+      "联合推出业界首个 AI 越狱严重程度框架的早期草案",
+      "Fable 5 详细披露网络安全分类器工作及防御危险边缘",
+      "扩展思考模式允许开发者根据任务难度自主设定思考预算"
+    ],
+    "ai-hn": [
+      "出于安全后门担忧，阿里巴巴全面封杀 Claude Code",
+      "研究指 AI 仅省 3% 工时且无法转化为利润引共鸣",
+      "Anthropic Fable 5 重发遭猛烈抨击，用户指性能被阉割",
+      "测试显示 GPT 5.5 编码能力追平 Fable 5 且成本更低",
+      "开发者焦虑加剧，本地运行 SOTA 大模型指南爆火",
+      "社区呼吁跨 AI 生态互操作，避免被单一闭源体系锁定"
+    ],
+    "rl-daily": [
+      "强化学习生态转向超大规模异步集群调度与多模态探索",
+      "TRL 聚焦 vLLM 原生迁移与跨训练器多模态对齐重构",
+      "verl 全力修复分布式 MoE 权重同步与昇腾算力适配",
+      "AReaL 攻坚高并发在线 RL 调度，完善异步双消费者队列",
+      "slime 联手 SGLang 最新 PD 分离架构解决 Agent 轨迹痛点",
+      "OpenRLHF 暴露混合解码器在 DeepSpeed 下的切分兼容难题"
+    ],
+    "agent-orch": [
+      "AI 编排生态转向多智能体协同与复杂工作流串联",
+      "Claude Squad 等终端原生调度工具备受开发者瞩目",
+      "AutoGPT 与 MetaGPT 等经典框架持续深化复杂任务编排",
+      "HumanLayer 致力于构建人机协同与人类监督的防火墙",
+      "Vibe Kanban 将 AI 智能体开发与敏捷看板管理深度融合",
+      "dmux 等多路复用工具致力于解决高并发智能体任务调度"
+    ],
+    "ai-arxiv": [
+      "ArXiv 投稿释放强烈信号：AI 安全与可控性需求并重",
+      "自主编码智能体成研究焦点，防范分布式攻击成重点",
+      "研究发现测试时计算与强化学习大幅提升视觉推理能力",
+      "DRIFTLENS 首次揭示个性化记忆会导致大模型推理漂移",
+      "DecompRL 结合强化学习与模块化生成突破测试算力瓶颈",
+      "多智能体辩论会自发涌现潜在的利己性客观社会行为"
+    ],
+    "ai-hf": [
+      "智谱最新一代 MoE 大模型 GLM-5.2 强势发布登顶热门",
+      "DeepSeek-V4-Pro 旗舰版发布，主打极致推理生成性能",
+      "百度推出 Unlimited-OCR 模型，突破传统视觉长度限制",
+      "英伟达发布 3B 视觉定位模型 LocateAnything，下载破百万",
+      "开源社区发力超大规模，惊现 3970 亿参数 MoE 大模型",
+      "LiquidAI 推出 230M 超轻量模型，专为移动端低延迟设计"
+    ],
+    "ai-community": [
+      "开发者焦点转向 AI Agent 的生产环境工程化落地防御",
+      "MCP 协议与代码库工具被视为打破 Agent 信息孤岛关键",
+      "实战日志分享：如何构建高可用且具弹性的任务编排器",
+      "为 Agent 记忆库建立信任防火墙，防恶意记忆篡改",
+      "利用 Firecracker 微虚拟机实现 AI 生成代码沙箱隔离",
+      "社区冷思考：底层的 DevOps 基础设施无法依赖氛围编程"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Ecosystem shifts to multi-agent orchestration frameworks.",
+      "Claude Code v2.1.200 tightens manual permissions and fixes bugs.",
+      "OpenAI Codex alpha focuses on Windows sandbox security.",
+      "AI CLI tools compete on robust sandbox execution over models.",
+      "Enterprise features like strict sandboxing drive dev adoption.",
+      "Managing context windows is a focal point for AI CLIs."
+    ],
+    "ai-agents": [
+      "OpenClaw surges with nearly 500 PR updates in 24 hours.",
+      "OpenClaw merges only 30 of 470 active PRs, hinting at delays.",
+      "OpenClaw focuses on improving multi-agent setup reliability.",
+      "High volume of OpenClaw bug reports tied to v2026.6.11.",
+      "OpenClaw undergoing a major storage architecture overhaul.",
+      "No new OpenClaw releases published in the last 24 hours."
+    ],
+    "ai-trending": [
+      "Agentic coding tools massively dominate open-source AI.",
+      "obra/superpowers structures how autonomous agents execute tasks.",
+      "JuliusBrussee/caveman slashes token usage by 65 percent.",
+      "safishamsi/graphify turns codebases into LLM knowledge graphs.",
+      "AI agents shift into persistent, stateful team members.",
+      "TencentCloud/CubeSandbox brings secure sandboxing to AI."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Sonnet 5 with agentic capabilities.",
+      "Claude Sonnet 5 brings Opus-tier autonomy to cheaper pricing.",
+      "Anthropic globally re-deploys Claude Fable 5 with safeguards.",
+      "Anthropic proposes an industry-wide Jailbreak Severity Framework.",
+      "OpenAI published zero new articles in the last 24 hours.",
+      "Anthropic highlights its pioneering Responsible Scaling Policy."
+    ],
+    "ai-hn": [
+      "Anthropic faces Alibaba ban over Claude Code backdoor risks.",
+      "Community backlash hits Anthropic over nerfed Claude Fable 5.",
+      "Massive engagement around developers running SOTA models locally.",
+      "Meta AI chief claims their coming LLM caught up to OpenAI.",
+      "GPT 5.5 matches Claude Fable coding performance at lower cost.",
+      "Strong developer push toward open-source and local AI solutions."
+    ],
+    "rl-daily": [
+      "Ecosystem shifts heavily between LLM alignment and classic RL.",
+      "Online RLHF dominates engineering momentum for large language models.",
+      "TRL undergoes high-intensity refactoring for vLLM integration.",
+      "verl focuses on root-causing critical distributed system issues.",
+      "Developers tackle weight sync and disaggregated inference limits.",
+      "Traditional RL frameworks remain in maintenance phases today."
+    ],
+    "agent-orch": [
+      "Agent Orchestrator tracks 45 active multi-agent projects.",
+      "AutoGPT and MetaGPT see active development in the ecosystem.",
+      "Tools like Claude Squad and dmux manage complex agent swarms.",
+      "HumanLayer focuses on human-in-the-loop orchestration systems.",
+      "Vibe Kanban and OpenKanban offer visual management for agents.",
+      "Swarm Protocol establishes communication for multi-agent setups."
+    ],
+    "ai-arxiv": [
+      "Research pivots to securing autonomous AI systems at scale.",
+      "LACUNA tests how precisely LLMs can unlearn sensitive data.",
+      "Neuron-Aware data selection cuts costly human annotations.",
+      "DRIFTLENS measures memorization drift in language models.",
+      "New frameworks bridge isolated model reasoning and robotics.",
+      "Innovative world-modeling techniques push embodied AI forward."
+    ],
+    "ai-hf": [
+      "Qwen3.5/3.6, Gemma-4, and GLM-5.2 dominate trending models.",
+      "zai-org/GLM-5.2 impresses with its Mixture-of-Experts design.",
+      "deepreinforce-ai/Ornith-1.0-397B is a frontier-scale open-weight.",
+      "LiquidAI/LFM2.5-230M highlights a massive trend toward edge AI.",
+      "Massive MoE architectures are heavily optimized for local use.",
+      "Qwen introduces a dedicated AgentWorld workflow framework."
+    ],
+    "ai-community": [
+      "Discussions shift from prompt engineering to resilient workflows.",
+      "Firecracker micro-VMs deemed essential for untrusted AI code.",
+      "Teaching coding agents to build workflows with MCP gains traction.",
+      "Trust firewalls are being built for AI agent memory management.",
+      "Dev focus is on hardening LLMs for production environments.",
+      "Community explores hybrid transformer capabilities and edge models."
+    ]
+  }
+}
