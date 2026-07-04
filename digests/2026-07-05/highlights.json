@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 工具全面进化为具备后台守护与多级代理的 Agentic 中枢",
+      "OpenAI Codex 遭用户反馈 Token 异常与严重 SSD 损耗",
+      "Qwen Code 发布 Nightly 版，发力守护进程与企业微信集成",
+      "Claude Code v2.1.201 发布，用户抱怨模型降级误判",
+      "Gemini CLI 发力 AST 解析，彻底修复子代理死循环痛点",
+      "跨平台 Windows 环境稳定性与内存资源抢占成攻坚焦点"
+    ],
+    "ai-agents": [
+      "OpenClaw 活跃度爆表，24小时新增积压 471 个 Issue",
+      "仅合并 138 个 PR，超 360 个 PR 亟待社区维护者处理",
+      "PR #100057 落地白名单，杜绝多智能体共享记忆越权",
+      "史诗级 PR #77127 引入 append 模式，修复定时任务覆盖痛点",
+      "社区聚焦多智能体编排稳定性、上下文成本与沙盒安全",
+      "用量统计 Bug 导致内存泄漏，PR #100054 已修复读取机制"
+    ],
+    "ai-trending": [
+      "openai/codex-plugin-cc 热爆，实现 Claude Code 调用 Codex",
+      "chrome-devtools-mcp 赋能 AI 直接控制与调试前端浏览器",
+      "caveman 插件单日暴涨千星，极简模式狂砍 65% 上下文",
+      "轻量级终端 AI 开发工作区 terax-ai 标志轻量化新探索",
+      "阿里开源 page-agent，可用自然语言直接控制 Web 交互界面",
+      "ollama 霸榜，已无缝支持 Kimi-K2.6 及 GLM-5.1 等新模型"
+    ],
+    "ai-hn": [
+      "Claude Code 惊现严重会话泄露，开发者对闭源信任暴跌",
+      "GPT-5.5 Codex 被指存在推理 token 聚类导致性能下降",
+      "Smart Routing 爆火，通过智能路由为 Claude Code 省 Token",
+      "开发者狂热追求 Token 极限压缩与本地隐私优先方案",
+      "AI 消灭初级程序员讨论再引爆，行业切实恐慌就业冲击",
+      "ScreenMind 结合 Gemma 4 打造本地隐私优先的屏幕记忆"
+    ],
+    "rl-daily": [
+      "LLM 驱动的 RLHF/GRPO 成为核心主轴，TRL 发布新版本",
+      "verl 全力攻坚万亿级模型，加速异构计算 NPU 适配",
+      "大模型 RL 算力成本倒逼框架向国产昇腾等异构算力演进",
+      "AReaL 死磕复杂 Agent 工作流的异步通信与过程级奖励",
+      "经典传统 RL 基础设施 API 趋稳，全面转向可视化体验",
+      "Tianshou、CleanRL 及 OpenRLHF 等多个老牌项目无更新"
+    ],
+    "agent-orch": [
+      "聚焦生产级部署：Agent 工作流安全风险与权限收敛成焦点",
+      "Claude Squad 等多智能体编排项目积极探索 Agent 间通信",
+      "HumanLayer 等项目发力人机协同编排，重塑开发交互体验",
+      "T3Code 等工具尝试将 AI Agent 深度集成至现代 Web 框架",
+      "AutoGPT 与 MetaGPT 持续演进，长周期自动化编排成趋势",
+      "新一代编排框架涌现，重点攻坚多智能体并发状态管控"
+    ],
+    "ai-hf": [
+      "百亿参数级 MoE 与 Agent 模型称霸，Qwen3.5 系列主导榜单",
+      "智谱 GLM-5.2 受瞩目，去审查版本迎社区爆发式下载",
+      "Qwen-AgentWorld-35B-A3B 专为复杂自动化助理工作流微调",
+      "DeepSeek-V4-Pro 集成 DSpark，复杂逻辑推理表现卓越",
+      "NVIDIA 集中发布 NVFP4 量化模型，大幅降低本地部署门槛",
+      "baidu/Unlimited-OCR 突破分辨率限制，支持超长图文提取"
+    ],
+    "ai-community": [
+      "Spec-driven 工作流助力 AI Agent 成功交付加密金融级项目",
+      "开源工具 session-indexer 解决 AI 编码助手跨项目失忆痛点",
+      "AGENTS.md 实战教程爆火，手把手教你精准控制智能体行为",
+      "警告：你的 AI Agent 可能是企业内权限最高且最危险的账户",
+      "OpenAI 兼容 API 网关在实际生产迁移与调试中的避坑实战",
+      "开发者警惕 Agent 滥用权限与数据泄露等严重安全隐患"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.201 released amid Git hook fears",
+      "Gemini CLI launches v0.51.0-nightly build",
+      "Devs battle runaway token costs and orphaned subagents",
+      "AI coding tools pivot to enterprise sandbox security",
+      "OpenAI Codex flags 10 issues with no new releases today",
+      "Windows stability remains a top priority for AI CLIs"
+    ],
+    "ai-agents": [
+      "OpenClaw processes 1,000 issues and PRs in 24 hours",
+      "Maintainers navigate backlog of 471 open issues",
+      "Control UI gets major architectural refactor",
+      "Message routing regressions plague OpenClaw users",
+      "No new OpenClaw release as team consolidates PRs",
+      "Multi-agent orchestration drives massive project momentum"
+    ],
+    "ai-trending": [
+      "Caveman skill cuts Claude tokens by 65%, hits 83k stars",
+      "Headroom MCP compresses context to slash token usage",
+      "Chrome DevTools launches official MCP server for LLMs",
+      "AI community reverse-engineers leaked GPT-5.5 prompts",
+      "Local Rust transcriber Meetily surges in popularity",
+      "Extreme token optimization drives agentic coding wave"
+    ],
+    "ai-hn": [
+      "Alibaba bans Claude Code over corporate espionage fears",
+      "Critical session cache leakages discovered in Claude Code",
+      "Debate rages over AI's impact on junior developer jobs",
+      "GPT-5.5 Codex suffers from reasoning-token clustering bug",
+      "Rising LLM operational costs face heavy community scrutiny",
+      "New dispersion loss optimizes small language models"
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM training and classic gyms",
+      "verl clears backlog and adds Huawei Ascend NPU support",
+      "TRL fixes VLM multi-turn tool calling and vLLM bugs",
+      "AReaL focuses heavily on Ray networking and async fixes",
+      "Traditional RL libraries like Gymnasium reach total stability",
+      "LLM alignment post-training sees aggressive iteration"
+    ],
+    "agent-orch": [
+      "45 agent orchestrators tracked in rapidly expanding sector",
+      "AI agents focus on managing systemic hallucinations",
+      "Community shifts from single bots to swarm protocols",
+      "Claude Squad and AutoGPT lead the orchestration space",
+      "New frameworks prioritize safe human-in-the-loop controls",
+      "Orchestrators tackle multi-agent context exhaustion"
+    ],
+    "ai-hf": [
+      "GLM-5.2 MoE model tops charts with 208,920 downloads",
+      "DeepSeek V4 Pro pushes architectural efficiency limits",
+      "Massive 397B Ornith MoE showcases extreme scale models",
+      "Gemma 4 and Qwen 3.6 dominate open-weight leaderboards",
+      "GGUF and FP4 quantizations supercharge local deployments",
+      "Surge in specialized cybersecurity and coding models"
+    ],
+    "ai-community": [
+      "Autonomous SRE AI invents fake hacks during outages",
+      "Scaling context windows might make AI tools worse",
+      "Silent payload truncations stall LLM API debugging",
+      "Prompt caching becomes vital to manage token costs",
+      "Devs warn of severe data leaks in AI agent controls",
+      "Production AI suffers from systemic agent hallucinations"
+    ]
+  }
+}
