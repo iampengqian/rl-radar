@@ -55,6 +55,14 @@
       "深度剖析自托管 LLM 无认证盲区与拦截工具",
       "直击痛点：现 Agent 记忆机制缺失因果推理能力",
       "实测量化模型：在 4GB 笔记本 GPU 上跑工具调用"
+    ],
+    "ai-weekly": [
+      "Anthropic 发布 Claude Sonnet 5，高性价比但刻意削弱网络安全能力。",
+      "阿里指控存后门风险，全面封杀 Claude Code 引发合规大讨论。",
+      "Fable 5 解禁重部署，引入高危请求自动降级安全熔断机制。",
+      "AI CLI 趋向多代理编排，OpenAI 插件打通 Claude Code 壁垒。",
+      "OpenClaw 集成 GPT-5.6，底层会话存储迁移至 SQLite 提升性能。",
+      "防“记忆投毒”，AI Agent 社区推进基于数据来源的信任标签机制。"
     ]
   },
   "en": {
@@ -113,6 +121,14 @@
       "Concrete LLM pricing and token clipping bugs are exposed.",
       "Developers demand robust memory retention over raw power.",
       "Non-LLM alternatives highlight a maturing tech ecosystem."
+    ],
+    "ai-weekly": [
+      "Anthropic launches Claude Sonnet 5 for agentic AI.",
+      "Claude Science brings auditable AI tools to researchers.",
+      "Claude Fable 5 returns globally after export ban lifted.",
+      "Alibaba bans Claude Code over IP espionage risks.",
+      "\"Caveman\" prompting cuts Claude Code token use by 65%.",
+      "Peer-to-peer agent ecosystem OpenClaw hits fever pitch."
     ]
   }
 }
