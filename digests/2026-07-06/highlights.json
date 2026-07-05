@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 连发36版修计费漏洞与沙箱稳定性",
+      "Gemini CLI 引入 AST 解析与 SSRF 安全防护",
+      "Qwen Code 集成企微/钉钉，Web Shell 演进",
+      "DeepSeek TUI 将推出多智能体编排引擎 WhaleFlow",
+      "OpenCode V2 架构重构，引入工作空间隔离",
+      "Pi 跨模型传递上下文，强类型约束防 LLM 幻觉"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 beta.2，率先适配 GPT-5.6 模型",
+      "OpenClaw 新增 attach 命令支持挂载外部测试工具",
+      "OpenClaw 大幅重构聊天 UI 与极简侧边栏设计",
+      "OpenClaw 修复 QQ Bot WebSocket 重连丢消息问题",
+      "OpenClaw 深度讨论多渠道触达与跨渠道长期记忆",
+      "单日超 150 个 PR 被合并，项目高频架构演进"
+    ],
+    "ai-trending": [
+      "ECC 拿下22万星，成最热 Claude Code 性能底座",
+      "OpenAI 官方跨界：Codex 插件杀入 Claude Code",
+      "Caveman 爆火：让 AI 模仿穴居人狂省 65% Token",
+      "Ollama 率先支持 Kimi-K2.6、GLM-5.1 等新模型",
+      "CodexBar 发布：macOS 状态栏免登录查用量",
+      "阿里开源 Page-Agent，自然语言控制网页交互"
+    ],
+    "ai-hn": [
+      "达特茅斯证实 AI 辅导效应量达 1.30，颠覆教育",
+      "不到 150 刀！Claude 独立完成成熟开源库核心代码",
+      "Claude 设计系统提示词工程引发 UI/UX 实践热议",
+      "Handoff 发布：验证上下文桥接 Claude Code 会话",
+      "Tripadvisor 虚假宣传引发 AI 摘要信任危机",
+      "微软 365 借 AI 大幅涨价，用户痛斥交 AI 税"
+    ],
+    "rl-daily": [
+      "verl 爆发大规模容错与 FSDP2 演进的工程痛点",
+      "TRL 全面适配多模态 VLM，KTO 算法正式转正",
+      "强化学习全面向 Agentic（智能体化）交互演进",
+      "slime 验证 PD 分离架构与磁盘级增量权重同步",
+      "AReaL 探索 BF16 训练结合 FP8 推理的异构混部",
+      "rl_games 将 PBT 等高级算法沉淀为核心模块"
+    ],
+    "ai-hf": [
+      "智谱 GLM-5.2 凭借强悍对话推理霸榜点赞榜首",
+      "DeepSeek V4 Pro DSpark 进化版展现极强推理",
+      "英伟达 LocateAnything-3B 实现精准视觉定位",
+      "百度 Unlimited-OCR 突破传统无限制文本提取",
+      "Krea-2 Turbo 版文生图模型原生集成 ComfyUI",
+      "端侧具备编码与 Agent 能力的量化模型需求激增"
+    ],
+    "ai-community": [
+      "开发者历经 8 个月 200 次实验复盘 LLM 替代方案",
+      "AI 编码太快！呼吁用自动化验证层替代人工 Review",
+      "惨痛教训：LangChain Agent 生产环境静默失败两周",
+      "深度剖析自托管 LLM 无认证盲区与拦截工具",
+      "直击痛点：现 Agent 记忆机制缺失因果推理能力",
+      "实测量化模型：在 4GB 笔记本 GPU 上跑工具调用"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools pivot to complex, multi-agent orchestration.",
+      "Developers spawn 30+ concurrent sub-agents, straining systems.",
+      "Maintainers enforce strict grammar/schema for tool calls.",
+      "Communities demand better Windows stability and token tracking.",
+      "Claude Code led GitHub activity with 10 hot issues today.",
+      "OpenAI Codex released rust-v0.143.0-alpha.36."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours.",
+      "OpenClaw maintainers successfully merge 150 PRs today.",
+      "OpenClaw v2026.7.1-beta.2 adds native GPT-5.6 support.",
+      "New openclaw attach targets existing Gateway sessions.",
+      "453 active OpenClaw issues highlight state management flaws.",
+      "Message delivery reliability remains a massive bottleneck."
+    ],
+    "ai-trending": [
+      "Agentic Coding OS dominates today's open-source ecosystem.",
+      "Dev focus shifts to prompt compression to cut inference costs.",
+      "Browser GUI agents blur the line between desktop and AI.",
+      "Claude Code acts as the foundational hub for coding plugins.",
+      "Ollama hits 175k stars, supporting frontier models like Kimi.",
+      "Herdr lands 650 new stars as an AI agent multiplexer."
+    ],
+    "ai-hn": [
+      "Claude generates entire open-source releases for under $150.",
+      "Anthropic faces backlash over bizarre prompt injection bugs.",
+      "Dartmouth AI tutor study shows massive learning gains.",
+      "Microsoft Copilot price hikes signal costly enterprise shift.",
+      "OpenAI hardware ambitions turn AI into integrated necessity.",
+      "Community scrutinizes the real-world reliability of AI."
+    ],
+    "rl-daily": [
+      "RL open-source gravity shifts to LLM and VLM alignment.",
+      "verl focuses on FSDP2 and 100B+ scale fault tolerance.",
+      "Distributed frameworks verl, TRL, and slime dominate activity.",
+      "TRL graduates KTO API to stable amid AsyncGRPO fixes.",
+      "Traditional multi-agent RL tools enter mature maintenance.",
+      "ROCK emerges as a critical infrastructure orchestrator."
+    ],
+    "ai-hf": [
+      "Massive 30B+ MoE architectures dominate Hugging Face.",
+      "Qwen3.5, Gemma-4, and DeepSeek-V4 see massive adoption.",
+      "Highly quantized GGUF formats surge for local deployment.",
+      "GLM-5.2 hits 220k downloads using a MoE architecture.",
+      "Uncensored and abliterated community fine-tunes trend.",
+      "DeepSeek-V4-Pro generates major buzz for advanced reasoning."
+    ],
+    "ai-community": [
+      "Deterministic AI agents are largely an illusion, tests show.",
+      "AI accelerates coding but creates massive technical debt.",
+      "Engineers pivot to building verification layers over reviews.",
+      "Concrete LLM pricing and token clipping bugs are exposed.",
+      "Developers demand robust memory retention over raw power.",
+      "Non-LLM alternatives highlight a maturing tech ecosystem."
+    ]
+  }
+}
