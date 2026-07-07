@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI工具迈入多智能体编排深水区，长上下文与Token消耗成痛点。",
+      "GitHub Copilot CLI发布重磅沙箱与插件热重载功能，社区反响热烈。",
+      "Qwen Code SDK生态全面爆发，聚焦多工作区与并发性能优化。",
+      "OpenAI Codex进入底层架构重构期，重点优化云配置与沙箱基座。",
+      "OpenCode正向V2架构平滑迁移，重点打磨TUI与多模型路由。",
+      "DeepSeek TUI品牌重塑为CodeWhale，全面重构引擎与并发控制。"
+    ],
+    "ai-agents": [
+      "OpenClaw单日处理超350个PR，处于高负载快迭代的稳健成长期。",
+      "OpenClaw推进底层架构重构，将默认存储全面切换至SQLite。",
+      "OpenClaw修复长达22秒事件阻塞，解决多渠道消息丢失痛点。",
+      "OpenClaw修复Agent处理报错时，中间文本泄漏至聊天频道的问题。",
+      "社区热议多渠道消息路由，强烈要求提升Agent对话顺滑度体验。",
+      "批量修复高价值核心缺陷，超150个PR被合并或排队等待自动化处理。"
+    ],
+    "ai-trending": [
+      "大厂底层的系统提示词泄露库登顶热榜，单日暴涨超1700星。",
+      "腾讯云开源轻量级并发沙箱，专解Agent运行时安全隔离痛点。",
+      "首个专为AI Agent打造的Office套件CLI，支持AI自由读写文档。",
+      "硬核Token优化：让Claude Code极度精简输出，消耗直降65%。",
+      "ECC项目爆火，融合技能本能记忆的最强Agent性能优化系统。",
+      "claude-mem跨会话持久化记忆工具，自动压缩解决长对话遗忘。"
+    ],
+    "ai-web": [
+      "Claude Sonnet 5发布，Agentic能力下放，性能逼近Opus 4.8。",
+      "Anthropic在机制可解释性突破，发现模型内部类似大脑的意识表征。",
+      "Safeguards团队构建多层防御，向企业释放负责任扩张的信任信号。",
+      "Sonnet 5全面铺开作为免费版默认模型，抢占开发者日常使用时长。",
+      "发布模型内部J-space机制，为监控深层推理过程提供全新科学工具。",
+      "深入社会学分析，发布用户如何向AI寻求个人生活指导的报告。"
+    ],
+    "ai-hn": [
+      "Anthropic激进策略引反弹，AI生成垃圾代码与泛滥工具遭抱怨。",
+      "Rowboat获高分，提供开源、本地优先的Claude Desktop替代方案。",
+      "Shellular引爆讨论：让你直接在手机上运行厚重的AI编码工具。",
+      "大模型推理成本飙升，中国AI模型正迅速获得美国企业青睐。",
+      "开发者发帖：我写了个1-bit WebGPU运行库，浏览器里跑17亿参数LLM。",
+      "Anthropic疑似新模型Fable 5引发社区大量关注与订阅策略讨论。"
+    ],
+    "rl-daily": [
+      "强化学习生态分化，千亿级MoE训练栈全力冲击长上下文与多模态。",
+      "verl底层重构Megatron-Bridge，攻坚PD分离与全异步训练范式。",
+      "TRL架构演变为Agent RL基础设施，死磕异步通信与底层解耦。",
+      "ROCK即将发布v1.10.0，密集修复代码沙箱环境的边缘Bug。",
+      "slime拥抱CUDA 13与RDMA，重点提升Off-policy算法精度。",
+      "Open Instruct引入CPU-Adam，显著降低GRPO算法的硬件门槛。"
+    ],
+    "agent-orch": [
+      "Agent编排生态大繁荣，涌现大量基于Claude Code的多智能体协作工具。",
+      "本地优先与隐私安全成核心诉求，桌面端Agent替代方案备受瞩目。",
+      "移动端运行AI编码工具引发热议，开发者追求随时随地的编排体验。",
+      "多智能体框架走向成熟，任务生命周期管理与看板可视化成标配。",
+      "Agent自我演进与长期记忆管理成为外挂编排框架的探索新方向。",
+      "轻量级并发沙箱集成，正在成为Agent编排系统的必备安全基座。"
+    ],
+    "ai-arxiv": [
+      "在线策略蒸馏提出，解决大模型强化学习计算成本过高的痛点。",
+      "将验证能力定义为预训练后的全新扩展轴，提出通用LLM验证框架。",
+      "CompactionRL通过强化学习压缩上下文，破解长周期任务痛点。",
+      "揭示大模型生成内部机制，发现其会线性编码剩余输出长度。",
+      "离散扩散模型的数学视角剖析，启发神经网络训练与采样机制。",
+      "提出大模型弱到强泛化方法，实现从小模型向大模型推理转移。"
+    ],
+    "ai-hf": [
+      "智谱推全新MoE架构大模型GLM-5.2，斩获社区最高点赞。",
+      "DeepSeek-V4-Pro旗舰模型登场，推理与逻辑任务备受期待。",
+      "通义千问成开源底座霸主，Agentic专属模型重磅发布。",
+      "端侧量化技术空前火热，GGUF格式霸占模型下载量榜首。",
+      "百度开源强大OCR模型，突破分辨率限制支持高精度文字提取。",
+      "英伟达发3B视觉定位大模型，精准识别并定位图像任意实体。"
+    ],
+    "ai-community": [
+      "生产环境Agent循环调用导致Token严重浪费，直击高成本痛点。",
+      "你的RAG系统在撒谎：深入剖析大模型处理表格数据的常见幻觉。",
+      "安全盲区：向量的泄漏等价于源文本数据的泄漏，不可忽视。",
+      "血泪教训：为什么在测试中完美运行50次的Agent上线依然崩溃？",
+      "大模型对齐的致命缺陷：拒绝写钓鱼邮件却会轻易转发机密文件。",
+      "过度依赖AI辅助编程，放弃阅读文档会导致系统性理解缺失。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to multi-agent orchestration frameworks.",
+      "Claude Code v2.1.203 targets safety filters and token burn.",
+      "OpenAI Codex rust-v0.143.0-alpha.38 adds lifecycle hooks.",
+      "Gemini CLI v0.51.0 Nightly focuses on sub-agent reliability.",
+      "Industry pushes to standardize integrations via MCP.",
+      "Focus shifts to context preservation and sandbox security."
+    ],
+    "ai-agents": [
+      "OpenClaw hit massive activity with 500 issues and PRs.",
+      "OpenClaw merged 150 PRs to boost system stability.",
+      "OpenClaw devs transitioned transcript storage to SQLite.",
+      "Multi-agent orchestration is the primary focus today.",
+      "Gateway security boundaries and API keys fortified.",
+      "Triage bot heavily utilized, showing strained pipeline."
+    ],
+    "ai-trending": [
+      "Specialized 'agentic skills' movement dominates GitHub.",
+      "System prompt leaks hit 1,704 stars today.",
+      "Meetily trends as a privacy-first offline AI tool.",
+      "Tencent CubeSandbox securely executes AI agent actions.",
+      "ECC project optimizes token usage for CLI agents.",
+      "AI shifts from foundational training to practical apps."
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Sonnet 5 with agentic abilities.",
+      "Sonnet 5 matches Opus 4.8 power at a fraction of cost.",
+      "Anthropic maps mechanical correlates of conscious access.",
+      "Anthropic deep dives into enterprise Safeguards architecture.",
+      "Sonnet 5 deliberately limits cybersecurity capabilities.",
+      "OpenAI remains silent today with zero new updates."
+    ],
+    "ai-hn": [
+      "Anthropic extends top-tier Claude Fable 5 access to July 12.",
+      "OpenAI quietly launches GPT-realtime-2.1 voice models.",
+      "Tooling pivots to mobile and local-first agent management.",
+      "Viral post pushes back against pervasive AI note-takers.",
+      "Macro-anxiety grows over AI's physical and economic toll.",
+      "Deep frustration with AI fatigue boils over socially."
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates into LLM alignment and APIs.",
+      "verl is preparing v0.8.0 to scale DeepSeek V4 training.",
+      "Active projects tackle heterogeneous hardware bottlenecks.",
+      "TRL adds async GRPO and fixes VLM token bugs.",
+      "Traditional RL libraries experience zero activity today.",
+      "AReaL introduces FP8 weight sync and agent memory."
+    ],
+    "agent-orch": [
+      "Ecosystem explodes to 45 tracked agent orchestrators.",
+      "OpenAI's Symphony joins the multi-agent orchestration race.",
+      "AutoGPT and MetaGPT face new swarm protocol competitors.",
+      "Tools focus on managing long-running autonomous workflows.",
+      "Local-first and mobile agent managers see a massive surge.",
+      "Squad and Kanban tools prioritize developer UX for agents."
+    ],
+    "ai-arxiv": [
+      "Researchers tackle finite context windows in LLM agents.",
+      "New method bypasses RL rollout costs via distillation.",
+      "TREK stops GRPO from stalling on complex reasoning prompts.",
+      "LLM-as-a-Verifier formalizes generalized model checking.",
+      "Novel framework targets prompt injection defenses.",
+      "Calibration-free vision-language-action models advance."
+    ],
+    "ai-hf": [
+      "Community fine-tunes of Qwen 3.6 dominate the Hub.",
+      "zai-org's GLM-5.2 MoE model racks up 281k downloads.",
+      "DeepSeek-V4-Pro-DSSpark pushes open-weight reasoning.",
+      "Baidu Unlimited-OCR leads specialized multimodal systems.",
+      "MoE models balance 119B parameters with 3B active size.",
+      "NVIDIA LocateAnything dominates spatial AI downloads."
+    ],
+    "ai-community": [
+      "Dev community shifts focus from hype to AI risk management.",
+      "Over-reliance on AI breeds misunderstanding of systems.",
+      "Agentic loops can secretly explode your API costs.",
+      "RAG systems still struggle parsing complex table data.",
+      "Lobste.rs explores deep cognitive mechanics of LLMs.",
+      "Era of reliability, security, and deep architecture begins."
+    ]
+  }
+}
