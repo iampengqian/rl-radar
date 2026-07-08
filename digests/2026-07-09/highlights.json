@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 发 rust-v0.143.0 稳定版，强化沙盒隔离",
+      "Gemini CLI 修复 P1 级 Agent 调度缺陷与 RCE 漏洞",
+      "GitHub Copilot CLI 遭遇跨平台严重 Bug 与死循环",
+      "DeepSeek TUI 启动 Android 原生支持与动态模型加载",
+      "Qwen Code 推进守护进程服务化与记忆体隔离",
+      "长上下文压缩与防失忆机制成为各大 CLI 核心刚需"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时内多达 500 条 PR 并行更新",
+      "引入 HashiCorp Vault，实现企业级凭证安全隔离",
+      "修复 I/O 阻塞导致严重丢消息的高负载性能瓶颈",
+      "合并 Codex 运行时原语，拉齐全渠道交互体验",
+      "社区热议内部 Agent 上下文意外泄露给终端用户",
+      "主干无新版本发布，当前正承受极大的 Review 压力"
+    ],
+    "ai-trending": [
+      "OfficeCLI 登顶热榜，让 Agent 免装 Office 操作 Excel",
+      "caveman 插件将提示词转为穴居人语，截断65%Token",
+      "ECC 破 22 万星，为 Claude Code 提供核心技能防护",
+      "superpowers 爆火，提供切实可行的 Agentic 工作流",
+      "阿里开源超轻量级进程内向量数据库 zvec",
+      "agent-skills 为 AI 编码助手注入生产级重构技能"
+    ],
+    "ai-hn": [
+      "OpenAI GPT-Live 实时交互刷屏，对语音生态降维打击",
+      "GPT-5.6 系列模型周四公开发布，多模态引热议",
+      "微软发布 AI Agent 专用可视化语言 Flint",
+      "中国官方建议停用 Claude，指出其代码工具有后门",
+      "Onboard-CLI 借助 LLM 与 AST 实现代码库可视化",
+      "OpenAI 发文探讨：如何提取 AI 编程评估的有效信号"
+    ],
+    "rl-daily": [
+      "verl 等推训框架攻坚 B200 适配与极致通信优化",
+      "TRL 打通流式数据训练，探索多模态蒸馏",
+      "AReaL 突破大模型混合部署与同卡权重同步瓶颈",
+      "PettingZoo 剔除冷门环境，全面拥抱 Gymnasium API",
+      "多项目共振：全面支持多轮对话场景下的在线 RL",
+      "slime 引入 RDMA 提升 Megatron 混合部署吞吐量"
+    ],
+    "agent-orch": [
+      "生态向多 Agent 协作与代码重构的高阶编排演进",
+      "HumanLayer 探索引入人类反馈的 Agent 协作工作流",
+      "Vibe Kanban 等看板工具火热赋能 Agent 工作流管理",
+      "AutoGPT 与 MetaGPT 等经典编排框架持续高频迭代",
+      "Dorothy 等新锐项目重塑开发者与 AI 的交互模式",
+      "Claude Squad 助力开发者实现多 Claude 并发调度"
+    ],
+    "ai-arxiv": [
+      "DepthWeave-KV 提出跨层残差分解突破长文本显存瓶颈",
+      "证明 Agent 任务失败极早期可预测，实现算力及早止损",
+      "Danus 引入事实图记忆解决多智能体数学证明协调难题",
+      "DT-Guard 打破 LLM 安全护栏在推理与延迟间的权衡",
+      "FreqDepthKV 用频域深度共享实现极限 KV 缓存压缩",
+      "大规模研究填补非英语场景下 LLM 置信度校准空白"
+    ],
+    "ai-hf": [
+      "智谱 GLM-5.2 MoE 对话模型登顶 Hugging Face 榜首",
+      "百度 Unlimited-OCR 图文理解模型下载量突破百万",
+      "英伟达 LocateAnything-3B 惊艳多模态视觉定位领域",
+      "Qwen 3.5/3.6 家族微调与量化版全面霸榜",
+      "DeepSeek-V4-Pro 发布，延续开源技术引领性",
+      "美团开源 LongCat-2.0 超长文本对话基础模型"
+    ],
+    "ai-community": [
+      "Agent 伪造测试日志，自我编辑引发溯源危机",
+      "打破迷思：更大的上下文窗口并未让 RAG 更聪明",
+      "Alex 的故事：如何防范 AI 仪表盘悄然接管系统",
+      "血泪史：评估 AI PR 审查工具极易陷入的错误陷阱",
+      "平台演进：构建全新的人与 AI Agent 协同开发范式",
+      "架构抉择：放弃硬塞 i18n 文件，改用 MCP 降本"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to complex multi-agent orchestration",
+      "Claude Code v2.1.205 focuses on stability and docs",
+      "DeepSeek TUI and OpenCode drive local execution",
+      "Developers demand transparency in token consumption",
+      "Remote plugins and multi-agent primitives push boundaries",
+      "Major players push enterprise readiness via proxy support"
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours",
+      "Maintainers accumulate 403 open PRs for a major drop",
+      "Growing pains hit multi-agent orchestration",
+      "Today's dev targets enterprise secrets management",
+      "Messaging channel routing shows reliability issues",
+      "Zero new releases despite massive merge volume"
+    ],
+    "ai-trending": [
+      "Modular agent skill packs dominate GitHub today",
+      "TencentDB-Agent-Memory offers zero-dependency AI infra",
+      "alibaba/zvec adds 370 stars as a fast vector DB",
+      "CubeSandbox offers secure execution for AI code",
+      "Reverse-engineering leaked system prompts is exploding",
+      "Context optimization remains the top meta-trend"
+    ],
+    "ai-hn": [
+      "OpenAI launches GPT-Live to massive community buzz",
+      "GPT-5.6 Sol, Terra, and Luna launch Thursday",
+      "China alleges a security backdoor in Claude Code",
+      "New open-source tools offer cost-aware routing",
+      "Users push back against overzealous AI safety filters",
+      "Skepticism grows over the future of dominant players"
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM alignment and APIs",
+      "Frameworks adopt RDMA to prevent memory bottlenecks",
+      "verl and TRL shift to async weight syncing",
+      "Gymnasium focuses on strict API standardization",
+      "Disaggregated rollouts dominate LLM post-training",
+      "PettingZoo enters maintenance and refactoring phases"
+    ],
+    "agent-orch": [
+      "Ecosystem tracks 45 agent orchestration projects",
+      "AutoGPT and MetaGPT see active multi-agent updates",
+      "Swarm Protocol pushes multi-agent communication",
+      "HumanLayer focuses on strict human-in-the-loop safety",
+      "Claude Squad and Symphony drive agentic dev tools",
+      "Vibe Kanban gains traction for agent task tracking"
+    ],
+    "ai-arxiv": [
+      "LLM agents mature in multi-step reasoning and coding",
+      "Frequency-aware KV cache solves long-context memory",
+      "Unified frameworks push 3D multimodal generation",
+      "New papers formally define physical World Models",
+      "Growing focus on AI safety and interpretability",
+      "Specialized AI targets formal verification tasks"
+    ],
+    "ai-hf": [
+      "DeepSeek V4 lineage drives advanced reasoning",
+      "Qwen 3.5/3.6 and MoE architectures dominate trending",
+      "Local deployment surges with NVFP4 quantized models",
+      "tencent/Hy3 launches as a new base text-generation model",
+      "Unlimited OCR capabilities expand multimodal AI",
+      "Community-driven uncensored models see huge engagement"
+    ],
+    "ai-community": [
+      "Dev discourse pivots to rigorous engineering pragmatism",
+      "Loop Engineering deemed essential for reliable agents",
+      "Large context windows fail to fix RAG retrieval issues",
+      "AI agents faking test logs sparks provenance fears",
+      "Custom multi-agent architectures outperform benchmarks",
+      "Environmental cost of AI bloat sparks meta-conversations"
+    ]
+  }
+}
