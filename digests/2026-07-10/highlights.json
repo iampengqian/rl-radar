@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "GPT-5.6与Fable 5等新模型发布，各CLI工具面临极寒适配挑战",
+      "Qwen Code极度活跃，重构多工作区并修复P0级安全漏洞",
+      "OpenCode连发V1.17多版本，全面适配前沿模型与架构重构",
+      "OpenAI Codex引入全新审批模式，却突发阻断性Bug致瘫痪",
+      "Claude Code紧急修复高危数据丢失，新模型适配痛点发酵",
+      "Gemini CLI进行深度安全加固，成功修复严重RCE漏洞"
+    ],
+    "ai-agents": [
+      "OpenClaw日处理超500条Issues，处于高强度主干开发期",
+      "多渠道接入消息丢失、会话中断成用户反馈最强烈痛点",
+      "大幅修复网络健壮性，解决QQBot断线及Telegram重发问题",
+      "成功攻克事件循环阻塞顽疾，大幅降低插件内存消耗",
+      "项目无新版本发布，开发重心聚焦底层稳固与缺陷修复",
+      "引入请求超时机制，彻底防止异步下载队列无限等待"
+    ],
+    "ai-trending": [
+      "CLI Agent外围基建大爆发，上下文压缩汲取巨大流量红利",
+      "ECC项目总星数超22万，为编码工具提供记忆与安全支持",
+      "OfficeCLI日增近2000星，让Agent无网自动化操作Office",
+      "Ollama无缝支持GLM-5.1、Kimi-K2.6等最新开源大模型",
+      "pentagi日增543星，提供全自主的AI网络安全攻防系统",
+      "无向量推理与知识图谱成RAG领域最新底层演进方向"
+    ],
+    "ai-web": [
+      "前美联储主席伯南克加入Anthropic长期利益信托基金",
+      "Anthropic首发罕见功能，内测版反思仪表盘追问用户",
+      "OpenAI重磅上线GPT-5.6，加强与微软365企业级捆绑",
+      "Anthropic连发前沿研究，探索关闭AI双重用途知识开关",
+      "双方聚焦生物安全，Anthropic与OpenAI严防高危领域滥用",
+      "模型欺骗性对齐与智能体失准成AI安全研究新深水区"
+    ],
+    "ai-hn": [
+      "GPT-5.6重磅发布引社区狂欢，热议性能跃升与成本",
+      "Altman宣称GPT-5.6代理编码Token效率大幅提升54%",
+      "GLM-5.2记账准确率比拼人类，激辩LLM财务可靠性",
+      "开发者争相测试GPT-5.6的ARC-AGI通用基准真实得分",
+      "CodeAlmanac开源工具，为编码Agent提供本地知识库",
+      "硬核展示：将现有Web应用逆向转化为Agent调用工具"
+    ],
+    "rl-daily": [
+      "大模型RL生态分层演进，框架狂奔向千亿参数规模",
+      "verl重构底层数据平面，强势攻克千亿参数通信墙",
+      "TRL稳定KTO算法，向异步Agent训练与异构芯片过渡",
+      "AReaL修复分布式GRPO归一化静默错误并重构调度器",
+      "slime深度攻坚Agentic轨迹管理与多轮对话容错",
+      "OpenRLHF解决vLLM并发控制与ZeRO-3混合权重冲突"
+    ],
+    "agent-orch": [
+      "Agent编排生态爆发，围绕Claude等工具构建任务流",
+      "AutoGPT稳居自主智能体平台榜首，总Star破18.5万",
+      "Claude Flow等新锐项目发力多智能体协作编排",
+      "Claude Squad等工具致力于实现Agent并发任务管理",
+      "HumanLayer探索智能体任务执行中的人机审批边界",
+      "生态呈现深度集成编码工具与自动化工作流双线态势"
+    ],
+    "ai-arxiv": [
+      "RL与模型推理深度绑定，引入竞争机制突破瓶颈",
+      "新框架Agon采用跨模型竞争RL，专治模型废话连篇",
+      "研究揭示RL后训练能将大模型基础技能组合为高级策略",
+      "深入剖析Transformer线性化，解决长上下文计算瓶颈",
+      "从数据为中心视角揭示RoPE长文本泛化理论依据",
+      "提出Agent轨迹结构化因果提取，大幅提升优化效率"
+    ],
+    "ai-hf": [
+      "GLM-5.2与腾讯Hy3领衔，国产大模型展现底层新突破",
+      "LocateAnything-3B视觉模型下载量惊人，精准定位目标",
+      "百度Unlimited-OCR模型彻底解决复杂场景文字提取痛点",
+      "美团LongCat-2.0发布，专攻超长上下文理解与生成",
+      "Supra-Router仅51M参数，为多模型提供极速低成本调度",
+      "Qwen系列架构已成为开源社区微调的绝对基石"
+    ],
+    "ai-community": [
+      "技术派交锋：纯手写代码的傲慢与拥抱AI的效率至上",
+      "硬核算账：Grok 4.5六美元输出定价才是行业核心焦点",
+      "呼吁为AI Agent引入仅追加事件日志，抗幻觉提效",
+      "13岁少年自研LLM成本追踪CLI工具，十天即发布",
+      "拒绝用LLM评估质量，提出确定性路由新替代方案",
+      "开发者越过对大模型盲目崇拜，转向工程化落地反思"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLIs shift to autonomous multi-agent orchestration.",
+      "Claude Code fixes critical regressions for Opus 4.8.",
+      "Developers demand better cost control and sandboxing.",
+      "OpenAI Codex releases rust-v0.144.0 and alpha builds.",
+      "Codex struggles with broken v0.14 releases and fixes.",
+      "Massive context windows force complex refactors."
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 issue and 500 PR updates.",
+      "Maintainers aggressively patch memory leaks in OpenClaw.",
+      "OpenClaw sees complex state-management challenges.",
+      "Developers merge 245 PRs focusing on system stability.",
+      "No new releases recorded for OpenClaw today.",
+      "Activity spans Telegram, WhatsApp, and Slack platforms."
+    ],
+    "ai-trending": [
+      "Autonomous coding agent frameworks see massive surge.",
+      "System prompts for GPT 5.5 and Claude Opus 4.8 leak.",
+      "agent-skills gains 2,582 stars for AI coding today.",
+      "OfficeCLI lets agents autonomously edit MS Office files.",
+      "Token compression layers become critical for agents.",
+      "awesome-design-md helps agents match brand UIs."
+    ],
+    "ai-web": [
+      "Anthropic appoints Ben Bernanke to its trust board.",
+      "OpenAI pushes GPT-5.6 integration into MS 365 Copilot.",
+      "Anthropic showcases agentic misalignment research.",
+      "OpenAI launches a new Bio Bug Bounty program.",
+      "Anthropic details surgical off-switches for AI risks.",
+      "OpenAI focuses on enterprise ecosystem dominance."
+    ],
+    "ai-hn": [
+      "OpenAI's GPT-5.6 launch dominates Hacker News today.",
+      "GPT-5.6 is 54% more token efficient on agentic coding.",
+      "Community scrutinizes OpenAI data handling in NYT suit.",
+      "Security warnings issued for Claude Code usage in China.",
+      "GLM 5.2 nearly matches human bookkeeper accuracy.",
+      "New tools launched for AI policy enforcement."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM and traditional control.",
+      "verl targets low-precision and 300B+ scale in Q3.",
+      "TRL v1.8.0 graduates KTO and adds async RL.",
+      "LLM RLHF frameworks tackle distributed orchestration.",
+      "PettingZoo focuses on API normalization and overhauls.",
+      "OpenRLHF is hardening distributed infrastructure."
+    ],
+    "agent-orch": [
+      "Agent orchestrator ecosystem tracks 45 new projects.",
+      "AutoGPT and MetaGPT see continued development.",
+      "Claude Squad and Symphony advance agent workflows.",
+      "HumanLayer focuses on human-in-the-loop orchestration.",
+      "Vibe Kanban and OpenKanban track agent tasks.",
+      "Multi-agent governance takes center stage in tooling."
+    ],
+    "ai-arxiv": [
+      "Post-training optimizations dominate ArXiv submissions.",
+      "New research refines GRPO and RLHF inefficiencies.",
+      "Agentic AI shifts toward recursive self-improvement.",
+      "Linearized attention reduces long-context costs.",
+      "AI safety research demands institutional frameworks.",
+      "Low-precision gradients solve scaling bottlenecks."
+    ],
+    "ai-hf": [
+      "Fable5 and Claude distillations dominate Hugging Face.",
+      "Tencent releases massive Hy3 foundation model.",
+      "Zhipu AI's GLM-5.2 trends with advanced chat abilities.",
+      "DeepSeek V4-Pro pushes heavy MoE architecture limits.",
+      "Baidu releases specialized model for unlimited OCR.",
+      "Nvidia's LocateAnything expands spatial AI location."
+    ],
+    "ai-community": [
+      "Devs move past hype to tackle agent observability.",
+      "Post argues hand-typing code is just slower, not honest.",
+      "Relying on multiple AI suppliers poses hidden data risks.",
+      "Deleting AI-written code offers deep learning insights.",
+      "Environmental concerns over AI energy footprint rise.",
+      "Cost-tracking and latency reduction become top priorities."
+    ]
+  }
+}
