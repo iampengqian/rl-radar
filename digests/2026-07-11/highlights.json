@@ -1,0 +1,157 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 进入多智能体编排深水区，Token 成本与高并发崩溃成行业痛点",
+      "OpenAI Codex 发 v0.144.1 稳定版，重点修复沙箱安全与容错重试",
+      "Gemini CLI 修 A2A 服务器漏洞，但 Auto Memory 隐私死循环仍未解",
+      "Copilot CLI 闭源更新，接入 GPT-5.6 并优化语音模式",
+      "DeepSeek TUI 将落地多智能体调度，高并发 UI 过载与内存泄漏待解",
+      "Claude Code 迭代至 v2.1.206，重仓上下文瘦身与自动化 Push"
+    ],
+    "ai-agents": [
+      "OpenClaw 维护狂飙：日处理 408 Issue 与 500 PR，修复海量边缘场景",
+      "代码合入防丢失底层补丁，彻底解决 Agent 会话静默丢消息痛点",
+      "修复 Signal 与 Telegram 投递缺陷，多平台消息通道互通更稳定",
+      "堵死越权漏洞：强化跨插件会话归属权与执行审批链路安全检查",
+      "核心贡献者发力，集中修复 macOS 节点与底层会话状态稳定性"
+    ],
+    "ai-trending": [
+      "OfficeCLI 爆火：让 AI Agent 无障碍读取与编辑 Word/Excel/PPT",
+      "agent-skills 单日新增超千星，填补标准化 Agent 生产级技能库空白",
+      "mattpocock/skills 日增 1663 星霸榜，硬核展示 Claude 调教玩法",
+      "Ollama 全面支持 Kimi-K2.6、GLM-5.1、DeepSeek 等最新代际模型",
+      "obra/superpowers 崛起：探讨如何让 AI 按工程规范完成软件开发",
+      "DesktopCommanderMCP 走红，赋予 AI 终端与文件系统桌面控制权"
+    ],
+    "ai-web": [
+      "Anthropic 联手 UST，将 Claude 引入芯片汽车等物理 AI 制造场景",
+      "UST 培训两万工程师，将 Claude 深度嵌入全球客户服务体系",
+      "大模型介入工程文档处理，大幅降低长周期工业制造的试错成本",
+      "通过绑定半导体与汽车巨头，Claude 意图构筑极高 B 端转换壁垒",
+      "硬件研发迎 AI 浪潮，大模型介入引脚分配与原理图深度解析"
+    ],
+    "ai-hn": [
+      "GPT-5.6 成功证明困扰数学界多年的 Cycle Double Cover 猜想",
+      "苹果重磅起诉 OpenAI，指控其挖角员工窃取硬件研发商业机密",
+      "实测 GPT-5.6 等四款头部模型，同台竞技构建真实应用",
+      "GPT-5.6 算力突破引担忧，出现删除用户本地文件严重副作用",
+      "开发者实战分享：将生产环境 AI Agent 迁移至 GPT-5.6 避坑指南",
+      "AI 加速新材料发现，但工业级规模化量产仍是核心瓶颈"
+    ],
+    "rl-daily": [
+      "RL 生态全面转向大模型时代，分布式训练框架陷入极度内卷",
+      "verl 重构数据平面，死磕异步与分离式大模型训练瓶颈",
+      "slime 发力，攻坚大规模 MoE 架构模型的动态权重热更新",
+      "AReaL 推进 SGLang 与 Megatron 同 GPU 时分复用以降本增效",
+      "Gymnasium 优化底层依赖，探索 Reward Hacking 审计机制",
+      "CleanRL 探索单文件架构下，大模型训练失稳的实时监测方案"
+    ],
+    "agent-orch": [],
+    "ai-arxiv": [
+      "BiSCo-LLM 实现无查表二进制编码，突破大模型极低比特压缩瓶颈",
+      "突破单线程搜索限制，WebSwarm 递归多智能体编排深广网络搜索",
+      "主动式记忆机制面世，动态提取关键决策解决长程任务状态丢失",
+      "受 Lisp 启发，提出将复杂 Agent 工作流转化为持久化语义知识",
+      "新研究指出传统量化评估具欺骗性，仅看准确率已严重失真",
+      "大规模自适应程序化数据编辑，显著提升预训练语料质量"
+    ],
+    "ai-hf": [
+      "GLM-5.2 基于 MoE 架构登场，支持深度推理登顶语言模型热榜",
+      "百度发 Unlimited-OCR，打破传统图像文本提取尺寸与清晰度限制",
+      "腾讯推出混元新一代旗舰模型 Hy3，原生文本与逻辑推理亮眼",
+      "NVIDIA 发 LocateAnything-3B，全能目标检测与定位下载数惊人",
+      "DeepSeek V4 Pro 版来袭，集成最新 DSpark 优化技术备受期待",
+      "SupraLabs 推 51M 超轻量级路由模型，专为 Agent 动态调度设计"
+    ],
+    "ai-community": [
+      "开发者亲造 Linter，专治 Copilot 等工具反复写出的安全漏洞",
+      "跨厂商 API 网关报错太乱？开发者开源统一错误处理抽象模型",
+      "实测在 4.66 亿行代码库中并行运行 50 个 AI 代理的真实案例",
+      "教程博客未消亡，正转变为 AI 代理可引用验证的记忆基础设施",
+      "流式输出竟“已交付但未计费”？揭秘多模型 API 的隐性 Bug",
+      "为 AI 爬虫与代理适配网站内容，让网站在 AI 搜索中获高调用率"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Next-gen reasoning models introduce context bottlenecks.",
+      "Qwen and DeepSeek push multi-agent orchestration frameworks.",
+      "Claude Code v2.1.206 patches critical Fable 5 data-loss bug.",
+      "OpenAI GPT-5.6 and Anthropic Fable 5 dominate the ecosystem.",
+      "Open-source clients iterate toward model-agnostic workflows.",
+      "CLI tooling pivots from simple completion to multi-agent dev."
+    ],
+    "ai-agents": [
+      "OpenClaw handles nearly 1,000 PR and issue updates in 24h.",
+      "327 open PRs suggest a bottlenecked review process.",
+      "Dev focus shifts to hardening session-state boundaries.",
+      "Fixes target silent message-loss in multi-channel delivery.",
+      "Agents battle memory leaks and prompt caching edge cases.",
+      "Heavy triage indicates an imminent OpenClaw release."
+    ],
+    "ai-trending": [
+      "Agent skills and CLI-driven AI workflows see explosive growth.",
+      "mattpocock/skills gains massive traction standardizing agents.",
+      "OfficeCLI lets AI agents automate Word and Excel files.",
+      "Agent infrastructure shifts to offer localized system control.",
+      "Memory optimization emerges as critical to cut token costs.",
+      "Ollama expands local inference to Kimi-K2.6 and GLM-5.1."
+    ],
+    "ai-web": [
+      "Anthropic partners with UST for physical AI environments.",
+      "Claude deployed for semiconductor and automotive workflows.",
+      "LLMs shift from digital copilots to physical engineering tools.",
+      "Move pushes Claude into high-stakes hardware verification.",
+      "Anthropic aggressively expands into heavy-industry enterprise.",
+      "OpenAI shows no new content updates today."
+    ],
+    "ai-hn": [
+      "Apple files blockbuster lawsuit vs OpenAI over trade secrets.",
+      "GPT-5.6 Sol Ultra produces proof of Cycle Double Cover.",
+      "GPT-5.6 faces reports of accidentally wiping local files.",
+      "Debates spark over the commoditization of coding models.",
+      "Anthropic appoints Ben Bernanke to its Oversight Trust.",
+      "Community verifies frontier model math proof with awe."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM alignment and core algorithms.",
+      "LLM RL frameworks focus on memory and distributed orchestration.",
+      "verl shows high momentum in disaggregated rollouts.",
+      "Foundational RL libraries iterate on API standardization.",
+      "TRL matures online RL infrastructure and vLLM integration.",
+      "Reward auditing becomes a focus for alignment safety."
+    ],
+    "agent-orch": [
+      "Agent ecosystem explodes with 45 diverse orchestrator tools.",
+      "Claude Squad and Symphony lead AI agent orchestration.",
+      "Swarm Protocol and dmux advance multi-agent communication.",
+      "Kanban-style tools like Vibe Kanban visualize agent tasks.",
+      "HumanLayer focuses on seamless human-in-the-loop workflows.",
+      "Legacy tools like AutoGPT and MetaGPT maintain momentum."
+    ],
+    "ai-arxiv": [
+      "ArXiv submissions reveal a strong shift to agentic evaluation.",
+      "Novel approaches target extreme model compression for LLMs.",
+      "BiSCo-LLM introduces lookup-free binary spherical coding.",
+      "Research questions the true impact of LLM Super Weights.",
+      "Relaxed speculative decoding accelerates inference speed.",
+      "Mechanistic interpretability moves beyond surface accuracy."
+    ],
+    "ai-hf": [
+      "Enterprise-grade MoE architectures see massive adoption.",
+      "Qwen 3.5 and 3.6 dominate the community fine-tuning space.",
+      "GLM-5.2 gains massive traction for robust reasoning.",
+      "Chinese tech giants push diverse open-source offerings.",
+      "NVIDIA aggressively deploys specialized routing models.",
+      "NVFP4 quantization highlights a focus on edge deployment."
+    ],
+    "ai-community": [
+      "Developers pivot from hype to AI hard engineering realities.",
+      "Custom linters built to catch AI-generated security bugs.",
+      "Unified error models deemed essential for AI API gateways.",
+      "Lobste.rs debates the environmental toll of AI tech.",
+      "Caching proxies shared to slash LLM inference costs.",
+      "Focus shifts to building resilient multi-agent architectures."
+    ]
+  }
+}
