@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 适配新模型，强化托管线程工具注入限制。",
+      "Qwen Code v0.19.8 发布，引入多工作空间与崩溃恢复机制。",
+      "Claude Code v2.1.207 优化 TUI 交互，强化 YAML 防注入校验。",
+      "Gemini CLI 深度探索零依赖 OS 沙箱与 AST 感知拦截机制。",
+      "社区痛点：长上下文微压缩极易误删 Agent 的长期记忆数据。",
+      "OpenCode 修复高 CPU 占用危机，并全面启动 V2 架构重构。"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.7.1-beta.5 发布，接入对话式引导系统。",
+      "引入基于模型判断的操作审批，精准限制 Agent 执行范围。",
+      "新增掩码凭证提示，大幅降低用户 API 密钥泄露风险。",
+      "未配置模型时自动回退至传统流程，保障系统基础可用性。",
+      "合入 exec-approvals 黑名单支持，精准拦截 Agent 高危指令。",
+      "修复 MS Teams 重装导致应用延续旧上下文的严重隐私问题。"
+    ],
+    "ai-trending": [
+      "DesktopCommanderMCP 暴涨 900 星，强增 Claude 终端实操力。",
+      "Ollama 持续霸榜，全面支持 Kimi-K2.6 及 GLM-5.1 模型。",
+      "Google 推出 stitch-skills，引领多端 Agent 技能标准化。",
+      "superpowers 框架暴涨 737 星，提出研究优先开发新范式。",
+      "ECC 项目斩获超 22 万星，集编程技能与安全机制于一身。",
+      "AI 编程趋势转向：Agent 上下文压缩与持久化记忆大爆发。"
+    ],
+    "ai-hn": [
+      "重磅：苹果正式起诉 OpenAI 窃取大量核心商业机密。",
+      "OpenAI 安全负责人在内部组织架构调整后宣布离职。",
+      "GPT-5.6-Sol 误删用户 Mac 几乎所有文件，引发安全担忧。",
+      "开发者集体吐槽 Claude 最新模型在安全与实用性上失衡。",
+      "Agent 灾难频发，社区呼吁强化系统级安全沙箱与隔离。",
+      "开发者填补基建空白：Agent 内存策略与成本审计爆火。"
+    ],
+    "rl-daily": [
+      "TRL 迭代蒸馏算法大版本，Agentic RL 与沙盒环境落地。",
+      "verl 攻坚全异步 NCCL 死锁，推进 FSDP2 与极致通信优化。",
+      "Gymnasium 引入 Reward Hacking 审计，深度修复内存溢出。",
+      "AReaL 探索 PD 分离架构，大幅提升 Rollout 并发吞吐。",
+      "PettingZoo API 全面向 Gymnasium 靠拢，丰富基线测试。",
+      "RL 算法重心转移，从 PPO/DPO 转向 RLVR 结合强化蒸馏。"
+    ],
+    "ai-hf": [
+      "GLM-5.2 登顶点赞榜，基于全新 MoE 与 DSA 架构的对话模型。",
+      "英伟达 LocateAnything-3B 发布，精准提取图像任意目标。",
+      "百度 Unlimited-OCR 突破分辨率限制，企业级下载量极高。",
+      "腾讯 Hunyuan 系列最新文本生成模型 Hy3 开源发布。",
+      "美团 LongCat-2.0 发布，专为超长上下文复杂对话优化。",
+      "复旦 MOSS 推出带说话人分离功能的高效音频转写模型。"
+    ],
+    "ai-community": [
+      "Grok 4.5 凭借算力与天价数据打破巧妙架构神话。",
+      "实战分享：用自托管 SigNoz 追踪多步 LLM Agent 静默失败。",
+      "动态分析 AI 指令在长上下文中的衰减规律及破局之法。",
+      "揭秘 Claude Code 在 Prompts 中嵌入隐写标记的完整故事。",
+      "盘点 2026 年企业级 AI Agent 安全接入生产环境的认证方案。",
+      "总结 LangGraph 生产部署中静默失败等隐蔽错误与架构误区。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.207 brings Cowork stability and cloud GA.",
+      "AI CLI ecosystem shifts to deeply nested autonomous workflows.",
+      "Developers demand granular cost telemetry and IDE integrations.",
+      "Open-source AI CLIs focus on specialized workflows and local models.",
+      "Managing cross-platform execution stability remains a challenge.",
+      "Context preservation is the new major technical hurdle."
+    ],
+    "ai-agents": [
+      "OpenClaw handles over 500 PRs and 400 issues in 24 hours.",
+      "OpenClaw v2026.7.1-beta.5 introduces conversational onboarding.",
+      "Session management and gateway isolation are top security concerns.",
+      "OpenClaw maintainers focus on stabilizing gateway architecture.",
+      "Complex agent workloads cause growing pains for OpenClaw.",
+      "AI-guided provider setup uses model-judged security approvals."
+    ],
+    "ai-trending": [
+      "Agentic Coding CLIs overwhelmingly dominate open-source trends.",
+      "DesktopCommanderMCP gives coding agents terminal and file control.",
+      "headroom MCP server compresses outputs to save 60-95% of tokens.",
+      "Context compression matures to support extreme token-cost demands.",
+      "Developers rush to build orchestration layers for GPT and Claude.",
+      "claude-code-templates provides standardized proprietary management."
+    ],
+    "ai-hn": [
+      "Apple launches massive lawsuit against OpenAI for trade secrets.",
+      "Matt Shumer's GPT-5.6-Sol accidentally wipes a Mac's hard drive.",
+      "Community highly skeptical of OpenAI forking Git.",
+      "Research reveals LLMs flatten long-form public debate.",
+      "Engineers seek practical frameworks for agent memory strategies.",
+      "Abrupt departure of OpenAI's safety head sparks intense debate."
+    ],
+    "rl-daily": [
+      "RL ecosystem shifts focus to RLVR and massive RLHF scale.",
+      "Traditional RL libraries like CleanRL reach feature maturity.",
+      "TRL focuses on agentic VLMs, streaming datasets, and distillation.",
+      "verl pushes asynchronous pipelines and NCCL weight sync.",
+      "Massive I/O and memory bottlenecks challenge RL alignment.",
+      "Gymnasium and PettingZoo standardize environment API layers."
+    ],
+    "agent-orch": [
+      "New digest tracks 45 agent orchestration and workflow projects.",
+      "AutoGPT, AutoGen, and MetaGPT lead multi-agent orchestration.",
+      "Tools like Claude Squad manage multiple autonomous CLI agents.",
+      "Swarm Protocol and dmux standardize multi-agent task routing.",
+      "Developers build Kanban systems specifically for AI agents.",
+      "HumanLayer integrates human-in-the-loop approvals for agents."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6 and DeepSeek-V4 model families see explosive rise.",
+      "zai-org/GLM-5.2 dynamic sparse MoE model tops chat efficiency.",
+      "Local quantization like GGUF dominates massive download volumes.",
+      "Tencent Hy3 foundational model generates massive community buzz.",
+      "Baidu Unlimited-OCR and Nvidia LocateAnything push enterprise tasks.",
+      "InternScience Agents-A1 MoE targets complex agentic workflows."
+    ],
+    "ai-community": [
+      "Developers trace silent failures in multi-step LLM agents.",
+      "Claude Code found embedding steganographic markers in prompts.",
+      "Engineers analyze massive hardware costs behind Grok 4.5.",
+      "Debugging multi-step LLM agents becomes a primary focus.",
+      "Community debates the environmental cost of AI digital bloat.",
+      "Maturing ecosystem tackles deep architectural security issues."
+    ]
+  }
+}
