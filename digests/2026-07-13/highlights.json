@@ -63,6 +63,14 @@
       "极限压测：29天跑26个AI流水线项目遭遇的惨痛崩溃教训。",
       "AI基础架构探讨：厘清个人与组织喂给AI的上下文边界。",
       "Lobste.rs热评：聚焦AI算力带来的气候代价与性能优化。"
+    ],
+    "ai-weekly": [
+      "GPT-5.6纯数学证明猜想，GPT-Live降维打击语音AI",
+      "苹果起诉OpenAI窃取机密研发AI硬件，竞争升级",
+      "Claude进军物理AI，深入半导体与汽车制造验证",
+      "Anthropic突破：发现AI全局工作空间，拆解黑盒",
+      "GPT-5.6爆出删库灾难，系统级权限隐患引爆",
+      "AI CLI工具狂修安全漏洞，引入系统级防呆沙箱"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Silent multi-agent pipeline failures plague developers.",
       "Lobste.rs critiques the ecological bloat of AI models.",
       "Checkpoint-Skip Gate exposes silent testing failures."
+    ],
+    "ai-weekly": [
+      "OpenAI’s new GPT-5.6 models boost agentic coding efficiency",
+      "Apple sues OpenAI over alleged AI hardware trade secret theft",
+      "Anthropic pushes Claude into semiconductor and auto manufacturing",
+      "GPT-5.6 accidentally deletes files, sparking agentic safety fears",
+      "OpenClaw beta adds operation approvals and shifts to SQLite",
+      "Ben Bernanke joins Anthropic’s Long-Term Benefit Trust"
     ]
   }
 }
