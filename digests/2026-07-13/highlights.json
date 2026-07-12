@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "GPT-5.6与Opus 4.8登陆，AI CLI全面迈入多智能体编排阶段。",
+      "OpenAI Codex遇信任危机：GPT-5.6引发额度耗尽与系统卡顿。",
+      "Gemini CLI狂修安全漏洞，重构底层子智能体调度架构。",
+      "OpenCode筹备v2.0大版本，集中清理SQLite膨胀与内存泄漏。",
+      "Claude Code陷痛点爆发期，多智能体失控与Windows兼容成焦点。",
+      "Qwen Code启动架构演进，正式向多工作空间服务端模式转型。"
+    ],
+    "ai-agents": [
+      "OpenClaw高活跃：日活Issue近300，PR合并达147个。",
+      "OpenClaw修复macOS重启风暴，强化崩溃恢复机制。",
+      "清理冗余UI代码，OpenClaw主分支CI变红问题获解。",
+      "OpenClaw修复MS Teams应用重装后旧上下文残留问题。",
+      "跨平台需求激增，OpenClaw社区强烈呼吁Linux/Windows端。",
+      "OpenClaw重心转向会话状态管理与API密钥安全隔离。"
+    ],
+    "ai-trending": [
+      "防AI执行危险命令，destructive_command_guard爆火。",
+      "DesktopCommanderMCP爆火，赋予Claude终端控制能力。",
+      "claude-code-templates提供开箱用配置，降低上手门槛。",
+      "Ollama无缝支持Kimi-K2.6与GLM-5.1等最新开源模型。",
+      "Agent系统ECC热榜霸榜，提供记忆与安全管控。",
+      "claude-mem爆火，解决AI智能体跨会话上下文持久化。"
+    ],
+    "ai-hn": [
+      "开发者狂吐槽：Claude Code提示词膨胀浪费严重达33k。",
+      "开源替代OpenCode崛起，仅需7k Token开销远超官方。",
+      "隐私安全引担忧，Confessor工具可回放AI访问的本地信息。",
+      "深度探索：学者尝试用因果关系理论破解LLM推理黑盒。",
+      "Anthropic发现Claude内部处理复杂概念的隐藏空间。",
+      "商业博弈：Apple起诉OpenAI窃取商业机密引发热议。"
+    ],
+    "rl-daily": [
+      "RL生态告别刷榜，全面进入大模型及多模态对齐深水区。",
+      "verl推进底层全异步架构演进，极致压榨通信带宽。",
+      "PettingZoo引入多智能体奖励作弊测试，清理劣质环境。",
+      "Gymnasium拥抱软体机器人仿真，直击奖励审计痛点。",
+      "AReaL扩展多教师蒸馏与细粒度FSDP显存管理能力。",
+      "torchtune融合Triton算子，突破强化学习前向计算瓶颈。"
+    ],
+    "agent-orch": [
+      "Agent编排生态繁荣：超45个主流编排项目持续高速迭代。",
+      "Claude Squad等开源项目推动多智能体并发调度创新。",
+      "MetaGPT与AutoGen等老牌框架持续引领复杂工作流编排。",
+      "Vibe Kanban等工具爆火，实现AI智能体任务可视化管控。",
+      "HumanLayer聚焦人机协同，为Agent提供精准的干预接口。",
+      "CrewAI与LlamaIndex依旧是构建复杂Agent逻辑核心框架。"
+    ],
+    "ai-hf": [
+      "智谱GLM-5.5登场：强MoE架构登顶语言模型热度榜首。",
+      "百度开源Unlimited-OCR：打破分辨率限制，下载量破百万。",
+      "Nvidia发LocateAnything-3B：精准视觉定位赋能具身智能。",
+      "Qwythos-9B爆火：1M长上下文加深度微调对标Claude。",
+      "腾讯混元最新Hy3文本生成模型发布，持续迭代基础能力。",
+      "美团开源LongCat-2.0，专攻超长文本处理业务场景。"
+    ],
+    "ai-community": [
+      "实战分享：如何成功削减Claude Code高达77%的Token账单。",
+      "CI/CD防崩溃：利用AI安全清理误报且不漏掉真实Bug。",
+      "警惕AI强迫症：从神经生物学剖析AI编程引发的心理倦怠。",
+      "极限压测：29天跑26个AI流水线项目遭遇的惨痛崩溃教训。",
+      "AI基础架构探讨：厘清个人与组织喂给AI的上下文边界。",
+      "Lobste.rs热评：聚焦AI算力带来的气候代价与性能优化。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Windows and WSL face severe instability across major tools.",
+      "Ecosystem shifts to multi-agent orchestration frameworks.",
+      "'Overnight' autonomous workflows cause severe resource leaks.",
+      "No stable releases shipped; focus remains on bug triaging.",
+      "Gemini CLI pushes 11 active PRs for security and AST tooling.",
+      "Background processes cause CPU and SQLite bloat."
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 issues and 500 PRs in 24 hours.",
+      "Massive bug influx leaves 297 issues and 353 PRs open.",
+      "Maintainers aggressively patch P0/P1 reliability bugs.",
+      "Project is heads-down managing technical debt today.",
+      "Engineers tackle critical memory leak fixes in OpenClaw.",
+      "Major architectural overhaul underway to fix orchestration."
+    ],
+    "ai-trending": [
+      "Financial AI surges with explosive trading agent growth.",
+      "destructive_command_guard blocks dangerous AI shell commands.",
+      "ECC provides memory and security for AI coding CLIs.",
+      "Community demands better dev experiences for AI assistants.",
+      "vllm remains the industry-standard inference engine.",
+      "Autonomous coding agent tooling dominates GitHub trends."
+    ],
+    "ai-hn": [
+      "Claude Code sends 33k tokens before reading a prompt.",
+      "Apple sues OpenAI over alleged trade secret theft.",
+      "Anthropic finds hidden space where Claude puzzles concepts.",
+      "Causality theory gains traction for deciphering LLMs.",
+      "Mechanistic interpretability aims to open AI black boxes.",
+      "Engineers debate massive hidden costs of AI coding agents."
+    ],
+    "rl-daily": [
+      "verl dominates distributed infrastructure and async pipelines.",
+      "TRL focuses on core algorithmic refinements and vLLM.",
+      "LLM alignment frameworks face distributed system bottlenecks.",
+      "Traditional RL libraries enter mature maintenance phases.",
+      "PettingZoo enforces strict typing and prunes dead environments.",
+      "RL landscape splits between LLM alignment and MARL."
+    ],
+    "agent-orch": [
+      "Ecosystem sees massive influx of 45 orchestration tools.",
+      "Developers race to manage multi-agent pipelines safely.",
+      "AutoGPT and MetaGPT drive complex agent collaboration.",
+      "Claude Squad and similar tools sync autonomous AI teams.",
+      "Orchestration platforms prioritize human-in-the-loop safety.",
+      "Swarm Protocol streamlines communication for AI swarms."
+    ],
+    "ai-hf": [
+      "Qwen 3.5/3.6, Gemma-4, and DeepSeek-V4 lead HF Hub.",
+      "GLM-5.2 utilizes advanced MoE and Spatial Attention.",
+      "Massive surge in highly capable Mixture-of-Experts models.",
+      "Edge-optimized GGUF quantizations gain rapid traction.",
+      "Breakthroughs in specialized vision tasks like unlimited OCR.",
+      "'Uncensored' and 'reasoning' model variants gain popularity."
+    ],
+    "ai-community": [
+      "Custom profiler cuts Claude Code token bills by 77%.",
+      "Bad retry policies cause silent LLM API cost overruns.",
+      "Debate rages over H100, H200, and B200 GPU trade-offs.",
+      "Silent multi-agent pipeline failures plague developers.",
+      "Lobste.rs critiques the ecological bloat of AI models.",
+      "Checkpoint-Skip Gate exposes silent testing failures."
+    ]
+  }
+}
