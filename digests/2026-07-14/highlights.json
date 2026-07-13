@@ -1,0 +1,148 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 工具全面跨入多智能体编排与后台守护进程时代。",
+      "OpenAI Codex 连发多版重构 MCP 协议架构，全力修复 Windows 兼容。",
+      "长上下文压缩致 OOM 与账单暴涨，成各 AI CLI 工具全员核心痛点。",
+      "Kimi Code 增强动态上下文，并向下兼容 CLAUDE.md 核心配置。",
+      "Pi 掀起记忆系统重构潮，底层存储全面向 SQLite 强力迁移。",
+      "OpenCode 适配 GPT-5.6 OAuth 路由，正式合并 V2 核心架构。"
+    ],
+    "ai-agents": [
+      "OpenClaw 迭代频繁，单日 Issue 与 PR 处理量双双触及 500 上限。",
+      "OpenClaw 发布 beta.6，默认模型替换为 GPT-5.6 并新增 Claude 5。",
+      "维护团队清理技术债务，统一重构多渠道与群组底层控制策略。",
+      "GPT-5.6、Claude Sonnet 5 等前沿大模型迎来全面生态适配。",
+      "SQLite 偶发损坏问题持续发酵，成项目核心稳定性痛点。",
+      "长会话多轮交互下的可靠性，正面临极其严峻的工程挑战。"
+    ],
+    "ai-trending": [
+      "Ollama 突破 17 万 Star，已全面适配 Kimi-K2.6 等最新主流模型。",
+      "Graphify 势头迅猛，将杂乱的代码与文档转化为可查询知识图谱。",
+      "Hallmark 防范 AI 模板化，为 Claude 等注入抗 AI 味设计技能。",
+      "GitHub 推出 spec-kit，以规范驱动开发大幅提升 Agent 准确率。",
+      "ECC 获超 22 万 Star，专为大模型注入记忆与安全防护本能。",
+      "Hermes Agent 获 21 万 Star，主打伴随式成长的通用开源框架。"
+    ],
+    "ai-web": [
+      "Anthropic 在底层理论、安全、机器人及商业生态全量出击。",
+      "Anthropic 借神经科学理论，证实大模型内部存在全局工作空间。",
+      "研究剖析 Claude 价值观在不同语言与模型版本下的显著差异。",
+      "前沿测试揭示 Claude 在 Unitree 等真实机器人躯体上的控制潜力。",
+      "Anthropic 发布报告，深度剖析 LLM 沦为企业内部安全威胁的风险。",
+      "Anthropic 推出 Claude Opus 驱动的创意工具，发力软件生态。"
+    ],
+    "ai-hn": [
+      "Grok 4.5 与 GPT-5.6 在 PR 代码安全审查上实现对 Anthropic 反超。",
+      "开发者证实完全无需开启 Xcode，纯靠 AI 代理即可端到端打包应用。",
+      "Apple 与 OpenAI 爆发核心技术窃取诉讼，引发社区极高热度。",
+      "热文泼冷水：深度探讨当前大模型完全无法胜任自主编程的局限。",
+      "PlanWright 发布，为高度自动化的 AI 编程代理提供控制平面。",
+      "长文硬核剖析世界模型技术愿景，及现实算力带来的严苛限制。"
+    ],
+    "rl-daily": [
+      "强化学习彻底完成转移，LLM 对齐与智能体 RL 绝对主导当前生态。",
+      "verl 狂热推进底层分布式通信与多硬件适配，迈向 Agentic OS。",
+      "TRL 深度打磨异步 GRPO 细节，并引入沙盒向 Agent RL 演进。",
+      "AReaL 攻坚 Agent 记忆安全鉴权，强化可重放的确定性采样。",
+      "torchtune 曝出 YAML 配置引发的严重任意代码执行高危漏洞。",
+      "slime 专注前沿大模型架构的底层算子优化与推理引擎适配。"
+    ],
+    "agent-orch": [
+      "OpenAI Symphony 与微软 AutoGen 等主导复杂多智能体编排生态。",
+      "Claude Flow 与 Claude Squad 专注提供极致的 CLI 编排体验。",
+      "MetaGPT 持续发力，探索多代理协作在复杂软件工程中的落地。",
+      "HumanLayer 聚焦核心痛点，致力于完善智能体的人机交互与接管。",
+      "Vibe Kanban 爆火，将看板管理深度引入 AI 代码代理工作流。",
+      "GPT-Engineer 等老牌项目正加速向全自动端到端构建任务演进。"
+    ],
+    "ai-hf": [
+      "Qwen3.5 与 DeepSeek-V4 全面跨代，成为开源绝对核心基座。",
+      "GLM-5.2 登顶榜单，全新架构展现强大文本生成能力。",
+      "Nvidia 发布 LocateAnything 3B 模型，实现极精准的 3D 视觉定位。",
+      "百度推出 Unlimited-OCR，彻底突破传统图像提取的分辨率限制。",
+      "腾讯发布 Hy3 大模型，持续在基础模型底座上发力迭代。",
+      "SupraLabs 推出 51M 参数的极小模型，实现高效的任务分发。"
+    ],
+    "ai-community": [
+      "热文反思：过度依赖 AI 正导致开发者从零编写代码的能力退化。",
+      "实测 30 天 Vibe Coding 警告：过度依赖 Agent 会引发底层技能丧失。",
+      "硬核驳斥 AI 虚假繁荣：高质量文档依然是代码与知识传递的基石。",
+      "实战教程：如何在工作流中合理分配大小模型以大幅降低成本。",
+      "硬核避坑指南：将 Gemma-4 大模型跨芯片移植至 AWS 的实践。",
+      "AI 工程化深水区：深入探讨大模型底层推理优化与 Agent 记忆体系。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "GPT-5.6 and DeepSeek V4 bring token compaction overhead.",
+      "Standardization pushes CLI tools to central daemon processes.",
+      "Dev friction shifts to OS-level sandboxing conflicts.",
+      "Claude Code tackles subagent reliability and security holes.",
+      "Multi-agent execution replaces simple chat interfaces.",
+      "IDE integration unified via Agent Client Protocol.",
+      "OpenClaw v2026.7.1-beta.6 adds GPT-5.6 and Sonnet 5.",
+      "GPT-5.6 becomes the default model for new OpenClaw setups.",
+      "Massive scale brings critical regressions to stable releases.",
+      "OpenClaw processes 1,000 issues and PRs in 24 hours.",
+      "Event loop struggles under heavy multi-channel agent loads.",
+      "New routing supports 'think ultra' reasoning for Sol models."
+    ],
+    "ai-trending": [
+      "Agentic coding infrastructure sees explosive growth.",
+      "Graphify turns complex codebases into queryable graphs.",
+      "Claude-mem offers persistent context for AI coding CLIs.",
+      "Headroom tool cuts LLM token costs by up to 95%.",
+      "Trend shifts from chatbots to domain-specific Agent Skills.",
+      "ECC optimization system hits massive 229,000 stars."
+    ],
+    "ai-web": [
+      "Anthropic pushes 7 articles while OpenAI stays silent.",
+      "Research finds a 'global workspace' in language models.",
+      "New 'Claude Design' showcases major visual tooling leaps.",
+      "Robotics advances highlight push into physical embodiment.",
+      "Strategic APAC leadership expansion tightens enterprise grip.",
+      "Jacobian matrix reveals when concepts are 'on the mind'."
+    ],
+    "ai-hn": [
+      "Apple and OpenAI enter an all-out AI IP war.",
+      "Zig creator heavily criticizes Anthropic for misleading claims.",
+      "Grok 4.5 and GPT-5.6 beat Anthropic in PR security review.",
+      "Codex GPT 5.6 Sol context window reduced to 258K.",
+      "Debates flare over LLM capabilities in complex programming.",
+      "Open-source community showcases robust agent infrastructure."
+    ],
+    "rl-daily": [
+      "Critical unpatched vulnerability hits PyTorch torchtune.",
+      "RLHF frameworks dominate as classical RL libraries stagnate.",
+      "verl roadmap targets Agentic RL and DeepSeek V4 MoE.",
+      "TRL fixes major GRPO loss bugs and adds GOLD distillation.",
+      "Hugging Face TRL integrates agentic sandboxing features.",
+      "Distributed RLHF workloads drive high-impact ecosystem activity."
+    ],
+    "agent-orch": [
+      "45 projects tracked in the Agent Orchestrator ecosystem.",
+      "OpenAI Symphony and AutoGPT drive autonomous workflows.",
+      "Vibe Kanban and Claude Flow highlight UI-driven agents.",
+      "Swarm Protocol matures multi-agent developer orchestration.",
+      "HumanLayer focuses on human-in-the-loop task execution.",
+      "MetaGPT and CrewAI see active continuous development."
+    ],
+    "ai-hf": [
+      "Qwen 3.5 and 3.6 dominate with optimized uncensored tunes.",
+      "Baidu Unlimited-OCR racks up millions for enterprise use.",
+      "Nvidia LocateAnything-3B brings powerful edge utility.",
+      "Multimodal and lightweight MoE architectures rule trends.",
+      "GLM-5.2 conversational MoE model sees massive growth.",
+      "Fable5 pushes boundaries for local open-source agents."
+    ],
+    "ai-community": [
+      "Dev pushback: Over-reliance on AI causes skill atrophy.",
+      "Human-written docs remain critical despite AI explanations.",
+      "Community debates hardware realities of inference latency.",
+      "TypeScript-native MCP implementations show orchestration maturity.",
+      "Anthropic global workspace research sparks deep system dives.",
+      "'Vibe coding' burnout pushes need for architectural oversight."
+    ]
+  }
+}
