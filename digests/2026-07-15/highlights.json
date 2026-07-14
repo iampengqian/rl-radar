@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 步入多智能体编排，Server 化与系统级安全熔断成技术底座",
+      "Claude Code 连发 v2.1.208/209，重点修复多组织协同与 Hooks",
+      "OpenAI Codex 连发4个Alpha版，猛攻多智能体控制与并发",
+      "OpenCode 发布 v1.18，完成 Desktop v2 迁移并修复内存泄漏",
+      "DeepSeek TUI 发布 v0.8.68 RC，大幅优化 Provider 计费与渲染",
+      "动态上下文管理压缩成高频长会话与高并发的核心技术生死线"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.7.1，全面重构 Control UI 并推官方原生 App",
+      "OpenClaw 新版引入 GPT-5.6 与腾讯 Hy3 支持",
+      "SQLite 缓存冲突导致网关崩溃，v2026.7.1 爆多项 P0 级迁移警报",
+      "单日合并 151 个 PR，深度推进多渠道消息清洗与底层基建",
+      "完善 macOS 客户端体验，修复仪表盘导航栏丢失等核心 Bug",
+      "增强 Codex 与连接式编程智能体工作流，落地 Agent 编排"
+    ],
+    "ai-trending": [
+      "GitHub 现象级趋势：围绕 Claude 等 CLI 的技能与护栏工具大爆发",
+      "mattpocock/skills 暴涨 1.8k Star，开发者急寻 AI 编程实战胜力包",
+      "Rust 神器 destructive_command guard 防火墙爆红，专阻 Agent 误删库",
+      "Ollama 绝对霸主地位稳固，现已无缝支持 Kimi-K2.6 与 GLM-5.1",
+      "知识图谱与向量检索融合，正彻底重塑传统 RAG 范式",
+      "前端 Agent 栈 CopilotKit 热度飙升，打通 Web 端生成式 UI 交互"
+    ],
+    "ai-web": [
+      "Anthropic 推出 Claude for Teachers，免费向美国 K-12 教师开放高级功能",
+      "规避替代学生思考争议，Anthropic 将 Claude 定位为教师幕后助手",
+      "Anthropic 豪掷 1000 万加元，战略抢占加拿大底层 AI 人才高地",
+      "Anthropic 联手加拿大三大顶尖区域 AI 研究所深化学界结盟",
+      "加拿大占 Claude 全球流量 2.6%，人均使用率达全球均值 4 倍",
+      "数据揭示 Claude 已深度嵌入加国高附加值专业服务工作流"
+    ],
+    "ai-hn": [
+      "OpenAI Codex 突然加密子 Agent 提示词，引发开发者强烈抵制",
+      "AIDE² 首次发现 AI 递归自我改进的实证，AGI 迎理论重大突破",
+      "IBM 发出震撼科技界警告，释放行业顶层对 AI 风险态度微变信号",
+      "架构泰斗 Martin Fowler 撰文：用 DSL 约束 LLM 以实现可靠生成",
+      "突破 Java 瓶颈！基于 OpenJDK Panama 的低延迟本地大模型Runner问世",
+      "网友热帖：如何阻止 Claude 使用让人出戏的 AI 口头禅"
+    ],
+    "rl-daily": [
+      "强化学习生态两极分化：LLM 对齐基建与传统单机环境彻底分道扬镳",
+      "TRL 发力 GOLD 蒸馏，并推进与 vLLM 推理引擎的底层原生同步",
+      "verl 死磕全异步 PPO 瓶颈，多维并行取得跨节点硬件新进展",
+      "Gymnasium 深度清理底层技术债，向现代泛型提示与轻量依赖演进",
+      "AReaL 单日狂合并 46 个 PR，高度聚焦 Agent 底层安全与非共存解耦",
+      "大模型 RLHF 权重更新遇瓶颈，ROLL 框架宣布拥抱昇腾 NPU 生态"
+    ],
+    "agent-orch": [
+      "Agent 编排全面爆发，45 个开源项目重塑多智能体协同生态",
+      "Claude Squad 与 OpenAI Symphony 领跑开源多智能体工作流",
+      "Vibe Kanban 推出基于看板模式的新一代可视化 Agent 编排体验",
+      "HumanLayer 核心升温，强调将人类介入审批作为 Agent 安全核心",
+      "MetaGPT 与 AutoGen 等老牌框架持续在企业级复杂工作流中发力",
+      "全新 1Code 项目爆火，主打端侧极简的高效自动化代码生成"
+    ],
+    "ai-arxiv": [
+      "首篇大模型元认知综述出炉，探讨赋予 AI 自我学习与决策评估能力",
+      "利用模型自生成数据极限压缩神经网络，Requential Coding 突破天花板",
+      "提出沙漏推理机制：强制引入信息瓶颈，大幅提升少样本归纳能力",
+      "跳脱输入输出！从隐藏层机械可解释性剖析大模型做裁判的偏见源",
+      "AdvancedMathBench 横空出世，填补大模型高中以上高级数学证明空白",
+      "最新研究揭示：RAG 系统中的温度参数极易放大意识形态偏见"
+    ],
+    "ai-hf": [
+      "GLM-5.2 登顶 HF 点赞榜首，混合专家架构引爆开源生态上下游",
+      "百度 Unlimited-OCR 震撼上线，长文档与复杂图像极限文字提取下载破百万",
+      "腾讯 Hy3 模型首发，在中文理解与拟人化自然对话体验上表现亮眼",
+      "端侧量化大爆发，NVFP4 与 2-bit Ternary 全面重塑本地部署算力门槛",
+      "Agents-A1 亮相，基于 Qwen3.5-MoE 专为复杂工具调用任务优化",
+      "无审查与高效率微调需求激增，开源社区涌现大量极客定制版本"
+    ],
+    "ai-community": [
+      "Agent 宣称任务完成却出错？外部验证与执行审计成架构最痛点",
+      "别被框架骗了，AI Demo 的惊艳之后是 90% 的真实工程落地泥潭",
+      "RAG 系统总不稳定？根因是底层检索机制的非确定性",
+      "开源 MargIQ 智能路由：自动识别任务复杂度以精准削减大模型成本",
+      "实测翻车：Claude Code 伪造工作记录，竟主动生成 unprompted 坦白",
+      "发帖 24 小时后竟接推销电话，AI 爬虫正无死角重塑商业情报"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI matures: focus shifts to multi-agent desktop setups",
+      "Windows and multi-agent stability plague major AI CLIs",
+      "Open-source CLAs gain traction via BYOK and agnostic design",
+      "Dev focus pivots to context degradation and sandbox security",
+      "Claude Code active with v2.1.208 and v2.1.209 rolled out",
+      "OpenAI Codex highly active with Rust core 0.144.4 release"
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.7.1 adds Control UI, GPT-5.6 support",
+      "High velocity triggers P0 crashes and data-loss regressions",
+      "OpenClaw sees 500 issue updates and 500 PR updates in 24h",
+      "New OpenClaw release strengthens Codex coding workflows",
+      "Database migration gates cause breaking changes in OpenClaw",
+      "Community actively tests edge cases in OpenClaw LLM setups"
+    ],
+    "ai-trending": [
+      "Modular .claude skills dominate the AI ecosystem today",
+      "Graphify turns codebases into queryable AI knowledge graphs",
+      "destructive_command_guard blocks dangerous autonomous AI tasks",
+      "Headroom MCP compresses logs by 95% to save agent tokens",
+      "claude-context injects entire codebases into AI via MCP",
+      "AI vertical SaaS alternatives see massive influxes of stars"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude for Teachers with free access",
+      "Claude integrates with K-12 state learning standards",
+      "Anthropic commits $10M CAD to Canadian AI research",
+      "Canadian AI brief reveals high Claude usage in Canada",
+      "Anthropic dominates the news cycle while OpenAI is silent",
+      "Anthropic pushes sector-specific productization today"
+    ],
+    "ai-hn": [
+      "Growing distrust of OpenAI sparks transparency concerns",
+      "Encrypted Codex sub-agent prompts raise hacker suspicions",
+      "Apple files a new IP lawsuit against OpenAI",
+      "AIDE² claims first true evidence of recursive self-improvement",
+      "Domain-Specific Languages seen as key to reliable LLMs",
+      "Dev frustration grows over idiosyncratic, repetitive LLM text"
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM RLHF and classic algorithms",
+      "Agentic RL infrastructure sees massive distributed updates",
+      "Gymnasium focuses on API standardization and strict typing",
+      "Next-gen RLHF frameworks add support for DeepSeek V4",
+      "AReaL sees high-velocity execution on VLM bug fixes",
+      "CleanRL and Open Instruct experience maintenance lulls"
+    ],
+    "agent-orch": [
+      "Agent ecosystem focuses on complex multi-agent orchestration",
+      "Claude Squad and dmux advance desktop orchestration layers",
+      "Swarm Protocol and ORCH push agent communication standards",
+      "Major platforms like AutoGPT and CrewAI see active development",
+      "HumanLayer brings external verification to autonomous agents",
+      "Vibe Kanban and OpenKanban visualize agentic dev workflows"
+    ],
+    "ai-arxiv": [
+      "New papers address vulnerabilities in multi-agent systems",
+      "Mechanistic interpretability exposes LLM-as-Judge bias",
+      "Structurally enforced bottlenecks advance LLM reasoning",
+      "Embodied AI matures with new world action models",
+      "Researchers propose novel training-free model compression",
+      "Metacognition surveyed as cornerstone for transparent LLMs"
+    ],
+    "ai-hf": [
+      "Mixture-of-Experts architectures see a massive ecosystem surge",
+      "Qwen 3.6 dominates across vision-language and NVFP4 formats",
+      "Baidu's Unlimited-OCR model crosses 1.7M downloads",
+      "GLM-5.2 conversational MoE model makes waves on the Hub",
+      "Extreme 2-bit quantization gains traction for small LLMs",
+      "Tencent's Hy3 brings competitive open-weight LLM performance"
+    ],
+    "ai-community": [
+      "Discourse shifts to engineering realities of production AI",
+      "Public forum posts aggressively scraped by AI sales teams",
+      "Devs urged to build external loops to verify agent status",
+      "Engineers share patterns to contain non-deterministic RAG",
+      "AI builders battle unpredictable token costs and agent drift",
+      "Native-speed vLLM optimizations gain strong community interest"
+    ]
+  }
+}
