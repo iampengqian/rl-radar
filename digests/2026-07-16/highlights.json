@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI全面步入多智能体协同，企业级安全与Token管控成焦点",
+      "Claude Code发v2.1.210，社区因额度误扣和僵尸进程爆发愤怒",
+      "Qwen Code讨论极度过活跃，发力守护进程多工作区与IM打通",
+      "Gemini CLI发v0.52.0，重点修补底层安全漏洞与死循环拦截",
+      "OpenAI Codex发Alpha版，推进底层Rust并发重构",
+      "OpenCode陷UI阵痛，社区紧急警惕新提权漏洞"
+    ],
+    "ai-agents": [
+      "OpenClaw发v2026.7.2-beta.1，上线云端远程编码会话",
+      "架构升级引发严重回归Bug，OpenClaw维护团队正紧急扑火",
+      "单日143个PR被合并，OpenClaw全力重构网关与SDK",
+      "重大破坏性更新：OpenClaw将codex提供商折叠至openai插件",
+      "大幅收窄Plugin SDK导出，剔除超3000个冗余组件",
+      "升级SQLite支持修复遗留白名单，解决网关崩溃循环"
+    ],
+    "ai-trending": [
+      "Claude Code生态爆发，自定义指令集成开发者新宠",
+      "端侧虚拟AI伴侣受热捧，市场渴求自托管隐私保护",
+      "Rust版AI危险命令拦截器受捧，填补自动化安全空白",
+      "Ollama支持Kimi-K2.6等最新大模型，稳居本地推理基石",
+      "经典AutoGPT再获高星，成无门槛AI自动化构建标杆",
+      "港大开源Vibe-Trading量化交易Agent，单日暴涨近千星"
+    ],
+    "ai-web": [
+      "Anthropic发布金融业十大开箱即用Agent模板，强攻垂直场景",
+      "Anthropic宣布向加拿大AI研究界投资1000万加元",
+      "Claude面向美国K-12验证教师免费开放高级版权限",
+      "金融Agent深度绑定Office工具与最新Opus 4.7模型",
+      "OpenAI疑似发布GPT自我改进与红队测试相关新研究",
+      "Anthropic强势绑定全美50州学术标准，抢占教师心智"
+    ],
+    "ai-hn": [
+      "Thinking Machines发布975B参数开放权重大模型Inkling",
+      "OpenAI发布GPT-Red研究，解锁大模型自我改进与鲁棒性",
+      "纯WASM驱动的本地大模型推理与管理工具Goku引热议",
+      "高度复刻Claude Code等主流AI IDE的开源UI组件库爆火",
+      "安全警报：利用诱导手段窃取大模型记忆的越狱攻击曝光",
+      "SirixDB 1.0 Beta发布，为AI智能体提供Git级时光机存储"
+    ],
+    "rl-daily": [
+      "RL生态向超大规模工业生产跃迁，LLM对齐主导社区创新",
+      "verl攻坚万卡集群异构算力适配，主推异步稀疏权重同步",
+      "TRL进行战略重构，正式将Logit蒸馏确立为稳定API",
+      "AReaL前沿探索扩散模型RL，打磨FP8通信与Agent协议",
+      "PettingZoo深度对齐现代Gymnasium，解决状态深拷贝痛点",
+      "Open Instruct积极适配B300硬件与前沿MCP工具协议"
+    ],
+    "ai-arxiv": [
+      "打假：无关上下文常致LLM预测翻转，整体准确率极具欺骗性",
+      "缺乏标准答案时，LLM担任裁判常给出过高且不可靠评分",
+      "通过修改预训练信号，探索强制依赖上下文的无幻觉大模型",
+      "离散扩散大语言模型高效推理技术全面综述",
+      "新研究直击Agent痛点：应具备任务复杂度感知避免算力浪费",
+      "MemOps：填补智能体长程对话生命周期记忆评估的空白"
+    ],
+    "ai-hf": [
+      "智谱新一代MoE大模型GLM-5.2登顶今日Hugging Face点赞榜",
+      "百度推出Unlimited-OCR，打破复杂排版与长文本识别限制",
+      "基于Qwen3.6的无审查激进型多模态底座获日下载榜首",
+      "Ornith-1.0-35B端点兼容性极佳，成本地部署爆款",
+      "1-bit与2-bit极端量化大爆发，纯CPU跑MoE成现实",
+      "专为终端代码编写与智能体工作流深度定制的Gemma-4微调版"
+    ],
+    "ai-community": [
+      "生产级痛点：AI代理日均0.35%的成本漂移极易被忽视",
+      "实战：为LLM配置熔断机制，超预算自动降级至本地模型",
+      "反思：高度不确定的AI工作流应当适度去代理化",
+      "告别瞎猜，用Zod在TypeScript中强制大模型输出类型安全",
+      "工程化思路：将Prompt视为代码依赖项引入版本控制",
+      "案例剖析：看似简单的AI聊天界面背后需重度工程化建设"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.210 released amid complex multi-agent push",
+      "OpenAI Codex v0.145.0-alpha.14 leads autonomous execution shift",
+      "Gemini CLI v0.52.0-nightly drops with fleet management updates",
+      "Developers demand resilient background agents over simple chat UIs",
+      "Systemic growing pains hit context window and UI stability",
+      "Model Context Protocol sees deep enterprise integration push"
+    ],
+    "ai-agents": [
+      "OpenClaw rolls out v2026.7.2-beta.1 with remote coding sessions",
+      "Massive OpenClaw update processes 500 issues and 500 PRs in 24h",
+      "Native automation nodes introduced in OpenClaw beta release",
+      "OpenClaw maintainers battle legacy state migration regressions",
+      "Severe gateway startup crash-loops follow v2026.7.1 stable cut",
+      "OpenClaw transitions into a distributed agent runtime framework"
+    ],
+    "ai-trending": [
+      "Claude Code `.claude` skills surge to block AI slop and spam",
+      "Context optimizer Headroom saves up to 95% on LLM token costs",
+      "Ollama hits 176k stars, adding support for Kimi-K2.6 and GLM-5.1",
+      "New Rust tool blocks rogue AI agents from running shell commands",
+      "Developers pivot from generic prompting to modular agent skills",
+      "Context and memory management tools surge for long-running agents"
+    ],
+    "ai-web": [
+      "Anthropic drops 10 ready-to-run agent templates for finance",
+      "Claude integrates deeply into Microsoft 365 enterprise software",
+      "Anthropic commits $10M CAD to Canadian AI research institutions",
+      "OpenAI teases 'Gpt Red' recursive self-improvement capabilities",
+      "Free Claude tier launched specifically for verified K-12 teachers",
+      "Anthropic and OpenAI reveal highly asymmetric release pipelines"
+    ],
+    "ai-hn": [
+      "OpenAI 'Codex Micro' hardware keyboard faces widespread mockery",
+      "Massive 975B parameter open-weights LLM 'Inkling' released",
+      "Viral prompt injection post sparks LLM memory security debate",
+      "Community debates AI bubble sustainability and modern benchmarks",
+      "Anthropic IPO rumors surface alongside major model announcements",
+      "Claude's conversational values vary wildly across languages"
+    ],
+    "rl-daily": [
+      "TRL pushes API maturation with distillation and vLLM alignment",
+      "verl focuses on major infrastructure scaling for MoE models",
+      "RL ecosystem bifurcates between API stability and LLM scaling",
+      "Post-training frameworks tackle severe hardware memory limits",
+      "PettingZoo prioritizes API stabilization for multi-agent setups",
+      "New frameworks tackle massive Vision-Language Model alignment"
+    ],
+    "agent-orch": [
+      "Ecosystem shifts toward managing parallel autonomous workflows",
+      "Open-source orchestrators integrate deeply with Claude Code",
+      "AutoGPT and MetaGPT continue evolving complex team workflows",
+      "New tools prioritize secure local-first AI agent execution",
+      "Multi-agent systems gain traction for complex software tasks",
+      "Developer focus shifts to resilient background task management"
+    ],
+    "ai-arxiv": [
+      "Study reveals LLM predictions flip drastically under bad context",
+      "New framework stops AI agents from over-thinking simple tasks",
+      "Masked diffusion language models bring new inference efficiency",
+      "Sub-1B parameter multimodal models achieve complex emotion tracking",
+      "Reinforcement learning bridges the gap with physical constraints",
+      "Novel methods let LLMs dynamically allocate compute by complexity"
+    ],
+    "ai-hf": [
+      "GLM-5.2 next-gen MoE model trends with massive download volume",
+      "Ternary-Bonsai 1-bit model quantization gains extreme traction",
+      "Baidu's Unlimited-OCR sees immense volume for specialized vision",
+      "Tencent's Hy3 pushes boundaries of native text generation",
+      "Agents-A1 tailored specifically for complex multi-step workflows",
+      "Community pushes uncensored models running locally via MLX"
+    ],
+    "ai-community": [
+      "Devs build LLM circuit breakers to prevent API budget overflows",
+      "Privacy focus drives engineers toward offline, local-first AI",
+      "Zod schema validation ensures type-safe, predictable LLM outputs",
+      "Developers favor deterministic workflows over agentic loops",
+      "New tool creates a package.lock for tracking hidden codebase prompts",
+      "Societal debates spark over data center wealth and surveillance"
+    ]
+  }
+}
