@@ -1,0 +1,85 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI工具向多智能体编排演进，安全与沙盒成企业采用门槛",
+      "OpenAI Codex受Windows崩溃与内存泄漏底层问题困扰",
+      "Gemini CLI连发两版，强攻多代理稳定性与沙盒重构",
+      "Copilot CLI遇5MB上下文物理上限，BYOK鉴权引争议",
+      "OpenCode与Pi狂暴迭代，前者攻坚V2架构后者加码企业级",
+      "Windows虚拟化适配与终端渲染仍是全平台体验最大瓶颈"
+    ],
+    "ai-agents": [
+      "OpenClaw日处理超500条PR，正高强度修复新版崩溃问题",
+      "核心维护者集中解决v2026.7.1启动失败及状态迁移异常",
+      "合并多项PR大幅降低Agent启动耗时与心跳测试时间",
+      "修复openai-completions工具调用前泄露内部叙述文本",
+      "解决慢速CDN导致LINE频道与媒体生成进程永久挂起问题",
+      "社区热议跨平台支持呼声与UI信任安全机制"
+    ],
+    "ai-trending": [
+      "Hallmark爆火，专为Claude与Cursor打造防AI味设计技能",
+      "mattpocock/skills获赞，提取真实场景AI编程技能包",
+      "Graphify强势崛起，将代码与文档转化为可查询知识图谱",
+      "OpenInterpreter发力整合Kimi K3等最新开源大模型",
+      "GitHub发布官方多平台SDK，轻松将Copilot嵌入应用",
+      "lobehub定位Agent运营官，组7x24小时自动化AI团队"
+    ],
+    "ai-web": [
+      "Anthropic发布Slack集成版Claude Tag，向数字员工演进",
+      "Claude Tag具备主动规划任务与长期记忆能力",
+      "Anthropic内部数据显示65%的产品代码由Claude Tag生成",
+      "Claude Tag能力延伸至追踪指标、处理客服工单等非编程场景",
+      "OpenAI发布青少年AI安全倡议，布局合规教育市场",
+      "巨头战略分化：Anthropic重Agent落地，OpenAI重市场合规"
+    ],
+    "ai-hn": [
+      "GPT-5.6协助解决悬而未决30年的凸优化数学开放难题",
+      "Moonshot发布Kimi K3，以高性能与低价挑战Anthropic",
+      "百元成本对比Claude Fable 5与GPT-5.6制作音乐视频",
+      "LM Studio推出Bionic，整合开源模型本地Agent能力",
+      "1Password与Claude深度集成，AI加速接管系统权限",
+      "社区反思：探讨传统机器学习检测大模型文本的有效性"
+    ],
+    "rl-daily": [
+      "RL开源生态全面迈向LLM为核心的超大规模工业化应用",
+      "verl聚焦超大规模与异构硬件，重点修复Agentic调度阻塞",
+      "TRL高频迭代异步架构，向复杂Agent RL基座设施进化",
+      "ROCK死磕Ray底层容错与OpenTelemetry可观测性",
+      "slime攻坚多轮Agent调度Cache命中率，深度适配Mamba",
+      "Gymnasium与CleanRL拥抱JAX引擎探索高并发向量化上限"
+    ],
+    "agent-orch": [
+      "OpenAI发布全新Agent编排框架Symphony",
+      "微软迭代明星项目AutoGen与多智能体协作机制",
+      "Claude Flow等工具探索Claude的多代理并发任务流",
+      "MetaGPT持续更新，深化多Agent软件公司模拟架构",
+      "AutoGPT重金押注复杂业务流自动化与长周期任务",
+      "HumanLayer致力于实现人机交互反馈的安全闭环"
+    ],
+    "ai-arxiv": [
+      "大模型智能体与持续学习深度融合成今日学术研究核心",
+      "经验记忆图提出，允许LLM Agent实现一次性快速纠错",
+      "TRACE解决长周期Agent任务的回合级信用分配难题",
+      "提出高效人机交互法，允许用户直接介入纠正CoT错误",
+      "AIMO挑战：探索前沿数学大模型是稳健还是虚假推理",
+      "回放预测市场方法提出，专治评估大模型的数据污染"
+    ],
+    "ai-hf": [
+      "智谱AI发布GLM-5.2，凭强大MoE架构霸榜今日语言模型榜首",
+      "腾讯发布混元v3系列模型，原生支持高质量文本生成",
+      "面壁1B端侧微调版融入类Claude写作与思考能力",
+      "百度无限制OCR模型发布，下载量惊人印证视觉硬需求",
+      "Qwen3.6视觉版无审查微调，主打激进图文交互",
+      "极低比特量化迎爆发，27B大模型在消费级硬件流畅运行"
+    ],
+    "ai-community": [
+      "AI生成代码被视为技术债务，开发者反思背后的维护成本",
+      "AI调试工具实战：比传统单元测试更早发现隐蔽API Bug",
+      "开发者手搓轻量级工具，解决AI Agent运行轨迹黑盒痛点",
+      "利用Ollama与ChromaDB搭建本地代码库记忆系统实战",
+      "探讨多租户环境下AI监听带来的系统权限边界与安全挑战",
+      "端侧AI部署、本地知识库与底层推理优化成降本新风向"
+    ]
+  },
+  "en": {}
+}
