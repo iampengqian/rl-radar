@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex集中管理MCP，解决Windows性能瓶颈",
+      "Claude Code爆失控账单：单次扣费高达1000美元",
+      "Gemini CLI引入提示词注入防御与沙箱白名单",
+      "OpenCode发布UI验证版，推进V2架构与流式输出",
+      "DeepSeek TUI支持鸿蒙跨端，实现Auto路由可视化",
+      "Copilot CLI精细化校验，提供插件MCP标志支持"
+    ],
+    "ai-agents": [
+      "OpenClaw发布v2026.7.2-beta.2，引入远程编码会话",
+      "OpenClaw新版本遭遇SQLite迁移Bug致网关启动死锁",
+      "OpenClaw重构安全机制实现每标签页隔离防上下文污染",
+      "OpenClaw单日迎885条Issues与PRs交互更新",
+      "OpenClaw修复阻碍beta.2启动的数据库升级死锁问题",
+      "OpenClaw引入无头场景下的原生自动化框架与节点"
+    ],
+    "ai-trending": [
+      "hallmark登顶GitHub，反AI审美疲劳的设计技能包",
+      "openinterpreter支持本地推理，终端Coding Agent热度飙升",
+      "GitHub官方推出多平台Copilot Agent SDK",
+      "turbovec：基于Rust的高性能向量索引引擎",
+      "基于MCP的code-review-graph大幅缩减Token消耗",
+      "CopilotKit推出AG-UI协议重塑人机交互界面"
+    ],
+    "ai-web": [
+      "OpenAI释出《AI时代的记分卡》，试图主导评估标准",
+      "OpenAI正从单纯模型提供商向行业裁判员角色跨越",
+      "大模型基础能力同质化，定义什么是好成最高竞争",
+      "Anthropic官网无增量更新，处于罕见的静默期",
+      "Anthropic或正秘密攻关下一代Claude 4.x模型",
+      "发布评估框架意在生态层面对竞品形成降维打击"
+    ],
+    "ai-hn": [
+      "Axios报道：中国AI实力已抹平美国的领先优势",
+      "传Kimi K3惊艳表现或源于蒸馏未发布的Anthropic模型",
+      "Apple向OpenAI员工发难，Meta拟向Anthropic出租算力",
+      "开发者深扒Claude Code工程实践中的严重设计缺陷",
+      "OpenAI加密Codex代理指令，开发者无法进行本地审计",
+      "社区反思AI辅助编程在真实工程场景的不可控性"
+    ],
+    "rl-daily": [
+      "RL生态全面转向大模型对齐与多模态强化微调",
+      "TRL集中攻坚多模态VLM与异步GRPO工程化",
+      "verl深度攻坚分布式通信与国产异构算力支持",
+      "AReaL紧跟前沿，适配GLM-5与DeepSeek-V3基座",
+      "Gymnasium探索纯Python物理引擎迁移清理技术债",
+      "SB3发现并修正在多环境随机种子分配的统计缺陷"
+    ],
+    "ai-arxiv": [
+      "新框架突破掩码扩散语言模型的强化学习优化瓶颈",
+      "原地词表扩展解决LLM添加新语言的高计算成本痛点",
+      "T²MLR在Transformer中层引入时间循环打破解码局限",
+      "新策略增量蒸馏解除RL后训练对奖励模型的过度依赖",
+      "研究质疑基于项目反应理论的AI评估方法可靠性",
+      "Plover提出以计划为中心交互解决GUI智能体偏离意图"
+    ],
+    "ai-hf": [
+      "智谱最新MoE架构GLM-5.2大模型登顶今日榜首",
+      "腾讯混元第三代模型Hy3迎来重磅基础文本生成更新",
+      "百度推超强Unlimited-OCR：支持无限长图精准提取",
+      "Bonsai-27B极限量化，将30B大模型塞进消费级设备",
+      "Qwythos-9B：支持100万超长上下文的视觉多模态",
+      "Agents-A1：专为复杂Agent任务优化的强力模型"
+    ],
+    "ai-community": [
+      "实战分享：在浏览器中构建运行Gemini Nano端侧LLM",
+      "硬核拆解：Kimi K3隐性超支杀手是输出冗长度",
+      "剖析Token漂移：为何Agent越跑越慢且成本激增",
+      "揭秘高并发调用API时极易引发的预算竞态条件",
+      "反思AI优先：应从解决实际业务痛点而非堆砌技术",
+      "社区转向AI工程现实，聚焦Token漂移与预算超支"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.212 adds background workflows and cost guardrails.",
+      "AI CLI ecosystem shifts focus to multi-agent orchestration.",
+      "Dev community tackles process leaks and token bloat.",
+      "Maintainers prioritize security perimeters and cost transparency.",
+      "OpenAI Codex sees 10 issues and 10 PRs in 24 hours.",
+      "Standardized security guardrails are now a top priority."
+    ],
+    "ai-agents": [
+      "OpenClaw v2026.7.2-beta.2 introduces remote coding sessions.",
+      "OpenClaw sees 400 issues and 500 PRs updated in 24 hours.",
+      "Native automation nodes debut in latest OpenClaw release.",
+      "OpenClaw beta regressions trigger critical gateway bug reports.",
+      "Maintainers aggressively iterate on CI hardening and security.",
+      "OpenClaw community focuses on stabilizing multi-channel reliability."
+    ],
+    "ai-trending": [
+      "Nutlope/hallmark gains 1,500 stars for anti-AI-slop design.",
+      "affaan-m/ECC hits 230k+ stars optimizing agentic coding CLIs.",
+      "NousResearch/hermes-agent hits 216k+ stars for self-optimizing.",
+      "memvid introduces single-file memory layers for AI context.",
+      "VectifyAI/PageIndex debuts reasoning-based RAG.",
+      "ollama optimizes for next-gen models like Kimi-K2.6."
+    ],
+    "ai-web": [
+      "OpenAI drops new strategic artifact: AI Age Scorecard.",
+      "Anthropic hits a quiet news cycle with zero new articles.",
+      "OpenAI 'A Scorecard For The AI Age' lacks body text metadata.",
+      "Deep analysis of OpenAI update limited by metadata-only crawl.",
+      "OpenAI index total reaches 870 tracked articles.",
+      "AI labs' publication cadence shows an incremental update lull."
+    ],
+    "rl-daily": [
+      "RL ecosystem bifurcates into LLM post-training and foundations.",
+      "verl scales infrastructure with sharded delta sync and Ascend.",
+      "TRL pushes deep feature integration and agentic tool-calling.",
+      "LLM frameworks shift focus to heterogeneous hardware support.",
+      "Traditional RL libraries like Gymnasium reach extreme stability.",
+      "AReaL and slime operate at a massive distributed engineering scale."
+    ],
+    "agent-orch": [
+      "Agent Orchestrator digest tracks a massive ecosystem of 45 tools.",
+      "HumanLayer and dmux push autonomous agent orchestration limits.",
+      "AutoGPT and CrewAI drive multi-agent enterprise adoption.",
+      "Vibe Kanban and OpenKanban streamline agentic workflows.",
+      "Claude Squad and Symphony integrate advanced coding flows.",
+      "Agent Deck and Mux Desktop debut robust agent management UIs."
+    ],
+    "ai-arxiv": [
+      "Agentic AI rapidly matures from theory to robust applications.",
+      "New research tackles context scaling and memory bottlenecks.",
+      "Safety alignment evolves to address physical grounding risks.",
+      "Autonomous AI pipelines signal a new era of meta-analyses.",
+      "T2MLR adds temporal recurrence to bypass reasoning bottlenecks.",
+      "On-Policy Delta Distillation offers a novel RL alternative."
+    ],
+    "ai-hf": [
+      "Extreme 1-bit quantization pushes local hardware limits.",
+      "Bonsai-27B-gguf sees massive downloads for local deployment.",
+      "Qwythos-9B and Unlimited-OCR drive a multimodal vision surge.",
+      "zai-org/GLM-5.2 MoE model racks up 534k+ downloads.",
+      "Tencent Hy3 sees massive community likes for base capabilities.",
+      "InternScience/Agents-A1 shows strong momentum in agent space."
+    ],
+    "ai-community": [
+      "Moonshot AI's Kimi K3 drops as a 2.8T-parameter open model.",
+      "Kimi K3 delivers GPT-5.6-level performance at half the cost.",
+      "Token verbosity quietly drives up real-world production costs.",
+      "Developers demand AI guardrails after local models brick OSes.",
+      "Lobste.rs scrutinizes wealth concentration in AI data centers.",
+      "AI discourse shifts from hype to LLM observability and reliability."
+    ]
+  }
+}
