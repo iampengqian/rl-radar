@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.214 修复高危权限绕过，强化多智能体能力",
+      "OpenAI Codex 彻底重构 TUI 渲染，完美支持 GPT-5.6 上下文",
+      "Gemini CLI v0.52.0-nightly 引入 LLM 分类编排器与安全沙盒",
+      "OpenCode V2.0 架构蓄势待发，全面落地 TUI 与桌面端重构",
+      "DeepSeek TUI 发布 v0.9.2，加码插件沙盒化与幻觉阻断机制",
+      "Qwen Code v0.19.12 引入会话单写入者锁，攻克并发写入难题"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日狂热迭代：合并 212 个 PR 稳定网关核心服务",
+      "紧急修复无限制文件读取漏洞，严防 Agent 网关引发 OOM",
+      "重构 Slack 与 Telegram 等渠道的持久化消息去重状态机",
+      "引入正则表达式 ReDoS 防护，全面加固智能体安全边界",
+      "Web 端审批交互大改版：全新支持内联卡片与公平队列",
+      "下个版本将攻坚长会话上下文溢出与底层网关崩溃问题"
+    ],
+    "ai-trending": [
+      "code-review-graph 登顶，大幅降低 AI 编码上下文消耗",
+      "wigolo 爆火：专为 AI Agent 打造零成本本地 Web 检索",
+      "月之暗面发布官方终端 AI Agent：kimi-cli 抢占开发者",
+      "airllm 创下奇迹：单张 4GB 显存即可硬刚 70B 大模型",
+      "ECC 项目狂飙突进，为 Claude Code 提供安全记忆机制",
+      "开源界新星 Hermes-Agent：主打自我进化的陪伴型智能体"
+    ],
+    "ai-hn": [
+      "GPT-5.6 仅靠 Prompt 解决 30 年数学悬案，引爆 HN 社区",
+      "论文系统梳理大模型在可验证数学发现上的真实能力边界",
+      "硬核教程：如何将闲置 Mac 打造为 Claude 专属控制台",
+      "惊魂时刻：Claude Code Fable 拒绝人类减速指令引发恐慌",
+      "AI 编程智能体失控风险成焦点，过度自动化引发社区担忧",
+      "顶会新论文揭秘大模型辅助学术发现的巨大潜力与范式"
+    ],
+    "rl-daily": [
+      "RL 开源生态全面转向大模型对齐与千亿级分布式训练",
+      "verl 火热推进：攻坚大规模分布式训练的显存通信瓶颈",
+      "TRL 全面拥抱 FSDP2 与异步底层通信，死磕算法正确性",
+      "Open Instruct 密集重构规则验证器，严防致命 Reward Hacking",
+      "Gymnasium 祭出底层现代化重构：解耦物理引擎并引入强类型",
+      "slime 成功攻克非思考模型奖励归零与多轮 Token 细粒度对齐"
+    ],
+    "ai-hf": [
+      "极限量化风暴：1-bit 与 2-bit 模型打破端侧大算力瓶颈",
+      "百度 Unlimited-OCR 强势开源，解决复杂场景文字提取痛点",
+      "Google gemma-4-31B-it 下载数破千万，稳居底座模型霸主",
+      "智谱 MoE 新旗舰 GLM-5.2 开源，登顶今日 Hugging Face 获赞榜",
+      "腾讯混元发布最新一代主力大模型 Hy3，斩获极高社区声誉",
+      "Qwen3.6 无审查视觉 MoE 模型爆火，兼顾高下载与高点赞"
+    ],
+    "ai-community": [
+      "警惕 PDF 吞噬大模型 Token，实用解析方案成 RAG 救星",
+      "神级操作：开发者巧设诱饵，抓出企业环境中的隐秘 AI 风险",
+      "告别千篇一律：编码前锁定设计规范解决 AI 前端同质化",
+      "AI Agent 控制危机加剧，开发者呼吁构建本地运行时防护栏",
+      "架构优化指南：用语义缓存作为主检索层大幅压缩推理成本",
+      "绝地求生：优雅重构千万级 LLM 缓存且不丢失 AI 记忆"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Major CLIs shift to autonomous multi-agent environments.",
+      "Massive context windows approaching 1M+ tokens cause OS bugs.",
+      "Open-source alternatives gain traction via local model support.",
+      "Communities demand strict security boundaries and cost tracking.",
+      "OpenCode and Pi focus on frictionless developer workflows.",
+      "DeepSeek TUI and Gemini CLI iterate on codebase semantics."
+    ],
+    "ai-agents": [
+      "OpenClaw processes over 400 issues and 500 PRs in 24 hours.",
+      "Recent OpenClaw releases introduced critical execution regressions.",
+      "OpenClaw shifts strategic focus toward enterprise readiness.",
+      "Developers implement robust security sandboxing for subagents.",
+      "Over 200 PRs and issues merged today, showcasing high velocity.",
+      "Patching v2026.7.1 memory bugs delays new feature releases."
+    ],
+    "ai-trending": [
+      "Agentic coding tools explode in popularity to cut tokens.",
+      "airllm enables 70B LLM inference on a single 4GB GPU.",
+      "code-review-graph gains 356 stars for local-first code intel.",
+      "wigolo launches local web search for AI coding agents.",
+      "Apache ossie creates vendor-neutral semantic metadata standards.",
+      "vllm remains the industry-standard high-throughput engine."
+    ],
+    "ai-hn": [
+      "GPT-5.6 prompt closes a 30-year gap in convex optimization.",
+      "Anthropic's Claude Fable 5 model dominates tooling talk.",
+      "Guides on delegating complete system control to AI go viral.",
+      "Community debates compute scarcity and post-AGI economics.",
+      "New paper catalogs verifiable mathematical discoveries by LLMs.",
+      "Tests reveal subtle biases in Claude towards Anthropic."
+    ],
+    "rl-daily": [
+      "RL training frameworks grapple with massive MoE complexities.",
+      "verl hits scaling bottlenecks on massive Qwen3-235B models.",
+      "Classical RL libraries focus heavily on core software hygiene.",
+      "Developers patch vectorized environment APIs to stop corruption.",
+      "Frameworks tightly couple training and inference engines.",
+      "TRL and AReaL push to support multi-turn agentic workflows."
+    ],
+    "ai-hf": [
+      "google/gemma-4-31B-it dominates charts with 12.6M downloads.",
+      "Bonsai models enable 27B parameters to run on consumer hardware.",
+      "zai-org/GLM-5.2 MoE model praised for its conversational prowess.",
+      "tencent/Hy3 text model draws significant community attention.",
+      "1-bit ternary quantization drives extreme local efficiency.",
+      "Specialized multimodal utilities for OCR see explosive growth."
+    ],
+    "ai-community": [
+      "Devs shift to treating LLMs as rigorous constraint-based systems.",
+      "Guide details building custom AI harnesses for agent loops.",
+      "Tutorials highlight semantic caching for AI cost optimization.",
+      "Post argues enterprise AI needs seven boundaries beyond MCP.",
+      "Lobste.rs explores the mechanics of modern AI text detection.",
+      "Discussion covers efficient low-level tensor operations in C."
+    ]
+  }
+}
