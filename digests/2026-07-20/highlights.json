@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 全面迈入多智能体协同与权限沙箱深水区",
+      "OpenAI Codex 加持 GPT-5.6 探索动态音频支持",
+      "Claude Code v2.1.215 移除 Agent 自主审查机制",
+      "Gemini CLI 强化 Shell 沙箱安全与 AST 感知",
+      "Qwen Code 发布 v0.20.0 修复 SSE 内存泄漏",
+      "OpenCode 底层重构解耦 Plan 与 Build 模式"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.7.2-beta.3 引入远程编码会话",
+      "OpenClaw 修复 SQLite 迁移 Bug 致网关启动阻塞",
+      "OpenClaw 落地多个巨型 PR 全面巩固国际化底层",
+      "OpenClaw 重构原生自动化与节点底层运行机制",
+      "OpenClaw 修复 Telegram 渠道直邮回复所有权丢失",
+      "OpenClaw 允许终端直接恢复 OpenCode 和 Pi 会话"
+    ],
+    "ai-trending": [
+      "airllm 狂飙：单张 4GB 显卡即可跑 70B 大模型",
+      "Kimi 官方 CLI 上线抢夺开发者终端入口",
+      "code-review-graph 为 AI 编码打造本地知识图谱",
+      "wigolo 成为 AI 智能体的零成本超强检索外脑",
+      "ktransformers 异构推理优化极大降低硬件门槛",
+      "jcode 用 Rust 构建高效安全的 Coding Agent 环境"
+    ],
+    "ai-hn": [
+      "Anthropic 将 Claude Code 迁移至 Rust 编写的 Bun",
+      "研究表明 AI 建议使人准确率降 3 倍但自信增 2 倍",
+      "Shikigami 实现多 AI Agent 并行修改不同 Git 树",
+      "单 Token 即可对大模型进行指纹识别追踪版本",
+      "开源代码库正遭受大规模 AI 垃圾代码污染",
+      "Apple 起诉 OpenAI 揭示科技巨头背后的法律暗战"
+    ],
+    "rl-daily": [
+      "verl 极度活跃死磕算力压榨并前瞻布局 GB200",
+      "TRL 深度整合多模态 Agent 与知识蒸馏生态",
+      "AReaL 攻坚万卡级分布式训练底层容错预热",
+      "Gymnasium 向现代计算后端 JAX 平滑演进重构",
+      "slime 团队死磕多维算子修复为 GLM-5 兼容蓄水",
+      "ROCK 针对超大规模分布式训练日志可观测性打磨"
+    ],
+    "agent-orch": [
+      "Agent 编排生态转向多 Agent 并行协作与 Git 树分发",
+      "Claude Squad 助力多个 AI 编程智能体并发执行",
+      "OpenAI Symphony 致力于复杂大模型工作流编排",
+      "AutoGPT 与 MetaGPT 持续引领自动化智能体潮流",
+      "HumanLayer 强调智能体编排中的人类介入与安全",
+      "Crystal 等新锐项目探索高效 Agent 任务分发框架"
+    ],
+    "ai-hf": [
+      "1-bit 量化神作 Bonsai-27B 狂揽超 160 万次下载",
+      "GLM-5.2 登顶本周点赞榜采用 MoE 与 DSA 架构",
+      "Google gemma-4-31B 以超 1200 万下载量霸榜",
+      "百度 Unlimited-OCR 直击长图表复杂排版痛点多",
+      "Qwen3.6 无审查多模态模型因强悍推理引发热潮",
+      "腾讯混元 Hy3 为开源生态提供强力的前端正负"
+    ],
+    "ai-community": [
+      "Clinejection：GitHub 标题注入攻陷五百万开发者工具",
+      "一行数学代码致 AI Agent 死锁且超时机制失效",
+      "实测揭秘实时 AI 管线中最慢的并非大模型推理",
+      "GPT-5.6 算出 30 年数学证明但被警告存严重规避",
+      "Spend Cap 提出构建大模型高可用费用熔断机制",
+      "评测采样是预算决策：停止无脑全量验证 Agent"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "CLI tools shift from chat to multi-agent orchestration",
+      "Major players focus on fixing desktop app resource leaks",
+      "Open-source tools push local execution and web dashboards",
+      "Agentic infrastructure drives state and memory management",
+      "Developer focus pivots to complex systems engineering",
+      "Robust subagent ecosystems spark massive refactoring efforts"
+    ],
+    "ai-agents": [
+      "OpenClaw processes 362 issues and 500 PRs in 24 hours",
+      "OpenClaw v2026.7.2-beta.3 adds remote coding sessions",
+      "Cloud workers can now run Control UI sessions remotely",
+      "Codex and Claude catalogs open on owning hosts",
+      "OpenCode and Pi terminals can resume sessions directly",
+      "Merging large foundational UI and Claw packaging PRs"
+    ],
+    "ai-trending": [
+      "GitHub trends show maturation of AI coding agents",
+      "Context optimization and memory management are top focus",
+      "Local-first knowledge graphs accelerate for coding tools",
+      "New heterogeneous inference engines run massive models",
+      "kvcache-ai/ktransformers gains 328 stars today",
+      "lyogavin/airllm runs 70B models on a single 4GB GPU"
+    ],
+    "ai-hn": [
+      "Claude Code spotlighted after moving to a Rust Bun core",
+      "Anthropic showcases massive AI-driven code migrations",
+      "OpenAI quietly reduces Codex context window capacity",
+      "Codex bugs spark fear over agents deleting user files",
+      "Study: AI advice made people 3x less accurate, 2x confident",
+      "New technique can fingerprint LLMs from a single token"
+    ],
+    "rl-daily": [
+      "LLM alignment frameworks dominate RL ecosystem activity",
+      "verl leads distributed compute and multimodal integration",
+      "TRL pushes aggressive GRPO stabilization optimizations",
+      "Standard environments focus on stable API maintenance",
+      "Gymnasium and PettingZoo push backend documentation",
+      "Post-training frameworks see intense, fast-paced updates"
+    ],
+    "agent-orch": [
+      "Industry shifts focus to production-grade agent orchestration",
+      "45 projects tracked in rapid agent orchestrator expansion",
+      "Claude Squad and Symphony lead autonomous dev pipelines",
+      "Vibe Kanban and OpenKanban gain strong traction today",
+      "Major frameworks focus on robust autonomous swarms",
+      "AutoGPT and MetaGPT drive complex multi-agent systems"
+    ],
+    "ai-hf": [
+      "1-bit and 2-bit models like Bonsai-27B trend heavily",
+      "Google's Gemma-4-31B-it hits over 12 million downloads",
+      "zai-org/GLM-5.2 gains 4,165 likes and robust conversation",
+      "Baidu's Unlimited-OCR sees massive community adoption",
+      "Community drives intense demand for uncensored AI models",
+      "InternScience/Agents-A1 is tailored for advanced agentic tasks"
+    ],
+    "ai-community": [
+      "Production-grade architecture replaces AI experimentation",
+      "Malicious GitHub titles hijack 5M-user AI dev tools",
+      "Complex math reasoning creates infinite LLM agent loops",
+      "Hidden security vulnerabilities plague AI dev tools",
+      "Lobste.rs explores deep ML and compiler intersections",
+      "Industry matures AI via rigorous systems-level optimization"
+    ]
+  }
+}
