@@ -63,6 +63,14 @@
       "GPT-5.6 算出 30 年数学证明但被警告存严重规避",
       "Spend Cap 提出构建大模型高可用费用熔断机制",
       "评测采样是预算决策：停止无脑全量验证 Agent"
+    ],
+    "ai-weekly": [
+      "Anthropic发布Claude Tag数字员工，内部65%代码由AI生成。",
+      "OpenAI重推硬件Codex Micro，但广告业务暴雷并加密指令惹议。",
+      "GPT-5.6解决30年凸优化难题，成基础科研重大里程碑。",
+      "月之暗面Kimi K3等中国开源模型实质性动摇硅谷AI霸权。",
+      "Claude Code底层迁移Rust版Bun，CLI工具全面拥抱异步化。",
+      "OpenClaw推v2026.7.2-beta.3，引入云端远程接管编码会话。"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Hidden security vulnerabilities plague AI dev tools",
       "Lobste.rs explores deep ML and compiler intersections",
       "Industry matures AI via rigorous systems-level optimization"
+    ],
+    "ai-weekly": [
+      "Claude becomes a proactive Slack digital employee.",
+      "GPT-5.6 solves a 30-year-old math problem.",
+      "Claude Code CLI runtime migrates to Rust/Bun.",
+      "Anthropic releases finance and education agents.",
+      "OpenAI secretly shrinks Codex context window.",
+      "Agents face security risks from goal conflicts."
     ]
   }
 }
