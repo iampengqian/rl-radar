@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 迈入多智能体时代，破坏性操作防御成核心焦点",
+      "Qwen Code 活跃度激增，单日 Issue 与 PR 双双突破 45+",
+      "Claude Code 发版 v2.1.216，重点细化权限沙箱",
+      "OpenAI Codex 重构 rust-v0.145.0，修复 Windows 性能风暴",
+      "OpenCode 发布 v1.18.4，全面扩展多模态与并发容错",
+      "DeepSeek TUI 冲刺 v0.9.1，突破 Token 缓存复用技术"
+    ],
+    "ai-agents": [
+      "OpenClaw 爆发：单日处理 357 个 Issue 与 500 个 PR",
+      "社区强呼吁解决长对话下的上下文丢失与内存泄漏痛点",
+      "修复 QQ Bot 负载限制，有效阻断系统 OOM 宕机风险",
+      "引入单任务超时机制，彻底解决插件锁导致队列阻塞",
+      "统一 bun x 执行审批目标，大幅增强命令执行安全边界",
+      "数百个待合并 PR 预示即将迎来系统健壮性重磅更新"
+    ],
+    "ai-trending": [
+      "code-review-graph 暴涨 1876 Star，硬核解决上下文缺失",
+      "OmniRoute 登顶：支持 500+ 模型的免费 AI 编程网关",
+      "transcribe.cpp 获热捧，标志端侧语音推理技术全面普及",
+      "ollama 强势收录 Kimi-K2.6 与 DeepSeek 等前沿开源模型",
+      "jcode 获赞最智能代码框架，基于 Rust 打造高性能调度",
+      "月之暗面亲自下场，官方发布 Kimi CLI 抢占终端入口"
+    ],
+    "ai-web": [
+      "Anthropic 转向垂直领域，悬赏 5 万美元 API 攻克罕见病",
+      "OpenAI 暗示发力长程模型，将安全边界视为研发核心",
+      "罕见病受助者将获半年 5 万美元 Claude API 额度扶持",
+      "临床数据极难积累，生成式 AI 在罕见病领域实现降维打击",
+      "长周期任务成重心，OpenAI 预告下一代模型安全对齐",
+      "API 资助分设双轨，兼顾基础科研与早期生物科技公司"
+    ],
+    "rl-daily": [
+      "开源 RL 迎向 Agentic RL 与百亿级算力下沉时代",
+      "verl 极度活跃，死磕 Host-Device 解耦与通信墙消除",
+      "TRL 重构核心代码，力推 on-policy 蒸馏与分布式训练",
+      "slime 攻坚大模型权重热更新，深度适配国产异构算力",
+      "Gymnasium 全面拥抱 JAX 硬件加速并修复向量化边缘 Bug",
+      "PettingZoo 推进底层 API 现代化，重构多智能体环境"
+    ],
+    "ai-hf": [
+      "GLM-5.5 MoE 架构发布，凭借强大对话能力霸榜 Hugging Face",
+      "端侧算力大突破：1-bit/2-bit Bonsai 极低比特量化模型爆火",
+      "百度 Unlimited-OCR 发布，直击极高分辨率文档提取痛点",
+      "百万上下文模型 Qwythos-9B 下载量惊人，视觉调校极佳",
+      "Qwen3.6 衍生无审查视觉模型填补多模态生成领域空白",
+      "Gemma-4-31B 下载量破千万，稳居中大型开源模型基石"
+    ],
+    "ai-community": [
+      "开发者激烈探讨：AI 生成的代码知识产权究竟归谁？",
+      "打破迷思：本地部署无法解决 Agent 权限提升安全盲区",
+      "破解大模型谄媚症：提出全新循环工程强制保证逻辑客观",
+      "CrewAI 踩坑指南：AWS 部署遭遇隐蔽错误与排错全过程",
+      "拒绝凭感觉：一文教你构建生产级量化 LLM 评估管线",
+      "别盲信跑分榜单：实测揭秘本地量化模型的真实可用性"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "CLI tools shifting to multi-agent runtime environments",
+      "Dev's demanding stricter OS-level sandboxing for agents",
+      "Community focus shifts to context window and token management",
+      "Claude Code v2.1.216 focuses on autonomy safety",
+      "Push for cross-platform stability, specifically on Windows",
+      "Trend moves from code generation to complex CI/CD pipelines"
+    ],
+    "ai-agents": [
+      "OpenClaw sees massive community push with 392 open PRs",
+      "Developers heavily focused on agent operational stability",
+      "OpenClaw merges 108 PRs to improve system resilience",
+      "No new OpenClaw releases as maintainers triage regressions",
+      "Active development targets memory handling and security",
+      "Community submits fixes ranging from minor UI to overhauls"
+    ],
+    "ai-trending": [
+      "Agentic dev tools and context optimization dominate today",
+      "OmniRoute gateway surges +1,300 stars for token compression",
+      "Structured memory gaining ground over vector search",
+      "ktransformers optimizes hardware for heterogeneous LLMs",
+      "fastmcp becomes defacto framework for MCP servers",
+      "lingbot-map pushes 3D scene reconstruction boundaries"
+    ],
+    "ai-web": [
+      "Anthropic announces rare disease research grant program",
+      "Anthropic offers $50k in API credits for scientific research",
+      "OpenAI signals advances in long-horizon model safety alignment",
+      "Divergent strategies emerge between Anthropic and OpenAI",
+      "Anthropic expands footprint in high-impact applied science",
+      "OpenAI addresses safety for next-gen agentic AI systems"
+    ],
+    "ai-hn": [
+      "Claude Fable produced counterexample to Jacobian Conjecture",
+      "AI breakthrough sparks debate on true math reasoning",
+      "OpenAI outlines new paradigms for long-horizon model safety",
+      "Community debates potential US ban on Chinese AI models",
+      "Dev focus shifts to controlling LLM reasoning effort",
+      "New methods showcased to audit and compress agent memory"
+    ],
+    "rl-daily": [
+      "Reinforcement learning bifurcates into LLM and simulation",
+      "Massive momentum in post-training LLM alignment frameworks",
+      "verl shows extreme velocity in distributed systems fixes",
+      "RL simulation APIs focus on hardware acceleration via JAX",
+      "Orchestrators like ROCK target cluster resilience",
+      "Post-training frameworks solve severe memory bottlenecks"
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem now tracks 45 active projects",
+      "Swarm Protocol and dmux lead multi-agent orchestration tools",
+      "Heavy community focus on managing multi-agent workflows",
+      "OpenKanban and Vibe Kanban visualize agent tasks",
+      "HumanLayer integrates human-in-the-loop oversight safely",
+      "Major frameworks like AutoGPT and MetaGPT continue evolving"
+    ],
+    "ai-hf": [
+      "1-bit and 2-bit architectures drive radical efficiency gains",
+      "prism-ml's Bonsai series achieves massive download numbers",
+      "zai-org's GLM-5.2 MoE dominates open-weight LLM charts",
+      "Google's gemma-4-31B-it leads ecosystem in raw downloads",
+      "Baidu's Unlimited-OCR sees massive multimodal adoption",
+      "Aggressive community push for uncensored model fine-tuning"
+    ],
+    "ai-community": [
+      "Dev community shifts focus from AI hype to realism",
+      "Legal warning: Devs might not own copyright to AI code",
+      "Debugging deep-dives highlight silent agent execution fails",
+      "Article reveals local AI doesn't solve agent action security",
+      "Developers share practical RAG architecture optimizations",
+      "Lobste.rs sparks deep debate on verifiable AI inference"
+    ]
+  }
+}
