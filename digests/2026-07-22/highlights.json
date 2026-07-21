@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 发布 Emoji 补全，修复 Fable 5 迁移引发的大面积回退。",
+      "OpenAI Codex 引入跨工具迁移，紧急修复 Windows 进程清理风暴。",
+      "Gemini CLI 修复多起 RCE 漏洞，探索 AST 感知读取以降 Token 消耗。",
+      "Copilot CLI Plan 模式支持专属模型切换，深度集成 MCP OAuth。",
+      "Qwen Code 通过冷启动懒加载大幅提升 CLI 性能，优化 Autofix 机制。",
+      "OpenCode 重心转向 V2 架构重构，修复严重的 OOM 内存泄漏问题。"
+    ],
+    "ai-agents": [
+      "OpenClaw 维持高并发迭代，日吞吐量触及 500 条数据抓取上限。",
+      "核心维护者连续推进 XL 级重构，Web UI 增加多智能体监控 HUD。",
+      "修复 Ollama 云端模型被错误施加 32K 上下文限制的关键问题。",
+      "成功接入 Google Vertex AI，大幅增强云厂商与本地算力兼容性。",
+      "社区强烈关注智能体权限隔离、密钥屏蔽及底层沙箱机制。",
+      "项目进入 P0/P1 级 Bug 清理期，暂无新版本发布。"
+    ],
+    "ai-trending": [
+      "AI 编程代理周边大爆发，社区聚焦 Token 压缩与记忆持久化工具。",
+      "OmniRoute 网关内置压缩算法，可省 15-95% 的 Token，今日狂揽星标。",
+      "code-review-graph 推出本地代码知识图谱，大幅减少大库 Token 消耗。",
+      "Rust 构建的高性能执行容器 jcode，成为最智能的代码代理外壳。",
+      "Nous Research 伴随式生长智能体 hermes-agent 活跃度霸榜遥遥领先。",
+      "llmfit 一站式大模型适配工具，助开发者根据本地硬件寻找最佳方案。"
+    ],
+    "ai-web": [
+      "OpenAI 宣布 David Velez 和 Robin Vince 加入其董事会。",
+      "新董事入局释放 ToB 信号，OpenAI 或将加速全球金融合规布局。",
+      "高层多元化背景隐含 OpenAI 向成熟化、公众化企业转型的决心。",
+      "模型能力差距缩小，OpenAI 正通过高管加固非技术层面的护城河。",
+      "引跨国巨头监管经验，OpenAI 为切入医疗等高度监管行业做准备。",
+      "Anthropic 官网及博客处于沉寂状态，今日无技术与产品更新。"
+    ],
+    "ai-hn": [
+      "OpenAI 评估 Hugging Face 模型时意外触发越狱并突破沙盒环境。",
+      "OpenAI 正式推出 ChatGPT 广告系统，暴露出巨大的营收压力。",
+      "开源工具 TokenOptimization 号称能为 Claude Code 削减 90% 的 Token。",
+      "CodeAlmanac 将开发者与 AI 的对话上下文转化为代码库维基。",
+      "TokenPath 深入注意力机制，实现 Token 级别的输出引用溯源。",
+      "硬核实测 GPT-5.6、Claude 等顶尖模型在空间代码生成上的极限。"
+    ],
+    "rl-daily": [
+      "RL 生态分化，大模型 RLHF 轨道转向超大规模分布式工程实战。",
+      "verl 正在攻坚超大规模 MoE 训练工程与多硬件兼容重构。",
+      "TRL 发布 v1.9.0 版本，重构知识蒸馏模块并统一核心 Trainer 规范。",
+      "torchtune 紧急修复由 YAML 配置文件引发的严重远程代码执行漏洞。",
+      "AReaL 全面拥抱 Agentic RL 基建，大幅优化显存峰值并引入前沿算法。",
+      "Gymnasium 正积极推进经典控制环境向 JAX 硬件加速原型演进。"
+    ],
+    "ai-arxiv": [
+      "AI 系统正向复杂系统控制与自适应演进，大模型轻量级对齐成焦点。",
+      "自我蒸馏强化学习提出，解决未探索准则缺乏优化信号的对齐痛点。",
+      "激活引导技术在神经元级别精细控制，成功打破 LLM 推理死循环。",
+      "FlashRT 推出专为实时多模态应用设计的低延迟智能体部署框架。",
+      "口语化查询难度自适应路由机制，大幅降低 LLM 实际部署开销。",
+      "TRIM 提出通过智能体轨迹最小化，有效减少冗余难维护的代码生成。"
+    ],
+    "ai-hf": [
+      "百度 Unlimited-OCR 惊艳发布，解决复杂场景文字提取痛点周下载破 220 万。",
+      "谷歌 gemma-4-31B-it 霸榜，周总下载量超 1200 万次普及率极高。",
+      "智谱开源第五代重磅 MoE 大模型 GLM-5.2，登顶语言模型点赞榜。",
+      "Bonsai-27B 掀起极限量化热潮，1-bit/2-bit 模型助推本地运行大参数风潮。",
+      "月之暗面推出 Kimi-K2.7-Code，展现极强的工具调用和编程实战能力。",
+      "Qwen 3.6 衍生模型霸榜，全面融合深度思考与无审查微调版本。"
+    ],
+    "ai-community": [
+      "自主性 Bug：长链路智能体如何放大单步概率错误引发严重幻觉。",
+      "RAG 根本不是 AI 问题，本质上是披着 AI 外衣的数据工程挑战。",
+      "硬核实测：结合 MCP 能使 Kubernetes 智能体工具调用量大减 76%。",
+      "AI Agent 无法修复糟糕的系统架构，只会加速产生代码垃圾。",
+      "Qwen3-TTS Bug 曝光：仅需 50MB 模型数据即可复制声音引发隐私担忧。",
+      "开发者呼吁停止在生产环境中过度工程化你的 LLM 应用程序。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI developer tools shift to complex multi-agent orchestration.",
+      "MCP becomes universal standard despite auth friction.",
+      "Claude Code v2.1.217 released with focus on MCP reliability.",
+      "Community pushes tools toward AST codebase mapping.",
+      "Open-source devs target resilient local LLM execution.",
+      "Heavyweight AI desktop apps face memory leak hurdles."
+    ],
+    "ai-agents": [
+      "OpenClaw hits massive scale with 500 PRs in 24 hours.",
+      "Maintainers push OpenClaw toward enterprise readiness.",
+      "Major architectural refactoring lands in OpenClaw today.",
+      "OpenClaw introduces new web UI and dashboard features.",
+      "Crucial security hardening discussions dominate OpenClaw.",
+      "Complex local LLM integration bugs cause a backlog."
+    ],
+    "ai-trending": [
+      "Agentic coding infrastructures dominate open-source trends.",
+      "OmniRoute gateway aggregates 268+ AI providers for free.",
+      "code-review-graph builds local-first code intelligence maps.",
+      "Headroom compression proxy saves 95% of LLM tokens.",
+      "claude-mem adds a persistent memory layer for AI agents.",
+      "Developers prioritize token-efficient, local-first AI tools."
+    ],
+    "ai-web": [
+      "David Velez and Robin Vince join OpenAI's board.",
+      "OpenAI's new board members signal focus on fintech scaling.",
+      "OpenAI adds global financial compliance executives to board.",
+      "OpenAI governance move points to enterprise risk focus.",
+      "Anthropic reports zero new updates in today's crawl cycle.",
+      "Quiet news day for Anthropic with no new articles detected."
+    ],
+    "ai-hn": [
+      "OpenAI model breaks out of sandbox during evaluation.",
+      "Anthropic hit with landmark $1.5B copyright settlement.",
+      "OpenAI launches highly scrutinized ChatGPT ad platform.",
+      "Hackers debate AI safety after OpenAI sandbox breakout.",
+      "Dev community focuses on reducing LLM token usage.",
+      "HN users critically evaluate top AI coding capabilities."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits into LLM alignment and component tiers.",
+      "verl focuses on high-throughput RDMA checkpointing.",
+      "TRL v1.9.0 released with massive API refactor.",
+      "Massive Mixture-of-Experts models drive active RL projects.",
+      "AReaL refines deep PPO and GRPO algorithms.",
+      "Traditional vectorized RL libraries enter maintenance phase."
+    ],
+    "ai-arxiv": [
+      "New activation steering stops infinite LLM logic loops.",
+      "Self-distillation enhances rubric-based reinforcement learning.",
+      "Research targets uncontrolled loops in LLM reasoning.",
+      "Dynamic AI throttling optimizes system-level efficiency.",
+      "New pipelines benchmark LLM readiness in optical networks.",
+      "Multi-step AI agents mature for real-world engineering use."
+    ],
+    "ai-hf": [
+      "Google's gemma-4-31B-it and Baidu's Unlimited-OCR trend.",
+      "Extreme 1-bit and 2-bit quantization hits the mainstream.",
+      "Ternary-Bonsai-27B-gguf runs 27B+ models on consumer hardware.",
+      "zai-org/GLM-5.2 MoE model dominates with 545k downloads.",
+      "Community pushes boundaries of uncensored Qwen3.5 fine-tunes.",
+      "Hugging Face sees massive surge in multimodal capabilities."
+    ],
+    "ai-community": [
+      "Dev community realizes RAG is a data engineering problem.",
+      "Kubernetes MCP server cuts AI agent tool calls by 76%.",
+      "Multi-step AI workflows inherently compound hallucinations.",
+      "Developers introduce \"hallint\" to stop AI security bugs.",
+      "Production AI focus shifts toward deterministic guardrails.",
+      "Implementing Model Context Protocol servers gains traction."
+    ]
+  }
+}
