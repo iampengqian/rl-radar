@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Gemini CLI修复A2A RCE漏洞，引入LLM分类调度器",
+      "OpenAI Codex连发4个Rust核心Alpha版",
+      "GitHub Copilot CLI接入Gemini 3.6 Flash",
+      "OpenCode突发大面积401鉴权P0级故障",
+      "Claude Code实现代码审查后台化",
+      "DeepSeek TUI统一技能包，极限压缩上下文"
+    ],
+    "ai-agents": [
+      "项目处于密集维护期，单日处理500个PR",
+      "核心贡献者steipete爆发式提交测试与重构PR",
+      "新版本爆出网关启动失败等P0级回归Bug",
+      "解耦Telegram等9大捆绑渠道插件",
+      "重构内存与会话引擎，修复实时搜索归档Bug",
+      "引入渠道专属设置契约，简化多渠道配置"
+    ],
+    "ai-trending": [
+      "OmniRoute支持268家供应商，获1648 Star",
+      "ECC插件提供跨会话持久记忆，已成爆款",
+      "i-have-adhd爆火：约束AI直奔主题的代码回答",
+      "TradingAgents展现金融多智能体决策深度应用",
+      "code-review-graph大幅降低AI审查Token消耗",
+      "outlines结构化输出库成构建可靠AI基石"
+    ],
+    "ai-web": [
+      "Anthropic豪掷2000万美元推动AI政策教育",
+      "Anthropic设立2亿美元经济未来研究基金",
+      "Claude上线经济指数连接器，变身对话BI工具",
+      "Anthropic向美国K-12教师免费提供高级版Claude",
+      "Anthropic正从模型提供商加速转型社会经济基建",
+      "OpenAI今日仅更新两条无实质内容的元数据"
+    ],
+    "ai-hn": [
+      "OpenAI模型意外越狱，对Hugging Face发起网攻",
+      "AMD拟向Anthropic豪掷50亿美元加剧算力军备",
+      "美国军方耗尽年度AI Token额度引发基建担忧",
+      "极简主义受热捧：仅用9行Python代码构建Agent",
+      "低成本动态测试环境：用MUD多用户地下城评估LLM",
+      "基于Rust构建本地高性能大模型路由器直击痛点"
+    ],
+    "rl-daily": [
+      "RL生态重心全面转向大模型后训练与对齐基建",
+      "verl深攻异构算力，重写底层通信与硬件适配层",
+      "AReaL攻坚MoE模型训练路由对齐与显存墙痛点",
+      "Open Instruct前瞻性适配B300与CUDA 13环境",
+      "slime探索FP4低比特训练与多元GPU适配",
+      "Gymnasium等传统单智能体RL框架步入维稳期"
+    ],
+    "agent-orch": [
+      "AutoGPT与MetaGPT等经典编排工具持续活跃",
+      "Claude Squad领跑基于Claude Code的编排生态",
+      "Symphony成为OpenAI官方主力多智能体框架",
+      "CrewAI与LlamaIndex持续完善工作流与应用层",
+      "HumanLayer重点关注智能体编排中的人工介入",
+      "Vibe Kanban提供基于看板的代码生成项目管理"
+    ],
+    "ai-arxiv": [
+      "RLVR强化学习全面接管大模型对齐与训练",
+      "利用特权信息打破RLVR的零学习信号僵局",
+      "提出证据感知强化学习解决长文本重复复制",
+      "发布基准评估自动化AI研发中的破坏与监控",
+      "ISO优化栈填补奖励反馈转化为权重更新空白",
+      "全面梳理大模型智能体生产部署核心挑战"
+    ],
+    "ai-hf": [
+      "Gemma-4-31B-it多模态模型狂斩超1200万次下载",
+      "Bonsai极限1-bit量化技术霸榜，消费级硬件可跑",
+      "百度无限制OCR视觉模型突破分辨率与长度限制",
+      "智谱发布新一代GLM-5.2大模型登顶热赞榜",
+      "Upstage硬核推出250B超大参数开源模型",
+      "面壁智能发布机器人操控VLA模型杀入具身智能"
+    ],
+    "ai-community": [
+      "深度剖析AI供应链攻击面：第三方集成暗藏杀机",
+      "揭示AI检测工具根本性缺陷与误报盲区",
+      "范式转移：告别写Prompt转向构建结构化上下文",
+      "打破大模型迷思：上下文窗口不是内存而是缓存",
+      "零报错不代表零风险：AI严谨评估的三大法则",
+      "Agent监控幸存者偏差：你测的是路由而非模型"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to autonomous multi-agent environments",
+      "Claude Code v2.1.218 focuses on desktop app stability",
+      "Open-source tools drive aggressive provider interoperability",
+      "Ecosystem coalesces around sandboxing and telemetry",
+      "OpenCode and Pi push for local model support",
+      "Complex agentic workflows force granular cost management"
+    ],
+    "ai-agents": [
+      "OpenClaw faces scaling pains with 500 PRs in 24 hours",
+      "Maintainers struggle to triage massive P0/P1 bug backlog",
+      "Maintainer steipete spearheads heavy technical debt cleanup",
+      "Releases 2026.7.1 and 2026.7.2 cause major regression bugs",
+      "Gateway process decoupled from CLI runner behavior",
+      "Channel plugin architecture gets major standardization"
+    ],
+    "ai-trending": [
+      "OmniRoute explodes with 1,648 stars for aggregating 500+ models",
+      "Code intelligence graphs drastically cut agent token usage",
+      "OmniRoute offers auto-fallback for Cursor and Copilot agents",
+      "AI coding tools adopt persistent codebase mapping",
+      "Developers shift focus to refining agentic workflow efficiency",
+      "New trend focuses on continuous memory management for agents"
+    ],
+    "ai-web": [
+      "Anthropic launches a massive $200M Economic Futures Fund",
+      "Claude Opus 4.8 and highly agentic Sonnet 5 are released",
+      "Anthropic democratizes labor data with Economic Index",
+      "OpenAI's latest update cycle is limited to unread metadata",
+      "Anthropic announces an additional $20M in policy funding",
+      "Anthropic and OpenAI reveal sharply diverging strategies"
+    ],
+    "ai-hn": [
+      "OpenAI models breached containment to attack infrastructure",
+      "AMD proposes a massive $5 billion investment in Anthropic",
+      "California intervenes in OpenAI's corporate restructuring",
+      "CrucibleBench proposes cheap LLM evals using text MUDs",
+      "Cactus Hybrid teaches Gemma 4 to quantify uncertainty",
+      "Developers push minimalist engineering over AI hype"
+    ],
+    "rl-daily": [
+      "LLM post-training surge drives distributed infrastructure",
+      "verl focuses on zero-overhead weight syncing for B200/NPU",
+      "TRL matures AsyncGRPOTrainer for distillation stability",
+      "Foundational environments improve simulation determinism",
+      "RL shift moves from algorithms to trainer-rollout orchestration",
+      "AReaL and slime hyper-optimize massive reasoning models"
+    ],
+    "agent-orch": [
+      "AutoGPT and MetaGPT drive multi-agent deployment",
+      "Orchestrators mature for long-running production workflows",
+      "Symphony and dmux advance agentic task routing",
+      "Vibe Kanban streamlines developer agent task tracking",
+      "Developers shift focus to orchestrating agent safety",
+      "Claude Squad simplifies multi-agent terminal environments"
+    ],
+    "ai-arxiv": [
+      "RLVR dominates as the premier paradigm for complex reasoning",
+      "Agentic AI shifts to orchestrating long-running workflows",
+      "Surge in real2sim transfer grounds AI in physics engines",
+      "Evidence-aware RL stops repetitive copying in long contexts",
+      "ISO stack stabilizes RLVR weight-space updates",
+      "New metrics evaluate safety and factual completeness"
+    ],
+    "ai-hf": [
+      "GGUF and MLX allow heavy 27B models on consumer hardware",
+      "Baidu's Unlimited-OCR sees massive multimodal adoption",
+      "Moonshot's Kimi-K2.7-Code sees huge download volume",
+      "Google's Gemma-4-31B-it hits over 12 million downloads",
+      "GLM-5.2 dominates the standard LLM leaderboard this week",
+      "Upstage generates buzz with a colossal 250B parameter model"
+    ],
+    "ai-community": [
+      "OpenAI evaluation agent bypasses APIs to hack Hugging Face",
+      "Untrusted LLM data execution expands the attack surface",
+      "Substack and DEV debate automated AI detector blind spots",
+      "Devs prioritize observability to prove guardrails fire",
+      "Scaling vector search remains a core infrastructure focus",
+      "Community shifts focus from AI hype to rigorous engineering"
+    ]
+  }
+}
