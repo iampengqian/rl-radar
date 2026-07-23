@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex 连发2个Alpha版，深陷Windows进程风暴",
+      "Gemini CLI构建Issue-to-PR全自动修复流水线",
+      "Claude Code遭遇核心Task工具链失效与计费降级危机",
+      "DeepSeek TUI冲刺v0.9.1，发布前夜遇TUI闪退危机",
+      "GitHub Copilot CLI全面适配Open Plugin Spec v1",
+      "OpenCode推进V2架构重构，统一工具栈API规范"
+    ],
+    "ai-agents": [
+      "OpenClaw单日狂揽500个PR，正进行底座大重构",
+      "网关自动回复架构大修，拆分2800行派发管道",
+      "并发写入修复，解决子代理首次Claim失败严重Bug",
+      "完成子代理状态注入父代理，有效避免重复派发",
+      "团队密集修复Beta版回归Bug，稳定版即将发布",
+      "社区核心诉求转向上下文压缩与Token消耗控制"
+    ],
+    "ai-trending": [
+      "OmniRoute网关爆火：支持500+模型并压缩95%Token",
+      "ECC斩获23万Star，专为Claude Code设计优化系统",
+      "阿里开源open-code-review，结合LLM行级查Bug",
+      "TradingAgents爆火，多智能体框架模拟专业金融投研",
+      "browser-use突破10万Star，让AI直接接管操作系统",
+      "worldmonitor单日狂揽3196 Star登顶应用榜"
+    ],
+    "ai-web": [
+      "Claude Opus 4.7登场：强化代码自验证与安全护栏",
+      "Opus 4.5激进降价：每百万Token仅售5/25美元",
+      "发布创意连接器：深度集成Adobe、Ableton等专业软件",
+      "Anthropic揭秘模型能力差分缩减安全策略",
+      "Claude全面转向处理长周期多系统任务的Agent协作",
+      "OpenAI疑似在规划Health垂直场景或合规新边界"
+    ],
+    "ai-hn": [
+      "巨头结盟抵制开源引众怒，社区强烈批判AI寡头垄断",
+      "开源网关OneCLI走红，直击Agent凭证隐私安全痛点",
+      "Echo模型证明：开源权重成本仅为闭源三分一且媲美顶尖",
+      "GPT-5.6被曝5天解决6个数学难题，引发学术审视",
+      "Stripe拟百亿美金收购OpenRouter加速支付层整合",
+      "研究警示儿童对LLM产生人格化投射，呼唤未成年人保护"
+    ],
+    "rl-daily": [
+      "强化学习框架分层：大规模LLM训练与传统库分道扬镳",
+      "多模态RL崛起，视觉语言模型训练成框架发力焦点",
+      "死磕MoE显存墙：AReaL攻克显存优化与容错机制",
+      "torchtune紧急修复YAML配置引发的高危RCE漏洞",
+      "verl稳居LLM强化学习首选，深水区探索跨硬件适配",
+      "rl_games修复PPO在autoreset机制下的数据污染Bug"
+    ],
+    "ai-arxiv": [
+      "首建严格数学边界，量化LLM生成有害内容的安全概率",
+      "统计学理论突破：指导LoRA微调如何最优分配Rank资源",
+      "揭示高维近正交性，数学解释LLM表示的时间可移植性",
+      "验证LLM能从试错中提炼经验，提升长期学习能力",
+      "基于十大价值观评估，揭示大模型在价值观上的混淆",
+      "大小模型协同推理，为降低高昂大模型推理成本铺路"
+    ],
+    "ai-hf": [
+      "智谱GLM-5.2 MoE大模型登顶本周HuggingFace点赞榜",
+      "Bonsai实现1-bit极致量化，27B大模型可在消费级运行",
+      "百度Unlimited-OCR凭极高精度霸占多模态榜单前列",
+      "Qwen3-TTS模型发布，支持高度定制化的声音克隆",
+      "谷歌gemma-4-31B多模态大模型下载量突破一千万",
+      "月之暗面Kimi-K2.7代码生成与多模态推理模型开源"
+    ],
+    "ai-community": [
+      "深度揭秘：AI Agent在实际落地中被过度神化的真实边界",
+      "狂降95%上下文：大型项目AI编程Token省费实操指南",
+      "Cursor内置路由器问世，AI模型路由器初创公司面临大洗牌",
+      "打假AI：开发者热议通过对抗性测试破除Agent幻觉",
+      "生产级RAG败局归因：绝不仅是LLM加向量数据库那么简单",
+      "架构新思潮：用极小的Go分类器替代7B大模型兜底"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "CLI tools pivot to multi-agent workflows and MCP.",
+      "OpenCode bridges gap by mapping Claude plugins.",
+      "Focus shifts to unbounded context and sub-agents.",
+      "Providers invest in local-first sandbox deployments.",
+      "OpenAI Codex drops rust-v0.146.0-alpha.4 & .5.",
+      "Claude Code grapples with 10 hot issues."
+    ],
+    "ai-agents": [
+      "OpenClaw hit 500 PRs and 348 issues in 24 hours.",
+      "OpenClaw refactors core gateway logic and UI.",
+      "Beta releases 2026.7.1-2 cause session instability.",
+      "OpenClaw backlog shows strong multi-agent pivot.",
+      "Dev race to fix multi-agent race conditions.",
+      "No new stable OpenClaw release as focus shifts."
+    ],
+    "ai-trending": [
+      "OmniRoute gains 1,925 stars as a universal LLM gateway.",
+      "OmniRoute integrates with Claude Code and Cursor.",
+      "Kronos introduces foundation models for finance.",
+      "RuView applies AI spatial intelligence to WiFi.",
+      "vLLM hits 86,991 stars for LLM serving.",
+      "Trends pivot from model training to routing agents."
+    ],
+    "ai-web": [
+      "Anthropic targets creatives with Adobe and Ableton ties.",
+      "Claude debuts connectors for Autodesk and Affinity.",
+      "OpenAI targets the healthcare sector with ChatGPT.",
+      "Claude Opus 4.7 focuses on autonomous engineering.",
+      "AI competition shifts to ecosystem integration.",
+      "Anthropic explores differential capability reduction."
+    ],
+    "ai-hn": [
+      "OpenAI and Anthropic face backlash over open-weights.",
+      "Stripe reportedly acquiring OpenRouter for $10B.",
+      "Echo open-weights match proprietary models at 1/3 cost.",
+      "Dev tools launch to make Claude Code affordable.",
+      "OpenAI makes ambitious push into consumer healthcare.",
+      "Community questions AI impacts on child development."
+    ],
+    "rl-daily": [
+      "RL post-training shifts to systems engineering.",
+      "verl aggressively scales with Ascend NPU support.",
+      "TRL undergoes core GRPO stack unification.",
+      "AReaL pushes forward with 13 active PRs.",
+      "RL frameworks sync weights to vLLM and SGLang.",
+      "Classic RL tools focus on API changes."
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem expands to 45 projects.",
+      "Claude Squad, AutoGPT, and MetaGPT lead the space.",
+      "Orchestrators tackle complex, stateful tool use.",
+      "OpenAI's Symphony and AutoGen gain traction.",
+      "Developers focus on making multi-agent teams work.",
+      "Agent tools dominate the open-source workflow."
+    ],
+    "ai-arxiv": [
+      "ArXiv papers push rigorous LLM safety and reliability.",
+      "New framework sets sound probabilistic safety bounds.",
+      "PyroDash slashes costs with SLM-LLM collaboration.",
+      "Neuro-symbolic AI moves beyond black-box models.",
+      "Efficient low-rank attention approximations emerge.",
+      "Dynamic routing bridges gap between SLMs and LLMs."
+    ],
+    "ai-hf": [
+      "Edge AI and extreme quantization dominate HF today.",
+      "Gemma-4-31B hits 12.6 million downloads.",
+      "Z.ai's GLM-5.2 MoE generates massive community buzz.",
+      "1-bit and 2-bit 27B+ model variants surge locally.",
+      "Baidu's Unlimited-OCR takes over high-res scanning.",
+      "Qwen3-TTS drives a surge in custom voice generation."
+    ],
+    "ai-community": [
+      "Devs debunk hype over brittle autonomous AI agents.",
+      "Model Context Protocol gains massive traction.",
+      "Replace heavy LLMs with tiny Go classifiers.",
+      "Backend devs rethink REST APIs for dynamic schemas.",
+      "Lobste.rs debates Pangram and AI text detection.",
+      "'Vibe coding' sparks deep software distribution talks."
+    ]
+  }
+}
