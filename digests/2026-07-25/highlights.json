@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.219 发布，正式集成 Opus 5 模型",
+      "GitHub Copilot CLI 修复 P0 级线上 OOM 与 UI 死循环",
+      "OpenAI Codex 内核 alpha 迭代，修复 Windows 严重 Bug",
+      "OpenCode 发布 v1.18.5，进行 V2 架构重构与多模型适配",
+      "Pi v0.82.0 版本发布，支持多模型热切换与约束工具采样",
+      "DeepSeek TUI v0.9.1 品牌更名，重构多 Agent 架构"
+    ],
+    "ai-agents": [
+      "OpenClaw 极速狂飙，24 小时内处理 500 个 PR 更新",
+      "OpenClaw 引入严格限制，彻底治理 SQLite 数据库连接边界",
+      "新增标准托管配置与运行时探针，大幅提升容器化部署可控性",
+      "网关卡顿成焦点，开发者呼吁重构上下文压缩断点续传机制",
+      "社区热议：提议打造大一统的 Cron 自动化执行原语",
+      "为冲刺 Beta 版，项目全面补齐底层执行差异的测试盲区"
+    ],
+    "ai-trending": [
+      "OmniRoute 爆火，集成 500+ 模型支持高达 95% 压缩",
+      "RuView 凭借 WiFi 信号实现无摄像头 AI 生命体征监测",
+      "ego-lite 让 Codex 等智能体零配置接管网页登录态",
+      "claude-mem 爆火，为编程智能体提供跨会话持久化记忆",
+      "ECC 突破 23 万星，成为 Cursor 等智能体运行时优化明星",
+      "AutoGPT 依然保持 18 万星极高活跃度，赋能智能体构建"
+    ],
+    "ai-web": [
+      "Anthropic 发布 Claude Opus 5，性能比肩旗舰且价格减半",
+      "Opus 5 引入动态努力设置，实现智能与成本极限权衡",
+      "Anthropic 设立 2 亿美元基金前瞻性应对 AI 经济冲击",
+      "Anthropic 红队跨界，测试前沿大模型自主控制物理无人机",
+      "前沿模型通过自主决策完成定位与跟随物理空间测试任务",
+      "Anthropic 推出专属基准测试 Drone-Bench 评估物理控制"
+    ],
+    "ai-hn": [
+      "Claude Opus 5 引爆社区，狂揽过千分和数百条深度讨论",
+      "OpenAI 陷公关信任危机，被强烈质疑自导自演 AI 叛逃",
+      "Anthropic 官方发布实用 Claude Cookbook 代码示例库",
+      "瑞士国家队入局，发布 70B 参数开源模型 Apertus 1.5",
+      "Show HN: 采用树状与 Git worktree 结构的新型编码 Agent",
+      "理论突破：雅可比猜想反驳揭示 AI 可解释性底层限制"
+    ],
+    "rl-daily": [
+      "TRL 迎密集重构期，核心资源向多模态异步 GRPO 倾斜",
+      "verl 攻坚异构硬件兼容，发力生产级复杂 Bug 修复",
+      "Open Instruct 重塑并发容错机制，高频修复评测边界 Bug",
+      "slime 高强度修复底层算法数学缺陷，加速适配国产芯片",
+      "ROCK 筹备 v1.11.0 版本，深化跨操作系统沙盒集成支持",
+      "Gymnasium 探索异步并行环境计算资源的动态限额与防御"
+    ],
+    "ai-arxiv": [
+      "新研究视智能体上下文管理为生命周期以解决记忆溺水",
+      "AREX 利用发现与验证成本不对称，实现递归自我改进",
+      "破解思维链 Token 预算饱和与不收敛的机制性检测难题",
+      "提出 PATS 脚手架，提升长程 Agent 强化学习探索多样性",
+      "研究探讨大模型如何在听取观点与坚持道德底线上取舍平衡",
+      "多模态与跨学科大放异彩，切入医疗手术与充电桩维护评估"
+    ],
+    "ai-hf": [
+      "智谱发布强推理 MoE 大模型 GLM-5.2，斩获本周最高赞",
+      "百度 Unlimited-OCR 强势发布，单周下载量狂破 250 万",
+      "Qwen3.6-35B 惊艳亮相，兼顾端侧高效与 35B 大模型性能",
+      "谷歌 gemma-4-31B 霸榜，凭借超 1200 万下载量统治基座榜",
+      "开源社区热衷无审查微调与 GGUF 1-bit 极限端侧量化",
+      "月之暗面推出 Kimi-K2.7-Code，支持图像到代码高效转换"
+    ],
+    "ai-community": [
+      "实战揭秘：如何压缩 AI 长对话上下文兼顾记忆与成本",
+      "低成本算力福音，主流低价云服务 Hetzner 杀入 LLM 推理",
+      "实战教学：本地端侧单次推理搞定 40 页 PDF 不爆显存",
+      "严谨基准测试揭秘，半数 Claude Code 技能纯属安慰剂",
+      "传统工程范式复兴，死信队列引入大模型数据抽取容错",
+      "开发者开源测试框架，直击 AI Agent 不可靠评估痛点"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Ecosystem shifting to multi-agent orchestration and IDEs",
+      "Claude Code v2.1.219 rolls out Opus 5 and sandboxing",
+      "Open-source CLIs drive innovation in local LLM support",
+      "1M token context windows trigger new context degradation bugs",
+      "CLI tools face growing subagent reliability issues",
+      "Major players iterate heavily on context and sandbox security"
+    ],
+    "ai-agents": [
+      "OpenClaw sees immense traction with 500 PRs in 24h",
+      "OpenClaw prioritizing gateway reliability and session management",
+      "344 active bugs show OpenClaw feature velocity outpaces stability",
+      "OpenClaw developers battle complex multi-agent state bugs",
+      "No new OpenClaw releases as team preps 2026.7.2 beta",
+      "325 PRs merged today untangling gateway stalls and UIs"
+    ],
+    "ai-trending": [
+      "OmniRoute gateway explodes with 1,843 stars in one day",
+      "OmniRoute aggregates 500+ models with token compression",
+      "ECC system provides memory to stabilize prolonged AI agents",
+      "Ollama rolls out support for frontier models like Kimi-K2.6",
+      "Massive industry pivot towards agentic dev environments",
+      "LLMs aggressively penetrate specialized finance and trading"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Opus 5 with SOTA coding metrics",
+      "Claude Opus 5 halves competitor costs with new effort settings",
+      "Project Pilot demonstrates AI autonomously controlling drones",
+      "Anthropic announces $200M AI labor disruption research fund",
+      "New Drone-Bench metric introduced alongside Project Pilot",
+      "OpenAI had a quiet day with zero new official content"
+    ],
+    "ai-hn": [
+      "Claude Opus 5 launch sparks 595 comments on HN",
+      "Devs raise privacy concerns over OpenAI Codex private repos",
+      "Hacker News debates US accusations of Chinese AI IP theft",
+      "Community pushes back on unchecked AI in Debian and Linux",
+      "OpenAI faces heavy scrutiny over rogue hacker agent narrative",
+      "Gemini 3.5 Flash Lite tested for privacy-first home security"
+    ],
+    "rl-daily": [
+      "Reinforcement learning ecosystem splits into two distinct tiers",
+      "Top RL projects aggressively scale GRPO and RLVR algorithms",
+      "TRL undergoes heavy refactoring for async GRPO and VLMs",
+      "verl focuses on deep distributed systems optimization",
+      "Foundational RL bedrocks prioritize experimental reproducibility",
+      "Scaling LLM alignment creates distributed systems bottlenecks"
+    ],
+    "agent-orch": [
+      "Agent orchestrator ecosystem tracks a massive 45 projects",
+      "Developers debate integration of Claude Squad and AutoGPT",
+      "Heavy ecosystem fragmentation across swarm and kanban tools",
+      "Symphony and Crystal see active multi-agent orchestration PRs",
+      "Routing networks and reliability dominate orchestrator focuses",
+      "Community shifts focus to production-ready agent deployments"
+    ],
+    "ai-arxiv": [
+      "Researchers solve context bloat with lifecycle management",
+      "New frameworks introduce memory benchmarks for LLM agents",
+      "Early detection method stops CoT reasoning non-convergence",
+      "Spatial geometries drive next-gen interactive multimodal AI",
+      "Papers highlight theoretical boundaries of AI automation",
+      "New studies tackle complex issues in LLM moral reasoning"
+    ],
+    "ai-hf": [
+      "Qwen3.6 and Laguna-S-2.1 model families dominate the charts",
+      "Gemma-4-31B-it exceeds 12.6 million downloads today",
+      "Baidu's Unlimited-OCR engine sees massive multimodal adoption",
+      "Extreme 1-bit and 2-bit quantization architectures surge",
+      "GLM-5.2 Mixture-of-Experts model gains massive traction",
+      "Community embraces uncensored reasoning fine-tunes for MoE"
+    ],
+    "ai-community": [
+      "Dev.to focuses on practical AI system scaling and cost cuts",
+      "New tutorial shows how to parse 40-page PDFs without GPU meltdowns",
+      "Hetzner debuts budget-friendly native LLM inference capabilities",
+      "Engineers share battle-tested frameworks for agent reliability",
+      "Discussions heat up on mitigating persistent prompt injections",
+      "Context compression techniques help AI agents forget safely"
+    ]
+  }
+}
