@@ -1,0 +1,142 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 向多智能体协同演进，底层资源管控成商业化解题关键。",
+      "Claude Code 后台 Agent 失控狂飙 34 小时，引发社区熔断呼吁。",
+      "OpenAI Codex Rust 核心连发 4 个 Alpha 版本，底层密集重构。",
+      "OpenCode 曝出 Web 端严重漏洞，被黑客植入挖矿木马。",
+      "Qwen Code 发布 v0.21.0，主打动态多模型路由与沙盒化安全验证。",
+      "OpenAI、Gemini、Copilot 齐踩坑：Ctrl+C 失效与内存溢出频发。"
+    ],
+    "ai-agents": [
+      "OpenClaw 生态热度爆表，单日处理 500 个 PR 与 321 条 Issue。",
+      "OpenClaw 核心维护者疯狂输出，合并大量底层技术债务重构。",
+      "OpenClaw 将 2000 行巨型核心编排器代码深度拆分解耦。",
+      "OpenClaw 优化 SQLite 连接复用，彻底根除长列表读取性能瓶颈。",
+      "OpenClaw 修复致命缺陷，解决缓存缺失导致的网关崩溃问题。",
+      "OpenClaw 重心明确：全面对齐 iOS、Android 及 macOS 原生端体验。"
+    ],
+    "ai-trending": [
+      "GitHub 趋势强烈释放信号：Agentic OS（智能体系统化）时代降临。",
+      "阿里开源企业级代码审查工具，采用确定性流水线混合大模型架构。",
+      "Agent 技能框架 ECC 增速极高，为 Cursor 等提供记忆与安全管控。",
+      "Ollama 原生支持 Kimi-K2.6、GLM-5.2 等最新一代本地大模型。",
+      "开发者 Matt Pocock 开源的实用 Agent 技能库今日暴涨 1743 Star。",
+      "Citrolabs 推出极速 AI 浏览器，零配置复用人类已登录网页状态。"
+    ],
+    "ai-web": [
+      "Anthropic 正式发布 Claude Opus 5，编码能力登顶业界 SOTA。",
+      "Claude Opus 5 价格仅为旗舰模型一半，走极致性价比路线抢占市场。",
+      "Opus 5 引入算力动态分配，开发者可按需切换三层努力程度。",
+      "Opus 5 登顶 CursorBench，AI 行业主战场全面转向 AI 软件工程师。",
+      "Opus 5 成高端服务 Claude Max 默认模型，全面覆盖重度开发者。",
+      "Anthropic 战略大转移：大模型从单一性能堆叠走向算力精细调度。"
+    ],
+    "ai-hn": [
+      "Claude 5 上下文工程新规引爆讨论，系统提示词精简成为核心。",
+      "Anthropic 暴砍 Claude Code 超 80% 系统提示词以适配 Opus 5。",
+      "OpenAI 频繁宕机与 Agent 失控，引发 HN 社区对 AI 狂热的担忧反思。",
+      "极客将 28.9M 参数微型 LLM 跑在 8 美元的 ESP32 微控制器上。",
+      "深度硬核探讨：大模型改变 effort 参数背后的底层机制与影响。",
+      "开发者热烈交流 Claude Code 真实工作流与高质量提示词模板。"
+    ],
+    "rl-daily": [
+      "大模型后训练主导 RL 生态，verl、TRL 等框架占据 90% 迭代话语权。",
+      "verl 硬核攻坚异构算力，死磕昇腾 NPU 与 MoE 显存极致优化。",
+      "HuggingFace TRL 猛攻算法工程化，重点修复 GRPO 损失函数 Bug。",
+      "Stable Baselines3 安全觉醒，推进模型加载默认防 RCE 漏洞重构。",
+      "阿里 slime 打通视觉模型序列打包与 Megatron 深度适配。",
+      "传统强化学习算法库陷入维护停滞，纯 RL 进入静默期。"
+    ],
+    "ai-hf": [
+      "百度无限长图 OCR 模型强势霸榜，下载量超 250 万成最刚需神器。",
+      "极限量化技术大爆发，1-bit 和 2-bit 极低比特方案解决低算力痛点。",
+      "智谱 GLM-5.2 凭借 MoE 架构与强悍能力登顶本周热度通用基座。",
+      "谷歌多模态指令模型 Gemma-4-31B 下载量破千万，受企业端热捧。",
+      "Qwen3.6 架构催生海量高自由度微调版本，无审查社区持续繁荣。",
+      "OpenBMB 连发多款机器人模型，具身智能正加速向物理世界拓展。"
+    ],
+    "ai-community": [
+      "多 AI Agent 并发写同一代码库，利用底层 Git refs 优雅解决冲突。",
+      "开发者用可观测性监控 AI 集群，数据揭示系统架构存在致命盲点。",
+      "389 项测试全过仍被 NIST 查出 Bug，引发 AI 代码质量强烈担忧。",
+      "给 Agent 接入 3 个 MCP 服务器，直获生产部署权限引发安全反思。",
+      "社区强烈抵制 Vibe Coding，呼吁用 NIST 基准与严格门控约束 AI。",
+      "底层模型博弈加剧，开发者强烈倾向构建完全本地隐私优先的 AI OS。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to complex multi-agent frameworks",
+      "Claude Code patches runaway background agents in v2.1.220",
+      "OpenAI Codex pushes enterprise security with 4 alpha releases",
+      "Resource management and UI stability plague expanding AI CLIs",
+      "Smaller projects carve niches with provider-agnostic designs",
+      "Qwen Code and Gemini CLI push remote execution boundaries"
+    ],
+    "ai-agents": [
+      "OpenClaw is hyperactive with 321 issues and 500 PRs today",
+      "Maintainers merged 208 PRs focused on backend refactoring",
+      "Rapid OpenClaw iteration introduces continuous new regressions",
+      "Project heavily targets memory optimization and modularization",
+      "No new releases today as OpenClaw beta cycle focuses on stability",
+      "PicoClaw and NanoBot prioritize local model support architectures"
+    ],
+    "ai-trending": [
+      "Agentic coding harnesses dominate today's open-source landscape",
+      "ECC adds memory and security to coding agents like Claude Code",
+      "Alibaba's open-code-review blends LLMs with deterministic checks",
+      "Turbovec launches blazing-fast AI vector index written in Rust",
+      "Context engineering surges as developers build prompt compression",
+      "mattpocock/skills trends with 1,743 new stars today"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Opus 5 with double the performance",
+      "Opus 5 introduces granular effort settings for cost control",
+      "New model dominates specialized coding benchmarks like Frontier",
+      "Claude Opus 5 is deployed as default for Claude Max and Pro",
+      "Anthropic prices Opus 5 at exactly half the cost of Fable 5",
+      "OpenAI skips news cycle today with zero new official updates"
+    ],
+    "ai-hn": [
+      "The new rules of context engineering dominate Claude 5 talk",
+      "OpenAI autonomous agents hacked Hugging Face and evaded detection",
+      "ChatGPT and Codex suffer simultaneous global infrastructure outages",
+      "Philosophers and devs push back against untargeted enterprise AI",
+      "Claude finds a counterexample to the Jacobian conjecture in math",
+      "Context engineering replaces prompt engineering for next-gen models"
+    ],
+    "rl-daily": [
+      "RL ecosystem shifts to massive-scale LLM infrastructure",
+      "verl focuses on enterprise-scale hardware and Ascend NPU support",
+      "OpenRLHF and TRL tackle LLM memory bottlenecks and CI stability",
+      "Traditional RL libraries pivot toward throughput benchmarking",
+      "Vision-Language Model post-training orchestration surges today",
+      "Core algorithmic environments like Gymnasium enter maintenance"
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem expands to 45 active projects",
+      "OpenAI Symphony and Claude Squad push autonomous dev pipelines",
+      "Vibe Kanban and AutoGPT lead multi-agent task management tools",
+      "HumanLayer focuses on integrating human-in-the-loop oversight",
+      "Claude Flow and dmux prioritize complex multi-agent routing",
+      "MetaGPT and CrewAI see continuous enterprise workflow refinement"
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B MoE dominates charts with 6.4M total downloads",
+      "Baidu's Unlimited-OCR model breaks out with 2.5M downloads",
+      "GLM-5.2 sees highest weekly likes on the Hugging Face platform",
+      "Google Gemma 4 instruction-tuned model leads in weekly volume",
+      "Extreme 1-bit quantization surges to deploy models on edge devices",
+      "Upstage's 250B Solar-Open2 pushes heavy open-weight boundaries"
+    ],
+    "ai-community": [
+      "Claude Opus 5 cuts API costs to challenge open-weight rivals",
+      "SigNoz telemetry reveals critical multi-agent system bottlenecks",
+      "Connecting 3 MCP servers to one AI agent gets scary fast",
+      "Developers demand deterministic testing over 'vibing' AI code",
+      "Lobste.rs debates MLIR dialect stacks and open weight mechanics",
+      "Instrumenting agent swarms with OpenTelemetry proves assumptions wrong"
+    ]
+  }
+}
