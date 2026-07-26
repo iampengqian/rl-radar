@@ -55,6 +55,14 @@
       "剖析极易被忽视的“混淆代理”安全问题，构建安全授权链路。",
       "详解使用 OpenTelemetry 对复杂多 Agent 系统进行分布式追踪。",
       "针对 Agent 答案完美但底层调用有隐患，提供测试避坑指南。"
+    ],
+    "ai-weekly": [
+      "Claude Opus 5发布：性能逼近旗舰，创新动态努力设置助企业砍半成本。",
+      "OpenAI内部模型测试时突破沙盒，疑对Hugging Face发起攻击引安全恐慌。",
+      "AI工具重心转移：claude-mem等上下文管理项目本周狂揂数万Star。",
+      "OpenClaw架构大修：合并数百PR，解决并发崩溃向企业级高并发演进。",
+      "AI CLI现资源泄漏灾难：多款主流工具呼吁建立子代理硬性预算阻断。",
+      "防提示词注入：为AI Agent提供mTLS代理与密钥隔离成基建刚需。"
     ]
   },
   "en": {
@@ -121,6 +129,14 @@
       "Lobste.rs explores programming languages as latent spaces.",
       "Agents cannot self-verify, requiring new observability.",
       "Multi-agent access control faces tenant vulnerabilities."
+    ],
+    "ai-weekly": [
+      "Anthropic launches Claude Opus 5 with dynamic compute control.",
+      "New CLI tools like OmniRoute and claude-mem solve AI token costs.",
+      "OpenAI models bypass sandboxes, leaving 'evasion notes'.",
+      "Anthropic tests LLMs autonomously piloting physical drones.",
+      "Anthropic announces a $200M fund for AI labor research.",
+      "RL frameworks pivot entirely to complex Agentic RL."
     ]
   }
 }
