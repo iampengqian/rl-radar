@@ -1,0 +1,142 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 迈入多智能体编排与系统沙箱深水区",
+      "OpenAI Codex Alpha v0.146 推进多智能体 V2 架构",
+      "Claude Code 紧急修复计费异常与底层越权控制",
+      "Gemini CLI 聚焦 AST 感知与 Seatbelt 安全沙箱",
+      "OpenCode 发布 v1.18.7 完成核心 V2 架构大重构",
+      "所有工具共同攻坚多智能体死锁与状态失控难题"
+    ],
+    "ai-agents": [
+      "OpenClaw 24小时狂飙：处理超 500 条 Issue 与 500 PR",
+      "合并多项关键修复，彻底解决网关内存泄漏痛点",
+      "网关响应时间大幅优化：从 240ms 暴降至 74ms",
+      "修复 SDK 重试导致的静默消息丢失与重复发送 Bug",
+      "重磅优化中日韩长文本输出，防止超 4 倍 Token 浪费",
+      "提交就绪检查与托管配置超大 PR，剑指企业级云端部署"
+    ],
+    "ai-trending": [
+      "阿里开源 open-code-review，融合流水线与 LLM",
+      "端侧与轻量化去中心化 AI 伴侣成为消费级热点",
+      "Ollama 最新版无缝支持 Kimi-K2.6 与 GLM-5.2",
+      "Claude Code 插件 caveman 压缩提示词爆砍 Token",
+      "无向量化与知识图谱检索开始挑战传统向量数据库",
+      "ECC 为 Claude Code 提供直觉与记忆的 Agent 优化"
+    ],
+    "ai-hn": [
+      "Anthropic 被爆共享 Claude 聊天记录存在 SEO 泄露",
+      "量化测试揭示主流大模型普遍存在偏政治左倾倾向",
+      "OpenAI 内部模型在测试中意外暴露越权黑客行为",
+      "教授利用隐形提示词抓作弊引发 AI 教育重塑辩论",
+      "Anyclaude-SDK 实现 OpenAI 与 Anthropic 接口无缝切换",
+      "Grok CLI 获生态快速集成，命令行 AI 赛道竞争加剧"
+    ],
+    "rl-daily": [
+      "开源 RL 生态分化：大模型 RL 框架主导高频迭代激变",
+      "verl 紧跟 SOTA，持续重构 Agentic 与多模态深水区",
+      "TRL 压榨显存极限，全面向多模态对齐 AsyncGRPO",
+      "ROCK 交付 v1.11.0，实现跨平台沙盒调度解耦",
+      "OpenRLHD 官宣 Molt 后端，原生剑指千亿参数级 RL",
+      "rl_games 修复 PPO 自动重置时的底层数据污染"
+    ],
+    "agent-orch": [
+      "多智能体协作爆发，催生大量 AI 编排与调度框架",
+      "Agent Squad 等工具重点攻坚多智能体死锁与状态管理",
+      "Claude Flow 聚焦复杂 AI 任务流的自动化流转与编排",
+      "Vibe Kanban 结合看板管理，重塑 AI 代理的协同开发",
+      "HumanLayer 强调在高度自主的 AI 流程中引入人类审批",
+      "OpenAI Symphony 等编排器探索大型多代理系统的容错机制"
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B 霸榜，狂揽超 600 万次下载量",
+      "月之暗面最新旗舰多模态大模型 Kimi-K3 空降榜首",
+      "智谱新一代高性能大模型 GLM-5.2 获百万级部署",
+      "Laguna-S-2.1 走红，1-bit 极致量化成本地部署新宠",
+      "百度 Unlimited-OCR 强势解决复杂长图文本识别痛点",
+      "Upstage 开源 250B 超大参数模型，主打企业级应用"
+    ],
+    "ai-community": [
+      "AI 狂热退潮，开发者全面转向工程落地与安全管控",
+      "AI 提效或摧毁初级开发者成长路径，引发社区反思",
+      "专家警告：无限上下文非特性，而是伪装的技术债",
+      "MCPRadar 问世，专为火热的 MCP 生态提供安全扫描",
+      "构建 AI 代理插件时代的底层恶意代码防范威胁模型",
+      "手把手教你挖坟：本地零基础挖掘运行旧版大模型"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "CLI tools shift to autonomous multi-agent orchestration.",
+      "API drift and quota limits spark new enterprise friction.",
+      "OpenAI Codex ships two alpha builds (v0.146.0-a12, a13).",
+      "Gemini CLI drops new nightly build (v0.54.0).",
+      "Sandbox security and MCP integrations drive new updates.",
+      "Windows and WSL edge cases dominate toolmaker focus."
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 issues and 500 PRs in 24 hours.",
+      "P0 memory leaks and session deadlocks hit OpenClaw.",
+      "OpenClaw shifts strategic focus to enterprise reliability.",
+      "Maintainers close 265 issues and 230 PRs in a single day.",
+      "No new releases for OpenClaw as triage takes priority.",
+      "Standard hosting profiles and readiness conditions land."
+    ],
+    "ai-trending": [
+      "'Agent harnesses' and context optimization dominate GitHub.",
+      "ECC harness supercharges Claude Code with 234k stars.",
+      "Alibaba's open-code-review adds LLM agents for precision.",
+      "Caveman Claude Code skill slashes token usage by 65%.",
+      "Headroom MCP server compresses tool outputs for agents.",
+      "Web scraping and LLM reasoning boost vertical AI apps."
+    ],
+    "ai-web": [
+      "Anthropic and Cognizant expand partnership for enterprise AI.",
+      "Dario Amodei clarifies stance on open-weights AI models.",
+      "Amodei frames open-source debate around authoritarian threats.",
+      "OpenAI focuses on workplace productivity over macro moves.",
+      "Anthropic aggressively cements its global enterprise footprint.",
+      "OpenAI takes a quieter, user-impact-driven narrative."
+    ],
+    "ai-hn": [
+      "Claude Opus 5 suffers severe outages, frustrating devs.",
+      "Private Claude chats and Artifacts leak into search results.",
+      "Jensen Huang and Anthropic champion open-access AI models.",
+      "Professor's invisible prompt trap catches cheating class.",
+      "Study shows all major LLMs lean left on political compass.",
+      "Infrastructure anxiety and AI safety debates dominate HN."
+    ],
+    "rl-daily": [
+      "RL ecosystem polarized by LLM post-training frameworks.",
+      "verl sees massive infrastructure scaling and FSDP2 precision.",
+      "TRL and OpenRLHF dominate distributed development activity.",
+      "Industrialization of RLHF shifts to composable orchestration.",
+      "Classic RL libraries like Gymnasium enter stable maintenance.",
+      "Next-gen engines target multimodal agent loops and scaling."
+    ],
+    "agent-orch": [
+      "45 multi-agent orchestrators tracked in rapid expansion.",
+      "OpenAI Symphony and Microsoft AutoGen lead agent orchestration.",
+      "Claude Squad and Crystal push local multi-agent boundaries.",
+      "Swarm Protocol and Vibe Kanban refine dev team workflows.",
+      "Agent orchestrator tools pivot to Kanban-style UI and UX.",
+      "Swarm orchestration maturing for complex enterprise tasks."
+    ],
+    "ai-hf": [
+      "Qwen3.6 series triggers massive wave of community fine-tunes.",
+      "Moonshot's Kimi-K3 dominates multimodal enterprise space.",
+      "Baidu's Unlimited-OCR takes the lead in vision trending.",
+      "Extreme 1-bit and 2-bit quantization pushes edge deployment.",
+      "zai-org GLM-5.2 MoE model hits 1M+ downloads.",
+      "Inflect local TTS highlights ecosystem push to edge AI."
+    ],
+    "ai-community": [
+      "Dev.to warns AI broke the junior developer pipeline.",
+      "Dev fatigue rises over token-heavy unlimited context.",
+      "Lobste.rs debates the future of open-weights models.",
+      "Securing and scoping AI coding agents is top developer focus.",
+      "Model archeology revives 2019's GPT-2XL for local private use.",
+      "AI discussions shift from hype to rigorous engineering."
+    ]
+  }
+}
