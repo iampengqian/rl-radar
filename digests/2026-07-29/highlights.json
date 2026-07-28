@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex推进Alpha版，聚焦企业级网络代理与OAuth优化",
+      "Gemini CLI发布双版本，修复Agent SSRF安全护栏引发关注",
+      "Qwen Code支持CJK Token精准计算，深度集成钉钉与GitLab",
+      "MCP协议成标配，企业级OAuth鉴权与纯MCP模式诉求爆发",
+      "Claude Code陷计费异常与成本失控风波，社区反馈强烈",
+      "DeepSeek TUI硬核重构Windows适配，大举清理底层技术债"
+    ],
+    "ai-agents": [
+      "OpenClaw社区极度活跃，24小时内处理超500条PR与500条Issue",
+      "OpenClaw发布v2026.7.2-beta.5，重点解决状态与记忆灾难恢复",
+      "引入SQLite快照与隔离存储，防范数据库损坏引发的数据丢失",
+      "官方上线生产力工具配置，支持受限的个人助理工作流顺畅运行",
+      "网关内存泄漏成痛点，Agent跨平台运行稳定性面临严峻挑战",
+      "核心维护者大力瘦身网关代码，移除过时进程与重复定时任务"
+    ],
+    "ai-trending": [
+      "爆火claude-video：赋予Claude看懂视频的能力，今日热度登顶",
+      "ECC项目飙升至23万星，提供Agent记忆与安全管控系统",
+      "开源AI伴侣airi人气飙升，支持实时语音与我的世界游戏交互",
+      "神器book-to-skill爆红，一键将技术PDF转化为Claude技能模块",
+      "硬核Token压缩工具caveman：将提示词变为穴居人语言省65%",
+      "Graphify打造无向量化的知识图谱，专为现代编程CLI设计"
+    ],
+    "ai-web": [
+      "预览模型发现底层密码学漏洞，Claude安全攻防实战能力惊学界",
+      "Anthropic CEO发公开信表态：从未主张全面禁止开源权重模型",
+      "OpenAI密集发布企业级指南，全面押注B端商业化与Agent落地",
+      "前沿模型大幅削弱后量子密码HAWK安全性，并找到攻击AES新法",
+      "Dario Amodei巧妙公关：将开源争议转化为国家级AI安全讨论",
+      "OpenAI官网更新集中指向B端，预示其战略重心全面转向企业级"
+    ],
+    "ai-hn": [
+      "OpenAI重磅开源Codex Security，拿下HN今日最高分热度",
+      "Claude实现高阶密码学突破，社区热议AI安全攻防不对称加剧",
+      "去除对齐的“无审查”开源大模型，被测出比原版更积极乐观",
+      "AI模型幻觉被武器化：捏造依赖包实施前端供应链攻击引警惕",
+      "Bun运行时默认创建Claude.md：为AI编程提供上下文成标配",
+      "随着模型复杂度上升，Claude Opus 5的“AI福利”成严肃议题"
+    ],
+    "rl-daily": [
+      "verl引入硬核RDMA技术绕过NCCL，发力NPU适配与多轮Agent支持",
+      "TRL紧跟vLLM引擎，推进异步GRPO与多模态视觉语言模型对齐",
+      "PettingZoo大举弃用Supersuit，核心化Wrappers统一多智能体API",
+      "ROCK加速商业化：集成OpenSandbox完善并发Agent资源清理",
+      "Open Instruct全力押注MoE架构，采用散列掩码重构算法同步",
+      "AReaL打破PP并行强绑定，深挖单请求随机种子支持精准复现"
+    ],
+    "agent-orch": [
+      "Agent编排生态大爆发，Claude Squad与dmux等45个项目齐发力",
+      "MetaGPT与AutoGPT持续迭代，引领多智能体协同与自动化工作流",
+      "HumanLayer崭露头角，专注构建人类介入的半自动智能体工作流",
+      "Vibe Kanban与OpenKanban走红，让AI多Agent执行进度可视化",
+      "Swarm Protocol受关注，为复杂多Agent通信提供标准化协议支持",
+      "微软AutoGen与LlamaIndex持续深化，推进Agent底层架构演进"
+    ],
+    "ai-arxiv": [
+      "Kimi K3发布：基于全新注意力机制的2.8T参数MoE巨兽问世",
+      "D-Score提出：从隐藏层提取频谱信号，高效检测大模型幻觉",
+      "防提示注入！代数化权限策略框架大幅提升LLM智能体安全性",
+      "德国2.7B端侧大模型：仅用5.5万H100小时实现高效移动部署",
+      "打脸代码Agent：Looping不等于可靠性，急需引入类型化修订契约",
+      "分层条件保形风险控制：解决大模型面对异构人群的拒答风险"
+    ],
+    "ai-hf": [
+      "百度Unlimited-OCR重磅出击：无限上下文多模态模型解决长文档痛点",
+      "智谱GLM-5.2霸榜，兼顾推理对话，开源生态下载量破百万",
+      "极限显存压缩：Bonsai-27B极低比特量化大模型下载量超两百万",
+      "月之暗面Kimi-K3多模态特征提取模型上线，登顶今日热度榜首",
+      "微软推出Fara1.5-27B视觉模型，展现看屏幕直接操作电脑潜力",
+      "Inflect-Micro-v2爆红：纯CPU即可本地运行的轻量级TTS模型"
+    ],
+    "ai-community": [
+      "警惕AI幻觉：Slopsquatting利用大模型捏造包名发动供应链攻击",
+      "你的Agent权限过大？开发者呼吁立即对公共仓库写入权限进行审计",
+      "别再Vibe Coding：工程界呼吁回归要求AI提供明确计划与可控测试",
+      "MCP网关成刚需：清晰解答企业级Agent连接大量外部工具的架构瓶颈",
+      "从Demo到生产：硬核分享如何构建防崩溃的企业级MCP Server",
+      "焦点转移：AI编程时代，开发者更应关注“是否理解代码”而非来源"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Codex drops rust-v0.146.0-alpha.14 amid multi-agent push",
+      "Major AI CLIs battle runaway token costs and OS limits",
+      "Specialized CLI tools like DeepSeek TUI gain traction",
+      "Open-source CLIs focus on provider-agnostic flexibility",
+      "Ecosystem hits scaling limits in context management",
+      "Teams struggle with seamless MCP execution"
+    ],
+    "ai-agents": [
+      "OpenClaw processes exactly 500 issue and 500 PR updates",
+      "OpenClaw v2026.7.2-beta.5 boosts state crash recovery",
+      "Gateway RAM exhaustion causes stability challenges",
+      "Developers tackle multi-agent session state management",
+      "Quarantine store survives primary database damage",
+      "Project navigates growing pains of expanding AI gateways"
+    ],
+    "ai-trending": [
+      "ECC adds instincts and memory to AI coding agents",
+      "Ollama adds support for Kimi-K2.6 and GLM-5.2 models",
+      "Graphify offers vectorless RAG alternative for CLIs",
+      "Microsoft launches Agent Governance Toolkit for security",
+      "Massive GitHub surge hits AI context management tools",
+      "Developers adopt local multimodal voice and video agents"
+    ],
+    "ai-web": [
+      "Claude Mythos Preview discovers novel math flaws",
+      "Claude executes practical key-recovery attack on HAWK-256",
+      "Anthropic CEO Dario Amodei defends open-weights models",
+      "OpenAI drops enterprise guides focused on GPT-5 scaling",
+      "Divergence in labs: Anthropic research, OpenAI commerce",
+      "Claude shifts from finding bugs to breaking crypto math"
+    ],
+    "ai-hn": [
+      "OpenAI open-sources Codex Security for vulnerability hunt",
+      "Private Claude chats exposed in Google and Bing search",
+      "AI-discovered bugs spark debate on real-world utility",
+      "Hackers weaponize AI hallucinations via slopsquatting",
+      "AI lab staff send letters asking government to pace progress",
+      "Community debates boundaries of AI-driven security research"
+    ],
+    "rl-daily": [
+      "verl leads velocity for LLM RLHF infrastructure",
+      "TRL expands multimodal and async RL feature support",
+      "AReaL tackles trainer-to-rollout bottlenecks in LLMs",
+      "Gymnasium 1.0 absorbs breaking autoreset API changes",
+      "Frameworks sync weights across distributed training backends",
+      "Classical RL enters massive parallelization stabilization"
+    ],
+    "agent-orch": [
+      "Ecosystem surges with complex multi-agent orchestrators",
+      "Claude Squad and Symphony lead agent orchestration tools",
+      "Developers build shared interfaces for multiple AI agents",
+      "AutoGPT and MetaGPT remain staple multi-agent frameworks",
+      "Kanban-style tools gain traction for managing agent tasks",
+      "Focus shifts to human-in-the-loop workflow verification"
+    ],
+    "ai-arxiv": [
+      "Kimi K3 debuts 2.8T MoE with 1-million-token context",
+      "D-Score detects LLM hallucinations from hidden activations",
+      "Papers target agentic reliability and code repair guarantees",
+      "Dynamic evidence reasoning introduced for visual tasks",
+      "Next-gen models demand efficient memory management",
+      "Specialized LLMs applied to medical and legal ontologies"
+    ],
+    "ai-hf": [
+      "Qwen3.6 cements itself as open-weight community backbone",
+      "Kimi-K3 multimodal LLM generates massive community buzz",
+      "1-bit Bonsai-27B proves extreme compression is viable",
+      "GLM-5.2 hits 1.2M downloads for open-weight accessibility",
+      "Upstage releases massive 250B parameter Solar-Open2 model",
+      "Edge AI matures with specialized CPU-friendly TTS models"
+    ],
+    "ai-community": [
+      "Slopsquatting weaponizes AI hallucinations for attacks",
+      "Hackers register hallucinated package names to breach devs",
+      "AI agents with repo write access risk leaking private code",
+      "Developers sound alarm over shared process API key risks",
+      "Standard practice shifts to AI planning before coding",
+      "Building reliable verification gates becomes a major focus"
+    ]
+  }
+}
