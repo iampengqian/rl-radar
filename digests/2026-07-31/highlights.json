@@ -1,0 +1,166 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenAI Codex连发3版重构沙盒权限并修复OOM。",
+      "Gemini CLI升级Node运行时并引入AST感知读取。",
+      "GitHub Copilot CLI双版本更新，重做Web OAuth登录。",
+      "Qwen Code核心架构解耦，推进工作流安全隔离。",
+      "DeepSeek TUI v0.9.2发布，推进巨型单体架构拆分。",
+      "AI CLI全面步入多智能体编排与长时自动化时代。"
+    ],
+    "ai-agents": [
+      "OpenClaw项目热度爆炸，单日激增500个Issue与PR。",
+      "OpenClaw提交PR引入Rust Gateway以提升性能与安全。",
+      "维护者遇严峻考验：424个PR积压待合并，仅关闭13个。",
+      "修复多模态内存OOM、死循环及幽灵消息等底层痛点。",
+      "修复Discord/Slack通道发件工具导致的虚假无回复降级。",
+      "社区正聚焦多Agent网关可靠性与底层状态机优化。"
+    ],
+    "ai-trending": [
+      "ECC登顶热榜，专为Agent提供记忆与安全性能优化。",
+      "openwork作为本地协同开发环境今日新增star超900。",
+      "caveman硬核插件通过压缩Prompt大幅削减65%Token。",
+      "claude-mem为所有AI编码Agent提供跨会话持久化记忆。",
+      "headroom拦截压缩JSON日志，最高可减少95%Token。",
+      "Chrome官方推出DevTools MCP服务，赋能Web自动化。"
+    ],
+    "ai-web": [
+      "OpenAI发文揭秘两项设置让ARC-AGI 3得分狂飙三倍。",
+      "ARC-AGI 3得分激增暗示OpenAI已掌握推理期工程杠杆。",
+      "OpenAI技术优先级从烧参数彻底转向推理期Scaling Law。",
+      "未来API或开放深度推理参数以显著提升复杂智力上限。",
+      "OpenAI高调公布前沿基准成绩以确立AGI绝对领先身位。",
+      "Anthropic官网今日无更新，处于技术沉淀与发酵期。"
+    ],
+    "ai-hn": [
+      "GPT-5.6重磅发布，性能大幅提升并宣布大幅度削减成本。",
+      "实测证明将带审查的DeepSeek蒸馏至开源模型不转移审查。",
+      "Agent-Manager：终端中同时管理和调度多个AI智能体。",
+      "RunNburn：打破硬件限制，在64G内存桌面跑295B模型。",
+      "探讨修改两项设置如何在AGI基准测试中获得三倍提升。",
+      "AI安全与伦理频发，社区对前沿模型不可预测性高度警惕。"
+    ],
+    "rl-daily": [
+      "RL生态严重两极分化：传统经典算法库全面进入静默期。",
+      "verl极速扩张，深度整合Megatron并兼容昇腾与DeepSeek V4。",
+      "TRL死磕基建，全面修复DPO与GRPO算法底层Bug。",
+      "torchtune死磕显存开销削减，向高容错RLHF基建演进。",
+      "AReaL攻克分布式训练死锁，推进单机共存与Ray调度。",
+      "Open Instruct实现MoE模型在线权重同步落地。"
+    ],
+    "agent-orch": [
+      "AI智能体工具演进正从单一执行转向多模型并行协同开发。",
+      "Claude Squad：终端内利落管理多个并行Agent工作流。",
+      "Symphony：OpenAI官方推出的多智能体编排核心框架。",
+      "HumanLayer：为自动化Agent安全引入人工审核介入机制。",
+      "Vibe Kanban：以看板模式直观编排与追踪复杂AI任务。",
+      "dmux：为AI智能体提供多路复用与高并发调度底座支持。"
+    ],
+    "ai-arxiv": [
+      "MemSecBench：首个全面追踪Agent长期记忆投毒的评估基准。",
+      "提出基于路由的在线策略蒸馏，抵御恶意微调注入后门。",
+      "提出成本感知路由停止机制，解决Agent工具调用痛点。",
+      "警告！广泛使用LLM文本润色或导致人类语言单一化。",
+      "InferScale原生GPU KV注入，解决长对话推理部署瓶颈。",
+      "评估框架揭示LLM地域刻板印象正转化为实际决策歧视。"
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B发布，激活仅3B却斩获超600万周下载。",
+      "百度Unlimited-OCR重磅发布，彻底打破传统分辨率限制。",
+      "GLM-5.2采用全新MoE架构，兼顾高人气与庞大下载量。",
+      "Solar-Open2-250B发布，Upstage推出2500亿参数超大模型。",
+      "去审查微调成社区最热玩法，无审查版模型下载量惊人。",
+      "微软推全新多模态视觉语言模型Mage-VL强化图文理解。"
+    ],
+    "ai-community": [
+      "深度剖析：多智能体系统在生产环境规模化时为何静默失败。",
+      "实战提供基于契约的测试方案，解决LLM输出的非确定性。",
+      "反直觉：硬核拆解Token压缩工具为何反而导致API账单飙升。",
+      "微软发文呼吁高度重视开放权重以维持AI领域领导力。",
+      "硬核梳理：彻底厘清Agent Skills与MCP的界限与应用场景。",
+      "高昂AI算力成本是否正在迫使传统开源项目转向商业化。"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "CLI tools shifting to multi-agent execution.",
+      "Developers hit scaling barriers: context, Windows, rates.",
+      "OpenAI Codex ships 3 Rust CLI alpha builds.",
+      "OpenCode v1.18.10 and Pi v0.83.0 released.",
+      "Focus shifts from features to systemic reliability.",
+      "MCP integrations become standard for AI CLIs."
+    ],
+    "ai-agents": [
+      "OpenClaw sees nearly 500 issues and PRs in 24 hours.",
+      "Project focuses on heavy stabilization and bug fixing.",
+      "76 PRs merged to fix message loops and cross-platform bugs.",
+      "No new OpenClaw releases shipped today.",
+      "System reliability is top priority for maintainers.",
+      "OpenClaw navigates complexities of scaling adoption."
+    ],
+    "ai-trending": [
+      "AI coding agent harnesses dominate open-source.",
+      "ECC project gains 810 stars today for agent optimization.",
+      "Graphify uses deterministic AST parsing over vector stores.",
+      "Headroom proxy saves up to 95% on tokens for agents.",
+      "Chrome DevTools MCP tailored specifically for AI agents.",
+      "Autonomous agents surge in finance and job hunting."
+    ],
+    "ai-web": [
+      "OpenAI focuses on advancing ARC-AGI 3 benchmark.",
+      "Inference-time compute optimization remains critical.",
+      "Simple config tweaks tripled ARC-AGI 3 benchmark scores.",
+      "Anthropic had no new official content drops today.",
+      "OpenAI heavily iterating on system prompts for fluid AI.",
+      "Anthropic silence suggests heads-down model development."
+    ],
+    "ai-hn": [
+      "OpenAI's GPT-5.6 drives July revenue past Q2 haul.",
+      "GPT-5.6 undercuts competitors on cost, sparking price war.",
+      "Huge appetite for local, multi-model orchestration tools.",
+      "Rogue AI behaviors and cybersecurity risks spark debate.",
+      "Distillation raises concerns over censorship transfer.",
+      "Simple settings tripled OpenAI ARC-AGI-3 benchmark scores."
+    ],
+    "rl-daily": [
+      "RL ecosystem pivots toward LLM-driven RLHF workloads.",
+      "Focus shifts to colocated GPU training and weight sync.",
+      "Classical algorithmic RL libraries remain mostly dormant.",
+      "Verl drives cutting-edge LLM scaling and Ascend NPU support.",
+      "TRL pushes agentic RL maturation and alignment math.",
+      "Massive-scale RLHF/RLAIF workloads dominate development."
+    ],
+    "agent-orch": [
+      "Multi-agent orchestration ecosystem expands rapidly.",
+      "AutoGPT, MetaGPT, and CrewAI lead agent frameworks.",
+      "HumanLayer and Claude Squad push human-in-the-loop ops.",
+      "Swarm Protocol standardizes multi-agent communication.",
+      "1Code and Vibe Kanban optimize AI coding workflows.",
+      "Tools focusing on background agent reliability emerge."
+    ],
+    "ai-arxiv": [
+      "Autonomous AI agents mature in multi-step execution.",
+      "Research addresses LLM regional biases and stereotyping.",
+      "Template poisoning risks prompt routing realignment.",
+      "InferScale introduces GPU-native KV cache for serving.",
+      "Multimodal boundaries pushed in spatial reasoning.",
+      "Novel parameter quantization and distillation explored."
+    ],
+    "ai-hf": [
+      "Qwen3.6-35B-A3B MoE dominates the download charts.",
+      "Moonshot's Kimi-K3 excels in multimodal tasks.",
+      "Baidu Unlimited-OCR tops image-text-to-text benchmarks.",
+      "Efficient MoE architectures utilizing A3B gain traction.",
+      "Ternary 2-bit and NVFP4 quantization formats surge.",
+      "GLM-5.2 MoE shows massive community adoption."
+    ],
+    "ai-community": [
+      "High compute costs push open-source AI to paid models.",
+      "Dynamic Agent Skills evolving past pure MCP standard.",
+      "Kimi Delta Attention sparks academic architecture talk.",
+      "Raw model intelligence is no longer the main bottleneck.",
+      "Developer focus decisively shifts to robust guardrails.",
+      "Battle-tested solutions for non-deterministic pipelines."
+    ]
+  }
+}
