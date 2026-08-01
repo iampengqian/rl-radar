@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T22:32:06.414Z",
+  "generated": "2026-08-01T00:44:21.069Z",
   "dates": [
     {
       "date": "2026-08-01",
@@ -22,6 +22,8 @@
         "ai-hf-en",
         "ai-community",
         "ai-community-en",
+        "ai-monthly",
+        "ai-monthly-en",
         "agent-orch",
         "agent-orch-en"
       ]
