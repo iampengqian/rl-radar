@@ -1,0 +1,137 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 迈入多智能体编排，长会话 OOM 成最大瓶颈",
+      "Gemini CLI 发布 v0.55.0 Nightly，改进子代理稳定性",
+      "GitHub Copilot CLI 发布 v1.0.78-2，支持 BYOK 流式传输",
+      "OpenCode 发布 v1.18.11，修复 SSE 死循环并引入重试熔断",
+      "Qwen Code 发布 v0.21.3，实现 Prompt 缓存复用",
+      "Claude Code 遭遇 OAuth 死循环，社区正着力解决沙箱安全"
+    ],
+    "ai-agents": [
+      "OpenClaw 发布 v2026.7.2-beta.6，强化崩溃数据恢复机制",
+      "新增隔离存储，确保主数据库损坏时的持久化数据安全",
+      "引入抗崩溃的 SQLite 快照与文件系统发布机制",
+      "新增快照恢复的回滚写入器，极大提升数据可靠性",
+      "新增“失败即关闭”发布安全预检，阻断风险代码推流",
+      "修复核心 Bug：宕机后系统能正确恢复主嵌入提供程序"
+    ],
+    "ai-trending": [
+      "ECC 获 23 万星，成 Claude Code 等客户端记忆管理标配",
+      "caveman 爆红：模拟“穴居人说话”极端截断 65% Token",
+      "字节开源 deer-flow，专注处理长周期深度研究的 SuperAgent",
+      "GitHub 官方推出多平台 Copilot Agent SDK，让编程无处不在",
+      "headroom：通过代理压缩工具输出，为 Coding Agent 省 20% Token",
+      "腾讯开源团队级 Agent 记忆共享架构 TencentDB-Agent-Memory"
+    ],
+    "ai-web": [
+      "OpenAI 发布《数学十大进展》，剑指深度逻辑推理能力",
+      "下一代竞争焦点已从多模态生成转向 System 2 思考",
+      "攻克高级数学问题预示复杂编程与研究应用落地",
+      "技术硬核突破将赋能量化金融与供应链优化等领域",
+      "OpenAI 意在抢夺前沿推理能力定义权与市场预期",
+      "Anthropic 处于静默期，疑似在密谋重大模型迭代"
+    ],
+    "ai-hn": [
+      "OpenAI 未发布模型解决 10 大数学问题，登顶 HN 热榜",
+      "激烈辩论：大模型是在真推理，还是做高级模式匹配？",
+      "研究发现：即使推理变强，LLM 在复杂金融交易中依然无解",
+      "极简教程爆火：消费级 8GB 显卡搞定大模型后训练",
+      "用 Rust 构建的 Claude Code 智能体专属控制台备受好评",
+      "高昂 API 成本引发社区忧虑，AI 商业化红海竞争加剧"
+    ],
+    "rl-daily": [
+      "RL 开源生态两极化，大模型对齐算力优化成核心",
+      "TRL 热度极高，重构训练器死磕多模态异步通信瓶颈",
+      "verl 全面演进为超大规模底层 RL 基础设施",
+      "多模态 Agent 训练闭环爆发，RL 突破纯文本对齐",
+      "TRL 将蒸馏训练器与 GRPO 底层深度对齐",
+      "AReaL 深耕千亿参数级进程生命周期与显存调度"
+    ],
+    "ai-hf": [
+      "月之暗面 Kimi-K3 登顶榜单，获近万点赞",
+      "百度 Unlimited-OCR 凭极强场景文字提取力成企业刚需",
+      "DeepSeek-V4-Flash 延续高性能，下载量破三百万",
+      "智谱 GLM-5.2 发布，采用全新 MoE 架构",
+      "微软 Fara1.5-27B 发布，专精计算机图形界面操控",
+      "Qwen 3.5/3.6 系列继续统治社区微调生态"
+    ],
+    "ai-community": [
+      "多步 Agent 行为评估：为什么比单模型评估更难？",
+      "AI 编程提速引发隐患：工程师对潜在 Bug 的直觉退化",
+      "实战分享：纯 Rust 重构 sklearn，Docker 镜像缩小 400 倍",
+      "实测 MCP 新规范：AWS 上的无状态 AI Agent 架构落地",
+      "深入探讨：构建 AI Agent 记忆该存什么、跳过什么",
+      "AI 时代新痛点：CI/CD 流水线的质量比实现需求更重要"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI ecosystem shifting to robust enterprise platforms.",
+      "Focus turns to managing overhead for long-running agents.",
+      "Multi-agent orchestration and untethered execution see growth.",
+      "Rapid evolution causing host resource management growing pains.",
+      "Maturing enterprise demand sparks stricter security guardrails.",
+      "Claude Code focuses on stability and process leak fixes."
+    ],
+    "ai-agents": [
+      "OpenClaw cuts v2026.7.2-beta.6 focusing on state safety.",
+      "New release introduces crash-recoverable SQLite snapshots.",
+      "System actively rejects schema upgrades that threaten data.",
+      "Beta features are outpacing team capacity to merge fixes.",
+      "High volume of open issues creates temporary bottleneck.",
+      "OpenClaw sees hyper-active development with 500 PR updates."
+    ],
+    "ai-trending": [
+      "Skill Routers and Agent Harnesses dominate AI ecosystem.",
+      "GitHub Copilot SDK sees massive 145-star daily surge.",
+      "ECC project optimizes coding CLI performance with memory.",
+      "Domain-specific AI agents surge in trading and finance.",
+      "Ollama leads local inference for Kimi-K2.6 and GLM-5.2.",
+      "Headroom proxy cuts JSON token usage by up to 95%."
+    ],
+    "ai-web": [
+      "OpenAI announces ten major advances in mathematics.",
+      "Focus shifts toward highlighting verifiable STEM capabilities.",
+      "Move highlights rigorous reasoning in structured fields.",
+      "Anthropic shows zero new incremental content updates today.",
+      "OpenAI pushes new cognitive thresholds in complex math.",
+      "Strategy pivot differentiates top models beyond chat fluency."
+    ],
+    "ai-hn": [
+      "OpenAI math breakthroughs dominate front page discussions.",
+      "Amazon suffers catastrophic 860% GenAI coding budget overrun.",
+      "Reddit stock plummets as AI cannibals user growth.",
+      "New tools launch to add guardrails to Claude Code.",
+      "Community debates if AI crossed new cognitive threshold.",
+      "Raw model capability triggers awe and deep safety anxiety."
+    ],
+    "rl-daily": [
+      "RL ecosystem splits between LLM alignment and APIs.",
+      "Frameworks tackle distributed memory bottlenecks aggressively.",
+      "verl shows high momentum in distributed scaling and async RL.",
+      "TRL pushes high velocity in memory and distillation refactors.",
+      "Foundational libraries like Gymnasium focus on API standards.",
+      "Post-training frameworks adopt low-precision FP8 compute."
+    ],
+    "agent-orch": [
+      "[agent-orch] omitted due to truncated content in source."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Flash and Kimi-K3 dominate Hugging Face metrics.",
+      "Multimodal capabilities are now a baseline for new models.",
+      "Qwen3.5 architecture backbone for uncensored community fine-tunes.",
+      "Microsoft Mage-VL pushes image-text-to-text task boundaries.",
+      "GLM-5.2 Mixture-of-Experts model sees massive user adoption.",
+      "Baidu Unlimited-OCR breaks new ground in text extraction."
+    ],
+    "ai-community": [
+      "Evaluating agents requires context-aware versus base models.",
+      "Tech leaders warn AI coding erodes deep engineering judgment.",
+      "Engineers share strategies for handling agent memory safely.",
+      "New observability tools flag untrustworthy AI outputs.",
+      "Pure Rust replaces heavy sklearn ML pipelines for efficiency.",
+      "Focus shifts to deploying local LLMs without massive GPUs."
+    ]
+  }
+}
