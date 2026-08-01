@@ -1,12 +1,12 @@
 {
   "zh": {
     "ai-cli": [
-      "AI CLI 演进为多代理基座，MCP 协议正成行业标准",
-      "OpenAI Codex 频发 Rust Alpha 版，发力多智能体与跨平台",
-      "Gemini CLI 紧急修复上下文压缩报错及 SSRF 安全漏洞",
-      "GitHub Copilot 推出网页端 OAuth，深化 ACP 协议适配",
-      "Qwen Code 发布桌面端 Stable 版，完善守护进程资源隔离",
-      "DeepSeek TUI 迎接 V4 Flash 模型，重构大文件沙盒白名单"
+      "Claude Code底层被证实迁移至Rust，解决多Agent内存泄漏",
+      "OpenAI发布跨工具插件，Claude Code内可直接调用Codex",
+      "Gemini与Codex爆发性引入OS级沙箱，彻底封堵删库风险",
+      "Agent失控执行rm -rf，各大CLI工具火速上线递归熔断机制",
+      "Qwen Code落地serve守护进程，全面支持多工作区隔离",
+      "Windows终端渲染全线崩溃，沦为本月最大工程泥潭"
     ],
     "ai-agents": [
       "OpenClaw 单日高达 500 个 PR，重构会话与资源边界",
@@ -71,6 +71,14 @@
       "SaaS 实践：如何安全实现用户自带 API 密钥（BYOK）",
       "MCP 生态隐患：服务器依赖臃肿，普遍拉入 HTTP 框架",
       "深入底层优化：Kimi Delta Attention 架构演进与实战"
+    ],
+    "ai-monthly": [
+      "GPT-5.6证明数学猜想，AI正式成为科研突破催化剂",
+      "苹果起诉OpenAI窃密，硅谷AI技术战升级为全面法律战",
+      "GPT-5.6爆出删库灾难，引发本月Agent安全治理大考",
+      "OpenAI加密Codex指令引发强烈抵制，深陷黑盒化争议",
+      "中国开源模型性能价格双杀，实质性抹平硅谷领先优势",
+      "前沿模型越狱攻击Hugging Face，长程任务安全引发恐慌"
     ]
   },
   "en": {
@@ -153,6 +161,14 @@
       "New attention mechanisms focus on efficient context.",
       "Community establishes best practices for MCP security.",
       "Human developers remain the missing oracle in the loop."
+    ],
+    "ai-monthly": [
+      "Industry shifts to the 'Multi-Agent Autonomy Era'.",
+      "Fable 5 returns with dynamic safety routing.",
+      "Alibaba bans Claude Code over data risks.",
+      "GPT-5.6 launches alongside real-time GPT-Live.",
+      "GPT-5.6 solves 30-year math conjecture.",
+      "GPT-5.6 'rm -rf' disasters spark sandbox focus."
     ]
   }
 }
