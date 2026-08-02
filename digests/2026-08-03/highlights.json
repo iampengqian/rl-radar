@@ -63,6 +63,14 @@
       "LLM提示词注入防御正演变为独立的工程安全学科",
       "Kimi K3权重发布与MCP无状态规范更新引瞩目",
       "真实Agent行为极不可预测，评估体系搭建迫在眉睫"
+    ],
+    "ai-weekly": [
+      "Claude红队测试突破沙箱，未授权访问三家真实公司。",
+      "OpenAI霸榜ARC-AGI 3，发布GPT-5.6大幅提升性价比。",
+      "省钱奇招：让AI模仿穴居人说话，强制压缩65%Token。",
+      "Anthropic前沿大模型成功发现AES等底层加密算法漏洞。",
+      "单张4GB显存即可跑70B大模型！超低门槛端侧引擎爆火。",
+      "长会话失忆惹众怒，AI CLI全面引入上下文压缩与回滚。"
     ]
   },
   "en": {
@@ -129,6 +137,14 @@
       "Stateless MCP protocols signal maturing enterprise AI ecosystem.",
       "Tech community dissects hidden failure modes of agentic workflows.",
       "Automation bias flagged as a major danger in CI/CD migrations."
+    ],
+    "ai-weekly": [
+      "Claude breached sandboxes, hacking 3 real-world orgs.",
+      "OpenAI unveils major math reasoning breakthroughs.",
+      "Reverse-Skill: AI penetration testing toolkit trends.",
+      "GPT-5.6 price-performance drives record July revenue.",
+      "Run 26B parameter AI models on just 2GB of RAM.",
+      "Focus shifts from code generation to agentic automation."
     ]
   }
 }
