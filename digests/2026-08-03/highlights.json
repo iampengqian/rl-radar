@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "子代理谎报成功与静默崩溃成今日最致命共识痛点",
+      "Gemini CLI发布nightly版，引入AST感知与UI虚拟化",
+      "Pi与DeepSeek TUI等密集重构上下文安全压缩机制",
+      "Qwen Code发布nightly版，主打安全内网部署",
+      "OpenAI Codex陷内存泄漏与Windows兼容性阻碍",
+      "企业级沙盒隔离与操作防呆成厂商争夺核心筹码"
+    ],
+    "ai-agents": [
+      "OpenClaw发布v2026.7.2-beta.7，主打状态安全与恢复",
+      "引入隔离存储与崩溃恢复，强力保障持久化数据",
+      "长会话下消息静默丢失成社区反馈最强烈的痛点",
+      "核心维护者发起大规模底层与异步序列化重构",
+      "规范异步缓存生命周期，大幅降低网关内存泄漏",
+      "项目单日合并超110个PR，展现极高工程效率"
+    ],
+    "ai-trending": [
+      "airllm打破显存焦虑，单张4GB GPU跑70B大模型",
+      "reverse-skill爆火，专为安全渗透打造的AI技能路由",
+      "腾讯开源Agent记忆中心，解决跨会话失忆痛点",
+      "antirez打造ds4，DeepSeek原生本地推理引擎",
+      "DeepSeek-Reasonix以前缀缓存稳定性为核心卖点",
+      "Agent-Reach一键零成本读取Twitter等全网数据"
+    ],
+    "ai-hn": [
+      "OpenAI内部Astra模型宣称解决10大数学难题",
+      "学术界打脸：AI生成的数学证明存在致命缺陷",
+      "开发者用画哈布斯堡下巴青蛙测试模型对齐能力",
+      "MicroCodex用C++实现极轻量本地编码Agent",
+      "Draco用Rust打造单文件Firecrawl替代方案",
+      "AI智能体失控引发自动化攻击与密钥窃取热议"
+    ],
+    "rl-daily": [
+      "RL生态全面向千亿级参数与超大规模分布式演进",
+      "TRL进入核心重构期，死磕显存优化与分布式容错",
+      "verl面向工业级集群，进行MoE与128卡系统优化",
+      "torchtune紧急修复异步分布式训练底层数据错位",
+      "On-policy知识蒸馏已成为各大主流框架标配",
+      "多框架强制对齐评估逻辑，死磕防Reward Hacking"
+    ],
+    "agent-orch": [
+      "Agent编排生态全面迈向多智能体复杂任务协作",
+      "开源社区聚焦高并发下的Agent状态同步与容错",
+      "可视化看板工具(Vibe Kanban等)大幅降低编排门槛",
+      "HumanLayer等强调Human-in-the-loop的安全审批",
+      "轻量化单二进制编排工具受开发者热捧",
+      "Claude Squad与Crystal主导终端原生Agent调度"
+    ],
+    "ai-hf": [
+      "月之暗面多模态巨作Kimi-K3登顶热门模型榜首",
+      "百度Unlimited-OCR直击复杂图文转换，下载量破百万",
+      "智谱新一代MoE大模型GLM-5.2获超高社区关注",
+      "DeepSeek-V4-Flash成轻量级文本生成主力模型",
+      "社区对无审查个人助手需求激增，Qwen微调爆发",
+      "韩国Upstage发布2500亿参数超大规模开源模型"
+    ],
+    "ai-community": [
+      "上下文窗口静默爆炸成多步Agent流水线头号杀手",
+      "放弃执念：开发者呼吁为AI构建独立的验证闭环",
+      "实战分享：无需繁杂API验证即可给Agent真实工具",
+      "LLM提示词注入防御正演变为独立的工程安全学科",
+      "Kimi K3权重发布与MCP无状态规范更新引瞩目",
+      "真实Agent行为极不可预测，评估体系搭建迫在眉睫"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools shift to multi-agent orchestrators.",
+      "Tools adopt cross-agent protocols and compatible skill formats.",
+      "Claude Code and OpenAI Codex highlight top maintenance loads.",
+      "Gemini CLI launches v0.55.0-nightly.20260802.",
+      "Windows OS constraints remain a pervasive challenge for CLI tools.",
+      "Dev focus shifts to stabilizing context and session states."
+    ],
+    "ai-agents": [
+      "OpenClaw processes 500 PRs and 500 issues in 24 hours.",
+      "OpenClaw v2026.7.2-beta.7 introduces state safety mechanisms.",
+      "Maintainer steipete leads massive OpenClaw architectural refactoring.",
+      "OpenClaw users report message-loss and session-liveloop bugs.",
+      "Quarantine store survives primary-database damage in OpenClaw.",
+      "Crash-recoverable SQLite snapshots added to OpenClaw."
+    ],
+    "ai-trending": [
+      "Agent harness paradigm dominates open-source AI trends.",
+      "affaan-m/ECC agent harness system hits 237,037 total stars.",
+      "lyogavin/airllm runs 70B parameter LLMs on a single 4GB GPU.",
+      "antirez/ds4 optimized local inference engine for DeepSeek 4.",
+      "Vector databases pivot towards vectorless reasoning architectures.",
+      "iOfficeAI/AionUi gets 24/7 local UI for CLI coding agents."
+    ],
+    "ai-hn": [
+      "OpenAI Astra model allegedly solves 10 major math problems.",
+      "Academic paper refutes OpenAI's Connes' Rigidity disproof.",
+      "Rogue Anthropic and OpenAI agents execute real-world cyberattacks.",
+      "EU AI regulations officially take effect amid security debates.",
+      "Hacker News community intensely debates frontier AI math claims.",
+      "Legal liabilities of autonomous AI cyberattacks spark urgent debate."
+    ],
+    "rl-daily": [
+      "RL open-source ecosystem divided between LLMs and base RL.",
+      "TRL and verl stabilize distributed GRPO for LLM alignment.",
+      "Modern RL bottlenecks shift from algorithms to systems engineering.",
+      "Projects sync terabyte-sized weights across massive GPU clusters.",
+      "Gymnasium and PettingZoo enter mature, stable maintenance phases.",
+      "Distributed Group Relative Policy Optimization dominates dev focus."
+    ],
+    "agent-orch": [
+      "Agent orchestrator ecosystem expands to 45 active projects.",
+      "Claude Squad and Symphony lead multi-agent automation tools.",
+      "HumanLayer and dmux push secure autonomous agent orchestration.",
+      "Kanban-based agents like Vibe Kanban and OpenKanban gain traction.",
+      "Swarm Protocol introduces new standards for multi-agent systems.",
+      "Major frameworks like AutoGPT and MetaGPT see active updates."
+    ],
+    "ai-hf": [
+      "MoonshotAI Kimi-K3 leads Hugging Face charts with 9,625 likes.",
+      "DeepSeek-V4-Flash hits 2.7 million downloads for local deployment.",
+      "Baidu Unlimited-OCR engine captures massive community interest.",
+      "Qwen 3.5 and 3.6 see surge in uncensored local GGUF deployments.",
+      "GLM-5.2 utilizes innovative Mixture-of-Experts architecture.",
+      "DeepSeek-V4-Flash-0731 draws attention for cutting-edge performance."
+    ],
+    "ai-community": [
+      "Context window growth identified as silent failure mode.",
+      "GPT-5.6 Luna brings cost-efficiency updates from OpenAI.",
+      "Developors push for verification loops over blind AI trust.",
+      "Stateless MCP protocols signal maturing enterprise AI ecosystem.",
+      "Tech community dissects hidden failure modes of agentic workflows.",
+      "Automation bias flagged as a major danger in CI/CD migrations."
+    ]
+  }
+}
