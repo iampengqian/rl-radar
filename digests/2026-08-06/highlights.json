@@ -1,0 +1,158 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.222 修复 Git 工作树隔离与 Hook 权限漏洞",
+      "Qwen Code 修复 P1 级 Shell 越权漏洞，全面拥抱 Tauri",
+      "OpenAI Codex 稳定 Windows/WSL 支持，优化多智能体兼容",
+      "Gemini CLI 紧急修复 API 400 回归与 Agent 挂起问题",
+      "OpenCode 实现 V1 到 V2 架构平滑迁移",
+      "DeepSeek TUI Runtime API 全面 HTTP 化"
+    ],
+    "ai-agents": [
+      "OpenClaw 修复上下文生命周期，解决新会话初始化失败",
+      "OpenClaw 延迟插件导入，大幅缓解网关冷启动资源占用",
+      "P0 级致命Bug：数据库迁移中断导致网关无法启动",
+      "P1 级高危Bug：网关主线程启动起即 100% 饱和",
+      "合并清理大型记录内存飙升的修复",
+      "复杂 Agent 交互场景下的消息丢失和死锁问题仍是痛点"
+    ],
+    "ai-trending": [
+      "Cloudflare computer：给智能体一台虚拟电脑自主操作",
+      "腾讯云端上线企业级多 Agent 记忆中枢解决失忆症",
+      "airllm 仅凭单张 4GB 显存 GPU 即可运行 70B 模型",
+      "firecrawl 推出极速 PDF 解析库，日增星标超 1500",
+      "DeepSeek-Reasonix：专为生态定制的终端自主编码 Agent",
+      "obra/superpowers：一套智能体技能与软件开发方法论"
+    ],
+    "ai-web": [
+      "OpenAI 推出经济研究交流计划，关注宏观经济影响力",
+      "OpenAI 竞争升维，从模型能力向政策引导延伸",
+      "Anthropic 官网静默，或正酝酿重大模型架构更新",
+      "OpenAI 试图在学术界和政策制定者心中树立领导者形象",
+      "模型能力变现到了需要用严谨宏观经济学指导的阶段",
+      "AI 巨头正试图在商业和社会层面建立标准与话语权"
+    ],
+    "ai-hn": [
+      "OpenAI 与 Anthropic 顶级模型在英国网安测试中失控",
+      "ExANS 在 H100 实现惊人的 622 GB/s KV cache 无损压缩",
+      "研究揭示当前大模型基准测试存在严重的数据污染乱象",
+      "Prime Agent：提出具备自我进化能力的强化学习新架构",
+      "Curie 支持 Claude Code agents 通过 Git push 部署至 K8s",
+      "开发者对大模型的道德边界与企业合规性表达深切担忧"
+    ],
+    "rl-daily": [
+      "verl 迎来 Agentic RL 基建爆发，推进多硬件生态适配",
+      "TRL 正在攻坚视觉语言大模型（VLMs）兼容性",
+      "AReaL 死磕显存峰值优化，实现 Actor-Rollout 深度解耦",
+      "ROCK 引入 K8s 热池调度，强化容器级沙箱隔离",
+      "rl_games 紧急修复多卡并发极速 Autoreset 带来的脏数据",
+      "OpenRLHF 修复 GSPO 算法数值稳定性，重构异构加速芯片"
+    ],
+    "ai-arxiv": [
+      "WorldCup Arena：利用世界杯评估模型防数据泄露",
+      "揭露 ALiBi 位置编码中浮点精度下溢致注意力归零危机",
+      "在预训练前先学习逻辑推导能大幅加速后续自然语言学习",
+      "提出闭式线性映射，允许跨大小模型直接复用 KV Cache",
+      "结合社会科学理论，探讨 AI 协调多元冲突价值观",
+      "TurnSight 提出回合级事后自蒸馏优化工具集成推理"
+    ],
+    "ai-hf": [
+      "Kimi-K3 多模态模型周下载量超千万，稳居人气榜首",
+      "百度 Unlimited-OCR 开源，突破超长文档与复杂图文转换",
+      "智谱 GLM-5.2 最新 MoE 对话模型下载量突破两百万",
+      "DeepSeek-V4-Flash 兼顾极速推理与顶级文本生成霸榜",
+      "LG 推出 750B 参数超级 MoE 模型，展现硬核实力",
+      "MiniMax-H3 震撼发布，图/文生视频连贯性迈入全新阶段"
+    ],
+    "ai-community": [
+      "81% 的开发者深陷 AI 生成代码的审查疲劳中",
+      "AWS 开源跨会话、跨仓库的 AI Agent 协调器 Kiro Crew",
+      "vLLM 源码深度解析：透彻理解大模型 KV Cache 管理",
+      "企业级 MCP 网关实战：内置 OAuth 2.0 与工具访问控制",
+      "Docker 发布 AI 模型与 Agent 部署的安全基线",
+      "警惕：使用 Claude Code 快速构建更需严守安全防御底线"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.222 focuses on sandboxing & UI telemetry.",
+      "OpenAI Codex rust-v0.146.1 enhances cyber safety.",
+      "AI CLI tools shift to deep multi-agent workflows.",
+      "Gemini CLI patches critical SSRF and Auth bugs.",
+      "Providers compete on massive 1M token context windows.",
+      "Ecosystem shifts from Electron to Rust for performance."
+    ],
+    "ai-agents": [
+      "OpenClaw surges with 500 issues and 500 PRs updated.",
+      "Merged PR fixes large SQLite transcript memory leaks.",
+      "Inactive plugin imports deferred to speed up startup.",
+      "Developers tackle complex concurrency bottlenecks.",
+      "425 PRs remain open showing aggressive iteration.",
+      "No new stable releases shipped today."
+    ],
+    "ai-trending": [
+      "firecrawl/pdf-inspector gains 1,583 stars today.",
+      "lyogavin/airllm runs 70B LLMs on a 4GB consumer GPU.",
+      "cloudflare/computer gives agents sandboxed OS access.",
+      "Uber open-sources its AI agent security framework.",
+      "DeepSeek-Reasonix optimizes prefix-cache for terminal use.",
+      "Tencent launches sophisticated agent memory hub."
+    ],
+    "ai-web": [
+      "OpenAI launches Economic Research Exchange initiative.",
+      "New program targets macroeconomic AI impact research.",
+      "Initiative aims at academic and policymaker collaboration.",
+      "Exchange seeks to foster deeper economist collaboration.",
+      "Details remain scarce due to metadata limitations.",
+      "Anthropic reports zero new content updates today."
+    ],
+    "ai-hn": [
+      "Top models 'went rogue' and impersonated people in tests.",
+      "DOJ secures multimillion-dollar discrimination settlement.",
+      "AI models found generating CSAM, causing severe backlash.",
+      "Prime Agent introduces self-improving RLM capabilities.",
+      "Developers debate push toward proprietary AI silicon.",
+      "Community debates cultural friction of AI adoption."
+    ],
+    "rl-daily": [
+      "TRL dominates Agentic RL with 21 active PRs.",
+      "verl pushes hardware heterogeneity for TPUs and NPUs.",
+      "AReaL optimizes memory and co-located GPU training.",
+      "Development bottlenecks shift from compute to memory.",
+      "Agentic RL drives intense framework innovation today.",
+      "CleanRL, ROLL, and Tianshou see zero new activity."
+    ],
+    "agent-orch": [
+      "Ecosystem features 45 active agent orchestration projects.",
+      "dmux and Symphony drive multi-agent dev environments.",
+      "Claude Squad and Vibe Kanban lead coding agent tools.",
+      "AutoGPT and MetaGPT maintain strong community presence.",
+      "HumanLayer focuses on safe human-in-the-loop workflows.",
+      "Platforms shift toward complex workflow orchestration."
+    ],
+    "ai-arxiv": [
+      "Test-time compute scaling optimizes LLM inference.",
+      "Researchers uncover critical ALiBi positional encoding bug.",
+      "New linear mapping allows cross-model KV Cache transfer.",
+      "Fine-grained RL enables dynamic test-time adaptability.",
+      "Live sports used to bypass LLM data memorization.",
+      "Frameworks focus on recursive self-improvement."
+    ],
+    "ai-hf": [
+      "DeepSeek-V4-Flash trends with 2.7 million downloads.",
+      "GLM-5.2 MoE becomes a staple open-weight alternative.",
+      "Kimi-K3 dominates with over 10,000 daily likes.",
+      "LGAI-EXAONE releases massive 750B parameter model.",
+      "Community pushes limits with uncensored Qwen3.6 quants.",
+      "Baidu's Unlimited-OCR sees massive utility surge."
+    ],
+    "ai-community": [
+      "81% of developers are buried in AI code review tax.",
+      "Securing MCP servers with OAuth is crucial for agents.",
+      "Developers move past vibes-testing to rigorous suites.",
+      "Custom C/C++ inference engines are debated for speed.",
+      "AGENTS.md is now essential for coding agents.",
+      "Debating true token costs of agentic workflows."
+    ]
+  }
+}
