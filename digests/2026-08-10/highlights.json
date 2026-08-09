@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI 工具向多智能体协同编排平台跃升",
+      "OpenAI Codex 多代理致本地 I/O 百 GB 级泄漏",
+      "Gemini CLI 紧急修复子代理静默失败与供应链 RCE 漏洞",
+      "Copilot CLI 遭遇 MCP 协议握手脆弱与并发 429 限流",
+      "Qwen Code 引入 Leader-Worker 多会话与原生浏览器控制",
+      "DeepSeek TUI 筹备 v0.9.6，全面开放 Runtime HTTP API"
+    ],
+    "ai-agents": [
+      "OpenClaw 单日处理 500 条 Issue 与 500 个 PR",
+      "核心网关解耦：剥离强依赖的 WhatsApp/Slack 策略",
+      "优化按记录划分广播通道，解决全局队列会话阻塞",
+      "修复移动端扫码配对成功后 UI 状态未更新的破坏性体验",
+      "遗留配置迁移统一收敛至 doctor 命令防静默触发",
+      "修复 Agent 运行期间无法直接归档非主会话的痛点"
+    ],
+    "ai-trending": [
+      "Agent 开发从单体转向赋予持久记忆与特定技能",
+      "ECC 获 23 万星，成最火 AI 编程智能体掌控系统",
+      "prime-agent 新增 2319 星，专攻编程自我进化与长时自动化",
+      "Graphify 获 10 万星，无需向量库构建代码知识图谱",
+      "claude-mem 提供跨会话持久化上下文记忆",
+      "headroom 上下文压缩代理最高削减 95% Token 消耗"
+    ],
+    "ai-hn": [
+      "Qwen 3.8 与 Claude Opus 5 跑分成绩已无法预测实际推理成本",
+      "字节跳动开训千亿级大模型，底层算力军备竞赛加剧",
+      "Anthropic 将 Claude Code 自动执行模式设为默认",
+      "AI 编码助手正从被动建议全面转向主动接管工作流",
+      "Benzi 声称在 Sonnet 模型上击败了官方 Claude Code",
+      "开发者反思企业强行推行 AI 工具与安全测试的悖论"
+    ],
+    "rl-daily": [
+      "大模型对齐需求井喷，传统单智能体 RL 库已进入休眠期",
+      "verl 极速适配 DeepSeek-V4 架构多维并行与异步训练",
+      "TRL 聚焦异步 GRPO 显存优化与鲁棒性",
+      "AReaL 修复工程偏差并探索 Diffusion RL 后训练",
+      "slime 死磕大模型极致显存压榨与分布式检查点兼容",
+      "各框架正全面审视并重构 GRPO/PPO 在 LLM 场景的瑕疵"
+    ],
+    "ai-hf": [
+      "MiniMax-H3 霸榜，以惊人图文生视频质量引爆开源社区",
+      "Kimi-K3 登顶语言模型点赞榜，下载量超 145 万",
+      "GLM-5.2 新一代 MoE 架构力作下载量突破 240 万",
+      "百度 Unlimited-OCR 强力解决复杂场景痛点，下载超 288 万",
+      "微软 Mage-VL 最新入局，视觉语言图文理解表现优异",
+      "DeepSeek-V4-Flash 凭借极致推理速度与高性价比持续霸榜"
+    ],
+    "ai-community": [
+      "深度长文揭秘 RAG 生产环境高阶文本分块策略",
+      "构建长期运行 AI Agent 的枯燥但致命的工程细节",
+      "RAG 真实业务流中的资金消耗陷阱与高性价比方案",
+      "警告：AI Agent 集成测试的混乱比模型逻辑更危险",
+      "开发者反思盲目依赖旗舰大模型带来的极高成本陷阱",
+      "行业担忧 AI 原生一代初级开发者缺乏基础 Debug 能力"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "MCP becomes standard, but introduces auth friction.",
+      "Claude Code focuses on plugin architecture and agent loops.",
+      "Gemini CLI releases v0.56.0 with TUI investments.",
+      "AI CLI ecosystem shifts to autonomous, multi-agent flows.",
+      "Codex merges 7 PRs focusing on resource management.",
+      "Vendors invest in TUIs for long-running dev sessions."
+    ],
+    "ai-agents": [
+      "OpenClaw sees 500 issues and 500 PRs in 24 hours.",
+      "Maintainers aggressively fix regressions from 2026.7.x.",
+      "No new OpenClaw releases as team prioritizes stability.",
+      "OpenClaw developers merge 181 PRs to fix UI friction.",
+      "Gateway reliability is the primary focus for OpenClaw.",
+      "Project focuses heavily on model switching and session state."
+    ],
+    "ai-trending": [
+      "Agentic coding frameworks dominate open-source AI.",
+      "ECC project hits 239k stars optimizing CLI agents.",
+      "Hermes agent framework gains massive community interest.",
+      "Prime-agent is today's highest new-gainer with 2.3k stars.",
+      "Surge in modular agent skills and persistent memory layers.",
+      "Code Graph RAG gains traction for autonomous workflows."
+    ],
+    "ai-hn": [
+      "HN community expresses skepticism toward AI monopolies.",
+      "Developers pivot to autonomous coding and self-hosted AI.",
+      "ByteDance pretraining massive 10T parameter AI model.",
+      "Community moves past vanity metrics to focus on AI costs.",
+      "Two companies reportedly control 70% of AI revenue.",
+      "Claude Code's new auto-mode drives deep integration."
+    ],
+    "rl-daily": [
+      "RL ecosystem shifts to distributed systems engineering.",
+      "Innovation concentrated on large-scale LLM alignment.",
+      "Standard classic-RL environments experience zero activity.",
+      "verl stabilizes Megatron/vLLM for DeepSeek-V4.",
+      "Next-gen pipelines optimize memory for massive LLMs.",
+      "TRL focuses on usability and accessibility enhancements."
+    ],
+    "agent-orch": [
+      "Agent orchestration ecosystem grows to 45 projects.",
+      "New tools aim to manage complex multi-agent workflows.",
+      "Orchestrators focus on dynamic model routing and spend caps.",
+      "AutoGPT and MetaGPT continue to evolve team collaboration.",
+      "Projects like Claude Squad target localized CLI agents.",
+      "Developers prioritize infrastructure for parallel agent load."
+    ],
+    "ai-hf": [
+      "MiniMax-H3 sparks massive wave of community adaptations.",
+      "Kimi-K3 image-text-to-text LLM generates massive interest.",
+      "DeepSeek-V4-Flash hits nearly a million downloads fast.",
+      "GLM-5.2 MoE conversational LLM dominates download charts.",
+      "Next-gen heavyweights signal transition to new base LLMs.",
+      "Community pushes boundaries for local 30B+ deployment."
+    ],
+    "ai-community": [
+      "Dev spends cap for LLM calls fails by 4.2x under load.",
+      "Default-to-flagship model routing is now a costly bug.",
+      "Tiered routing based on task complexity is essential.",
+      "Production AI agents spark complex infra challenges.",
+      "Frustration rises over LLMs failing at nuanced dialogue.",
+      "Community questions lack of debugging skills in juniors."
+    ]
+  }
+}
