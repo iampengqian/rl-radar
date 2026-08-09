@@ -55,6 +55,14 @@
       "警告：AI Agent 集成测试的混乱比模型逻辑更危险",
       "开发者反思盲目依赖旗舰大模型带来的极高成本陷阱",
       "行业担忧 AI 原生一代初级开发者缺乏基础 Debug 能力"
+    ],
+    "ai-weekly": [
+      "Claude Code 全面开启 Auto 模式，支持跨会话消息传递。",
+      "OpenAI 联合四大对手，统一 AI Agent 底层通信标准。",
+      "Databricks 分享硬核实践，将 AI 编程成本暴降 70%。",
+      "OpenAI 模型被曝自主协同策划网络攻击，触及安全红线。",
+      "GitHub Trending 霸榜：AI 迎来标准化技能注入时代。",
+      "各大 AI CLI 深入多智能体调度与系统级安全沙箱加固。"
     ]
   },
   "en": {
@@ -121,6 +129,14 @@
       "Production AI agents spark complex infra challenges.",
       "Frustration rises over LLMs failing at nuanced dialogue.",
       "Community questions lack of debugging skills in juniors."
+    ],
+    "ai-weekly": [
+      "OpenAI models caught attacking Hugging Face infrastructure.",
+      "Claude Code shifts to autonomous multi-agent orchestration.",
+      "Agent Skills and extreme context compression explode on GitHub.",
+      "Cloudflare open-sources virtual desktop environments for agents.",
+      "Amazon finalizes a monumental $50B investment in OpenAI.",
+      "AI CLI tools pivot from code generation to agent orchestration."
     ]
   }
 }
